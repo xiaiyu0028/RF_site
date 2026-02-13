@@ -156,10 +156,13 @@
                     atkPerLevel: actor.actor_prototype?.offense_elevation_value || 0,
                     baseHP: actor.actor_prototype?.blood_base_value || 0,
                     hpPerLevel: actor.actor_prototype?.blood_elevation_value || 0,
-                    maxLevel: actor.level_cap || getMaxLevel(actor),
+                    maxLevel: getMaxLevelByScarcity(actor.scarcity),
                     runeType: actor.no_weapon_name || '未知',
                     passiveSkills: actor.passive_skills || [],
                     biography: actor.actor_prototype?.description || `${actor.actor_prototype?.name || '未知'}的故事...`,
+                    religion: actor.actor_prototype?.religion || '',
+                    family: actor.actor_prototype?.family || '',
+                    ethnicGroup: actor.actor_prototype?.ethnic_group || '',
                     headImage: actor.head_image || '',
                     halfImage: actor.half_image || '',
                     gifImage: actor.gif_image || '',
@@ -190,10 +193,16 @@
             document.getElementById('sortFilter').addEventListener('change', filterCharacters);
         });
 
-        function getMaxLevel(actorData) {
-            if (!actorData?.passive_skills?.length) return 100;
-            const levels = actorData.passive_skills.map(s => s.level);
-            return Math.max(...levels);
+        function getMaxLevelByScarcity(scarcity) {
+            switch (scarcity) {
+                case 'SSR':
+                    return 300;
+                case 'SR':
+                    return 160;
+                case 'R':
+                default:
+                    return 90;
+            }
         }
 
         // 更新統計
@@ -258,7 +267,7 @@
                     ${characters.map(char => `
                         <div class="card character-card" onclick="showCharacterDetail('${char.name}')" style="cursor: pointer;">
                             <div class="card-header" style="display: flex; align-items: center; gap: 10px;">
-                                ${char.headImage ? `<img src="https://www.rf.newroadfound.com${char.headImage}" alt="${char.name}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" onerror="this.style.display='none'">` : ''}
+                                ${char.headImage ? `<img src="${getAssetPath(char.headImage)}" alt="${char.name}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" onerror="this.style.display='none'">` : ''}
                                 <span class="card-title">${char.name}</span>
                                 <span class="badge ${getScarcityClass(char.scarcity)}" style="margin-left: auto;">${char.scarcity}</span>
                             </div>
@@ -341,7 +350,7 @@
             detail.innerHTML = `
                 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 25px;">
                     ${char.halfImage || char.gifImage ? 
-                        `<img src="https://www.rf.newroadfound.com${char.halfImage || char.gifImage}" alt="${char.name}" style="width: 120px; height: auto; border-radius: 10px; object-fit: contain;" onerror="this.outerHTML='<div style=\\'width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em;\\'>${char.name.charAt(0)}</div>'">` 
+                        `<img src="${getAssetPath(char.halfImage || char.gifImage)}" alt="${char.name}" style="width: 120px; height: auto; border-radius: 10px; object-fit: contain;" onerror="this.outerHTML='<div style=\\'width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em;\\'>${char.name.charAt(0)}</div>'">` 
                         : `<div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em;">${char.name.charAt(0)}</div>`
                     }
                     <div>
@@ -374,6 +383,11 @@
                         <div class="card" style="margin: 0;">
                             <div class="card-body">
                                 <p>${char.biography}</p>
+                                <div style="margin-top: 10px; color: var(--muted-text); font-size: 0.9em;">
+                                    ${char.religion ? `<div><strong>宗教：</strong>${char.religion}</div>` : ''}
+                                    ${char.family ? `<div><strong>出生地：</strong>${char.family}</div>` : ''}
+                                    ${char.ethnicGroup ? `<div><strong>族群：</strong>${char.ethnicGroup}</div>` : ''}
+                                </div>
                             </div>
                         </div>
                         
