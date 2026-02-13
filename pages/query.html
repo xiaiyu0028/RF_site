@@ -134,9 +134,9 @@
                             <!-- 分類篩選 -->
                             <div class="grid grid-4" style="margin-bottom: 20px;">
                                 <button class="btn btn-outline" onclick="filterInventory('all')">全部</button>
-                                <button class="btn btn-outline" onclick="filterInventory('material')">材料</button>
-                                <button class="btn btn-outline" onclick="filterInventory('consumable')">消耗品</button>
-                                <button class="btn btn-outline" onclick="filterInventory('other')">其他</button>
+                                <button class="btn btn-outline" onclick="filterInventory('piece')">角色碎片</button>
+                                <button class="btn btn-outline" onclick="filterInventory('material')">道具</button>
+                                <button class="btn btn-outline" onclick="filterInventory('special')">特殊</button>
                             </div>
                             
                             <div id="inventoryList">
@@ -226,21 +226,20 @@
 
         // 範例資料（示範模式使用）
         const sampleOwnedCharacters = [
-            { name: "卡姆蘭", level: 160, scarcity: "SSR", role: "spy", equipped: "高等符文" },
-            { name: "范朋克", level: 120, scarcity: "SR", role: "agitator", equipped: "強化符文" },
-            { name: "陳炯明", level: 90, scarcity: "R", role: "sponsor", equipped: "原初符文" },
-            { name: "阿旺", level: 180, scarcity: "SSR", role: "guerrilla", equipped: "庚子符文" },
-            { name: "德澤", level: 100, scarcity: "SR", role: "spy", equipped: "限定符文" },
+            { name: "卡姆蘭", level: 160, scarcity: "SSR", role: "間諜", equipped: "高等符文" },
+            { name: "范朋克", level: 120, scarcity: "SR", role: "宣傳家", equipped: "強化符文" },
+            { name: "陳炯明", level: 90, scarcity: "R", role: "資助者", equipped: "原初符文" },
+            { name: "阿旺", level: 180, scarcity: "SSR", role: "游擊隊", equipped: "庚子符文" },
+            { name: "德澤", level: 100, scarcity: "SR", role: "間諜", equipped: "限定符文" },
         ];
 
         const sampleInventory = [
-            { name: "金幣", count: 158742, category: "material" },
-            { name: "抽獎券", count: 25, category: "consumable" },
-            { name: "經驗藥水", count: 150, category: "consumable" },
-            { name: "鍛造石", count: 89, category: "material" },
-            { name: "角色碎片", count: 340, category: "material" },
-            { name: "強化石", count: 45, category: "material" },
-            { name: "符文碎片", count: 200, category: "material" },
+            { name: "粉圓 碎片", count: 9, category: "piece", scarcity: "SR" },
+            { name: "米日古麗 碎片", count: 8, category: "piece", scarcity: "SR" },
+            { name: "傳單", count: 74306, category: "material", description: "宣揚政治理念的印刷品，適合宣傳家使用" },
+            { name: "書刊", count: 80388, category: "material", description: "傳播思想的出版品，適合宣傳家使用" },
+            { name: "烏古斯之石", count: 34, category: "special", description: "蘊含烏古斯可汗力量的靈石，可恢復能量+60" },
+            { name: "徵才告示", count: 9, category: "special", description: "使用後將吸引1名新的幹部加入革命隊伍" },
         ];
 
         const sampleRunes = [
@@ -251,12 +250,12 @@
         ];
 
         const sampleGachaHistory = [
-            { date: "2026-02-13", result: "卡姆蘭", scarcity: "SSR", pool: "限定池" },
-            { date: "2026-02-12", result: "范朋克", scarcity: "SR", pool: "常駐池" },
-            { date: "2026-02-12", result: "陳炯明", scarcity: "R", pool: "常駐池" },
-            { date: "2026-02-11", result: "德澤", scarcity: "SR", pool: "常駐池" },
-            { date: "2026-02-11", result: "李烈鈞", scarcity: "R", pool: "常駐池" },
-            { date: "2026-02-10", result: "阿旺", scarcity: "SSR", pool: "限定池" },
+            { date: "2026-02-13", result: "卡姆蘭", scarcity: "SSR", pool: "角色", sequence: 32 },
+            { date: "2026-02-12", result: "范朋克 碎片", scarcity: "SR", pool: "碎片", sequence: 32 },
+            { date: "2026-02-12", result: "陳炯明 碎片", scarcity: "R", pool: "碎片", sequence: 32 },
+            { date: "2026-02-11", result: "德澤 碎片", scarcity: "SR", pool: "碎片", sequence: 31 },
+            { date: "2026-02-11", result: "李烈鈞 碎片", scarcity: "R", pool: "碎片", sequence: 31 },
+            { date: "2026-02-10", result: "阿旺", scarcity: "SSR", pool: "角色", sequence: 30 },
         ];
 
         // 初始化
@@ -537,16 +536,20 @@
             showLoadingState('正在查詢角色資料...');
             
             try {
-                // 查詢角色
+                // 查詢角色 - 回傳格式: { actors: [...], preloads: [...] }
                 const actorsData = await sendApiRequest('actors', { body: '' });
                 if (actorsData && actorsData.actors) {
                     ownedActors = actorsData.actors;
                     loadOwnedCharacters(ownedActors.map(a => ({
-                        name: a.name,
+                        name: a.actor_prototype?.name || a.name || '未知',
                         level: a.level || 1,
                         scarcity: a.scarcity || 'N',
-                        role: a.role || 'unknown',
-                        equipped: a.weapon_prototype?.name || '無'
+                        role: a.actor_prototype?.actor_category?.name || '未知',
+                        equipped: a.weapon?.weapon_prototype?.name || '無',
+                        image: a.head_image || '',
+                        nation: a.nation || '',
+                        blood: a.blood || 0,
+                        offense: a.offense || 0
                     })));
                 }
             } catch (e) {
@@ -556,55 +559,115 @@
             showLoadingState('正在查詢庫存資料...');
             
             try {
-                // 查詢背包
+                // 查詢背包 - 回傳格式: { pieces: { actor_pieces, wild_card_pieces }, props, special, weapons }
                 const backpackData = await sendApiRequest('backpack', {});
-                if (backpackData && backpackData.items) {
-                    inventoryItems = backpackData.items;
-                    loadInventory(inventoryItems.map(i => ({
-                        name: i.name,
-                        count: i.quantity || 1,
-                        category: i.item_type || 'other'
-                    })));
+                if (backpackData) {
+                    // 解析背包資料
+                    const parsedInventory = parseBackpackData(backpackData);
+                    inventoryItems = parsedInventory;
+                    loadInventory(parsedInventory);
+                    
+                    // 解析符文(武器)資料
+                    if (backpackData.weapons && backpackData.weapons.length > 0) {
+                        runesData = backpackData.weapons;
+                        loadRunes(runesData.map(w => ({
+                            name: w.weapon_prototype?.name || '未知符文',
+                            level: w.level || 1,
+                            owner: w.actor?.image ? getActorNameFromImage(w.actor.image) : '未裝備',
+                            stats: w.weapon_prototype?.description?.replace(/<br\/?>|\n/g, ' ') || '-',
+                            image: w.weapon_prototype?.image || ''
+                        })));
+                    }
                 }
             } catch (e) {
                 console.error('庫存查詢失敗:', e);
             }
             
-            showLoadingState('正在查詢符文資料...');
-            
-            try {
-                // 查詢符文
-                const runesResult = await sendApiRequest('weapon_prototypes', {});
-                if (runesResult && runesResult.weapon_prototypes) {
-                    runesData = runesResult.weapon_prototypes;
-                    loadRunes(runesData.map(r => ({
-                        name: r.name,
-                        level: r.level || 1,
-                        owner: r.actor_name || '未裝備',
-                        stats: r.description || '-'
-                    })));
-                }
-            } catch (e) {
-                console.error('符文查詢失敗:', e);
-            }
-            
             showLoadingState('正在查詢抽獎歷史...');
             
             try {
-                // 查詢抽獎歷史
+                // 查詢抽獎歷史 - 回傳格式: 直接是陣列 [...]
                 const gachaResult = await sendApiRequest('used_recruit_coupons', {});
-                if (gachaResult && gachaResult.records) {
-                    gachaHistory = gachaResult.records;
-                    loadGachaHistory(gachaHistory.map(g => ({
-                        date: g.created_at?.split('T')[0] || '-',
-                        result: g.actor_name || '-',
+                // gachaResult 直接是陣列而非物件
+                if (gachaResult && Array.isArray(gachaResult)) {
+                    gachaHistory = gachaResult;
+                    loadGachaHistory(gachaResult.map(g => ({
+                        date: g.updated_at?.split('T')[0] || '-',
+                        result: g.name || '-',
                         scarcity: g.scarcity || 'N',
-                        pool: g.pool_name || '-'
+                        pool: g.actor_piece ? '碎片' : '角色',
+                        image: g.image || '',
+                        sequence: g.recruit_sequence || 0
+                    })));
+                } else if (gachaResult && gachaResult.length !== undefined) {
+                    // 備用：若回傳為類陣列
+                    gachaHistory = Array.from(gachaResult);
+                    loadGachaHistory(gachaHistory.map(g => ({
+                        date: g.updated_at?.split('T')[0] || '-',
+                        result: g.name || '-',
+                        scarcity: g.scarcity || 'N',
+                        pool: g.actor_piece ? '碎片' : '角色',
+                        image: g.image || '',
+                        sequence: g.recruit_sequence || 0
                     })));
                 }
             } catch (e) {
                 console.error('抽獎歷史查詢失敗:', e);
             }
+        }
+        
+        // 解析背包資料
+        function parseBackpackData(data) {
+            const items = [];
+            
+            // 解析角色碎片
+            if (data.pieces?.actor_pieces) {
+                data.pieces.actor_pieces.forEach(piece => {
+                    items.push({
+                        name: `${piece.name} 碎片`,
+                        count: piece.quantity || 1,
+                        category: 'piece',
+                        image: piece.image || '',
+                        scarcity: piece.scarcity || 'N'
+                    });
+                });
+            }
+            
+            // 解析道具 (props)
+            if (data.props) {
+                data.props.forEach(prop => {
+                    items.push({
+                        name: prop.prop_prototype?.name || '未知道具',
+                        count: prop.quantity || 1,
+                        category: 'material',
+                        image: prop.prop_prototype?.image || '',
+                        description: prop.prop_prototype?.description?.replace(/<br\/?>|\n/g, ' ') || ''
+                    });
+                });
+            }
+            
+            // 解析特殊道具 (special)
+            if (data.special) {
+                data.special.forEach(item => {
+                    items.push({
+                        name: item.name || '特殊道具',
+                        count: item.quantity || 1,
+                        category: 'special',
+                        image: item.image || '',
+                        description: item.description?.replace(/<br\/?>|\n/g, ' ') || ''
+                    });
+                });
+            }
+            
+            return items;
+        }
+        
+        // 從圖片路徑取得角色名稱
+        function getActorNameFromImage(imagePath) {
+            if (!imagePath) return '未裝備';
+            // 從 /images/actor/head/avatarXX.png 提取名稱代號
+            const match = imagePath.match(/avatar([A-Za-z0-9]+)\.png/);
+            return match ? match[1] : '已裝備';
         }
 
         // 顯示載入狀態
@@ -659,7 +722,7 @@
                                     <td><strong>${char.name}</strong></td>
                                     <td><span class="badge scarcity-${char.scarcity}">${char.scarcity}</span></td>
                                     <td>Lv.${char.level}</td>
-                                    <td>${getRoleName(char.role)}</td>
+                                    <td>${char.role}</td>
                                     <td>${char.equipped}</td>
                                 </tr>
                             `).join('')}
@@ -679,15 +742,31 @@
         function renderInventory(items) {
             const container = document.getElementById('inventoryList');
             
+            const getCategoryBadge = (category) => {
+                switch(category) {
+                    case 'piece': return '<span class="badge badge-warning">碎片</span>';
+                    case 'special': return '<span class="badge badge-success">特殊</span>';
+                    case 'material': return '<span class="badge badge-info">道具</span>';
+                    default: return '';
+                }
+            };
+            
             container.innerHTML = `
                 <div class="grid grid-auto">
                     ${items.map(item => `
                         <div class="card" style="margin-bottom: 10px;">
                             <div class="card-body" style="padding: 15px;">
-                                <div style="display: flex; justify-content: space-between; align-items: center;">
-                                    <span><strong>${item.name}</strong></span>
-                                    <span class="badge badge-primary">x${item.count.toLocaleString()}</span>
+                                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px;">
+                                    <span>
+                                        <strong>${item.name}</strong>
+                                        ${item.scarcity ? `<span class="badge scarcity-${item.scarcity}">${item.scarcity}</span>` : ''}
+                                    </span>
+                                    <span>
+                                        ${getCategoryBadge(item.category)}
+                                        <span class="badge badge-primary">x${item.count.toLocaleString()}</span>
+                                    </span>
                                 </div>
+                                ${item.description ? `<small style="color: var(--text-color); opacity: 0.7;">${item.description}</small>` : ''}
                             </div>
                         </div>
                     `).join('')}
@@ -754,8 +833,9 @@
                         <thead>
                             <tr>
                                 <th>日期</th>
-                                <th>抽獎池</th>
-                                <th>獲得角色</th>
+                                <th>第N抽</th>
+                                <th>獲得結果</th>
+                                <th>類型</th>
                                 <th>稀有度</th>
                             </tr>
                         </thead>
@@ -763,8 +843,9 @@
                             ${records.map(record => `
                                 <tr>
                                     <td>${record.date}</td>
-                                    <td>${record.pool}</td>
+                                    <td>第 ${record.sequence} 抽</td>
                                     <td><strong>${record.result}</strong></td>
+                                    <td>${record.pool}</td>
                                     <td><span class="badge scarcity-${record.scarcity}">${record.scarcity}</span></td>
                                 </tr>
                             `).join('')}
