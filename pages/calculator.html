@@ -232,11 +232,13 @@
         // 載入角色資料
         async function loadActorData() {
             try {
+                // 加入時間戳避免快取問題
+                const timestamp = new Date().getTime();
                 // 嘗試載入 parsed_actors_skill.json（包含解析後的被動技能）
-                let response = await fetch('../cal_power/parsed_actors_skill.json');
+                let response = await fetch(`../cal_power/parsed_actors_skill.json?t=${timestamp}`);
                 if (!response.ok) {
                     // 如果沒有，嘗試載入 parsed_actors.json
-                    response = await fetch('../cal_power/parsed_actors.json');
+                    response = await fetch(`../cal_power/parsed_actors.json?t=${timestamp}`);
                 }
                 
                 if (!response.ok) {

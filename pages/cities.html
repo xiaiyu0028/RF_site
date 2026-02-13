@@ -97,7 +97,9 @@
         // 從 JSON 載入城鎮資料
         async function loadCitiesData() {
             try {
-                const response = await fetch('../return_data_example/cities.json');
+                // 加入時間戳避免快取問題
+                const timestamp = new Date().getTime();
+                const response = await fetch(`../return_data_example/cities.json?t=${timestamp}`);
                 const data = await response.json();
                 rawCitiesData = data.cities || [];
                 
@@ -237,31 +239,83 @@
                     return '<p style="color: var(--muted-text);">無掉落物品資料</p>';
                 }
                 
-                return spoils.map((spoil, idx) => {
-                    if (!spoil.items || spoil.items.length === 0) return '';
-                    return `
-                        <div style="margin-bottom: 15px;">
-                            <h4 style="margin-bottom: 10px;">獎勵 ${idx + 1} ${spoil.random ? '(隨機)' : ''}</h4>
-                            <table class="table">
-                                <thead>
-                                    <tr><th>物品</th><th>數量</th><th>類型</th></tr>
-                                </thead>
-                                <tbody>
-                                    ${spoil.items.map(item => `
-                                        <tr>
-                                            <td>
-                                                ${item.image_url ? `<img src="${getAssetPath(item.image_url)}" alt="${item.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">` : ''}
-                                                ${item.name}
-                                            </td>
-                                            <td>${item.quantity || '-'}</td>
-                                            <td>${item.item_type || '-'}</td>
-                                        </tr>
-                                    `).join('')}
-                                </tbody>
-                            </table>
-                        </div>
-                    `;
-                }).join('');
+                // 分離固定掉落和隨機掉落
+                const fixedSpoils = spoils.filter(s => !s.random);
+                const randomSpoils = spoils.filter(s => s.random);
+                const randomCount = randomSpoils.length;
+                
+                let html = '';
+                
+                // 固定掉落
+                if (fixedSpoils.length > 0) {
+                    html += '<h4 style="margin-bottom: 10px; color: var(--success-color);">🎁 固定獎勵</h4>';
+                    html += fixedSpoils.map((spoil, idx) => {
+                        if (!spoil.items || spoil.items.length === 0) return '';
+                        return `
+                            <div style="margin-bottom: 15px;">
+                                <table class="table">
+                                    <thead>
+                                        <tr><th>物品</th><th>數量</th><th>類型</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        ${spoil.items.map(item => `
+                                            <tr>
+                                                <td>
+                                                    ${item.image_url ? `<img src="${getAssetPath(item.image_url)}" alt="${item.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">` : ''}
+                                                    ${item.name}
+                                                </td>
+                                                <td>${item.quantity || '-'}</td>
+                                                <td>${item.item_type || '-'}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        `;
+                    }).join('');
+                }
+                
+                // 隨機掉落
+                if (randomSpoils.length > 0) {
+                    // 計算 reference 總和
+                    const totalReference = randomSpoils.reduce((sum, s) => sum + (s.reference || 1), 0);
+                    
+                    html += '<h4 style="margin: 20px 0 10px; color: var(--warning-color);">🎲 隨機獎勵</h4>';
+                    html += `<p style="margin-bottom: 10px; color: var(--muted-text); font-size: 0.9em;">共 ${randomCount} 種可能，每次通關隨機獲得其中一種</p>`;
+                    html += randomSpoils.map((spoil, idx) => {
+                        if (!spoil.items || spoil.items.length === 0) return '';
+                        // 計算機率：使用 reference 欄位加總計算真實掉落機率
+                        const reference = spoil.reference || 1;
+                        const probability = (reference / totalReference) * 100;
+                        return `
+                            <div style="margin-bottom: 15px; border-left: 3px solid var(--warning-color); padding-left: 15px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                    <span style="font-weight: bold;">選項 ${idx + 1}</span>
+                                    <span class="badge badge-warning">機率：${probability.toFixed(1)}%</span>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr><th>物品</th><th>數量</th><th>類型</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        ${spoil.items.map(item => `
+                                            <tr>
+                                                <td>
+                                                    ${item.image_url ? `<img src="${getAssetPath(item.image_url)}" alt="${item.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">` : ''}
+                                                    ${item.name}
+                                                </td>
+                                                <td>${item.quantity || '-'}</td>
+                                                <td>${item.item_type || '-'}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        `;
+                    }).join('');
+                }
+                
+                return html || '<p style="color: var(--muted-text);">無掉落物品資料</p>';
             };
             
             detail.innerHTML = `
@@ -292,7 +346,7 @@
                             <tr><th>下方城鎮</th><td>${getCityName(city.downCityId)}</td></tr>
                             <tr><th>左方城鎮</th><td>${getCityName(city.leftCityId)}</td></tr>
                             <tr><th>右方城鎮</th><td>${getCityName(city.rightCityId)}</td></tr>
-                            <tr><th>補充能量</th><td>${city.energyCharge || '-'}</td></tr>
+                            <tr><th>消耗體力</th><td>${city.energyCharge || '-'}</td></tr>
                             <tr><th>加成</th><td>${city.bonus}%</td></tr>
                             <tr><th>可劫持</th><td>${city.hijackable ? '是' : '否'}</td></tr>
                         </table>

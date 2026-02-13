@@ -134,45 +134,53 @@
     <script src="../js/app.js"></script>
     <script>
         let charactersData = [];
-        let parsedActorsData = {};
 
         // 初始化
         document.addEventListener('DOMContentLoaded', async function() {
             try {
-                // 載入角色天賦資料
-                const response = await fetch('../cal_power/parsed_actors.json');
-                if (response.ok) {
-                    parsedActorsData = await response.json();
-                }
-            } catch (e) {
-                console.log('無法載入角色天賦資料');
+                // 載入角色資料 (使用 unique_actors.json 取得完整資料)
+                // 加入時間戳避免快取問題
+                const timestamp = new Date().getTime();
+                const response = await fetch(`../cal_power/unique_actors.json?t=${timestamp}`);
+                if (!response.ok) throw new Error('載入失敗');
+                const data = await response.json();
+                
+                // 轉換資料格式 - 使用實際 JSON 資料
+                charactersData = data.map((actor, index) => ({
+                    id: index + 1,
+                    name: actor.actor_prototype?.name || '未知',
+                    scarcity: actor.scarcity || 'R',
+                    role: actor.actor_prototype?.actor_category?.name || '未知',
+                    nation: actor.nation_id || 0,
+                    baseATK: actor.actor_prototype?.offense_base_value || 0,
+                    atkPerLevel: actor.actor_prototype?.offense_elevation_value || 0,
+                    baseHP: actor.actor_prototype?.blood_base_value || 0,
+                    hpPerLevel: actor.actor_prototype?.blood_elevation_value || 0,
+                    maxLevel: actor.level_cap || getMaxLevel(actor),
+                    runeType: actor.no_weapon_name || '未知',
+                    passiveSkills: actor.passive_skills || [],
+                    biography: actor.actor_prototype?.description || `${actor.actor_prototype?.name || '未知'}的故事...`,
+                    headImage: actor.head_image || '',
+                    halfImage: actor.half_image || '',
+                    gifImage: actor.gif_image || '',
+                    activeSkill: actor.active_skill || null,
+                    talent1: actor.actor_prototype?.talent_1 || '',
+                    talent2: actor.actor_prototype?.talent_2 || ''
+                }));
+                
+                // 更新統計
+                updateStats();
+                
+                // 渲染角色
+                filterCharacters();
+            } catch (error) {
+                console.error('載入資料失敗:', error);
+                document.getElementById('charactersContainer').innerHTML = `
+                    <div class="alert alert-danger">
+                        載入角色資料失敗，請確認 cal_power/unique_actors.json 檔案存在
+                    </div>
+                `;
             }
-            
-            // 轉換資料格式
-            const characterNames = Object.keys(parsedActorsData);
-            
-            // 產生範例資料（實際應從完整 API 獲取）
-            charactersData = characterNames.map((name, index) => ({
-                id: index + 1,
-                name: name,
-                scarcity: getRandomScarcity(),
-                role: getRandomRole(),
-                nation: getRandomNation(),
-                maxLevel: getMaxLevel(parsedActorsData[name]),
-                biography: `${name} 的生平故事...`,
-                runeType: getRandomRuneType(),
-                baseATK: Math.floor(Math.random() * 100) + 50,
-                baseHP: Math.floor(Math.random() * 500) + 200,
-                atkPerLevel: Math.floor(Math.random() * 10) + 5,
-                hpPerLevel: Math.floor(Math.random() * 30) + 15,
-                passiveSkills: parsedActorsData[name]?.passive_skills || []
-            }));
-            
-            // 更新統計
-            updateStats();
-            
-            // 渲染角色
-            filterCharacters();
             
             // 綁定事件
             document.getElementById('characterSearch').addEventListener('input', debounce(filterCharacters, 300));
@@ -181,29 +189,6 @@
             document.getElementById('nationFilter').addEventListener('change', filterCharacters);
             document.getElementById('sortFilter').addEventListener('change', filterCharacters);
         });
-
-        // 輔助函數
-        function getRandomScarcity() {
-            const rand = Math.random();
-            if (rand < 0.5) return 'R';
-            if (rand < 0.85) return 'SR';
-            return 'SSR';
-        }
-
-        function getRandomRole() {
-            const roles = ['agitator', 'sponsor', 'spy', 'guerrilla'];
-            return roles[Math.floor(Math.random() * roles.length)];
-        }
-
-        function getRandomNation() {
-            const nations = [1, 2, 3, 4, 5, 6, 7, 8, 10];
-            return nations[Math.floor(Math.random() * nations.length)];
-        }
-
-        function getRandomRuneType() {
-            const types = ['攻擊型', '防禦型', '輔助型', '平衡型'];
-            return types[Math.floor(Math.random() * types.length)];
-        }
 
         function getMaxLevel(actorData) {
             if (!actorData?.passive_skills?.length) return 100;
@@ -272,9 +257,10 @@
                 <div class="grid grid-auto">
                     ${characters.map(char => `
                         <div class="card character-card" onclick="showCharacterDetail('${char.name}')" style="cursor: pointer;">
-                            <div class="card-header">
+                            <div class="card-header" style="display: flex; align-items: center; gap: 10px;">
+                                ${char.headImage ? `<img src="https://www.rf.newroadfound.com${char.headImage}" alt="${char.name}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" onerror="this.style.display='none'">` : ''}
                                 <span class="card-title">${char.name}</span>
-                                <span class="badge ${getScarcityClass(char.scarcity)}">${char.scarcity}</span>
+                                <span class="badge ${getScarcityClass(char.scarcity)}" style="margin-left: auto;">${char.scarcity}</span>
                             </div>
                             <div class="card-body">
                                 <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;">
@@ -283,8 +269,8 @@
                                 </div>
                                 <p><strong>最大等級：</strong>${char.maxLevel}</p>
                                 <p><strong>符文類型：</strong>${char.runeType}</p>
-                                <p><strong>基礎ATK：</strong>${char.baseATK} (+${char.atkPerLevel}/等)</p>
-                                <p><strong>基礎HP：</strong>${char.baseHP} (+${char.hpPerLevel}/等)</p>
+                                <p><strong>基礎ATK：</strong>${char.baseATK.toLocaleString()} (+${char.atkPerLevel}/等)</p>
+                                <p><strong>基礎HP：</strong>${char.baseHP.toLocaleString()} (+${char.hpPerLevel}/等)</p>
                             </div>
                         </div>
                     `).join('')}
@@ -330,17 +316,22 @@
                 <div style="margin-top: 25px;">
                     <h3 style="margin-bottom: 15px;">📈 等級數值計算</h3>
                     <div class="form-group">
-                        <label class="form-label">選擇等級：<span id="levelDisplay">1</span></label>
-                        <input type="range" id="levelSlider" min="1" max="${char.maxLevel}" value="1" 
-                               style="width: 100%;" onchange="updateCharStats(${char.baseATK}, ${char.atkPerLevel}, ${char.baseHP}, ${char.hpPerLevel})">
+                        <label class="form-label">輸入等級 (1 - ${char.maxLevel})：</label>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <input type="number" id="levelInput" min="1" max="${char.maxLevel}" value="1" 
+                                   class="form-control" style="width: 100px; text-align: center;"
+                                   oninput="updateCharStats(${char.baseATK}, ${char.atkPerLevel}, ${char.baseHP}, ${char.hpPerLevel}, ${char.maxLevel})">
+                            <input type="range" id="levelSlider" min="1" max="${char.maxLevel}" value="1" 
+                                   style="flex: 1;" oninput="syncLevelInput(this.value); updateCharStats(${char.baseATK}, ${char.atkPerLevel}, ${char.baseHP}, ${char.hpPerLevel}, ${char.maxLevel})">
+                        </div>
                     </div>
                     <div class="grid grid-2" style="gap: 15px;">
                         <div class="stat-box" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <div class="stat-value" id="calcATK">${char.baseATK}</div>
+                            <div class="stat-value" id="calcATK">${char.baseATK.toLocaleString()}</div>
                             <div class="stat-label">攻擊力 (ATK)</div>
                         </div>
                         <div class="stat-box" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <div class="stat-value" id="calcHP">${char.baseHP}</div>
+                            <div class="stat-value" id="calcHP">${char.baseHP.toLocaleString()}</div>
                             <div class="stat-label">生命值 (HP)</div>
                         </div>
                     </div>
@@ -348,17 +339,20 @@
             `;
             
             detail.innerHTML = `
-                <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
-                    <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em;">
-                        ${char.name.charAt(0)}
-                    </div>
+                <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 25px;">
+                    ${char.halfImage || char.gifImage ? 
+                        `<img src="https://www.rf.newroadfound.com${char.halfImage || char.gifImage}" alt="${char.name}" style="width: 120px; height: auto; border-radius: 10px; object-fit: contain;" onerror="this.outerHTML='<div style=\\'width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em;\\'>${char.name.charAt(0)}</div>'">` 
+                        : `<div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em;">${char.name.charAt(0)}</div>`
+                    }
                     <div>
                         <h2 style="color: var(--primary-color); margin-bottom: 5px;">${char.name}</h2>
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;">
                             <span class="badge ${getScarcityClass(char.scarcity)}">${char.scarcity}</span>
                             <span class="badge badge-primary">${getRoleName(char.role)}</span>
                             <span class="badge ${getNationClass(char.nation)}">${getNationName(char.nation)}</span>
                         </div>
+                        ${char.talent1 ? `<p style="margin: 5px 0; font-style: italic; color: var(--muted-text);">${char.talent1}</p>` : ''}
+                        ${char.talent2 ? `<p style="margin: 5px 0; font-weight: bold; color: var(--primary-color);">${char.talent2}</p>` : ''}
                     </div>
                 </div>
                 
@@ -385,10 +379,10 @@
                         
                         <h3 style="margin: 20px 0 15px;">⚔️ 基礎數值</h3>
                         <table class="table">
-                            <tr><th>基礎 ATK</th><td>${char.baseATK}</td></tr>
-                            <tr><th>每等 ATK</th><td>+${char.atkPerLevel}</td></tr>
-                            <tr><th>基礎 HP</th><td>${char.baseHP}</td></tr>
-                            <tr><th>每等 HP</th><td>+${char.hpPerLevel}</td></tr>
+                            <tr><th>基礎 ATK</th><td>${char.baseATK.toLocaleString()}</td></tr>
+                            <tr><th>每等 ATK</th><td>+${char.atkPerLevel.toLocaleString()}</td></tr>
+                            <tr><th>基礎 HP</th><td>${char.baseHP.toLocaleString()}</td></tr>
+                            <tr><th>每等 HP</th><td>+${char.hpPerLevel.toLocaleString()}</td></tr>
                         </table>
                     </div>
                 </div>
@@ -400,10 +394,28 @@
             modal.style.display = 'flex';
         }
 
+        // 同步等級輸入框與滑桿
+        function syncLevelInput(value) {
+            document.getElementById('levelInput').value = value;
+        }
+        
+        function syncLevelSlider(value) {
+            document.getElementById('levelSlider').value = value;
+        }
+
         // 更新等級數值
-        function updateCharStats(baseATK, atkPerLevel, baseHP, hpPerLevel) {
-            const level = parseInt(document.getElementById('levelSlider').value);
-            document.getElementById('levelDisplay').textContent = level;
+        function updateCharStats(baseATK, atkPerLevel, baseHP, hpPerLevel, maxLevel) {
+            const input = document.getElementById('levelInput');
+            let level = parseInt(input.value) || 1;
+            
+            // 限制範圍
+            if (level < 1) level = 1;
+            if (level > maxLevel) level = maxLevel;
+            
+            // 同步滑桿
+            syncLevelSlider(level);
+            input.value = level;
+            
             document.getElementById('calcATK').textContent = (baseATK + (level - 1) * atkPerLevel).toLocaleString();
             document.getElementById('calcHP').textContent = (baseHP + (level - 1) * hpPerLevel).toLocaleString();
         }

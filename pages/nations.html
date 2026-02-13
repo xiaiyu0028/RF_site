@@ -218,7 +218,9 @@
         // 從 JSON 載入資料
         async function loadNationsData() {
             try {
-                const response = await fetch('../return_data_example/nation.json');
+                // 加入時間戳避免快取問題
+                const timestamp = new Date().getTime();
+                const response = await fetch(`../return_data_example/nation.json?t=${timestamp}`);
                 const rawData = await response.json();
                 
                 // 解析 WebSocket 格式的 JSON
@@ -347,6 +349,169 @@
             loadNationsData();
         });
 
+        // 解析國策效果（從描述中提取數值）
+        function parseStrategyEffects(description) {
+            if (!description) return null;
+            
+            const effects = {
+                atkBoost: 0,        // 我方據點戰戰力增加
+                enemyReduction: 0,  // 敵方戰力減少
+                aidBoost: {},       // 本地援助增加（按來源）
+                moveTimeReduction: 0, // 移動時間減少
+                assemblyTimeReduction: 0, // 集結時間減少
+                classBoosts: {}     // 各職業加成
+            };
+            
+            // 解析我方戰力增加
+            const atkMatch = description.match(/我方(?:據點戰)?戰力增加(\d+)%/g);
+            if (atkMatch) {
+                atkMatch.forEach(m => {
+                    const val = m.match(/(\d+)%/);
+                    if (val) effects.atkBoost += parseInt(val[1]);
+                });
+            }
+            
+            // 解析敵方戰力減少
+            const defMatch = description.match(/敵方(?:據點戰)?戰力減少(\d+)%/g);
+            if (defMatch) {
+                defMatch.forEach(m => {
+                    const val = m.match(/(\d+)%/);
+                    if (val) effects.enemyReduction += parseInt(val[1]);
+                });
+            }
+            
+            // 解析本地援助增加
+            const aidMatch = description.match(/(.+?)本地援助增加(\d+)%/g);
+            if (aidMatch) {
+                aidMatch.forEach(m => {
+                    const parts = m.match(/(.+?)本地援助增加(\d+)%/);
+                    if (parts) {
+                        const source = parts[1].trim();
+                        effects.aidBoost[source] = (effects.aidBoost[source] || 0) + parseInt(parts[2]);
+                    }
+                });
+            }
+            
+            // 全地圖本地援助
+            const allAidMatch = description.match(/全地圖本地援助增加(\d+)%/g);
+            if (allAidMatch) {
+                allAidMatch.forEach(m => {
+                    const val = m.match(/(\d+)%/);
+                    if (val) effects.aidBoost['全地圖'] = (effects.aidBoost['全地圖'] || 0) + parseInt(val[1]);
+                });
+            }
+            
+            // 解析職業加成
+            const classTypes = ['游擊隊', '工兵', '醫療兵', '步兵', '狙擊手', '突擊隊', '砲兵', '宣傳家', '資助者', '間諜'];
+            classTypes.forEach(type => {
+                const regex = new RegExp(`${type}據點戰戰力增加(\\d+)%`, 'g');
+                const matches = description.match(regex);
+                if (matches) {
+                    matches.forEach(m => {
+                        const val = m.match(/(\d+)%/);
+                        if (val) effects.classBoosts[type] = (effects.classBoosts[type] || 0) + parseInt(val[1]);
+                    });
+                }
+            });
+            
+            // 解析時間減少
+            const moveMatch = description.match(/移動時間減少(\d+)%/);
+            if (moveMatch) effects.moveTimeReduction += parseInt(moveMatch[1]);
+            
+            const assemblyMatch = description.match(/集結時間減少(\d+)%/);
+            if (assemblyMatch) effects.assemblyTimeReduction += parseInt(assemblyMatch[1]);
+            
+            return effects;
+        }
+        
+        // 計算國家的總效果
+        function calculateTotalEffects(nation) {
+            const totalEffects = {
+                atkBoost: 0,
+                enemyReduction: 0,
+                aidBoost: {},
+                moveTimeReduction: 0,
+                assemblyTimeReduction: 0,
+                classBoosts: {}
+            };
+            
+            // 累加外交國策效果
+            if (nation.diplomaticStrategyDesc) {
+                const diplomatic = parseStrategyEffects(nation.diplomaticStrategyDesc);
+                if (diplomatic) {
+                    totalEffects.atkBoost += diplomatic.atkBoost;
+                    totalEffects.enemyReduction += diplomatic.enemyReduction;
+                    Object.keys(diplomatic.aidBoost).forEach(k => {
+                        totalEffects.aidBoost[k] = (totalEffects.aidBoost[k] || 0) + diplomatic.aidBoost[k];
+                    });
+                }
+            }
+            
+            // 累加通用國策效果
+            if (nation.selectedStrategies) {
+                nation.selectedStrategies.forEach(strategy => {
+                    const effects = parseStrategyEffects(strategy.description);
+                    if (effects) {
+                        totalEffects.atkBoost += effects.atkBoost;
+                        totalEffects.enemyReduction += effects.enemyReduction;
+                        totalEffects.moveTimeReduction += effects.moveTimeReduction;
+                        totalEffects.assemblyTimeReduction += effects.assemblyTimeReduction;
+                        Object.keys(effects.aidBoost).forEach(k => {
+                            totalEffects.aidBoost[k] = (totalEffects.aidBoost[k] || 0) + effects.aidBoost[k];
+                        });
+                        Object.keys(effects.classBoosts).forEach(k => {
+                            totalEffects.classBoosts[k] = (totalEffects.classBoosts[k] || 0) + effects.classBoosts[k];
+                        });
+                    }
+                });
+            }
+            
+            return totalEffects;
+        }
+        
+        // 生成效果統計表格 HTML
+        function generateEffectsTable(effects) {
+            const rows = [];
+            
+            if (effects.atkBoost > 0) {
+                rows.push(`<tr><td>🗡️ 我方據點戰戰力</td><td class="effect-atk">+${effects.atkBoost}%</td></tr>`);
+            }
+            if (effects.enemyReduction > 0) {
+                rows.push(`<tr><td>🛡️ 敵方戰力減少</td><td class="effect-def">-${effects.enemyReduction}%</td></tr>`);
+            }
+            if (effects.moveTimeReduction > 0) {
+                rows.push(`<tr><td>🏃 移動時間減少</td><td>-${effects.moveTimeReduction}%</td></tr>`);
+            }
+            if (effects.assemblyTimeReduction > 0) {
+                rows.push(`<tr><td>⏱️ 集結時間減少</td><td>-${effects.assemblyTimeReduction}%</td></tr>`);
+            }
+            
+            // 本地援助
+            Object.keys(effects.aidBoost).forEach(source => {
+                rows.push(`<tr><td>🤝 ${source}本地援助</td><td class="effect-aid">+${effects.aidBoost[source]}%</td></tr>`);
+            });
+            
+            // 職業加成（只顯示有加成的）
+            Object.keys(effects.classBoosts).forEach(classType => {
+                rows.push(`<tr><td>👤 ${classType}戰力</td><td>+${effects.classBoosts[classType]}%</td></tr>`);
+            });
+            
+            if (rows.length === 0) {
+                return '<p style="color: var(--muted-text); font-size: 0.9em;">未選取有效國策</p>';
+            }
+            
+            return `
+                <table class="table" style="font-size: 0.85em;">
+                    <thead>
+                        <tr><th>效果類型</th><th>數值</th></tr>
+                    </thead>
+                    <tbody>
+                        ${rows.join('')}
+                    </tbody>
+                </table>
+            `;
+        }
+
         // 篩選國家
         function filterNations() {
             const nationFilter = document.getElementById('nationFilter').value;
@@ -418,6 +583,13 @@
                                         </button>
                                     </div>
                                 ` : ''}
+                                
+                                <div class="strategy-card" style="margin-top: 10px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+                                    <h4>📊 目前生效國策加成統計</h4>
+                                    <div style="margin-top: 10px;">
+                                        ${generateEffectsTable(calculateTotalEffects(nation))}
+                                    </div>
+                                </div>
                                 
                                 <div style="margin: 15px 0;">
                                     <span class="badge ${nation.alliance === '反共陣營' ? 'badge-primary' : 'badge-danger'}">${nation.alliance || '未知聯盟'}</span>
