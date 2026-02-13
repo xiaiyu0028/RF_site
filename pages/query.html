@@ -195,77 +195,6 @@
                 </div>
             </div>
 
-            <!-- API 參考 -->
-            <div class="card" style="margin-top: 30px;">
-                <div class="card-header">
-                    <span class="card-title">📡 API 參考</span>
-                </div>
-                <div class="card-body">
-                    <p style="margin-bottom: 15px;">以下是各項查詢功能使用的 API 格式：</p>
-                    
-                    <div class="accordion">
-                        <div class="accordion-item">
-                            <button class="accordion-header" onclick="toggleAcc(this)">
-                                👤 角色查詢 API
-                            </button>
-                            <div class="accordion-body">
-                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
-["6","39","player:{玩家ID}","actors",{"body":""}]</pre>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item">
-                            <button class="accordion-header" onclick="toggleAcc(this)">
-                                📦 庫存查詢 API
-                            </button>
-                            <div class="accordion-body">
-                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
-["6","32","player:{玩家ID}","backpack",{}]</pre>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item">
-                            <button class="accordion-header" onclick="toggleAcc(this)">
-                                🎰 抽獎歷史 API
-                            </button>
-                            <div class="accordion-body">
-                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
-["6","37","player:{玩家ID}","used_recruit_coupons",{}]</pre>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item">
-                            <button class="accordion-header" onclick="toggleAcc(this)">
-                                💎 符文查詢 API
-                            </button>
-                            <div class="accordion-body">
-                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
-["6","18","player:{玩家ID}","weapon_prototypes",{}]</pre>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item">
-                            <button class="accordion-header" onclick="toggleAcc(this)">
-                                🏰 城鎮資訊 API
-                            </button>
-                            <div class="accordion-body">
-                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
-["6","15","player:{玩家ID}","cities",{"body":""}]</pre>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item">
-                            <button class="accordion-header" onclick="toggleAcc(this)">
-                                🏴 國策資訊 API
-                            </button>
-                            <div class="accordion-body">
-                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
-["6","14","player:{玩家ID}","nations",{"body":""}]</pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <footer class="footer">
@@ -275,11 +204,13 @@
 
     <script src="../js/app.js"></script>
     <script>
-        // API 設定
+        // API 設定（參考 get_union.py）
         const API_CONFIG = {
-            wsUrl: 'wss://rf.line.games/socket/websocket',
-            httpUrl: 'https://rf.line.games',
-            timeout: 30000
+            apiBase: 'https://api.komisureiya.com/api',
+            wsBase: 'wss://api.komisureiya.com/socket/websocket',
+            timeout: 30000,
+            appVersion: '2.28',
+            key: 'rfront2023'
         };
 
         // 狀態
@@ -380,7 +311,7 @@
                     showLoggedInState(`玩家 ID: ${currentPlayerId}`, false);
                     
                     // 查詢各項資料
-                    await fetchAllData(loginResult.token);
+                    await fetchAllData();
                     
                     // 初始化分頁
                     initTabs();
@@ -416,60 +347,101 @@
             }
         }
 
-        // 嘗試登入
-        async function attemptLogin(email, password) {
-            return new Promise((resolve, reject) => {
+        // Step 1: HTTP 登入取得 token
+        async function httpLogin(email, password) {
+            const loginUrl = `${API_CONFIG.apiBase}/users/log_in`;
+            
+            const formData = new URLSearchParams();
+            formData.append('user[email]', email);
+            formData.append('user[password]', password);
+            formData.append('locale', 'zh_TW');
+            formData.append('key', API_CONFIG.key);
+            formData.append('app_version', API_CONFIG.appVersion);
+            
+            try {
+                const response = await fetch(loginUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: formData.toString()
+                });
+                
+                const data = await response.json();
+                
+                if (data.status === 'ok' && data.data) {
+                    return {
+                        success: true,
+                        userToken: data.data.user_token,
+                        userId: data.data.user_id
+                    };
+                } else {
+                    return {
+                        success: false,
+                        error: data.message || '登入失敗'
+                    };
+                }
+            } catch (error) {
+                return {
+                    success: false,
+                    error: `HTTP 請求失敗: ${error.message}`
+                };
+            }
+        }
+
+        // Step 2: WebSocket 連接
+        async function connectWebSocket(userToken, userId) {
+            return new Promise((resolve) => {
                 try {
-                    // 嘗試 WebSocket 連接
-                    const ws = new WebSocket(API_CONFIG.wsUrl);
+                    const wsUrl = `${API_CONFIG.wsBase}?userToken=${userToken}&locale=zh_TW&vsn=2.0.0`;
+                    const ws = new WebSocket(wsUrl);
                     
                     const timeout = setTimeout(() => {
                         ws.close();
-                        resolve({ success: false, error: '連接逾時' });
+                        resolve({ success: false, error: 'WebSocket 連接逾時' });
                     }, API_CONFIG.timeout);
                     
                     ws.onopen = function() {
-                        // 發送登入請求
-                        const loginMsg = JSON.stringify({
-                            topic: "player:login",
-                            event: "phx_join",
-                            payload: {
-                                email: email,
-                                password: password
-                            },
-                            ref: "1"
-                        });
-                        ws.send(loginMsg);
+                        console.log('✅ WebSocket 已連線');
+                        
+                        // 發送 phx_join 加入頻道
+                        const joinMsg = ["6", "6", `player:${userId}`, "phx_join", {"fake": "ChannelPlayer", "fake2": 1}];
+                        ws.send(JSON.stringify(joinMsg));
+                        console.log('➡️ 發送 phx_join:', joinMsg);
                     };
                     
                     ws.onmessage = function(event) {
-                        clearTimeout(timeout);
                         try {
                             const data = JSON.parse(event.data);
-                            if (data.payload && data.payload.player_id) {
+                            console.log('⬅️ 收到訊息:', data);
+                            
+                            // 檢查 phx_join 回應
+                            if (data[3] === 'phx_reply' && data[4]?.status === 'ok') {
+                                clearTimeout(timeout);
                                 wsConnection = ws;
+                                currentPlayerId = userId;
                                 resolve({
                                     success: true,
-                                    playerId: data.payload.player_id,
-                                    token: data.payload.token || ''
+                                    playerId: userId
                                 });
-                            } else if (data.payload && data.payload.error) {
+                            } else if (data[4]?.status === 'error') {
+                                clearTimeout(timeout);
                                 ws.close();
-                                resolve({ success: false, error: data.payload.error });
+                                resolve({ success: false, error: data[4]?.response?.reason || 'Join 失敗' });
                             }
                         } catch (e) {
-                            ws.close();
-                            resolve({ success: false, error: '回應解析失敗' });
+                            console.error('解析訊息失敗:', e);
                         }
                     };
                     
                     ws.onerror = function(error) {
                         clearTimeout(timeout);
+                        console.error('WebSocket 錯誤:', error);
                         resolve({ success: false, error: 'WebSocket 連接失敗 (可能是 CORS 限制)' });
                     };
                     
                     ws.onclose = function() {
-                        clearTimeout(timeout);
+                        console.log('WebSocket 已關閉');
                     };
                     
                 } catch (error) {
@@ -478,32 +450,60 @@
             });
         }
 
-        // 發送 API 請求
-        function sendApiRequest(topic, event, payload) {
+        // 嘗試登入（整合 HTTP + WebSocket）
+        async function attemptLogin(email, password) {
+            // Step 1: HTTP 登入
+            showLoadingState('正在登入...');
+            const loginResult = await httpLogin(email, password);
+            
+            if (!loginResult.success) {
+                return loginResult;
+            }
+            
+            console.log('✅ HTTP 登入成功, token:', loginResult.userToken);
+            console.log('✅ user_id:', loginResult.userId);
+            
+            // Step 2: WebSocket 連接
+            showLoadingState('正在建立連線...');
+            const wsResult = await connectWebSocket(loginResult.userToken, loginResult.userId);
+            
+            return wsResult;
+        }
+
+        // 發送 API 請求（Phoenix 格式: [join_ref, ref, topic, event, payload]）
+        let messageRef = 10;
+        
+        function sendApiRequest(event, payload = {}) {
             return new Promise((resolve, reject) => {
                 if (!wsConnection || wsConnection.readyState !== WebSocket.OPEN) {
                     reject(new Error('WebSocket 未連接'));
                     return;
                 }
                 
-                const msg = JSON.stringify({
-                    topic: `player:${currentPlayerId}`,
-                    event: event,
-                    payload: payload,
-                    ref: Date.now().toString()
-                });
+                const ref = String(++messageRef);
+                const topic = `player:${currentPlayerId}`;
+                const msg = ["6", ref, topic, event, payload];
+                
+                console.log('➡️ 發送請求:', msg);
                 
                 const timeout = setTimeout(() => {
+                    wsConnection.removeEventListener('message', handler);
                     reject(new Error('請求逾時'));
                 }, 15000);
                 
                 const handler = function(e) {
                     try {
                         const data = JSON.parse(e.data);
-                        if (data.event === 'phx_reply') {
+                        // Phoenix 格式回應: [join_ref, ref, topic, "phx_reply", {status, response}]
+                        if (data[1] === ref && data[3] === 'phx_reply') {
                             clearTimeout(timeout);
                             wsConnection.removeEventListener('message', handler);
-                            resolve(data.payload.response);
+                            
+                            if (data[4]?.status === 'ok') {
+                                resolve(data[4]?.response || {});
+                            } else {
+                                reject(new Error(data[4]?.response?.reason || '請求失敗'));
+                            }
                         }
                     } catch (err) {
                         // 繼續等待
@@ -511,17 +511,34 @@
                 };
                 
                 wsConnection.addEventListener('message', handler);
-                wsConnection.send(msg);
+                wsConnection.send(JSON.stringify(msg));
             });
+        }
+        
+        // 啟動心跳
+        let heartbeatInterval = null;
+        function startHeartbeat() {
+            if (heartbeatInterval) clearInterval(heartbeatInterval);
+            
+            heartbeatInterval = setInterval(() => {
+                if (wsConnection && wsConnection.readyState === WebSocket.OPEN) {
+                    const heartbeat = [null, String(++messageRef), "phoenix", "heartbeat", {}];
+                    wsConnection.send(JSON.stringify(heartbeat));
+                    console.log('❤️ 心跳發送');
+                }
+            }, 20000);
         }
 
         // 查詢所有資料
-        async function fetchAllData(token) {
+        async function fetchAllData() {
+            // 啟動心跳
+            startHeartbeat();
+            
             showLoadingState('正在查詢角色資料...');
             
             try {
                 // 查詢角色
-                const actorsData = await sendApiRequest('actors', 'actors', { body: '' });
+                const actorsData = await sendApiRequest('actors', { body: '' });
                 if (actorsData && actorsData.actors) {
                     ownedActors = actorsData.actors;
                     loadOwnedCharacters(ownedActors.map(a => ({
@@ -532,11 +549,15 @@
                         equipped: a.weapon_prototype?.name || '無'
                     })));
                 }
-                
-                showLoadingState('正在查詢庫存資料...');
-                
+            } catch (e) {
+                console.error('角色查詢失敗:', e);
+            }
+            
+            showLoadingState('正在查詢庫存資料...');
+            
+            try {
                 // 查詢背包
-                const backpackData = await sendApiRequest('backpack', 'backpack', {});
+                const backpackData = await sendApiRequest('backpack', {});
                 if (backpackData && backpackData.items) {
                     inventoryItems = backpackData.items;
                     loadInventory(inventoryItems.map(i => ({
@@ -545,11 +566,15 @@
                         category: i.item_type || 'other'
                     })));
                 }
-                
-                showLoadingState('正在查詢符文資料...');
-                
+            } catch (e) {
+                console.error('庫存查詢失敗:', e);
+            }
+            
+            showLoadingState('正在查詢符文資料...');
+            
+            try {
                 // 查詢符文
-                const runesResult = await sendApiRequest('weapon_prototypes', 'weapon_prototypes', {});
+                const runesResult = await sendApiRequest('weapon_prototypes', {});
                 if (runesResult && runesResult.weapon_prototypes) {
                     runesData = runesResult.weapon_prototypes;
                     loadRunes(runesData.map(r => ({
@@ -559,11 +584,15 @@
                         stats: r.description || '-'
                     })));
                 }
-                
-                showLoadingState('正在查詢抽獎歷史...');
-                
+            } catch (e) {
+                console.error('符文查詢失敗:', e);
+            }
+            
+            showLoadingState('正在查詢抽獎歷史...');
+            
+            try {
                 // 查詢抽獎歷史
-                const gachaResult = await sendApiRequest('used_recruit_coupons', 'used_recruit_coupons', {});
+                const gachaResult = await sendApiRequest('used_recruit_coupons', {});
                 if (gachaResult && gachaResult.records) {
                     gachaHistory = gachaResult.records;
                     loadGachaHistory(gachaHistory.map(g => ({
@@ -573,10 +602,8 @@
                         pool: g.pool_name || '-'
                     })));
                 }
-                
-            } catch (error) {
-                console.error('資料查詢失敗:', error);
-                // 如果某些查詢失敗，顯示已取得的資料
+            } catch (e) {
+                console.error('抽獎歷史查詢失敗:', e);
             }
         }
 
@@ -745,13 +772,6 @@
                     </table>
                 </div>
             `;
-        }
-
-        // 摺疊面板切換
-        function toggleAcc(header) {
-            header.classList.toggle('active');
-            const body = header.nextElementSibling;
-            body.classList.toggle('active');
         }
     </script>
 </body>

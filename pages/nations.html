@@ -391,7 +391,7 @@
                     ${nations.map(nation => `
                         <div class="card nation-card">
                             <div class="nation-header" style="background: ${nation.color}; ${nation.color === '#ffffff' || nation.color === '#fcb900' || nation.color === '#00e9e4' ? 'color: #333;' : ''}">
-                                ${nation.icon ? `<img src="${nation.icon}" alt="${nation.name}" style="width: 48px; height: 48px; margin-bottom: 10px;">` : ''}
+                                ${nation.icon ? `<img src="${getAssetPath(nation.icon)}" alt="${nation.name}" style="width: 48px; height: 48px; margin-bottom: 10px;">` : ''}
                                 <h3>${nation.name}</h3>
                                 <div class="subtitle">${nation.subtitle}</div>
                             </div>
@@ -517,7 +517,7 @@
             tbody.innerHTML = diplomaticStrategies.map(strategy => `
                 <tr>
                     <td>
-                        ${strategy.image ? `<img src="${strategy.image}" alt="${strategy.name}" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">` : ''}
+                        ${strategy.image ? `<img src="${getAssetPath(strategy.image)}" alt="${strategy.name}" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">` : ''}
                         <strong>${strategy.name}</strong>
                     </td>
                     <td>${strategy.description}</td>
@@ -535,7 +535,7 @@
             accordion.innerHTML = generalStrategies.map(strategy => `
                 <div class="accordion-item">
                     <button class="accordion-header" onclick="toggleStrategyAccordion(this)">
-                        ${strategy.image ? `<img src="${strategy.image}" alt="${strategy.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">` : ''}
+                        ${strategy.image ? `<img src="${getAssetPath(strategy.image)}" alt="${strategy.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">` : ''}
                         <strong>${strategy.name}</strong> - ${(strategy.description || '').replace(/<br\/?>/g, ' | ')}
                     </button>
                     <div class="accordion-body">

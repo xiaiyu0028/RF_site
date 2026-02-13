@@ -1,5 +1,52 @@
 // RF 攻略網站 - 共用 JavaScript
 
+// 深色模式功能
+function initTheme() {
+    // 檢查本地存儲的主題偏好
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (prefersDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    
+    // 創建切換按鈕
+    createThemeToggle();
+}
+
+function createThemeToggle() {
+    const toggle = document.createElement('button');
+    toggle.className = 'theme-toggle';
+    toggle.setAttribute('aria-label', '切換深色模式');
+    toggle.innerHTML = getThemeIcon();
+    toggle.onclick = toggleTheme;
+    document.body.appendChild(toggle);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // 更新按鈕圖標
+    const toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+        toggle.innerHTML = getThemeIcon();
+    }
+}
+
+function getThemeIcon() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    return isDark ? '☀️' : '🌙';
+}
+
+// 頁面載入時初始化主題
+document.addEventListener('DOMContentLoaded', initTheme);
+
 // 導航欄切換
 function toggleMenu() {
     const menu = document.getElementById('navMenu');
@@ -111,6 +158,49 @@ async function loadJSON(path) {
         console.error('載入 JSON 失敗:', error);
         return null;
     }
+}
+
+// 圖片路徑轉換（將遊戲 API 路徑轉為本地路徑）
+// /images/... -> ../passionfruit/images/... (從 pages/ 目錄存取)
+// /audio/... -> ../passionfruit/audio/...
+function getAssetPath(originalPath) {
+    if (!originalPath) return '';
+    
+    // 如果已經是正確的相對路徑，直接返回
+    if (originalPath.startsWith('../passionfruit/') || originalPath.startsWith('./passionfruit/')) {
+        return originalPath;
+    }
+    
+    // 轉換 /images/, /audio/, /video/ 開頭的路徑
+    if (originalPath.startsWith('/images/')) {
+        return '../passionfruit' + originalPath;
+    }
+    if (originalPath.startsWith('/audio/')) {
+        return '../passionfruit' + originalPath;
+    }
+    if (originalPath.startsWith('/video/')) {
+        return '../passionfruit' + originalPath;
+    }
+    
+    // 其他情況直接返回原始路徑
+    return originalPath;
+}
+
+// 從根目錄存取的圖片路徑（用於 index.html）
+function getAssetPathFromRoot(originalPath) {
+    if (!originalPath) return '';
+    
+    if (originalPath.startsWith('/images/')) {
+        return 'passionfruit' + originalPath;
+    }
+    if (originalPath.startsWith('/audio/')) {
+        return 'passionfruit' + originalPath;
+    }
+    if (originalPath.startsWith('/video/')) {
+        return 'passionfruit' + originalPath;
+    }
+    
+    return originalPath;
 }
 
 // 顯示載入中

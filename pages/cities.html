@@ -250,7 +250,7 @@
                                     ${spoil.items.map(item => `
                                         <tr>
                                             <td>
-                                                ${item.image_url ? `<img src="${item.image_url}" alt="${item.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">` : ''}
+                                                ${item.image_url ? `<img src="${getAssetPath(item.image_url)}" alt="${item.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">` : ''}
                                                 ${item.name}
                                             </td>
                                             <td>${item.quantity || '-'}</td>
