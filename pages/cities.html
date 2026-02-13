@@ -387,17 +387,20 @@
         // 以主權名稱取得顏色 class
         function getSovereignClass(name) {
             const classes = {
-                '人民共和國(紅軍)': 'faction-red',
-                '紅軍': 'faction-red',
-                '臺灣': 'faction-taiwan',
-                '日本皇國': 'faction-hongkong',
-                '印度支那聯盟': 'faction-tibet',
-                '哈里發聯盟': 'faction-uyghur',
-                '大韓邦聯': 'faction-kazakh',
-                '努山達拉聯盟': 'faction-manchuria',
-                '婆羅多聯盟': 'faction-mongolia',
-                '盎格魯國協': 'faction-free',
-                '歐羅巴聯盟': 'faction-rebel'
+                '人民共和國': 'sovereign-people',
+                '人民共和國(紅軍)': 'sovereign-people',
+                '紅軍': 'sovereign-people',
+                '臺灣': 'sovereign-taiwan',
+                '台灣': 'sovereign-taiwan',
+                '日本皇國': 'sovereign-japan',
+                '印度支那聯盟': 'sovereign-indochina',
+                '哈里發聯盟': 'sovereign-caliphate',
+                '大韓邦聯': 'sovereign-korea',
+                '努山達拉聯盟': 'sovereign-nusantara',
+                '婆羅多聯盟': 'sovereign-bharata',
+                '盎格魯國協': 'sovereign-anglo',
+                '歐羅巴聯盟': 'sovereign-europa',
+                '大北方國協': 'sovereign-northern'
             };
             return classes[name] || '';
         }

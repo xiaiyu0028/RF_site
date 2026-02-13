@@ -385,6 +385,19 @@ select.form-control {
 .faction-free { background: #6c757d; color: white; }
 .faction-rebel { background: #ffffff; color: var(--dark-text); border: 1px solid var(--border-color); }
 
+/* 主權顏色 */
+.sovereign-people { background: #e53935; color: white; }
+.sovereign-taiwan { background: #1f2a5a; color: white; }
+.sovereign-japan { background: #f58bb0; color: white; }
+.sovereign-indochina { background: #f5c400; color: #1f1f1f; }
+.sovereign-caliphate { background: #2eae4e; color: white; }
+.sovereign-korea { background: #8b8f97; color: white; }
+.sovereign-nusantara { background: #f6dd8a; color: #1f1f1f; }
+.sovereign-bharata { background: #f28c28; color: white; }
+.sovereign-anglo { background: #7b4ce2; color: white; }
+.sovereign-europa { background: #1e88e5; color: white; }
+.sovereign-northern { background: #5cc6ff; color: #1f1f1f; }
+
 /* 搜尋框 */
 .search-box {
     position: relative;
