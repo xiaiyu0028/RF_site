@@ -365,21 +365,26 @@
             if (char.passiveSkills && char.passiveSkills.length > 0) {
                 skillsTable = `
                     <div style="margin-top: 25px;">
-                        <h3 style="margin-bottom: 15px;">📊 天賦表</h3>
-                        <div class="table-container">
-                            <table class="table">
-                                <thead>
-                                    <tr><th>等級</th><th>被動技能效果</th></tr>
-                                </thead>
-                                <tbody>
-                                    ${char.passiveSkills.map(skill => `
-                                        <tr>
-                                            <td><strong>Lv.${skill.level}</strong></td>
-                                            <td>${skill.description}</td>
-                                        </tr>
-                                    `).join('')}
-                                </tbody>
-                            </table>
+                        <div class="gallery-toggle" onclick="toggleSkillsTable()">
+                            <h3 style="margin: 0;">📊 天賦表 <span style="font-size: 0.7em; font-weight: normal; color: var(--muted-text);">(${char.passiveSkills.length} 項技能)</span></h3>
+                            <span class="gallery-arrow" id="skillsArrow">▼</span>
+                        </div>
+                        <div id="skillsTableContent" style="display: none; animation: slideDown 0.3s ease;">
+                            <div class="table-container" style="margin-top: 10px;">
+                                <table class="table">
+                                    <thead>
+                                        <tr><th>等級</th><th>被動技能效果</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        ${char.passiveSkills.map(skill => `
+                                            <tr>
+                                                <td><strong>Lv.${skill.level}</strong></td>
+                                                <td>${skill.description}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -544,6 +549,19 @@
                     </div>
                 </div>
             `;
+        }
+
+        // 展開/收起天賦表
+        function toggleSkillsTable() {
+            const content = document.getElementById('skillsTableContent');
+            const arrow = document.getElementById('skillsArrow');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▲';
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▼';
+            }
         }
 
         // 展開/收起圖片畫廊

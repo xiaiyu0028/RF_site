@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -156,13 +157,14 @@
             .actor-selection {
                 grid-template-columns: 1fr;
             }
-            
+
             .results-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- 導航欄 -->
     <nav class="navbar">
@@ -240,19 +242,19 @@
                     // 如果沒有，嘗試載入 parsed_actors.json
                     response = await fetch(`../cal_power/parsed_actors.json?t=${timestamp}`);
                 }
-                
+
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                
+
                 parsedActors = await response.json();
                 actorNames = Object.keys(parsedActors).sort((a, b) => a.localeCompare(b, 'zh-TW'));
                 console.log(`載入 ${actorNames.length} 個角色資料`);
-                
+
                 // 自動新增第一個角色選擇
                 addActorSelection();
                 updateActorCount();
-                
+
             } catch (error) {
                 console.error('載入角色資料失敗:', error);
                 document.getElementById('results').innerHTML = `
@@ -283,7 +285,7 @@
 
             const container = document.getElementById('actors-container');
             const id = actorCount++;
-            
+
             const div = document.createElement('div');
             div.className = 'actor-selection';
             div.id = `actor-${id}`;
@@ -306,17 +308,19 @@
                 <div class="actor-input-group">
                     <label>武器</label>
                     <select class="form-control" id="weapon-${id}">
-                        <option value="原初">原初</option>
+                        <option value="無符文">無符文</option>
+                        <option value="原初" selected>原初</option>
                         <option value="強化">強化</option>
                         <option value="高等">高等</option>
                         <option value="限定">限定</option>
                         <option value="排名">排名</option>
                         <option value="庚子">庚子</option>
+                        <option value="保定">保定</option>
                     </select>
                 </div>
                 <button class="remove-btn" onclick="removeActorSelection(${id})" title="移除角色">✖</button>
             `;
-            
+
             container.appendChild(div);
             updateActorCount();
         }
@@ -335,7 +339,7 @@
             const select = document.getElementById(`actor-select-${id}`);
             const actorName = select.value;
             const scarcityDiv = document.getElementById(`scarcity-${id}`);
-            
+
             if (actorName && parsedActors[actorName]) {
                 const scarcity = parsedActors[actorName].scarcity || 'R';
                 scarcityDiv.textContent = scarcity;
@@ -358,7 +362,7 @@
                 category: {},
                 nation: {}
             };
-            
+
             // 初始化類別和國家效果
             actors.forEach(actor => {
                 if (!actor.name || !parsedActors[actor.name]) return;
@@ -370,19 +374,19 @@
                     totalEffects.nation[actorData.nation] = { atk: 0, def: 0, hp: 0 };
                 }
             });
-            
+
             // 計算效果
             actors.forEach(actor => {
                 if (!actor.name || !parsedActors[actor.name]) return;
-                
+
                 const actorData = parsedActors[actor.name];
                 const passiveSkills = actorData.parsed_passive_skills;
-                
+
                 if (!passiveSkills) return;
-                
+
                 const activeLevel = floorTo10(actor.level);
                 const activeEffect = passiveSkills[String(activeLevel)] || {};
-                
+
                 if (activeEffect.category) {
                     Object.keys(activeEffect.category).forEach(cat => {
                         if (!totalEffects.category[cat]) {
@@ -393,7 +397,7 @@
                         });
                     });
                 }
-                
+
                 if (activeEffect.nation) {
                     Object.keys(activeEffect.nation).forEach(nat => {
                         if (!totalEffects.nation[nat]) {
@@ -405,7 +409,7 @@
                     });
                 }
             });
-            
+
             return totalEffects;
         }
 
@@ -416,16 +420,18 @@
                 'SR': 1.2,
                 'SSR': 1.4
             };
-            
+
             const weaponMultiplier = {
-                '原初': 1.0,
+                '無符文': 1.0,
+                '原初': 1.7,
                 '強化': 2.1,
                 '高等': 5.0,
                 '限定': 2.5,
                 '排名': 7.0,
-                '庚子': 8.0
+                '庚子': 8.0,
+                '保定': 10.0
             };
-            
+
             // 稀有度等級上限
             if (scarcity === 'R') level = Math.min(level, 90);
             else if (scarcity === 'SR') level = Math.min(level, 160);
@@ -436,8 +442,8 @@
             const atkBonus = effects.atk || 0;
             const defBonus = effects.def || 0;
             const hpBonus = effects.hp || 0;
-            
-            const totalPower = level * multiplier * weaponMult * (1 + ((1 + (atkBonus/100 + hpBonus/100)) * (1 + defBonus/100) - 1) * 0.2) / 10 + 4;
+
+            const totalPower = level * multiplier * weaponMult * (1 + ((1 + (atkBonus / 100 + hpBonus / 100)) * (1 + defBonus / 100) - 1) * 0.2) / 10 + 4;
             return totalPower;
         }
 
@@ -450,23 +456,23 @@
                     <p style="margin-top: 15px;">計算中...</p>
                 </div>
             `;
-            
+
             setTimeout(() => {
                 try {
                     // 收集所有選擇的角色
                     const actors = [];
                     const actorElements = document.querySelectorAll('.actor-selection');
-                    
+
                     actorElements.forEach((element) => {
                         const id = element.id.split('-')[1];
                         const selectElement = document.getElementById(`actor-select-${id}`);
                         const levelElement = document.getElementById(`level-${id}`);
                         const weaponElement = document.getElementById(`weapon-${id}`);
-                        
+
                         const name = selectElement ? selectElement.value.trim() : '';
                         const level = parseInt(levelElement?.value) || 160;
                         const weapon = weaponElement ? weaponElement.value : '原初';
-                        
+
                         if (name && parsedActors[name]) {
                             actors.push({
                                 name: name,
@@ -476,7 +482,7 @@
                             });
                         }
                     });
-                    
+
                     if (actors.length === 0) {
                         resultsDiv.innerHTML = `
                             <div class="alert alert-warning">
@@ -485,52 +491,52 @@
                         `;
                         return;
                     }
-                    
+
                     // 計算所有被動效果
                     const totalEffects = calculatePassive(actors);
-                    
+
                     // 計算每個角色的戰力
                     let html = '';
                     let totalPowerSum = 0;
-                    
+
                     actors.forEach(actor => {
                         const actorData = parsedActors[actor.name];
                         const selfEffects = { atk: 0, def: 0, hp: 0 };
-                        
+
                         // 獲取自身被動效果
                         const passiveSkills = actorData.parsed_passive_skills;
                         const effLevel = floorTo10(actor.level);
-                        
+
                         if (passiveSkills) {
                             const activeEffect = passiveSkills[String(effLevel)] || {};
-                            
+
                             if (activeEffect.self) {
                                 ['atk', 'def', 'hp'].forEach(stat => {
                                     selfEffects[stat] += activeEffect.self[stat] || 0;
                                 });
                             }
                         }
-                        
+
                         // 加上陣營和國家效果
                         const actorCategory = actorData.actor_category || '未知';
                         const actorNation = actorData.nation || '未知';
-                        
+
                         if (totalEffects.category[actorCategory]) {
                             ['atk', 'def', 'hp'].forEach(stat => {
                                 selfEffects[stat] += totalEffects.category[actorCategory][stat] || 0;
                             });
                         }
-                        
+
                         if (totalEffects.nation[actorNation]) {
                             ['atk', 'def', 'hp'].forEach(stat => {
                                 selfEffects[stat] += totalEffects.nation[actorNation][stat] || 0;
                             });
                         }
-                        
+
                         // 計算戰力
                         const power = calculatePower(selfEffects, actor.scarcity, actor.level, actor.weapon);
                         totalPowerSum += power;
-                        
+
                         html += `
                             <div class="actor-card">
                                 <h3>
@@ -564,7 +570,7 @@
                             </div>
                         `;
                     });
-                    
+
                     // 顯示總戰力
                     const summaryHtml = `
                         <div class="summary">
@@ -573,9 +579,9 @@
                             <div style="margin-top: 10px;">已選擇 ${actors.length} 個角色</div>
                         </div>
                     `;
-                    
+
                     resultsDiv.innerHTML = summaryHtml + '<div class="results-grid">' + html + '</div>';
-                    
+
                 } catch (error) {
                     console.error('計算錯誤:', error);
                     resultsDiv.innerHTML = `
@@ -591,4 +597,5 @@
         window.addEventListener('DOMContentLoaded', loadActorData);
     </script>
 </body>
+
 </html>
