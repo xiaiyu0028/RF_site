@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RF 戰力計算器 - 自由編隊計算角色與隊伍戰力">
+    <title>戰力計算器 - RF 攻略網站</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .actor-selection {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr auto;
+            gap: 15px;
+            align-items: end;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .actor-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .actor-input-group label {
+            font-weight: bold;
+            color: var(--dark-text);
+            font-size: 0.9em;
+        }
+
+        .scarcity-display {
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            min-height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .remove-btn {
+            background: var(--danger-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.2em;
+        }
+
+        .remove-btn:hover {
+            background: #c82333;
+        }
+
+        .results-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+
+        .actor-card {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+            box-shadow: var(--card-shadow);
+        }
+
+        .actor-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .actor-card .level-info {
+            font-size: 0.85em;
+            color: var(--muted-text);
+            margin-bottom: 15px;
+        }
+
+        .effects-section {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .effects-section h4 {
+            color: var(--dark-text);
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .effect-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            color: var(--muted-text);
+        }
+
+        .effect-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+
+        .power-result {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .summary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .summary h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .summary .total-power {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .btn-add {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .btn-calculate {
+            width: 100%;
+            margin-top: 20px;
+            padding: 18px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .actor-selection {
+                grid-template-columns: 1fr;
+            }
+            
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                ⚔️ RF 攻略網站
+            </a>
+            <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="cities.html">城鎮資訊</a></li>
+                <li><a href="characters.html">角色資訊</a></li>
+                <li><a href="calculator.html" class="active">戰力計算器</a></li>
+                <li><a href="guide.html">新手教學</a></li>
+                <li><a href="query.html">查詢功能</a></li>
+                <li><a href="nations.html">國策資訊</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h1>⚔️ 戰力計算器</h1>
+                <p>自由編隊計算角色與隊伍戰力，規劃最強陣容</p>
+            </div>
+
+            <!-- 使用說明 -->
+            <div class="alert alert-info" style="margin-bottom: 25px;">
+                <strong>💡 使用說明：</strong>
+                選擇角色、設定等級與武器，點擊「計算戰力」即可查看每個角色的戰力以及隊伍總戰力。
+                被動技能會自動計算對整個隊伍的加成效果。
+            </div>
+
+            <!-- 控制面板 -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🎮 角色編隊</span>
+                    <span class="badge badge-primary" id="actorCountBadge">0 個角色</span>
+                </div>
+                <div class="card-body">
+                    <div id="actors-container"></div>
+                    <button class="btn btn-primary btn-add" onclick="addActorSelection()">
+                        ➕ 新增角色
+                    </button>
+                    <button class="btn btn-secondary btn-calculate" onclick="calculateAllPowers()">
+                        🔥 計算戰力
+                    </button>
+                </div>
+            </div>
+
+            <!-- 結果區域 -->
+            <div id="results" style="margin-top: 30px;"></div>
+        </div>
+
+        <footer class="footer">
+            <p>RF 攻略網站 | 使用 GitHub Pages 建置</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        let parsedActors = null;
+        let actorNames = [];
+        let actorCount = 0;
+
+        // 載入角色資料
+        async function loadActorData() {
+            try {
+                // 嘗試載入 parsed_actors_skill.json（包含解析後的被動技能）
+                let response = await fetch('../cal_power/parsed_actors_skill.json');
+                if (!response.ok) {
+                    // 如果沒有，嘗試載入 parsed_actors.json
+                    response = await fetch('../cal_power/parsed_actors.json');
+                }
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                parsedActors = await response.json();
+                actorNames = Object.keys(parsedActors).sort((a, b) => a.localeCompare(b, 'zh-TW'));
+                console.log(`載入 ${actorNames.length} 個角色資料`);
+                
+                // 自動新增第一個角色選擇
+                addActorSelection();
+                updateActorCount();
+                
+            } catch (error) {
+                console.error('載入角色資料失敗:', error);
+                document.getElementById('results').innerHTML = `
+                    <div class="alert alert-danger">
+                        <strong>⚠️ 無法載入角色資料</strong><br><br>
+                        請確認 cal_power 資料夾中存在角色資料檔案。<br>
+                        如果是透過本地開啟，請使用 HTTP 伺服器：<br>
+                        <code style="display: block; margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 4px;">
+                            python -m http.server 8000
+                        </code>
+                    </div>
+                `;
+            }
+        }
+
+        // 更新角色數量顯示
+        function updateActorCount() {
+            const count = document.querySelectorAll('.actor-selection').length;
+            document.getElementById('actorCountBadge').textContent = `${count} 個角色`;
+        }
+
+        // 新增角色選擇區塊
+        function addActorSelection() {
+            if (!parsedActors) {
+                alert('角色資料尚未載入完成');
+                return;
+            }
+
+            const container = document.getElementById('actors-container');
+            const id = actorCount++;
+            
+            const div = document.createElement('div');
+            div.className = 'actor-selection';
+            div.id = `actor-${id}`;
+            div.innerHTML = `
+                <div class="actor-input-group">
+                    <label>角色名稱</label>
+                    <select class="form-control" id="actor-select-${id}" onchange="updateActorInfo(${id})">
+                        <option value="">-- 請選擇角色 --</option>
+                        ${actorNames.map(name => `<option value="${name}">${name}</option>`).join('')}
+                    </select>
+                </div>
+                <div class="actor-input-group">
+                    <label>稀有度</label>
+                    <div class="scarcity-display" id="scarcity-${id}">-</div>
+                </div>
+                <div class="actor-input-group">
+                    <label>等級</label>
+                    <input type="number" class="form-control" id="level-${id}" min="1" max="300" value="160" placeholder="等級">
+                </div>
+                <div class="actor-input-group">
+                    <label>武器</label>
+                    <select class="form-control" id="weapon-${id}">
+                        <option value="原初">原初</option>
+                        <option value="強化">強化</option>
+                        <option value="高等">高等</option>
+                        <option value="限定">限定</option>
+                        <option value="排名">排名</option>
+                        <option value="庚子">庚子</option>
+                    </select>
+                </div>
+                <button class="remove-btn" onclick="removeActorSelection(${id})" title="移除角色">✖</button>
+            `;
+            
+            container.appendChild(div);
+            updateActorCount();
+        }
+
+        // 移除角色選擇
+        function removeActorSelection(id) {
+            const element = document.getElementById(`actor-${id}`);
+            if (element) {
+                element.remove();
+                updateActorCount();
+            }
+        }
+
+        // 更新角色資訊
+        function updateActorInfo(id) {
+            const select = document.getElementById(`actor-select-${id}`);
+            const actorName = select.value;
+            const scarcityDiv = document.getElementById(`scarcity-${id}`);
+            
+            if (actorName && parsedActors[actorName]) {
+                const scarcity = parsedActors[actorName].scarcity || 'R';
+                scarcityDiv.textContent = scarcity;
+                scarcityDiv.className = `scarcity-display scarcity-${scarcity}`;
+            } else {
+                scarcityDiv.textContent = '-';
+                scarcityDiv.className = 'scarcity-display';
+            }
+        }
+
+        // 取 10 的倍數
+        function floorTo10(n) {
+            n = parseInt(n || 0);
+            return n - (n % 10);
+        }
+
+        // 計算被動技能效果
+        function calculatePassive(actors) {
+            const totalEffects = {
+                category: {},
+                nation: {}
+            };
+            
+            // 初始化類別和國家效果
+            actors.forEach(actor => {
+                if (!actor.name || !parsedActors[actor.name]) return;
+                const actorData = parsedActors[actor.name];
+                if (actorData.actor_category && !totalEffects.category[actorData.actor_category]) {
+                    totalEffects.category[actorData.actor_category] = { atk: 0, def: 0, hp: 0 };
+                }
+                if (actorData.nation && !totalEffects.nation[actorData.nation]) {
+                    totalEffects.nation[actorData.nation] = { atk: 0, def: 0, hp: 0 };
+                }
+            });
+            
+            // 計算效果
+            actors.forEach(actor => {
+                if (!actor.name || !parsedActors[actor.name]) return;
+                
+                const actorData = parsedActors[actor.name];
+                const passiveSkills = actorData.parsed_passive_skills;
+                
+                if (!passiveSkills) return;
+                
+                const activeLevel = floorTo10(actor.level);
+                const activeEffect = passiveSkills[String(activeLevel)] || {};
+                
+                if (activeEffect.category) {
+                    Object.keys(activeEffect.category).forEach(cat => {
+                        if (!totalEffects.category[cat]) {
+                            totalEffects.category[cat] = { atk: 0, def: 0, hp: 0 };
+                        }
+                        ['atk', 'def', 'hp'].forEach(stat => {
+                            totalEffects.category[cat][stat] += activeEffect.category[cat][stat] || 0;
+                        });
+                    });
+                }
+                
+                if (activeEffect.nation) {
+                    Object.keys(activeEffect.nation).forEach(nat => {
+                        if (!totalEffects.nation[nat]) {
+                            totalEffects.nation[nat] = { atk: 0, def: 0, hp: 0 };
+                        }
+                        ['atk', 'def', 'hp'].forEach(stat => {
+                            totalEffects.nation[nat][stat] += activeEffect.nation[nat][stat] || 0;
+                        });
+                    });
+                }
+            });
+            
+            return totalEffects;
+        }
+
+        // 計算單一角色戰力
+        function calculatePower(effects, scarcity, level, weapon) {
+            const powerMultiplier = {
+                'R': 1.0,
+                'SR': 1.2,
+                'SSR': 1.4
+            };
+            
+            const weaponMultiplier = {
+                '原初': 1.0,
+                '強化': 2.1,
+                '高等': 5.0,
+                '限定': 2.5,
+                '排名': 7.0,
+                '庚子': 8.0
+            };
+            
+            // 稀有度等級上限
+            if (scarcity === 'R') level = Math.min(level, 90);
+            else if (scarcity === 'SR') level = Math.min(level, 160);
+            else if (scarcity === 'SSR') level = Math.min(level, 300);
+
+            const multiplier = powerMultiplier[scarcity] || 1.0;
+            const weaponMult = weaponMultiplier[weapon] || 1.0;
+            const atkBonus = effects.atk || 0;
+            const defBonus = effects.def || 0;
+            const hpBonus = effects.hp || 0;
+            
+            const totalPower = level * multiplier * weaponMult * (1 + ((1 + (atkBonus/100 + hpBonus/100)) * (1 + defBonus/100) - 1) * 0.2) / 10 + 4;
+            return totalPower;
+        }
+
+        // 計算所有角色戰力
+        function calculateAllPowers() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p style="margin-top: 15px;">計算中...</p>
+                </div>
+            `;
+            
+            setTimeout(() => {
+                try {
+                    // 收集所有選擇的角色
+                    const actors = [];
+                    const actorElements = document.querySelectorAll('.actor-selection');
+                    
+                    actorElements.forEach((element) => {
+                        const id = element.id.split('-')[1];
+                        const selectElement = document.getElementById(`actor-select-${id}`);
+                        const levelElement = document.getElementById(`level-${id}`);
+                        const weaponElement = document.getElementById(`weapon-${id}`);
+                        
+                        const name = selectElement ? selectElement.value.trim() : '';
+                        const level = parseInt(levelElement?.value) || 160;
+                        const weapon = weaponElement ? weaponElement.value : '原初';
+                        
+                        if (name && parsedActors[name]) {
+                            actors.push({
+                                name: name,
+                                level: level,
+                                weapon: weapon,
+                                scarcity: parsedActors[name].scarcity || 'R'
+                            });
+                        }
+                    });
+                    
+                    if (actors.length === 0) {
+                        resultsDiv.innerHTML = `
+                            <div class="alert alert-warning">
+                                ⚠️ 請至少選擇一個角色
+                            </div>
+                        `;
+                        return;
+                    }
+                    
+                    // 計算所有被動效果
+                    const totalEffects = calculatePassive(actors);
+                    
+                    // 計算每個角色的戰力
+                    let html = '';
+                    let totalPowerSum = 0;
+                    
+                    actors.forEach(actor => {
+                        const actorData = parsedActors[actor.name];
+                        const selfEffects = { atk: 0, def: 0, hp: 0 };
+                        
+                        // 獲取自身被動效果
+                        const passiveSkills = actorData.parsed_passive_skills;
+                        const effLevel = floorTo10(actor.level);
+                        
+                        if (passiveSkills) {
+                            const activeEffect = passiveSkills[String(effLevel)] || {};
+                            
+                            if (activeEffect.self) {
+                                ['atk', 'def', 'hp'].forEach(stat => {
+                                    selfEffects[stat] += activeEffect.self[stat] || 0;
+                                });
+                            }
+                        }
+                        
+                        // 加上陣營和國家效果
+                        const actorCategory = actorData.actor_category || '未知';
+                        const actorNation = actorData.nation || '未知';
+                        
+                        if (totalEffects.category[actorCategory]) {
+                            ['atk', 'def', 'hp'].forEach(stat => {
+                                selfEffects[stat] += totalEffects.category[actorCategory][stat] || 0;
+                            });
+                        }
+                        
+                        if (totalEffects.nation[actorNation]) {
+                            ['atk', 'def', 'hp'].forEach(stat => {
+                                selfEffects[stat] += totalEffects.nation[actorNation][stat] || 0;
+                            });
+                        }
+                        
+                        // 計算戰力
+                        const power = calculatePower(selfEffects, actor.scarcity, actor.level, actor.weapon);
+                        totalPowerSum += power;
+                        
+                        html += `
+                            <div class="actor-card">
+                                <h3>
+                                    <span>${actor.name}</span>
+                                    <span class="badge scarcity-${actor.scarcity}">${actor.scarcity}</span>
+                                </h3>
+                                <div class="level-info">
+                                    等級: ${actor.level}（生效: Lv.${effLevel}）| 武器: ${actor.weapon} | 
+                                    職業: ${actorCategory} | 陣營: ${actorNation}
+                                </div>
+                                
+                                <div class="effects-section">
+                                    <h4>📊 效果加成</h4>
+                                    <div class="effect-item">
+                                        <span>攻擊力加成</span>
+                                        <span class="effect-value">+${selfEffects.atk.toFixed(1)}%</span>
+                                    </div>
+                                    <div class="effect-item">
+                                        <span>防禦力加成</span>
+                                        <span class="effect-value">+${selfEffects.def.toFixed(1)}%</span>
+                                    </div>
+                                    <div class="effect-item">
+                                        <span>生命值加成</span>
+                                        <span class="effect-value">+${selfEffects.hp.toFixed(1)}%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="power-result">
+                                    ⚔️ 戰力：${power.toFixed(2)}
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    // 顯示總戰力
+                    const summaryHtml = `
+                        <div class="summary">
+                            <h3>🏆 隊伍總戰力 🏆</h3>
+                            <div class="total-power">${totalPowerSum.toFixed(2)}</div>
+                            <div style="margin-top: 10px;">已選擇 ${actors.length} 個角色</div>
+                        </div>
+                    `;
+                    
+                    resultsDiv.innerHTML = summaryHtml + '<div class="results-grid">' + html + '</div>';
+                    
+                } catch (error) {
+                    console.error('計算錯誤:', error);
+                    resultsDiv.innerHTML = `
+                        <div class="alert alert-danger">
+                            ❌ 計算過程發生錯誤: ${error.message}
+                        </div>
+                    `;
+                }
+            }, 100);
+        }
+
+        // 頁面載入時初始化
+        window.addEventListener('DOMContentLoaded', loadActorData);
+    </script>
+</body>
+</html>

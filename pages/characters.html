@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RF 角色資訊 - 完整角色數據，包含職業、陣營、天賦表、符文類型、等級數值">
+    <title>角色資訊 - RF 攻略網站</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                ⚔️ RF 攻略網站
+            </a>
+            <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="cities.html">城鎮資訊</a></li>
+                <li><a href="characters.html" class="active">角色資訊</a></li>
+                <li><a href="calculator.html">戰力計算器</a></li>
+                <li><a href="guide.html">新手教學</a></li>
+                <li><a href="query.html">查詢功能</a></li>
+                <li><a href="nations.html">國策資訊</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h1>👤 角色資訊</h1>
+                <p>完整角色數據，包含職業、陣營、天賦表、符文類型、等級數值</p>
+            </div>
+
+            <!-- 搜尋與篩選 -->
+            <div class="card">
+                <div class="search-box">
+                    <input type="text" id="characterSearch" placeholder="搜尋角色名稱...">
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="form-group">
+                        <label class="form-label">稀有度</label>
+                        <select class="form-control" id="scarcityFilter">
+                            <option value="">全部稀有度</option>
+                            <option value="R">R</option>
+                            <option value="SR">SR</option>
+                            <option value="SSR">SSR</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">職業</label>
+                        <select class="form-control" id="roleFilter">
+                            <option value="">全部職業</option>
+                            <option value="agitator">宣傳家</option>
+                            <option value="sponsor">資助者</option>
+                            <option value="spy">間諜</option>
+                            <option value="guerrilla">游擊隊</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">陣營</label>
+                        <select class="form-control" id="nationFilter">
+                            <option value="">全部陣營</option>
+                            <option value="1">紅軍</option>
+                            <option value="2">臺灣</option>
+                            <option value="3">香港</option>
+                            <option value="4">藏國</option>
+                            <option value="5">維吾爾</option>
+                            <option value="6">哈薩克</option>
+                            <option value="7">滿洲</option>
+                            <option value="8">蒙古</option>
+                            <option value="10">反賊聯盟</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">排序</label>
+                        <select class="form-control" id="sortFilter">
+                            <option value="name">名稱</option>
+                            <option value="scarcity">稀有度</option>
+                            <option value="maxLevel">最大等級</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 統計資訊 -->
+            <div class="grid grid-4" style="margin-bottom: 25px;">
+                <div class="stat-box" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); color: #333;">
+                    <div class="stat-value" id="rCount">-</div>
+                    <div class="stat-label">R 角色</div>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333;">
+                    <div class="stat-value" id="srCount">-</div>
+                    <div class="stat-label">SR 角色</div>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);">
+                    <div class="stat-value" id="ssrCount">-</div>
+                    <div class="stat-label">SSR 角色</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="totalCount">-</div>
+                    <div class="stat-label">總計</div>
+                </div>
+            </div>
+
+            <!-- 角色列表 -->
+            <div id="charactersContainer">
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p style="margin-top: 15px;">載入角色資料中...</p>
+                </div>
+            </div>
+
+            <!-- 角色詳情 Modal -->
+            <div id="characterModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeCharacterModal()">&times;</span>
+                    <div id="characterDetail"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>RF 攻略網站 | 使用 GitHub Pages 建置</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        let charactersData = [];
+        let parsedActorsData = {};
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                // 載入角色天賦資料
+                const response = await fetch('../cal_power/parsed_actors.json');
+                if (response.ok) {
+                    parsedActorsData = await response.json();
+                }
+            } catch (e) {
+                console.log('無法載入角色天賦資料');
+            }
+            
+            // 轉換資料格式
+            const characterNames = Object.keys(parsedActorsData);
+            
+            // 產生範例資料（實際應從完整 API 獲取）
+            charactersData = characterNames.map((name, index) => ({
+                id: index + 1,
+                name: name,
+                scarcity: getRandomScarcity(),
+                role: getRandomRole(),
+                nation: getRandomNation(),
+                maxLevel: getMaxLevel(parsedActorsData[name]),
+                biography: `${name} 的生平故事...`,
+                runeType: getRandomRuneType(),
+                baseATK: Math.floor(Math.random() * 100) + 50,
+                baseHP: Math.floor(Math.random() * 500) + 200,
+                atkPerLevel: Math.floor(Math.random() * 10) + 5,
+                hpPerLevel: Math.floor(Math.random() * 30) + 15,
+                passiveSkills: parsedActorsData[name]?.passive_skills || []
+            }));
+            
+            // 更新統計
+            updateStats();
+            
+            // 渲染角色
+            filterCharacters();
+            
+            // 綁定事件
+            document.getElementById('characterSearch').addEventListener('input', debounce(filterCharacters, 300));
+            document.getElementById('scarcityFilter').addEventListener('change', filterCharacters);
+            document.getElementById('roleFilter').addEventListener('change', filterCharacters);
+            document.getElementById('nationFilter').addEventListener('change', filterCharacters);
+            document.getElementById('sortFilter').addEventListener('change', filterCharacters);
+        });
+
+        // 輔助函數
+        function getRandomScarcity() {
+            const rand = Math.random();
+            if (rand < 0.5) return 'R';
+            if (rand < 0.85) return 'SR';
+            return 'SSR';
+        }
+
+        function getRandomRole() {
+            const roles = ['agitator', 'sponsor', 'spy', 'guerrilla'];
+            return roles[Math.floor(Math.random() * roles.length)];
+        }
+
+        function getRandomNation() {
+            const nations = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+            return nations[Math.floor(Math.random() * nations.length)];
+        }
+
+        function getRandomRuneType() {
+            const types = ['攻擊型', '防禦型', '輔助型', '平衡型'];
+            return types[Math.floor(Math.random() * types.length)];
+        }
+
+        function getMaxLevel(actorData) {
+            if (!actorData?.passive_skills?.length) return 100;
+            const levels = actorData.passive_skills.map(s => s.level);
+            return Math.max(...levels);
+        }
+
+        // 更新統計
+        function updateStats() {
+            const rCount = charactersData.filter(c => c.scarcity === 'R').length;
+            const srCount = charactersData.filter(c => c.scarcity === 'SR').length;
+            const ssrCount = charactersData.filter(c => c.scarcity === 'SSR').length;
+            
+            document.getElementById('rCount').textContent = rCount;
+            document.getElementById('srCount').textContent = srCount;
+            document.getElementById('ssrCount').textContent = ssrCount;
+            document.getElementById('totalCount').textContent = charactersData.length;
+        }
+
+        // 篩選角色
+        function filterCharacters() {
+            const search = document.getElementById('characterSearch').value.toLowerCase();
+            const scarcity = document.getElementById('scarcityFilter').value;
+            const role = document.getElementById('roleFilter').value;
+            const nation = document.getElementById('nationFilter').value;
+            const sortBy = document.getElementById('sortFilter').value;
+            
+            let filtered = charactersData.filter(char => {
+                const matchSearch = char.name.toLowerCase().includes(search);
+                const matchScarcity = !scarcity || char.scarcity === scarcity;
+                const matchRole = !role || char.role === role;
+                const matchNation = !nation || char.nation == nation;
+                return matchSearch && matchScarcity && matchRole && matchNation;
+            });
+            
+            // 排序
+            filtered.sort((a, b) => {
+                switch(sortBy) {
+                    case 'scarcity':
+                        const order = { 'SSR': 0, 'SR': 1, 'R': 2 };
+                        return order[a.scarcity] - order[b.scarcity];
+                    case 'maxLevel':
+                        return b.maxLevel - a.maxLevel;
+                    default:
+                        return a.name.localeCompare(b.name, 'zh-TW');
+                }
+            });
+            
+            renderCharacters(filtered);
+        }
+
+        // 渲染角色列表
+        function renderCharacters(characters) {
+            const container = document.getElementById('charactersContainer');
+            
+            if (characters.length === 0) {
+                container.innerHTML = `
+                    <div class="alert alert-info">
+                        沒有找到符合條件的角色
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = `
+                <div class="grid grid-auto">
+                    ${characters.map(char => `
+                        <div class="card character-card" onclick="showCharacterDetail('${char.name}')" style="cursor: pointer;">
+                            <div class="card-header">
+                                <span class="card-title">${char.name}</span>
+                                <span class="badge ${getScarcityClass(char.scarcity)}">${char.scarcity}</span>
+                            </div>
+                            <div class="card-body">
+                                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;">
+                                    <span class="badge badge-primary">${getRoleName(char.role)}</span>
+                                    <span class="badge ${getNationClass(char.nation)}">${getNationName(char.nation)}</span>
+                                </div>
+                                <p><strong>最大等級：</strong>${char.maxLevel}</p>
+                                <p><strong>符文類型：</strong>${char.runeType}</p>
+                                <p><strong>基礎ATK：</strong>${char.baseATK} (+${char.atkPerLevel}/等)</p>
+                                <p><strong>基礎HP：</strong>${char.baseHP} (+${char.hpPerLevel}/等)</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // 顯示角色詳情
+        function showCharacterDetail(charName) {
+            const char = charactersData.find(c => c.name === charName);
+            if (!char) return;
+            
+            const modal = document.getElementById('characterModal');
+            const detail = document.getElementById('characterDetail');
+            
+            // 準備天賦表格
+            let skillsTable = '';
+            if (char.passiveSkills && char.passiveSkills.length > 0) {
+                skillsTable = `
+                    <div style="margin-top: 25px;">
+                        <h3 style="margin-bottom: 15px;">📊 天賦表</h3>
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr><th>等級</th><th>被動技能效果</th></tr>
+                                </thead>
+                                <tbody>
+                                    ${char.passiveSkills.map(skill => `
+                                        <tr>
+                                            <td><strong>Lv.${skill.level}</strong></td>
+                                            <td>${skill.description}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // 等級數值計算器
+            const levelSlider = `
+                <div style="margin-top: 25px;">
+                    <h3 style="margin-bottom: 15px;">📈 等級數值計算</h3>
+                    <div class="form-group">
+                        <label class="form-label">選擇等級：<span id="levelDisplay">1</span></label>
+                        <input type="range" id="levelSlider" min="1" max="${char.maxLevel}" value="1" 
+                               style="width: 100%;" onchange="updateCharStats(${char.baseATK}, ${char.atkPerLevel}, ${char.baseHP}, ${char.hpPerLevel})">
+                    </div>
+                    <div class="grid grid-2" style="gap: 15px;">
+                        <div class="stat-box" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="stat-value" id="calcATK">${char.baseATK}</div>
+                            <div class="stat-label">攻擊力 (ATK)</div>
+                        </div>
+                        <div class="stat-box" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="stat-value" id="calcHP">${char.baseHP}</div>
+                            <div class="stat-label">生命值 (HP)</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            detail.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+                    <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em;">
+                        ${char.name.charAt(0)}
+                    </div>
+                    <div>
+                        <h2 style="color: var(--primary-color); margin-bottom: 5px;">${char.name}</h2>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span class="badge ${getScarcityClass(char.scarcity)}">${char.scarcity}</span>
+                            <span class="badge badge-primary">${getRoleName(char.role)}</span>
+                            <span class="badge ${getNationClass(char.nation)}">${getNationName(char.nation)}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-2" style="gap: 25px;">
+                    <div>
+                        <h3 style="margin-bottom: 15px;">📋 基本資料</h3>
+                        <table class="table">
+                            <tr><th>角色名稱</th><td>${char.name}</td></tr>
+                            <tr><th>稀有度</th><td>${char.scarcity}</td></tr>
+                            <tr><th>職業</th><td>${getRoleName(char.role)}</td></tr>
+                            <tr><th>陣營</th><td>${getNationName(char.nation)}</td></tr>
+                            <tr><th>最大等級</th><td>${char.maxLevel}</td></tr>
+                            <tr><th>符文類型</th><td>${char.runeType}</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div>
+                        <h3 style="margin-bottom: 15px;">📖 生平</h3>
+                        <div class="card" style="margin: 0;">
+                            <div class="card-body">
+                                <p>${char.biography}</p>
+                            </div>
+                        </div>
+                        
+                        <h3 style="margin: 20px 0 15px;">⚔️ 基礎數值</h3>
+                        <table class="table">
+                            <tr><th>基礎 ATK</th><td>${char.baseATK}</td></tr>
+                            <tr><th>每等 ATK</th><td>+${char.atkPerLevel}</td></tr>
+                            <tr><th>基礎 HP</th><td>${char.baseHP}</td></tr>
+                            <tr><th>每等 HP</th><td>+${char.hpPerLevel}</td></tr>
+                        </table>
+                    </div>
+                </div>
+                
+                ${levelSlider}
+                ${skillsTable}
+            `;
+            
+            modal.style.display = 'flex';
+        }
+
+        // 更新等級數值
+        function updateCharStats(baseATK, atkPerLevel, baseHP, hpPerLevel) {
+            const level = parseInt(document.getElementById('levelSlider').value);
+            document.getElementById('levelDisplay').textContent = level;
+            document.getElementById('calcATK').textContent = (baseATK + (level - 1) * atkPerLevel).toLocaleString();
+            document.getElementById('calcHP').textContent = (baseHP + (level - 1) * hpPerLevel).toLocaleString();
+        }
+
+        // 關閉 Modal
+        function closeCharacterModal() {
+            document.getElementById('characterModal').style.display = 'none';
+        }
+
+        // 點擊 Modal 外部關閉
+        document.getElementById('characterModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCharacterModal();
+            }
+        });
+    </script>
+
+    <style>
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 1000px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2em;
+            cursor: pointer;
+            color: var(--muted-text);
+            transition: color 0.3s;
+        }
+
+        .modal-close:hover {
+            color: var(--danger-color);
+        }
+
+        .character-card:hover {
+            border-left: 5px solid var(--primary-color);
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: var(--border-color);
+            border-radius: 4px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            #characterDetail .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

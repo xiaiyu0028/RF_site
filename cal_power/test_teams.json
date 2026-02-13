@@ -1,0 +1,267 @@
+[
+  {
+    "rank": 1,
+    "total_power": 700.82,
+    "weapon": "原初",
+    "level": "auto-cap",
+    "members": [
+      {
+        "name": "習近平",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 169.06
+      },
+      {
+        "name": "59式戰車",
+        "scarcity": "SSR",
+        "category": "游擊隊",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 179.51
+      },
+      {
+        "name": "阿雯",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "自由勢力",
+        "weapon_type": "言靈",
+        "level": 300,
+        "power": 124.75
+      },
+      {
+        "name": "趙彤",
+        "scarcity": "SSR",
+        "category": "資助者",
+        "nation": "紅巾軍",
+        "weapon_type": "刀劍",
+        "level": 300,
+        "power": 101.07
+      },
+      {
+        "name": "渤雍",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "紅巾軍",
+        "weapon_type": "言靈",
+        "level": 300,
+        "power": 126.43
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "total_power": 697.67,
+    "weapon": "原初",
+    "level": "auto-cap",
+    "members": [
+      {
+        "name": "習近平",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 169.06
+      },
+      {
+        "name": "59式戰車",
+        "scarcity": "SSR",
+        "category": "游擊隊",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 179.51
+      },
+      {
+        "name": "阿雯",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "自由勢力",
+        "weapon_type": "言靈",
+        "level": 300,
+        "power": 124.75
+      },
+      {
+        "name": "六朝",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "自由勢力",
+        "weapon_type": "言靈",
+        "level": 300,
+        "power": 123.28
+      },
+      {
+        "name": "趙彤",
+        "scarcity": "SSR",
+        "category": "資助者",
+        "nation": "紅巾軍",
+        "weapon_type": "刀劍",
+        "level": 300,
+        "power": 101.07
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "total_power": 677.09,
+    "weapon": "原初",
+    "level": "auto-cap",
+    "members": [
+      {
+        "name": "習近平",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 169.06
+      },
+      {
+        "name": "59式戰車",
+        "scarcity": "SSR",
+        "category": "游擊隊",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 179.51
+      },
+      {
+        "name": "阿雯",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "自由勢力",
+        "weapon_type": "言靈",
+        "level": 300,
+        "power": 124.75
+      },
+      {
+        "name": "俐月",
+        "scarcity": "SSR",
+        "category": "資助者",
+        "nation": "東寧",
+        "weapon_type": "弓弩",
+        "level": 300,
+        "power": 102.7
+      },
+      {
+        "name": "趙彤",
+        "scarcity": "SSR",
+        "category": "資助者",
+        "nation": "紅巾軍",
+        "weapon_type": "刀劍",
+        "level": 300,
+        "power": 101.07
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "total_power": 671.21,
+    "weapon": "原初",
+    "level": "auto-cap",
+    "members": [
+      {
+        "name": "習近平",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 169.06
+      },
+      {
+        "name": "59式戰車",
+        "scarcity": "SSR",
+        "category": "游擊隊",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 179.51
+      },
+      {
+        "name": "伊斯坎德爾",
+        "scarcity": "SSR",
+        "category": "資助者",
+        "nation": "察合台汗國",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 96.82
+      },
+      {
+        "name": "阿雯",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "自由勢力",
+        "weapon_type": "言靈",
+        "level": 300,
+        "power": 124.75
+      },
+      {
+        "name": "趙彤",
+        "scarcity": "SSR",
+        "category": "資助者",
+        "nation": "紅巾軍",
+        "weapon_type": "刀劍",
+        "level": 300,
+        "power": 101.07
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "total_power": 670.26,
+    "weapon": "原初",
+    "level": "auto-cap",
+    "members": [
+      {
+        "name": "習近平",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 169.06
+      },
+      {
+        "name": "59式戰車",
+        "scarcity": "SSR",
+        "category": "游擊隊",
+        "nation": "紅巾軍",
+        "weapon_type": "爆裂",
+        "level": 300,
+        "power": 179.51
+      },
+      {
+        "name": "阿雯",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "自由勢力",
+        "weapon_type": "言靈",
+        "level": 300,
+        "power": 124.75
+      },
+      {
+        "name": "綹明",
+        "scarcity": "SSR",
+        "category": "宣傳家",
+        "nation": "南明",
+        "weapon_type": "暗器",
+        "level": 300,
+        "power": 95.88
+      },
+      {
+        "name": "趙彤",
+        "scarcity": "SSR",
+        "category": "資助者",
+        "nation": "紅巾軍",
+        "weapon_type": "刀劍",
+        "level": 300,
+        "power": 101.07
+      }
+    ]
+  }
+]

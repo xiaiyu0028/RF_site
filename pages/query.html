@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RF 查詢功能 - 查詢已擁有角色、庫存道具、符文裝備與抽獎歷史">
+    <title>查詢功能 - RF 攻略網站</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                ⚔️ RF 攻略網站
+            </a>
+            <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="cities.html">城鎮資訊</a></li>
+                <li><a href="characters.html">角色資訊</a></li>
+                <li><a href="calculator.html">戰力計算器</a></li>
+                <li><a href="guide.html">新手教學</a></li>
+                <li><a href="query.html" class="active">查詢功能</a></li>
+                <li><a href="nations.html">國策資訊</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h1>🔍 查詢功能</h1>
+                <p>查詢已擁有角色、庫存道具、符文裝備與抽獎歷史</p>
+            </div>
+
+            <!-- 登入區塊 -->
+            <div class="card" id="loginSection">
+                <div class="card-header">
+                    <span class="card-title">🔐 帳號驗證</span>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <strong>📌 說明：</strong>
+                        請輸入您的遊戲帳號資訊進行驗證。此功能會透過遊戲 API 查詢您的角色資料。
+                        <br><br>
+                        <strong>⚠️ 注意：</strong>此為離線示範功能。實際使用需要連接遊戲伺服器。
+                    </div>
+                    
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label class="form-label">玩家 ID</label>
+                            <input type="text" class="form-control" id="playerId" placeholder="輸入玩家 ID (例如: 815058)">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">驗證碼（選填）</label>
+                            <input type="text" class="form-control" id="authCode" placeholder="API 驗證碼">
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="loginAndQuery()" style="width: 100%;">
+                        🔓 驗證並查詢
+                    </button>
+                </div>
+            </div>
+
+            <!-- 分頁區塊 -->
+            <div class="tabs-container" id="queryTabs" style="display: none; margin-top: 25px;">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="characters-tab">👤 角色查詢</button>
+                    <button class="tab-btn" data-tab="inventory-tab">📦 庫存查詢</button>
+                    <button class="tab-btn" data-tab="runes-tab">💎 符文查詢</button>
+                    <button class="tab-btn" data-tab="gacha-tab">🎰 抽獎歷史</button>
+                </div>
+
+                <!-- 角色查詢 -->
+                <div class="tab-content active" id="characters-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">👤 已擁有角色</span>
+                            <span class="badge badge-primary" id="ownedCount">0 個角色</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="search-box">
+                                <input type="text" id="ownedSearch" placeholder="搜尋角色名稱...">
+                            </div>
+                            <div id="ownedCharacters">
+                                <div class="alert alert-info">請先驗證以查看您的角色</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 庫存查詢 -->
+                <div class="tab-content" id="inventory-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">📦 庫存道具</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="search-box">
+                                <input type="text" id="inventorySearch" placeholder="搜尋道具名稱...">
+                            </div>
+                            
+                            <!-- 分類篩選 -->
+                            <div class="grid grid-4" style="margin-bottom: 20px;">
+                                <button class="btn btn-outline" onclick="filterInventory('all')">全部</button>
+                                <button class="btn btn-outline" onclick="filterInventory('material')">材料</button>
+                                <button class="btn btn-outline" onclick="filterInventory('consumable')">消耗品</button>
+                                <button class="btn btn-outline" onclick="filterInventory('other')">其他</button>
+                            </div>
+                            
+                            <div id="inventoryList">
+                                <div class="alert alert-info">請先驗證以查看您的庫存</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 符文查詢 -->
+                <div class="tab-content" id="runes-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">💎 符文裝備</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="runesList">
+                                <div class="alert alert-info">請先驗證以查看您的符文</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 抽獎歷史 -->
+                <div class="tab-content" id="gacha-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">🎰 抽獎歷史記錄</span>
+                        </div>
+                        <div class="card-body">
+                            <!-- 統計資料 -->
+                            <div class="grid grid-4" style="margin-bottom: 25px;">
+                                <div class="stat-box" style="background: linear-gradient(135deg, #84fab0, #8fd3f4); color: #333;">
+                                    <div class="stat-value" id="totalGacha">0</div>
+                                    <div class="stat-label">總抽數</div>
+                                </div>
+                                <div class="stat-box" style="background: linear-gradient(135deg, #84fab0, #8fd3f4); color: #333;">
+                                    <div class="stat-value" id="rRate">0%</div>
+                                    <div class="stat-label">R 機率</div>
+                                </div>
+                                <div class="stat-box" style="background: linear-gradient(135deg, #a8edea, #fed6e3); color: #333;">
+                                    <div class="stat-value" id="srRate">0%</div>
+                                    <div class="stat-label">SR 機率</div>
+                                </div>
+                                <div class="stat-box" style="background: linear-gradient(135deg, #ffd89b, #19547b);">
+                                    <div class="stat-value" id="ssrRate">0%</div>
+                                    <div class="stat-label">SSR 機率</div>
+                                </div>
+                            </div>
+                            
+                            <div id="gachaHistory">
+                                <div class="alert alert-info">請先驗證以查看您的抽獎歷史</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API 參考 -->
+            <div class="card" style="margin-top: 30px;">
+                <div class="card-header">
+                    <span class="card-title">📡 API 參考</span>
+                </div>
+                <div class="card-body">
+                    <p style="margin-bottom: 15px;">以下是各項查詢功能使用的 API 格式：</p>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAcc(this)">
+                                👤 角色查詢 API
+                            </button>
+                            <div class="accordion-body">
+                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
+["6","39","player:{玩家ID}","actors",{"body":""}]</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAcc(this)">
+                                📦 庫存查詢 API
+                            </button>
+                            <div class="accordion-body">
+                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
+["6","32","player:{玩家ID}","backpack",{}]</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAcc(this)">
+                                🎰 抽獎歷史 API
+                            </button>
+                            <div class="accordion-body">
+                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
+["6","37","player:{玩家ID}","used_recruit_coupons",{}]</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAcc(this)">
+                                💎 符文查詢 API
+                            </button>
+                            <div class="accordion-body">
+                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
+["6","18","player:{玩家ID}","weapon_prototypes",{}]</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAcc(this)">
+                                🏰 城鎮資訊 API
+                            </button>
+                            <div class="accordion-body">
+                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
+["6","15","player:{玩家ID}","cities",{"body":""}]</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAcc(this)">
+                                🏴 國策資訊 API
+                            </button>
+                            <div class="accordion-body">
+                                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">
+["6","14","player:{玩家ID}","nations",{"body":""}]</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>RF 攻略網站 | 使用 GitHub Pages 建置</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        // 範例資料（實際應從 API 取得）
+        const sampleOwnedCharacters = [
+            { name: "卡姆蘭", level: 160, scarcity: "SSR", role: "spy", equipped: "高等符文" },
+            { name: "范朋克", level: 120, scarcity: "SR", role: "agitator", equipped: "強化符文" },
+            { name: "陳炯明", level: 90, scarcity: "R", role: "sponsor", equipped: "原初符文" },
+            { name: "阿旺", level: 180, scarcity: "SSR", role: "guerrilla", equipped: "庚子符文" },
+            { name: "德澤", level: 100, scarcity: "SR", role: "spy", equipped: "限定符文" },
+        ];
+
+        const sampleInventory = [
+            { name: "金幣", count: 158742, category: "material" },
+            { name: "抽獎券", count: 25, category: "consumable" },
+            { name: "經驗藥水", count: 150, category: "consumable" },
+            { name: "鍛造石", count: 89, category: "material" },
+            { name: "角色碎片", count: 340, category: "material" },
+            { name: "強化石", count: 45, category: "material" },
+            { name: "符文碎片", count: 200, category: "material" },
+        ];
+
+        const sampleRunes = [
+            { name: "庚子武器", level: 10, owner: "阿旺", stats: "ATK+50%, HP+30%" },
+            { name: "高等武器", level: 8, owner: "卡姆蘭", stats: "ATK+35%, DEF+20%" },
+            { name: "排名武器", level: 5, owner: "未裝備", stats: "ATK+45%, HP+25%" },
+            { name: "限定武器", level: 6, owner: "德澤", stats: "ATK+25%, DEF+15%" },
+        ];
+
+        const sampleGachaHistory = [
+            { date: "2026-02-13", result: "卡姆蘭", scarcity: "SSR", pool: "限定池" },
+            { date: "2026-02-12", result: "范朋克", scarcity: "SR", pool: "常駐池" },
+            { date: "2026-02-12", result: "陳炯明", scarcity: "R", pool: "常駐池" },
+            { date: "2026-02-11", result: "德澤", scarcity: "SR", pool: "常駐池" },
+            { date: "2026-02-11", result: "李烈鈞", scarcity: "R", pool: "常駐池" },
+            { date: "2026-02-10", result: "阿旺", scarcity: "SSR", pool: "限定池" },
+        ];
+
+        // 登入並查詢
+        function loginAndQuery() {
+            const playerId = document.getElementById('playerId').value.trim();
+            
+            if (!playerId) {
+                alert('請輸入玩家 ID');
+                return;
+            }
+            
+            // 顯示載入中
+            document.getElementById('loginSection').innerHTML = `
+                <div class="card-body">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                        <p style="margin-top: 15px;">正在查詢資料...</p>
+                    </div>
+                </div>
+            `;
+            
+            // 模擬 API 請求延遲
+            setTimeout(() => {
+                // 顯示已登入狀態
+                document.getElementById('loginSection').innerHTML = `
+                    <div class="card-header">
+                        <span class="card-title">✅ 已驗證</span>
+                        <span class="badge badge-success">玩家 ID: ${playerId}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>已成功連接並載入資料（示範模式）</p>
+                        <button class="btn btn-outline" onclick="location.reload()">🔄 重新查詢</button>
+                    </div>
+                `;
+                
+                // 顯示查詢結果
+                document.getElementById('queryTabs').style.display = 'block';
+                
+                // 載入各項資料
+                loadOwnedCharacters();
+                loadInventory();
+                loadRunes();
+                loadGachaHistory();
+                
+                // 初始化分頁
+                initTabs();
+                
+            }, 1500);
+        }
+
+        // 載入已擁有角色
+        function loadOwnedCharacters() {
+            const container = document.getElementById('ownedCharacters');
+            document.getElementById('ownedCount').textContent = `${sampleOwnedCharacters.length} 個角色`;
+            
+            container.innerHTML = `
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>角色名稱</th>
+                                <th>稀有度</th>
+                                <th>等級</th>
+                                <th>職業</th>
+                                <th>裝備符文</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${sampleOwnedCharacters.map(char => `
+                                <tr>
+                                    <td><strong>${char.name}</strong></td>
+                                    <td><span class="badge scarcity-${char.scarcity}">${char.scarcity}</span></td>
+                                    <td>Lv.${char.level}</td>
+                                    <td>${getRoleName(char.role)}</td>
+                                    <td>${char.equipped}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        // 載入庫存
+        function loadInventory() {
+            renderInventory(sampleInventory);
+        }
+
+        function renderInventory(items) {
+            const container = document.getElementById('inventoryList');
+            
+            container.innerHTML = `
+                <div class="grid grid-auto">
+                    ${items.map(item => `
+                        <div class="card" style="margin-bottom: 10px;">
+                            <div class="card-body" style="padding: 15px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span><strong>${item.name}</strong></span>
+                                    <span class="badge badge-primary">x${item.count.toLocaleString()}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function filterInventory(category) {
+            let filtered = sampleInventory;
+            if (category !== 'all') {
+                filtered = sampleInventory.filter(item => item.category === category);
+            }
+            renderInventory(filtered);
+        }
+
+        // 載入符文
+        function loadRunes() {
+            const container = document.getElementById('runesList');
+            
+            container.innerHTML = `
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>符文名稱</th>
+                                <th>等級</th>
+                                <th>裝備者</th>
+                                <th>屬性加成</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${sampleRunes.map(rune => `
+                                <tr>
+                                    <td><strong>${rune.name}</strong></td>
+                                    <td>Lv.${rune.level}</td>
+                                    <td>${rune.owner}</td>
+                                    <td>${rune.stats}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        // 載入抽獎歷史
+        function loadGachaHistory() {
+            const container = document.getElementById('gachaHistory');
+            
+            // 計算統計
+            const total = sampleGachaHistory.length;
+            const rCount = sampleGachaHistory.filter(g => g.scarcity === 'R').length;
+            const srCount = sampleGachaHistory.filter(g => g.scarcity === 'SR').length;
+            const ssrCount = sampleGachaHistory.filter(g => g.scarcity === 'SSR').length;
+            
+            document.getElementById('totalGacha').textContent = total;
+            document.getElementById('rRate').textContent = ((rCount / total) * 100).toFixed(1) + '%';
+            document.getElementById('srRate').textContent = ((srCount / total) * 100).toFixed(1) + '%';
+            document.getElementById('ssrRate').textContent = ((ssrCount / total) * 100).toFixed(1) + '%';
+            
+            container.innerHTML = `
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>抽獎池</th>
+                                <th>獲得角色</th>
+                                <th>稀有度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${sampleGachaHistory.map(record => `
+                                <tr>
+                                    <td>${record.date}</td>
+                                    <td>${record.pool}</td>
+                                    <td><strong>${record.result}</strong></td>
+                                    <td><span class="badge scarcity-${record.scarcity}">${record.scarcity}</span></td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        // 摺疊面板切換
+        function toggleAcc(header) {
+            header.classList.toggle('active');
+            const body = header.nextElementSibling;
+            body.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

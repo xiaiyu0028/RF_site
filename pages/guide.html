@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RF 新手教學 - 詳細的遊戲入門指南，幫助新手快速上手">
+    <title>新手教學 - RF 攻略網站</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                ⚔️ RF 攻略網站
+            </a>
+            <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="cities.html">城鎮資訊</a></li>
+                <li><a href="characters.html">角色資訊</a></li>
+                <li><a href="calculator.html">戰力計算器</a></li>
+                <li><a href="guide.html" class="active">新手教學</a></li>
+                <li><a href="query.html">查詢功能</a></li>
+                <li><a href="nations.html">國策資訊</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h1>📖 新手教學</h1>
+                <p>詳細的遊戲入門指南，幫助新手快速上手</p>
+            </div>
+
+            <!-- 目錄 -->
+            <div class="card" style="margin-bottom: 30px;">
+                <div class="card-header">
+                    <span class="card-title">📋 目錄</span>
+                </div>
+                <div class="card-body">
+                    <div class="grid grid-3">
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 10px;">入門篇</h4>
+                            <ul style="list-style: none;">
+                                <li><a href="#start" style="color: var(--dark-text);">🎮 遊戲介紹</a></li>
+                                <li><a href="#factions" style="color: var(--dark-text);">🏴 陣營選擇</a></li>
+                                <li><a href="#interface" style="color: var(--dark-text);">📱 介面說明</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 10px;">進階篇</h4>
+                            <ul style="list-style: none;">
+                                <li><a href="#characters" style="color: var(--dark-text);">👤 角色培養</a></li>
+                                <li><a href="#team" style="color: var(--dark-text);">⚔️ 隊伍編成</a></li>
+                                <li><a href="#runes" style="color: var(--dark-text);">💎 符文系統</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 10px;">精通篇</h4>
+                            <ul style="list-style: none;">
+                                <li><a href="#battle" style="color: var(--dark-text);">⚔️ 據點戰</a></li>
+                                <li><a href="#strategy" style="color: var(--dark-text);">📊 國策系統</a></li>
+                                <li><a href="#tips" style="color: var(--dark-text);">💡 實用技巧</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 入門篇 -->
+            <section id="start" class="markdown-content">
+                <h1>🎮 遊戲介紹</h1>
+                
+                <p>
+                    歡迎來到 RF！這是一款以東方大陸為背景的策略遊戲。
+                    玩家將扮演革命軍的一員，在這片土地上為理想而戰。
+                </p>
+
+                <h2>遊戲特色</h2>
+                <ul>
+                    <li><strong>多元陣營</strong>：10 個不同陣營，各有獨特的背景故事與國策加成</li>
+                    <li><strong>角色收集</strong>：超過上百位角色可供收集與培養</li>
+                    <li><strong>據點戰</strong>：與其他玩家合作，爭奪城鎮控制權</li>
+                    <li><strong>戰略深度</strong>：國策、被動技能、隊伍搭配等豐富的策略元素</li>
+                </ul>
+
+                <h2>開始遊戲</h2>
+                <ol>
+                    <li>下載並安裝遊戲</li>
+                    <li>選擇你的陣營（這是重要決定！）</li>
+                    <li>完成新手教學任務</li>
+                    <li>開始你的革命之路</li>
+                </ol>
+            </section>
+
+            <hr style="margin: 40px 0; border-color: var(--border-color);">
+
+            <section id="factions" class="markdown-content">
+                <h1>🏴 陣營選擇</h1>
+                
+                <p>選擇陣營是遊戲中最重要的決定之一。每個陣營都有獨特的：</p>
+                <ul>
+                    <li>背景故事與歷史</li>
+                    <li>專屬的國策加成</li>
+                    <li>不同的玩家社群文化</li>
+                </ul>
+
+                <div class="alert alert-warning" style="margin: 20px 0;">
+                    ⚠️ <strong>注意：</strong>加入人數較多的陣營，玩家較難爭取部門與城鎮資源。
+                    但人數多也意味著更多的同伴互助！
+                </div>
+
+                <h2>各陣營簡介</h2>
+                
+                <div class="accordion" style="margin-top: 20px;">
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            🔴 紅軍 - 大陸的征服者與主宰者
+                        </button>
+                        <div class="accordion-body">
+                            <p>繼清帝之後大陸上最強大的征服者。希望將鬆散的各屬邦整合成被中華同化的單一國家。</p>
+                            <p><strong>特色：</strong>可使用紅軍專屬的角色與劇情</p>
+                            <p><strong>適合：</strong>喜歡扮演強勢陣營的玩家</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            🔵 臺灣 - 禦敵千年的海東古國
+                        </button>
+                        <div class="accordion-body">
+                            <p>曾僅憑一道海峽，抗拒東方大陸政權達千餘年。經過數十年抗爭與建設，海東古國重獲新生。</p>
+                            <p><strong>特色：</strong>人數眾多，社群活躍</p>
+                            <p><strong>適合：</strong>新手入門的選擇</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            🟣 香港 - 負隅頑抗的海港城邦
+                        </button>
+                        <div class="accordion-body">
+                            <p>原是百越船民的漁村，在戰爭時投靠英吉利，被建設成繁華的自由城。</p>
+                            <p><strong>特色：</strong>反抗精神象徵</p>
+                            <p><strong>適合：</strong>追求自由理念的玩家</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            🟢 其他陣營
+                        </button>
+                        <div class="accordion-body">
+                            <p>還有蒙古、藏國、哈薩克、維吾爾、滿洲、反賊聯盟等多個陣營可供選擇。</p>
+                            <p>每個陣營都有獨特的歷史背景與遊戲體驗！</p>
+                            <p>請參考<a href="nations.html">國策資訊</a>頁面了解更多。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin: 40px 0; border-color: var(--border-color);">
+
+            <section id="characters" class="markdown-content">
+                <h1>👤 角色培養</h1>
+                
+                <h2>稀有度說明</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>稀有度</th>
+                            <th>最大等級</th>
+                            <th>戰力係數</th>
+                            <th>取得難度</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge scarcity-R">R</span></td>
+                            <td>90</td>
+                            <td>1.0x</td>
+                            <td>容易</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge scarcity-SR">SR</span></td>
+                            <td>160</td>
+                            <td>1.2x</td>
+                            <td>中等</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge scarcity-SSR">SSR</span></td>
+                            <td>300</td>
+                            <td>1.4x</td>
+                            <td>困難</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>職業類型</h2>
+                <div class="grid grid-2" style="margin-top: 20px;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>📢 宣傳家 (Agitator)</h4>
+                            <p>擅長輔助與增益，提升隊伍整體效能</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>💰 資助者 (Sponsor)</h4>
+                            <p>提供資源加成，增強隊伍持久力</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>🕵️ 間諜 (Spy)</h4>
+                            <p>情報收集與滲透，削弱敵方效能</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>⚔️ 游擊隊 (Guerrilla)</h4>
+                            <p>主力輸出角色，戰鬥的核心</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>培養建議</h2>
+                <ol>
+                    <li><strong>優先培養 SSR 角色</strong>：雖然難獲得，但戰力上限最高</li>
+                    <li><strong>注意被動技能</strong>：部分角色的被動可以增強整個隊伍</li>
+                    <li><strong>職業搭配</strong>：均衡的隊伍組成比全輸出更有效</li>
+                    <li><strong>善用戰力計算器</strong>：規劃培養順序前先計算效益</li>
+                </ol>
+            </section>
+
+            <hr style="margin: 40px 0; border-color: var(--border-color);">
+
+            <section id="team" class="markdown-content">
+                <h1>⚔️ 隊伍編成</h1>
+
+                <h2>基本原則</h2>
+                <ul>
+                    <li>一個隊伍通常可放置 5 個角色</li>
+                    <li>角色被動技能會互相影響整個隊伍</li>
+                    <li>同陣營角色通常有額外的協同效果</li>
+                </ul>
+
+                <h2>編隊建議</h2>
+                <div class="card" style="margin: 20px 0;">
+                    <div class="card-body">
+                        <h4>🏆 推薦配置</h4>
+                        <ul>
+                            <li>1-2 名游擊隊作為主力輸出</li>
+                            <li>1 名宣傳家提供增益</li>
+                            <li>1 名資助者維持持久力</li>
+                            <li>1 名間諜或自由位置</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>使用我們的<a href="calculator.html">戰力計算器</a>來測試不同的隊伍組合！</p>
+            </section>
+
+            <hr style="margin: 40px 0; border-color: var(--border-color);">
+
+            <section id="runes" class="markdown-content">
+                <h1>💎 符文系統</h1>
+
+                <h2>符文類型</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>武器類型</th>
+                            <th>戰力加成</th>
+                            <th>取得方式</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>原初</td>
+                            <td>1.0x</td>
+                            <td>初始裝備</td>
+                        </tr>
+                        <tr>
+                            <td>強化</td>
+                            <td>2.1x</td>
+                            <td>強化合成</td>
+                        </tr>
+                        <tr>
+                            <td>高等</td>
+                            <td>5.0x</td>
+                            <td>高級副本</td>
+                        </tr>
+                        <tr>
+                            <td>限定</td>
+                            <td>2.5x</td>
+                            <td>限定活動</td>
+                        </tr>
+                        <tr>
+                            <td>排名</td>
+                            <td>7.0x</td>
+                            <td>排名獎勵</td>
+                        </tr>
+                        <tr>
+                            <td>庚子</td>
+                            <td>8.0x</td>
+                            <td>特殊活動</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr style="margin: 40px 0; border-color: var(--border-color);">
+
+            <section id="tips" class="markdown-content">
+                <h1>💡 實用技巧</h1>
+
+                <h2>每日必做</h2>
+                <ul>
+                    <li>✅ 領取每日登入獎勵</li>
+                    <li>✅ 完成每日任務</li>
+                    <li>✅ 收集本地援助資源</li>
+                    <li>✅ 檢查並參與據點戰</li>
+                </ul>
+
+                <h2>資源管理</h2>
+                <ul>
+                    <li>💰 金幣優先用於角色升級</li>
+                    <li>🎫 抽獎券累積到有 UP 池再使用</li>
+                    <li>💎 符文優先給常用主力角色</li>
+                </ul>
+
+                <h2>社群參與</h2>
+                <ul>
+                    <li>🏘️ 加入活躍的聯盟</li>
+                    <li>💬 參與陣營討論區</li>
+                    <li>🤝 與盟友互相支援</li>
+                </ul>
+
+                <div class="alert alert-success" style="margin-top: 25px;">
+                    🎉 <strong>恭喜你完成新手教學！</strong><br>
+                    現在你已經掌握了遊戲的基本知識，開始你的冒險吧！
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>RF 攻略網站 | 使用 GitHub Pages 建置</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        // 摺疊面板切換
+        function toggleAccordion(header) {
+            header.classList.toggle('active');
+            const body = header.nextElementSibling;
+            body.classList.toggle('active');
+        }
+
+        // 平滑滾動到錨點
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

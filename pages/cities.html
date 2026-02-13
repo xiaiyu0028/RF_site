@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RF 城鎮資訊 - 查看城鎮詳細資料、劇情標題、通關獎勵與掉落物資訊">
+    <title>城鎮資訊 - RF 攻略網站</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                ⚔️ RF 攻略網站
+            </a>
+            <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="cities.html" class="active">城鎮資訊</a></li>
+                <li><a href="characters.html">角色資訊</a></li>
+                <li><a href="calculator.html">戰力計算器</a></li>
+                <li><a href="guide.html">新手教學</a></li>
+                <li><a href="query.html">查詢功能</a></li>
+                <li><a href="nations.html">國策資訊</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h1>🏰 城鎮資訊</h1>
+                <p>查看城鎮詳細資料、劇情標題、通關獎勵與掉落物資訊</p>
+            </div>
+
+            <!-- 搜尋與篩選 -->
+            <div class="card">
+                <div class="search-box">
+                    <input type="text" id="citySearch" placeholder="搜尋城鎮名稱...">
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="form-group">
+                        <label class="form-label">陣營篩選</label>
+                        <select class="form-control" id="factionFilter">
+                            <option value="">全部陣營</option>
+                            <option value="1">紅軍</option>
+                            <option value="2">臺灣</option>
+                            <option value="3">香港</option>
+                            <option value="4">藏國</option>
+                            <option value="5">維吾爾</option>
+                            <option value="6">哈薩克</option>
+                            <option value="7">滿洲</option>
+                            <option value="8">蒙古</option>
+                            <option value="10">反賊聯盟</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">排序方式</label>
+                        <select class="form-control" id="sortBy">
+                            <option value="id">城鎮 ID</option>
+                            <option value="name">名稱</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 城鎮列表 -->
+            <div id="citiesContainer">
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p style="margin-top: 15px;">載入城鎮資料中...</p>
+                </div>
+            </div>
+
+            <!-- 城鎮詳細資訊 Modal -->
+            <div id="cityModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal()">&times;</span>
+                    <div id="cityDetail"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>RF 攻略網站 | 使用 GitHub Pages 建置</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        let citiesData = [];
+
+        // 範例城鎮資料（實際應從 API 載入）
+        const sampleCities = [
+            {
+                id: 1,
+                name: "臺北",
+                owner: "臺灣",
+                ownerId: 2,
+                chapter: "第一章",
+                storyTitle: "反攻的序曲",
+                nextCity: "新北",
+                prevCity: null,
+                firstClearReward: "金幣 x1000, 抽獎券 x5",
+                clearReward: "金幣 x100",
+                dropItems: [
+                    { name: "鍛造石", rate: "10%" },
+                    { name: "經驗藥水", rate: "15%" }
+                ],
+                localSupport: "基礎援助 +50%",
+                territoryReward: "控制獎勵：每日金幣 x200"
+            },
+            {
+                id: 37,
+                name: "維多利亞城",
+                owner: "香港",
+                ownerId: 3,
+                chapter: "第二章",
+                storyTitle: "海港的黎明",
+                nextCity: "九龍",
+                prevCity: "深圳",
+                firstClearReward: "金幣 x1500, 抽獎券 x8",
+                clearReward: "金幣 x150",
+                dropItems: [
+                    { name: "強化石", rate: "8%" },
+                    { name: "符文碎片", rate: "12%" }
+                ],
+                localSupport: "基礎援助 +80%",
+                territoryReward: "控制獎勵：每日金幣 x350"
+            },
+            {
+                id: 110,
+                name: "烏蘭巴托",
+                owner: "蒙古",
+                ownerId: 8,
+                chapter: "第三章",
+                storyTitle: "草原的呼喚",
+                nextCity: "達蘭札德嘎德",
+                prevCity: "蘇赫巴托爾",
+                firstClearReward: "金幣 x2000, 抽獎券 x10",
+                clearReward: "金幣 x200",
+                dropItems: [
+                    { name: "稀有材料", rate: "5%" },
+                    { name: "騎兵裝備", rate: "7%" }
+                ],
+                localSupport: "基礎援助 +100%",
+                territoryReward: "控制獎勵：每日金幣 x500"
+            },
+            {
+                id: 293,
+                name: "北京",
+                owner: "紅軍",
+                ownerId: 1,
+                chapter: "最終章",
+                storyTitle: "帝都的終焉",
+                nextCity: null,
+                prevCity: "天津",
+                firstClearReward: "金幣 x5000, 抽獎券 x20, SSR角色碎片 x50",
+                clearReward: "金幣 x500",
+                dropItems: [
+                    { name: "傳說材料", rate: "2%" },
+                    { name: "限定裝備", rate: "3%" }
+                ],
+                localSupport: "基礎援助 +200%",
+                territoryReward: "控制獎勵：每日金幣 x1000"
+            },
+            {
+                id: 540,
+                name: "達蘭薩拉",
+                owner: "藏國",
+                ownerId: 4,
+                chapter: "外傳",
+                storyTitle: "流亡政府",
+                nextCity: null,
+                prevCity: "拉薩",
+                firstClearReward: "金幣 x3000, 佛珠 x100",
+                clearReward: "金幣 x300",
+                dropItems: [
+                    { name: "神聖符文", rate: "4%" },
+                    { name: "藏式裝備", rate: "6%" }
+                ],
+                localSupport: "基礎援助 +120%",
+                territoryReward: "控制獎勵：每日金幣 x600"
+            }
+        ];
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            citiesData = sampleCities;
+            renderCities(citiesData);
+            
+            // 綁定搜尋事件
+            document.getElementById('citySearch').addEventListener('input', debounce(filterCities, 300));
+            document.getElementById('factionFilter').addEventListener('change', filterCities);
+            document.getElementById('sortBy').addEventListener('change', filterCities);
+        });
+
+        // 篩選城鎮
+        function filterCities() {
+            const searchText = document.getElementById('citySearch').value.toLowerCase();
+            const faction = document.getElementById('factionFilter').value;
+            const sortBy = document.getElementById('sortBy').value;
+            
+            let filtered = citiesData.filter(city => {
+                const matchSearch = city.name.toLowerCase().includes(searchText);
+                const matchFaction = !faction || city.ownerId == faction;
+                return matchSearch && matchFaction;
+            });
+            
+            // 排序
+            filtered.sort((a, b) => {
+                if (sortBy === 'name') {
+                    return a.name.localeCompare(b.name, 'zh-TW');
+                }
+                return a.id - b.id;
+            });
+            
+            renderCities(filtered);
+        }
+
+        // 渲染城鎮列表
+        function renderCities(cities) {
+            const container = document.getElementById('citiesContainer');
+            
+            if (cities.length === 0) {
+                container.innerHTML = `
+                    <div class="alert alert-info">
+                        沒有找到符合條件的城鎮
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = `
+                <div class="grid grid-auto">
+                    ${cities.map(city => `
+                        <div class="card" onclick="showCityDetail(${city.id})" style="cursor: pointer;">
+                            <div class="card-header">
+                                <span class="card-title">${city.name}</span>
+                                <span class="badge ${getNationClass(city.ownerId)}">${city.owner}</span>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>章節：</strong>${city.chapter}</p>
+                                <p><strong>劇情：</strong>${city.storyTitle}</p>
+                                <p><strong>本地援助：</strong>${city.localSupport}</p>
+                                <div style="margin-top: 15px;">
+                                    <span class="badge badge-success">ID: ${city.id}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // 顯示城鎮詳情
+        function showCityDetail(cityId) {
+            const city = citiesData.find(c => c.id === cityId);
+            if (!city) return;
+            
+            const modal = document.getElementById('cityModal');
+            const detail = document.getElementById('cityDetail');
+            
+            detail.innerHTML = `
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">
+                    🏰 ${city.name}
+                    <span class="badge ${getNationClass(city.ownerId)}" style="margin-left: 10px;">${city.owner}</span>
+                </h2>
+                
+                <div class="grid grid-2" style="gap: 25px;">
+                    <div>
+                        <h3 style="margin-bottom: 15px;">📖 劇情資訊</h3>
+                        <table class="table">
+                            <tr><th>章節</th><td>${city.chapter}</td></tr>
+                            <tr><th>劇情標題</th><td>${city.storyTitle}</td></tr>
+                            <tr><th>上一個城鎮</th><td>${city.prevCity || '無'}</td></tr>
+                            <tr><th>下一個城鎮</th><td>${city.nextCity || '無'}</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div>
+                        <h3 style="margin-bottom: 15px;">🎁 獎勵資訊</h3>
+                        <table class="table">
+                            <tr><th>首次通關</th><td>${city.firstClearReward}</td></tr>
+                            <tr><th>通關獎勵</th><td>${city.clearReward}</td></tr>
+                            <tr><th>本地援助</th><td>${city.localSupport}</td></tr>
+                            <tr><th>據點戰獎勵</th><td>${city.territoryReward}</td></tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 25px;">
+                    <h3 style="margin-bottom: 15px;">📦 掉落物品</h3>
+                    <table class="table">
+                        <thead>
+                            <tr><th>物品名稱</th><th>掉落機率</th></tr>
+                        </thead>
+                        <tbody>
+                            ${city.dropItems.map(item => `
+                                <tr><td>${item.name}</td><td>${item.rate}</td></tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            
+            modal.style.display = 'flex';
+        }
+
+        // 關閉 Modal
+        function closeModal() {
+            document.getElementById('cityModal').style.display = 'none';
+        }
+
+        // 點擊 Modal 外部關閉
+        document.getElementById('cityModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+
+    <style>
+        /* Modal 樣式 */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2em;
+            cursor: pointer;
+            color: var(--muted-text);
+            transition: color 0.3s;
+        }
+
+        .modal-close:hover {
+            color: var(--danger-color);
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            #cityDetail .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
