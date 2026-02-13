@@ -382,6 +382,7 @@ select.form-control {
 .faction-kazakh { background: #00e9e4; color: var(--dark-text); }
 .faction-uyghur { background: #74a0f6; color: white; }
 .faction-manchuria { background: #fcb900; color: var(--dark-text); }
+.faction-free { background: #6c757d; color: white; }
 .faction-rebel { background: #ffffff; color: var(--dark-text); border: 1px solid var(--border-color); }
 
 /* 搜尋框 */

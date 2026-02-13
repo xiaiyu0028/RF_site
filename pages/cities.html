@@ -42,18 +42,9 @@
                 
                 <div class="grid grid-4">
                     <div class="form-group">
-                        <label class="form-label">陣營篩選</label>
+                        <label class="form-label">主權篩選</label>
                         <select class="form-control" id="factionFilter">
-                            <option value="">全部陣營</option>
-                            <option value="1">紅軍</option>
-                            <option value="2">臺灣</option>
-                            <option value="3">香港</option>
-                            <option value="4">藏國</option>
-                            <option value="5">維吾爾</option>
-                            <option value="6">哈薩克</option>
-                            <option value="7">滿洲</option>
-                            <option value="8">蒙古</option>
-                            <option value="10">反賊聯盟</option>
+                            <option value="">全部主權</option>
                         </select>
                     </div>
                     
@@ -107,8 +98,9 @@
                 citiesData = rawCitiesData.map(city => ({
                     id: city.id,
                     name: city.name,
-                    owner: city.control_nation?.name || '未知',
-                    ownerId: city.control_nation?.id || 0,
+                    owner: city.sovereign?.name || city.sovereign || city.control_nation?.name || '未知',
+                    ownerId: city.sovereign?.id || city.control_nation?.id || 0,
+                    sovereignId: city.sovereign?.id || 0,
                     chapter: city.chapter ? `${city.chapter.name} ${city.chapter.number}-${city.chapter.serial}` : '-',
                     storyTitle: city.title || '-',
                     description: city.description || '-',
@@ -134,6 +126,7 @@
                     hijackable: city.hijackable
                 }));
                 
+                buildSovereignFilter(citiesData);
                 renderCities(citiesData);
             } catch (error) {
                 console.error('載入城鎮資料失敗:', error);
@@ -164,7 +157,7 @@
             
             let filtered = citiesData.filter(city => {
                 const matchSearch = city.name.toLowerCase().includes(searchText);
-                const matchFaction = !faction || city.ownerId == faction;
+                const matchFaction = !faction || city.owner === faction;
                 return matchSearch && matchFaction;
             });
             
@@ -199,12 +192,12 @@
                         <div class="card" onclick="showCityDetail(${city.id})" style="cursor: pointer;">
                             <div class="card-header">
                                 <span class="card-title">${city.name}</span>
-                                <span class="badge ${getNationClass(city.ownerId)}">${city.owner}</span>
+                                <span class="badge ${getSovereignClass(city.owner)}">${city.owner}</span>
                             </div>
                             <div class="card-body">
                                 <p><strong>章節：</strong>${city.chapter}</p>
                                 <p><strong>劇情：</strong>${city.storyTitle}</p>
-                                ${city.sovereign ? `<p><strong>主權：</strong>${city.sovereign}</p>` : ''}
+                                ${city.owner ? `<p><strong>主權：</strong>${city.owner}</p>` : ''}
                                 ${city.capital ? '<span class="badge badge-warning">首都</span>' : ''}
                                 ${city.hq ? '<span class="badge badge-info">總部</span>' : ''}
                                 <div style="margin-top: 15px;">
@@ -216,6 +209,35 @@
                     `).join('')}
                 </div>
             `;
+        }
+
+        function buildSovereignFilter(cities) {
+            const select = document.getElementById('factionFilter');
+            if (!select) return;
+
+            const names = Array.from(new Set(
+                cities
+                    .map(city => city.owner)
+                    .filter(Boolean)
+            )).sort((a, b) => a.localeCompare(b, 'zh-TW'));
+
+            const options = ['<option value="">全部主權</option>']
+                .concat(names.map(name => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`));
+
+            const current = select.value;
+            select.innerHTML = options.join('');
+            if (current) {
+                select.value = current;
+            }
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
         }
 
         // 顯示城鎮詳情
@@ -321,7 +343,7 @@
             detail.innerHTML = `
                 <h2 style="color: var(--primary-color); margin-bottom: 20px;">
                     🏰 ${city.name}
-                    <span class="badge ${getNationClass(city.ownerId)}" style="margin-left: 10px;">${city.owner}</span>
+                    <span class="badge ${getSovereignClass(city.owner)}" style="margin-left: 10px;">${city.owner}</span>
                     ${city.capital ? '<span class="badge badge-warning" style="margin-left: 5px;">首都</span>' : ''}
                 </h2>
                 
@@ -360,6 +382,24 @@
             `;
             
             modal.style.display = 'flex';
+        }
+
+        // 以主權名稱取得顏色 class
+        function getSovereignClass(name) {
+            const classes = {
+                '人民共和國(紅軍)': 'faction-red',
+                '紅軍': 'faction-red',
+                '臺灣': 'faction-taiwan',
+                '日本皇國': 'faction-hongkong',
+                '印度支那聯盟': 'faction-tibet',
+                '哈里發聯盟': 'faction-uyghur',
+                '大韓邦聯': 'faction-kazakh',
+                '努山達拉聯盟': 'faction-manchuria',
+                '婆羅多聯盟': 'faction-mongolia',
+                '盎格魯國協': 'faction-free',
+                '歐羅巴聯盟': 'faction-rebel'
+            };
+            return classes[name] || '';
         }
 
         // 關閉 Modal
