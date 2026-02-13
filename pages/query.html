@@ -589,6 +589,9 @@
             } catch (e) {
                 console.error('抽獎歷史查詢失敗:', e);
             }
+
+            // 所有查詢完成後，顯示已登入狀態（清除載入中訊息）
+            showLoggedInState(`玩家 ID: ${currentPlayerId}`, false);
         }
         
         // 解析背包資料

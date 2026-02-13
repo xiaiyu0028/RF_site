@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,8 @@
 
         .nation-body {
             padding: 20px;
-            background: white;
+            background: var(--card-bg);
+            color: var(--text-color);
         }
 
         .strategy-card {
@@ -64,9 +66,20 @@
             margin: 2px;
         }
 
-        .effect-atk { background: #ffcccc; color: #c0392b; }
-        .effect-def { background: #cce5ff; color: #2980b9; }
-        .effect-aid { background: #ccffcc; color: #27ae60; }
+        .effect-atk {
+            background: #ffcccc;
+            color: #c0392b;
+        }
+
+        .effect-def {
+            background: #cce5ff;
+            color: #2980b9;
+        }
+
+        .effect-aid {
+            background: #ccffcc;
+            color: #27ae60;
+        }
 
         .nation-stats {
             display: grid;
@@ -93,6 +106,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- 導航欄 -->
     <nav class="navbar">
@@ -222,7 +236,7 @@
                 const timestamp = new Date().getTime();
                 const response = await fetch(`../return_data_example/nation.json?t=${timestamp}`);
                 const rawData = await response.json();
-                
+
                 // 解析 WebSocket 格式的 JSON
                 // 格式: ["6","14","player:815058","phx_reply",{"status":"ok","response":{...}}]
                 let data;
@@ -233,7 +247,7 @@
                 } else {
                     data = rawData;
                 }
-                
+
                 // 載入外交國策
                 if (data.diplomatic_strategies) {
                     diplomaticStrategies = data.diplomatic_strategies.map(s => ({
@@ -243,11 +257,11 @@
                         image: s.image
                     }));
                 }
-                
+
                 // 載入通用國策（建立扁平化對照表）
                 if (data.general_strategies) {
                     generalStrategies = data.general_strategies;
-                    
+
                     // 建立所有國策的 ID -> 資料對照
                     data.general_strategies.forEach(gs => {
                         allGeneralStrategiesFlat.push({
@@ -257,7 +271,7 @@
                             image: gs.image,
                             level: 0
                         });
-                        
+
                         if (gs.general_strategy_routes) {
                             gs.general_strategy_routes.forEach(route => {
                                 if (route.level_1_general_strategy) {
@@ -291,18 +305,18 @@
                         }
                     });
                 }
-                
+
                 // 載入國家資料
                 if (data.nations) {
                     nationsData = data.nations.map(nation => {
                         // 找出當前外交國策名稱
                         const currentDiplomaticStrategy = diplomaticStrategies.find(d => d.id === nation.diplomatic_strategy_id);
-                        
+
                         // 找出已選取的通用國策
                         const selectedStrategies = (nation.general_strategy_ids || [])
                             .map(id => allGeneralStrategiesFlat.find(s => s.id === id))
                             .filter(s => s);
-                        
+
                         return {
                             id: nation.id,
                             name: nation.headquarters || nation.origin?.replace('出身', '') || `陣營 ${nation.id}`,
@@ -327,12 +341,12 @@
                         };
                     });
                 }
-                
+
                 // 渲染頁面
                 renderNations(nationsData);
                 renderDiplomaticStrategies();
                 renderGeneralStrategies();
-                
+
             } catch (error) {
                 console.error('載入國策資料失敗:', error);
                 document.getElementById('nationsContainer').innerHTML = `
@@ -345,14 +359,14 @@
         }
 
         // 初始化
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             loadNationsData();
         });
 
         // 解析國策效果（從描述中提取數值）
         function parseStrategyEffects(description) {
             if (!description) return null;
-            
+
             const effects = {
                 atkBoost: 0,        // 我方據點戰戰力增加
                 enemyReduction: 0,  // 敵方戰力減少
@@ -361,7 +375,7 @@
                 assemblyTimeReduction: 0, // 集結時間減少
                 classBoosts: {}     // 各職業加成
             };
-            
+
             // 解析我方戰力增加
             const atkMatch = description.match(/我方(?:據點戰)?戰力增加(\d+)%/g);
             if (atkMatch) {
@@ -370,7 +384,7 @@
                     if (val) effects.atkBoost += parseInt(val[1]);
                 });
             }
-            
+
             // 解析敵方戰力減少
             const defMatch = description.match(/敵方(?:據點戰)?戰力減少(\d+)%/g);
             if (defMatch) {
@@ -379,7 +393,7 @@
                     if (val) effects.enemyReduction += parseInt(val[1]);
                 });
             }
-            
+
             // 解析本地援助增加
             const aidMatch = description.match(/(.+?)本地援助增加(\d+)%/g);
             if (aidMatch) {
@@ -391,7 +405,7 @@
                     }
                 });
             }
-            
+
             // 全地圖本地援助
             const allAidMatch = description.match(/全地圖本地援助增加(\d+)%/g);
             if (allAidMatch) {
@@ -400,7 +414,7 @@
                     if (val) effects.aidBoost['全地圖'] = (effects.aidBoost['全地圖'] || 0) + parseInt(val[1]);
                 });
             }
-            
+
             // 解析職業加成
             const classTypes = ['游擊隊', '工兵', '醫療兵', '步兵', '狙擊手', '突擊隊', '砲兵', '宣傳家', '資助者', '間諜'];
             classTypes.forEach(type => {
@@ -413,17 +427,17 @@
                     });
                 }
             });
-            
+
             // 解析時間減少
             const moveMatch = description.match(/移動時間減少(\d+)%/);
             if (moveMatch) effects.moveTimeReduction += parseInt(moveMatch[1]);
-            
+
             const assemblyMatch = description.match(/集結時間減少(\d+)%/);
             if (assemblyMatch) effects.assemblyTimeReduction += parseInt(assemblyMatch[1]);
-            
+
             return effects;
         }
-        
+
         // 計算國家的總效果
         function calculateTotalEffects(nation) {
             const totalEffects = {
@@ -434,7 +448,7 @@
                 assemblyTimeReduction: 0,
                 classBoosts: {}
             };
-            
+
             // 累加外交國策效果
             if (nation.diplomaticStrategyDesc) {
                 const diplomatic = parseStrategyEffects(nation.diplomaticStrategyDesc);
@@ -446,7 +460,7 @@
                     });
                 }
             }
-            
+
             // 累加通用國策效果
             if (nation.selectedStrategies) {
                 nation.selectedStrategies.forEach(strategy => {
@@ -465,14 +479,14 @@
                     }
                 });
             }
-            
+
             return totalEffects;
         }
-        
+
         // 生成效果統計表格 HTML
         function generateEffectsTable(effects) {
             const rows = [];
-            
+
             if (effects.atkBoost > 0) {
                 rows.push(`<tr><td>🗡️ 我方據點戰戰力</td><td class="effect-atk">+${effects.atkBoost}%</td></tr>`);
             }
@@ -485,21 +499,21 @@
             if (effects.assemblyTimeReduction > 0) {
                 rows.push(`<tr><td>⏱️ 集結時間減少</td><td>-${effects.assemblyTimeReduction}%</td></tr>`);
             }
-            
+
             // 本地援助
             Object.keys(effects.aidBoost).forEach(source => {
                 rows.push(`<tr><td>🤝 ${source}本地援助</td><td class="effect-aid">+${effects.aidBoost[source]}%</td></tr>`);
             });
-            
+
             // 職業加成（只顯示有加成的）
             Object.keys(effects.classBoosts).forEach(classType => {
                 rows.push(`<tr><td>👤 ${classType}戰力</td><td>+${effects.classBoosts[classType]}%</td></tr>`);
             });
-            
+
             if (rows.length === 0) {
                 return '<p style="color: var(--muted-text); font-size: 0.9em;">未選取有效國策</p>';
             }
-            
+
             return `
                 <table class="table" style="font-size: 0.85em;">
                     <thead>
@@ -517,16 +531,16 @@
             const nationFilter = document.getElementById('nationFilter').value;
             const allianceFilter = document.getElementById('allianceFilter').value;
             const sortFilter = document.getElementById('sortFilter').value;
-            
+
             let filtered = nationsData.filter(nation => {
                 const matchNation = !nationFilter || nation.id == nationFilter;
                 const matchAlliance = !allianceFilter || nation.alliance === allianceFilter;
                 return matchNation && matchAlliance;
             });
-            
+
             // 排序
             filtered.sort((a, b) => {
-                switch(sortFilter) {
+                switch (sortFilter) {
                     case 'cities':
                         return b.cities - a.cities;
                     case 'name':
@@ -535,21 +549,21 @@
                         return b.players - a.players;
                 }
             });
-            
+
             renderNations(filtered);
         }
 
         // 渲染國家列表
         function renderNations(nations) {
             const container = document.getElementById('nationsContainer');
-            
+
             if (nations.length === 0) {
                 container.innerHTML = `
                     <div class="alert alert-info">沒有找到符合條件的陣營</div>
                 `;
                 return;
             }
-            
+
             container.innerHTML = `
                 <p style="margin-bottom: 15px; color: var(--muted-text);">共 ${nations.length} 個陣營</p>
                 <div class="grid grid-2">
@@ -633,18 +647,18 @@
                 </div>
             `;
         }
-        
+
         // 顯示全部國策 Modal
         function showAllStrategies(nationId) {
             const nation = nationsData.find(n => n.id === nationId);
             if (!nation || !nation.selectedStrategies) return;
-            
+
             const modal = document.createElement('div');
             modal.className = 'modal';
             modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; z-index: 2000;';
-            
+
             modal.innerHTML = `
-                <div style="background: white; padding: 30px; border-radius: 15px; max-width: 800px; width: 90%; max-height: 80vh; overflow-y: auto;">
+                <div style="background: var(--card-bg); color: var(--text-color); padding: 30px; border-radius: 15px; max-width: 800px; width: 90%; max-height: 80vh; overflow-y: auto; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);">
                     <h2 style="color: var(--primary-color); margin-bottom: 20px;">
                         ${nation.name} - 已選取通用國策
                     </h2>
@@ -671,11 +685,11 @@
                     </button>
                 </div>
             `;
-            
-            modal.addEventListener('click', function(e) {
+
+            modal.addEventListener('click', function (e) {
                 if (e.target === modal) modal.remove();
             });
-            
+
             document.body.appendChild(modal);
         }
 
@@ -713,14 +727,14 @@
                     <div class="accordion-body">
                         <h4 style="margin-bottom: 15px;">進階路線：</h4>
                         ${strategy.general_strategy_routes ? strategy.general_strategy_routes.map(route => {
-                            const levels = [];
-                            if (route.level_1_general_strategy) levels.push(route.level_1_general_strategy);
-                            if (route.level_2_general_strategy) levels.push(route.level_2_general_strategy);
-                            if (route.level_3_general_strategy) levels.push(route.level_3_general_strategy);
-                            
-                            if (levels.length === 0) return '';
-                            
-                            return `
+                const levels = [];
+                if (route.level_1_general_strategy) levels.push(route.level_1_general_strategy);
+                if (route.level_2_general_strategy) levels.push(route.level_2_general_strategy);
+                if (route.level_3_general_strategy) levels.push(route.level_3_general_strategy);
+
+                if (levels.length === 0) return '';
+
+                return `
                                 <div class="strategy-card">
                                     <h4>${levels.map(l => l.name).join(' → ')}</h4>
                                     <div style="margin-top: 10px;">
@@ -733,7 +747,7 @@
                                     </div>
                                 </div>
                             `;
-                        }).join('') : '<p>無進階路線資料</p>'}
+            }).join('') : '<p>無進階路線資料</p>'}
                     </div>
                 </div>
             `).join('');
@@ -747,4 +761,5 @@
         }
     </script>
 </body>
+
 </html>

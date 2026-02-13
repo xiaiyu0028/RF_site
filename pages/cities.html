@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>城鎮資訊 - RF 攻略網站</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <!-- 導航欄 -->
     <nav class="navbar">
@@ -39,7 +41,7 @@
                 <div class="search-box">
                     <input type="text" id="citySearch" placeholder="搜尋城鎮名稱...">
                 </div>
-                
+
                 <div class="grid grid-4">
                     <div class="form-group">
                         <label class="form-label">主權篩選</label>
@@ -47,7 +49,7 @@
                             <option value="">全部主權</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label class="form-label">排序方式</label>
                         <select class="form-control" id="sortBy">
@@ -93,7 +95,7 @@
                 const response = await fetch(`../return_data_example/cities.json?t=${timestamp}`);
                 const data = await response.json();
                 rawCitiesData = data.cities || [];
-                
+
                 // 轉換資料格式
                 citiesData = rawCitiesData.map(city => ({
                     id: city.id,
@@ -125,7 +127,7 @@
                     hq: city.hq,
                     hijackable: city.hijackable
                 }));
-                
+
                 buildSovereignFilter(citiesData);
                 renderCities(citiesData);
             } catch (error) {
@@ -140,9 +142,9 @@
         }
 
         // 初始化
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             loadCitiesData();
-            
+
             // 綁定搜尋事件
             document.getElementById('citySearch').addEventListener('input', debounce(filterCities, 300));
             document.getElementById('factionFilter').addEventListener('change', filterCities);
@@ -154,13 +156,13 @@
             const searchText = document.getElementById('citySearch').value.toLowerCase();
             const faction = document.getElementById('factionFilter').value;
             const sortBy = document.getElementById('sortBy').value;
-            
+
             let filtered = citiesData.filter(city => {
                 const matchSearch = city.name.toLowerCase().includes(searchText);
                 const matchFaction = !faction || city.owner === faction;
                 return matchSearch && matchFaction;
             });
-            
+
             // 排序
             filtered.sort((a, b) => {
                 if (sortBy === 'name') {
@@ -168,14 +170,14 @@
                 }
                 return a.id - b.id;
             });
-            
+
             renderCities(filtered);
         }
 
         // 渲染城鎮列表
         function renderCities(cities) {
             const container = document.getElementById('citiesContainer');
-            
+
             if (cities.length === 0) {
                 container.innerHTML = `
                     <div class="alert alert-info">
@@ -184,7 +186,7 @@
                 `;
                 return;
             }
-            
+
             container.innerHTML = `
                 <p style="margin-bottom: 15px; color: var(--muted-text);">共 ${cities.length} 個城鎮</p>
                 <div class="grid grid-auto">
@@ -244,30 +246,30 @@
         function showCityDetail(cityId) {
             const city = citiesData.find(c => c.id === cityId);
             if (!city) return;
-            
+
             const modal = document.getElementById('cityModal');
             const detail = document.getElementById('cityDetail');
-            
+
             // 找出相鄰城鎮名稱
             const getCityName = (id) => {
                 if (!id) return '無';
                 const found = citiesData.find(c => c.id === id);
                 return found ? found.name : `ID: ${id}`;
             };
-            
+
             // 渲染掉落物品
             const renderSpoils = (spoils) => {
                 if (!spoils || spoils.length === 0) {
                     return '<p style="color: var(--muted-text);">無掉落物品資料</p>';
                 }
-                
+
                 // 分離固定掉落和隨機掉落
                 const fixedSpoils = spoils.filter(s => !s.random);
                 const randomSpoils = spoils.filter(s => s.random);
                 const randomCount = randomSpoils.length;
-                
+
                 let html = '';
-                
+
                 // 固定掉落
                 if (fixedSpoils.length > 0) {
                     html += '<h4 style="margin-bottom: 10px; color: var(--success-color);">🎁 固定獎勵</h4>';
@@ -296,12 +298,12 @@
                         `;
                     }).join('');
                 }
-                
+
                 // 隨機掉落
                 if (randomSpoils.length > 0) {
                     // 計算 reference 總和
                     const totalReference = randomSpoils.reduce((sum, s) => sum + (s.reference || 1), 0);
-                    
+
                     html += '<h4 style="margin: 20px 0 10px; color: var(--warning-color);">🎲 隨機獎勵</h4>';
                     html += `<p style="margin-bottom: 10px; color: var(--muted-text); font-size: 0.9em;">共 ${randomCount} 種可能，每次通關隨機獲得其中一種</p>`;
                     html += randomSpoils.map((spoil, idx) => {
@@ -336,10 +338,10 @@
                         `;
                     }).join('');
                 }
-                
+
                 return html || '<p style="color: var(--muted-text);">無掉落物品資料</p>';
             };
-            
+
             detail.innerHTML = `
                 <h2 style="color: var(--primary-color); margin-bottom: 20px;">
                     🏰 ${city.name}
@@ -380,7 +382,7 @@
                     ${renderSpoils(city.citySpoils)}
                 </div>
             `;
-            
+
             modal.style.display = 'flex';
         }
 
@@ -411,7 +413,7 @@
         }
 
         // 點擊 Modal 外部關閉
-        document.getElementById('cityModal')?.addEventListener('click', function(e) {
+        document.getElementById('cityModal')?.addEventListener('click', function (e) {
             if (e.target === this) {
                 closeModal();
             }
@@ -434,7 +436,8 @@
         }
 
         .modal-content {
-            background: white;
+            background: var(--card-bg);
+            color: var(--text-color);
             padding: 30px;
             border-radius: 15px;
             max-width: 900px;
@@ -464,11 +467,12 @@
                 padding: 20px;
                 margin: 10px;
             }
-            
+
             #cityDetail .grid-2 {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </body>
+
 </html>
