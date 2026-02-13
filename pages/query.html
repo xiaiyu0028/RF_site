@@ -37,30 +37,59 @@
             <!-- 登入區塊 -->
             <div class="card" id="loginSection">
                 <div class="card-header">
-                    <span class="card-title">🔐 帳號驗證</span>
+                    <span class="card-title">🔐 帳號登入</span>
                 </div>
                 <div class="card-body">
-                    <div class="alert alert-info">
-                        <strong>📌 說明：</strong>
-                        請輸入您的遊戲帳號資訊進行驗證。此功能會透過遊戲 API 查詢您的角色資料。
-                        <br><br>
-                        <strong>⚠️ 注意：</strong>此為離線示範功能。實際使用需要連接遊戲伺服器。
+                    <!-- 風險警告 -->
+                    <div class="alert alert-danger" style="margin-bottom: 20px;">
+                        <strong>⚠️ 重要安全警告：</strong>
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <li>本功能需要您輸入遊戲帳號密碼，存在以下風險：</li>
+                            <li><strong>帳號安全風險：</strong>在第三方網站輸入密碼可能導致帳號被盜</li>
+                            <li><strong>隱私風險：</strong>您的遊戲資料將在瀏覽器中處理</li>
+                            <li><strong>ToS 風險：</strong>使用非官方工具可能違反遊戲服務條款</li>
+                            <li>本網站<strong>不會儲存</strong>您的密碼，但請自行評估風險</li>
+                            <li>如有疑慮，請使用「示範模式」查看範例資料</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="alert alert-info" style="margin-bottom: 20px;">
+                        <strong>📌 技術說明：</strong>
+                        由於瀏覽器安全限制 (CORS)，直接從網頁連接遊戲伺服器可能會失敗。
+                        如果連接失敗，您可以：
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <li>使用「示範模式」查看功能展示</li>
+                            <li>透過瀏覽器開發者工具直接測試 API</li>
+                            <li>使用本地代理伺服器繞過 CORS 限制</li>
+                        </ul>
                     </div>
                     
                     <div class="grid grid-2">
                         <div class="form-group">
-                            <label class="form-label">玩家 ID</label>
-                            <input type="text" class="form-control" id="playerId" placeholder="輸入玩家 ID (例如: 815058)">
+                            <label class="form-label">帳號 (Email)</label>
+                            <input type="email" class="form-control" id="accountEmail" placeholder="輸入遊戲帳號 Email">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">驗證碼（選填）</label>
-                            <input type="text" class="form-control" id="authCode" placeholder="API 驗證碼">
+                            <label class="form-label">密碼</label>
+                            <input type="password" class="form-control" id="accountPassword" placeholder="輸入密碼">
                         </div>
                     </div>
                     
-                    <button class="btn btn-primary" onclick="loginAndQuery()" style="width: 100%;">
-                        🔓 驗證並查詢
-                    </button>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" id="riskAcknowledge" style="margin-right: 8px;">
+                            我已閱讀並了解上述風險，同意繼續
+                        </label>
+                    </div>
+                    
+                    <div class="grid grid-2" style="gap: 15px;">
+                        <button class="btn btn-primary" onclick="loginAndQuery()" id="loginBtn" disabled>
+                            🔓 登入並查詢
+                        </button>
+                        <button class="btn btn-outline" onclick="useDemoMode()">
+                            📋 使用示範模式
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -246,7 +275,25 @@
 
     <script src="../js/app.js"></script>
     <script>
-        // 範例資料（實際應從 API 取得）
+        // API 設定
+        const API_CONFIG = {
+            wsUrl: 'wss://rf.line.games/socket/websocket',
+            httpUrl: 'https://rf.line.games',
+            timeout: 30000
+        };
+
+        // 狀態
+        let currentPlayerId = null;
+        let wsConnection = null;
+        let isDemoMode = false;
+        
+        // 查詢結果存放
+        let ownedActors = [];
+        let inventoryItems = [];
+        let runesData = [];
+        let gachaHistory = [];
+
+        // 範例資料（示範模式使用）
         const sampleOwnedCharacters = [
             { name: "卡姆蘭", level: 160, scarcity: "SSR", role: "spy", equipped: "高等符文" },
             { name: "范朋克", level: 120, scarcity: "SR", role: "agitator", equipped: "強化符文" },
@@ -281,58 +328,291 @@
             { date: "2026-02-10", result: "阿旺", scarcity: "SSR", pool: "限定池" },
         ];
 
-        // 登入並查詢
-        function loginAndQuery() {
-            const playerId = document.getElementById('playerId').value.trim();
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 綁定風險確認勾選框
+            document.getElementById('riskAcknowledge').addEventListener('change', function() {
+                document.getElementById('loginBtn').disabled = !this.checked;
+            });
+        });
+
+        // 使用示範模式
+        function useDemoMode() {
+            isDemoMode = true;
+            currentPlayerId = 'demo_user';
             
-            if (!playerId) {
-                alert('請輸入玩家 ID');
+            showLoggedInState('示範模式', true);
+            
+            // 載入範例資料
+            loadOwnedCharacters(sampleOwnedCharacters);
+            loadInventory(sampleInventory);
+            loadRunes(sampleRunes);
+            loadGachaHistory(sampleGachaHistory);
+            
+            // 初始化分頁
+            initTabs();
+        }
+
+        // 真實登入查詢
+        async function loginAndQuery() {
+            const email = document.getElementById('accountEmail').value.trim();
+            const password = document.getElementById('accountPassword').value;
+            
+            if (!email || !password) {
+                alert('請輸入帳號和密碼');
+                return;
+            }
+            
+            if (!document.getElementById('riskAcknowledge').checked) {
+                alert('請先勾選風險確認');
                 return;
             }
             
             // 顯示載入中
+            showLoadingState('正在連接伺服器...');
+            
+            try {
+                // 嘗試透過 WebSocket 連接
+                const loginResult = await attemptLogin(email, password);
+                
+                if (loginResult.success) {
+                    currentPlayerId = loginResult.playerId;
+                    showLoggedInState(`玩家 ID: ${currentPlayerId}`, false);
+                    
+                    // 查詢各項資料
+                    await fetchAllData(loginResult.token);
+                    
+                    // 初始化分頁
+                    initTabs();
+                } else {
+                    throw new Error(loginResult.error || '登入失敗');
+                }
+            } catch (error) {
+                console.error('API 連接錯誤:', error);
+                
+                // 顯示錯誤並提供選項
+                document.getElementById('loginSection').innerHTML = `
+                    <div class="card-header">
+                        <span class="card-title">❌ 連接失敗</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-danger">
+                            <strong>錯誤：</strong>${error.message}
+                            <br><br>
+                            可能原因：
+                            <ul style="margin: 10px 0; padding-left: 20px;">
+                                <li>瀏覽器 CORS 安全限制阻擋了連接</li>
+                                <li>遊戲伺服器暫時無法連接</li>
+                                <li>帳號或密碼錯誤</li>
+                                <li>網路連線問題</li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-2" style="gap: 15px;">
+                            <button class="btn btn-outline" onclick="location.reload()">🔄 重試</button>
+                            <button class="btn btn-primary" onclick="useDemoMode()">📋 使用示範模式</button>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // 嘗試登入
+        async function attemptLogin(email, password) {
+            return new Promise((resolve, reject) => {
+                try {
+                    // 嘗試 WebSocket 連接
+                    const ws = new WebSocket(API_CONFIG.wsUrl);
+                    
+                    const timeout = setTimeout(() => {
+                        ws.close();
+                        resolve({ success: false, error: '連接逾時' });
+                    }, API_CONFIG.timeout);
+                    
+                    ws.onopen = function() {
+                        // 發送登入請求
+                        const loginMsg = JSON.stringify({
+                            topic: "player:login",
+                            event: "phx_join",
+                            payload: {
+                                email: email,
+                                password: password
+                            },
+                            ref: "1"
+                        });
+                        ws.send(loginMsg);
+                    };
+                    
+                    ws.onmessage = function(event) {
+                        clearTimeout(timeout);
+                        try {
+                            const data = JSON.parse(event.data);
+                            if (data.payload && data.payload.player_id) {
+                                wsConnection = ws;
+                                resolve({
+                                    success: true,
+                                    playerId: data.payload.player_id,
+                                    token: data.payload.token || ''
+                                });
+                            } else if (data.payload && data.payload.error) {
+                                ws.close();
+                                resolve({ success: false, error: data.payload.error });
+                            }
+                        } catch (e) {
+                            ws.close();
+                            resolve({ success: false, error: '回應解析失敗' });
+                        }
+                    };
+                    
+                    ws.onerror = function(error) {
+                        clearTimeout(timeout);
+                        resolve({ success: false, error: 'WebSocket 連接失敗 (可能是 CORS 限制)' });
+                    };
+                    
+                    ws.onclose = function() {
+                        clearTimeout(timeout);
+                    };
+                    
+                } catch (error) {
+                    resolve({ success: false, error: error.message });
+                }
+            });
+        }
+
+        // 發送 API 請求
+        function sendApiRequest(topic, event, payload) {
+            return new Promise((resolve, reject) => {
+                if (!wsConnection || wsConnection.readyState !== WebSocket.OPEN) {
+                    reject(new Error('WebSocket 未連接'));
+                    return;
+                }
+                
+                const msg = JSON.stringify({
+                    topic: `player:${currentPlayerId}`,
+                    event: event,
+                    payload: payload,
+                    ref: Date.now().toString()
+                });
+                
+                const timeout = setTimeout(() => {
+                    reject(new Error('請求逾時'));
+                }, 15000);
+                
+                const handler = function(e) {
+                    try {
+                        const data = JSON.parse(e.data);
+                        if (data.event === 'phx_reply') {
+                            clearTimeout(timeout);
+                            wsConnection.removeEventListener('message', handler);
+                            resolve(data.payload.response);
+                        }
+                    } catch (err) {
+                        // 繼續等待
+                    }
+                };
+                
+                wsConnection.addEventListener('message', handler);
+                wsConnection.send(msg);
+            });
+        }
+
+        // 查詢所有資料
+        async function fetchAllData(token) {
+            showLoadingState('正在查詢角色資料...');
+            
+            try {
+                // 查詢角色
+                const actorsData = await sendApiRequest('actors', 'actors', { body: '' });
+                if (actorsData && actorsData.actors) {
+                    ownedActors = actorsData.actors;
+                    loadOwnedCharacters(ownedActors.map(a => ({
+                        name: a.name,
+                        level: a.level || 1,
+                        scarcity: a.scarcity || 'N',
+                        role: a.role || 'unknown',
+                        equipped: a.weapon_prototype?.name || '無'
+                    })));
+                }
+                
+                showLoadingState('正在查詢庫存資料...');
+                
+                // 查詢背包
+                const backpackData = await sendApiRequest('backpack', 'backpack', {});
+                if (backpackData && backpackData.items) {
+                    inventoryItems = backpackData.items;
+                    loadInventory(inventoryItems.map(i => ({
+                        name: i.name,
+                        count: i.quantity || 1,
+                        category: i.item_type || 'other'
+                    })));
+                }
+                
+                showLoadingState('正在查詢符文資料...');
+                
+                // 查詢符文
+                const runesResult = await sendApiRequest('weapon_prototypes', 'weapon_prototypes', {});
+                if (runesResult && runesResult.weapon_prototypes) {
+                    runesData = runesResult.weapon_prototypes;
+                    loadRunes(runesData.map(r => ({
+                        name: r.name,
+                        level: r.level || 1,
+                        owner: r.actor_name || '未裝備',
+                        stats: r.description || '-'
+                    })));
+                }
+                
+                showLoadingState('正在查詢抽獎歷史...');
+                
+                // 查詢抽獎歷史
+                const gachaResult = await sendApiRequest('used_recruit_coupons', 'used_recruit_coupons', {});
+                if (gachaResult && gachaResult.records) {
+                    gachaHistory = gachaResult.records;
+                    loadGachaHistory(gachaHistory.map(g => ({
+                        date: g.created_at?.split('T')[0] || '-',
+                        result: g.actor_name || '-',
+                        scarcity: g.scarcity || 'N',
+                        pool: g.pool_name || '-'
+                    })));
+                }
+                
+            } catch (error) {
+                console.error('資料查詢失敗:', error);
+                // 如果某些查詢失敗，顯示已取得的資料
+            }
+        }
+
+        // 顯示載入狀態
+        function showLoadingState(message) {
             document.getElementById('loginSection').innerHTML = `
                 <div class="card-body">
                     <div class="loading">
                         <div class="loading-spinner"></div>
-                        <p style="margin-top: 15px;">正在查詢資料...</p>
+                        <p style="margin-top: 15px;">${message}</p>
                     </div>
                 </div>
             `;
+        }
+
+        // 顯示已登入狀態
+        function showLoggedInState(info, isDemo) {
+            document.getElementById('loginSection').innerHTML = `
+                <div class="card-header">
+                    <span class="card-title">${isDemo ? '📋 示範模式' : '✅ 已登入'}</span>
+                    <span class="badge ${isDemo ? 'badge-warning' : 'badge-success'}">${info}</span>
+                </div>
+                <div class="card-body">
+                    <p>${isDemo ? '目前顯示的是範例資料，非實際遊戲資料' : '已成功連接並載入您的遊戲資料'}</p>
+                    <button class="btn btn-outline" onclick="location.reload()">🔄 重新查詢</button>
+                </div>
+            `;
             
-            // 模擬 API 請求延遲
-            setTimeout(() => {
-                // 顯示已登入狀態
-                document.getElementById('loginSection').innerHTML = `
-                    <div class="card-header">
-                        <span class="card-title">✅ 已驗證</span>
-                        <span class="badge badge-success">玩家 ID: ${playerId}</span>
-                    </div>
-                    <div class="card-body">
-                        <p>已成功連接並載入資料（示範模式）</p>
-                        <button class="btn btn-outline" onclick="location.reload()">🔄 重新查詢</button>
-                    </div>
-                `;
-                
-                // 顯示查詢結果
-                document.getElementById('queryTabs').style.display = 'block';
-                
-                // 載入各項資料
-                loadOwnedCharacters();
-                loadInventory();
-                loadRunes();
-                loadGachaHistory();
-                
-                // 初始化分頁
-                initTabs();
-                
-            }, 1500);
+            // 顯示查詢結果分頁
+            document.getElementById('queryTabs').style.display = 'block';
         }
 
         // 載入已擁有角色
-        function loadOwnedCharacters() {
+        function loadOwnedCharacters(characters) {
             const container = document.getElementById('ownedCharacters');
-            document.getElementById('ownedCount').textContent = `${sampleOwnedCharacters.length} 個角色`;
+            document.getElementById('ownedCount').textContent = `${characters.length} 個角色`;
             
             container.innerHTML = `
                 <div class="table-container">
@@ -347,7 +627,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            ${sampleOwnedCharacters.map(char => `
+                            ${characters.map(char => `
                                 <tr>
                                     <td><strong>${char.name}</strong></td>
                                     <td><span class="badge scarcity-${char.scarcity}">${char.scarcity}</span></td>
@@ -363,8 +643,10 @@
         }
 
         // 載入庫存
-        function loadInventory() {
-            renderInventory(sampleInventory);
+        let currentInventory = [];
+        function loadInventory(items) {
+            currentInventory = items;
+            renderInventory(items);
         }
 
         function renderInventory(items) {
@@ -387,15 +669,15 @@
         }
 
         function filterInventory(category) {
-            let filtered = sampleInventory;
+            let filtered = currentInventory;
             if (category !== 'all') {
-                filtered = sampleInventory.filter(item => item.category === category);
+                filtered = currentInventory.filter(item => item.category === category);
             }
             renderInventory(filtered);
         }
 
         // 載入符文
-        function loadRunes() {
+        function loadRunes(runes) {
             const container = document.getElementById('runesList');
             
             container.innerHTML = `
@@ -410,7 +692,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            ${sampleRunes.map(rune => `
+                            ${runes.map(rune => `
                                 <tr>
                                     <td><strong>${rune.name}</strong></td>
                                     <td>Lv.${rune.level}</td>
@@ -425,19 +707,19 @@
         }
 
         // 載入抽獎歷史
-        function loadGachaHistory() {
+        function loadGachaHistory(records) {
             const container = document.getElementById('gachaHistory');
             
             // 計算統計
-            const total = sampleGachaHistory.length;
-            const rCount = sampleGachaHistory.filter(g => g.scarcity === 'R').length;
-            const srCount = sampleGachaHistory.filter(g => g.scarcity === 'SR').length;
-            const ssrCount = sampleGachaHistory.filter(g => g.scarcity === 'SSR').length;
+            const total = records.length;
+            const rCount = records.filter(g => g.scarcity === 'R').length;
+            const srCount = records.filter(g => g.scarcity === 'SR').length;
+            const ssrCount = records.filter(g => g.scarcity === 'SSR').length;
             
             document.getElementById('totalGacha').textContent = total;
-            document.getElementById('rRate').textContent = ((rCount / total) * 100).toFixed(1) + '%';
-            document.getElementById('srRate').textContent = ((srCount / total) * 100).toFixed(1) + '%';
-            document.getElementById('ssrRate').textContent = ((ssrCount / total) * 100).toFixed(1) + '%';
+            document.getElementById('rRate').textContent = total > 0 ? ((rCount / total) * 100).toFixed(1) + '%' : '0%';
+            document.getElementById('srRate').textContent = total > 0 ? ((srCount / total) * 100).toFixed(1) + '%' : '0%';
+            document.getElementById('ssrRate').textContent = total > 0 ? ((ssrCount / total) * 100).toFixed(1) + '%' : '0%';
             
             container.innerHTML = `
                 <div class="table-container">
@@ -451,7 +733,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            ${sampleGachaHistory.map(record => `
+                            ${records.map(record => `
                                 <tr>
                                     <td>${record.date}</td>
                                     <td>${record.pool}</td>

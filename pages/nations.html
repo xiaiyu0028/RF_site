@@ -209,188 +209,142 @@
 
     <script src="../js/app.js"></script>
     <script>
-        // 國策資料
-        const nationsData = [
-            {
-                id: 1,
-                name: "紅軍",
-                subtitle: "大陸的征服者與主宰者",
-                description: "繼清帝之後大陸上最強大的征服者。希望將鬆散的各屬邦整合成被中華同化的單一國家。",
-                alliance: "共產陣營",
-                players: 23158,
-                cities: 127,
-                controlCities: 72,
-                capital: "北京",
-                color: "#fd1e19",
-                diplomaticStrategy: "親努山達拉",
-                slogan: ["王道征途"]
-            },
-            {
-                id: 2,
-                name: "臺灣",
-                subtitle: "禦敵千年的海東古國",
-                description: "曾僅憑一道海峽，抗拒東方大陸政權達千餘年。經過數十年抗爭與建設，海東古國重獲新生。",
-                alliance: "反共陣營",
-                players: 50276,
-                cities: 22,
-                controlCities: 18,
-                capital: "臺北",
-                color: "#06859e",
-                diplomaticStrategy: "親盎格魯",
-                slogan: ["望你平安，天祐臺灣"]
-            },
-            {
-                id: 3,
-                name: "香港",
-                subtitle: "負隅頑抗的海港城邦",
-                description: "原來是百越船民的漁村，被英國建設成繁華的自由城，成為大陸通往世界的門戶。",
-                alliance: "反共陣營",
-                players: 35632,
-                cities: 20,
-                controlCities: 24,
-                capital: "維多利亞城",
-                color: "#ae43ec",
-                diplomaticStrategy: "親盎格魯",
-                slogan: ["願榮光，歸香港"]
-            },
-            {
-                id: 4,
-                name: "藏國",
-                subtitle: "赤焰灼燒的雪域佛土",
-                description: "高原上的佛教政權，法王尊清帝為文殊菩薩化身，在清帝保護下維持統治。",
-                alliance: "反共陣營",
-                players: 7247,
-                cities: 15,
-                controlCities: 19,
-                capital: "達蘭薩拉",
-                color: "#46be7f",
-                diplomaticStrategy: "親婆羅多",
-                slogan: ["故鄉的五濁惡世，要被斬開了"]
-            },
-            {
-                id: 5,
-                name: "維吾爾",
-                subtitle: "流淌血淚的沙漠七城",
-                description: "綠洲上的定居民，東突厥絲路上的一串城邦。不堪暴虐屠戮的居民逃向西突厥、組織義軍。",
-                alliance: "反共陣營",
-                players: 5394,
-                cities: 12,
-                controlCities: 32,
-                capital: "伊斯坦堡",
-                color: "#74a0f6",
-                diplomaticStrategy: "親大北方",
-                slogan: ["半個月亮爬上來"]
-            },
-            {
-                id: 6,
-                name: "哈薩克",
-                subtitle: "馳騁國界的自由騎手",
-                description: "草海上的游牧民，為了躲避俄羅斯的哥薩克騎兵，進入東突厥請求清帝庇護。",
-                alliance: "反共陣營",
-                players: 5344,
-                cities: 23,
-                controlCities: 8,
-                capital: "阿拉木圖",
-                color: "#00e9e4",
-                diplomaticStrategy: "親大北方",
-                slogan: ["西去的燕子啊"]
-            },
-            {
-                id: 7,
-                name: "滿洲",
-                subtitle: "歷劫毀滅的富饒大地",
-                description: "清帝守護數百年的祖地與禁地。紅軍把滿洲占為根據地，將繁盛文明榨取殆盡。",
-                alliance: "反共陣營",
-                players: 8113,
-                cities: 4,
-                controlCities: 16,
-                capital: "海參崴",
-                color: "#fcb900",
-                diplomaticStrategy: "親日本",
-                slogan: ["我的家在松花江上"]
-            },
-            {
-                id: 8,
-                name: "蒙古",
-                subtitle: "半壁淪陷的的古老汗國",
-                description: "中世紀的世界征服者，被清帝降伏後與清帝聯姻，雙方共治全大陸。",
-                alliance: "反共陣營",
-                players: 5362,
-                cities: 15,
-                controlCities: 35,
-                capital: "烏蘭巴托",
-                color: "#008af7",
-                diplomaticStrategy: "親大韓",
-                slogan: ["要說造反的嘎達梅林"]
-            },
-            {
-                id: 10,
-                name: "反賊聯盟",
-                subtitle: "蟄伏南洋的華夏反賊",
-                description: "華夏大地上語言、風俗各異的無數邦國，在辛亥年譁變獨立，迫使清帝退位。",
-                alliance: "反共陣營",
-                players: 21035,
-                cities: 8,
-                controlCities: 45,
-                capital: "曼谷",
-                color: "#ffffff",
-                diplomaticStrategy: "親日本",
-                slogan: ["魂魄毅兮，為鬼雄"]
-            }
-        ];
+        // 國策資料（將從 JSON 載入）
+        let nationsData = [];
+        let diplomaticStrategies = [];
+        let generalStrategies = [];
+        let allGeneralStrategiesFlat = []; // 扁平化的所有國策 ID -> 名稱對照
 
-        // 外交國策資料
-        const diplomaticStrategies = [
-            { id: 1, name: "親盎格魯", description: "我方戰力增加30% 敵方戰力減少10%<br/>盎格魯國協本地援助增加125%" },
-            { id: 2, name: "親婆羅多", description: "我方戰力增加30% 敵方戰力減少10%<br/>婆羅多聯盟本地援助增加140%" },
-            { id: 3, name: "親大韓", description: "我方戰力增加10% 敵方戰力減少30%<br/>大韓邦聯本地援助增加260%" },
-            { id: 4, name: "親歐羅巴", description: "我方戰力增加10% 敵方戰力減少30%<br/>歐羅巴聯盟本地援助增加350%" },
-            { id: 5, name: "親印度支那", description: "我方戰力增加25% 敵方戰力減少15%<br/>印度支那聯盟本地援助增加190%" },
-            { id: 6, name: "親日本", description: "敵方戰力減少40%<br/>日本皇國本地援助增加175%" },
-            { id: 7, name: "親哈里發", description: "我方戰力增加10% 敵方戰力減少30%<br/>哈里發聯盟本地援助增加210%" },
-            { id: 8, name: "親大北方", description: "我方戰力增加40%<br/>大北方國協本地援助增加20%" },
-            { id: 9, name: "親努山達拉", description: "我方戰力增加15% 敵方戰力減少25%<br/>努山達拉聯盟本地援助增加210%" },
-            { id: 10, name: "親臺灣", description: "我方戰力增加20% 敵方戰力減少20%<br/>人民共和國本地援助增加20%" }
-        ];
-
-        // 通用國策資料
-        const generalStrategies = [
-            {
-                id: 1,
-                name: "戰術",
-                description: "我方據點戰戰力增加20%",
-                routes: [
-                    { name: "抗爭 → 暴動 → 街壘", description: "宣傳家與資助者戰力加成路線" },
-                    { name: "潛伏 → 襲擾 → 暗殺", description: "間諜戰力與敵方削弱路線" },
-                    { name: "火藥 → 雷管", description: "游擊隊戰力加成路線" }
-                ]
-            },
-            {
-                id: 10,
-                name: "情治",
-                description: "敵方據點戰戰力減少15%",
-                routes: [
-                    { name: "保密防諜 → 舉報制度 → 思想檢查", description: "防禦與我方戰力加成" },
-                    { name: "情戰布建 → 派遣諜員 → 內應諜員", description: "資助者與間諜戰力加成" },
-                    { name: "政治作戰 → 布謠分化 → 隱蔽戰線", description: "宣傳家與敵方削弱路線" }
-                ]
-            },
-            {
-                id: 20,
-                name: "思想",
-                description: "據點戰期間城鎮間移動時間減少30%<br/>集結時間減少30%",
-                routes: [
-                    { name: "階級意識 → 唯物辯證 → 解放戰爭", description: "宣傳家、游擊隊戰力與本地援助" },
-                    { name: "國族主義 → 民族英雄 → 聖戰", description: "資助者、游擊隊、宣傳家綜合路線" }
-                ]
+        // 從 JSON 載入資料
+        async function loadNationsData() {
+            try {
+                const response = await fetch('../return_data_example/nation.json');
+                const rawData = await response.json();
+                
+                // 解析 WebSocket 格式的 JSON
+                // 格式: ["6","14","player:815058","phx_reply",{"status":"ok","response":{...}}]
+                let data;
+                if (Array.isArray(rawData) && rawData.length >= 5) {
+                    data = rawData[4]?.response || rawData[4];
+                } else if (rawData.response) {
+                    data = rawData.response;
+                } else {
+                    data = rawData;
+                }
+                
+                // 載入外交國策
+                if (data.diplomatic_strategies) {
+                    diplomaticStrategies = data.diplomatic_strategies.map(s => ({
+                        id: s.id,
+                        name: s.name,
+                        description: s.description,
+                        image: s.image
+                    }));
+                }
+                
+                // 載入通用國策（建立扁平化對照表）
+                if (data.general_strategies) {
+                    generalStrategies = data.general_strategies;
+                    
+                    // 建立所有國策的 ID -> 資料對照
+                    data.general_strategies.forEach(gs => {
+                        allGeneralStrategiesFlat.push({
+                            id: gs.id,
+                            name: gs.name,
+                            description: gs.description,
+                            image: gs.image,
+                            level: 0
+                        });
+                        
+                        if (gs.general_strategy_routes) {
+                            gs.general_strategy_routes.forEach(route => {
+                                if (route.level_1_general_strategy) {
+                                    allGeneralStrategiesFlat.push({
+                                        id: route.level_1_general_strategy.id,
+                                        name: route.level_1_general_strategy.name,
+                                        description: route.level_1_general_strategy.description,
+                                        image: route.level_1_general_strategy.image,
+                                        level: 1
+                                    });
+                                }
+                                if (route.level_2_general_strategy) {
+                                    allGeneralStrategiesFlat.push({
+                                        id: route.level_2_general_strategy.id,
+                                        name: route.level_2_general_strategy.name,
+                                        description: route.level_2_general_strategy.description,
+                                        image: route.level_2_general_strategy.image,
+                                        level: 2
+                                    });
+                                }
+                                if (route.level_3_general_strategy) {
+                                    allGeneralStrategiesFlat.push({
+                                        id: route.level_3_general_strategy.id,
+                                        name: route.level_3_general_strategy.name,
+                                        description: route.level_3_general_strategy.description,
+                                        image: route.level_3_general_strategy.image,
+                                        level: 3
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+                
+                // 載入國家資料
+                if (data.nations) {
+                    nationsData = data.nations.map(nation => {
+                        // 找出當前外交國策名稱
+                        const currentDiplomaticStrategy = diplomaticStrategies.find(d => d.id === nation.diplomatic_strategy_id);
+                        
+                        // 找出已選取的通用國策
+                        const selectedStrategies = (nation.general_strategy_ids || [])
+                            .map(id => allGeneralStrategiesFlat.find(s => s.id === id))
+                            .filter(s => s);
+                        
+                        return {
+                            id: nation.id,
+                            name: nation.headquarters || nation.origin?.replace('出身', '') || `陣營 ${nation.id}`,
+                            subtitle: nation.title || nation.description_title || '',
+                            description: nation.description || '',
+                            alliance: nation.alliance || '',
+                            players: nation.players || 0,
+                            cities: nation.cities || 0,
+                            controlCities: nation.control_cities || nation.controll_cities || 0,
+                            capital: nation.capital?.name || '',
+                            color: nation.city_color ? `#${nation.city_color}` : '#666',
+                            diplomaticStrategy: currentDiplomaticStrategy?.name || '無',
+                            diplomaticStrategyDesc: currentDiplomaticStrategy?.description || '',
+                            slogan: nation.commander_words || [],
+                            flag: nation.flag,
+                            icon: nation.icon,
+                            seal: nation.seal,
+                            commander: nation.commander,
+                            selectedStrategies: selectedStrategies,
+                            selectableStrategyIds: nation.selectable_general_strategy_ids || [],
+                            diplomaticStrategyIds: nation.diplomatic_strategy_ids || []
+                        };
+                    });
+                }
+                
+                // 渲染頁面
+                renderNations(nationsData);
+                renderDiplomaticStrategies();
+                renderGeneralStrategies();
+                
+            } catch (error) {
+                console.error('載入國策資料失敗:', error);
+                document.getElementById('nationsContainer').innerHTML = `
+                    <div class="alert alert-danger">
+                        載入國策資料失敗，請確認 nation.json 檔案存在且格式正確。<br>
+                        錯誤：${error.message}
+                    </div>
+                `;
             }
-        ];
+        }
 
         // 初始化
         document.addEventListener('DOMContentLoaded', function() {
-            renderNations(nationsData);
-            renderDiplomaticStrategies();
-            renderGeneralStrategies();
+            loadNationsData();
         });
 
         // 篩選國家
@@ -432,10 +386,12 @@
             }
             
             container.innerHTML = `
+                <p style="margin-bottom: 15px; color: var(--muted-text);">共 ${nations.length} 個陣營</p>
                 <div class="grid grid-2">
                     ${nations.map(nation => `
                         <div class="card nation-card">
-                            <div class="nation-header" style="background: ${nation.color}; ${nation.color === '#ffffff' ? 'color: #333; border: 1px solid #ddd;' : ''}">
+                            <div class="nation-header" style="background: ${nation.color}; ${nation.color === '#ffffff' || nation.color === '#fcb900' || nation.color === '#00e9e4' ? 'color: #333;' : ''}">
+                                ${nation.icon ? `<img src="${nation.icon}" alt="${nation.name}" style="width: 48px; height: 48px; margin-bottom: 10px;">` : ''}
                                 <h3>${nation.name}</h3>
                                 <div class="subtitle">${nation.subtitle}</div>
                             </div>
@@ -445,11 +401,27 @@
                                 <div class="strategy-card">
                                     <h4>🏴 當前外交國策</h4>
                                     <p><strong>${nation.diplomaticStrategy}</strong></p>
+                                    ${nation.diplomaticStrategyDesc ? `<p style="font-size: 0.85em; color: var(--muted-text);">${nation.diplomaticStrategyDesc}</p>` : ''}
                                 </div>
                                 
+                                ${nation.selectedStrategies && nation.selectedStrategies.length > 0 ? `
+                                    <div class="strategy-card" style="margin-top: 10px;">
+                                        <h4>⚙️ 已選取通用國策 (${nation.selectedStrategies.length})</h4>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;">
+                                            ${nation.selectedStrategies.slice(0, 10).map(s => `
+                                                <span class="badge badge-info" title="${s.description || ''}">${s.name}</span>
+                                            `).join('')}
+                                            ${nation.selectedStrategies.length > 10 ? `<span class="badge badge-muted">+${nation.selectedStrategies.length - 10} 更多</span>` : ''}
+                                        </div>
+                                        <button class="btn btn-sm btn-outline" style="margin-top: 10px;" onclick="showAllStrategies(${nation.id})">
+                                            查看全部國策
+                                        </button>
+                                    </div>
+                                ` : ''}
+                                
                                 <div style="margin: 15px 0;">
-                                    <span class="badge ${nation.alliance === '反共陣營' ? 'badge-primary' : 'badge-danger'}">${nation.alliance}</span>
-                                    <span class="badge badge-success">首都：${nation.capital}</span>
+                                    <span class="badge ${nation.alliance === '反共陣營' ? 'badge-primary' : 'badge-danger'}">${nation.alliance || '未知聯盟'}</span>
+                                    ${nation.capital ? `<span class="badge badge-success">首都：${nation.capital}</span>` : ''}
                                 </div>
                                 
                                 <div class="nation-stats">
@@ -467,7 +439,18 @@
                                     </div>
                                 </div>
                                 
-                                ${nation.slogan ? `
+                                ${nation.commander ? `
+                                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
+                                        <p style="font-size: 0.9em; color: var(--muted-text);">
+                                            <strong>統帥：</strong>${nation.commander.name} (${nation.commander.title})
+                                        </p>
+                                        <p style="font-size: 0.85em; color: var(--muted-text);">
+                                            軍團：${nation.commander.union}
+                                        </p>
+                                    </div>
+                                ` : ''}
+                                
+                                ${nation.slogan && nation.slogan.length > 0 ? `
                                     <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); font-style: italic; color: var(--muted-text); text-align: center;">
                                         「${nation.slogan[0]}」
                                     </div>
@@ -478,13 +461,65 @@
                 </div>
             `;
         }
+        
+        // 顯示全部國策 Modal
+        function showAllStrategies(nationId) {
+            const nation = nationsData.find(n => n.id === nationId);
+            if (!nation || !nation.selectedStrategies) return;
+            
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; z-index: 2000;';
+            
+            modal.innerHTML = `
+                <div style="background: white; padding: 30px; border-radius: 15px; max-width: 800px; width: 90%; max-height: 80vh; overflow-y: auto;">
+                    <h2 style="color: var(--primary-color); margin-bottom: 20px;">
+                        ${nation.name} - 已選取通用國策
+                    </h2>
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>國策名稱</th>
+                                    <th>效果說明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${nation.selectedStrategies.map(s => `
+                                    <tr>
+                                        <td><strong>${s.name}</strong></td>
+                                        <td>${s.description || '-'}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn btn-primary" style="margin-top: 20px;" onclick="this.closest('.modal').remove()">
+                        關閉
+                    </button>
+                </div>
+            `;
+            
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) modal.remove();
+            });
+            
+            document.body.appendChild(modal);
+        }
 
         // 渲染外交國策表
         function renderDiplomaticStrategies() {
             const tbody = document.getElementById('diplomaticBody');
+            if (diplomaticStrategies.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="2">載入中...</td></tr>';
+                return;
+            }
             tbody.innerHTML = diplomaticStrategies.map(strategy => `
                 <tr>
-                    <td><strong>${strategy.name}</strong></td>
+                    <td>
+                        ${strategy.image ? `<img src="${strategy.image}" alt="${strategy.name}" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">` : ''}
+                        <strong>${strategy.name}</strong>
+                    </td>
                     <td>${strategy.description}</td>
                 </tr>
             `).join('');
@@ -493,19 +528,40 @@
         // 渲染通用國策
         function renderGeneralStrategies() {
             const accordion = document.getElementById('generalStrategiesAccordion');
+            if (generalStrategies.length === 0) {
+                accordion.innerHTML = '<p>載入中...</p>';
+                return;
+            }
             accordion.innerHTML = generalStrategies.map(strategy => `
                 <div class="accordion-item">
                     <button class="accordion-header" onclick="toggleStrategyAccordion(this)">
-                        ${strategy.name} - ${strategy.description.replace(/<br\/?>/g, ' | ')}
+                        ${strategy.image ? `<img src="${strategy.image}" alt="${strategy.name}" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">` : ''}
+                        <strong>${strategy.name}</strong> - ${(strategy.description || '').replace(/<br\/?>/g, ' | ')}
                     </button>
                     <div class="accordion-body">
                         <h4 style="margin-bottom: 15px;">進階路線：</h4>
-                        ${strategy.routes.map(route => `
-                            <div class="strategy-card">
-                                <h4>${route.name}</h4>
-                                <p>${route.description}</p>
-                            </div>
-                        `).join('')}
+                        ${strategy.general_strategy_routes ? strategy.general_strategy_routes.map(route => {
+                            const levels = [];
+                            if (route.level_1_general_strategy) levels.push(route.level_1_general_strategy);
+                            if (route.level_2_general_strategy) levels.push(route.level_2_general_strategy);
+                            if (route.level_3_general_strategy) levels.push(route.level_3_general_strategy);
+                            
+                            if (levels.length === 0) return '';
+                            
+                            return `
+                                <div class="strategy-card">
+                                    <h4>${levels.map(l => l.name).join(' → ')}</h4>
+                                    <div style="margin-top: 10px;">
+                                        ${levels.map(l => `
+                                            <div style="margin-bottom: 8px; padding-left: 15px; border-left: 3px solid var(--primary-color);">
+                                                <strong>${l.name}：</strong>
+                                                <span style="color: var(--muted-text);">${l.description || '-'}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            `;
+                        }).join('') : '<p>無進階路線資料</p>'}
                     </div>
                 </div>
             `).join('');
