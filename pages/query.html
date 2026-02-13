@@ -543,9 +543,14 @@
             try {
                 // 查詢背包 - 回傳格式: { pieces: { actor_pieces, wild_card_pieces }, props, special, weapons }
                 const backpackData = await sendApiRequest('backpack', {});
+                console.log('📦 背包原始資料:', backpackData);
+                console.log('📦 weapons key:', backpackData?.weapons);
+                console.log('📦 weapon key:', backpackData?.weapon);
                 if (backpackData) {
                     // 解析背包資料（包含符文）
                     const parsedInventory = parseBackpackData(backpackData);
+                    console.log('📦 解析後庫存:', parsedInventory);
+                    console.log('📦 符文數量:', parsedInventory.filter(i => i.category === 'rune').length);
                     inventoryItems = parsedInventory;
                     loadInventory(parsedInventory);
                 }
@@ -629,9 +634,10 @@
                 });
             }
             
-            // 解析符文 (weapons)
-            if (data.weapons) {
-                data.weapons.forEach(weapon => {
+            // 解析符文 (weapons 或 weapon)
+            const weaponData = data.weapons || data.weapon;
+            if (weaponData) {
+                weaponData.forEach(weapon => {
                     const ownerName = weapon.actor?.image ? getActorNameFromImage(weapon.actor.image) : null;
                     items.push({
                         name: weapon.weapon_prototype?.name || '未知符文',
