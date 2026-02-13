@@ -5622,5 +5622,134 @@
         "nation": "紅軍",
         "actor_category": "宣傳家",
         "weapon_name": "言靈"
+    },
+    "趙彤": {
+        "name": "趙彤",
+        "passive_skills": [
+            {
+                "description": "紅軍陣營成員攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+5%",
+                "level": 20
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+10%",
+                "level": 30
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+15%",
+                "level": 40
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+15%",
+                "level": 50
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+20%",
+                "level": 60
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+25%",
+                "level": 70
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+30%",
+                "level": 80
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+35%",
+                "level": 90
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+35%",
+                "level": 100
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+40%",
+                "level": 110
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+45%",
+                "level": 120
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+50%",
+                "level": 130
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+55%",
+                "level": 140
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+55%",
+                "level": 150
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+60%",
+                "level": 160
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+65%",
+                "level": 170
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+70%",
+                "level": 180
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+75%",
+                "level": 190
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+75%",
+                "level": 200
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+80%",
+                "level": 210
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+85%",
+                "level": 220
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+90%",
+                "level": 230
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+95%",
+                "level": 240
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+100%",
+                "level": 250
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+100%",
+                "level": 260
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+105%",
+                "level": 270
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+110%",
+                "level": 280
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+115%",
+                "level": 290
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+120%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "紅軍",
+        "actor_category": "資助者",
+        "weapon_name": "刀劍"
     }
 }

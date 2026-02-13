@@ -10841,5 +10841,217 @@
         },
         "usable_weapon_ids": [],
         "weapon": null
+    },
+    {
+        "active_skill": {
+            "activate_skill_point": 2,
+            "description": "3回合內我方全體幹部DEF+30%。\n",
+            "image": "/images/active_skill/SKCM02_1.png",
+            "level": "I",
+            "name": "鐵人精神"
+        },
+        "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
+        "actor_category_icon": "/images/actor_category/icon/cadre3.png",
+        "actor_category_order": 20,
+        "actor_prototype": {
+            "active_skills": [
+                {
+                    "activate_skill_point": 2,
+                    "background": "/images/actor_category/active_skill_background/Pt.png",
+                    "description": "3回合內我方全體幹部DEF+30%。\n",
+                    "id": 28,
+                    "image": "/images/active_skill/SKCM02_1.png",
+                    "level": "I",
+                    "name": "鐵人精神"
+                }
+            ],
+            "actor_category": {
+                "font_color": "#ecdb94",
+                "id": 3,
+                "name": "資助者"
+            },
+            "blood_base_value": 30500,
+            "blood_elevation_value": 2900,
+            "description": "紅三代，祖輩是共和國的開國元勳，曾參與共青團多年。赴英國留學後歸國，憑藉靈活的政治手腕和大膽強悍的作風，成為在政壇與商場都叱吒風雲的企業家。面對變幻莫測的政局，她也積極配合統戰工作、尋求表現機會。",
+            "ethnic_group": "吳",
+            "family": "上海",
+            "id": 3,
+            "name": "趙彤",
+            "offense_base_value": 2300,
+            "offense_elevation_value": 220,
+            "origin": "紅軍出身",
+            "religion": "無神論",
+            "religion_icon": "/images/religion/irreligion_atheist.png",
+            "sponsor": "中國共產主義青年團",
+            "sponsor_gratitude": "感謝 中國共產主義青年團 於2023年協助完成本角色人物設定與配音。",
+            "sponsor_image": "/images/sponsor/tks03.png",
+            "talent_1": "國有企業 是市場經濟第一主體",
+            "talent_2": "紅軍成員ATK+120%",
+            "vanguard": true
+        },
+        "blood": 259600,
+        "can_evolute": false,
+        "flag": "/images/home/flag/bigflag01CM.png",
+        "gif_image": "/images/actor/gif/tachieCM02.gif",
+        "half_image": "/images/actor/half/bustCM02.png",
+        "head_image": "/images/actor/head/avatarCM02.png",
+        "id": 1922394,
+        "level": 80,
+        "level_cap": 80,
+        "nation": "紅軍",
+        "nation_icon": "/images/nation/color_icon/minicoa01CM.png",
+        "nation_id": 1,
+        "nation_order": 10,
+        "no_weapon_image": "/images/weapon/w04X.png",
+        "no_weapon_name": "刀劍",
+        "offense": 19680,
+        "outfits": [
+            {
+                "id": 3,
+                "image": "/images/actor/gif/tachieCM02.gif",
+                "name": "趙彤"
+            }
+        ],
+        "passive_skills": [
+            {
+                "description": "紅軍陣營成員攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+5%",
+                "level": 20
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+10%",
+                "level": 30
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+15%",
+                "level": 40
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+15%",
+                "level": 50
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+20%",
+                "level": 60
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+25%",
+                "level": 70
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+30%",
+                "level": 80
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+35%",
+                "level": 90
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+35%",
+                "level": 100
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+40%",
+                "level": 110
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+45%",
+                "level": 120
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+50%",
+                "level": 130
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+55%",
+                "level": 140
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+55%",
+                "level": 150
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+60%",
+                "level": 160
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+65%",
+                "level": 170
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+70%",
+                "level": 180
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+75%",
+                "level": 190
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+75%",
+                "level": 200
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+80%",
+                "level": 210
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+85%",
+                "level": 220
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+90%",
+                "level": 230
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+95%",
+                "level": 240
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+100%",
+                "level": 250
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+100%",
+                "level": 260
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+105%",
+                "level": 270
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+110%",
+                "level": 280
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+115%",
+                "level": 290
+            },
+            {
+                "description": "紅軍陣營成員攻擊力+120%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
+        "scarcity_image": "/images/scarcity/image/b_SSR.png",
+        "scarcity_order": 1,
+        "skill": 65000,
+        "skill_percentage": 1,
+        "team": {
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 21,
+            "team_number": null,
+            "team_roman_number": null
+        },
+        "usable_weapon_ids": [
+            168235
+        ],
+        "weapon": null
     }
 ]
