@@ -9465,15 +9465,15 @@
                 "id": 4,
                 "name": "宣傳家"
             },
-            "blood_base_value": 9000,
-            "blood_elevation_value": 1200,
+            "blood_base_value": 11000,
+            "blood_elevation_value": 1400,
             "description": "高中生，因緣際會參與了一些社會運動與地方文史保護，進而也關注起兩岸問題與國家前途。呆萌的表面，實際上是為了掩蓋不為人知老謀深算，甚至暗中發展了遍及全國的龐大本土派組織與人脈。",
             "ethnic_group": "西拉雅",
             "family": "臺灣臺南",
             "id": 7,
             "name": "粉圓",
-            "offense_base_value": 1500,
-            "offense_elevation_value": 240,
+            "offense_base_value": 1900,
+            "offense_elevation_value": 280,
             "origin": "臺灣出身",
             "religion": "泛靈論",
             "religion_icon": "/images/religion/syncretism_animist.png",
@@ -9484,7 +9484,7 @@
             "talent_2": "臺灣成員ATK+36% HP+18% DEF+18%",
             "vanguard": false
         },
-        "blood": 133840,
+        "blood": 156040,
         "can_evolute": false,
         "flag": "/images/home/flag/bigflag08TW.png",
         "gif_image": "/images/actor/gif/tachieTW01C.gif",
@@ -9499,7 +9499,7 @@
         "nation_order": 15,
         "no_weapon_image": "/images/weapon/w01X.png",
         "no_weapon_name": "言靈",
-        "offense": 25740,
+        "offense": 30180,
         "outfits": [
             {
                 "id": 33,
@@ -9958,6 +9958,221 @@
             },
             {
                 "description": "宣傳家型成員攻擊力+105% 自身受到傷害-25%自身血量+ 70%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
+        "scarcity_image": "/images/scarcity/image/b_SSR.png",
+        "scarcity_order": 1,
+        "skill": 0,
+        "skill_percentage": 0,
+        "team": {
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
+        },
+        "usable_weapon_ids": [
+            53597,
+            60509,
+            158610,
+            159876
+        ],
+        "weapon": null
+    },
+    {
+        "active_skill": {
+            "activate_skill_point": 2,
+            "description": "隨機賦予效果：敵方前線幹部立即死亡／敵方前線幹部DEF-100%（2回合）／自身HP-35%。",
+            "image": "/images/active_skill/SKFRMA02_1.png",
+            "level": "I",
+            "name": "骰寶"
+        },
+        "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
+        "actor_category_icon": "/images/actor_category/icon/cadre3.png",
+        "actor_category_order": 20,
+        "actor_prototype": {
+            "active_skills": [
+                {
+                    "activate_skill_point": 2,
+                    "background": "/images/actor_category/active_skill_background/Pt.png",
+                    "description": "隨機賦予效果：敵方前線幹部立即死亡／敵方前線幹部DEF-100%（2回合）／自身HP-35%。",
+                    "id": 669,
+                    "image": "/images/active_skill/SKFRMA02_1.png",
+                    "level": "I",
+                    "name": "骰寶"
+                }
+            ],
+            "actor_category": {
+                "font_color": "#ecdb94",
+                "id": 3,
+                "name": "資助者"
+            },
+            "blood_base_value": 11000,
+            "blood_elevation_value": 1100,
+            "description": "長年潛伏於兩廣各地，將嶺南的不法分子與亡命之徒組織起來，但是與西南一帶的抵抗組織存在隔閡。無人知曉他的來歷，據說曾有澳門人在午夜時的殷皇子大馬路上見到徘徊的他。似乎總是透過變聲器說話，小丑似的面具底下藏著無名的惡魔，漆黑的眼珠勾動人們內心深處對未知事物的恐懼。",
+            "ethnic_group": "香山",
+            "family": "澳門",
+            "id": 515,
+            "name": "雨鞘",
+            "offense_base_value": 2400,
+            "offense_elevation_value": 240,
+            "origin": "自由勢力出身",
+            "religion": "無",
+            "religion_icon": "/images/religion/irreligion_irreligion.png",
+            "sponsor": "澳門影行局",
+            "sponsor_gratitude": "感謝 澳門影行局 於2023年協助完成本角色人物命名、設定與配音。",
+            "sponsor_image": "/images/sponsor/tks08.png",
+            "talent_1": "在一個偏僻的國度 看見了光明",
+            "talent_2": "反賊成員ATK+50% 香港成員DEF+50%<br/>資助者成員HP+100%",
+            "vanguard": false
+        },
+        "blood": 11000,
+        "can_evolute": false,
+        "flag": "/images/home/flag/bigflag00FR.png",
+        "gif_image": "/images/actor/gif/tachieFRMA02.gif",
+        "half_image": "/images/actor/half/bustFRMA02.png",
+        "head_image": "/images/actor/head/avatarFRMA02.png",
+        "id": 2146608,
+        "level": 1,
+        "level_cap": 80,
+        "nation": "自由勢力",
+        "nation_icon": null,
+        "nation_id": 9,
+        "nation_order": 100,
+        "no_weapon_image": "/images/weapon/w09X.png",
+        "no_weapon_name": "爆裂",
+        "offense": 2400,
+        "outfits": [
+            {
+                "id": 520,
+                "image": "/images/actor/gif/tachieFRMA02.gif",
+                "name": "雨鞘"
+            }
+        ],
+        "passive_skills": [
+            {
+                "description": "",
+                "level": 10
+            },
+            {
+                "description": "資助者型成員血量+ 5%",
+                "level": 20
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+5% 香港陣營成員受到傷害-5%資助者型成員血量+ 5%",
+                "level": 30
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+5% 香港陣營成員受到傷害-5%資助者型成員血量+ 10%",
+                "level": 40
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+10% 香港陣營成員受到傷害-10%資助者型成員血量+ 15%",
+                "level": 50
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+10% 香港陣營成員受到傷害-10%資助者型成員血量+ 20%",
+                "level": 60
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+10% 香港陣營成員受到傷害-10%資助者型成員血量+ 25%",
+                "level": 70
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+15% 香港陣營成員受到傷害-15%資助者型成員血量+ 25%",
+                "level": 80
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+15% 香港陣營成員受到傷害-15%宣傳家型成員血量+ 30%",
+                "level": 90
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+15% 香港陣營成員受到傷害-15%資助者型成員血量+ 35%",
+                "level": 100
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+20% 香港陣營成員受到傷害-20%資助者型成員血量+ 35%",
+                "level": 110
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+20% 香港陣營成員受到傷害-20%資助者型成員血量+ 40%",
+                "level": 120
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+20% 香港陣營成員受到傷害-20%資助者型成員血量+ 45%",
+                "level": 130
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+25% 香港陣營成員受到傷害-25%資助者型成員血量+ 45%",
+                "level": 140
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+25% 香港陣營成員受到傷害-25%資助者型成員血量+ 50%",
+                "level": 150
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+25% 香港陣營成員受到傷害-25%資助者型成員血量+ 55%",
+                "level": 160
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+30% 香港陣營成員受到傷害-30%資助者型成員血量+ 55%",
+                "level": 170
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+30% 香港陣營成員受到傷害-30%資助者型成員血量+ 60%",
+                "level": 180
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+30% 香港陣營成員受到傷害-30%資助者型成員血量+ 65%",
+                "level": 190
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+35% 香港陣營成員受到傷害-35%資助者型成員血量+ 65%",
+                "level": 200
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+35% 香港陣營成員受到傷害-35%資助者型成員血量+ 70%",
+                "level": 210
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+35% 香港陣營成員受到傷害-35%資助者型成員血量+ 75%",
+                "level": 220
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+40% 香港陣營成員受到傷害-40%資助者型成員血量+ 75%",
+                "level": 230
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+40% 香港陣營成員受到傷害-40%資助者型成員血量+ 80%",
+                "level": 240
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+40% 香港陣營成員受到傷害-40%資助者型成員血量+ 85%",
+                "level": 250
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+45% 香港陣營成員受到傷害-45%資助者型成員血量+ 85%",
+                "level": 260
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+45% 香港陣營成員受到傷害-45%資助者型成員血量+ 90%",
+                "level": 270
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+45% 香港陣營成員受到傷害-45%資助者型成員血量+ 95%",
+                "level": 280
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+50% 香港陣營成員受到傷害-50%資助者型成員血量+ 95%",
+                "level": 290
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+50% 香港陣營成員受到傷害-50%資助者型成員血量+ 100%",
                 "level": 300
             }
         ],
