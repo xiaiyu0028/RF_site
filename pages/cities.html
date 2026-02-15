@@ -449,13 +449,18 @@
         }
 
         .modal-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
+            position: sticky;
+            top: 0;
+            float: right;
             font-size: 2em;
             cursor: pointer;
             color: var(--muted-text);
             transition: color 0.3s;
+            z-index: 10;
+            background: var(--card-bg);
+            padding: 0 5px;
+            border-radius: 50%;
+            line-height: 1;
         }
 
         .modal-close:hover {

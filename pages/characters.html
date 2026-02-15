@@ -57,10 +57,10 @@
                         <label class="form-label">職業</label>
                         <select class="form-control" id="roleFilter">
                             <option value="">全部職業</option>
-                            <option value="agitator">宣傳家</option>
-                            <option value="sponsor">資助者</option>
-                            <option value="spy">間諜</option>
-                            <option value="guerrilla">游擊隊</option>
+                            <option value="宣傳家">宣傳家</option>
+                            <option value="資助者">資助者</option>
+                            <option value="間諜">間諜</option>
+                            <option value="游擊隊">游擊隊</option>
                         </select>
                     </div>
 
@@ -76,6 +76,7 @@
                             <option value="6">哈薩克</option>
                             <option value="7">滿洲</option>
                             <option value="8">蒙古</option>
+                            <option value="9">自由勢力</option>
                             <option value="10">反賊聯盟</option>
                         </select>
                     </div>
@@ -183,6 +184,7 @@
                     halfImage: actor.half_image || '',
                     gifImage: actor.gif_image || '',
                     activeSkill: actor.active_skill || null,
+                    activeSkills: actor.actor_prototype?.active_skills || [],
                     talent1: actor.actor_prototype?.talent_1 || '',
                     talent2: actor.actor_prototype?.talent_2 || ''
                 }));
@@ -390,6 +392,33 @@
                 `;
             }
 
+            // 主動技能區塊
+            let activeSkillSection = '';
+            if (char.activeSkills && char.activeSkills.length > 0) {
+                activeSkillSection = `
+                    <div style="margin-top: 25px;">
+                        <h3 style="margin-bottom: 15px;">⚡ 主動技能</h3>
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            ${char.activeSkills.map(skill => `
+                                <div class="card" style="margin: 0; border-left: 4px solid var(--primary-color);">
+                                    <div class="card-body" style="display: flex; gap: 15px; align-items: flex-start;">
+                                        ${skill.image ? `<img src="${getAssetPath(skill.image)}" alt="${skill.name}" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0;" onerror="this.style.display='none'">` : ''}
+                                        <div style="flex: 1;">
+                                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;">
+                                                <strong style="font-size: 1.1em;">${skill.name}</strong>
+                                                <span class="badge badge-primary">Lv.${skill.level}</span>
+                                                <span class="badge" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">⚡ ${skill.activate_skill_point} 能量</span>
+                                            </div>
+                                            <p style="color: var(--text-color); margin: 0; line-height: 1.6;">${skill.description}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
             // 等級數值計算器
             const levelSlider = `
                 <div style="margin-top: 25px;">
@@ -472,6 +501,7 @@
                 </div>
                 
                 ${levelSlider}
+                ${activeSkillSection}
                 ${skillsTable}
                 ${generateImageGallery(char)}
             `;
@@ -650,13 +680,18 @@
         }
 
         .modal-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
+            position: sticky;
+            top: 0;
+            float: right;
             font-size: 2em;
             cursor: pointer;
             color: var(--muted-text);
             transition: color 0.3s;
+            z-index: 10;
+            background: var(--card-bg);
+            padding: 0 5px;
+            border-radius: 50%;
+            line-height: 1;
         }
 
         .modal-close:hover {
