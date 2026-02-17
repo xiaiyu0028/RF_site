@@ -1,1 +1,2604 @@
-["6","14","player:815058","phx_reply",{"status":"ok","response":{"all":{"center_background":"/images/site/street/sv_top.png","left_background":"/images/home/flag/all_left.png","name":"東方大陸","right_background":"/images/home/flag/all_right.png"},"diplomatic_strategies":[{"description":"我方戰力增加10% 敵方戰力減少30%<br/>大韓邦聯本地援助增加260%","id":3,"image":"/images/diplomatic_strategy/pro_corea.png","name":"親大韓"},{"description":"我方戰力增加30% 敵方戰力減少10%<br/>婆羅多聯盟本地援助增加140%","id":2,"image":"/images/diplomatic_strategy/pro_bharat.png","name":"親婆羅多"},{"description":"我方戰力增加25% 敵方戰力減少15%<br/>印度支那聯盟本地援助增加190%","id":5,"image":"/images/diplomatic_strategy/pro_indochina.png","name":"親印度支那"},{"description":"我方戰力增加30% 敵方戰力減少10%<br/>盎格魯國協本地援助增加125%","id":1,"image":"/images/diplomatic_strategy/pro_anglosphere.png","name":"親盎格魯"},{"description":"我方戰力增加20% 敵方戰力減少20%<br/>人民共和國本地援助增加20%","id":10,"image":"/images/diplomatic_strategy/pro_taiwan.png","name":"親臺灣"},{"description":"敵方戰力減少40%<br/>日本皇國本地援助增加175%","id":6,"image":"/images/diplomatic_strategy/pro_japan.png","name":"親日本"},{"description":"我方戰力增加10% 敵方戰力減少30%<br/>歐羅巴聯盟本地援助增加350%","id":4,"image":"/images/diplomatic_strategy/pro_europe.png","name":"親歐羅巴"},{"description":"我方戰力增加15% 敵方戰力減少25%<br/>努山達拉聯盟本地援助增加210%","id":9,"image":"/images/diplomatic_strategy/pro_nusantaria.png","name":"親努山達拉"},{"description":"我方戰力增加40%<br/>大北方國協本地援助增加20%","id":8,"image":"/images/diplomatic_strategy/pro_northern.png","name":"親大北方"},{"description":"我方戰力增加10% 敵方戰力減少30%<br/>哈里發聯盟本地援助增加210%","id":7,"image":"/images/diplomatic_strategy/pro_khalifah.png","name":"親哈里發"}],"general_strategies":[{"description":"我方據點戰戰力增加20%","general_strategy_routes":[{"level_1_general_strategy":{"description":"宣傳家據點戰戰力增加60%<br/> 我方據點戰戰力增加5%","id":5,"image":"/images/general_strategy/S1Resistance.png","name":"抗爭"},"level_2_general_strategy":{"description":"宣傳家據點戰戰力增加30%<br/> 集結時間減少30%","id":6,"image":"/images/general_strategy/S1Riot.png","name":"暴動"},"level_3_general_strategy":{"description":"資助者據點戰戰力增加80%","id":7,"image":"/images/general_strategy/S1Barricade.png","name":"街壘"}},{"level_1_general_strategy":{"description":"間諜據點戰戰力增加30%<br/> 據點戰期間城鎮間移動時間減少30%","id":2,"image":"/images/general_strategy/S1Ambush.png","name":"潛伏"},"level_2_general_strategy":{"description":"間諜據點戰戰力增加40%<br/> 敵方據點戰戰力減少10%","id":3,"image":"/images/general_strategy/S1Raid.png","name":"襲擾"},"level_3_general_strategy":{"description":"敵方據點戰戰力減少15%","id":4,"image":"/images/general_strategy/S1Assassination.png","name":"暗殺"}},{"level_1_general_strategy":null,"level_2_general_strategy":{"description":"游擊隊據點戰戰力增加32%<br/> 我方據點戰戰力增加12%","id":9,"image":"/images/general_strategy/S1Gunpowder.png","name":"火藥"},"level_3_general_strategy":{"description":"游擊隊據點戰戰力增加48%<br/> 我方據點戰戰力增加8%","id":8,"image":"/images/general_strategy/S1Detonator.png","name":"雷管"}}],"id":1,"image":"/images/general_strategy/S1Tactics.png","name":"戰術"},{"description":"敵方據點戰戰力減少15%","general_strategy_routes":[{"level_1_general_strategy":{"description":"間諜據點戰戰力增加32%<br/> 我方據點戰戰力增加12%","id":11,"image":"/images/general_strategy/S2Counterintelligence.png","name":"保密防諜"},"level_2_general_strategy":{"description":"資助者據點戰戰力增加80%","id":12,"image":"/images/general_strategy/S2ReportingSystem.png","name":"舉報制度"},"level_3_general_strategy":{"description":"我方據點戰戰力增加20%","id":13,"image":"/images/general_strategy/S2ThoughtInspection.png","name":"思想檢查"}},{"level_1_general_strategy":{"description":"資助者據點戰戰力增加55%<br/> 敵方據點戰戰力減少4%","id":14,"image":"/images/general_strategy/S2PsychologicalWarfareDeployment.png","name":"情戰布建"},"level_2_general_strategy":{"description":"間諜據點戰戰力增加30%<br/> 敵方據點戰戰力減少10%","id":15,"image":"/images/general_strategy/S2DispatchingSpies.png","name":"派遣諜員"},"level_3_general_strategy":{"description":"資助者據點戰戰力增加80%","id":16,"image":"/images/general_strategy/S2InsiderSpy.png","name":"內應諜員"}},{"level_1_general_strategy":{"description":"宣傳家據點戰戰力增加32%<br/> 我方據點戰戰力增加12%","id":17,"image":"/images/general_strategy/S2PoliticalWarfare.png","name":"政治作戰"},"level_2_general_strategy":{"description":"宣傳家據點戰戰力增加16%<br/> 敵方據點戰戰力減少12%","id":18,"image":"/images/general_strategy/S2SpreadRumorsandDivide.png","name":"布謠分化"},"level_3_general_strategy":{"description":"資助者據點戰戰力增加40%<br/> 我方據點戰戰力增加10%","id":19,"image":"/images/general_strategy/S2UndergroundParty.png","name":"隱蔽戰線"}}],"id":10,"image":"/images/general_strategy/S2Intelligence.png","name":"情治"},{"description":"據點戰期間城鎮間移動時間減少30%<br/>集結時間減少30%","general_strategy_routes":[{"level_1_general_strategy":{"description":"全地圖本地援助增加8%<br/> 宣傳家據點戰戰力增加70%","id":21,"image":"/images/general_strategy/S3ClassConsciousness.png","name":"階級意識"},"level_2_general_strategy":{"description":"全地圖本地援助增加14%<br/> 宣傳家據點戰戰力增加60%","id":22,"image":"/images/general_strategy/S3DialecticalMaterialism.png","name":"唯物辯證"},"level_3_general_strategy":{"description":"游擊隊據點戰戰力增加70%<br/> 全地圖本地援助增加6% ","id":23,"image":"/images/general_strategy/S3LiberationWar.png","name":"解放戰爭"}},{"level_1_general_strategy":{"description":"資助者據點戰戰力增加56%<br/> 游擊隊據點戰戰力增加24%","id":24,"image":"/images/general_strategy/S3Nationalism.png","name":"國族主義"},"level_2_general_strategy":{"description":"游擊隊據點戰戰力增加64%<br/> 集結時間減少10%","id":25,"image":"/images/general_strategy/S3NationalHero.png","name":"民族英雄"},"level_3_general_strategy":{"description":"宣傳家據點戰戰力增加60%<br/> 游擊隊據點戰戰力增加20%","id":26,"image":"/images/general_strategy/S3HolyWar.png","name":"聖戰"}}],"id":20,"image":"/images/general_strategy/S3Ideology.png","name":"思想"}],"nations":[{"players":23178,"title":"大陸的征服者與主宰者","id":1,"flag":"/images/home/flag/bigflag01CM.png","cities":127,"description_title":"1927年建軍","icon":"/images/nation/icon/Gcoa01CM.png","capital":{"id":293,"name":"北京"},"seal_image":"/images/nation/seal/Scoa01CM.png","alert":{"image":"/images/nation/red_army.png","text":"可使用紅軍專屬的角色與劇情"},"main_image":"/images/nation/main/fg01CM.png","slogan_background_image":"/images/nation/slogan_background/mottos01CM.png","origin":"紅軍出身","defect":{"show_alert":"想投共？哈哈哈⋯⋯你不是認真的吧？","show_button":true},"alias":null,"can_change_seal":false,"description_subtitle":"大陸的征服者與主宰者","strategy_background":"/images/nation/strategy_background/str01CM.png","control_cities":65,"seal":"/images/nation/seal/Scoa01CM.png","alliance":"共產陣營","diplomatic_strategy_ids":[5,9,8],"selectable_general_strategy_ids":[1,10,21,24],"city_color":"fd1e19","controll_cities":24,"diplomatic_strategy_id":9,"commander":{"flag":"/images/home/flag/bigflag01CM.png","image":"/images/actor/head/avatarTB02.png","name":"在成都韩先楚只是個萝莉","seal":"/images/nation/seal/Scoa01CM.png","title":"最高領導人","union":"在成都韩先楚只是個萝莉","union_id":23,"user_id":738892},"commander_words_background":"/images/nation/commander_words_background/edict01CM.png","seal_categories":null,"general_strategy_ids":[20],"street_site":{"image":"/images/site/street/sv_north_china.png","window_view":"/images/site/window/wsv_north_china.png"},"position":10,"candidates":null,"description":"繼清帝之後大陸上最強大的征服者。希望將鬆散的各屬邦整合成被中華同化的單一國家，藉由強而有力的極權專制政體掌握廣大的疆域，帶領體質鬆散的龐大共和國崛起世上，洗刷百年來被列強欺凌的屈辱。但這些被征服國的遺民永遠不會諒解您的用心良苦，紅軍必須不擇手段地壓制住他們，以免共和國崩潰。","street_sites":[{"id":10,"image":"/images/site/street/sv_north_china.png","name":"華北式","position":1020,"window_view":"/images/site/window/wsv_north_china.png"}],"headquarters":"共產黨中央政治局","description_image":"/images/nation/location/loc01CM.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["王道征途",null,null],"music":"BGM01.mp3","slogan":["聽！風在呼嘯軍號響","同志們奔赴祖國的邊疆！"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa01CM.png","name":"紅軍","ministers":[{"image":"/images/nation/ministry/A02.png","minister":"匡噹！韓先楚的肛塞掉下聲","minister_union_id":4893,"ministry":{"id":2,"name":"國安委"}},{"image":"/images/nation/ministry/A03.png","minister":"韓先楚你好奇怪","minister_union_id":8336,"ministry":{"id":3,"name":"中央軍委"}},{"image":"/images/nation/ministry/A04.png","minister":"韓先楚自己去下北澤等我","minister_union_id":5404,"ministry":{"id":4,"name":"組織部"}},{"image":"/images/nation/ministry/A05.png","minister":"韓先楚不在8+9就是無敵","minister_union_id":914,"ministry":{"id":5,"name":"中宣部"}},{"image":"/images/nation/ministry/A01.png","minister":"在成都韩先楚只是個萝莉","minister_union_id":23,"ministry":{"id":1,"name":"書記處"}},{"image":"/images/nation/ministry/A06.png","minister":"韓先楚的柴犬曾經說過","minister_union_id":5575,"ministry":{"id":6,"name":"統戰部"}},{"image":"/images/nation/ministry/A07.png","minister":"你要去哪啊?韓先楚寶貝","minister_union_id":5562,"ministry":{"id":7,"name":"中紀委"}},{"image":"/images/nation/ministry/A08.png","minister":"好！看我把習近平送去成都","minister_union_id":3108,"ministry":{"id":8,"name":"政法委"}},{"image":"/images/nation/ministry/A09.png","minister":"韓先楚的會員制餐點","minister_union_id":3185,"ministry":{"id":9,"name":"外事委"}}]},{"players":50344,"title":"禦敵千年的海東古國","id":2,"flag":"/images/home/flag/bigflag08TW.png","cities":22,"description_title":"尚未淪陷的海邦","icon":"/images/nation/icon/Gcoa08TW.png","capital":{"id":1,"name":"臺北"},"seal_image":"/images/nation/seal/Scoa08TW.png","alert":{"image":"/images/nation/alert.png","text":"參加人數較多的陣營 玩家較難爭取部門與城鎮資源"},"main_image":"/images/nation/main/fg08TW.png","slogan_background_image":"/images/nation/slogan_background/mottos08TW.png","origin":"臺灣出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":false},"alias":null,"can_change_seal":false,"description_subtitle":"供清帝拓殖的海外墾地","strategy_background":"/images/nation/strategy_background/str08TW.png","control_cities":31,"seal":"/images/nation/seal/Scoa08TW.png","alliance":"反共陣營","diplomatic_strategy_ids":[9,6,1],"selectable_general_strategy_ids":[2,5,9,10,20],"city_color":"06859e","controll_cities":50,"diplomatic_strategy_id":1,"commander":{"flag":"/images/home/flag/bigflag08TW.png","image":"/images/actor/head/avatarRB05.png","name":"空白","seal":"/images/nation/seal/Scoa08TW.png","title":"總召","union":"孫文迷路到東海龍宮去","union_id":8335,"user_id":814500},"commander_words_background":"/images/nation/commander_words_background/edict08TW.png","seal_categories":null,"general_strategy_ids":[1],"street_site":{"image":"/images/site/street/sv_taiwan.png","window_view":"/images/site/window/wsv_taiwan.png"},"position":15,"candidates":null,"description":"曾僅憑一道海峽，抗拒東方大陸政權達千餘年，但仍不敵清帝襲來，被清帝劃為屬邦華夏的殖民地。清帝衰微後，被日本征服。日本戰敗後，又被捲入華夏的戰事，最終拒紅軍於海峽以西。經過數十年抗爭與建設，海東古國重獲新生。","street_sites":[{"id":6,"image":"/images/site/street/sv_taiwan.png","name":"臺式","position":80,"window_view":"/images/site/window/wsv_taiwan.png"}],"headquarters":"臺灣全國民團聯盟","description_image":"/images/nation/location/loc08TW.png","election":{"ballot":1,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["Eclipse first, the rest nowhere","Dorodoro, Dororodororo",null],"music":"BGM08.mp3","slogan":["驕傲的祖先們，正視著我們的腳步","望你平安，天祐臺灣"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa08TW.png","name":"臺灣","ministers":[{"image":"/images/nation/ministry/A02.png","minister":null,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":"玄壇先鋒隊","minister_union_id":7433,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":"迷路到　東！帶我走","minister_union_id":281,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":null,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"孫文迷路到東海龍宮去","minister_union_id":8335,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":null,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":null,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":"國民法官報到處","minister_union_id":3577,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":null,"ministry":{"id":18,"name":"外事處"}}]},{"players":35637,"title":"負隅頑抗的海港城邦","id":3,"flag":"/images/home/flag/bigflag02HK.png","cities":20,"description_title":"1997年淪陷","icon":"/images/nation/icon/Gcoa02HK.png","capital":{"id":37,"name":"維多利亞城"},"seal_image":"/images/nation/seal/Scoa02HK.png","alert":{"image":"/images/nation/alert.png","text":"參加人數較多的陣營 玩家較難爭取部門與城鎮資源"},"main_image":"/images/nation/main/fg02HK.png","slogan_background_image":"/images/nation/slogan_background/mottos02HK.png","origin":"香港出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":null,"can_change_seal":false,"description_subtitle":"被清帝割讓的海港城邦","strategy_background":"/images/nation/strategy_background/str02HK.png","control_cities":16,"seal":"/images/nation/seal/Scoa02HK.png","alliance":"反共陣營","diplomatic_strategy_ids":[5,10,1],"selectable_general_strategy_ids":[1,10,21,24],"city_color":"ae43ec","controll_cities":27,"diplomatic_strategy_id":1,"commander":{"flag":"/images/home/flag/bigflag02HK.png","image":"/images/actor/head/avatarTW05.png","name":"S.E.A.F FOB","seal":"/images/nation/seal/Scoa02HK.png","title":"召集人","union":"SEAF第四國防軍","union_id":3919,"user_id":752844},"commander_words_background":"/images/nation/commander_words_background/edict02HK.png","seal_categories":null,"general_strategy_ids":[20],"street_site":{"image":"/images/site/street/sv_hongkong.png","window_view":"/images/site/window/wsv_hongkong.png"},"position":20,"candidates":null,"description":"原來是百越船民的漁村，在戰爭時投靠清帝的敵人英吉利，被英國建設成繁華的自由城，成為大陸通往世界的門戶。一百五十年後，在紅軍的逼迫下，英國把這座城市交給了紅軍，城邦自由逐漸淪喪，抗爭者在城市角落負隅頑抗。","street_sites":[{"id":5,"image":"/images/site/street/sv_hongkong.png","name":"港式","position":20,"window_view":"/images/site/window/wsv_hongkong.png"}],"headquarters":"香港臨時政府","description_image":"/images/nation/location/loc02HK.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["山不厭高，海不厭深。","周公吐哺，天下歸心。",null],"music":"BGM02.mp3","slogan":["今日迎來我城終局之戰","願榮光，歸香港"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa02HK.png","name":"香港","ministers":[{"image":"/images/nation/ministry/A02.png","minister":null,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":null,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":"容易受傷的野團","minister_union_id":8863,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":"全國兔化計劃","minister_union_id":4823,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"SEAF第四國防軍","minister_union_id":3919,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":"貓草","minister_union_id":3681,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":"晨衝第一線","minister_union_id":10281,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":"玉米餅慶祝生擒馬杜羅","minister_union_id":3792,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":"高度重視趕人治港？雜碎碎","minister_union_id":3710,"ministry":{"id":18,"name":"外事處"}}]},{"players":5368,"title":"半壁淪陷的的古老汗國","id":8,"flag":"/images/home/flag/bigflag03MG.png","cities":15,"description_title":"1966年半壁淪陷","icon":"/images/nation/icon/Gcoa03MG.png","capital":{"id":110,"name":"烏蘭巴托"},"seal_image":"/images/nation/seal/Scoa03MG.png","alert":null,"main_image":"/images/nation/main/fg03MG.png","slogan_background_image":"/images/nation/slogan_background/mottos03MG.png","origin":"蒙古出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":null,"can_change_seal":false,"description_subtitle":"隨清帝共治的血盟鐵騎","strategy_background":"/images/nation/strategy_background/str03MG.png","control_cities":12,"seal":"/images/nation/seal/Scoa03MG.png","alliance":"反共陣營","diplomatic_strategy_ids":[3,8,6],"selectable_general_strategy_ids":[2,5,9,10,20],"city_color":"008af7","controll_cities":15,"diplomatic_strategy_id":3,"commander":{"flag":"/images/home/flag/bigflag03MG.png","image":"/images/actor/head/avatarKZ02.png","name":"伸縮棍","seal":"/images/nation/seal/Scoa03MG.png","title":"主席","union":"屠龍英靈眾神歸位","union_id":7220,"user_id":669013},"commander_words_background":"/images/nation/commander_words_background/edict03MG.png","seal_categories":null,"general_strategy_ids":[1],"street_site":{"image":"/images/site/street/sv_mongolia.png","window_view":"/images/site/window/wsv_mongolia.png"},"position":30,"candidates":null,"description":"中世紀的世界征服者，被清帝降伏後與清帝聯姻，尊清帝為博格達汗，雙方共治全大陸。清帝殞落後，王爺們策馬遠離帝都，在漠北恢復故國；漠南則陷入四十年的相互混戰，最終成為紅軍屬邦。17年後，紅軍毀約，出兵屠戮漠南。","street_sites":[{"id":9,"image":"/images/site/street/sv_mongolia.png","name":"蒙古式","position":30,"window_view":"/images/site/window/wsv_mongolia.png"}],"headquarters":"全蒙古大呼拉爾","description_image":"/images/nation/location/loc03MG.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["殺殺殺殺殺殺殺","殺殺殺","殺！"],"music":"BGM03.mp3","slogan":["要說造反的嘎達梅林","是為了蒙古人的土地"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa03MG.png","name":"蒙古","ministers":[{"image":"/images/nation/ministry/A02.png","minister":null,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":null,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":"蒙古人事成本太高啦啦","minister_union_id":2847,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":"究極奧義：敵滅瞬獄殺！","minister_union_id":3047,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"屠龍英靈眾神歸位","minister_union_id":7220,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":null,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":"風林火山賢狼西征團","minister_union_id":898,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":"海盜戰車","minister_union_id":2771,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":"長生天","minister_union_id":763,"ministry":{"id":18,"name":"外事處"}}]},{"players":7255,"title":"赤焰灼燒的雪域佛土","id":4,"flag":"/images/home/flag/bigflag04TB.png","cities":15,"description_title":"1959年淪陷","icon":"/images/nation/icon/Gcoa04TB.png","capital":{"id":540,"name":"達蘭薩拉"},"seal_image":"/images/nation/seal/Scoa04TB.png","alert":null,"main_image":"/images/nation/main/fg04TB.png","slogan_background_image":"/images/nation/slogan_background/mottos04TB.png","origin":"藏國出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":"圖博","can_change_seal":false,"description_subtitle":"與清帝互尊的雪域佛土","strategy_background":"/images/nation/strategy_background/str04TB.png","control_cities":42,"seal":"/images/nation/seal/Scoa04TB.png","alliance":"反共陣營","diplomatic_strategy_ids":[4,1,2],"selectable_general_strategy_ids":[1,10,21,24],"city_color":"46be7f","controll_cities":37,"diplomatic_strategy_id":2,"commander":{"flag":"/images/home/flag/bigflag04TB.png","image":"/images/actor/head/avatarMC01.png","name":"阿蘭岱青的閨蜜","seal":"/images/nation/seal/Scoa04TB.png","title":"噶倫","union":"西藏人民議會","union_id":1492,"user_id":688556},"commander_words_background":"/images/nation/commander_words_background/edict04TB.png","seal_categories":null,"general_strategy_ids":[20],"street_site":{"image":"/images/site/street/sv_tibet.png","window_view":"/images/site/window/wsv_tibet.png"},"position":40,"candidates":null,"description":"高原上的佛教政權，法王尊清帝為文殊菩薩化身，在清帝保護下維持統治，並取得對全大陸的崇高宗教地位。清帝殞落後，法王恢復故國、勵精圖治，但仍戰敗紅軍手下，再淪屬邦。9年後，紅軍毀約入侵，法王被迫率領子民避走印度。","street_sites":[{"id":8,"image":"/images/site/street/sv_tibet.png","name":"藏式","position":40,"window_view":"/images/site/window/wsv_tibet.png"}],"headquarters":"藏國行政中央情報部","description_image":"/images/nation/location/loc04TB.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["2026春節活動紅包發送中","藏國HQ人事部開放自助領取每日資源","預祝新春愉快~~~~~"],"music":"BGM04.mp3","slogan":["身上的火不再燙了","故鄉的五濁惡世，要被斬開了"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa04TB.png","name":"藏國","ministers":[{"image":"/images/nation/ministry/A02.png","minister":"西藏人民議會尺覺林方面軍","minister_union_id":4822,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":"བོད་རྒྱལ་ལོ།","minister_union_id":2681,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":"拉章（春節結緣品發放中）","minister_union_id":6069,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":"西藏人民議會*無","minister_union_id":5172,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"西藏人民議會","minister_union_id":1492,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":"8964貓力銀行","minister_union_id":4444,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":"國際佛光會達蘭薩拉總會","minister_union_id":531,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":"青藏高原療養中心","minister_union_id":6075,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":"西藏人民議會不丹雷龍軍","minister_union_id":7729,"ministry":{"id":18,"name":"外事處"}}]},{"players":5348,"title":"馳騁國界的自由騎手","id":6,"flag":"/images/home/flag/bigflag05KZ.png","cities":23,"description_title":"1951年戰敗","icon":"/images/nation/icon/Gcoa05KZ.png","capital":{"id":502,"name":"阿拉木圖"},"seal_image":"/images/nation/seal/Scoa05KZ.png","alert":null,"main_image":"/images/nation/main/fg05KZ.png","slogan_background_image":"/images/nation/slogan_background/mottos05KZ.png","origin":"哈薩克出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":"東突厥","can_change_seal":false,"description_subtitle":"與清帝合作的自由牧人","strategy_background":"/images/nation/strategy_background/str05KZ.png","control_cities":33,"seal":"/images/nation/seal/Scoa05KZ.png","alliance":"反共陣營","diplomatic_strategy_ids":[3,7,8],"selectable_general_strategy_ids":[1,10,21,24],"city_color":"00e9e4","controll_cities":49,"diplomatic_strategy_id":8,"commander":{"flag":"/images/home/flag/bigflag05KZ.png","image":"/images/actor/head/avatarRB06.png","name":"新年南梁神小員(解凍中)","seal":"/images/nation/seal/Scoa05KZ.png","title":"主席","union":"大北方理工學院哈薩克本部","union_id":3044,"user_id":708823},"commander_words_background":"/images/nation/commander_words_background/edict05KZ.png","seal_categories":null,"general_strategy_ids":[20],"street_site":{"image":"/images/site/street/sv_kazakh.png","window_view":"/images/site/window/wsv_kazakh.png"},"position":50,"candidates":null,"description":"草海上的游牧民，為了躲避俄羅斯的哥薩克騎兵，進入東突厥請求清帝庇護。清帝衰微後，他們收容更多西突厥同胞，在東突厥北方的山林與草原稱雄。他們與紅軍戰至最後一刻。戰敗後為紅軍守邊，卻仍遭紅軍迫害，只好逃往已獲自由的西突厥。","street_sites":[{"id":7,"image":"/images/site/street/sv_kazakh.png","name":"哈薩克式","position":50,"window_view":"/images/site/window/wsv_kazakh.png"}],"headquarters":"阿勒泰哈薩克復興委員會","description_image":"/images/nation/location/loc05KZ.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["已解凍75%的冰塊中傳來了細微的歌聲...","我恭喜你發財...","我恭喜你精采..."],"music":"BGM05.mp3","slogan":["西去的燕子啊","不要忘了你的諾言變了心"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa05KZ.png","name":"哈薩克","ministers":[{"image":"/images/nation/ministry/A02.png","minister":"風起","minister_union_id":1719,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":"大北方除草討伐部","minister_union_id":1087,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":"大北方彩券行🦐","minister_union_id":2696,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":"放蕩著茶會","minister_union_id":4846,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"大北方理工學院哈薩克本部","minister_union_id":3044,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":"25時、ナイトコードで。","minister_union_id":3431,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":"增G","minister_union_id":5818,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":"大北方積電","minister_union_id":3418,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":"亞利亞公司","minister_union_id":5953,"ministry":{"id":18,"name":"外事處"}}]},{"players":5398,"title":"流淌血淚的沙漠七城","id":5,"flag":"/images/home/flag/bigflag06UG.png","cities":12,"description_title":"1949年淪陷","icon":"/images/nation/icon/Gcoa06UG.png","capital":{"id":507,"name":"伊斯坦堡"},"seal_image":"/images/nation/seal/Scoa06UG.png","alert":null,"main_image":"/images/nation/main/fg06UG.png","slogan_background_image":"/images/nation/slogan_background/mottos06UG.png","origin":"維吾爾出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":"東突厥","can_change_seal":false,"description_subtitle":"被清帝把持的沙漠七城","strategy_background":"/images/nation/strategy_background/str06UG.png","control_cities":11,"seal":"/images/nation/seal/Scoa06UG.png","alliance":"反共陣營","diplomatic_strategy_ids":[4,7,8],"selectable_general_strategy_ids":[1,11,14,17,20],"city_color":"74a0f6","controll_cities":19,"diplomatic_strategy_id":8,"commander":{"flag":"/images/home/flag/bigflag06UG.png","image":"/images/actor/head/avatarUG02.png","name":"班尼迪克蛋包釋迦","seal":"/images/nation/seal/Scoa06UG.png","title":"總指揮","union":"IYO","union_id":211,"user_id":694820},"commander_words_background":"/images/nation/commander_words_background/edict06UG.png","seal_categories":null,"general_strategy_ids":[10],"street_site":{"image":"/images/site/street/sv_muslim.png","window_view":"/images/site/window/wsv_muslim.png"},"position":60,"candidates":null,"description":"綠洲上的定居民，東突厥絲路上的一串城邦。在清帝討伐蒙古人的戰爭中被清帝占領，城主紛紛接受清帝冊封。清帝衰微後，在混戰中幾度嘗試復國，終告失敗。紅軍入侵後，不堪暴虐屠戮的居民逃向西突厥、組織義軍，伺機反攻故土。","street_sites":[{"id":12,"image":"/images/site/street/sv_muslim.png","name":"中西亞式","position":60,"window_view":"/images/site/window/wsv_muslim.png"}],"headquarters":"東突厥民族軍","description_image":"/images/nation/location/loc06UG.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["張又俠軍委的釋迦巡迴專車已發車","各位異端們領取了嗎",null],"music":"BGM06.mp3","slogan":["半個月亮爬上來","映照征途中我們血流成河"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa06UG.png","name":"維吾爾","ministers":[{"image":"/images/nation/ministry/A02.png","minister":"軍委嬤七萬魔縛-土","minister_union_id":8137,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":"新疆生产建设兵团","minister_union_id":2468,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":"維笑棉花糖種植班","minister_union_id":5663,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":"煮年菜用火刑架","minister_union_id":6910,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"IYO","minister_union_id":211,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":"塔克拉瑪干自由前線","minister_union_id":7826,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":"軍委嬤萬魔縛•初","minister_union_id":6618,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":"軍委嬤兩萬魔縛•初","minister_union_id":6619,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":"軍委嬤三萬魔縛▪︎初","minister_union_id":6912,"ministry":{"id":18,"name":"外事處"}}]},{"players":8129,"title":"歷劫毀滅的富饒大地","id":7,"flag":"/images/home/flag/bigflag07MC.png","cities":4,"description_title":"1945年淪陷","icon":"/images/nation/icon/Gcoa07MC.png","capital":{"id":75,"name":"海參崴"},"seal_image":"/images/nation/seal/Scoa07MC.png","alert":null,"main_image":"/images/nation/main/fg07MC.png","slogan_background_image":"/images/nation/slogan_background/mottos07MC.png","origin":"滿洲出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":null,"can_change_seal":false,"description_subtitle":"讓清帝崛起的白山黑水","strategy_background":"/images/nation/strategy_background/str07MC.png","control_cities":14,"seal":"/images/nation/seal/Scoa07MC.png","alliance":"反共陣營","diplomatic_strategy_ids":[8,6,3],"selectable_general_strategy_ids":[1,10,21,24],"city_color":"fcb900","controll_cities":24,"diplomatic_strategy_id":3,"commander":{"flag":"/images/home/flag/bigflag07MC.png","image":"/images/actor/head/avatarFROR01.png","name":"木下","seal":"/images/nation/seal/Scoa07MC.png","title":"司令","union":"伊蛸會滿洲復興課","union_id":42,"user_id":646185},"commander_words_background":"/images/nation/commander_words_background/edict07MC.png","seal_categories":null,"general_strategy_ids":[20],"street_site":{"image":"/images/site/street/sv_manchuria.png","window_view":"/images/site/window/wsv_manchuria.png"},"position":70,"candidates":null,"description":"清帝守護數百年的祖地與禁地。清帝衰微後，華夏農民湧入關外，與滿洲人一同將荒地開墾成富饒大地。清帝退位後，落寞的清帝離開帝都、重返故土，在日本支持下再建祖國。蘇聯擊敗日本後，紅軍把滿洲占為根據地，將繁盛文明榨取殆盡。","street_sites":[{"id":11,"image":"/images/site/street/sv_manchuria.png","name":"滿式","position":70,"window_view":"/images/site/window/wsv_manchuria.png"}],"headquarters":"滿洲志願兵團","description_image":"/images/nation/location/loc07MC.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪","|WAH！歡迎來到滿洲聯邦！|","🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"],"music":"BGM07.mp3","slogan":["我的家在松花江上","哪年才能無苦無憂，不再流浪"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa07MC.png","name":"滿洲","ministers":[{"image":"/images/nation/ministry/A02.png","minister":"大清帝國","minister_union_id":304,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":"東京府立第一高等女学校","minister_union_id":2851,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":"大清滿洲鑲紅旗都統衙門","minister_union_id":2472,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":"秘密組織","minister_union_id":2750,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"伊蛸會滿洲復興課","minister_union_id":42,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":"對空六課","minister_union_id":2234,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":"遼國火藥自救會","minister_union_id":2418,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":"保衛蔣娘聯盟","minister_union_id":2808,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":"大清滿洲正藍旗","minister_union_id":2968,"ministry":{"id":18,"name":"外事處"}}]},{"players":21061,"title":"蟄伏南洋的華夏反賊","id":10,"flag":"/images/home/flag/bigflag09RB01.png","cities":8,"description_title":"1949年淪陷","icon":"/images/nation/icon/Gcoa09RB52.png","capital":{"id":27,"name":"曼谷"},"seal_image":"/images/nation/seal/Scoa09RB01.png","alert":null,"main_image":"/images/nation/main/fg09RB.png","slogan_background_image":"/images/nation/slogan_background/mottos09RB.png","origin":"反賊聯盟出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":null,"can_change_seal":true,"description_subtitle":"將清帝推翻的華夏各邦","strategy_background":"/images/nation/strategy_background/str09RB.png","control_cities":45,"seal":"/images/nation/seal/Scoa09RB01.png","alliance":"反共陣營","diplomatic_strategy_ids":[6,9,5],"selectable_general_strategy_ids":[1,11,14,17,20],"city_color":"ffffff","controll_cities":24,"diplomatic_strategy_id":6,"commander":{"flag":"/images/home/flag/bigflag09RB52.png","image":"/images/actor/head/avatarUG02.png","name":"八方遊龍","seal":"/images/nation/seal/Scoa09RB52.png","title":"盟主","union":"東甌國 青田十八軍","union_id":3488,"user_id":689590},"commander_words_background":"/images/nation/commander_words_background/edict09RB.png","seal_categories":[{"id":1,"name":"意識形態","seals":[{"id":1,"image_url":"/images/seal/Rcoaw01.png","name":"九星白日","position":10,"shield_image_url":"/images/nation/seal/Scoa09RB01.png"},{"id":2,"image_url":"/images/seal/Rcoaw02.png","name":"青天白日 ","position":20,"shield_image_url":"/images/nation/seal/Scoa09RB02.png"},{"id":3,"image_url":"/images/seal/Rcoaw03.png","name":"鐵血十八星 ","position":30,"shield_image_url":"/images/nation/seal/Scoa09RB03.png"},{"id":4,"image_url":"/images/seal/Rcoaw04.png","name":"大唐三辰 ","position":40,"shield_image_url":"/images/nation/seal/Scoa09RB04.png"},{"id":5,"image_url":"/images/seal/Rcoaw05.png","name":"大明朱雀 ","position":50,"shield_image_url":"/images/nation/seal/Scoa09RB05.png"},{"id":6,"image_url":"/images/seal/Rcoaw06.png","name":"大清團龍","position":60,"shield_image_url":"/images/nation/seal/Scoa09RB06.png"},{"id":7,"image_url":"/images/seal/Rcoaw07.png","name":"太平天國 ","position":70,"shield_image_url":"/images/nation/seal/Scoa09RB07.png"},{"id":8,"image_url":"/images/seal/Rcoaw08.png","name":"嘉禾十二章 ","position":80,"shield_image_url":"/images/nation/seal/Scoa09RB08.png"},{"id":9,"image_url":"/images/seal/Rcoaw09.png","name":"漢 ","position":90,"shield_image_url":"/images/nation/seal/Scoa09RB09.png"},{"id":10,"image_url":"/images/seal/Rcoaw10.png","name":"魏 ","position":100,"shield_image_url":"/images/nation/seal/Scoa09RB10.png"},{"id":11,"image_url":"/images/seal/Rcoaw11.png","name":"吳","position":110,"shield_image_url":"/images/nation/seal/Scoa09RB11.png"},{"id":12,"image_url":"/images/seal/Rcoaw12.png","name":"黃巾軍 ","position":120,"shield_image_url":"/images/nation/seal/Scoa09RB12.png"},{"id":13,"image_url":"/images/seal/Rcoaw13.png","name":"新中國聯邦","position":130,"shield_image_url":"/images/nation/seal/Scoa09RB13.png"},{"id":14,"image_url":"/images/seal/Rcoaw14.png","name":"法輪大法 ","position":140,"shield_image_url":"/images/nation/seal/Scoa09RB14.png"},{"id":15,"image_url":"/images/seal/Rcoaw15.png","name":"十字架 ","position":150,"shield_image_url":"/images/nation/seal/Scoa09RB15.png"},{"id":16,"image_url":"/images/seal/Rcoaw16.png","name":"清真言 ","position":160,"shield_image_url":"/images/nation/seal/Scoa09RB16.png"},{"id":17,"image_url":"/images/seal/Rcoaw17.png","name":"卍字 ","position":170,"shield_image_url":"/images/nation/seal/Scoa09RB17.png"},{"id":18,"image_url":"/images/seal/Rcoaw18.png","name":"太極 ","position":180,"shield_image_url":"/images/nation/seal/Scoa09RB18.png"},{"id":19,"image_url":"/images/seal/Rcoaw19.png","name":"八卦","position":190,"shield_image_url":"/images/nation/seal/Scoa09RB19.png"},{"id":20,"image_url":"/images/seal/Rcoaw20.png","name":"性別革命 ","position":200,"shield_image_url":"/images/nation/seal/Scoa09RB20.png"},{"id":21,"image_url":"/images/seal/Rcoaw21.png","name":"無政府主義","position":210,"shield_image_url":"/images/nation/seal/Scoa09RB21.png"},{"id":69,"image_url":"/images/seal/Rcoaw27.png","name":"社會民主主義","position":215,"shield_image_url":"/images/nation/seal/Scoa09RB27.png"},{"id":22,"image_url":"/images/seal/Rcoaw22.png","name":"新左派 ","position":220,"shield_image_url":"/images/nation/seal/Scoa09RB22.png"},{"id":68,"image_url":"/images/seal/Rcoaw26.png","name":"左翼反對派","position":225,"shield_image_url":"/images/nation/seal/Scoa09RB26.png"},{"id":23,"image_url":"/images/seal/Rcoaw23.png","name":"海盜 ","position":230,"shield_image_url":"/images/nation/seal/Scoa09RB23.png"},{"id":24,"image_url":"/images/seal/Rcoaw24.png","name":"魔法陣","position":240,"shield_image_url":"/images/nation/seal/Scoa09RB24.png"},{"id":67,"image_url":"/images/seal/Rcoaw25.png","name":"楓葉","position":245,"shield_image_url":"/images/nation/seal/Scoa09RB25.png"}]},{"id":2,"name":"諸夏諸越","seals":[{"id":25,"image_url":"/images/seal/Rcoaw31.png","name":"齊 ","position":250,"shield_image_url":"/images/nation/seal/Scoa09RB31.png"},{"id":26,"image_url":"/images/seal/Rcoaw32.png","name":"幽燕 ","position":260,"shield_image_url":"/images/nation/seal/Scoa09RB32.png"},{"id":27,"image_url":"/images/seal/Rcoaw33.png","name":"晉 ","position":270,"shield_image_url":"/images/nation/seal/Scoa09RB33.png"},{"id":28,"image_url":"/images/seal/Rcoaw34.png","name":"秦 ","position":280,"shield_image_url":"/images/nation/seal/Scoa09RB34.png"},{"id":29,"image_url":"/images/seal/Rcoaw35.png","name":"昭武","position":290,"shield_image_url":"/images/nation/seal/Scoa09RB35.png"},{"id":30,"image_url":"/images/seal/Rcoaw36.png","name":"江淮 ","position":300,"shield_image_url":"/images/nation/seal/Scoa09RB36.png"},{"id":31,"image_url":"/images/seal/Rcoaw37.png","name":"伊洛 ","position":310,"shield_image_url":"/images/nation/seal/Scoa09RB37.png"},{"id":32,"image_url":"/images/seal/Rcoaw38.png","name":"宛","position":320,"shield_image_url":"/images/nation/seal/Scoa09RB38.png"},{"id":33,"image_url":"/images/seal/Rcoaw39.png","name":"楚 ","position":330,"shield_image_url":"/images/nation/seal/Scoa09RB39.png"},{"id":34,"image_url":"/images/seal/Rcoaw40.png","name":"湘 ","position":340,"shield_image_url":"/images/nation/seal/Scoa09RB40.png"},{"id":35,"image_url":"/images/seal/Rcoaw41.png","name":"巴蜀 ","position":350,"shield_image_url":"/images/nation/seal/Scoa09RB41.png"},{"id":36,"image_url":"/images/seal/Rcoaw42.png","name":"夜郎 ","position":360,"shield_image_url":"/images/nation/seal/Scoa09RB42.png"},{"id":37,"image_url":"/images/seal/Rcoaw43.png","name":"滇","position":370,"shield_image_url":"/images/nation/seal/Scoa09RB43.png"},{"id":38,"image_url":"/images/seal/Rcoaw44.png","name":"桂 ","position":380,"shield_image_url":"/images/nation/seal/Scoa09RB44.png"},{"id":39,"image_url":"/images/seal/Rcoaw45.png","name":"瓊 ","position":390,"shield_image_url":"/images/nation/seal/Scoa09RB45.png"},{"id":40,"image_url":"/images/seal/Rcoaw46.png","name":"粵","position":400,"shield_image_url":"/images/nation/seal/Scoa09RB46.png"},{"id":41,"image_url":"/images/seal/Rcoaw47.png","name":"澳門 ","position":410,"shield_image_url":"/images/nation/seal/Scoa09RB47.png"},{"id":42,"image_url":"/images/seal/Rcoaw48.png","name":"客家","position":420,"shield_image_url":"/images/nation/seal/Scoa09RB48.png"},{"id":43,"image_url":"/images/seal/Rcoaw49.png","name":"潮汕 ","position":430,"shield_image_url":"/images/nation/seal/Scoa09RB49.png"},{"id":44,"image_url":"/images/seal/Rcoaw50.png","name":"贛","position":440,"shield_image_url":"/images/nation/seal/Scoa09RB50.png"},{"id":45,"image_url":"/images/seal/Rcoaw51B.png","name":"閩","position":450,"shield_image_url":"/images/nation/seal/Scoa09RB51B.png"},{"id":46,"image_url":"/images/seal/Rcoaw52.png","name":"甌 ","position":460,"shield_image_url":"/images/nation/seal/Scoa09RB52.png"},{"id":47,"image_url":"/images/seal/Rcoaw53.png","name":"吳越 ","position":470,"shield_image_url":"/images/nation/seal/Scoa09RB53.png"},{"id":48,"image_url":"/images/seal/Rcoaw54.png","name":"滬","position":480,"shield_image_url":"/images/nation/seal/Scoa09RB54.png"}]},{"id":3,"name":"東南亞","seals":[{"id":49,"image_url":"/images/seal/Rcoaw61.png","name":"東南亞國協","position":490,"shield_image_url":"/images/nation/seal/Scoa09RB61.png"},{"id":50,"image_url":"/images/seal/Rcoaw62.png","name":"汶萊 ","position":500,"shield_image_url":"/images/nation/seal/Scoa09RB62.png"},{"id":51,"image_url":"/images/seal/Rcoaw63.png","name":"自由緬甸","position":510,"shield_image_url":"/images/nation/seal/Scoa09RB63.png"},{"id":52,"image_url":"/images/seal/Rcoaw64.png","name":"柬埔寨","position":520,"shield_image_url":"/images/nation/seal/Scoa09RB64.png"},{"id":53,"image_url":"/images/seal/Rcoaw65.png","name":"東帝汶","position":530,"shield_image_url":"/images/nation/seal/Scoa09RB65.png"},{"id":54,"image_url":"/images/seal/Rcoaw66.png","name":"印度尼西亞","position":540,"shield_image_url":"/images/nation/seal/Scoa09RB66.png"},{"id":55,"image_url":"/images/seal/Rcoaw67.png","name":"寮-撣-傣","position":550,"shield_image_url":"/images/nation/seal/Scoa09RB67.png"},{"id":56,"image_url":"/images/seal/Rcoaw68.png","name":"寮王國 ","position":560,"shield_image_url":"/images/nation/seal/Scoa09RB68.png"},{"id":57,"image_url":"/images/seal/Rcoaw69.png","name":"馬來西亞 ","position":570,"shield_image_url":"/images/nation/seal/Scoa09RB69.png"},{"id":58,"image_url":"/images/seal/Rcoaw70.png","name":"巴布亞紐幾內亞 ","position":580,"shield_image_url":"/images/nation/seal/Scoa09RB70.png"},{"id":59,"image_url":"/images/seal/Rcoaw71.png","name":"菲律賓 ","position":590,"shield_image_url":"/images/nation/seal/Scoa09RB71.png"},{"id":60,"image_url":"/images/seal/Rcoaw72.png","name":"新加坡 ","position":600,"shield_image_url":"/images/nation/seal/Scoa09RB72.png"},{"id":61,"image_url":"/images/seal/Rcoaw73.png","name":"泰國","position":610,"shield_image_url":"/images/nation/seal/Scoa09RB73.png"},{"id":62,"image_url":"/images/seal/Rcoaw74.png","name":"越南 ","position":620,"shield_image_url":"/images/nation/seal/Scoa09RB74.png"},{"id":63,"image_url":"/images/seal/Rcoaw75.png","name":"越南龍 I","position":630,"shield_image_url":"/images/nation/seal/Scoa09RB75.png"},{"id":64,"image_url":"/images/seal/Rcoaw76.png","name":"越南龍 II ","position":640,"shield_image_url":"/images/nation/seal/Scoa09RB76.png"},{"id":65,"image_url":"/images/seal/Rcoaw77.png","name":"紐澳軍團 ","position":650,"shield_image_url":"/images/nation/seal/Scoa09RB77.png"},{"id":66,"image_url":"/images/seal/Rcoaw78.png","name":"蘭芳共和國 ","position":660,"shield_image_url":"/images/nation/seal/Scoa09RB78.png"}]}],"general_strategy_ids":[10],"street_site":{"image":"/images/site/street/sv_south_china.png","window_view":"/images/site/window/wsv_south_china.png"},"position":90,"candidates":null,"description":"華夏大地上語言、風俗各異的無數邦國，在近四十年抵抗後被清帝征服與屠戮。兩百餘年奴役後，諸夏各邦在南洋各地籌措革命資金，終於在辛亥年譁變獨立，迫使清帝退位。組成聯盟共治華夏的各邦，卻在抵禦日本入侵後精疲力竭，被興起的紅軍各個擊破、吞併。","street_sites":[{"id":4,"image":"/images/site/street/sv_indochina.png","name":"印度支那式","position":1030,"window_view":"/images/site/window/wsv_indochina.png"},{"id":1,"image":"/images/site/street/sv_south_china.png","name":"華南式","position":1010,"window_view":"/images/site/window/wsv_south_china.png"}],"headquarters":"東亞革命同盟會","description_image":"/images/nation/location/loc09RB.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":["雖然發生了很多","本日八方遊龍照常營業!",null],"music":"BGM09.mp3","slogan":["身既死兮，神以靈","魂魄毅兮，為鬼雄"],"player_joinable":true,"color_icon":"/images/nation/color_icon/minicoa09RB01.png","name":"反賊聯盟","ministers":[{"image":"/images/nation/ministry/A02.png","minister":"東甌國 東甌一軍","minister_union_id":364,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":"東甌國 新河廿一軍","minister_union_id":7312,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":null,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":"東甌國 章安二軍","minister_union_id":1744,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":"東甌國 青田十八軍","minister_union_id":3488,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":null,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":"東甌國 臨海七軍","minister_union_id":6270,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":null,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":"東甌國 永安十三軍","minister_union_id":2911,"ministry":{"id":18,"name":"外事處"}}]},{"players":16,"title":"?","id":9,"flag":"/images/home/flag/bigflag00FR.png","cities":25,"description_title":"?","icon":"/images/nation/icon/Gcoa00FR.png","capital":{"id":293,"name":"北京"},"seal_image":"/images/nation/seal/Scoa00FR.png","alert":null,"main_image":"/images/nation/main/fg00FR.png","slogan_background_image":"/images/nation/slogan_background/mottos00FR.png","origin":"自由勢力出身","defect":{"show_alert":"聯盟領袖禁止投誠","show_button":true},"alias":"?","can_change_seal":false,"description_subtitle":"?","strategy_background":"/images/nation/strategy_background/str00FR.png","control_cities":2,"seal":"/images/nation/seal/Scoa00FR.png","alliance":"反共陣營","diplomatic_strategy_ids":[4,6,7,5,1,3,2,8,9,10],"selectable_general_strategy_ids":[1,10,20],"city_color":"6d6d6d","controll_cities":2,"diplomatic_strategy_id":null,"commander":{"flag":"/images/home/flag/bigflag00FR.png","image":null,"name":"未產生","seal":"/images/nation/seal/Scoa00FR.png","title":"?","union":"無","union_id":null,"user_id":null},"commander_words_background":"/images/nation/commander_words_background/edict00FR.png","seal_categories":null,"general_strategy_ids":[],"street_site":{"image":"/images/site/street/sv_nusantaria.png","window_view":"/images/site/window/wsv_nusantaria.png"},"position":100,"candidates":null,"description":"B8","street_sites":[{"id":18,"image":"/images/site/street/sv_western.png","name":"歐美式","position":1090,"window_view":"/images/site/window/wsv_western.png"},{"id":16,"image":"/images/site/street/sv_hindu.png","name":"印度式","position":1070,"window_view":"/images/site/window/wsv_hindu.png"},{"id":19,"image":"/images/site/street/sv_post_soviet.png","name":"後蘇聯式","position":1080,"window_view":"/images/site/window/wsv_post_soviet.png"},{"id":3,"image":"/images/site/street/sv_nusantaria.png","name":"努山達拉式","position":1040,"window_view":"/images/site/window/wsv_nusantaria.png"},{"id":2,"image":"/images/site/street/sv_japan.png","name":"日式","position":1050,"window_view":"/images/site/window/wsv_japan.png"},{"id":17,"image":"/images/site/street/sv_corea.png","name":"韓式","position":1060,"window_view":"/images/site/window/wsv_corea.png"}],"headquarters":"&nbsp;","description_image":"/images/nation/location/loc00FR.png","election":{"ballot":null,"can_sign_up_candidate":false,"can_vote":false,"is_candidate":false,"show_only_chief_can_vote":false,"show_union_level_invalid":false,"vote_for_candidate_id":null,"voted":false},"commander_words":[null,null,null],"music":"BGM00.mp3","slogan":["?","?"],"player_joinable":false,"color_icon":"/images/nation/color_icon/minicoa00FR.png","name":"自由勢力","ministers":[{"image":"/images/nation/ministry/A02.png","minister":null,"ministry":{"id":11,"name":"保防處"}},{"image":"/images/nation/ministry/A03.png","minister":null,"ministry":{"id":12,"name":"參謀部"}},{"image":"/images/nation/ministry/A04.png","minister":null,"ministry":{"id":13,"name":"人事處"}},{"image":"/images/nation/ministry/A05.png","minister":null,"ministry":{"id":14,"name":"公關處"}},{"image":"/images/nation/ministry/A01.png","minister":null,"ministry":{"id":10,"name":"祕書處"}},{"image":"/images/nation/ministry/A06.png","minister":null,"ministry":{"id":15,"name":"政戰處"}},{"image":"/images/nation/ministry/A07.png","minister":null,"ministry":{"id":16,"name":"監察處"}},{"image":"/images/nation/ministry/A08.png","minister":null,"ministry":{"id":17,"name":"法制處"}},{"image":"/images/nation/ministry/A09.png","minister":null,"ministry":{"id":18,"name":"外事處"}}]},{"center_background":"/images/site/street/sv_top.png","id":0,"left_background":"/images/home/flag/all_left.png","name":"東方大陸","player_joinable":false,"right_background":"/images/home/flag/all_right.png"}]}}]
+[
+    "6",
+    "14",
+    "player:815058",
+    "phx_reply",
+    {
+        "status": "ok",
+        "response": {
+            "all": {
+                "center_background": "/images/site/street/sv_top.png",
+                "left_background": "/images/home/flag/all_left.png",
+                "name": "東方大陸",
+                "right_background": "/images/home/flag/all_right.png"
+            },
+            "diplomatic_strategies": [
+                {
+                    "description": "我方戰力增加10% 敵方戰力減少30%<br/>大韓邦聯本地援助增加260%",
+                    "id": 3,
+                    "image": "/images/diplomatic_strategy/pro_corea.png",
+                    "name": "親大韓"
+                },
+                {
+                    "description": "我方戰力增加30% 敵方戰力減少10%<br/>婆羅多聯盟本地援助增加140%",
+                    "id": 2,
+                    "image": "/images/diplomatic_strategy/pro_bharat.png",
+                    "name": "親婆羅多"
+                },
+                {
+                    "description": "我方戰力增加25% 敵方戰力減少15%<br/>印度支那聯盟本地援助增加190%",
+                    "id": 5,
+                    "image": "/images/diplomatic_strategy/pro_indochina.png",
+                    "name": "親印度支那"
+                },
+                {
+                    "description": "我方戰力增加30% 敵方戰力減少10%<br/>盎格魯國協本地援助增加125%",
+                    "id": 1,
+                    "image": "/images/diplomatic_strategy/pro_anglosphere.png",
+                    "name": "親盎格魯"
+                },
+                {
+                    "description": "我方戰力增加20% 敵方戰力減少20%<br/>人民共和國本地援助增加20%",
+                    "id": 10,
+                    "image": "/images/diplomatic_strategy/pro_taiwan.png",
+                    "name": "親臺灣"
+                },
+                {
+                    "description": "敵方戰力減少40%<br/>日本皇國本地援助增加175%",
+                    "id": 6,
+                    "image": "/images/diplomatic_strategy/pro_japan.png",
+                    "name": "親日本"
+                },
+                {
+                    "description": "我方戰力增加10% 敵方戰力減少30%<br/>歐羅巴聯盟本地援助增加350%",
+                    "id": 4,
+                    "image": "/images/diplomatic_strategy/pro_europe.png",
+                    "name": "親歐羅巴"
+                },
+                {
+                    "description": "我方戰力增加15% 敵方戰力減少25%<br/>努山達拉聯盟本地援助增加210%",
+                    "id": 9,
+                    "image": "/images/diplomatic_strategy/pro_nusantaria.png",
+                    "name": "親努山達拉"
+                },
+                {
+                    "description": "我方戰力增加40%<br/>大北方國協本地援助增加20%",
+                    "id": 8,
+                    "image": "/images/diplomatic_strategy/pro_northern.png",
+                    "name": "親大北方"
+                },
+                {
+                    "description": "我方戰力增加10% 敵方戰力減少30%<br/>哈里發聯盟本地援助增加210%",
+                    "id": 7,
+                    "image": "/images/diplomatic_strategy/pro_khalifah.png",
+                    "name": "親哈里發"
+                }
+            ],
+            "general_strategies": [
+                {
+                    "description": "我方據點戰戰力增加20%",
+                    "general_strategy_routes": [
+                        {
+                            "level_1_general_strategy": {
+                                "description": "宣傳家據點戰戰力增加60%<br/> 我方據點戰戰力增加5%",
+                                "id": 5,
+                                "image": "/images/general_strategy/S1Resistance.png",
+                                "name": "抗爭"
+                            },
+                            "level_2_general_strategy": {
+                                "description": "宣傳家據點戰戰力增加30%<br/> 集結時間減少30%",
+                                "id": 6,
+                                "image": "/images/general_strategy/S1Riot.png",
+                                "name": "暴動"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "資助者據點戰戰力增加80%",
+                                "id": 7,
+                                "image": "/images/general_strategy/S1Barricade.png",
+                                "name": "街壘"
+                            }
+                        },
+                        {
+                            "level_1_general_strategy": {
+                                "description": "間諜據點戰戰力增加30%<br/> 據點戰期間城鎮間移動時間減少30%",
+                                "id": 2,
+                                "image": "/images/general_strategy/S1Ambush.png",
+                                "name": "潛伏"
+                            },
+                            "level_2_general_strategy": {
+                                "description": "間諜據點戰戰力增加40%<br/> 敵方據點戰戰力減少10%",
+                                "id": 3,
+                                "image": "/images/general_strategy/S1Raid.png",
+                                "name": "襲擾"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "敵方據點戰戰力減少15%",
+                                "id": 4,
+                                "image": "/images/general_strategy/S1Assassination.png",
+                                "name": "暗殺"
+                            }
+                        },
+                        {
+                            "level_1_general_strategy": null,
+                            "level_2_general_strategy": {
+                                "description": "游擊隊據點戰戰力增加32%<br/> 我方據點戰戰力增加12%",
+                                "id": 9,
+                                "image": "/images/general_strategy/S1Gunpowder.png",
+                                "name": "火藥"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "游擊隊據點戰戰力增加48%<br/> 我方據點戰戰力增加8%",
+                                "id": 8,
+                                "image": "/images/general_strategy/S1Detonator.png",
+                                "name": "雷管"
+                            }
+                        }
+                    ],
+                    "id": 1,
+                    "image": "/images/general_strategy/S1Tactics.png",
+                    "name": "戰術"
+                },
+                {
+                    "description": "敵方據點戰戰力減少15%",
+                    "general_strategy_routes": [
+                        {
+                            "level_1_general_strategy": {
+                                "description": "間諜據點戰戰力增加32%<br/> 我方據點戰戰力增加12%",
+                                "id": 11,
+                                "image": "/images/general_strategy/S2Counterintelligence.png",
+                                "name": "保密防諜"
+                            },
+                            "level_2_general_strategy": {
+                                "description": "資助者據點戰戰力增加80%",
+                                "id": 12,
+                                "image": "/images/general_strategy/S2ReportingSystem.png",
+                                "name": "舉報制度"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "我方據點戰戰力增加20%",
+                                "id": 13,
+                                "image": "/images/general_strategy/S2ThoughtInspection.png",
+                                "name": "思想檢查"
+                            }
+                        },
+                        {
+                            "level_1_general_strategy": {
+                                "description": "資助者據點戰戰力增加55%<br/> 敵方據點戰戰力減少4%",
+                                "id": 14,
+                                "image": "/images/general_strategy/S2PsychologicalWarfareDeployment.png",
+                                "name": "情戰布建"
+                            },
+                            "level_2_general_strategy": {
+                                "description": "間諜據點戰戰力增加30%<br/> 敵方據點戰戰力減少10%",
+                                "id": 15,
+                                "image": "/images/general_strategy/S2DispatchingSpies.png",
+                                "name": "派遣諜員"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "資助者據點戰戰力增加80%",
+                                "id": 16,
+                                "image": "/images/general_strategy/S2InsiderSpy.png",
+                                "name": "內應諜員"
+                            }
+                        },
+                        {
+                            "level_1_general_strategy": {
+                                "description": "宣傳家據點戰戰力增加32%<br/> 我方據點戰戰力增加12%",
+                                "id": 17,
+                                "image": "/images/general_strategy/S2PoliticalWarfare.png",
+                                "name": "政治作戰"
+                            },
+                            "level_2_general_strategy": {
+                                "description": "宣傳家據點戰戰力增加16%<br/> 敵方據點戰戰力減少12%",
+                                "id": 18,
+                                "image": "/images/general_strategy/S2SpreadRumorsandDivide.png",
+                                "name": "布謠分化"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "資助者據點戰戰力增加40%<br/> 我方據點戰戰力增加10%",
+                                "id": 19,
+                                "image": "/images/general_strategy/S2UndergroundParty.png",
+                                "name": "隱蔽戰線"
+                            }
+                        }
+                    ],
+                    "id": 10,
+                    "image": "/images/general_strategy/S2Intelligence.png",
+                    "name": "情治"
+                },
+                {
+                    "description": "據點戰期間城鎮間移動時間減少30%<br/>集結時間減少30%",
+                    "general_strategy_routes": [
+                        {
+                            "level_1_general_strategy": {
+                                "description": "全地圖本地援助增加8%<br/> 宣傳家據點戰戰力增加70%",
+                                "id": 21,
+                                "image": "/images/general_strategy/S3ClassConsciousness.png",
+                                "name": "階級意識"
+                            },
+                            "level_2_general_strategy": {
+                                "description": "全地圖本地援助增加14%<br/> 宣傳家據點戰戰力增加60%",
+                                "id": 22,
+                                "image": "/images/general_strategy/S3DialecticalMaterialism.png",
+                                "name": "唯物辯證"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "游擊隊據點戰戰力增加70%<br/> 全地圖本地援助增加6% ",
+                                "id": 23,
+                                "image": "/images/general_strategy/S3LiberationWar.png",
+                                "name": "解放戰爭"
+                            }
+                        },
+                        {
+                            "level_1_general_strategy": {
+                                "description": "資助者據點戰戰力增加56%<br/> 游擊隊據點戰戰力增加24%",
+                                "id": 24,
+                                "image": "/images/general_strategy/S3Nationalism.png",
+                                "name": "國族主義"
+                            },
+                            "level_2_general_strategy": {
+                                "description": "游擊隊據點戰戰力增加64%<br/> 集結時間減少10%",
+                                "id": 25,
+                                "image": "/images/general_strategy/S3NationalHero.png",
+                                "name": "民族英雄"
+                            },
+                            "level_3_general_strategy": {
+                                "description": "宣傳家據點戰戰力增加60%<br/> 游擊隊據點戰戰力增加20%",
+                                "id": 26,
+                                "image": "/images/general_strategy/S3HolyWar.png",
+                                "name": "聖戰"
+                            }
+                        }
+                    ],
+                    "id": 20,
+                    "image": "/images/general_strategy/S3Ideology.png",
+                    "name": "思想"
+                }
+            ],
+            "nations": [
+                {
+                    "players": 23238,
+                    "title": "大陸的征服者與主宰者",
+                    "id": 1,
+                    "flag": "/images/home/flag/bigflag01CM.png",
+                    "cities": 127,
+                    "description_title": "1927年建軍",
+                    "icon": "/images/nation/icon/Gcoa01CM.png",
+                    "capital": {
+                        "id": 293,
+                        "name": "北京"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa01CM.png",
+                    "alert": {
+                        "image": "/images/nation/red_army.png",
+                        "text": "可使用紅軍專屬的角色與劇情"
+                    },
+                    "main_image": "/images/nation/main/fg01CM.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos01CM.png",
+                    "origin": "紅軍出身",
+                    "defect": {
+                        "show_alert": "想投共？哈哈哈⋯⋯你不是認真的吧？",
+                        "show_button": true
+                    },
+                    "alias": null,
+                    "can_change_seal": false,
+                    "description_subtitle": "大陸的征服者與主宰者",
+                    "strategy_background": "/images/nation/strategy_background/str01CM.png",
+                    "control_cities": 9,
+                    "seal": "/images/nation/seal/Scoa01CM.png",
+                    "alliance": "共產陣營",
+                    "diplomatic_strategy_ids": [
+                        5,
+                        9,
+                        8
+                    ],
+                    "selectable_general_strategy_ids": [
+                        1,
+                        10,
+                        21,
+                        25
+                    ],
+                    "city_color": "fd1e19",
+                    "controll_cities": 22,
+                    "diplomatic_strategy_id": 9,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag01CM.png",
+                        "image": "/images/actor/head/avatarTB02.png",
+                        "name": "韓先楚帶勞贖進成都",
+                        "seal": "/images/nation/seal/Scoa01CM.png",
+                        "title": "最高領導人",
+                        "union": "在成都韩先楚只是個萝莉",
+                        "union_id": 23,
+                        "user_id": 738892
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict01CM.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        20,
+                        24
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_north_china.png",
+                        "window_view": "/images/site/window/wsv_north_china.png"
+                    },
+                    "position": 10,
+                    "candidates": null,
+                    "description": "繼清帝之後大陸上最強大的征服者。希望將鬆散的各屬邦整合成被中華同化的單一國家，藉由強而有力的極權專制政體掌握廣大的疆域，帶領體質鬆散的龐大共和國崛起世上，洗刷百年來被列強欺凌的屈辱。但這些被征服國的遺民永遠不會諒解您的用心良苦，紅軍必須不擇手段地壓制住他們，以免共和國崩潰。",
+                    "street_sites": [
+                        {
+                            "id": 10,
+                            "image": "/images/site/street/sv_north_china.png",
+                            "name": "華北式",
+                            "position": 1020,
+                            "window_view": "/images/site/window/wsv_north_china.png"
+                        }
+                    ],
+                    "headquarters": "共產黨中央政治局",
+                    "description_image": "/images/nation/location/loc01CM.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "王道征途",
+                        null,
+                        null
+                    ],
+                    "music": "BGM01.mp3",
+                    "slogan": [
+                        "聽！風在呼嘯軍號響",
+                        "同志們奔赴祖國的邊疆！"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa01CM.png",
+                    "name": "紅軍",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 2,
+                                "name": "國安委"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 3,
+                                "name": "中央軍委"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 4,
+                                "name": "組織部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 5,
+                                "name": "中宣部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "在成都韩先楚只是個萝莉",
+                            "minister_union_id": 23,
+                            "ministry": {
+                                "id": 1,
+                                "name": "書記處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 6,
+                                "name": "統戰部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 7,
+                                "name": "中紀委"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 8,
+                                "name": "政法委"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 9,
+                                "name": "外事委"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 50424,
+                    "title": "禦敵千年的海東古國",
+                    "id": 2,
+                    "flag": "/images/home/flag/bigflag08TW.png",
+                    "cities": 22,
+                    "description_title": "尚未淪陷的海邦",
+                    "icon": "/images/nation/icon/Gcoa08TW.png",
+                    "capital": {
+                        "id": 1,
+                        "name": "臺北"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa08TW.png",
+                    "alert": {
+                        "image": "/images/nation/alert.png",
+                        "text": "參加人數較多的陣營 玩家較難爭取部門與城鎮資源"
+                    },
+                    "main_image": "/images/nation/main/fg08TW.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos08TW.png",
+                    "origin": "臺灣出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": false
+                    },
+                    "alias": null,
+                    "can_change_seal": false,
+                    "description_subtitle": "供清帝拓殖的海外墾地",
+                    "strategy_background": "/images/nation/strategy_background/str08TW.png",
+                    "control_cities": 26,
+                    "seal": "/images/nation/seal/Scoa08TW.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        9,
+                        6,
+                        1
+                    ],
+                    "selectable_general_strategy_ids": [
+                        2,
+                        5,
+                        9,
+                        10,
+                        21,
+                        24
+                    ],
+                    "city_color": "06859e",
+                    "controll_cities": 57,
+                    "diplomatic_strategy_id": 1,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag08TW.png",
+                        "image": "/images/actor/head/avatarCMT59.png",
+                        "name": "我聽見宇滴落在青青草地",
+                        "seal": "/images/nation/seal/Scoa08TW.png",
+                        "title": "總召",
+                        "union": "宇灣共存",
+                        "union_id": 236,
+                        "user_id": 649010
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict08TW.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        1,
+                        20
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_taiwan.png",
+                        "window_view": "/images/site/window/wsv_taiwan.png"
+                    },
+                    "position": 15,
+                    "candidates": null,
+                    "description": "曾僅憑一道海峽，抗拒東方大陸政權達千餘年，但仍不敵清帝襲來，被清帝劃為屬邦華夏的殖民地。清帝衰微後，被日本征服。日本戰敗後，又被捲入華夏的戰事，最終拒紅軍於海峽以西。經過數十年抗爭與建設，海東古國重獲新生。",
+                    "street_sites": [
+                        {
+                            "id": 6,
+                            "image": "/images/site/street/sv_taiwan.png",
+                            "name": "臺式",
+                            "position": 80,
+                            "window_view": "/images/site/window/wsv_taiwan.png"
+                        }
+                    ],
+                    "headquarters": "臺灣全國民團聯盟",
+                    "description_image": "/images/nation/location/loc08TW.png",
+                    "election": {
+                        "ballot": 1,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "Eclipse first, the rest nowhere",
+                        "Dorodoro, Dororodororo",
+                        null
+                    ],
+                    "music": "BGM08.mp3",
+                    "slogan": [
+                        "驕傲的祖先們，正視著我們的腳步",
+                        "望你平安，天祐臺灣"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa08TW.png",
+                    "name": "臺灣",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "宇灣共存",
+                            "minister_union_id": 236,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 35644,
+                    "title": "負隅頑抗的海港城邦",
+                    "id": 3,
+                    "flag": "/images/home/flag/bigflag02HK.png",
+                    "cities": 20,
+                    "description_title": "1997年淪陷",
+                    "icon": "/images/nation/icon/Gcoa02HK.png",
+                    "capital": {
+                        "id": 37,
+                        "name": "維多利亞城"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa02HK.png",
+                    "alert": {
+                        "image": "/images/nation/alert.png",
+                        "text": "參加人數較多的陣營 玩家較難爭取部門與城鎮資源"
+                    },
+                    "main_image": "/images/nation/main/fg02HK.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos02HK.png",
+                    "origin": "香港出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": null,
+                    "can_change_seal": false,
+                    "description_subtitle": "被清帝割讓的海港城邦",
+                    "strategy_background": "/images/nation/strategy_background/str02HK.png",
+                    "control_cities": 83,
+                    "seal": "/images/nation/seal/Scoa02HK.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        5,
+                        10,
+                        1
+                    ],
+                    "selectable_general_strategy_ids": [
+                        2,
+                        5,
+                        9,
+                        10,
+                        21,
+                        24
+                    ],
+                    "city_color": "ae43ec",
+                    "controll_cities": 29,
+                    "diplomatic_strategy_id": 1,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag02HK.png",
+                        "image": "/images/actor/head/avatarTW05.png",
+                        "name": "S.E.A.F FOB",
+                        "seal": "/images/nation/seal/Scoa02HK.png",
+                        "title": "召集人",
+                        "union": "SEAF第四國防軍",
+                        "union_id": 3919,
+                        "user_id": 752844
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict02HK.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        20,
+                        1
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_hongkong.png",
+                        "window_view": "/images/site/window/wsv_hongkong.png"
+                    },
+                    "position": 20,
+                    "candidates": null,
+                    "description": "原來是百越船民的漁村，在戰爭時投靠清帝的敵人英吉利，被英國建設成繁華的自由城，成為大陸通往世界的門戶。一百五十年後，在紅軍的逼迫下，英國把這座城市交給了紅軍，城邦自由逐漸淪喪，抗爭者在城市角落負隅頑抗。",
+                    "street_sites": [
+                        {
+                            "id": 5,
+                            "image": "/images/site/street/sv_hongkong.png",
+                            "name": "港式",
+                            "position": 20,
+                            "window_view": "/images/site/window/wsv_hongkong.png"
+                        }
+                    ],
+                    "headquarters": "香港臨時政府",
+                    "description_image": "/images/nation/location/loc02HK.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "山不厭高，海不厭深。",
+                        "周公吐哺，天下歸心。",
+                        null
+                    ],
+                    "music": "BGM02.mp3",
+                    "slogan": [
+                        "今日迎來我城終局之戰",
+                        "願榮光，歸香港"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa02HK.png",
+                    "name": "香港",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "SEAF第四國防軍",
+                            "minister_union_id": 3919,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 5375,
+                    "title": "半壁淪陷的的古老汗國",
+                    "id": 8,
+                    "flag": "/images/home/flag/bigflag03MG.png",
+                    "cities": 15,
+                    "description_title": "1966年半壁淪陷",
+                    "icon": "/images/nation/icon/Gcoa03MG.png",
+                    "capital": {
+                        "id": 110,
+                        "name": "烏蘭巴托"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa03MG.png",
+                    "alert": null,
+                    "main_image": "/images/nation/main/fg03MG.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos03MG.png",
+                    "origin": "蒙古出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": null,
+                    "can_change_seal": false,
+                    "description_subtitle": "隨清帝共治的血盟鐵騎",
+                    "strategy_background": "/images/nation/strategy_background/str03MG.png",
+                    "control_cities": 17,
+                    "seal": "/images/nation/seal/Scoa03MG.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        3,
+                        8,
+                        6
+                    ],
+                    "selectable_general_strategy_ids": [
+                        2,
+                        5,
+                        9,
+                        10,
+                        21,
+                        24
+                    ],
+                    "city_color": "008af7",
+                    "controll_cities": 17,
+                    "diplomatic_strategy_id": 3,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag03MG.png",
+                        "image": "/images/actor/head/avatarFROR01.png",
+                        "name": "香港の英国返還が唯一の道",
+                        "seal": "/images/nation/seal/Scoa03MG.png",
+                        "title": "主席",
+                        "union": "究極奧義：敵滅瞬獄殺！",
+                        "union_id": 3047,
+                        "user_id": 691544
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict03MG.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        1,
+                        20
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_mongolia.png",
+                        "window_view": "/images/site/window/wsv_mongolia.png"
+                    },
+                    "position": 30,
+                    "candidates": null,
+                    "description": "中世紀的世界征服者，被清帝降伏後與清帝聯姻，尊清帝為博格達汗，雙方共治全大陸。清帝殞落後，王爺們策馬遠離帝都，在漠北恢復故國；漠南則陷入四十年的相互混戰，最終成為紅軍屬邦。17年後，紅軍毀約，出兵屠戮漠南。",
+                    "street_sites": [
+                        {
+                            "id": 9,
+                            "image": "/images/site/street/sv_mongolia.png",
+                            "name": "蒙古式",
+                            "position": 30,
+                            "window_view": "/images/site/window/wsv_mongolia.png"
+                        }
+                    ],
+                    "headquarters": "全蒙古大呼拉爾",
+                    "description_image": "/images/nation/location/loc03MG.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "殺殺殺殺殺殺殺",
+                        "殺殺殺",
+                        "殺！"
+                    ],
+                    "music": "BGM03.mp3",
+                    "slogan": [
+                        "要說造反的嘎達梅林",
+                        "是為了蒙古人的土地"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa03MG.png",
+                    "name": "蒙古",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "究極奧義：敵滅瞬獄殺！",
+                            "minister_union_id": 3047,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 7263,
+                    "title": "赤焰灼燒的雪域佛土",
+                    "id": 4,
+                    "flag": "/images/home/flag/bigflag04TB.png",
+                    "cities": 15,
+                    "description_title": "1959年淪陷",
+                    "icon": "/images/nation/icon/Gcoa04TB.png",
+                    "capital": {
+                        "id": 540,
+                        "name": "達蘭薩拉"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa04TB.png",
+                    "alert": null,
+                    "main_image": "/images/nation/main/fg04TB.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos04TB.png",
+                    "origin": "藏國出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": "圖博",
+                    "can_change_seal": false,
+                    "description_subtitle": "與清帝互尊的雪域佛土",
+                    "strategy_background": "/images/nation/strategy_background/str04TB.png",
+                    "control_cities": 24,
+                    "seal": "/images/nation/seal/Scoa04TB.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        4,
+                        1,
+                        2
+                    ],
+                    "selectable_general_strategy_ids": [
+                        2,
+                        5,
+                        9,
+                        10,
+                        21,
+                        24
+                    ],
+                    "city_color": "46be7f",
+                    "controll_cities": 26,
+                    "diplomatic_strategy_id": 2,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag04TB.png",
+                        "image": "/images/actor/head/avatarMC01A.png",
+                        "name": "阿蘭岱青的閨蜜",
+                        "seal": "/images/nation/seal/Scoa04TB.png",
+                        "title": "噶倫",
+                        "union": "西藏人民議會",
+                        "union_id": 1492,
+                        "user_id": 812803
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict04TB.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        20,
+                        1
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_tibet.png",
+                        "window_view": "/images/site/window/wsv_tibet.png"
+                    },
+                    "position": 40,
+                    "candidates": null,
+                    "description": "高原上的佛教政權，法王尊清帝為文殊菩薩化身，在清帝保護下維持統治，並取得對全大陸的崇高宗教地位。清帝殞落後，法王恢復故國、勵精圖治，但仍戰敗紅軍手下，再淪屬邦。9年後，紅軍毀約入侵，法王被迫率領子民避走印度。",
+                    "street_sites": [
+                        {
+                            "id": 8,
+                            "image": "/images/site/street/sv_tibet.png",
+                            "name": "藏式",
+                            "position": 40,
+                            "window_view": "/images/site/window/wsv_tibet.png"
+                        }
+                    ],
+                    "headquarters": "藏國行政中央情報部",
+                    "description_image": "/images/nation/location/loc04TB.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "2026春節活動紅包發送中",
+                        "藏國HQ人事部開放自助領取每日資源",
+                        "預祝新春愉快~~~~~"
+                    ],
+                    "music": "BGM04.mp3",
+                    "slogan": [
+                        "身上的火不再燙了",
+                        "故鄉的五濁惡世，要被斬開了"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa04TB.png",
+                    "name": "藏國",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": "國際佛光會達蘭薩拉總會",
+                            "minister_union_id": 531,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": "བོད་རྒྱལ་ལོ།",
+                            "minister_union_id": 2681,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": "拉章（春節結緣品發放中）",
+                            "minister_union_id": 6069,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": "青藏高原療養中心",
+                            "minister_union_id": 6075,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "西藏人民議會",
+                            "minister_union_id": 1492,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": "西藏人民議會*無",
+                            "minister_union_id": 5172,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": "西藏人民議會不丹雷龍軍",
+                            "minister_union_id": 7729,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": "8964貓力銀行",
+                            "minister_union_id": 4444,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": "西藏人民議會尺覺林方面軍",
+                            "minister_union_id": 4822,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 5350,
+                    "title": "馳騁國界的自由騎手",
+                    "id": 6,
+                    "flag": "/images/home/flag/bigflag05KZ.png",
+                    "cities": 23,
+                    "description_title": "1951年戰敗",
+                    "icon": "/images/nation/icon/Gcoa05KZ.png",
+                    "capital": {
+                        "id": 502,
+                        "name": "阿拉木圖"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa05KZ.png",
+                    "alert": null,
+                    "main_image": "/images/nation/main/fg05KZ.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos05KZ.png",
+                    "origin": "哈薩克出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": "東突厥",
+                    "can_change_seal": false,
+                    "description_subtitle": "與清帝合作的自由牧人",
+                    "strategy_background": "/images/nation/strategy_background/str05KZ.png",
+                    "control_cities": 51,
+                    "seal": "/images/nation/seal/Scoa05KZ.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        3,
+                        7,
+                        8
+                    ],
+                    "selectable_general_strategy_ids": [
+                        1,
+                        10,
+                        22,
+                        24
+                    ],
+                    "city_color": "00e9e4",
+                    "controll_cities": 61,
+                    "diplomatic_strategy_id": 8,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag05KZ.png",
+                        "image": "/images/actor/head/avatarRB06.png",
+                        "name": "新年南梁神小員(已解凍)",
+                        "seal": "/images/nation/seal/Scoa05KZ.png",
+                        "title": "主席",
+                        "union": "大北方理工學院哈薩克本部",
+                        "union_id": 3044,
+                        "user_id": 708823
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict05KZ.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        21,
+                        20
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_kazakh.png",
+                        "window_view": "/images/site/window/wsv_kazakh.png"
+                    },
+                    "position": 50,
+                    "candidates": null,
+                    "description": "草海上的游牧民，為了躲避俄羅斯的哥薩克騎兵，進入東突厥請求清帝庇護。清帝衰微後，他們收容更多西突厥同胞，在東突厥北方的山林與草原稱雄。他們與紅軍戰至最後一刻。戰敗後為紅軍守邊，卻仍遭紅軍迫害，只好逃往已獲自由的西突厥。",
+                    "street_sites": [
+                        {
+                            "id": 7,
+                            "image": "/images/site/street/sv_kazakh.png",
+                            "name": "哈薩克式",
+                            "position": 50,
+                            "window_view": "/images/site/window/wsv_kazakh.png"
+                        }
+                    ],
+                    "headquarters": "阿勒泰哈薩克復興委員會",
+                    "description_image": "/images/nation/location/loc05KZ.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "我恭喜你發財~我恭喜你精彩",
+                        "最好的請過來~不好的請走開",
+                        "Oh！禮多人不怪"
+                    ],
+                    "music": "BGM05.mp3",
+                    "slogan": [
+                        "西去的燕子啊",
+                        "不要忘了你的諾言變了心"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa05KZ.png",
+                    "name": "哈薩克",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": "蝦仁士多",
+                            "minister_union_id": 4602,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": "🌿蛤們🌿 ",
+                            "minister_union_id": 1747,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": "大北方彩券行🦐ᕕ(ᐛ)ᕗ",
+                            "minister_union_id": 2696,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": "天人 ",
+                            "minister_union_id": 2807,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "大北方理工學院哈薩克本部",
+                            "minister_union_id": 3044,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": "草原獅子山",
+                            "minister_union_id": 4411,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": "邊御八獅刷牢中",
+                            "minister_union_id": 2954,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": "大北方積電",
+                            "minister_union_id": 3418,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": "オラ(((Q(・ω・Q)",
+                            "minister_union_id": 3127,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 5402,
+                    "title": "流淌血淚的沙漠七城",
+                    "id": 5,
+                    "flag": "/images/home/flag/bigflag06UG.png",
+                    "cities": 12,
+                    "description_title": "1949年淪陷",
+                    "icon": "/images/nation/icon/Gcoa06UG.png",
+                    "capital": {
+                        "id": 507,
+                        "name": "伊斯坦堡"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa06UG.png",
+                    "alert": null,
+                    "main_image": "/images/nation/main/fg06UG.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos06UG.png",
+                    "origin": "維吾爾出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": "東突厥",
+                    "can_change_seal": false,
+                    "description_subtitle": "被清帝把持的沙漠七城",
+                    "strategy_background": "/images/nation/strategy_background/str06UG.png",
+                    "control_cities": 22,
+                    "seal": "/images/nation/seal/Scoa06UG.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        4,
+                        7,
+                        8
+                    ],
+                    "selectable_general_strategy_ids": [
+                        1,
+                        11,
+                        15,
+                        17,
+                        20
+                    ],
+                    "city_color": "74a0f6",
+                    "controll_cities": 17,
+                    "diplomatic_strategy_id": 8,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag06UG.png",
+                        "image": "/images/actor/head/avatarTW02.png",
+                        "name": "火刑架軍委•安悠趴狗",
+                        "seal": "/images/nation/seal/Scoa06UG.png",
+                        "title": "總指揮",
+                        "union": "煮年菜用火刑架",
+                        "union_id": 6910,
+                        "user_id": 832261
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict06UG.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        14,
+                        10
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_muslim.png",
+                        "window_view": "/images/site/window/wsv_muslim.png"
+                    },
+                    "position": 60,
+                    "candidates": null,
+                    "description": "綠洲上的定居民，東突厥絲路上的一串城邦。在清帝討伐蒙古人的戰爭中被清帝占領，城主紛紛接受清帝冊封。清帝衰微後，在混戰中幾度嘗試復國，終告失敗。紅軍入侵後，不堪暴虐屠戮的居民逃向西突厥、組織義軍，伺機反攻故土。",
+                    "street_sites": [
+                        {
+                            "id": 12,
+                            "image": "/images/site/street/sv_muslim.png",
+                            "name": "中西亞式",
+                            "position": 60,
+                            "window_view": "/images/site/window/wsv_muslim.png"
+                        }
+                    ],
+                    "headquarters": "東突厥民族軍",
+                    "description_image": "/images/nation/location/loc06UG.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "張又俠軍委的釋迦巡迴專車已發車",
+                        "各位異端們領取了嗎",
+                        null
+                    ],
+                    "music": "BGM06.mp3",
+                    "slogan": [
+                        "半個月亮爬上來",
+                        "映照征途中我們血流成河"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa06UG.png",
+                    "name": "維吾爾",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "煮年菜用火刑架",
+                            "minister_union_id": 6910,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 8147,
+                    "title": "歷劫毀滅的富饒大地",
+                    "id": 7,
+                    "flag": "/images/home/flag/bigflag07MC.png",
+                    "cities": 4,
+                    "description_title": "1945年淪陷",
+                    "icon": "/images/nation/icon/Gcoa07MC.png",
+                    "capital": {
+                        "id": 75,
+                        "name": "海參崴"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa07MC.png",
+                    "alert": null,
+                    "main_image": "/images/nation/main/fg07MC.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos07MC.png",
+                    "origin": "滿洲出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": null,
+                    "can_change_seal": false,
+                    "description_subtitle": "讓清帝崛起的白山黑水",
+                    "strategy_background": "/images/nation/strategy_background/str07MC.png",
+                    "control_cities": 11,
+                    "seal": "/images/nation/seal/Scoa07MC.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        8,
+                        6,
+                        3
+                    ],
+                    "selectable_general_strategy_ids": [
+                        2,
+                        5,
+                        9,
+                        10,
+                        21,
+                        24
+                    ],
+                    "city_color": "fcb900",
+                    "controll_cities": 7,
+                    "diplomatic_strategy_id": 3,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag07MC.png",
+                        "image": "/images/actor/head/avatarFRSE03.png",
+                        "name": "蒼角",
+                        "seal": "/images/nation/seal/Scoa07MC.png",
+                        "title": "司令",
+                        "union": "對空六課",
+                        "union_id": 2234,
+                        "user_id": 678524
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict07MC.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [
+                        20,
+                        1
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_manchuria.png",
+                        "window_view": "/images/site/window/wsv_manchuria.png"
+                    },
+                    "position": 70,
+                    "candidates": null,
+                    "description": "清帝守護數百年的祖地與禁地。清帝衰微後，華夏農民湧入關外，與滿洲人一同將荒地開墾成富饒大地。清帝退位後，落寞的清帝離開帝都、重返故土，在日本支持下再建祖國。蘇聯擊敗日本後，紅軍把滿洲占為根據地，將繁盛文明榨取殆盡。",
+                    "street_sites": [
+                        {
+                            "id": 11,
+                            "image": "/images/site/street/sv_manchuria.png",
+                            "name": "滿式",
+                            "position": 70,
+                            "window_view": "/images/site/window/wsv_manchuria.png"
+                        }
+                    ],
+                    "headquarters": "滿洲志願兵團",
+                    "description_image": "/images/nation/location/loc07MC.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "ＷAH《恭喜發財 但只恭喜自己》https://youtu.be/0EWupAC14Iw",
+                        "我恭喜我发财 我恭喜你姓蔡 最好的请走开 不好的也走开 都～不～要～过～来～",
+                        "你要 开摆 华哥替你发财 恭喜我发财 你只能瞪眼看 恭喜我发财！！！！！"
+                    ],
+                    "music": "BGM07.mp3",
+                    "slogan": [
+                        "我的家在松花江上",
+                        "哪年才能無苦無憂，不再流浪"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa07MC.png",
+                    "name": "滿洲",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "對空六課",
+                            "minister_union_id": 2234,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 21096,
+                    "title": "蟄伏南洋的華夏反賊",
+                    "id": 10,
+                    "flag": "/images/home/flag/bigflag09RB01.png",
+                    "cities": 8,
+                    "description_title": "1949年淪陷",
+                    "icon": "/images/nation/icon/Gcoa09RB52.png",
+                    "capital": {
+                        "id": 27,
+                        "name": "曼谷"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa09RB01.png",
+                    "alert": null,
+                    "main_image": "/images/nation/main/fg09RB.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos09RB.png",
+                    "origin": "反賊聯盟出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": null,
+                    "can_change_seal": true,
+                    "description_subtitle": "將清帝推翻的華夏各邦",
+                    "strategy_background": "/images/nation/strategy_background/str09RB.png",
+                    "control_cities": 26,
+                    "seal": "/images/nation/seal/Scoa09RB01.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        6,
+                        9,
+                        5
+                    ],
+                    "selectable_general_strategy_ids": [
+                        1,
+                        11,
+                        14,
+                        17,
+                        21,
+                        24
+                    ],
+                    "city_color": "ffffff",
+                    "controll_cities": 33,
+                    "diplomatic_strategy_id": 6,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag09RB52.png",
+                        "image": "/images/actor/head/avatarRB02A.png",
+                        "name": "海獅會害怕",
+                        "seal": "/images/nation/seal/Scoa09RB52.png",
+                        "title": "盟主",
+                        "union": "東甌國 東甌一軍",
+                        "union_id": 364,
+                        "user_id": 749155
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict09RB.png",
+                    "seal_categories": [
+                        {
+                            "id": 1,
+                            "name": "意識形態",
+                            "seals": [
+                                {
+                                    "id": 1,
+                                    "image_url": "/images/seal/Rcoaw01.png",
+                                    "name": "九星白日",
+                                    "position": 10,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB01.png"
+                                },
+                                {
+                                    "id": 2,
+                                    "image_url": "/images/seal/Rcoaw02.png",
+                                    "name": "青天白日 ",
+                                    "position": 20,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB02.png"
+                                },
+                                {
+                                    "id": 3,
+                                    "image_url": "/images/seal/Rcoaw03.png",
+                                    "name": "鐵血十八星 ",
+                                    "position": 30,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB03.png"
+                                },
+                                {
+                                    "id": 4,
+                                    "image_url": "/images/seal/Rcoaw04.png",
+                                    "name": "大唐三辰 ",
+                                    "position": 40,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB04.png"
+                                },
+                                {
+                                    "id": 5,
+                                    "image_url": "/images/seal/Rcoaw05.png",
+                                    "name": "大明朱雀 ",
+                                    "position": 50,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB05.png"
+                                },
+                                {
+                                    "id": 6,
+                                    "image_url": "/images/seal/Rcoaw06.png",
+                                    "name": "大清團龍",
+                                    "position": 60,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB06.png"
+                                },
+                                {
+                                    "id": 7,
+                                    "image_url": "/images/seal/Rcoaw07.png",
+                                    "name": "太平天國 ",
+                                    "position": 70,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB07.png"
+                                },
+                                {
+                                    "id": 8,
+                                    "image_url": "/images/seal/Rcoaw08.png",
+                                    "name": "嘉禾十二章 ",
+                                    "position": 80,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB08.png"
+                                },
+                                {
+                                    "id": 9,
+                                    "image_url": "/images/seal/Rcoaw09.png",
+                                    "name": "漢 ",
+                                    "position": 90,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB09.png"
+                                },
+                                {
+                                    "id": 10,
+                                    "image_url": "/images/seal/Rcoaw10.png",
+                                    "name": "魏 ",
+                                    "position": 100,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB10.png"
+                                },
+                                {
+                                    "id": 11,
+                                    "image_url": "/images/seal/Rcoaw11.png",
+                                    "name": "吳",
+                                    "position": 110,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB11.png"
+                                },
+                                {
+                                    "id": 12,
+                                    "image_url": "/images/seal/Rcoaw12.png",
+                                    "name": "黃巾軍 ",
+                                    "position": 120,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB12.png"
+                                },
+                                {
+                                    "id": 13,
+                                    "image_url": "/images/seal/Rcoaw13.png",
+                                    "name": "新中國聯邦",
+                                    "position": 130,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB13.png"
+                                },
+                                {
+                                    "id": 14,
+                                    "image_url": "/images/seal/Rcoaw14.png",
+                                    "name": "法輪大法 ",
+                                    "position": 140,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB14.png"
+                                },
+                                {
+                                    "id": 15,
+                                    "image_url": "/images/seal/Rcoaw15.png",
+                                    "name": "十字架 ",
+                                    "position": 150,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB15.png"
+                                },
+                                {
+                                    "id": 16,
+                                    "image_url": "/images/seal/Rcoaw16.png",
+                                    "name": "清真言 ",
+                                    "position": 160,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB16.png"
+                                },
+                                {
+                                    "id": 17,
+                                    "image_url": "/images/seal/Rcoaw17.png",
+                                    "name": "卍字 ",
+                                    "position": 170,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB17.png"
+                                },
+                                {
+                                    "id": 18,
+                                    "image_url": "/images/seal/Rcoaw18.png",
+                                    "name": "太極 ",
+                                    "position": 180,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB18.png"
+                                },
+                                {
+                                    "id": 19,
+                                    "image_url": "/images/seal/Rcoaw19.png",
+                                    "name": "八卦",
+                                    "position": 190,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB19.png"
+                                },
+                                {
+                                    "id": 20,
+                                    "image_url": "/images/seal/Rcoaw20.png",
+                                    "name": "性別革命 ",
+                                    "position": 200,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB20.png"
+                                },
+                                {
+                                    "id": 21,
+                                    "image_url": "/images/seal/Rcoaw21.png",
+                                    "name": "無政府主義",
+                                    "position": 210,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB21.png"
+                                },
+                                {
+                                    "id": 69,
+                                    "image_url": "/images/seal/Rcoaw27.png",
+                                    "name": "社會民主主義",
+                                    "position": 215,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB27.png"
+                                },
+                                {
+                                    "id": 22,
+                                    "image_url": "/images/seal/Rcoaw22.png",
+                                    "name": "新左派 ",
+                                    "position": 220,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB22.png"
+                                },
+                                {
+                                    "id": 68,
+                                    "image_url": "/images/seal/Rcoaw26.png",
+                                    "name": "左翼反對派",
+                                    "position": 225,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB26.png"
+                                },
+                                {
+                                    "id": 23,
+                                    "image_url": "/images/seal/Rcoaw23.png",
+                                    "name": "海盜 ",
+                                    "position": 230,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB23.png"
+                                },
+                                {
+                                    "id": 24,
+                                    "image_url": "/images/seal/Rcoaw24.png",
+                                    "name": "魔法陣",
+                                    "position": 240,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB24.png"
+                                },
+                                {
+                                    "id": 67,
+                                    "image_url": "/images/seal/Rcoaw25.png",
+                                    "name": "楓葉",
+                                    "position": 245,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB25.png"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "name": "諸夏諸越",
+                            "seals": [
+                                {
+                                    "id": 25,
+                                    "image_url": "/images/seal/Rcoaw31.png",
+                                    "name": "齊 ",
+                                    "position": 250,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB31.png"
+                                },
+                                {
+                                    "id": 26,
+                                    "image_url": "/images/seal/Rcoaw32.png",
+                                    "name": "幽燕 ",
+                                    "position": 260,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB32.png"
+                                },
+                                {
+                                    "id": 27,
+                                    "image_url": "/images/seal/Rcoaw33.png",
+                                    "name": "晉 ",
+                                    "position": 270,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB33.png"
+                                },
+                                {
+                                    "id": 28,
+                                    "image_url": "/images/seal/Rcoaw34.png",
+                                    "name": "秦 ",
+                                    "position": 280,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB34.png"
+                                },
+                                {
+                                    "id": 29,
+                                    "image_url": "/images/seal/Rcoaw35.png",
+                                    "name": "昭武",
+                                    "position": 290,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB35.png"
+                                },
+                                {
+                                    "id": 30,
+                                    "image_url": "/images/seal/Rcoaw36.png",
+                                    "name": "江淮 ",
+                                    "position": 300,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB36.png"
+                                },
+                                {
+                                    "id": 31,
+                                    "image_url": "/images/seal/Rcoaw37.png",
+                                    "name": "伊洛 ",
+                                    "position": 310,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB37.png"
+                                },
+                                {
+                                    "id": 32,
+                                    "image_url": "/images/seal/Rcoaw38.png",
+                                    "name": "宛",
+                                    "position": 320,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB38.png"
+                                },
+                                {
+                                    "id": 33,
+                                    "image_url": "/images/seal/Rcoaw39.png",
+                                    "name": "楚 ",
+                                    "position": 330,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB39.png"
+                                },
+                                {
+                                    "id": 34,
+                                    "image_url": "/images/seal/Rcoaw40.png",
+                                    "name": "湘 ",
+                                    "position": 340,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB40.png"
+                                },
+                                {
+                                    "id": 35,
+                                    "image_url": "/images/seal/Rcoaw41.png",
+                                    "name": "巴蜀 ",
+                                    "position": 350,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB41.png"
+                                },
+                                {
+                                    "id": 36,
+                                    "image_url": "/images/seal/Rcoaw42.png",
+                                    "name": "夜郎 ",
+                                    "position": 360,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB42.png"
+                                },
+                                {
+                                    "id": 37,
+                                    "image_url": "/images/seal/Rcoaw43.png",
+                                    "name": "滇",
+                                    "position": 370,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB43.png"
+                                },
+                                {
+                                    "id": 38,
+                                    "image_url": "/images/seal/Rcoaw44.png",
+                                    "name": "桂 ",
+                                    "position": 380,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB44.png"
+                                },
+                                {
+                                    "id": 39,
+                                    "image_url": "/images/seal/Rcoaw45.png",
+                                    "name": "瓊 ",
+                                    "position": 390,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB45.png"
+                                },
+                                {
+                                    "id": 40,
+                                    "image_url": "/images/seal/Rcoaw46.png",
+                                    "name": "粵",
+                                    "position": 400,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB46.png"
+                                },
+                                {
+                                    "id": 41,
+                                    "image_url": "/images/seal/Rcoaw47.png",
+                                    "name": "澳門 ",
+                                    "position": 410,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB47.png"
+                                },
+                                {
+                                    "id": 42,
+                                    "image_url": "/images/seal/Rcoaw48.png",
+                                    "name": "客家",
+                                    "position": 420,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB48.png"
+                                },
+                                {
+                                    "id": 43,
+                                    "image_url": "/images/seal/Rcoaw49.png",
+                                    "name": "潮汕 ",
+                                    "position": 430,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB49.png"
+                                },
+                                {
+                                    "id": 44,
+                                    "image_url": "/images/seal/Rcoaw50.png",
+                                    "name": "贛",
+                                    "position": 440,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB50.png"
+                                },
+                                {
+                                    "id": 45,
+                                    "image_url": "/images/seal/Rcoaw51B.png",
+                                    "name": "閩",
+                                    "position": 450,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB51B.png"
+                                },
+                                {
+                                    "id": 46,
+                                    "image_url": "/images/seal/Rcoaw52.png",
+                                    "name": "甌 ",
+                                    "position": 460,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB52.png"
+                                },
+                                {
+                                    "id": 47,
+                                    "image_url": "/images/seal/Rcoaw53.png",
+                                    "name": "吳越 ",
+                                    "position": 470,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB53.png"
+                                },
+                                {
+                                    "id": 48,
+                                    "image_url": "/images/seal/Rcoaw54.png",
+                                    "name": "滬",
+                                    "position": 480,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB54.png"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "name": "東南亞",
+                            "seals": [
+                                {
+                                    "id": 49,
+                                    "image_url": "/images/seal/Rcoaw61.png",
+                                    "name": "東南亞國協",
+                                    "position": 490,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB61.png"
+                                },
+                                {
+                                    "id": 50,
+                                    "image_url": "/images/seal/Rcoaw62.png",
+                                    "name": "汶萊 ",
+                                    "position": 500,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB62.png"
+                                },
+                                {
+                                    "id": 51,
+                                    "image_url": "/images/seal/Rcoaw63.png",
+                                    "name": "自由緬甸",
+                                    "position": 510,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB63.png"
+                                },
+                                {
+                                    "id": 52,
+                                    "image_url": "/images/seal/Rcoaw64.png",
+                                    "name": "柬埔寨",
+                                    "position": 520,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB64.png"
+                                },
+                                {
+                                    "id": 53,
+                                    "image_url": "/images/seal/Rcoaw65.png",
+                                    "name": "東帝汶",
+                                    "position": 530,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB65.png"
+                                },
+                                {
+                                    "id": 54,
+                                    "image_url": "/images/seal/Rcoaw66.png",
+                                    "name": "印度尼西亞",
+                                    "position": 540,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB66.png"
+                                },
+                                {
+                                    "id": 55,
+                                    "image_url": "/images/seal/Rcoaw67.png",
+                                    "name": "寮-撣-傣",
+                                    "position": 550,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB67.png"
+                                },
+                                {
+                                    "id": 56,
+                                    "image_url": "/images/seal/Rcoaw68.png",
+                                    "name": "寮王國 ",
+                                    "position": 560,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB68.png"
+                                },
+                                {
+                                    "id": 57,
+                                    "image_url": "/images/seal/Rcoaw69.png",
+                                    "name": "馬來西亞 ",
+                                    "position": 570,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB69.png"
+                                },
+                                {
+                                    "id": 58,
+                                    "image_url": "/images/seal/Rcoaw70.png",
+                                    "name": "巴布亞紐幾內亞 ",
+                                    "position": 580,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB70.png"
+                                },
+                                {
+                                    "id": 59,
+                                    "image_url": "/images/seal/Rcoaw71.png",
+                                    "name": "菲律賓 ",
+                                    "position": 590,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB71.png"
+                                },
+                                {
+                                    "id": 60,
+                                    "image_url": "/images/seal/Rcoaw72.png",
+                                    "name": "新加坡 ",
+                                    "position": 600,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB72.png"
+                                },
+                                {
+                                    "id": 61,
+                                    "image_url": "/images/seal/Rcoaw73.png",
+                                    "name": "泰國",
+                                    "position": 610,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB73.png"
+                                },
+                                {
+                                    "id": 62,
+                                    "image_url": "/images/seal/Rcoaw74.png",
+                                    "name": "越南 ",
+                                    "position": 620,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB74.png"
+                                },
+                                {
+                                    "id": 63,
+                                    "image_url": "/images/seal/Rcoaw75.png",
+                                    "name": "越南龍 I",
+                                    "position": 630,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB75.png"
+                                },
+                                {
+                                    "id": 64,
+                                    "image_url": "/images/seal/Rcoaw76.png",
+                                    "name": "越南龍 II ",
+                                    "position": 640,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB76.png"
+                                },
+                                {
+                                    "id": 65,
+                                    "image_url": "/images/seal/Rcoaw77.png",
+                                    "name": "紐澳軍團 ",
+                                    "position": 650,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB77.png"
+                                },
+                                {
+                                    "id": 66,
+                                    "image_url": "/images/seal/Rcoaw78.png",
+                                    "name": "蘭芳共和國 ",
+                                    "position": 660,
+                                    "shield_image_url": "/images/nation/seal/Scoa09RB78.png"
+                                }
+                            ]
+                        }
+                    ],
+                    "general_strategy_ids": [
+                        10,
+                        20
+                    ],
+                    "street_site": {
+                        "image": "/images/site/street/sv_south_china.png",
+                        "window_view": "/images/site/window/wsv_south_china.png"
+                    },
+                    "position": 90,
+                    "candidates": null,
+                    "description": "華夏大地上語言、風俗各異的無數邦國，在近四十年抵抗後被清帝征服與屠戮。兩百餘年奴役後，諸夏各邦在南洋各地籌措革命資金，終於在辛亥年譁變獨立，迫使清帝退位。組成聯盟共治華夏的各邦，卻在抵禦日本入侵後精疲力竭，被興起的紅軍各個擊破、吞併。",
+                    "street_sites": [
+                        {
+                            "id": 4,
+                            "image": "/images/site/street/sv_indochina.png",
+                            "name": "印度支那式",
+                            "position": 1030,
+                            "window_view": "/images/site/window/wsv_indochina.png"
+                        },
+                        {
+                            "id": 1,
+                            "image": "/images/site/street/sv_south_china.png",
+                            "name": "華南式",
+                            "position": 1010,
+                            "window_view": "/images/site/window/wsv_south_china.png"
+                        }
+                    ],
+                    "headquarters": "東亞革命同盟會",
+                    "description_image": "/images/nation/location/loc09RB.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        "尋找年輕富婆",
+                        null,
+                        null
+                    ],
+                    "music": "BGM09.mp3",
+                    "slogan": [
+                        "身既死兮，神以靈",
+                        "魂魄毅兮，為鬼雄"
+                    ],
+                    "player_joinable": true,
+                    "color_icon": "/images/nation/color_icon/minicoa09RB01.png",
+                    "name": "反賊聯盟",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": "東甌國 東甌一軍",
+                            "minister_union_id": 364,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "players": 16,
+                    "title": "?",
+                    "id": 9,
+                    "flag": "/images/home/flag/bigflag00FR.png",
+                    "cities": 25,
+                    "description_title": "?",
+                    "icon": "/images/nation/icon/Gcoa00FR.png",
+                    "capital": {
+                        "id": 293,
+                        "name": "北京"
+                    },
+                    "seal_image": "/images/nation/seal/Scoa00FR.png",
+                    "alert": null,
+                    "main_image": "/images/nation/main/fg00FR.png",
+                    "slogan_background_image": "/images/nation/slogan_background/mottos00FR.png",
+                    "origin": "自由勢力出身",
+                    "defect": {
+                        "show_alert": "聯盟領袖禁止投誠",
+                        "show_button": true
+                    },
+                    "alias": "?",
+                    "can_change_seal": false,
+                    "description_subtitle": "?",
+                    "strategy_background": "/images/nation/strategy_background/str00FR.png",
+                    "control_cities": 2,
+                    "seal": "/images/nation/seal/Scoa00FR.png",
+                    "alliance": "反共陣營",
+                    "diplomatic_strategy_ids": [
+                        4,
+                        6,
+                        7,
+                        5,
+                        1,
+                        3,
+                        2,
+                        8,
+                        9,
+                        10
+                    ],
+                    "selectable_general_strategy_ids": [
+                        1,
+                        10,
+                        20
+                    ],
+                    "city_color": "6d6d6d",
+                    "controll_cities": 2,
+                    "diplomatic_strategy_id": null,
+                    "commander": {
+                        "flag": "/images/home/flag/bigflag00FR.png",
+                        "image": null,
+                        "name": "未產生",
+                        "seal": "/images/nation/seal/Scoa00FR.png",
+                        "title": "?",
+                        "union": "無",
+                        "union_id": null,
+                        "user_id": null
+                    },
+                    "commander_words_background": "/images/nation/commander_words_background/edict00FR.png",
+                    "seal_categories": null,
+                    "general_strategy_ids": [],
+                    "street_site": {
+                        "image": "/images/site/street/sv_nusantaria.png",
+                        "window_view": "/images/site/window/wsv_nusantaria.png"
+                    },
+                    "position": 100,
+                    "candidates": null,
+                    "description": "B8",
+                    "street_sites": [
+                        {
+                            "id": 18,
+                            "image": "/images/site/street/sv_western.png",
+                            "name": "歐美式",
+                            "position": 1090,
+                            "window_view": "/images/site/window/wsv_western.png"
+                        },
+                        {
+                            "id": 16,
+                            "image": "/images/site/street/sv_hindu.png",
+                            "name": "印度式",
+                            "position": 1070,
+                            "window_view": "/images/site/window/wsv_hindu.png"
+                        },
+                        {
+                            "id": 19,
+                            "image": "/images/site/street/sv_post_soviet.png",
+                            "name": "後蘇聯式",
+                            "position": 1080,
+                            "window_view": "/images/site/window/wsv_post_soviet.png"
+                        },
+                        {
+                            "id": 3,
+                            "image": "/images/site/street/sv_nusantaria.png",
+                            "name": "努山達拉式",
+                            "position": 1040,
+                            "window_view": "/images/site/window/wsv_nusantaria.png"
+                        },
+                        {
+                            "id": 2,
+                            "image": "/images/site/street/sv_japan.png",
+                            "name": "日式",
+                            "position": 1050,
+                            "window_view": "/images/site/window/wsv_japan.png"
+                        },
+                        {
+                            "id": 17,
+                            "image": "/images/site/street/sv_corea.png",
+                            "name": "韓式",
+                            "position": 1060,
+                            "window_view": "/images/site/window/wsv_corea.png"
+                        }
+                    ],
+                    "headquarters": "&nbsp;",
+                    "description_image": "/images/nation/location/loc00FR.png",
+                    "election": {
+                        "ballot": null,
+                        "can_sign_up_candidate": false,
+                        "can_vote": false,
+                        "is_candidate": false,
+                        "show_only_chief_can_vote": false,
+                        "show_union_level_invalid": false,
+                        "vote_for_candidate_id": null,
+                        "voted": false
+                    },
+                    "commander_words": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "music": "BGM00.mp3",
+                    "slogan": [
+                        "?",
+                        "?"
+                    ],
+                    "player_joinable": false,
+                    "color_icon": "/images/nation/color_icon/minicoa00FR.png",
+                    "name": "自由勢力",
+                    "ministers": [
+                        {
+                            "image": "/images/nation/ministry/A02.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 11,
+                                "name": "保防處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A03.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 12,
+                                "name": "參謀部"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A04.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 13,
+                                "name": "人事處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A05.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 14,
+                                "name": "公關處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A01.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 10,
+                                "name": "祕書處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A06.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 15,
+                                "name": "政戰處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A07.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 16,
+                                "name": "監察處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A08.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 17,
+                                "name": "法制處"
+                            }
+                        },
+                        {
+                            "image": "/images/nation/ministry/A09.png",
+                            "minister": null,
+                            "ministry": {
+                                "id": 18,
+                                "name": "外事處"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "center_background": "/images/site/street/sv_top.png",
+                    "id": 0,
+                    "left_background": "/images/home/flag/all_left.png",
+                    "name": "東方大陸",
+                    "player_joinable": false,
+                    "right_background": "/images/home/flag/all_right.png"
+                }
+            ]
+        }
+    }
+]
