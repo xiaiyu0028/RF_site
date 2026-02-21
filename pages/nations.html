@@ -406,15 +406,6 @@
                 });
             }
 
-            // 全地圖本地援助
-            const allAidMatch = description.match(/全地圖本地援助增加(\d+)%/g);
-            if (allAidMatch) {
-                allAidMatch.forEach(m => {
-                    const val = m.match(/(\d+)%/);
-                    if (val) effects.aidBoost['全地圖'] = (effects.aidBoost['全地圖'] || 0) + parseInt(val[1]);
-                });
-            }
-
             // 解析職業加成
             const classTypes = ['游擊隊', '工兵', '醫療兵', '步兵', '狙擊手', '突擊隊', '砲兵', '宣傳家', '資助者', '間諜'];
             classTypes.forEach(type => {
