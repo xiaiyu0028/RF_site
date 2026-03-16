@@ -240,7 +240,7 @@
                 let response = await fetch(`../cal_power/parsed_actors_skill.json?t=${timestamp}`);
                 if (!response.ok) {
                     // 如果沒有，嘗試載入 parsed_actors.json
-                    response = await fetch(`../cal_power/parsed_actors.json?t=${timestamp}`);
+                    response = await fetch(`../cal_power/parsed_actors_skill.json`);
                 }
 
                 if (!response.ok) {
@@ -305,6 +305,10 @@
                     <label>等級</label>
                     <input type="number" class="form-control" id="level-${id}" min="1" max="300" value="160" placeholder="等級">
                 </div>
+                <div class="actor-input-group" style="display: flex; flex-direction: row; align-items: center; gap: 5px; margin-top: 25px;">
+                    <input type="checkbox" id="costume-${id}" style="width: 20px; height: 20px;">
+                    <label for="costume-${id}" style="margin: 0; cursor: pointer;">是否裝備造型 (x1.2)</label>
+                </div>
                 <div class="actor-input-group">
                     <label>武器</label>
                     <select class="form-control" id="weapon-${id}">
@@ -356,6 +360,68 @@
             return n - (n % 10);
         }
 
+        // 解析被動技能字串
+        function parseSkillDescription(desc) {
+            const result = { self: { atk: 0, def: 0, hp: 0 }, category: {}, nation: {} };
+            if (!desc) return result;
+            
+            const regex = /(?:(.*?)(陣營成員|型成員))?(自身)?(攻擊力|受到傷害|防禦力|血量)([+-])\s*(\d+(?:\.\d+)?)%/g;
+            let match;
+            
+            while ((match = regex.exec(desc)) !== null) {
+                const prefix = match[1] ? match[1].trim() : ''; 
+                const type = match[2]; 
+                const isSelf = match[3] === '自身' || (!prefix && !type && !match[3]);
+                
+                const statName = match[4]; 
+                const sign = match[5]; 
+                const val = parseFloat(match[6]);
+                
+                let statKey = '';
+                let actualVal = val;
+                
+                if (statName === '攻擊力') statKey = 'atk';
+                else if (statName === '受到傷害') {
+                    statKey = 'def';
+                    // 受到傷害-X% translates to DEF +X%
+                    actualVal = sign === '-' ? val : -val; 
+                }
+                else if (statName === '防禦力') statKey = 'def';
+                else if (statName === '血量') statKey = 'hp';
+                
+                if (statName !== '受到傷害' && sign === '-') {
+                    actualVal = -val;
+                }
+
+                if (isSelf) {
+                    result.self[statKey] += actualVal;
+                } else if (type === '陣營成員') {
+                    if (!result.nation[prefix]) result.nation[prefix] = { atk: 0, def: 0, hp: 0 };
+                    result.nation[prefix][statKey] += actualVal;
+                } else if (type === '型成員') {
+                    if (!result.category[prefix]) result.category[prefix] = { atk: 0, def: 0, hp: 0 };
+                    result.category[prefix][statKey] += actualVal;
+                }
+            }
+            return result;
+        }
+
+        // 取得特定等級的被動技能
+        function getActivePassiveSkill(actorData, activeLevel) {
+            if (actorData.parsed_passive_skills) {
+                return actorData.parsed_passive_skills[String(activeLevel)] || {};
+            }
+            
+            if (actorData.passive_skills && Array.isArray(actorData.passive_skills)) {
+                const skill = actorData.passive_skills.find(s => s.level === activeLevel);
+                if (skill) {
+                    return parseSkillDescription(skill.description || '');
+                }
+            }
+            
+            return { self: { atk: 0, def: 0, hp: 0 }, category: {}, nation: {} };
+        }
+
         // 計算被動技能效果
         function calculatePassive(actors) {
             const totalEffects = {
@@ -380,12 +446,9 @@
                 if (!actor.name || !parsedActors[actor.name]) return;
 
                 const actorData = parsedActors[actor.name];
-                const passiveSkills = actorData.parsed_passive_skills;
-
-                if (!passiveSkills) return;
-
                 const activeLevel = floorTo10(actor.level);
-                const activeEffect = passiveSkills[String(activeLevel)] || {};
+                const activeEffect = getActivePassiveSkill(actorData, activeLevel);
+                const costumeMultiplier = actor.hasCostume ? 1.2 : 1.0;
 
                 if (activeEffect.category) {
                     Object.keys(activeEffect.category).forEach(cat => {
@@ -393,7 +456,7 @@
                             totalEffects.category[cat] = { atk: 0, def: 0, hp: 0 };
                         }
                         ['atk', 'def', 'hp'].forEach(stat => {
-                            totalEffects.category[cat][stat] += activeEffect.category[cat][stat] || 0;
+                            totalEffects.category[cat][stat] += (activeEffect.category[cat][stat] || 0) * costumeMultiplier;
                         });
                     });
                 }
@@ -404,7 +467,7 @@
                             totalEffects.nation[nat] = { atk: 0, def: 0, hp: 0 };
                         }
                         ['atk', 'def', 'hp'].forEach(stat => {
-                            totalEffects.nation[nat][stat] += activeEffect.nation[nat][stat] || 0;
+                            totalEffects.nation[nat][stat] += (activeEffect.nation[nat][stat] || 0) * costumeMultiplier;
                         });
                     });
                 }
@@ -444,6 +507,7 @@
             const hpBonus = effects.hp || 0;
 
             const totalPower = level * multiplier * weaponMult * (1 + ((1 + (atkBonus / 100 + hpBonus / 100)) * (1 + defBonus / 100) - 1) * 0.2) / 10 + 4;
+            
             return totalPower;
         }
 
@@ -468,16 +532,19 @@
                         const selectElement = document.getElementById(`actor-select-${id}`);
                         const levelElement = document.getElementById(`level-${id}`);
                         const weaponElement = document.getElementById(`weapon-${id}`);
+                        const costumeElement = document.getElementById(`costume-${id}`);
 
                         const name = selectElement ? selectElement.value.trim() : '';
                         const level = parseInt(levelElement?.value) || 160;
                         const weapon = weaponElement ? weaponElement.value : '原初';
+                        const hasCostume = costumeElement ? costumeElement.checked : false;
 
                         if (name && parsedActors[name]) {
                             actors.push({
                                 name: name,
                                 level: level,
                                 weapon: weapon,
+                                hasCostume: hasCostume,
                                 scarcity: parsedActors[name].scarcity || 'R'
                             });
                         }
@@ -504,17 +571,14 @@
                         const selfEffects = { atk: 0, def: 0, hp: 0 };
 
                         // 獲取自身被動效果
-                        const passiveSkills = actorData.parsed_passive_skills;
                         const effLevel = floorTo10(actor.level);
+                        const activeEffect = getActivePassiveSkill(actorData, effLevel);
+                        const costumeMultiplier = actor.hasCostume ? 1.2 : 1.0;
 
-                        if (passiveSkills) {
-                            const activeEffect = passiveSkills[String(effLevel)] || {};
-
-                            if (activeEffect.self) {
-                                ['atk', 'def', 'hp'].forEach(stat => {
-                                    selfEffects[stat] += activeEffect.self[stat] || 0;
-                                });
-                            }
+                        if (activeEffect.self) {
+                            ['atk', 'def', 'hp'].forEach(stat => {
+                                selfEffects[stat] += (activeEffect.self[stat] || 0) * costumeMultiplier;
+                            });
                         }
 
                         // 加上陣營和國家效果
@@ -540,7 +604,7 @@
                         html += `
                             <div class="actor-card">
                                 <h3>
-                                    <span>${actor.name}</span>
+                                    <span>${actor.name} ${actor.hasCostume ? '👗' : ''}</span>
                                     <span class="badge scarcity-${actor.scarcity}">${actor.scarcity}</span>
                                 </h3>
                                 <div class="level-info">
