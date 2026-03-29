@@ -133,16 +133,17 @@
         .strategy-summary {
             margin-top: 12px;
             padding: 12px;
-            background: rgba(255, 255, 255, 0.6);
+            background: var(--light-bg);
             border-radius: 8px;
             font-size: 0.88em;
+            color: var(--text-color);
         }
 
         .strategy-summary .effect-line {
             display: flex;
             justify-content: space-between;
             padding: 4px 0;
-            color: var(--muted-text);
+            color: var(--text-color);
         }
 
         .strategy-summary .effect-line .value {
@@ -150,7 +151,7 @@
         }
 
         .strategy-summary .effect-line .value.positive {
-            color: #27ae60;
+            color: #2ecc71;
         }
 
         .strategy-summary .effect-line .value.negative {
@@ -187,10 +188,14 @@
         }
 
         .effects-section {
-            background: white;
+            background: var(--light-bg);
             padding: 15px;
             border-radius: 8px;
             margin: 15px 0;
+        }
+
+        .effects-section.nation-bonus {
+            background: linear-gradient(135deg, rgba(39, 174, 96, 0.08) 0%, rgba(46, 204, 113, 0.08) 100%);
         }
 
         .effects-section h4 {
@@ -204,7 +209,7 @@
             display: flex;
             justify-content: space-between;
             padding: 5px 0;
-            color: var(--muted-text);
+            color: var(--text-color);
         }
 
         .effect-value {
@@ -296,7 +301,7 @@
 
         .badge-boost {
             background: rgba(39, 174, 96, 0.15);
-            color: #27ae60;
+            color: #2ecc71;
         }
 
         .badge-reduce {
@@ -305,8 +310,8 @@
         }
 
         .badge-class {
-            background: rgba(52, 152, 219, 0.15);
-            color: #2980b9;
+            background: rgba(52, 152, 219, 0.2);
+            color: #5dade2;
         }
 
         @media (max-width: 768px) {
@@ -1050,15 +1055,15 @@
                                     </div>
                                 </div>
 
-                                <div class="effects-section" style="background: linear-gradient(135deg, #f0fff4 0%, #e8f5e9 100%);">
+                                <div class="effects-section nation-bonus">
                                     <h4>🏴 國策加成明細</h4>
                                     <div class="effect-item">
                                         <span>職業國策加成 (${actorCategory})</span>
-                                        <span class="effect-value" style="color: ${classBoostPct > 0 ? '#27ae60' : 'var(--muted-text)'};">+${classBoostPct}%</span>
+                                        <span class="effect-value" style="color: ${classBoostPct > 0 ? '#2ecc71' : 'var(--muted-text)'};">+${classBoostPct}%</span>
                                     </div>
                                     <div class="effect-item">
                                         <span>通用戰力提升 (我方)</span>
-                                        <span class="effect-value" style="color: ${universalBoostPct > 0 ? '#27ae60' : 'var(--muted-text)'};">+${universalBoostPct}%</span>
+                                        <span class="effect-value" style="color: ${universalBoostPct > 0 ? '#2ecc71' : 'var(--muted-text)'};">+${universalBoostPct}%</span>
                                     </div>
                                     <div class="effect-item">
                                         <span>敵方削減 (對方減少我方)</span>
@@ -1066,7 +1071,7 @@
                                     </div>
                                     <div class="effect-item" style="border-top: 1px solid var(--border-color); padding-top: 8px; font-weight: bold;">
                                         <span>國策總倍率</span>
-                                        <span style="color: ${changePercent >= 0 ? '#27ae60' : '#e74c3c'}; font-weight: bold;">
+                                        <span style="color: ${changePercent >= 0 ? '#2ecc71' : '#e74c3c'}; font-weight: bold;">
                                             ×${nationMultiplier.toFixed(2)} (${changePercent >= 0 ? '+' : ''}${changePercent.toFixed(0)}%)
                                         </span>
                                     </div>
