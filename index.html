@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>RF 攻略網站</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- 導航欄 -->
     <nav class="navbar">
@@ -139,8 +141,8 @@
         <footer class="footer">
             <p>RF 攻略網站 | 使用 GitHub Pages 建置</p>
             <p style="margin-top: 10px; font-size: 0.9em;">
-                資料來源：遊戲內 API | 
-                <a href="https://github.com" target="_blank">GitHub Repository</a>
+                資料來源：遊戲內 API |
+                <a href="https://github.com/xiaiyu0028/RF_site" target="_blank">GitHub Repository</a>
             </p>
         </footer>
     </div>
@@ -148,7 +150,7 @@
     <script src="js/app.js"></script>
     <script>
         // 載入角色數據統計
-        document.addEventListener('DOMContentLoaded', async function() {
+        document.addEventListener('DOMContentLoaded', async function () {
             try {
                 const response = await fetch('cal_power/parsed_actors.json');
                 if (response.ok) {
@@ -161,4 +163,5 @@
         });
     </script>
 </body>
+
 </html>
