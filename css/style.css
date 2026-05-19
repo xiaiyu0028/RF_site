@@ -207,6 +207,10 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .grid-auto {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -357,6 +361,11 @@ select.form-control {
     color: white;
 }
 
+.badge-secondary {
+    background: var(--secondary-color);
+    color: white;
+}
+
 /* 稀有度標籤 */
 .scarcity-R {
     background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
@@ -387,6 +396,75 @@ select.form-control {
 .faction-hongkong {
     background: #ae43ec;
     color: white;
+}
+
+.filter-panel {
+    margin-bottom: 20px;
+    padding: 18px;
+    background: var(--light-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.filter-group + .filter-group {
+    margin-top: 16px;
+}
+
+.filter-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.filter-group-title {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.filter-chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-chip {
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-chip:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter-chip.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+}
+
+.filter-clear-btn {
+    border: none;
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+}
+
+.filter-summary {
+    margin-bottom: 16px;
+    color: var(--muted-text);
+    font-size: 0.95em;
 }
 
 .faction-mongolia {

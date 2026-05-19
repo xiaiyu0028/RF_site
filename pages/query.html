@@ -112,6 +112,30 @@
                             <div class="search-box">
                                 <input type="text" id="ownedSearch" placeholder="搜尋角色名稱...">
                             </div>
+                            <div id="ownedFilters" class="filter-panel" style="display: none;">
+                                <div class="filter-group">
+                                    <div class="filter-group-header">
+                                        <span class="filter-group-title">稀有度</span>
+                                        <button type="button" class="filter-clear-btn" data-filter-clear="owned-rarities">清除</button>
+                                    </div>
+                                    <div class="filter-chip-list" id="ownedRarityFilters"></div>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-group-header">
+                                        <span class="filter-group-title">職業</span>
+                                        <button type="button" class="filter-clear-btn" data-filter-clear="owned-roles">清除</button>
+                                    </div>
+                                    <div class="filter-chip-list" id="ownedRoleFilters"></div>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-group-header">
+                                        <span class="filter-group-title">陣營</span>
+                                        <button type="button" class="filter-clear-btn" data-filter-clear="owned-nations">清除</button>
+                                    </div>
+                                    <div class="filter-chip-list" id="ownedNationFilters"></div>
+                                </div>
+                            </div>
+                            <div id="ownedSummary" class="filter-summary"></div>
                             <div id="ownedCharacters">
                                 <div class="alert alert-info">請先驗證以查看您的角色</div>
                             </div>
@@ -172,7 +196,16 @@
                                     <div class="stat-label">SSR 機率</div>
                                 </div>
                             </div>
-                            
+                            <div id="gachaFilters" class="filter-panel" style="display: none;">
+                                <div class="filter-group">
+                                    <div class="filter-group-header">
+                                        <span class="filter-group-title">稀有度</span>
+                                        <button type="button" class="filter-clear-btn" data-filter-clear="gacha-rarities">清除</button>
+                                    </div>
+                                    <div class="filter-chip-list" id="gachaRarityFilters"></div>
+                                </div>
+                            </div>
+                            <div id="gachaSummary" class="filter-summary"></div>
                             <div id="gachaHistory">
                                 <div class="alert alert-info">請先驗證以查看您的抽獎歷史</div>
                             </div>
@@ -205,17 +238,29 @@
         let isDemoMode = false;
         
         // 查詢結果存放
-        let ownedActors = [];
+        let ownedCharacters = [];
         let inventoryItems = [];
-        let gachaHistory = [];
+        let gachaRecords = [];
+        let ownedFilterOptions = { rarities: [], roles: [], nations: [] };
+        let gachaFilterOptions = { rarities: [] };
+        const ownedFilters = {
+            search: '',
+            rarities: new Set(),
+            roles: new Set(),
+            nations: new Set()
+        };
+        const gachaFilters = {
+            rarities: new Set()
+        };
+        const RARITY_ORDER = { SSR: 0, SR: 1, R: 2, '其他': 3 };
 
         // 範例資料（示範模式使用）
         const sampleOwnedCharacters = [
-            { name: "卡姆蘭", level: 160, levelCap: 160, scarcity: "SSR", role: "間諜", equipped: "高等符文" },
-            { name: "范朋克", level: 120, levelCap: 160, scarcity: "SR", role: "宣傳家", equipped: "強化符文" },
-            { name: "陳炯明", level: 90, levelCap: 90, scarcity: "R", role: "資助者", equipped: "原初符文" },
-            { name: "阿旺", level: 180, levelCap: 200, scarcity: "SSR", role: "游擊隊", equipped: "庚子符文" },
-            { name: "德澤", level: 100, levelCap: 120, scarcity: "SR", role: "間諜", equipped: "限定符文" },
+            { name: "卡姆蘭", level: 160, levelCap: 160, scarcity: "SSR", role: "間諜", equipped: "高等符文", nationId: 9 },
+            { name: "范朋克", level: 120, levelCap: 160, scarcity: "SR", role: "宣傳家", equipped: "強化符文", nationId: 2 },
+            { name: "陳炯明", level: 90, levelCap: 90, scarcity: "R", role: "資助者", equipped: "原初符文", nationId: 3 },
+            { name: "阿旺", level: 180, levelCap: 200, scarcity: "SSR", role: "游擊隊", equipped: "庚子符文", nationId: 5 },
+            { name: "德澤", level: 100, levelCap: 120, scarcity: "SR", role: "間諜", equipped: "限定符文", nationId: 1 },
         ];
 
         const sampleInventory = [
@@ -245,6 +290,15 @@
             // 綁定風險確認勾選框
             document.getElementById('riskAcknowledge').addEventListener('change', function() {
                 document.getElementById('loginBtn').disabled = !this.checked;
+            });
+            document.getElementById('ownedSearch').addEventListener('input', debounce(function(event) {
+                ownedFilters.search = event.target.value.trim().toLowerCase();
+                renderOwnedCharacters();
+            }, 200));
+            document.querySelectorAll('[data-filter-clear]').forEach(button => {
+                button.addEventListener('click', function() {
+                    clearFilterGroup(this.getAttribute('data-filter-clear'));
+                });
             });
         });
 
@@ -520,19 +574,7 @@
                 // 查詢角色 - 回傳格式: { actors: [...], preloads: [...] }
                 const actorsData = await sendApiRequest('actors', { body: '' });
                 if (actorsData && actorsData.actors) {
-                    ownedActors = actorsData.actors;
-                    loadOwnedCharacters(ownedActors.map(a => ({
-                        name: a.actor_prototype?.name || a.name || '未知',
-                        level: a.level || 1,
-                        levelCap: a.level_cap || '-',
-                        scarcity: a.scarcity || 'N',
-                        role: a.actor_prototype?.actor_category?.name || '未知',
-                        equipped: a.weapon?.weapon_prototype?.name || '無',
-                        image: a.head_image || '',
-                        nation: a.nation || '',
-                        blood: a.blood || 0,
-                        offense: a.offense || 0
-                    })));
+                    loadOwnedCharacters(actorsData.actors.map(normalizeOwnedCharacter));
                 }
             } catch (e) {
                 console.error('角色查詢失敗:', e);
@@ -565,26 +607,10 @@
                 const gachaResult = await sendApiRequest('used_recruit_coupons', {});
                 // gachaResult 直接是陣列而非物件
                 if (gachaResult && Array.isArray(gachaResult)) {
-                    gachaHistory = gachaResult;
-                    loadGachaHistory(gachaResult.map(g => ({
-                        date: g.updated_at?.split('T')[0] || '-',
-                        result: g.name || '-',
-                        scarcity: g.scarcity || 'N',
-                        pool: g.actor_piece ? '碎片' : '角色',
-                        image: g.image || '',
-                        sequence: g.recruit_sequence || 0
-                    })));
+                    loadGachaHistory(gachaResult.map(normalizeGachaRecord));
                 } else if (gachaResult && gachaResult.length !== undefined) {
                     // 備用：若回傳為類陣列
-                    gachaHistory = Array.from(gachaResult);
-                    loadGachaHistory(gachaHistory.map(g => ({
-                        date: g.updated_at?.split('T')[0] || '-',
-                        result: g.name || '-',
-                        scarcity: g.scarcity || 'N',
-                        pool: g.actor_piece ? '碎片' : '角色',
-                        image: g.image || '',
-                        sequence: g.recruit_sequence || 0
-                    })));
+                    loadGachaHistory(Array.from(gachaResult).map(normalizeGachaRecord));
                 }
             } catch (e) {
                 console.error('抽獎歷史查詢失敗:', e);
@@ -665,6 +691,150 @@
             return match ? match[1] : '已裝備';
         }
 
+        function normalizeScarcity(value) {
+            const rarity = String(value || '').toUpperCase();
+            return RARITY_ORDER[rarity] !== undefined ? rarity : '其他';
+        }
+
+        function normalizeNationId(entry) {
+            const nationId = Number(entry?.nation_id ?? entry?.nationId ?? entry?.nation ?? 0);
+            return Number.isFinite(nationId) && nationId > 0 ? nationId : 0;
+        }
+
+        function normalizeOwnedCharacter(actor) {
+            const nationId = normalizeNationId(actor);
+            return {
+                name: actor.actor_prototype?.name || actor.name || '未知',
+                level: actor.level || 1,
+                levelCap: actor.level_cap || actor.levelCap || '-',
+                scarcity: normalizeScarcity(actor.scarcity),
+                role: actor.actor_prototype?.actor_category?.name || actor.role || '未知',
+                equipped: actor.weapon?.weapon_prototype?.name || actor.equipped || '無',
+                image: actor.head_image || actor.image || '',
+                nationId,
+                nationName: nationId ? getNationName(nationId) : (actor.nation || '未知'),
+                blood: actor.blood || 0,
+                offense: actor.offense || 0
+            };
+        }
+
+        function normalizeGachaRecord(record) {
+            return {
+                date: record.updated_at?.split('T')[0] || record.date || '-',
+                result: record.name || record.result || '-',
+                scarcity: normalizeScarcity(record.scarcity),
+                pool: record.actor_piece ? '碎片' : (record.pool || '角色'),
+                image: record.image || '',
+                sequence: record.recruit_sequence || record.sequence || 0
+            };
+        }
+
+        function compareRarity(a, b) {
+            return (RARITY_ORDER[a] ?? 99) - (RARITY_ORDER[b] ?? 99);
+        }
+
+        function getSelectedCountText(selectedSet, total) {
+            if (selectedSet.size === 0) {
+                return `全部 ${total} 項`;
+            }
+            return `已選 ${selectedSet.size} / ${total} 項`;
+        }
+
+        function clearFilterGroup(group) {
+            if (group === 'owned-rarities') ownedFilters.rarities.clear();
+            if (group === 'owned-roles') ownedFilters.roles.clear();
+            if (group === 'owned-nations') ownedFilters.nations.clear();
+            if (group === 'gacha-rarities') gachaFilters.rarities.clear();
+            renderOwnedFilterChips();
+            renderGachaFilterChips();
+            renderOwnedCharacters();
+            renderGachaHistory();
+        }
+
+        function toggleSetValue(targetSet, value) {
+            if (targetSet.has(value)) {
+                targetSet.delete(value);
+            } else {
+                targetSet.add(value);
+            }
+        }
+
+        function createFilterChip(label, value, selected, onClick) {
+            return `
+                <button type="button" class="filter-chip ${selected ? 'active' : ''}" data-filter-value="${value}" onclick="${onClick}">
+                    ${label}
+                </button>
+            `;
+        }
+
+        function renderOwnedFilterChips() {
+            document.getElementById('ownedFilters').style.display = ownedCharacters.length ? 'block' : 'none';
+            document.getElementById('ownedRarityFilters').innerHTML = ownedFilterOptions.rarities.map(rarity =>
+                createFilterChip(rarity, rarity, ownedFilters.rarities.has(rarity), `toggleOwnedFilter('rarities', '${rarity}')`)
+            ).join('');
+            document.getElementById('ownedRoleFilters').innerHTML = ownedFilterOptions.roles.map(role =>
+                createFilterChip(role, role, ownedFilters.roles.has(role), `toggleOwnedFilter('roles', '${role}')`)
+            ).join('');
+            document.getElementById('ownedNationFilters').innerHTML = ownedFilterOptions.nations.map(nation =>
+                createFilterChip(nation.label, nation.value, ownedFilters.nations.has(String(nation.value)), `toggleOwnedFilter('nations', '${nation.value}')`)
+            ).join('');
+        }
+
+        function renderGachaFilterChips() {
+            document.getElementById('gachaFilters').style.display = gachaRecords.length ? 'block' : 'none';
+            document.getElementById('gachaRarityFilters').innerHTML = gachaFilterOptions.rarities.map(rarity =>
+                createFilterChip(rarity, rarity, gachaFilters.rarities.has(rarity), `toggleGachaFilter('${rarity}')`)
+            ).join('');
+        }
+
+        function toggleOwnedFilter(group, value) {
+            toggleSetValue(ownedFilters[group], String(value));
+            renderOwnedFilterChips();
+            renderOwnedCharacters();
+        }
+
+        function toggleGachaFilter(value) {
+            toggleSetValue(gachaFilters.rarities, String(value));
+            renderGachaFilterChips();
+            renderGachaHistory();
+        }
+
+        function getOwnedFilterOptions(characters) {
+            const rarities = Array.from(new Set(characters.map(char => char.scarcity))).sort(compareRarity);
+            const roles = Array.from(new Set(characters.map(char => char.role))).sort((a, b) => a.localeCompare(b, 'zh-TW'));
+            const nations = Array.from(new Map(
+                characters
+                    .filter(char => char.nationId)
+                    .map(char => [String(char.nationId), { value: char.nationId, label: char.nationName }])
+            ).values()).sort((a, b) => a.value - b.value);
+            return { rarities, roles, nations };
+        }
+
+        function getGachaFilterOptions(records) {
+            return {
+                rarities: Array.from(new Set(records.map(record => record.scarcity))).sort(compareRarity)
+            };
+        }
+
+        function getFilteredOwnedCharacters() {
+            return ownedCharacters.filter(char => {
+                const matchSearch = !ownedFilters.search || char.name.toLowerCase().includes(ownedFilters.search);
+                const matchRarity = ownedFilters.rarities.size === 0 || ownedFilters.rarities.has(char.scarcity);
+                const matchRole = ownedFilters.roles.size === 0 || ownedFilters.roles.has(char.role);
+                const matchNation = ownedFilters.nations.size === 0 || ownedFilters.nations.has(String(char.nationId));
+                return matchSearch && matchRarity && matchRole && matchNation;
+            }).sort((a, b) => {
+                const rarityDiff = compareRarity(a.scarcity, b.scarcity);
+                return rarityDiff !== 0 ? rarityDiff : a.name.localeCompare(b.name, 'zh-TW');
+            });
+        }
+
+        function getFilteredGachaRecords() {
+            return gachaRecords.filter(record =>
+                gachaFilters.rarities.size === 0 || gachaFilters.rarities.has(record.scarcity)
+            );
+        }
+
         // 顯示載入狀態
         function showLoadingState(message) {
             document.getElementById('loginSection').innerHTML = `
@@ -696,37 +866,15 @@
 
         // 載入已擁有角色
         function loadOwnedCharacters(characters) {
-            const container = document.getElementById('ownedCharacters');
-            document.getElementById('ownedCount').textContent = `${characters.length} 個角色`;
-            
-            container.innerHTML = `
-                <div class="table-container">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>角色名稱</th>
-                                <th>稀有度</th>
-                                <th>等級</th>
-                                <th>等級上限</th>
-                                <th>職業</th>
-                                <th>裝備符文</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${characters.map(char => `
-                                <tr>
-                                    <td><strong>${char.name}</strong></td>
-                                    <td><span class="badge scarcity-${char.scarcity}">${char.scarcity}</span></td>
-                                    <td>Lv.${char.level}</td>
-                                    <td>Lv.${char.levelCap || '-'}</td>
-                                    <td>${char.role}</td>
-                                    <td>${char.equipped}</td>
-                                </tr>
-                            `).join('')}
-                        </tbody>
-                    </table>
-                </div>
-            `;
+            ownedCharacters = characters;
+            ownedFilters.search = '';
+            ownedFilters.rarities.clear();
+            ownedFilters.roles.clear();
+            ownedFilters.nations.clear();
+            document.getElementById('ownedSearch').value = '';
+            ownedFilterOptions = getOwnedFilterOptions(characters);
+            renderOwnedFilterChips();
+            renderOwnedCharacters();
         }
 
         // 載入庫存
@@ -785,7 +933,60 @@
 
         // 載入抽獎歷史
         function loadGachaHistory(records) {
+            gachaRecords = records;
+            gachaFilters.rarities.clear();
+            gachaFilterOptions = getGachaFilterOptions(records);
+            renderGachaFilterChips();
+            renderGachaHistory();
+        }
+
+        function renderOwnedCharacters() {
+            const container = document.getElementById('ownedCharacters');
+            const filteredCharacters = getFilteredOwnedCharacters();
+            document.getElementById('ownedCount').textContent = `${filteredCharacters.length} / ${ownedCharacters.length} 個角色`;
+            document.getElementById('ownedSummary').textContent =
+                `搜尋結果 ${filteredCharacters.length} / ${ownedCharacters.length}，稀有度 ${getSelectedCountText(ownedFilters.rarities, ownedFilterOptions.rarities.length)}，職業 ${getSelectedCountText(ownedFilters.roles, ownedFilterOptions.roles.length)}，陣營 ${getSelectedCountText(ownedFilters.nations, ownedFilterOptions.nations.length)}`;
+
+            if (filteredCharacters.length === 0) {
+                container.innerHTML = '<div class="alert alert-info">沒有符合條件的角色</div>';
+                return;
+            }
+
+            container.innerHTML = `
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>角色名稱</th>
+                                <th>稀有度</th>
+                                <th>等級</th>
+                                <th>等級上限</th>
+                                <th>職業</th>
+                                <th>陣營</th>
+                                <th>裝備符文</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${filteredCharacters.map(char => `
+                                <tr>
+                                    <td><strong>${char.name}</strong></td>
+                                    <td><span class="badge scarcity-${char.scarcity}">${char.scarcity}</span></td>
+                                    <td>Lv.${char.level}</td>
+                                    <td>Lv.${char.levelCap || '-'}</td>
+                                    <td>${char.role}</td>
+                                    <td>${char.nationId ? `<span class="badge ${getNationClass(char.nationId)}">${char.nationName}</span>` : char.nationName}</td>
+                                    <td>${char.equipped}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        function renderGachaHistory() {
             const container = document.getElementById('gachaHistory');
+            const records = getFilteredGachaRecords();
             
             // 計算統計
             const total = records.length;
@@ -793,10 +994,17 @@
             const srCount = records.filter(g => g.scarcity === 'SR').length;
             const ssrCount = records.filter(g => g.scarcity === 'SSR').length;
             
-            document.getElementById('totalGacha').textContent = total;
+            document.getElementById('totalGacha').textContent = `${total}`;
             document.getElementById('rRate').textContent = total > 0 ? ((rCount / total) * 100).toFixed(1) + '%' : '0%';
             document.getElementById('srRate').textContent = total > 0 ? ((srCount / total) * 100).toFixed(1) + '%' : '0%';
             document.getElementById('ssrRate').textContent = total > 0 ? ((ssrCount / total) * 100).toFixed(1) + '%' : '0%';
+            document.getElementById('gachaSummary').textContent =
+                `顯示 ${total} / ${gachaRecords.length} 筆紀錄，稀有度 ${getSelectedCountText(gachaFilters.rarities, gachaFilterOptions.rarities.length)}`;
+
+            if (records.length === 0) {
+                container.innerHTML = '<div class="alert alert-info">沒有符合條件的抽獎紀錄</div>';
+                return;
+            }
             
             container.innerHTML = `
                 <div class="table-container">
