@@ -6267,5 +6267,134 @@
         "nation": "自由勢力",
         "actor_category": "間諜",
         "weapon_name": "暗器"
+    },
+    "習仲勳": {
+        "name": "習仲勳",
+        "passive_skills": [
+            {
+                "description": " 自身受到傷害-5%",
+                "level": 10
+            },
+            {
+                "description": " 自身受到傷害-5%",
+                "level": 20
+            },
+            {
+                "description": " 自身受到傷害-5%",
+                "level": 30
+            },
+            {
+                "description": " 自身受到傷害-10%",
+                "level": 40
+            },
+            {
+                "description": " 自身受到傷害-10%",
+                "level": 50
+            },
+            {
+                "description": " 自身受到傷害-10%",
+                "level": 60
+            },
+            {
+                "description": " 自身受到傷害-15%",
+                "level": 70
+            },
+            {
+                "description": " 自身受到傷害-15%",
+                "level": 80
+            },
+            {
+                "description": " 自身受到傷害-15%",
+                "level": 90
+            },
+            {
+                "description": " 自身受到傷害-20%",
+                "level": 100
+            },
+            {
+                "description": " 自身受到傷害-20%",
+                "level": 110
+            },
+            {
+                "description": " 自身受到傷害-30%",
+                "level": 120
+            },
+            {
+                "description": " 自身受到傷害-30%",
+                "level": 130
+            },
+            {
+                "description": " 自身受到傷害-30%",
+                "level": 140
+            },
+            {
+                "description": " 自身受到傷害-35%",
+                "level": 150
+            },
+            {
+                "description": " 自身受到傷害-35%",
+                "level": 160
+            },
+            {
+                "description": " 自身受到傷害-35%",
+                "level": 170
+            },
+            {
+                "description": " 自身受到傷害-40%",
+                "level": 180
+            },
+            {
+                "description": " 自身受到傷害-40%",
+                "level": 190
+            },
+            {
+                "description": " 自身受到傷害-45%",
+                "level": 200
+            },
+            {
+                "description": " 自身受到傷害-45%",
+                "level": 210
+            },
+            {
+                "description": " 自身受到傷害-50%",
+                "level": 220
+            },
+            {
+                "description": " 自身受到傷害-50%",
+                "level": 230
+            },
+            {
+                "description": " 自身受到傷害-55%",
+                "level": 240
+            },
+            {
+                "description": " 自身受到傷害-55%",
+                "level": 250
+            },
+            {
+                "description": " 自身受到傷害-60%",
+                "level": 260
+            },
+            {
+                "description": " 自身受到傷害-60%",
+                "level": 270
+            },
+            {
+                "description": " 自身受到傷害-65%",
+                "level": 280
+            },
+            {
+                "description": " 自身受到傷害-65%",
+                "level": 290
+            },
+            {
+                "description": " 自身受到傷害-70%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "紅軍",
+        "actor_category": "資助者",
+        "weapon_name": "言靈"
     }
 }
