@@ -14,14 +14,15 @@ import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import requests
 import websockets
 
 API_BASE = "https://api.komisureiya.com/api"
 WS_BASE = "wss://api.komisureiya.com/socket/websocket"
-APP_VERSION = "2.28"
-APP_KEY = "rfront2023"
+APP_VERSION = os.environ.get("RF_APP_VERSION", "2.28")
+APP_KEY = os.environ.get("RF_APP_KEY", "t9cTpsbSCYcJgsrrC")
 
 
 class UpdateError(RuntimeError):
@@ -38,7 +39,15 @@ def login(email: str, password: str, timeout: int) -> tuple[str, str]:
             "key": APP_KEY,
             "app_version": APP_VERSION,
         },
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
+        headers={
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json, text/plain, */*",
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/136.0.0.0 Safari/537.36"
+            ),
+        },
         timeout=timeout,
     )
     response.raise_for_status()
@@ -55,22 +64,34 @@ def login(email: str, password: str, timeout: int) -> tuple[str, str]:
 
 
 async def request_snapshot(token: str, user_id: str, timeout: int) -> tuple[dict[str, Any], dict[str, Any]]:
-    ws_url = f"{WS_BASE}?userToken={token}&locale=zh_TW&vsn=2.0.0"
+    ws_url = f"{WS_BASE}?userToken={quote(token, safe='')}&locale=zh_TW&vsn=2.0.0"
     topic = f"player:{user_id}"
-    async with websockets.connect(ws_url, ping_interval=20, close_timeout=timeout, max_size=None) as websocket:
-        await websocket.send(json.dumps(["1", "1", topic, "phx_join", {"fake": "ChannelPlayer", "fake2": 1}]))
+    async with websockets.connect(
+        ws_url,
+        ping_interval=15,
+        ping_timeout=30,
+        close_timeout=timeout,
+        max_size=10 * 1024 * 1024,
+        max_queue=32,
+    ) as websocket:
 
-        async def request(event: str, payload: dict[str, Any], ref: str) -> dict[str, Any]:
-            await websocket.send(json.dumps(["1", ref, topic, event, payload]))
+        async def wait_for_reply(ref: str) -> dict[str, Any]:
             while True:
                 raw = await asyncio.wait_for(websocket.recv(), timeout=timeout)
                 message = json.loads(raw)
-                if not (isinstance(message, list) and len(message) >= 5 and message[1] == ref and message[3] == "phx_reply"):
+                if not (isinstance(message, list) and len(message) >= 5 and str(message[1]) == ref and message[3] == "phx_reply"):
                     continue
                 reply = message[4]
                 if not isinstance(reply, dict) or reply.get("status") != "ok" or not isinstance(reply.get("response"), dict):
-                    raise UpdateError(f"{event} 資料請求未成功。")
+                    raise UpdateError("遊戲資料連線請求未成功。")
                 return reply["response"]
+
+        await websocket.send(json.dumps(["6", "6", topic, "phx_join", {"fake": "ChannelPlayer", "fake2": 1}]))
+        await wait_for_reply("6")
+
+        async def request(event: str, payload: dict[str, Any], ref: str) -> dict[str, Any]:
+            await websocket.send(json.dumps(["6", ref, topic, event, payload]))
+            return await wait_for_reply(ref)
 
         nations = await request("nations", {"body": ""}, "14")
         cities = await request("cities", {"body": ""}, "15")
@@ -86,9 +107,15 @@ def validate_snapshots(nations: dict[str, Any], cities: dict[str, Any]) -> None:
         raise UpdateError("國策策略資料格式不完整，已取消更新。")
     if not isinstance(city_items, list) or len(city_items) < 10:
         raise UpdateError("城鎮資料格式不完整，已取消更新。")
-    if not all(isinstance(item, dict) and item.get("id") and item.get("name") for item in nation_items):
+    if not all(
+        isinstance(item, dict) and item.get("id") is not None and item.get("name")
+        for item in nation_items
+    ):
         raise UpdateError("國策資料缺少必要欄位，已取消更新。")
-    if not all(isinstance(item, dict) and item.get("id") and item.get("name") for item in city_items):
+    if not all(
+        isinstance(item, dict) and item.get("id") is not None and item.get("name")
+        for item in city_items
+    ):
         raise UpdateError("城鎮資料缺少必要欄位，已取消更新。")
 
 
