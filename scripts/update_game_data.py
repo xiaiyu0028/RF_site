@@ -138,10 +138,10 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    email = os.environ.get("RF_ACCOUNT_EMAIL")
-    password = os.environ.get("RF_ACCOUNT_PASSWORD")
+    email = os.environ.get("RF_EMAIL") or os.environ.get("RF_ACCOUNT_EMAIL")
+    password = os.environ.get("RF_PASSWORD") or os.environ.get("RF_ACCOUNT_PASSWORD")
     if not email or not password:
-        raise UpdateError("缺少 RF_ACCOUNT_EMAIL 或 RF_ACCOUNT_PASSWORD Secret。")
+        raise UpdateError("缺少 RF_EMAIL 或 RF_PASSWORD 環境變數。")
 
     token, user_id = login(email, password, args.timeout)
     nations, cities = asyncio.run(request_snapshot(token, user_id, args.timeout))

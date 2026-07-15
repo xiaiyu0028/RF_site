@@ -66,9 +66,8 @@ http-server -p 8000
 
 1. 將此專案推送到 GitHub 倉庫
 2. 進入倉庫設定 → Pages
-3. 選擇 Source 為「Deploy from a branch」
-4. 選擇 Branch 為「main」和「/ (root)」
-5. 點擊 Save，等待部署完成
+3. 選擇 Source 為「GitHub Actions」
+4. 推送到 `main` 後，`.github/workflows/deploy-pages.yml` 會部署網站
 
 部署後，網站將可透過 `https://[你的用戶名].github.io/[倉庫名稱]/` 存取。
 
@@ -85,16 +84,34 @@ http-server -p 8000
 - `parsed_actors.json` - 角色基本資料與天賦
 - `parsed_actors_skill.json` - 包含解析後的被動技能效果
 
-### 自動更新國策與城鎮資料
+### 在本機更新國策與城鎮資料
 
-`.github/workflows/update-game-data.yml` 會在每週三 18:17（Asia/Taipei）更新公開的國策與城鎮快照，也可在 Actions 頁面以 `dry_run` 手動驗證。
+遊戲登入只在本機執行，GitHub Actions 不會讀取遊戲帳號或抓取遊戲資料。`scripts/update_game_data.ps1` 會沿用目前使用者的 `RF_EMAIL`、`RF_PASSWORD` 環境變數，並優先使用專案的 `.venv` Python。
 
-請先在 Repository 的 Actions secrets 設定專用低權限遊戲帳號：
+先驗證登入與資料格式（不寫入檔案）：
 
-- `RF_ACCOUNT_EMAIL`
-- `RF_ACCOUNT_PASSWORD`
+```powershell
+.\scripts\update_game_data.ps1 -DryRun
+```
 
-Workflow 只在資料確實變更且格式驗證通過後才提交。請將 GitHub Pages 的 Source 改為 **GitHub Actions**；因為使用 workflow 的內建 token 推送資料時，不會觸發傳統 branch deployment。
+確認後更新本機資料，再自行檢查、提交與推送：
+
+```powershell
+.\scripts\update_game_data.ps1
+git diff -- return_data_example/nation.json return_data_example/cities.json return_data_example/update_metadata.json
+.\scripts\commit_game_data.ps1
+git push
+```
+
+#### 可選：每週 Windows 工作排程器
+
+以下指令會建立每週三 18:17 的本機工作排程器；它只更新檔案，**不會** commit 或 push：
+
+```powershell
+.\scripts\register_data_update_task.ps1
+```
+
+此排程以目前 Windows 使用者「登入時」執行，因此電腦需開機且使用者已登入。排程器的新行程不會繼承單次 PowerShell 視窗的 `$env:` 值；`RF_EMAIL` 和 `RF_PASSWORD` 必須是該使用者可持久讀取的環境變數，或改用手動執行更新腳本。
 
 ## API 參考
 
