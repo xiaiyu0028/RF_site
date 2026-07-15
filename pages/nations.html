@@ -7,6 +7,7 @@
     <meta name="description" content="RF 國策資訊 - 各陣營國策一覽，查看戰力加成與本地援助效果">
     <title>國策資訊 - RF 攻略網站</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/design-system.css">
     <style>
         .nation-card {
             border-radius: 15px;
@@ -105,6 +106,7 @@
             color: var(--muted-text);
         }
     </style>
+    <link rel="stylesheet" href="../css/design-system.css">
 </head>
 
 <body>
@@ -135,7 +137,7 @@
             </div>
 
             <!-- 篩選 -->
-            <div class="card" style="margin-bottom: 25px;">
+            <div class="card data-toolbar" style="margin-bottom: 25px;">
                 <div class="card-body">
                     <div class="grid grid-3">
                         <div class="form-group">
@@ -150,6 +152,7 @@
                                 <option value="6">哈薩克</option>
                                 <option value="7">滿洲</option>
                                 <option value="8">蒙古</option>
+                                <option value="9">自由勢力</option>
                                 <option value="10">反賊聯盟</option>
                             </select>
                         </div>
@@ -360,6 +363,8 @@
 
         // 初始化
         document.addEventListener('DOMContentLoaded', function () {
+            const requestedNation = new URLSearchParams(window.location.search).get('nation');
+            if (requestedNation) document.getElementById('nationFilter').value = requestedNation;
             loadNationsData();
         });
 

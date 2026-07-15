@@ -6,6 +6,7 @@
     <meta name="description" content="RF 查詢功能 - 查詢已擁有角色、庫存道具、符文裝備與抽獎歷史">
     <title>查詢功能 - RF 攻略網站</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/design-system.css">
 </head>
 <body>
     <!-- 導航欄 -->
@@ -66,12 +67,15 @@
                     
                     <div class="grid grid-2">
                         <div class="form-group">
-                            <label class="form-label">帳號 (Email)</label>
-                            <input type="email" class="form-control" id="accountEmail" placeholder="輸入遊戲帳號 Email">
+                            <label class="form-label" for="accountEmail">帳號（Email）</label>
+                            <input type="email" class="form-control" id="accountEmail" autocomplete="username" placeholder="輸入遊戲帳號 Email">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">密碼</label>
-                            <input type="password" class="form-control" id="accountPassword" placeholder="輸入密碼">
+                            <label class="form-label" for="accountPassword">密碼</label>
+                            <div class="password-control">
+                                <input type="password" class="form-control" id="accountPassword" autocomplete="current-password" placeholder="輸入密碼">
+                                <button type="button" class="password-toggle" aria-controls="accountPassword" aria-label="顯示密碼" onclick="togglePasswordVisibility()">顯示</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -494,8 +498,7 @@
                 return loginResult;
             }
             
-            console.log('✅ HTTP 登入成功, token:', loginResult.userToken);
-            console.log('✅ user_id:', loginResult.userId);
+            console.info('HTTP 登入成功，正在建立遊戲資料連線。');
             
             // Step 2: WebSocket 連接
             showLoadingState('正在建立連線...');
@@ -689,6 +692,15 @@
             // 從 /images/actor/head/avatarXX.png 提取名稱代號
             const match = imagePath.match(/avatar([A-Za-z0-9]+)\.png/);
             return match ? match[1] : '已裝備';
+        }
+
+        function togglePasswordVisibility() {
+            const input = document.getElementById('accountPassword');
+            const button = document.querySelector('.password-toggle');
+            const visible = input.type === 'text';
+            input.type = visible ? 'password' : 'text';
+            button.textContent = visible ? '顯示' : '隱藏';
+            button.setAttribute('aria-label', visible ? '顯示密碼' : '隱藏密碼');
         }
 
         function normalizeScarcity(value) {

@@ -7,6 +7,7 @@
     <meta name="description" content="RF 角色資訊 - 完整角色數據，包含職業、陣營、天賦表、符文類型、等級數值">
     <title>角色資訊 - RF 攻略網站</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/design-system.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
             </div>
 
             <!-- 搜尋與篩選 -->
-            <div class="card">
+            <div class="card data-toolbar">
                 <div class="search-box">
                     <input type="text" id="characterSearch" placeholder="搜尋角色名稱...">
                 </div>
@@ -143,6 +144,12 @@
 
         // 初始化
         document.addEventListener('DOMContentLoaded', async function () {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('characterSearch').value = params.get('q') || '';
+            document.getElementById('scarcityFilter').value = params.get('rarity') || '';
+            document.getElementById('roleFilter').value = params.get('role') || '';
+            document.getElementById('nationFilter').value = params.get('nation') || '';
+            document.getElementById('sortFilter').value = params.get('sort') || 'name';
             try {
                 // 同時載入角色資料和圖片索引
                 const timestamp = new Date().getTime();
@@ -265,6 +272,14 @@
             });
 
             renderCharacters(filtered);
+            const params = new URLSearchParams();
+            if (search) params.set('q', search);
+            if (scarcity) params.set('rarity', scarcity);
+            if (role) params.set('role', role);
+            if (nation) params.set('nation', nation);
+            if (sortBy !== 'name') params.set('sort', sortBy);
+            const query = params.toString();
+            history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}`);
         }
 
         // 渲染角色列表

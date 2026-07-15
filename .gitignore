@@ -1,1 +1,42 @@
-return_data_example/
+# Local tooling and editor state
+.codegraph/
+.codex/
+.cursor/
+
+# Python bytecode and local environment files
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+
+# Keep only the public snapshots used by the site from this local data directory.
+return_data_example/*
+!return_data_example/actors.json
+!return_data_example/cities.json
+!return_data_example/nation.json
+!return_data_example/update_metadata.json
+
+# Downloaded game media not used by the static site
+passionfruit/audio/
+passionfruit/video/
+passionfruit/images/actor/battle/
+passionfruit/images/actor_category/
+passionfruit/images/attack/
+passionfruit/images/battle_zone_tag/
+passionfruit/images/cities/
+passionfruit/images/demo/
+passionfruit/images/diy/
+passionfruit/images/greeting/
+passionfruit/images/home/
+passionfruit/images/medal/
+passionfruit/images/passes/
+passionfruit/images/pop_up/
+passionfruit/images/pvp/
+passionfruit/images/religion/
+passionfruit/images/seal/
+passionfruit/images/site/
+passionfruit/images/slide/
+passionfruit/images/sponsor/
+passionfruit/images/team/

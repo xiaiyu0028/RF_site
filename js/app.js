@@ -17,9 +17,11 @@ function initTheme() {
 }
 
 function createThemeToggle() {
+    if (document.querySelector('.theme-toggle')) return;
     const toggle = document.createElement('button');
     toggle.className = 'theme-toggle';
     toggle.setAttribute('aria-label', '切換深色模式');
+    toggle.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
     toggle.innerHTML = getThemeIcon();
     toggle.onclick = toggleTheme;
     document.body.appendChild(toggle);
@@ -36,12 +38,15 @@ function toggleTheme() {
     const toggle = document.querySelector('.theme-toggle');
     if (toggle) {
         toggle.innerHTML = getThemeIcon();
+        toggle.setAttribute('aria-pressed', String(newTheme === 'dark'));
     }
 }
 
 function getThemeIcon() {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    return isDark ? '☀️' : '🌙';
+    return isDark
+        ? '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>'
+        : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.7 6.7 0 0 0 21 12.8Z"></path></svg>';
 }
 
 // 頁面載入時初始化主題
@@ -50,8 +55,10 @@ document.addEventListener('DOMContentLoaded', initTheme);
 // 導航欄切換
 function toggleMenu() {
     const menu = document.getElementById('navMenu');
+    const toggle = document.querySelector('.navbar-toggle');
     if (menu) {
         menu.classList.toggle('active');
+        toggle?.setAttribute('aria-expanded', String(menu.classList.contains('active')));
     }
 }
 
@@ -61,7 +68,80 @@ document.addEventListener('click', function(e) {
     const menu = document.getElementById('navMenu');
     if (navbar && menu && !navbar.contains(e.target)) {
         menu.classList.remove('active');
+        document.querySelector('.navbar-toggle')?.setAttribute('aria-expanded', 'false');
+        closeNavGroups();
     }
+});
+
+function closeNavGroups(except) {
+    document.querySelectorAll('.nav-group-toggle').forEach(button => {
+        if (button !== except) button.setAttribute('aria-expanded', 'false');
+    });
+}
+
+function upgradeNavigation() {
+    const navbar = document.querySelector('.navbar');
+    const menu = document.getElementById('navMenu');
+    const brand = document.querySelector('.navbar-brand');
+    const toggle = document.querySelector('.navbar-toggle');
+    const content = document.querySelector('.content-wrapper');
+    if (!navbar || !menu || !brand || !toggle) return;
+
+    const inPagesDirectory = /\/pages\//.test(window.location.pathname);
+    const pagePrefix = inPagesDirectory ? '' : 'pages/';
+    const homeHref = inPagesDirectory ? '../index.html' : 'index.html';
+    const pageName = window.location.pathname.split('/').pop() || 'index.html';
+    const isActive = filename => pageName === filename || (pageName === '' && filename === 'index.html');
+    const link = (href, label, filename) => `<a href="${href}"${isActive(filename) ? ' class="active" aria-current="page"' : ''}>${label}</a>`;
+    const group = (id, label, links) => {
+        const active = links.some(item => isActive(item.filename));
+        return `<li class="nav-group"><button type="button" class="nav-group-toggle${active ? ' active' : ''}" aria-expanded="false" aria-controls="${id}">${label}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><div class="nav-popover" id="${id}">${links.map(item => link(item.href, item.label, item.filename)).join('')}</div></li>`;
+    };
+
+    brand.innerHTML = '<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.7 3.2 7.8 7.5 9.5 4.3-1.7 7.5-4.8 7.5-9.5V6L12 3Z"></path><path d="M8.5 12h7M12 8.5v7"></path></svg></span><span>RF 攻略網站</span>';
+    menu.innerHTML = [
+        `<li>${link(homeHref, '首頁', 'index.html')}</li>`,
+        group('database-menu', '資料庫', [
+            { href: `${pagePrefix}characters.html`, label: '角色資料', filename: 'characters.html' },
+            { href: `${pagePrefix}cities.html`, label: '城鎮資料', filename: 'cities.html' },
+            { href: `${pagePrefix}nations.html`, label: '國策資訊', filename: 'nations.html' }
+        ]),
+        group('calculator-menu', '計算工具', [
+            { href: `${pagePrefix}calculator.html`, label: '戰力計算', filename: 'calculator.html' },
+            { href: `${pagePrefix}calculator_nation.html`, label: '國策戰力', filename: 'calculator_nation.html' }
+        ]),
+        `<li>${link(`${pagePrefix}guide.html`, '新手教學', 'guide.html')}</li>`,
+        `<li>${link(`${pagePrefix}query.html`, '帳號查詢', 'query.html')}</li>`
+    ].join('');
+
+    toggle.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>';
+    toggle.setAttribute('aria-label', '開啟導覽選單');
+    toggle.setAttribute('aria-controls', 'navMenu');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.onclick = toggleMenu;
+    menu.querySelectorAll('.nav-group-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const willOpen = button.getAttribute('aria-expanded') !== 'true';
+            closeNavGroups(button);
+            button.setAttribute('aria-expanded', String(willOpen));
+        });
+    });
+    if (content) content.id = 'main-content';
+    const skip = document.createElement('a');
+    skip.className = 'skip-link';
+    skip.href = '#main-content';
+    skip.textContent = '跳至主要內容';
+    navbar.before(skip);
+    document.querySelectorAll('.page-header h1').forEach(heading => {
+        heading.textContent = heading.textContent.replace(/^[\p{Extended_Pictographic}\s]+/u, '');
+    });
+}
+
+document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    closeNavGroups();
+    const menu = document.getElementById('navMenu');
+    if (menu?.classList.contains('active')) toggleMenu();
 });
 
 // 分頁切換功能
@@ -425,6 +505,7 @@ async function copyToClipboard(text) {
 
 // 初始化
 document.addEventListener('DOMContentLoaded', function() {
+    upgradeNavigation();
     initTabs();
     initAccordion();
 });

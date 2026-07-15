@@ -7,6 +7,7 @@
     <meta name="description" content="RF 城鎮資訊 - 查看城鎮詳細資料、劇情標題、通關獎勵與掉落物資訊">
     <title>城鎮資訊 - RF 攻略網站</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/design-system.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
             </div>
 
             <!-- 搜尋與篩選 -->
-            <div class="card">
+            <div class="card data-toolbar">
                 <div class="search-box">
                     <input type="text" id="citySearch" placeholder="搜尋城鎮名稱...">
                 </div>
@@ -129,7 +130,7 @@
                 }));
 
                 buildSovereignFilter(citiesData);
-                renderCities(citiesData);
+                filterCities();
             } catch (error) {
                 console.error('載入城鎮資料失敗:', error);
                 document.getElementById('citiesContainer').innerHTML = `
@@ -143,6 +144,9 @@
 
         // 初始化
         document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('citySearch').value = params.get('q') || '';
+            document.getElementById('sortBy').value = params.get('sort') || 'id';
             loadCitiesData();
 
             // 綁定搜尋事件
@@ -172,6 +176,12 @@
             });
 
             renderCities(filtered);
+            const params = new URLSearchParams();
+            if (searchText) params.set('q', searchText);
+            if (faction) params.set('faction', faction);
+            if (sortBy !== 'id') params.set('sort', sortBy);
+            const query = params.toString();
+            history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}`);
         }
 
         // 渲染城鎮列表
@@ -228,9 +238,8 @@
 
             const current = select.value;
             select.innerHTML = options.join('');
-            if (current) {
-                select.value = current;
-            }
+            const requested = new URLSearchParams(window.location.search).get('faction');
+            if (requested || current) select.value = requested || current;
         }
 
         function escapeHtml(value) {

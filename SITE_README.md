@@ -85,6 +85,17 @@ http-server -p 8000
 - `parsed_actors.json` - 角色基本資料與天賦
 - `parsed_actors_skill.json` - 包含解析後的被動技能效果
 
+### 自動更新國策與城鎮資料
+
+`.github/workflows/update-game-data.yml` 會在每週三 18:17（Asia/Taipei）更新公開的國策與城鎮快照，也可在 Actions 頁面以 `dry_run` 手動驗證。
+
+請先在 Repository 的 Actions secrets 設定專用低權限遊戲帳號：
+
+- `RF_ACCOUNT_EMAIL`
+- `RF_ACCOUNT_PASSWORD`
+
+Workflow 只在資料確實變更且格式驗證通過後才提交。請將 GitHub Pages 的 Source 改為 **GitHub Actions**；因為使用 workflow 的內建 token 推送資料時，不會觸發傳統 branch deployment。
+
 ## API 參考
 
 網站使用以下 API 格式查詢遊戲資料：
