@@ -1,7 +1,11 @@
 {
-  "updated_at": "2026-07-15T18:02:51+08:00",
+  "updated_at": "2026-07-21T16:07:07.901361+00:00",
   "datasets": {
     "nations": "available",
     "cities": "available"
+  },
+  "counts": {
+    "nations": 11,
+    "cities": 271
   }
 }
