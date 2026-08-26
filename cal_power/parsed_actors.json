@@ -386,134 +386,134 @@
         "actor_category": "宣傳家",
         "weapon_name": "言靈"
     },
-    "樂樂": {
-        "name": "樂樂",
+    "習仲勳": {
+        "name": "習仲勳",
         "passive_skills": [
             {
-                "description": "自身攻擊力+5%",
+                "description": " 自身受到傷害-5%",
                 "level": 10
             },
             {
-                "description": "自身攻擊力+10%",
+                "description": " 自身受到傷害-5%",
                 "level": 20
             },
             {
-                "description": "自身攻擊力+10%間諜型成員血量+ 5%",
+                "description": " 自身受到傷害-5%",
                 "level": 30
             },
             {
-                "description": "自身攻擊力+15%間諜型成員血量+ 5%",
+                "description": " 自身受到傷害-10%",
                 "level": 40
             },
             {
-                "description": "自身攻擊力+15%間諜型成員血量+ 10%",
+                "description": " 自身受到傷害-10%",
                 "level": 50
             },
             {
-                "description": "自身攻擊力+20%間諜型成員血量+ 10%",
+                "description": " 自身受到傷害-10%",
                 "level": 60
             },
             {
-                "description": "自身攻擊力+20%間諜型成員血量+ 15%",
+                "description": " 自身受到傷害-15%",
                 "level": 70
             },
             {
-                "description": "自身攻擊力+25%間諜型成員血量+ 15%",
+                "description": " 自身受到傷害-15%",
                 "level": 80
             },
             {
-                "description": "自身攻擊力+25%間諜型成員血量+ 20%",
+                "description": " 自身受到傷害-15%",
                 "level": 90
             },
             {
-                "description": "自身攻擊力+30% 自身受到傷害-5%間諜型成員血量+ 20%",
+                "description": " 自身受到傷害-20%",
                 "level": 100
             },
             {
-                "description": "自身攻擊力+30% 自身受到傷害-5%間諜型成員血量+ 25%",
+                "description": " 自身受到傷害-20%",
                 "level": 110
             },
             {
-                "description": "自身攻擊力+35% 自身受到傷害-5%間諜型成員血量+ 25%",
+                "description": " 自身受到傷害-30%",
                 "level": 120
             },
             {
-                "description": "自身攻擊力+35% 自身受到傷害-5%間諜型成員血量+ 30%",
+                "description": " 自身受到傷害-30%",
                 "level": 130
             },
             {
-                "description": "自身攻擊力+40% 自身受到傷害-5%間諜型成員血量+ 30%",
+                "description": " 自身受到傷害-30%",
                 "level": 140
             },
             {
-                "description": "自身攻擊力+40% 自身受到傷害-10%間諜型成員血量+ 35%",
+                "description": " 自身受到傷害-35%",
                 "level": 150
             },
             {
-                "description": "自身攻擊力+45% 自身受到傷害-10%間諜型成員血量+ 35%",
+                "description": " 自身受到傷害-35%",
                 "level": 160
             },
             {
-                "description": "自身攻擊力+45% 自身受到傷害-10%間諜型成員血量+ 40%",
+                "description": " 自身受到傷害-35%",
                 "level": 170
             },
             {
-                "description": "自身攻擊力+50% 自身受到傷害-10%間諜型成員血量+ 40%",
+                "description": " 自身受到傷害-40%",
                 "level": 180
             },
             {
-                "description": "自身攻擊力+50% 自身受到傷害-10%間諜型成員血量+ 45%",
+                "description": " 自身受到傷害-40%",
                 "level": 190
             },
             {
-                "description": "自身攻擊力+55% 自身受到傷害-15%間諜型成員血量+ 45%",
+                "description": " 自身受到傷害-45%",
                 "level": 200
             },
             {
-                "description": "自身攻擊力+55% 自身受到傷害-15%間諜型成員血量+ 50%",
+                "description": " 自身受到傷害-45%",
                 "level": 210
             },
             {
-                "description": "自身攻擊力+60% 自身受到傷害-15%間諜型成員血量+ 50%",
+                "description": " 自身受到傷害-50%",
                 "level": 220
             },
             {
-                "description": "自身攻擊力+60% 自身受到傷害-15%間諜型成員血量+ 55%",
+                "description": " 自身受到傷害-50%",
                 "level": 230
             },
             {
-                "description": "自身攻擊力+65% 自身受到傷害-15%間諜型成員血量+ 55%",
+                "description": " 自身受到傷害-55%",
                 "level": 240
             },
             {
-                "description": "自身攻擊力+65% 自身受到傷害-20%間諜型成員血量+ 60%",
+                "description": " 自身受到傷害-55%",
                 "level": 250
             },
             {
-                "description": "自身攻擊力+70% 自身受到傷害-20%間諜型成員血量+ 60%",
+                "description": " 自身受到傷害-60%",
                 "level": 260
             },
             {
-                "description": "自身攻擊力+75% 自身受到傷害-20%間諜型成員血量+ 65%",
+                "description": " 自身受到傷害-60%",
                 "level": 270
             },
             {
-                "description": "自身攻擊力+80% 自身受到傷害-20%間諜型成員血量+ 65%",
+                "description": " 自身受到傷害-65%",
                 "level": 280
             },
             {
-                "description": "自身攻擊力+85% 自身受到傷害-20%間諜型成員血量+ 65%",
+                "description": " 自身受到傷害-65%",
                 "level": 290
             },
             {
-                "description": "自身攻擊力+90% 自身受到傷害-25%間諜型成員血量+ 65%",
+                "description": " 自身受到傷害-70%",
                 "level": 300
             }
         ],
         "scarcity": "SSR",
-        "nation": "自由勢力",
-        "actor_category": "間諜",
-        "weapon_name": "槍械"
+        "nation": "紅軍",
+        "actor_category": "資助者",
+        "weapon_name": "言靈"
     },
     "海蘭珠": {
         "name": "海蘭珠",
@@ -1323,6 +1323,264 @@
         "actor_category": "宣傳家",
         "weapon_name": "刀劍"
     },
+    "習近平": {
+        "name": "習近平",
+        "passive_skills": [
+            {
+                "description": "宣傳家型成員攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "宣傳家型成員攻擊力+5%自身血量+ 5%",
+                "level": 20
+            },
+            {
+                "description": "宣傳家型成員攻擊力+5% 自身受到傷害-5%自身血量+ 5%",
+                "level": 30
+            },
+            {
+                "description": "宣傳家型成員攻擊力+10% 自身受到傷害-5%自身血量+ 10%",
+                "level": 40
+            },
+            {
+                "description": "宣傳家型成員攻擊力+15% 自身受到傷害-5%自身血量+ 10%",
+                "level": 50
+            },
+            {
+                "description": "宣傳家型成員攻擊力+20% 自身受到傷害-5%自身血量+ 15%",
+                "level": 60
+            },
+            {
+                "description": "宣傳家型成員攻擊力+25% 自身受到傷害-5%自身血量+ 15%",
+                "level": 70
+            },
+            {
+                "description": "宣傳家型成員攻擊力+30% 自身受到傷害-5%自身血量+ 20%",
+                "level": 80
+            },
+            {
+                "description": "宣傳家型成員攻擊力+35% 自身受到傷害-5%自身血量+ 20%",
+                "level": 90
+            },
+            {
+                "description": "宣傳家型成員攻擊力+35% 自身受到傷害-10%自身血量+ 25%",
+                "level": 100
+            },
+            {
+                "description": "宣傳家型成員攻擊力+40% 自身受到傷害-10%自身血量+ 25%",
+                "level": 110
+            },
+            {
+                "description": "宣傳家型成員攻擊力+45% 自身受到傷害-10%自身血量+ 30%",
+                "level": 120
+            },
+            {
+                "description": "宣傳家型成員攻擊力+50% 自身受到傷害-10%自身血量+ 30%",
+                "level": 130
+            },
+            {
+                "description": "宣傳家型成員攻擊力+55% 自身受到傷害-10%自身血量+ 35%",
+                "level": 140
+            },
+            {
+                "description": "宣傳家型成員攻擊力+60% 自身受到傷害-10%自身血量+ 35%",
+                "level": 150
+            },
+            {
+                "description": "宣傳家型成員攻擊力+60% 自身受到傷害-10%自身血量+ 40%",
+                "level": 160
+            },
+            {
+                "description": "宣傳家型成員攻擊力+65% 自身受到傷害-15%自身血量+ 40%",
+                "level": 170
+            },
+            {
+                "description": "宣傳家型成員攻擊力+65% 自身受到傷害-15%自身血量+ 45%",
+                "level": 180
+            },
+            {
+                "description": "宣傳家型成員攻擊力+70% 自身受到傷害-15%自身血量+ 45%",
+                "level": 190
+            },
+            {
+                "description": "宣傳家型成員攻擊力+70% 自身受到傷害-15%自身血量+ 50%",
+                "level": 200
+            },
+            {
+                "description": "宣傳家型成員攻擊力+75% 自身受到傷害-15%自身血量+ 50%",
+                "level": 210
+            },
+            {
+                "description": "宣傳家型成員攻擊力+80% 自身受到傷害-15%自身血量+ 55%",
+                "level": 220
+            },
+            {
+                "description": "宣傳家型成員攻擊力+85% 自身受到傷害-15%自身血量+ 55%",
+                "level": 230
+            },
+            {
+                "description": "宣傳家型成員攻擊力+85% 自身受到傷害-20%自身血量+ 60%",
+                "level": 240
+            },
+            {
+                "description": "宣傳家型成員攻擊力+90% 自身受到傷害-20%自身血量+ 60%",
+                "level": 250
+            },
+            {
+                "description": "宣傳家型成員攻擊力+95% 自身受到傷害-20%自身血量+ 65%",
+                "level": 260
+            },
+            {
+                "description": "宣傳家型成員攻擊力+100% 自身受到傷害-20%自身血量+ 65%",
+                "level": 270
+            },
+            {
+                "description": "宣傳家型成員攻擊力+100% 自身受到傷害-20%自身血量+ 70%",
+                "level": 280
+            },
+            {
+                "description": "宣傳家型成員攻擊力+105% 自身受到傷害-20%自身血量+ 70%",
+                "level": 290
+            },
+            {
+                "description": "宣傳家型成員攻擊力+105% 自身受到傷害-25%自身血量+ 70%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "紅軍",
+        "actor_category": "宣傳家",
+        "weapon_name": "爆裂"
+    },
+    "阿邁德": {
+        "name": "阿邁德",
+        "passive_skills": [
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%",
+                "level": 10
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%",
+                "level": 20
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
+                "level": 30
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
+                "level": 40
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
+                "level": 50
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 10%",
+                "level": 60
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 10%",
+                "level": 70
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 10%",
+                "level": 80
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 15%",
+                "level": 90
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 15%",
+                "level": 100
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 15%",
+                "level": 110
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 20%",
+                "level": 120
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 20%",
+                "level": 130
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 20%",
+                "level": 140
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 25%",
+                "level": 150
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 25%",
+                "level": 160
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 25%",
+                "level": 170
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 30%",
+                "level": 180
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 30%",
+                "level": 190
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 30%",
+                "level": 200
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 35%",
+                "level": 210
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 35%",
+                "level": 220
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 35%",
+                "level": 230
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 40%",
+                "level": 240
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 40%",
+                "level": 250
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 40%",
+                "level": 260
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 45%",
+                "level": 270
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 45%",
+                "level": 280
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 45%",
+                "level": 290
+            },
+            {
+                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 50%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "自由勢力",
+        "actor_category": "資助者",
+        "weapon_name": "槍械"
+    },
     "雨鞘": {
         "name": "雨鞘",
         "passive_skills": [
@@ -1452,135 +1710,6 @@
         "actor_category": "資助者",
         "weapon_name": "爆裂"
     },
-    "習仲勳": {
-        "name": "習仲勳",
-        "passive_skills": [
-            {
-                "description": " 自身受到傷害-5%",
-                "level": 10
-            },
-            {
-                "description": " 自身受到傷害-5%",
-                "level": 20
-            },
-            {
-                "description": " 自身受到傷害-5%",
-                "level": 30
-            },
-            {
-                "description": " 自身受到傷害-10%",
-                "level": 40
-            },
-            {
-                "description": " 自身受到傷害-10%",
-                "level": 50
-            },
-            {
-                "description": " 自身受到傷害-10%",
-                "level": 60
-            },
-            {
-                "description": " 自身受到傷害-15%",
-                "level": 70
-            },
-            {
-                "description": " 自身受到傷害-15%",
-                "level": 80
-            },
-            {
-                "description": " 自身受到傷害-15%",
-                "level": 90
-            },
-            {
-                "description": " 自身受到傷害-20%",
-                "level": 100
-            },
-            {
-                "description": " 自身受到傷害-20%",
-                "level": 110
-            },
-            {
-                "description": " 自身受到傷害-30%",
-                "level": 120
-            },
-            {
-                "description": " 自身受到傷害-30%",
-                "level": 130
-            },
-            {
-                "description": " 自身受到傷害-30%",
-                "level": 140
-            },
-            {
-                "description": " 自身受到傷害-35%",
-                "level": 150
-            },
-            {
-                "description": " 自身受到傷害-35%",
-                "level": 160
-            },
-            {
-                "description": " 自身受到傷害-35%",
-                "level": 170
-            },
-            {
-                "description": " 自身受到傷害-40%",
-                "level": 180
-            },
-            {
-                "description": " 自身受到傷害-40%",
-                "level": 190
-            },
-            {
-                "description": " 自身受到傷害-45%",
-                "level": 200
-            },
-            {
-                "description": " 自身受到傷害-45%",
-                "level": 210
-            },
-            {
-                "description": " 自身受到傷害-50%",
-                "level": 220
-            },
-            {
-                "description": " 自身受到傷害-50%",
-                "level": 230
-            },
-            {
-                "description": " 自身受到傷害-55%",
-                "level": 240
-            },
-            {
-                "description": " 自身受到傷害-55%",
-                "level": 250
-            },
-            {
-                "description": " 自身受到傷害-60%",
-                "level": 260
-            },
-            {
-                "description": " 自身受到傷害-60%",
-                "level": 270
-            },
-            {
-                "description": " 自身受到傷害-65%",
-                "level": 280
-            },
-            {
-                "description": " 自身受到傷害-65%",
-                "level": 290
-            },
-            {
-                "description": " 自身受到傷害-70%",
-                "level": 300
-            }
-        ],
-        "scarcity": "SSR",
-        "nation": "紅軍",
-        "actor_category": "資助者",
-        "weapon_name": "言靈"
-    },
     "未央": {
         "name": "未央",
         "passive_skills": [
@@ -1709,135 +1838,6 @@
         "nation": "自由勢力",
         "actor_category": "間諜",
         "weapon_name": "刀劍"
-    },
-    "秋河": {
-        "name": "秋河",
-        "passive_skills": [
-            {
-                "description": "自由勢力陣營成員攻擊力+5%",
-                "level": 10
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+5%",
-                "level": 20
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+10%",
-                "level": 30
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+10% 自由勢力陣營成員受到傷害-5%",
-                "level": 40
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+15% 自由勢力陣營成員受到傷害-5%",
-                "level": 50
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+15% 自由勢力陣營成員受到傷害-5%",
-                "level": 60
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+20% 自由勢力陣營成員受到傷害-5%",
-                "level": 70
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+20% 自由勢力陣營成員受到傷害-10%",
-                "level": 80
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+25% 自由勢力陣營成員受到傷害-10%",
-                "level": 90
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+25% 自由勢力陣營成員受到傷害-10%",
-                "level": 100
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+30% 自由勢力陣營成員受到傷害-10%",
-                "level": 110
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+30% 自由勢力陣營成員受到傷害-10%",
-                "level": 120
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+35% 自由勢力陣營成員受到傷害-15%",
-                "level": 130
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+40% 自由勢力陣營成員受到傷害-15%",
-                "level": 140
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+45% 自由勢力陣營成員受到傷害-15%",
-                "level": 150
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+50% 自由勢力陣營成員受到傷害-15%",
-                "level": 160
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+50% 自由勢力陣營成員受到傷害-15%",
-                "level": 170
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+55% 自由勢力陣營成員受到傷害-20%",
-                "level": 180
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+60% 自由勢力陣營成員受到傷害-20%",
-                "level": 190
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+60% 自由勢力陣營成員受到傷害-20%",
-                "level": 200
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+65% 自由勢力陣營成員受到傷害-20%",
-                "level": 210
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+70% 自由勢力陣營成員受到傷害-20%",
-                "level": 220
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+75% 自由勢力陣營成員受到傷害-25%",
-                "level": 230
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+80% 自由勢力陣營成員受到傷害-25%",
-                "level": 240
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+85% 自由勢力陣營成員受到傷害-25%",
-                "level": 250
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+90% 自由勢力陣營成員受到傷害-25%",
-                "level": 260
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+90% 自由勢力陣營成員受到傷害-25%",
-                "level": 270
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+95% 自由勢力陣營成員受到傷害-30%",
-                "level": 280
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+95% 自由勢力陣營成員受到傷害-30%",
-                "level": 290
-            },
-            {
-                "description": "自由勢力陣營成員攻擊力+100% 自由勢力陣營成員受到傷害-30%",
-                "level": 300
-            }
-        ],
-        "scarcity": "SSR",
-        "nation": "自由勢力",
-        "actor_category": "間諜",
-        "weapon_name": "暗器"
     },
     "卡姆蘭": {
         "name": "卡姆蘭",
@@ -2097,6 +2097,135 @@
         "actor_category": "間諜",
         "weapon_name": "匕首"
     },
+    "秋河": {
+        "name": "秋河",
+        "passive_skills": [
+            {
+                "description": "自由勢力陣營成員攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+5%",
+                "level": 20
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+10%",
+                "level": 30
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+10% 自由勢力陣營成員受到傷害-5%",
+                "level": 40
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+15% 自由勢力陣營成員受到傷害-5%",
+                "level": 50
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+15% 自由勢力陣營成員受到傷害-5%",
+                "level": 60
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+20% 自由勢力陣營成員受到傷害-5%",
+                "level": 70
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+20% 自由勢力陣營成員受到傷害-10%",
+                "level": 80
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+25% 自由勢力陣營成員受到傷害-10%",
+                "level": 90
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+25% 自由勢力陣營成員受到傷害-10%",
+                "level": 100
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+30% 自由勢力陣營成員受到傷害-10%",
+                "level": 110
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+30% 自由勢力陣營成員受到傷害-10%",
+                "level": 120
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+35% 自由勢力陣營成員受到傷害-15%",
+                "level": 130
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+40% 自由勢力陣營成員受到傷害-15%",
+                "level": 140
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+45% 自由勢力陣營成員受到傷害-15%",
+                "level": 150
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+50% 自由勢力陣營成員受到傷害-15%",
+                "level": 160
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+50% 自由勢力陣營成員受到傷害-15%",
+                "level": 170
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+55% 自由勢力陣營成員受到傷害-20%",
+                "level": 180
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+60% 自由勢力陣營成員受到傷害-20%",
+                "level": 190
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+60% 自由勢力陣營成員受到傷害-20%",
+                "level": 200
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+65% 自由勢力陣營成員受到傷害-20%",
+                "level": 210
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+70% 自由勢力陣營成員受到傷害-20%",
+                "level": 220
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+75% 自由勢力陣營成員受到傷害-25%",
+                "level": 230
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+80% 自由勢力陣營成員受到傷害-25%",
+                "level": 240
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+85% 自由勢力陣營成員受到傷害-25%",
+                "level": 250
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+90% 自由勢力陣營成員受到傷害-25%",
+                "level": 260
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+90% 自由勢力陣營成員受到傷害-25%",
+                "level": 270
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+95% 自由勢力陣營成員受到傷害-30%",
+                "level": 280
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+95% 自由勢力陣營成員受到傷害-30%",
+                "level": 290
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+100% 自由勢力陣營成員受到傷害-30%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "自由勢力",
+        "actor_category": "間諜",
+        "weapon_name": "暗器"
+    },
     "維亞": {
         "name": "維亞",
         "passive_skills": [
@@ -2223,264 +2352,6 @@
         ],
         "scarcity": "SSR",
         "nation": "香港",
-        "actor_category": "游擊隊",
-        "weapon_name": "刀劍"
-    },
-    "次仁拉莫": {
-        "name": "次仁拉莫",
-        "passive_skills": [
-            {
-                "description": "藏國陣營成員攻擊力+5%",
-                "level": 10
-            },
-            {
-                "description": "藏國陣營成員攻擊力+10%",
-                "level": 20
-            },
-            {
-                "description": "藏國陣營成員攻擊力+15%",
-                "level": 30
-            },
-            {
-                "description": "藏國陣營成員攻擊力+20%",
-                "level": 40
-            },
-            {
-                "description": "藏國陣營成員攻擊力+25%",
-                "level": 50
-            },
-            {
-                "description": "藏國陣營成員攻擊力+25%",
-                "level": 60
-            },
-            {
-                "description": "藏國陣營成員攻擊力+30%",
-                "level": 70
-            },
-            {
-                "description": "藏國陣營成員攻擊力+30%",
-                "level": 80
-            },
-            {
-                "description": "藏國陣營成員攻擊力+35%",
-                "level": 90
-            },
-            {
-                "description": "藏國陣營成員攻擊力+35%",
-                "level": 100
-            },
-            {
-                "description": "藏國陣營成員攻擊力+40%",
-                "level": 110
-            },
-            {
-                "description": "藏國陣營成員攻擊力+40%",
-                "level": 120
-            },
-            {
-                "description": "藏國陣營成員攻擊力+45%",
-                "level": 130
-            },
-            {
-                "description": "藏國陣營成員攻擊力+45%",
-                "level": 140
-            },
-            {
-                "description": "藏國陣營成員攻擊力+50%",
-                "level": 150
-            },
-            {
-                "description": "藏國陣營成員攻擊力+50%",
-                "level": 160
-            },
-            {
-                "description": "藏國陣營成員攻擊力+55%",
-                "level": 170
-            },
-            {
-                "description": "藏國陣營成員攻擊力+55%",
-                "level": 180
-            },
-            {
-                "description": "藏國陣營成員攻擊力+60%",
-                "level": 190
-            },
-            {
-                "description": "藏國陣營成員攻擊力+60%",
-                "level": 200
-            },
-            {
-                "description": "藏國陣營成員攻擊力+65%",
-                "level": 210
-            },
-            {
-                "description": "藏國陣營成員攻擊力+65%",
-                "level": 220
-            },
-            {
-                "description": "藏國陣營成員攻擊力+70%",
-                "level": 230
-            },
-            {
-                "description": "藏國陣營成員攻擊力+70%",
-                "level": 240
-            },
-            {
-                "description": "藏國陣營成員攻擊力+75%",
-                "level": 250
-            },
-            {
-                "description": "藏國陣營成員攻擊力+75%",
-                "level": 260
-            },
-            {
-                "description": "藏國陣營成員攻擊力+80%",
-                "level": 270
-            },
-            {
-                "description": "藏國陣營成員攻擊力+80%",
-                "level": 280
-            },
-            {
-                "description": "藏國陣營成員攻擊力+85%",
-                "level": 290
-            },
-            {
-                "description": "藏國陣營成員攻擊力+90%",
-                "level": 300
-            }
-        ],
-        "scarcity": "SSR",
-        "nation": "藏國",
-        "actor_category": "游擊隊",
-        "weapon_name": "弓弩"
-    },
-    "黎訓": {
-        "name": "黎訓",
-        "passive_skills": [
-            {
-                "description": "香港陣營成員血量+ 5%",
-                "level": 10
-            },
-            {
-                "description": "香港陣營成員血量+ 10%",
-                "level": 20
-            },
-            {
-                "description": "香港陣營成員血量+ 10%",
-                "level": 30
-            },
-            {
-                "description": "香港陣營成員血量+ 15%",
-                "level": 40
-            },
-            {
-                "description": "香港陣營成員血量+ 15%",
-                "level": 50
-            },
-            {
-                "description": "香港陣營成員血量+ 20%",
-                "level": 60
-            },
-            {
-                "description": "香港陣營成員血量+ 20%",
-                "level": 70
-            },
-            {
-                "description": "香港陣營成員血量+ 25%",
-                "level": 80
-            },
-            {
-                "description": "香港陣營成員血量+ 25%",
-                "level": 90
-            },
-            {
-                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 30%",
-                "level": 100
-            },
-            {
-                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 30%",
-                "level": 110
-            },
-            {
-                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 35%",
-                "level": 120
-            },
-            {
-                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 35%",
-                "level": 130
-            },
-            {
-                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 40%",
-                "level": 140
-            },
-            {
-                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 40%",
-                "level": 150
-            },
-            {
-                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 40%",
-                "level": 160
-            },
-            {
-                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 40%",
-                "level": 170
-            },
-            {
-                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 45%",
-                "level": 180
-            },
-            {
-                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 45%",
-                "level": 190
-            },
-            {
-                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 45%",
-                "level": 200
-            },
-            {
-                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 50%",
-                "level": 210
-            },
-            {
-                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 50%",
-                "level": 220
-            },
-            {
-                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 50%",
-                "level": 230
-            },
-            {
-                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 55%",
-                "level": 240
-            },
-            {
-                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 55%",
-                "level": 250
-            },
-            {
-                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 55%",
-                "level": 260
-            },
-            {
-                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 60%",
-                "level": 270
-            },
-            {
-                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 60%",
-                "level": 280
-            },
-            {
-                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 60%",
-                "level": 290
-            },
-            {
-                "description": " 香港陣營成員受到傷害-25%香港陣營成員血量+ 65%",
-                "level": 300
-            }
-        ],
-        "scarcity": "SSR",
-        "nation": "自由勢力",
         "actor_category": "游擊隊",
         "weapon_name": "刀劍"
     },
@@ -2612,6 +2483,264 @@
         "nation": "自由勢力",
         "actor_category": "游擊隊",
         "weapon_name": "匕首"
+    },
+    "黎訓": {
+        "name": "黎訓",
+        "passive_skills": [
+            {
+                "description": "香港陣營成員血量+ 5%",
+                "level": 10
+            },
+            {
+                "description": "香港陣營成員血量+ 10%",
+                "level": 20
+            },
+            {
+                "description": "香港陣營成員血量+ 10%",
+                "level": 30
+            },
+            {
+                "description": "香港陣營成員血量+ 15%",
+                "level": 40
+            },
+            {
+                "description": "香港陣營成員血量+ 15%",
+                "level": 50
+            },
+            {
+                "description": "香港陣營成員血量+ 20%",
+                "level": 60
+            },
+            {
+                "description": "香港陣營成員血量+ 20%",
+                "level": 70
+            },
+            {
+                "description": "香港陣營成員血量+ 25%",
+                "level": 80
+            },
+            {
+                "description": "香港陣營成員血量+ 25%",
+                "level": 90
+            },
+            {
+                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 30%",
+                "level": 100
+            },
+            {
+                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 30%",
+                "level": 110
+            },
+            {
+                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 35%",
+                "level": 120
+            },
+            {
+                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 35%",
+                "level": 130
+            },
+            {
+                "description": " 香港陣營成員受到傷害-5%香港陣營成員血量+ 40%",
+                "level": 140
+            },
+            {
+                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 40%",
+                "level": 150
+            },
+            {
+                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 40%",
+                "level": 160
+            },
+            {
+                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 40%",
+                "level": 170
+            },
+            {
+                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 45%",
+                "level": 180
+            },
+            {
+                "description": " 香港陣營成員受到傷害-10%香港陣營成員血量+ 45%",
+                "level": 190
+            },
+            {
+                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 45%",
+                "level": 200
+            },
+            {
+                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 50%",
+                "level": 210
+            },
+            {
+                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 50%",
+                "level": 220
+            },
+            {
+                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 50%",
+                "level": 230
+            },
+            {
+                "description": " 香港陣營成員受到傷害-15%香港陣營成員血量+ 55%",
+                "level": 240
+            },
+            {
+                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 55%",
+                "level": 250
+            },
+            {
+                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 55%",
+                "level": 260
+            },
+            {
+                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 60%",
+                "level": 270
+            },
+            {
+                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 60%",
+                "level": 280
+            },
+            {
+                "description": " 香港陣營成員受到傷害-20%香港陣營成員血量+ 60%",
+                "level": 290
+            },
+            {
+                "description": " 香港陣營成員受到傷害-25%香港陣營成員血量+ 65%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "自由勢力",
+        "actor_category": "游擊隊",
+        "weapon_name": "刀劍"
+    },
+    "次仁拉莫": {
+        "name": "次仁拉莫",
+        "passive_skills": [
+            {
+                "description": "藏國陣營成員攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "藏國陣營成員攻擊力+10%",
+                "level": 20
+            },
+            {
+                "description": "藏國陣營成員攻擊力+15%",
+                "level": 30
+            },
+            {
+                "description": "藏國陣營成員攻擊力+20%",
+                "level": 40
+            },
+            {
+                "description": "藏國陣營成員攻擊力+25%",
+                "level": 50
+            },
+            {
+                "description": "藏國陣營成員攻擊力+25%",
+                "level": 60
+            },
+            {
+                "description": "藏國陣營成員攻擊力+30%",
+                "level": 70
+            },
+            {
+                "description": "藏國陣營成員攻擊力+30%",
+                "level": 80
+            },
+            {
+                "description": "藏國陣營成員攻擊力+35%",
+                "level": 90
+            },
+            {
+                "description": "藏國陣營成員攻擊力+35%",
+                "level": 100
+            },
+            {
+                "description": "藏國陣營成員攻擊力+40%",
+                "level": 110
+            },
+            {
+                "description": "藏國陣營成員攻擊力+40%",
+                "level": 120
+            },
+            {
+                "description": "藏國陣營成員攻擊力+45%",
+                "level": 130
+            },
+            {
+                "description": "藏國陣營成員攻擊力+45%",
+                "level": 140
+            },
+            {
+                "description": "藏國陣營成員攻擊力+50%",
+                "level": 150
+            },
+            {
+                "description": "藏國陣營成員攻擊力+50%",
+                "level": 160
+            },
+            {
+                "description": "藏國陣營成員攻擊力+55%",
+                "level": 170
+            },
+            {
+                "description": "藏國陣營成員攻擊力+55%",
+                "level": 180
+            },
+            {
+                "description": "藏國陣營成員攻擊力+60%",
+                "level": 190
+            },
+            {
+                "description": "藏國陣營成員攻擊力+60%",
+                "level": 200
+            },
+            {
+                "description": "藏國陣營成員攻擊力+65%",
+                "level": 210
+            },
+            {
+                "description": "藏國陣營成員攻擊力+65%",
+                "level": 220
+            },
+            {
+                "description": "藏國陣營成員攻擊力+70%",
+                "level": 230
+            },
+            {
+                "description": "藏國陣營成員攻擊力+70%",
+                "level": 240
+            },
+            {
+                "description": "藏國陣營成員攻擊力+75%",
+                "level": 250
+            },
+            {
+                "description": "藏國陣營成員攻擊力+75%",
+                "level": 260
+            },
+            {
+                "description": "藏國陣營成員攻擊力+80%",
+                "level": 270
+            },
+            {
+                "description": "藏國陣營成員攻擊力+80%",
+                "level": 280
+            },
+            {
+                "description": "藏國陣營成員攻擊力+85%",
+                "level": 290
+            },
+            {
+                "description": "藏國陣營成員攻擊力+90%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "藏國",
+        "actor_category": "游擊隊",
+        "weapon_name": "弓弩"
     },
     "于征": {
         "name": "于征",
@@ -2759,79 +2888,6 @@
         "actor_category": "宣傳家",
         "weapon_name": "言靈"
     },
-    "范姜": {
-        "name": "范姜",
-        "passive_skills": [
-            {
-                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 5%",
-                "level": 10
-            },
-            {
-                "description": "自身攻擊力+10% 自身受到傷害-5%自身血量+ 5%",
-                "level": 20
-            },
-            {
-                "description": "自身攻擊力+20% 自身受到傷害-5%自身血量+ 5%",
-                "level": 30
-            },
-            {
-                "description": "自身攻擊力+30% 自身受到傷害-5%自身血量+ 5%",
-                "level": 40
-            },
-            {
-                "description": "自身攻擊力+40% 自身受到傷害-5%自身血量+ 5%",
-                "level": 50
-            },
-            {
-                "description": "自身攻擊力+50% 自身受到傷害-5%自身血量+ 5%",
-                "level": 60
-            },
-            {
-                "description": "自身攻擊力+60% 自身受到傷害-5%自身血量+ 5%",
-                "level": 70
-            },
-            {
-                "description": "自身攻擊力+70% 自身受到傷害-5%自身血量+ 5%",
-                "level": 80
-            },
-            {
-                "description": "自身攻擊力+80% 自身受到傷害-10%自身血量+ 10%",
-                "level": 90
-            },
-            {
-                "description": "自身攻擊力+90% 自身受到傷害-10%自身血量+ 10%",
-                "level": 100
-            },
-            {
-                "description": "自身攻擊力+100% 自身受到傷害-10%自身血量+ 10%",
-                "level": 110
-            },
-            {
-                "description": "自身攻擊力+110% 自身受到傷害-10%自身血量+ 10%",
-                "level": 120
-            },
-            {
-                "description": "自身攻擊力+120% 自身受到傷害-10%自身血量+ 10%",
-                "level": 130
-            },
-            {
-                "description": "自身攻擊力+130% 自身受到傷害-10%自身血量+ 10%",
-                "level": 140
-            },
-            {
-                "description": "自身攻擊力+135% 自身受到傷害-10%自身血量+ 10%",
-                "level": 150
-            },
-            {
-                "description": "自身攻擊力+140% 自身受到傷害-10%自身血量+ 10%",
-                "level": 160
-            }
-        ],
-        "scarcity": "SR",
-        "nation": "臺灣",
-        "actor_category": "資助者",
-        "weapon_name": "槍械"
-    },
     "日嘎": {
         "name": "日嘎",
         "passive_skills": [
@@ -2978,79 +3034,6 @@
         "actor_category": "資助者",
         "weapon_name": "弓弩"
     },
-    "基少": {
-        "name": "基少",
-        "passive_skills": [
-            {
-                "description": "自身血量+ 10%",
-                "level": 10
-            },
-            {
-                "description": " 自身受到傷害-5%自身血量+ 15%",
-                "level": 20
-            },
-            {
-                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 20%",
-                "level": 30
-            },
-            {
-                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 25%",
-                "level": 40
-            },
-            {
-                "description": "自身攻擊力+10% 自身受到傷害-10%自身血量+ 30%",
-                "level": 50
-            },
-            {
-                "description": "自身攻擊力+10% 自身受到傷害-10%自身血量+ 35%",
-                "level": 60
-            },
-            {
-                "description": "自身攻擊力+15% 自身受到傷害-10%自身血量+ 40%",
-                "level": 70
-            },
-            {
-                "description": "自身攻擊力+15% 自身受到傷害-15%自身血量+ 45%",
-                "level": 80
-            },
-            {
-                "description": "自身攻擊力+20% 自身受到傷害-15%自身血量+ 50%",
-                "level": 90
-            },
-            {
-                "description": "自身攻擊力+20% 自身受到傷害-15%自身血量+ 55%",
-                "level": 100
-            },
-            {
-                "description": "自身攻擊力+25% 自身受到傷害-20%自身血量+ 60%",
-                "level": 110
-            },
-            {
-                "description": "自身攻擊力+25% 自身受到傷害-20%自身血量+ 65%",
-                "level": 120
-            },
-            {
-                "description": "自身攻擊力+30% 自身受到傷害-20%自身血量+ 70%",
-                "level": 130
-            },
-            {
-                "description": "自身攻擊力+30% 自身受到傷害-25%自身血量+ 75%",
-                "level": 140
-            },
-            {
-                "description": "自身攻擊力+30% 自身受到傷害-25%自身血量+ 80%",
-                "level": 150
-            },
-            {
-                "description": "自身攻擊力+30% 自身受到傷害-25%自身血量+ 90%",
-                "level": 160
-            }
-        ],
-        "scarcity": "SR",
-        "nation": "香港",
-        "actor_category": "資助者",
-        "weapon_name": "槍械"
-    },
     "張暖": {
         "name": "張暖",
         "passive_skills": [
@@ -3124,161 +3107,88 @@
         "actor_category": "資助者",
         "weapon_name": "槍械"
     },
-    "玥玥": {
-        "name": "玥玥",
+    "范姜": {
+        "name": "范姜",
         "passive_skills": [
             {
-                "description": "自身攻擊力+5%",
+                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 5%",
                 "level": 10
             },
             {
-                "description": "自身攻擊力+15%",
+                "description": "自身攻擊力+10% 自身受到傷害-5%自身血量+ 5%",
                 "level": 20
             },
             {
-                "description": "自身攻擊力+20%",
+                "description": "自身攻擊力+20% 自身受到傷害-5%自身血量+ 5%",
                 "level": 30
             },
             {
-                "description": "自身攻擊力+30%",
+                "description": "自身攻擊力+30% 自身受到傷害-5%自身血量+ 5%",
                 "level": 40
             },
             {
-                "description": "自身攻擊力+35%",
+                "description": "自身攻擊力+40% 自身受到傷害-5%自身血量+ 5%",
                 "level": 50
             },
             {
-                "description": "自身攻擊力+45%",
+                "description": "自身攻擊力+50% 自身受到傷害-5%自身血量+ 5%",
                 "level": 60
             },
             {
-                "description": "自身攻擊力+50%",
+                "description": "自身攻擊力+60% 自身受到傷害-5%自身血量+ 5%",
                 "level": 70
             },
             {
-                "description": "自身攻擊力+60%",
+                "description": "自身攻擊力+70% 自身受到傷害-5%自身血量+ 5%",
                 "level": 80
             },
             {
-                "description": "自身攻擊力+65%",
+                "description": "自身攻擊力+80% 自身受到傷害-10%自身血量+ 10%",
                 "level": 90
             },
             {
-                "description": "自身攻擊力+75%",
+                "description": "自身攻擊力+90% 自身受到傷害-10%自身血量+ 10%",
                 "level": 100
             },
             {
-                "description": "自身攻擊力+80%",
+                "description": "自身攻擊力+100% 自身受到傷害-10%自身血量+ 10%",
                 "level": 110
             },
             {
-                "description": "自身攻擊力+90%",
+                "description": "自身攻擊力+110% 自身受到傷害-10%自身血量+ 10%",
                 "level": 120
             },
             {
-                "description": "自身攻擊力+95%",
+                "description": "自身攻擊力+120% 自身受到傷害-10%自身血量+ 10%",
                 "level": 130
             },
             {
-                "description": "自身攻擊力+105%",
+                "description": "自身攻擊力+130% 自身受到傷害-10%自身血量+ 10%",
                 "level": 140
             },
             {
-                "description": "自身攻擊力+110%",
+                "description": "自身攻擊力+135% 自身受到傷害-10%自身血量+ 10%",
                 "level": 150
             },
             {
-                "description": "自身攻擊力+120%",
+                "description": "自身攻擊力+140% 自身受到傷害-10%自身血量+ 10%",
                 "level": 160
             }
         ],
         "scarcity": "SR",
-        "nation": "紅軍",
-        "actor_category": "間諜",
-        "weapon_name": "暗器"
+        "nation": "臺灣",
+        "actor_category": "資助者",
+        "weapon_name": "槍械"
     },
-    "熱依瑪": {
-        "name": "熱依瑪",
+    "基少": {
+        "name": "基少",
         "passive_skills": [
             {
-                "description": " 維吾爾陣營成員受到傷害-5%",
+                "description": "自身血量+ 10%",
                 "level": 10
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
-                "level": 20
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
-                "level": 30
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
-                "level": 40
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 10%",
-                "level": 50
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 10%",
-                "level": 60
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 10%",
-                "level": 70
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 15%",
-                "level": 80
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 15%",
-                "level": 90
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 15%",
-                "level": 100
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 20%",
-                "level": 110
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 20%",
-                "level": 120
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 20%",
-                "level": 130
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 25%",
-                "level": 140
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 25%",
-                "level": 150
-            },
-            {
-                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 25%",
-                "level": 160
-            }
-        ],
-        "scarcity": "SR",
-        "nation": "維吾爾",
-        "actor_category": "間諜",
-        "weapon_name": "匕首"
-    },
-    "小寧": {
-        "name": "小寧",
-        "passive_skills": [
-            {
-                "description": "自身攻擊力+5%自身血量+ 10%",
-                "level": 10
-            },
-            {
-                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 15%",
+                "description": " 自身受到傷害-5%自身血量+ 15%",
                 "level": 20
             },
             {
@@ -3298,123 +3208,50 @@
                 "level": 60
             },
             {
-                "description": "自身攻擊力+10% 自身受到傷害-15%自身血量+ 40%",
+                "description": "自身攻擊力+15% 自身受到傷害-10%自身血量+ 40%",
                 "level": 70
             },
             {
-                "description": "自身攻擊力+10% 自身受到傷害-15%自身血量+ 45%",
+                "description": "自身攻擊力+15% 自身受到傷害-15%自身血量+ 45%",
                 "level": 80
             },
             {
-                "description": "自身攻擊力+15% 自身受到傷害-15%自身血量+ 50%",
+                "description": "自身攻擊力+20% 自身受到傷害-15%自身血量+ 50%",
                 "level": 90
             },
             {
-                "description": "自身攻擊力+15% 自身受到傷害-15%自身血量+ 55%",
+                "description": "自身攻擊力+20% 自身受到傷害-15%自身血量+ 55%",
                 "level": 100
             },
             {
-                "description": "自身攻擊力+15% 自身受到傷害-20%自身血量+ 60%",
+                "description": "自身攻擊力+25% 自身受到傷害-20%自身血量+ 60%",
                 "level": 110
             },
             {
-                "description": "自身攻擊力+15% 自身受到傷害-20%自身血量+ 65%",
+                "description": "自身攻擊力+25% 自身受到傷害-20%自身血量+ 65%",
                 "level": 120
             },
             {
-                "description": "自身攻擊力+20% 自身受到傷害-20%自身血量+ 70%",
+                "description": "自身攻擊力+30% 自身受到傷害-20%自身血量+ 70%",
                 "level": 130
             },
             {
-                "description": "自身攻擊力+20% 自身受到傷害-25%自身血量+ 75%",
+                "description": "自身攻擊力+30% 自身受到傷害-25%自身血量+ 75%",
                 "level": 140
             },
             {
-                "description": "自身攻擊力+20% 自身受到傷害-25%自身血量+ 80%",
+                "description": "自身攻擊力+30% 自身受到傷害-25%自身血量+ 80%",
                 "level": 150
             },
             {
-                "description": "自身攻擊力+20% 自身受到傷害-25%自身血量+ 95%",
+                "description": "自身攻擊力+30% 自身受到傷害-25%自身血量+ 90%",
                 "level": 160
             }
         ],
         "scarcity": "SR",
-        "nation": "反賊聯盟",
-        "actor_category": "間諜",
-        "weapon_name": "匕首"
-    },
-    "樹維": {
-        "name": "樹維",
-        "passive_skills": [
-            {
-                "description": "紅軍陣營成員血量+ 5%",
-                "level": 10
-            },
-            {
-                "description": "紅軍陣營成員血量+ 5%",
-                "level": 20
-            },
-            {
-                "description": "紅軍陣營成員血量+ 10%",
-                "level": 30
-            },
-            {
-                "description": "紅軍陣營成員血量+ 10%",
-                "level": 40
-            },
-            {
-                "description": "紅軍陣營成員血量+ 15%",
-                "level": 50
-            },
-            {
-                "description": "紅軍陣營成員血量+ 20%",
-                "level": 60
-            },
-            {
-                "description": "紅軍陣營成員血量+ 25%",
-                "level": 70
-            },
-            {
-                "description": "紅軍陣營成員血量+ 30%",
-                "level": 80
-            },
-            {
-                "description": "紅軍陣營成員血量+ 30%",
-                "level": 90
-            },
-            {
-                "description": "紅軍陣營成員血量+ 35%",
-                "level": 100
-            },
-            {
-                "description": "紅軍陣營成員血量+ 35%",
-                "level": 110
-            },
-            {
-                "description": "紅軍陣營成員血量+ 40%",
-                "level": 120
-            },
-            {
-                "description": "紅軍陣營成員血量+ 45%",
-                "level": 130
-            },
-            {
-                "description": "紅軍陣營成員血量+ 50%",
-                "level": 140
-            },
-            {
-                "description": "紅軍陣營成員血量+ 55%",
-                "level": 150
-            },
-            {
-                "description": "紅軍陣營成員血量+ 60%",
-                "level": 160
-            }
-        ],
-        "scarcity": "SR",
-        "nation": "紅軍",
-        "actor_category": "間諜",
-        "weapon_name": "爆裂"
+        "nation": "香港",
+        "actor_category": "資助者",
+        "weapon_name": "槍械"
     },
     "格桑卓瑪": {
         "name": "格桑卓瑪",
@@ -3489,78 +3326,297 @@
         "actor_category": "間諜",
         "weapon_name": "匕首"
     },
-    "巴特爾": {
-        "name": "巴特爾",
+    "熱依瑪": {
+        "name": "熱依瑪",
         "passive_skills": [
             {
-                "description": "自身血量+ 5%",
+                "description": " 維吾爾陣營成員受到傷害-5%",
                 "level": 10
             },
             {
-                "description": "自身血量+ 15%",
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
                 "level": 20
             },
             {
-                "description": "自身血量+ 20%",
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
                 "level": 30
             },
             {
-                "description": "自身血量+ 30%",
+                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
                 "level": 40
             },
             {
-                "description": "自身血量+ 35%",
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 10%",
                 "level": 50
             },
             {
-                "description": "自身血量+ 45%",
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 10%",
                 "level": 60
             },
             {
-                "description": "自身血量+ 50%",
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 10%",
                 "level": 70
             },
             {
-                "description": "自身血量+ 60%",
+                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 15%",
                 "level": 80
             },
             {
-                "description": "自身血量+ 65%",
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 15%",
                 "level": 90
             },
             {
-                "description": "自身血量+ 75%",
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 15%",
                 "level": 100
             },
             {
-                "description": "自身血量+ 80%",
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 20%",
                 "level": 110
             },
             {
-                "description": "自身血量+ 90%",
+                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 20%",
                 "level": 120
             },
             {
-                "description": "自身血量+ 100%",
+                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 20%",
                 "level": 130
             },
             {
-                "description": "自身血量+ 110%",
+                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 25%",
                 "level": 140
             },
             {
-                "description": "自身血量+ 120%",
+                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 25%",
                 "level": 150
             },
             {
-                "description": "自身血量+ 130%",
+                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 25%",
                 "level": 160
             }
         ],
         "scarcity": "SR",
-        "nation": "蒙古",
-        "actor_category": "游擊隊",
-        "weapon_name": "刀劍"
+        "nation": "維吾爾",
+        "actor_category": "間諜",
+        "weapon_name": "匕首"
+    },
+    "玥玥": {
+        "name": "玥玥",
+        "passive_skills": [
+            {
+                "description": "自身攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "自身攻擊力+15%",
+                "level": 20
+            },
+            {
+                "description": "自身攻擊力+20%",
+                "level": 30
+            },
+            {
+                "description": "自身攻擊力+30%",
+                "level": 40
+            },
+            {
+                "description": "自身攻擊力+35%",
+                "level": 50
+            },
+            {
+                "description": "自身攻擊力+45%",
+                "level": 60
+            },
+            {
+                "description": "自身攻擊力+50%",
+                "level": 70
+            },
+            {
+                "description": "自身攻擊力+60%",
+                "level": 80
+            },
+            {
+                "description": "自身攻擊力+65%",
+                "level": 90
+            },
+            {
+                "description": "自身攻擊力+75%",
+                "level": 100
+            },
+            {
+                "description": "自身攻擊力+80%",
+                "level": 110
+            },
+            {
+                "description": "自身攻擊力+90%",
+                "level": 120
+            },
+            {
+                "description": "自身攻擊力+95%",
+                "level": 130
+            },
+            {
+                "description": "自身攻擊力+105%",
+                "level": 140
+            },
+            {
+                "description": "自身攻擊力+110%",
+                "level": 150
+            },
+            {
+                "description": "自身攻擊力+120%",
+                "level": 160
+            }
+        ],
+        "scarcity": "SR",
+        "nation": "紅軍",
+        "actor_category": "間諜",
+        "weapon_name": "暗器"
+    },
+    "樹維": {
+        "name": "樹維",
+        "passive_skills": [
+            {
+                "description": "紅軍陣營成員血量+ 5%",
+                "level": 10
+            },
+            {
+                "description": "紅軍陣營成員血量+ 5%",
+                "level": 20
+            },
+            {
+                "description": "紅軍陣營成員血量+ 10%",
+                "level": 30
+            },
+            {
+                "description": "紅軍陣營成員血量+ 10%",
+                "level": 40
+            },
+            {
+                "description": "紅軍陣營成員血量+ 15%",
+                "level": 50
+            },
+            {
+                "description": "紅軍陣營成員血量+ 20%",
+                "level": 60
+            },
+            {
+                "description": "紅軍陣營成員血量+ 25%",
+                "level": 70
+            },
+            {
+                "description": "紅軍陣營成員血量+ 30%",
+                "level": 80
+            },
+            {
+                "description": "紅軍陣營成員血量+ 30%",
+                "level": 90
+            },
+            {
+                "description": "紅軍陣營成員血量+ 35%",
+                "level": 100
+            },
+            {
+                "description": "紅軍陣營成員血量+ 35%",
+                "level": 110
+            },
+            {
+                "description": "紅軍陣營成員血量+ 40%",
+                "level": 120
+            },
+            {
+                "description": "紅軍陣營成員血量+ 45%",
+                "level": 130
+            },
+            {
+                "description": "紅軍陣營成員血量+ 50%",
+                "level": 140
+            },
+            {
+                "description": "紅軍陣營成員血量+ 55%",
+                "level": 150
+            },
+            {
+                "description": "紅軍陣營成員血量+ 60%",
+                "level": 160
+            }
+        ],
+        "scarcity": "SR",
+        "nation": "紅軍",
+        "actor_category": "間諜",
+        "weapon_name": "爆裂"
+    },
+    "小寧": {
+        "name": "小寧",
+        "passive_skills": [
+            {
+                "description": "自身攻擊力+5%自身血量+ 10%",
+                "level": 10
+            },
+            {
+                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 15%",
+                "level": 20
+            },
+            {
+                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 20%",
+                "level": 30
+            },
+            {
+                "description": "自身攻擊力+5% 自身受到傷害-5%自身血量+ 25%",
+                "level": 40
+            },
+            {
+                "description": "自身攻擊力+10% 自身受到傷害-10%自身血量+ 30%",
+                "level": 50
+            },
+            {
+                "description": "自身攻擊力+10% 自身受到傷害-10%自身血量+ 35%",
+                "level": 60
+            },
+            {
+                "description": "自身攻擊力+10% 自身受到傷害-15%自身血量+ 40%",
+                "level": 70
+            },
+            {
+                "description": "自身攻擊力+10% 自身受到傷害-15%自身血量+ 45%",
+                "level": 80
+            },
+            {
+                "description": "自身攻擊力+15% 自身受到傷害-15%自身血量+ 50%",
+                "level": 90
+            },
+            {
+                "description": "自身攻擊力+15% 自身受到傷害-15%自身血量+ 55%",
+                "level": 100
+            },
+            {
+                "description": "自身攻擊力+15% 自身受到傷害-20%自身血量+ 60%",
+                "level": 110
+            },
+            {
+                "description": "自身攻擊力+15% 自身受到傷害-20%自身血量+ 65%",
+                "level": 120
+            },
+            {
+                "description": "自身攻擊力+20% 自身受到傷害-20%自身血量+ 70%",
+                "level": 130
+            },
+            {
+                "description": "自身攻擊力+20% 自身受到傷害-25%自身血量+ 75%",
+                "level": 140
+            },
+            {
+                "description": "自身攻擊力+20% 自身受到傷害-25%自身血量+ 80%",
+                "level": 150
+            },
+            {
+                "description": "自身攻擊力+20% 自身受到傷害-25%自身血量+ 95%",
+                "level": 160
+            }
+        ],
+        "scarcity": "SR",
+        "nation": "反賊聯盟",
+        "actor_category": "間諜",
+        "weapon_name": "匕首"
     },
     "要武": {
         "name": "要武",
@@ -3632,6 +3688,79 @@
         ],
         "scarcity": "SR",
         "nation": "紅軍",
+        "actor_category": "游擊隊",
+        "weapon_name": "刀劍"
+    },
+    "巴特爾": {
+        "name": "巴特爾",
+        "passive_skills": [
+            {
+                "description": "自身血量+ 5%",
+                "level": 10
+            },
+            {
+                "description": "自身血量+ 15%",
+                "level": 20
+            },
+            {
+                "description": "自身血量+ 20%",
+                "level": 30
+            },
+            {
+                "description": "自身血量+ 30%",
+                "level": 40
+            },
+            {
+                "description": "自身血量+ 35%",
+                "level": 50
+            },
+            {
+                "description": "自身血量+ 45%",
+                "level": 60
+            },
+            {
+                "description": "自身血量+ 50%",
+                "level": 70
+            },
+            {
+                "description": "自身血量+ 60%",
+                "level": 80
+            },
+            {
+                "description": "自身血量+ 65%",
+                "level": 90
+            },
+            {
+                "description": "自身血量+ 75%",
+                "level": 100
+            },
+            {
+                "description": "自身血量+ 80%",
+                "level": 110
+            },
+            {
+                "description": "自身血量+ 90%",
+                "level": 120
+            },
+            {
+                "description": "自身血量+ 100%",
+                "level": 130
+            },
+            {
+                "description": "自身血量+ 110%",
+                "level": 140
+            },
+            {
+                "description": "自身血量+ 120%",
+                "level": 150
+            },
+            {
+                "description": "自身血量+ 130%",
+                "level": 160
+            }
+        ],
+        "scarcity": "SR",
+        "nation": "蒙古",
         "actor_category": "游擊隊",
         "weapon_name": "刀劍"
     },
@@ -3819,51 +3948,6 @@
         "actor_category": "間諜",
         "weapon_name": "爆裂"
     },
-    "桂暘": {
-        "name": "桂暘",
-        "passive_skills": [
-            {
-                "description": "反賊聯盟陣營成員攻擊力+5%",
-                "level": 10
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+10% 自身受到傷害-5%自身血量+ 5%",
-                "level": 20
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+15% 自身受到傷害-10%自身血量+ 10%",
-                "level": 30
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+20% 自身受到傷害-15%自身血量+ 15%",
-                "level": 40
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+25% 自身受到傷害-20%自身血量+ 20%",
-                "level": 50
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+30% 自身受到傷害-25%自身血量+ 25%",
-                "level": 60
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+35% 自身受到傷害-30%自身血量+ 30%",
-                "level": 70
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+40% 自身受到傷害-35%自身血量+ 35%",
-                "level": 80
-            },
-            {
-                "description": "反賊聯盟陣營成員攻擊力+45% 自身受到傷害-40%自身血量+ 35%",
-                "level": 90
-            }
-        ],
-        "scarcity": "R",
-        "nation": "反賊聯盟",
-        "actor_category": "游擊隊",
-        "weapon_name": "刀劍"
-    },
     "亨利": {
         "name": "亨利",
         "passive_skills": [
@@ -3908,6 +3992,51 @@
         "nation": "香港",
         "actor_category": "游擊隊",
         "weapon_name": "重擊"
+    },
+    "桂暘": {
+        "name": "桂暘",
+        "passive_skills": [
+            {
+                "description": "反賊聯盟陣營成員攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+10% 自身受到傷害-5%自身血量+ 5%",
+                "level": 20
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+15% 自身受到傷害-10%自身血量+ 10%",
+                "level": 30
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+20% 自身受到傷害-15%自身血量+ 15%",
+                "level": 40
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+25% 自身受到傷害-20%自身血量+ 20%",
+                "level": 50
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+30% 自身受到傷害-25%自身血量+ 25%",
+                "level": 60
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+35% 自身受到傷害-30%自身血量+ 30%",
+                "level": 70
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+40% 自身受到傷害-35%自身血量+ 35%",
+                "level": 80
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+45% 自身受到傷害-40%自身血量+ 35%",
+                "level": 90
+            }
+        ],
+        "scarcity": "R",
+        "nation": "反賊聯盟",
+        "actor_category": "游擊隊",
+        "weapon_name": "刀劍"
     },
     "阿勒騰別克": {
         "name": "阿勒騰別克",
@@ -3982,55 +4111,6 @@
         "actor_category": "資助者",
         "weapon_name": "重擊"
     },
-    "貢確嘉": {
-        "name": "貢確嘉",
-        "passive_skills": [
-            {
-                "description": "藏國陣營成員血量+ 5%",
-                "level": 10
-            },
-            {
-                "description": "藏國陣營成員血量+ 5%",
-                "level": 20
-            },
-            {
-                "description": " 藏國陣營成員受到傷害-5%藏國陣營成員血量+ 5%",
-                "level": 30
-            },
-            {
-                "description": " 藏國陣營成員受到傷害-5%藏國陣營成員血量+ 10%",
-                "level": 40
-            },
-            {
-                "description": " 藏國陣營成員受到傷害-10%藏國陣營成員血量+ 10%",
-                "level": 50
-            },
-            {
-                "description": " 藏國陣營成員受到傷害-10%藏國陣營成員血量+ 15%",
-                "level": 60
-            },
-            {
-                "description": " 藏國陣營成員受到傷害-15%藏國陣營成員血量+ 15%",
-                "level": 70
-            },
-            {
-                "description": " 藏國陣營成員受到傷害-15%藏國陣營成員血量+ 20%",
-                "level": 80
-            },
-            {
-                "description": " 藏國陣營成員受到傷害-20%藏國陣營成員血量+ 20%",
-                "level": 90
-            },
-            {
-                "description": "自身血量+ 10%",
-                "level": 100
-            }
-        ],
-        "scarcity": "R",
-        "nation": "藏國",
-        "actor_category": "宣傳家",
-        "weapon_name": "槍械"
-    },
     "都固爾蘇隆": {
         "name": "都固爾蘇隆",
         "passive_skills": [
@@ -4079,6 +4159,55 @@
         "nation": "蒙古",
         "actor_category": "宣傳家",
         "weapon_name": "言靈"
+    },
+    "貢確嘉": {
+        "name": "貢確嘉",
+        "passive_skills": [
+            {
+                "description": "藏國陣營成員血量+ 5%",
+                "level": 10
+            },
+            {
+                "description": "藏國陣營成員血量+ 5%",
+                "level": 20
+            },
+            {
+                "description": " 藏國陣營成員受到傷害-5%藏國陣營成員血量+ 5%",
+                "level": 30
+            },
+            {
+                "description": " 藏國陣營成員受到傷害-5%藏國陣營成員血量+ 10%",
+                "level": 40
+            },
+            {
+                "description": " 藏國陣營成員受到傷害-10%藏國陣營成員血量+ 10%",
+                "level": 50
+            },
+            {
+                "description": " 藏國陣營成員受到傷害-10%藏國陣營成員血量+ 15%",
+                "level": 60
+            },
+            {
+                "description": " 藏國陣營成員受到傷害-15%藏國陣營成員血量+ 15%",
+                "level": 70
+            },
+            {
+                "description": " 藏國陣營成員受到傷害-15%藏國陣營成員血量+ 20%",
+                "level": 80
+            },
+            {
+                "description": " 藏國陣營成員受到傷害-20%藏國陣營成員血量+ 20%",
+                "level": 90
+            },
+            {
+                "description": "自身血量+ 10%",
+                "level": 100
+            }
+        ],
+        "scarcity": "R",
+        "nation": "藏國",
+        "actor_category": "宣傳家",
+        "weapon_name": "槍械"
     },
     "賽卡爾": {
         "name": "賽卡爾",
@@ -5017,79 +5146,6 @@
         "actor_category": "宣傳家",
         "weapon_name": "言靈"
     },
-    "托米莉斯": {
-        "name": "托米莉斯",
-        "passive_skills": [
-            {
-                "description": "自身攻擊力+5%",
-                "level": 10
-            },
-            {
-                "description": "自身攻擊力+10%自身血量+ 5%",
-                "level": 20
-            },
-            {
-                "description": "自身攻擊力+15%自身血量+ 5%",
-                "level": 30
-            },
-            {
-                "description": "自身攻擊力+20% 自身受到傷害-5%自身血量+ 5%",
-                "level": 40
-            },
-            {
-                "description": "自身攻擊力+25% 自身受到傷害-5%自身血量+ 10%",
-                "level": 50
-            },
-            {
-                "description": "自身攻擊力+30% 自身受到傷害-5%自身血量+ 10%",
-                "level": 60
-            },
-            {
-                "description": "自身攻擊力+35% 自身受到傷害-5%自身血量+ 10%",
-                "level": 70
-            },
-            {
-                "description": "自身攻擊力+40% 自身受到傷害-10%自身血量+ 15%",
-                "level": 80
-            },
-            {
-                "description": "自身攻擊力+45% 自身受到傷害-10%自身血量+ 15%",
-                "level": 90
-            },
-            {
-                "description": "自身攻擊力+50% 自身受到傷害-10%自身血量+ 15%",
-                "level": 100
-            },
-            {
-                "description": "自身攻擊力+55% 自身受到傷害-10%自身血量+ 20%",
-                "level": 110
-            },
-            {
-                "description": "自身攻擊力+60% 自身受到傷害-15%自身血量+ 20%",
-                "level": 120
-            },
-            {
-                "description": "自身攻擊力+65% 自身受到傷害-15%自身血量+ 20%",
-                "level": 130
-            },
-            {
-                "description": "自身攻擊力+70% 自身受到傷害-15%自身血量+ 25%",
-                "level": 140
-            },
-            {
-                "description": "自身攻擊力+75% 自身受到傷害-15%自身血量+ 25%",
-                "level": 150
-            },
-            {
-                "description": "自身攻擊力+80% 自身受到傷害-20%自身血量+ 25%",
-                "level": 160
-            }
-        ],
-        "scarcity": "SR",
-        "nation": "哈薩克",
-        "actor_category": "游擊隊",
-        "weapon_name": "槍械"
-    },
     "岩恩": {
         "name": "岩恩",
         "passive_skills": [
@@ -5160,6 +5216,79 @@
         ],
         "scarcity": "SR",
         "nation": "自由勢力",
+        "actor_category": "游擊隊",
+        "weapon_name": "槍械"
+    },
+    "托米莉斯": {
+        "name": "托米莉斯",
+        "passive_skills": [
+            {
+                "description": "自身攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "自身攻擊力+10%自身血量+ 5%",
+                "level": 20
+            },
+            {
+                "description": "自身攻擊力+15%自身血量+ 5%",
+                "level": 30
+            },
+            {
+                "description": "自身攻擊力+20% 自身受到傷害-5%自身血量+ 5%",
+                "level": 40
+            },
+            {
+                "description": "自身攻擊力+25% 自身受到傷害-5%自身血量+ 10%",
+                "level": 50
+            },
+            {
+                "description": "自身攻擊力+30% 自身受到傷害-5%自身血量+ 10%",
+                "level": 60
+            },
+            {
+                "description": "自身攻擊力+35% 自身受到傷害-5%自身血量+ 10%",
+                "level": 70
+            },
+            {
+                "description": "自身攻擊力+40% 自身受到傷害-10%自身血量+ 15%",
+                "level": 80
+            },
+            {
+                "description": "自身攻擊力+45% 自身受到傷害-10%自身血量+ 15%",
+                "level": 90
+            },
+            {
+                "description": "自身攻擊力+50% 自身受到傷害-10%自身血量+ 15%",
+                "level": 100
+            },
+            {
+                "description": "自身攻擊力+55% 自身受到傷害-10%自身血量+ 20%",
+                "level": 110
+            },
+            {
+                "description": "自身攻擊力+60% 自身受到傷害-15%自身血量+ 20%",
+                "level": 120
+            },
+            {
+                "description": "自身攻擊力+65% 自身受到傷害-15%自身血量+ 20%",
+                "level": 130
+            },
+            {
+                "description": "自身攻擊力+70% 自身受到傷害-15%自身血量+ 25%",
+                "level": 140
+            },
+            {
+                "description": "自身攻擊力+75% 自身受到傷害-15%自身血量+ 25%",
+                "level": 150
+            },
+            {
+                "description": "自身攻擊力+80% 自身受到傷害-20%自身血量+ 25%",
+                "level": 160
+            }
+        ],
+        "scarcity": "SR",
+        "nation": "哈薩克",
         "actor_category": "游擊隊",
         "weapon_name": "槍械"
     },
@@ -5365,6 +5494,135 @@
         "actor_category": "資助者",
         "weapon_name": "爆裂"
     },
+    "樂樂": {
+        "name": "樂樂",
+        "passive_skills": [
+            {
+                "description": "自身攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "自身攻擊力+10%",
+                "level": 20
+            },
+            {
+                "description": "自身攻擊力+10%間諜型成員血量+ 5%",
+                "level": 30
+            },
+            {
+                "description": "自身攻擊力+15%間諜型成員血量+ 5%",
+                "level": 40
+            },
+            {
+                "description": "自身攻擊力+15%間諜型成員血量+ 10%",
+                "level": 50
+            },
+            {
+                "description": "自身攻擊力+20%間諜型成員血量+ 10%",
+                "level": 60
+            },
+            {
+                "description": "自身攻擊力+20%間諜型成員血量+ 15%",
+                "level": 70
+            },
+            {
+                "description": "自身攻擊力+25%間諜型成員血量+ 15%",
+                "level": 80
+            },
+            {
+                "description": "自身攻擊力+25%間諜型成員血量+ 20%",
+                "level": 90
+            },
+            {
+                "description": "自身攻擊力+30% 自身受到傷害-5%間諜型成員血量+ 20%",
+                "level": 100
+            },
+            {
+                "description": "自身攻擊力+30% 自身受到傷害-5%間諜型成員血量+ 25%",
+                "level": 110
+            },
+            {
+                "description": "自身攻擊力+35% 自身受到傷害-5%間諜型成員血量+ 25%",
+                "level": 120
+            },
+            {
+                "description": "自身攻擊力+35% 自身受到傷害-5%間諜型成員血量+ 30%",
+                "level": 130
+            },
+            {
+                "description": "自身攻擊力+40% 自身受到傷害-5%間諜型成員血量+ 30%",
+                "level": 140
+            },
+            {
+                "description": "自身攻擊力+40% 自身受到傷害-10%間諜型成員血量+ 35%",
+                "level": 150
+            },
+            {
+                "description": "自身攻擊力+45% 自身受到傷害-10%間諜型成員血量+ 35%",
+                "level": 160
+            },
+            {
+                "description": "自身攻擊力+45% 自身受到傷害-10%間諜型成員血量+ 40%",
+                "level": 170
+            },
+            {
+                "description": "自身攻擊力+50% 自身受到傷害-10%間諜型成員血量+ 40%",
+                "level": 180
+            },
+            {
+                "description": "自身攻擊力+50% 自身受到傷害-10%間諜型成員血量+ 45%",
+                "level": 190
+            },
+            {
+                "description": "自身攻擊力+55% 自身受到傷害-15%間諜型成員血量+ 45%",
+                "level": 200
+            },
+            {
+                "description": "自身攻擊力+55% 自身受到傷害-15%間諜型成員血量+ 50%",
+                "level": 210
+            },
+            {
+                "description": "自身攻擊力+60% 自身受到傷害-15%間諜型成員血量+ 50%",
+                "level": 220
+            },
+            {
+                "description": "自身攻擊力+60% 自身受到傷害-15%間諜型成員血量+ 55%",
+                "level": 230
+            },
+            {
+                "description": "自身攻擊力+65% 自身受到傷害-15%間諜型成員血量+ 55%",
+                "level": 240
+            },
+            {
+                "description": "自身攻擊力+65% 自身受到傷害-20%間諜型成員血量+ 60%",
+                "level": 250
+            },
+            {
+                "description": "自身攻擊力+70% 自身受到傷害-20%間諜型成員血量+ 60%",
+                "level": 260
+            },
+            {
+                "description": "自身攻擊力+75% 自身受到傷害-20%間諜型成員血量+ 65%",
+                "level": 270
+            },
+            {
+                "description": "自身攻擊力+80% 自身受到傷害-20%間諜型成員血量+ 65%",
+                "level": 280
+            },
+            {
+                "description": "自身攻擊力+85% 自身受到傷害-20%間諜型成員血量+ 65%",
+                "level": 290
+            },
+            {
+                "description": "自身攻擊力+90% 自身受到傷害-25%間諜型成員血量+ 65%",
+                "level": 300
+            }
+        ],
+        "scarcity": "SSR",
+        "nation": "自由勢力",
+        "actor_category": "間諜",
+        "weapon_name": "槍械"
+    },
     "嘉欣": {
         "name": "嘉欣",
         "passive_skills": [
@@ -5494,263 +5752,263 @@
         "actor_category": "宣傳家",
         "weapon_name": "爆裂"
     },
-    "阿邁德": {
-        "name": "阿邁德",
+    "蔣娘": {
+        "name": "蔣娘",
         "passive_skills": [
             {
-                "description": " 維吾爾陣營成員受到傷害-5%",
+                "description": "自身攻擊力+5%",
                 "level": 10
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%",
+                "description": "自身攻擊力+10%",
                 "level": 20
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
+                "description": "自身攻擊力+20%",
                 "level": 30
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
+                "description": "自身攻擊力+30%",
                 "level": 40
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 5%",
+                "description": "自身攻擊力+40%",
                 "level": 50
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 10%",
+                "description": "自身攻擊力+50%",
                 "level": 60
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 10%",
+                "description": "自身攻擊力+60%",
                 "level": 70
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 10%",
+                "description": "自身攻擊力+70%",
                 "level": 80
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-5%維吾爾陣營成員血量+ 15%",
+                "description": "自身攻擊力+80%",
                 "level": 90
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 15%",
+                "description": "自身攻擊力+90%",
                 "level": 100
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 15%",
+                "description": "自身攻擊力+95%",
                 "level": 110
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 20%",
+                "description": "自身攻擊力+105%",
                 "level": 120
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 20%",
+                "description": "自身攻擊力+110%",
                 "level": 130
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 20%",
+                "description": "自身攻擊力+120%",
                 "level": 140
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 25%",
+                "description": "自身攻擊力+130%",
                 "level": 150
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 25%",
+                "description": "自身攻擊力+140%",
                 "level": 160
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 25%",
+                "description": "自身攻擊力+150%",
                 "level": 170
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 30%",
+                "description": "自身攻擊力+160%",
                 "level": 180
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-10%維吾爾陣營成員血量+ 30%",
+                "description": "自身攻擊力+170%",
                 "level": 190
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 30%",
+                "description": "自身攻擊力+180%",
                 "level": 200
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 35%",
+                "description": "自身攻擊力+185%",
                 "level": 210
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 35%",
+                "description": "自身攻擊力+190%",
                 "level": 220
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 35%",
+                "description": "自身攻擊力+200%",
                 "level": 230
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 40%",
+                "description": "自身攻擊力+210%",
                 "level": 240
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 40%",
+                "description": "自身攻擊力+220%",
                 "level": 250
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 40%",
+                "description": "自身攻擊力+230%",
                 "level": 260
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 45%",
+                "description": "自身攻擊力+240%",
                 "level": 270
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 45%",
+                "description": "自身攻擊力+250%",
                 "level": 280
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-15%維吾爾陣營成員血量+ 45%",
+                "description": "自身攻擊力+260%",
                 "level": 290
             },
             {
-                "description": " 維吾爾陣營成員受到傷害-20%維吾爾陣營成員血量+ 50%",
+                "description": "自身攻擊力+270%",
                 "level": 300
             }
         ],
         "scarcity": "SSR",
         "nation": "自由勢力",
         "actor_category": "資助者",
-        "weapon_name": "槍械"
+        "weapon_name": "重擊"
     },
-    "習近平": {
-        "name": "習近平",
+    "綹明": {
+        "name": "綹明",
         "passive_skills": [
             {
-                "description": "宣傳家型成員攻擊力+5%",
+                "description": "反賊聯盟陣營成員血量+ 5%",
                 "level": 10
             },
             {
-                "description": "宣傳家型成員攻擊力+5%自身血量+ 5%",
+                "description": "反賊聯盟陣營成員血量+ 10%",
                 "level": 20
             },
             {
-                "description": "宣傳家型成員攻擊力+5% 自身受到傷害-5%自身血量+ 5%",
+                "description": "反賊聯盟陣營成員血量+ 10%",
                 "level": 30
             },
             {
-                "description": "宣傳家型成員攻擊力+10% 自身受到傷害-5%自身血量+ 10%",
+                "description": "反賊聯盟陣營成員血量+ 15%",
                 "level": 40
             },
             {
-                "description": "宣傳家型成員攻擊力+15% 自身受到傷害-5%自身血量+ 10%",
+                "description": "反賊聯盟陣營成員血量+ 15%",
                 "level": 50
             },
             {
-                "description": "宣傳家型成員攻擊力+20% 自身受到傷害-5%自身血量+ 15%",
+                "description": "反賊聯盟陣營成員血量+ 20%",
                 "level": 60
             },
             {
-                "description": "宣傳家型成員攻擊力+25% 自身受到傷害-5%自身血量+ 15%",
+                "description": "反賊聯盟陣營成員血量+ 20%",
                 "level": 70
             },
             {
-                "description": "宣傳家型成員攻擊力+30% 自身受到傷害-5%自身血量+ 20%",
+                "description": "反賊聯盟陣營成員血量+ 25%",
                 "level": 80
             },
             {
-                "description": "宣傳家型成員攻擊力+35% 自身受到傷害-5%自身血量+ 20%",
+                "description": "反賊聯盟陣營成員血量+ 30%",
                 "level": 90
             },
             {
-                "description": "宣傳家型成員攻擊力+35% 自身受到傷害-10%自身血量+ 25%",
+                "description": " 反賊聯盟陣營成員受到傷害-5%反賊聯盟陣營成員血量+ 30%",
                 "level": 100
             },
             {
-                "description": "宣傳家型成員攻擊力+40% 自身受到傷害-10%自身血量+ 25%",
+                "description": " 反賊聯盟陣營成員受到傷害-5%反賊聯盟陣營成員血量+ 30%",
                 "level": 110
             },
             {
-                "description": "宣傳家型成員攻擊力+45% 自身受到傷害-10%自身血量+ 30%",
+                "description": " 反賊聯盟陣營成員受到傷害-5%反賊聯盟陣營成員血量+ 35%",
                 "level": 120
             },
             {
-                "description": "宣傳家型成員攻擊力+50% 自身受到傷害-10%自身血量+ 30%",
+                "description": " 反賊聯盟陣營成員受到傷害-5%反賊聯盟陣營成員血量+ 35%",
                 "level": 130
             },
             {
-                "description": "宣傳家型成員攻擊力+55% 自身受到傷害-10%自身血量+ 35%",
+                "description": " 反賊聯盟陣營成員受到傷害-5%反賊聯盟陣營成員血量+ 40%",
                 "level": 140
             },
             {
-                "description": "宣傳家型成員攻擊力+60% 自身受到傷害-10%自身血量+ 35%",
+                "description": " 反賊聯盟陣營成員受到傷害-10%反賊聯盟陣營成員血量+ 40%",
                 "level": 150
             },
             {
-                "description": "宣傳家型成員攻擊力+60% 自身受到傷害-10%自身血量+ 40%",
+                "description": " 反賊聯盟陣營成員受到傷害-10%反賊聯盟陣營成員血量+ 40%",
                 "level": 160
             },
             {
-                "description": "宣傳家型成員攻擊力+65% 自身受到傷害-15%自身血量+ 40%",
+                "description": " 反賊聯盟陣營成員受到傷害-10%反賊聯盟陣營成員血量+ 40%",
                 "level": 170
             },
             {
-                "description": "宣傳家型成員攻擊力+65% 自身受到傷害-15%自身血量+ 45%",
+                "description": " 反賊聯盟陣營成員受到傷害-10%反賊聯盟陣營成員血量+ 45%",
                 "level": 180
             },
             {
-                "description": "宣傳家型成員攻擊力+70% 自身受到傷害-15%自身血量+ 45%",
+                "description": " 反賊聯盟陣營成員受到傷害-10%反賊聯盟陣營成員血量+ 45%",
                 "level": 190
             },
             {
-                "description": "宣傳家型成員攻擊力+70% 自身受到傷害-15%自身血量+ 50%",
+                "description": " 反賊聯盟陣營成員受到傷害-15%反賊聯盟陣營成員血量+ 45%",
                 "level": 200
             },
             {
-                "description": "宣傳家型成員攻擊力+75% 自身受到傷害-15%自身血量+ 50%",
+                "description": " 反賊聯盟陣營成員受到傷害-15%反賊聯盟陣營成員血量+ 50%",
                 "level": 210
             },
             {
-                "description": "宣傳家型成員攻擊力+80% 自身受到傷害-15%自身血量+ 55%",
+                "description": " 反賊聯盟陣營成員受到傷害-15%反賊聯盟陣營成員血量+ 50%",
                 "level": 220
             },
             {
-                "description": "宣傳家型成員攻擊力+85% 自身受到傷害-15%自身血量+ 55%",
+                "description": " 反賊聯盟陣營成員受到傷害-15%反賊聯盟陣營成員血量+ 50%",
                 "level": 230
             },
             {
-                "description": "宣傳家型成員攻擊力+85% 自身受到傷害-20%自身血量+ 60%",
+                "description": " 反賊聯盟陣營成員受到傷害-15%反賊聯盟陣營成員血量+ 55%",
                 "level": 240
             },
             {
-                "description": "宣傳家型成員攻擊力+90% 自身受到傷害-20%自身血量+ 60%",
+                "description": " 反賊聯盟陣營成員受到傷害-20%反賊聯盟陣營成員血量+ 55%",
                 "level": 250
             },
             {
-                "description": "宣傳家型成員攻擊力+95% 自身受到傷害-20%自身血量+ 65%",
+                "description": " 反賊聯盟陣營成員受到傷害-20%反賊聯盟陣營成員血量+ 55%",
                 "level": 260
             },
             {
-                "description": "宣傳家型成員攻擊力+100% 自身受到傷害-20%自身血量+ 65%",
+                "description": " 反賊聯盟陣營成員受到傷害-20%反賊聯盟陣營成員血量+ 60%",
                 "level": 270
             },
             {
-                "description": "宣傳家型成員攻擊力+100% 自身受到傷害-20%自身血量+ 70%",
+                "description": " 反賊聯盟陣營成員受到傷害-20%反賊聯盟陣營成員血量+ 60%",
                 "level": 280
             },
             {
-                "description": "宣傳家型成員攻擊力+105% 自身受到傷害-20%自身血量+ 70%",
+                "description": " 反賊聯盟陣營成員受到傷害-20%反賊聯盟陣營成員血量+ 60%",
                 "level": 290
             },
             {
-                "description": "宣傳家型成員攻擊力+105% 自身受到傷害-25%自身血量+ 70%",
+                "description": " 反賊聯盟陣營成員受到傷害-25%反賊聯盟陣營成員血量+ 65%",
                 "level": 300
             }
         ],
         "scarcity": "SSR",
-        "nation": "紅軍",
+        "nation": "反賊聯盟",
         "actor_category": "宣傳家",
-        "weapon_name": "爆裂"
+        "weapon_name": "暗器"
     },
     "科蘿": {
         "name": "科蘿",
@@ -5880,135 +6138,6 @@
         "nation": "滿洲",
         "actor_category": "游擊隊",
         "weapon_name": "槍械"
-    },
-    "蔣娘": {
-        "name": "蔣娘",
-        "passive_skills": [
-            {
-                "description": "自身攻擊力+5%",
-                "level": 10
-            },
-            {
-                "description": "自身攻擊力+10%",
-                "level": 20
-            },
-            {
-                "description": "自身攻擊力+20%",
-                "level": 30
-            },
-            {
-                "description": "自身攻擊力+30%",
-                "level": 40
-            },
-            {
-                "description": "自身攻擊力+40%",
-                "level": 50
-            },
-            {
-                "description": "自身攻擊力+50%",
-                "level": 60
-            },
-            {
-                "description": "自身攻擊力+60%",
-                "level": 70
-            },
-            {
-                "description": "自身攻擊力+70%",
-                "level": 80
-            },
-            {
-                "description": "自身攻擊力+80%",
-                "level": 90
-            },
-            {
-                "description": "自身攻擊力+90%",
-                "level": 100
-            },
-            {
-                "description": "自身攻擊力+95%",
-                "level": 110
-            },
-            {
-                "description": "自身攻擊力+105%",
-                "level": 120
-            },
-            {
-                "description": "自身攻擊力+110%",
-                "level": 130
-            },
-            {
-                "description": "自身攻擊力+120%",
-                "level": 140
-            },
-            {
-                "description": "自身攻擊力+130%",
-                "level": 150
-            },
-            {
-                "description": "自身攻擊力+140%",
-                "level": 160
-            },
-            {
-                "description": "自身攻擊力+150%",
-                "level": 170
-            },
-            {
-                "description": "自身攻擊力+160%",
-                "level": 180
-            },
-            {
-                "description": "自身攻擊力+170%",
-                "level": 190
-            },
-            {
-                "description": "自身攻擊力+180%",
-                "level": 200
-            },
-            {
-                "description": "自身攻擊力+185%",
-                "level": 210
-            },
-            {
-                "description": "自身攻擊力+190%",
-                "level": 220
-            },
-            {
-                "description": "自身攻擊力+200%",
-                "level": 230
-            },
-            {
-                "description": "自身攻擊力+210%",
-                "level": 240
-            },
-            {
-                "description": "自身攻擊力+220%",
-                "level": 250
-            },
-            {
-                "description": "自身攻擊力+230%",
-                "level": 260
-            },
-            {
-                "description": "自身攻擊力+240%",
-                "level": 270
-            },
-            {
-                "description": "自身攻擊力+250%",
-                "level": 280
-            },
-            {
-                "description": "自身攻擊力+260%",
-                "level": 290
-            },
-            {
-                "description": "自身攻擊力+270%",
-                "level": 300
-            }
-        ],
-        "scarcity": "SSR",
-        "nation": "自由勢力",
-        "actor_category": "資助者",
-        "weapon_name": "重擊"
     },
     "趙彤": {
         "name": "趙彤",
