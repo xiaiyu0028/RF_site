@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/design-system.css">
     <style>
+        .actor-name-input.is-invalid {
+            border-color: #dc3545;
+            background-color: rgba(220, 53, 69, 0.06);
+        }
+
         .actor-selection {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr auto;
@@ -258,6 +263,7 @@
                 parsedActors = await response.json();
                 actorNames = Object.keys(parsedActors).sort((a, b) => a.localeCompare(b, 'zh-TW'));
                 console.log(`載入 ${actorNames.length} 個角色資料`);
+                buildActorDatalist();
 
                 // 自動新增第一個角色選擇
                 addActorSelection();
@@ -284,6 +290,21 @@
             document.getElementById('actorCountBadge').textContent = `${count} 個角色`;
         }
 
+        // 建立角色名稱的搜尋清單（所有角色列共用同一份 datalist）
+        function buildActorDatalist() {
+            let datalist = document.getElementById('actor-datalist');
+            if (!datalist) {
+                datalist = document.createElement('datalist');
+                datalist.id = 'actor-datalist';
+                document.body.appendChild(datalist);
+            }
+            datalist.innerHTML = actorNames.map(name => {
+                const info = parsedActors[name] || {};
+                const label = [info.scarcity, info.nation, info.actor_category].filter(Boolean).join(' · ');
+                return `<option value="${name}"${label ? ` label="${label}"` : ''}></option>`;
+            }).join('');
+        }
+
         // 新增角色選擇區塊
         function addActorSelection() {
             if (!parsedActors) {
@@ -300,10 +321,9 @@
             div.innerHTML = `
                 <div class="actor-input-group">
                     <label>角色名稱</label>
-                    <select class="form-control" id="actor-select-${id}" onchange="updateActorInfo(${id})">
-                        <option value="">-- 請選擇角色 --</option>
-                        ${actorNames.map(name => `<option value="${name}">${name}</option>`).join('')}
-                    </select>
+                    <input type="text" class="form-control actor-name-input" id="actor-select-${id}"
+                           list="actor-datalist" autocomplete="off" placeholder="輸入名稱搜尋…"
+                           oninput="updateActorInfo(${id})" onchange="updateActorInfo(${id})">
                 </div>
                 <div class="actor-input-group">
                     <label>稀有度</label>
@@ -349,8 +369,11 @@
         // 更新角色資訊
         function updateActorInfo(id) {
             const select = document.getElementById(`actor-select-${id}`);
-            const actorName = select.value;
+            const actorName = select.value.trim();
             const scarcityDiv = document.getElementById(`scarcity-${id}`);
+
+            // 打字中或打錯字時給視覺提示，避免無效名稱在計算時被靜默略過
+            select.classList.toggle('is-invalid', Boolean(actorName) && !parsedActors[actorName]);
 
             if (actorName && parsedActors[actorName]) {
                 const scarcity = parsedActors[actorName].scarcity || 'R';
@@ -533,6 +556,7 @@
                 try {
                     // 收集所有選擇的角色
                     const actors = [];
+                    const unknownNames = [];
                     const actorElements = document.querySelectorAll('.actor-selection');
 
                     actorElements.forEach((element) => {
@@ -555,8 +579,20 @@
                                 hasCostume: hasCostume,
                                 scarcity: parsedActors[name].scarcity || 'R'
                             });
+                        } else if (name) {
+                            unknownNames.push(name);
                         }
                     });
+
+                    if (unknownNames.length > 0) {
+                        resultsDiv.innerHTML = `
+                            <div class="alert alert-warning">
+                                ⚠️ 找不到這些角色：${unknownNames.join('、')}<br>
+                                請從搜尋清單中選擇正確的角色名稱。
+                            </div>
+                        `;
+                        return;
+                    }
 
                     if (actors.length === 0) {
                         resultsDiv.innerHTML = `
