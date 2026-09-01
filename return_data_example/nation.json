@@ -250,7 +250,7 @@
   ],
   "nations": [
     {
-      "players": 24486,
+      "players": 24522,
       "title": "大陸的征服者與主宰者",
       "id": 1,
       "flag": "/images/home/flag/bigflag01CM.png",
@@ -264,7 +264,7 @@
       "seal_image": "/images/nation/seal/Scoa01CM.png",
       "alert": {
         "image": "/images/nation/red_army.png",
-        "text": ""
+        "text": "可使用紅軍專屬的角色與劇情"
       },
       "main_image": "/images/nation/main/fg01CM.png",
       "slogan_background_image": "/images/nation/slogan_background/mottos01CM.png",
@@ -277,7 +277,7 @@
       "can_change_seal": false,
       "description_subtitle": "大陸的征服者與主宰者",
       "strategy_background": "/images/nation/strategy_background/str01CM.png",
-      "control_cities": 44,
+      "control_cities": 77,
       "seal": "/images/nation/seal/Scoa01CM.png",
       "alliance": "共產陣營",
       "diplomatic_strategy_ids": [
@@ -286,37 +286,38 @@
         8
       ],
       "selectable_general_strategy_ids": [
-        2,
+        3,
         7,
         9,
         10,
         23
       ],
       "city_color": "fd1e19",
-      "controll_cities": 72,
+      "controll_cities": 73,
       "diplomatic_strategy_id": 9,
       "commander": {
         "flag": "/images/home/flag/bigflag01CM.png",
-        "image": "/images/actor/head/avatarTW01C.png",
-        "name": "炒飯王子毛岸英",
+        "image": "/images/actor/head/avatarTB02.png",
+        "name": "掏粪男孩",
         "seal": "/images/nation/seal/Scoa01CM.png",
         "title": "最高領導人",
-        "union": "🇹🇼東方餡掛炒飯",
-        "union_id": 4893,
-        "user_id": 680060
+        "union": "🇹🇼掏糞會員制炒布丁",
+        "union_id": 23,
+        "user_id": 738892
       },
       "commander_words_background": "/images/nation/commander_words_background/edict01CM.png",
       "seal_categories": null,
       "general_strategy_ids": [
-        21,
-        20,
         1,
-        6,
-        24,
-        26,
-        5,
+        20,
         22,
-        25
+        26,
+        2,
+        6,
+        21,
+        5,
+        25,
+        24
       ],
       "street_site": {
         "image": "/images/site/street/sv_north_china.png",
@@ -362,7 +363,8 @@
       "ministers": [
         {
           "image": "/images/nation/ministry/A02.png",
-          "minister": null,
+          "minister": "🇹🇼树维党中秋烤花蟹",
+          "minister_union_id": 11,
           "ministry": {
             "id": 2,
             "name": "國安委"
@@ -370,7 +372,8 @@
         },
         {
           "image": "/images/nation/ministry/A03.png",
-          "minister": null,
+          "minister": "🇹🇼炒鱔魚(冷氣開放中)",
+          "minister_union_id": 5575,
           "ministry": {
             "id": 3,
             "name": "中央軍委"
@@ -378,7 +381,8 @@
         },
         {
           "image": "/images/nation/ministry/A04.png",
-          "minister": null,
+          "minister": "🇹🇼鱼薯",
+          "minister_union_id": 5404,
           "ministry": {
             "id": 4,
             "name": "組織部"
@@ -386,7 +390,8 @@
         },
         {
           "image": "/images/nation/ministry/A05.png",
-          "minister": null,
+          "minister": "🇹🇼躺平熱炒店阿姨盛",
+          "minister_union_id": 914,
           "ministry": {
             "id": 5,
             "name": "中宣部"
@@ -394,8 +399,8 @@
         },
         {
           "image": "/images/nation/ministry/A01.png",
-          "minister": "🇹🇼東方餡掛炒飯",
-          "minister_union_id": 4893,
+          "minister": "🇹🇼掏糞會員制炒布丁",
+          "minister_union_id": 23,
           "ministry": {
             "id": 1,
             "name": "書記處"
@@ -403,7 +408,8 @@
         },
         {
           "image": "/images/nation/ministry/A06.png",
-          "minister": null,
+          "minister": "🇹🇼日本熱炒鯊魚煙",
+          "minister_union_id": 3108,
           "ministry": {
             "id": 6,
             "name": "統戰部"
@@ -411,7 +417,8 @@
         },
         {
           "image": "/images/nation/ministry/A07.png",
-          "minister": null,
+          "minister": "地獄業火焚身辣炒海鮮花枝",
+          "minister_union_id": 5420,
           "ministry": {
             "id": 7,
             "name": "中紀委"
@@ -419,7 +426,8 @@
         },
         {
           "image": "/images/nation/ministry/A08.png",
-          "minister": null,
+          "minister": "🇹🇼韓先楚月底炒泡麵",
+          "minister_union_id": 5562,
           "ministry": {
             "id": 8,
             "name": "政法委"
@@ -427,7 +435,8 @@
         },
         {
           "image": "/images/nation/ministry/A09.png",
-          "minister": null,
+          "minister": "🇹🇼烤樂樂腩胇（附炒飯）",
+          "minister_union_id": 4893,
           "ministry": {
             "id": 9,
             "name": "外事委"
@@ -436,7 +445,7 @@
       ]
     },
     {
-      "players": 51402,
+      "players": 51439,
       "title": "禦敵千年的海東古國",
       "id": 2,
       "flag": "/images/home/flag/bigflag08TW.png",
@@ -450,7 +459,7 @@
       "seal_image": "/images/nation/seal/Scoa08TW.png",
       "alert": {
         "image": "/images/nation/alert.png",
-        "text": ""
+        "text": "參加人數較多的陣營 玩家較難爭取部門與城鎮資源"
       },
       "main_image": "/images/nation/main/fg08TW.png",
       "slogan_background_image": "/images/nation/slogan_background/mottos08TW.png",
@@ -463,13 +472,13 @@
       "can_change_seal": false,
       "description_subtitle": "供清帝拓殖的海外墾地",
       "strategy_background": "/images/nation/strategy_background/str08TW.png",
-      "control_cities": 30,
+      "control_cities": 16,
       "seal": "/images/nation/seal/Scoa08TW.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        1,
+        9,
         6,
-        9
+        1
       ],
       "selectable_general_strategy_ids": [
         3,
@@ -477,12 +486,12 @@
         9,
         11,
         14,
-        17,
+        18,
         23,
         25
       ],
       "city_color": "06859e",
-      "controll_cities": 25,
+      "controll_cities": 19,
       "diplomatic_strategy_id": 9,
       "commander": {
         "flag": "/images/home/flag/bigflag08TW.png",
@@ -497,15 +506,16 @@
       "commander_words_background": "/images/nation/commander_words_background/edict08TW.png",
       "seal_categories": null,
       "general_strategy_ids": [
-        2,
         5,
-        1,
         6,
-        21,
-        22,
-        20,
+        17,
         10,
-        24
+        22,
+        1,
+        21,
+        24,
+        2,
+        20
       ],
       "street_site": {
         "image": "/images/site/street/sv_taiwan.png",
@@ -536,7 +546,7 @@
         "voted": false
       },
       "commander_words": [
-        "一念天堂 一念地獄",
+        "今天做運動了沒",
         null,
         null
       ],
@@ -578,7 +588,8 @@
         },
         {
           "image": "/images/nation/ministry/A05.png",
-          "minister": null,
+          "minister": "馬其頓領事館",
+          "minister_union_id": 19026,
           "ministry": {
             "id": 14,
             "name": "公關處"
@@ -604,8 +615,7 @@
         },
         {
           "image": "/images/nation/ministry/A07.png",
-          "minister": "吉祥物抹茶不想喝香菜奶茶",
-          "minister_union_id": 6845,
+          "minister": null,
           "ministry": {
             "id": 16,
             "name": "監察處"
@@ -632,7 +642,7 @@
       ]
     },
     {
-      "players": 35959,
+      "players": 35973,
       "title": "負隅頑抗的海港城邦",
       "id": 3,
       "flag": "/images/home/flag/bigflag02HK.png",
@@ -646,7 +656,7 @@
       "seal_image": "/images/nation/seal/Scoa02HK.png",
       "alert": {
         "image": "/images/nation/alert.png",
-        "text": ""
+        "text": "參加人數較多的陣營 玩家較難爭取部門與城鎮資源"
       },
       "main_image": "/images/nation/main/fg02HK.png",
       "slogan_background_image": "/images/nation/slogan_background/mottos02HK.png",
@@ -659,12 +669,12 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝割讓的海港城邦",
       "strategy_background": "/images/nation/strategy_background/str02HK.png",
-      "control_cities": 13,
+      "control_cities": 25,
       "seal": "/images/nation/seal/Scoa02HK.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        10,
         5,
+        10,
         1
       ],
       "selectable_general_strategy_ids": [
@@ -674,10 +684,10 @@
         14,
         17,
         23,
-        25
+        26
       ],
       "city_color": "ae43ec",
-      "controll_cities": 29,
+      "controll_cities": 27,
       "diplomatic_strategy_id": 10,
       "commander": {
         "flag": "/images/home/flag/bigflag02HK.png",
@@ -692,15 +702,16 @@
       "commander_words_background": "/images/nation/commander_words_background/edict02HK.png",
       "seal_categories": null,
       "general_strategy_ids": [
-        6,
-        5,
-        24,
         20,
         10,
         21,
-        7,
         22,
-        1
+        1,
+        5,
+        6,
+        7,
+        24,
+        25
       ],
       "street_site": {
         "image": "/images/site/street/sv_hongkong.png",
@@ -820,7 +831,7 @@
       ]
     },
     {
-      "players": 5550,
+      "players": 5551,
       "title": "半壁淪陷的的古老汗國",
       "id": 8,
       "flag": "/images/home/flag/bigflag03MG.png",
@@ -844,13 +855,13 @@
       "can_change_seal": false,
       "description_subtitle": "隨清帝共治的血盟鐵騎",
       "strategy_background": "/images/nation/strategy_background/str03MG.png",
-      "control_cities": 71,
+      "control_cities": 44,
       "seal": "/images/nation/seal/Scoa03MG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        6,
+        3,
         8,
-        3
+        6
       ],
       "selectable_general_strategy_ids": [
         3,
@@ -858,11 +869,11 @@
         9,
         11,
         14,
-        18,
+        19,
         24
       ],
       "city_color": "008af7",
-      "controll_cities": 13,
+      "controll_cities": 20,
       "diplomatic_strategy_id": 8,
       "commander": {
         "flag": "/images/home/flag/bigflag03MG.png",
@@ -877,14 +888,15 @@
       "commander_words_background": "/images/nation/commander_words_background/edict03MG.png",
       "seal_categories": null,
       "general_strategy_ids": [
-        20,
-        21,
         17,
-        5,
+        18,
         1,
-        23,
+        5,
+        21,
         2,
         10,
+        23,
+        20,
         22
       ],
       "street_site": {
@@ -931,8 +943,8 @@
       "ministers": [
         {
           "image": "/images/nation/ministry/A02.png",
-          "minister": "蒙屬楚城護法",
-          "minister_union_id": 12364,
+          "minister": "海盜戰車",
+          "minister_union_id": 2771,
           "ministry": {
             "id": 11,
             "name": "保防處"
@@ -949,8 +961,8 @@
         },
         {
           "image": "/images/nation/ministry/A04.png",
-          "minister": "長生天",
-          "minister_union_id": 763,
+          "minister": "蒙古人事成本太高啦啦",
+          "minister_union_id": 2847,
           "ministry": {
             "id": 13,
             "name": "人事處"
@@ -958,8 +970,8 @@
         },
         {
           "image": "/images/nation/ministry/A05.png",
-          "minister": "海盜戰車",
-          "minister_union_id": 2771,
+          "minister": "米糕好吃😋",
+          "minister_union_id": 10185,
           "ministry": {
             "id": 14,
             "name": "公關處"
@@ -976,8 +988,8 @@
         },
         {
           "image": "/images/nation/ministry/A06.png",
-          "minister": "噔噔！神奇滅殺港紅雲吞麵",
-          "minister_union_id": 3398,
+          "minister": "究極奧義：敵滅瞬獄殺！",
+          "minister_union_id": 3047,
           "ministry": {
             "id": 15,
             "name": "政戰處"
@@ -985,8 +997,8 @@
         },
         {
           "image": "/images/nation/ministry/A07.png",
-          "minister": "米糕好吃😋",
-          "minister_union_id": 10185,
+          "minister": "蒙屬楚城護法",
+          "minister_union_id": 12364,
           "ministry": {
             "id": 16,
             "name": "監察處"
@@ -994,8 +1006,8 @@
         },
         {
           "image": "/images/nation/ministry/A08.png",
-          "minister": "究極奧義：敵滅瞬獄殺！",
-          "minister_union_id": 3047,
+          "minister": "噔噔！神奇滅殺港紅雲吞麵",
+          "minister_union_id": 3398,
           "ministry": {
             "id": 17,
             "name": "法制處"
@@ -1003,8 +1015,8 @@
         },
         {
           "image": "/images/nation/ministry/A09.png",
-          "minister": "蒙古人事成本太高啦啦",
-          "minister_union_id": 2847,
+          "minister": "長生天",
+          "minister_union_id": 763,
           "ministry": {
             "id": 18,
             "name": "外事處"
@@ -1013,7 +1025,7 @@
       ]
     },
     {
-      "players": 7646,
+      "players": 7673,
       "title": "赤焰灼燒的雪域佛土",
       "id": 4,
       "flag": "/images/home/flag/bigflag04TB.png",
@@ -1037,7 +1049,7 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝互尊的雪域佛土",
       "strategy_background": "/images/nation/strategy_background/str04TB.png",
-      "control_cities": 61,
+      "control_cities": 13,
       "seal": "/images/nation/seal/Scoa04TB.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1049,34 +1061,37 @@
         2,
         7,
         9,
-        10,
+        11,
+        14,
+        17,
         23
       ],
       "city_color": "46be7f",
-      "controll_cities": 30,
+      "controll_cities": 43,
       "diplomatic_strategy_id": 1,
       "commander": {
         "flag": "/images/home/flag/bigflag04TB.png",
-        "image": "/images/actor/head/avatarUG05.png",
-        "name": "人民議會助理Ti",
+        "image": "/images/actor/head/avatarHK05.png",
+        "name": "阿蘭岱青的閨蜜",
         "seal": "/images/nation/seal/Scoa04TB.png",
         "title": "噶倫",
         "union": "西藏人民議會",
         "union_id": 1492,
-        "user_id": 824526
+        "user_id": 743545
       },
       "commander_words_background": "/images/nation/commander_words_background/edict04TB.png",
       "seal_categories": null,
       "general_strategy_ids": [
-        6,
-        1,
-        20,
-        26,
-        21,
         22,
-        25,
+        26,
+        1,
         24,
-        5
+        5,
+        6,
+        21,
+        25,
+        10,
+        20
       ],
       "street_site": {
         "image": "/images/site/street/sv_tibet.png",
@@ -1107,9 +1122,9 @@
         "voted": false
       },
       "commander_words": [
-        "維吾爾天方區週日混戰活動進行中！",
-        "非原生維吾爾軍加入戰區一律視為潛在敵對勢力",
-        "日後將不定期點名喔～"
+        "佛光會投稿待機中",
+        "敬請期待！",
+        null
       ],
       "music": "BGM04.mp3",
       "slogan": [
@@ -1185,7 +1200,7 @@
         },
         {
           "image": "/images/nation/ministry/A08.png",
-          "minister": "西藏人民議會不丹雷龍軍",
+          "minister": "企鵝復興帶領南極洲",
           "minister_union_id": 7729,
           "ministry": {
             "id": 17,
@@ -1194,8 +1209,8 @@
         },
         {
           "image": "/images/nation/ministry/A09.png",
-          "minister": "8964貓力銀行",
-          "minister_union_id": 4444,
+          "minister": "Pilgrim Team",
+          "minister_union_id": 21534,
           "ministry": {
             "id": 18,
             "name": "外事處"
@@ -1204,7 +1219,7 @@
       ]
     },
     {
-      "players": 5561,
+      "players": 5570,
       "title": "馳騁國界的自由騎手",
       "id": 6,
       "flag": "/images/home/flag/bigflag05KZ.png",
@@ -1228,17 +1243,17 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝合作的自由牧人",
       "strategy_background": "/images/nation/strategy_background/str05KZ.png",
-      "control_cities": 3,
+      "control_cities": 12,
       "seal": "/images/nation/seal/Scoa05KZ.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        8,
+        3,
         7,
-        3
+        8
       ],
       "selectable_general_strategy_ids": [
         3,
-        6,
+        7,
         9,
         11,
         14,
@@ -1247,30 +1262,31 @@
         24
       ],
       "city_color": "00e9e4",
-      "controll_cities": 34,
+      "controll_cities": 38,
       "diplomatic_strategy_id": 8,
       "commander": {
         "flag": "/images/home/flag/bigflag05KZ.png",
-        "image": "/images/actor/head/avatarTW01.png",
-        "name": "哈老觀光團霸總特助",
+        "image": "/images/actor/head/avatarKZ02.png",
+        "name": "穆空誠",
         "seal": "/images/nation/seal/Scoa05KZ.png",
         "title": "主席",
-        "union": "哈拉木圖社畜老人觀光團",
-        "union_id": 279,
-        "user_id": 839650
+        "union": "蛇足",
+        "union_id": 4602,
+        "user_id": 674649
       },
       "commander_words_background": "/images/nation/commander_words_background/edict05KZ.png",
       "seal_categories": null,
       "general_strategy_ids": [
         10,
         20,
-        21,
-        22,
+        2,
         1,
         5,
+        21,
+        22,
+        6,
         17,
-        18,
-        2
+        18
       ],
       "street_site": {
         "image": "/images/site/street/sv_kazakh.png",
@@ -1301,7 +1317,7 @@
         "voted": false
       },
       "commander_words": [
-        "QAQ",
+        "即日起就是自由時間",
         null,
         null
       ],
@@ -1325,8 +1341,7 @@
         },
         {
           "image": "/images/nation/ministry/A03.png",
-          "minister": "此路不通",
-          "minister_union_id": 1302,
+          "minister": null,
           "ministry": {
             "id": 12,
             "name": "參謀部"
@@ -1352,8 +1367,8 @@
         },
         {
           "image": "/images/nation/ministry/A01.png",
-          "minister": "哈拉木圖社畜老人觀光團",
-          "minister_union_id": 279,
+          "minister": "蛇足",
+          "minister_union_id": 4602,
           "ministry": {
             "id": 10,
             "name": "祕書處"
@@ -1361,8 +1376,7 @@
         },
         {
           "image": "/images/nation/ministry/A06.png",
-          "minister": "鳥拉席露",
-          "minister_union_id": 4310,
+          "minister": null,
           "ministry": {
             "id": 15,
             "name": "政戰處"
@@ -1370,8 +1384,7 @@
         },
         {
           "image": "/images/nation/ministry/A07.png",
-          "minister": "增G",
-          "minister_union_id": 5818,
+          "minister": null,
           "ministry": {
             "id": 16,
             "name": "監察處"
@@ -1388,8 +1401,8 @@
         },
         {
           "image": "/images/nation/ministry/A09.png",
-          "minister": "🌿蛤們🌿",
-          "minister_union_id": 1747,
+          "minister": "帝惃の地獄小車車",
+          "minister_union_id": 3528,
           "ministry": {
             "id": 18,
             "name": "外事處"
@@ -1398,7 +1411,7 @@
       ]
     },
     {
-      "players": 5645,
+      "players": 5649,
       "title": "流淌血淚的沙漠七城",
       "id": 5,
       "flag": "/images/home/flag/bigflag06UG.png",
@@ -1422,7 +1435,7 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝把持的沙漠七城",
       "strategy_background": "/images/nation/strategy_background/str06UG.png",
-      "control_cities": 14,
+      "control_cities": 11,
       "seal": "/images/nation/seal/Scoa06UG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1436,10 +1449,10 @@
         11,
         14,
         17,
-        21
+        22
       ],
       "city_color": "74a0f6",
-      "controll_cities": 20,
+      "controll_cities": 10,
       "diplomatic_strategy_id": 7,
       "commander": {
         "flag": "/images/home/flag/bigflag06UG.png",
@@ -1454,15 +1467,16 @@
       "commander_words_background": "/images/nation/commander_words_background/edict06UG.png",
       "seal_categories": null,
       "general_strategy_ids": [
-        4,
-        3,
         25,
-        26,
-        20,
         2,
+        26,
+        3,
+        1,
+        21,
         10,
         24,
-        1
+        20,
+        4
       ],
       "street_site": {
         "image": "/images/site/street/sv_muslim.png",
@@ -1582,7 +1596,7 @@
       ]
     },
     {
-      "players": 8756,
+      "players": 8761,
       "title": "歷劫毀滅的富饒大地",
       "id": 7,
       "flag": "/images/home/flag/bigflag07MC.png",
@@ -1606,47 +1620,47 @@
       "can_change_seal": false,
       "description_subtitle": "讓清帝崛起的白山黑水",
       "strategy_background": "/images/nation/strategy_background/str07MC.png",
-      "control_cities": 11,
+      "control_cities": 19,
       "seal": "/images/nation/seal/Scoa07MC.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        3,
+        8,
         6,
-        8
+        3
       ],
       "selectable_general_strategy_ids": [
         4,
         7,
-        8,
         10,
         23,
         24
       ],
       "city_color": "fcb900",
-      "controll_cities": 11,
+      "controll_cities": 9,
       "diplomatic_strategy_id": 6,
       "commander": {
         "flag": "/images/home/flag/bigflag07MC.png",
         "image": "/images/actor/head/avatarMC05A.png",
-        "name": "애 лγo",
+        "name": "木下",
         "seal": "/images/nation/seal/Scoa07MC.png",
         "title": "司令",
-        "union": "東京府立第一高等女学校",
-        "union_id": 2851,
-        "user_id": 648308
+        "union": "聖伊蛸基金會-海參崴分會",
+        "union_id": 42,
+        "user_id": 646185
       },
       "commander_words_background": "/images/nation/commander_words_background/edict07MC.png",
       "seal_categories": null,
       "general_strategy_ids": [
-        21,
-        6,
-        5,
         3,
-        20,
-        9,
-        2,
+        21,
         22,
-        1
+        9,
+        20,
+        2,
+        5,
+        1,
+        6,
+        8
       ],
       "street_site": {
         "image": "/images/site/street/sv_manchuria.png",
@@ -1692,8 +1706,8 @@
       "ministers": [
         {
           "image": "/images/nation/ministry/A02.png",
-          "minister": "聖伊蛸基金會-海參崴分會",
-          "minister_union_id": 42,
+          "minister": "東京府立第一高等女学校",
+          "minister_union_id": 2851,
           "ministry": {
             "id": 11,
             "name": "保防處"
@@ -1701,8 +1715,8 @@
         },
         {
           "image": "/images/nation/ministry/A03.png",
-          "minister": "🇹🇼對空六課-蒼角點心坊",
-          "minister_union_id": 2234,
+          "minister": "🇹🇼滿洲聯邦軍（RSS）",
+          "minister_union_id": 14968,
           "ministry": {
             "id": 12,
             "name": "參謀部"
@@ -1710,8 +1724,8 @@
         },
         {
           "image": "/images/nation/ministry/A04.png",
-          "minister": "秘密組織•マイ",
-          "minister_union_id": 2750,
+          "minister": "🇹🇼對空六課《そうかく》",
+          "minister_union_id": 2234,
           "ministry": {
             "id": 13,
             "name": "人事處"
@@ -1719,8 +1733,8 @@
         },
         {
           "image": "/images/nation/ministry/A05.png",
-          "minister": "北方海蘭郵政",
-          "minister_union_id": 11583,
+          "minister": "秘密組織•マイ",
+          "minister_union_id": 2750,
           "ministry": {
             "id": 14,
             "name": "公關處"
@@ -1728,8 +1742,8 @@
         },
         {
           "image": "/images/nation/ministry/A01.png",
-          "minister": "東京府立第一高等女学校",
-          "minister_union_id": 2851,
+          "minister": "聖伊蛸基金會-海參崴分會",
+          "minister_union_id": 42,
           "ministry": {
             "id": 10,
             "name": "祕書處"
@@ -1737,8 +1751,8 @@
         },
         {
           "image": "/images/nation/ministry/A06.png",
-          "minister": "🇹🇼月下翼松🪽",
-          "minister_union_id": 2968,
+          "minister": "🇹🇼讓海蘭珠再次偉大！",
+          "minister_union_id": 5896,
           "ministry": {
             "id": 15,
             "name": "政戰處"
@@ -1746,8 +1760,8 @@
         },
         {
           "image": "/images/nation/ministry/A07.png",
-          "minister": "大清帝國",
-          "minister_union_id": 304,
+          "minister": "🇹🇼月下翼松🪽",
+          "minister_union_id": 2968,
           "ministry": {
             "id": 16,
             "name": "監察處"
@@ -1755,8 +1769,8 @@
         },
         {
           "image": "/images/nation/ministry/A08.png",
-          "minister": "🇹🇼滿洲聯邦軍（RSS）",
-          "minister_union_id": 14968,
+          "minister": "北方海蘭郵政",
+          "minister_union_id": 11583,
           "ministry": {
             "id": 17,
             "name": "法制處"
@@ -1764,8 +1778,8 @@
         },
         {
           "image": "/images/nation/ministry/A09.png",
-          "minister": "🇹🇼讓海蘭珠再次偉大！",
-          "minister_union_id": 5896,
+          "minister": "大清帝國",
+          "minister_union_id": 304,
           "ministry": {
             "id": 18,
             "name": "外事處"
@@ -1774,7 +1788,7 @@
       ]
     },
     {
-      "players": 21786,
+      "players": 21798,
       "title": "蟄伏南洋的華夏反賊",
       "id": 10,
       "flag": "/images/home/flag/bigflag09RB01.png",
@@ -1798,12 +1812,12 @@
       "can_change_seal": true,
       "description_subtitle": "將清帝推翻的華夏各邦",
       "strategy_background": "/images/nation/strategy_background/str09RB.png",
-      "control_cities": 22,
+      "control_cities": 52,
       "seal": "/images/nation/seal/Scoa09RB01.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        9,
         6,
+        9,
         5
       ],
       "selectable_general_strategy_ids": [
@@ -1812,12 +1826,12 @@
         9,
         11,
         14,
-        17,
+        18,
         21,
         26
       ],
       "city_color": "ffffff",
-      "controll_cities": 35,
+      "controll_cities": 30,
       "diplomatic_strategy_id": 6,
       "commander": {
         "flag": "/images/home/flag/bigflag09RB52.png",
@@ -2334,15 +2348,16 @@
         }
       ],
       "general_strategy_ids": [
-        6,
-        1,
-        2,
-        25,
-        24,
-        3,
-        20,
         10,
-        5
+        2,
+        17,
+        6,
+        5,
+        24,
+        25,
+        1,
+        3,
+        20
       ],
       "street_site": {
         "image": "/images/site/street/sv_south_china.png",
@@ -2353,18 +2368,18 @@
       "description": "華夏大地上語言、風俗各異的無數邦國，在近四十年抵抗後被清帝征服與屠戮。兩百餘年奴役後，諸夏各邦在南洋各地籌措革命資金，終於在辛亥年譁變獨立，迫使清帝退位。組成聯盟共治華夏的各邦，卻在抵禦日本入侵後精疲力竭，被興起的紅軍各個擊破、吞併。",
       "street_sites": [
         {
-          "id": 1,
-          "image": "/images/site/street/sv_south_china.png",
-          "name": "華南式",
-          "position": 1010,
-          "window_view": "/images/site/window/wsv_south_china.png"
-        },
-        {
           "id": 4,
           "image": "/images/site/street/sv_indochina.png",
           "name": "印度支那式",
           "position": 1030,
           "window_view": "/images/site/window/wsv_indochina.png"
+        },
+        {
+          "id": 1,
+          "image": "/images/site/street/sv_south_china.png",
+          "name": "華南式",
+          "position": 1010,
+          "window_view": "/images/site/window/wsv_south_china.png"
         }
       ],
       "headquarters": "東亞革命同盟會",
@@ -2395,8 +2410,8 @@
       "ministers": [
         {
           "image": "/images/nation/ministry/A02.png",
-          "minister": "東甌國 新河廿一軍",
-          "minister_union_id": 7312,
+          "minister": "東甌國 臨海七軍",
+          "minister_union_id": 6270,
           "ministry": {
             "id": 11,
             "name": "保防處"
@@ -2422,7 +2437,7 @@
         },
         {
           "image": "/images/nation/ministry/A05.png",
-          "minister": "嘆息的化鼠 醉漬入鹽辛",
+          "minister": "化鼠嘆:現在是誰要退遊?",
           "minister_union_id": 2911,
           "ministry": {
             "id": 14,
@@ -2449,8 +2464,8 @@
         },
         {
           "image": "/images/nation/ministry/A07.png",
-          "minister": "東甌國 臨海七軍",
-          "minister_union_id": 6270,
+          "minister": "東甌國 新河廿一軍",
+          "minister_union_id": 7312,
           "ministry": {
             "id": 16,
             "name": "監察處"
@@ -2458,7 +2473,7 @@
         },
         {
           "image": "/images/nation/ministry/A08.png",
-          "minister": "鮮花戰爭",
+          "minister": "SE.RA.PH",
           "minister_union_id": 450,
           "ministry": {
             "id": 17,
