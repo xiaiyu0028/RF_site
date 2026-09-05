@@ -1,0 +1,478 @@
+{
+    "希拉雅": {
+        "name": "希拉雅",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "59式戰車": {
+        "name": "59式戰車",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "阿雯": {
+        "name": "阿雯",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "習仲勳": {
+        "name": "習仲勳",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "海蘭珠": {
+        "name": "海蘭珠",
+        "has_visit_plot": true,
+        "visitable_city_id": 64,
+        "visitable_city": "AE-maid Café",
+        "relation_level_cap": 2
+    },
+    "瓦旦": {
+        "name": "瓦旦",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "崔赫": {
+        "name": "崔赫",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "葉爾肯": {
+        "name": "葉爾肯",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "黃瑤": {
+        "name": "黃瑤",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "葉爾江": {
+        "name": "葉爾江",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "Sylvia": {
+        "name": "Sylvia",
+        "has_visit_plot": true,
+        "visitable_city_id": 574,
+        "visitable_city": "卡加利",
+        "relation_level_cap": 2
+    },
+    "嘎瓦": {
+        "name": "嘎瓦",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "基少": {
+        "name": "基少",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "俐月": {
+        "name": "俐月",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "習近平": {
+        "name": "習近平",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "段敏": {
+        "name": "段敏",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "雨鞘": {
+        "name": "雨鞘",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "阿邁德": {
+        "name": "阿邁德",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "秋河": {
+        "name": "秋河",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "未央": {
+        "name": "未央",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "忽蘭": {
+        "name": "忽蘭",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "卡姆蘭": {
+        "name": "卡姆蘭",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "次仁拉莫": {
+        "name": "次仁拉莫",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "維亞": {
+        "name": "維亞",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "拜拉姆": {
+        "name": "拜拉姆",
+        "has_visit_plot": true,
+        "visitable_city_id": 509,
+        "visitable_city": "伊德利卜",
+        "relation_level_cap": 2
+    },
+    "黎訓": {
+        "name": "黎訓",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "于征": {
+        "name": "于征",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "米日古麗": {
+        "name": "米日古麗",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "張暖": {
+        "name": "張暖",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "范姜": {
+        "name": "范姜",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "其其格": {
+        "name": "其其格",
+        "has_visit_plot": true,
+        "visitable_city_id": 110,
+        "visitable_city": "烏蘭巴托",
+        "relation_level_cap": 2
+    },
+    "日嘎": {
+        "name": "日嘎",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "樹維": {
+        "name": "樹維",
+        "has_visit_plot": true,
+        "visitable_city_id": 16,
+        "visitable_city": "花蓮",
+        "relation_level_cap": 2
+    },
+    "格桑卓瑪": {
+        "name": "格桑卓瑪",
+        "has_visit_plot": true,
+        "visitable_city_id": 541,
+        "visitable_city": "德里",
+        "relation_level_cap": 2
+    },
+    "玥玥": {
+        "name": "玥玥",
+        "has_visit_plot": true,
+        "visitable_city_id": 57,
+        "visitable_city": "甌哈國抗戰紀念碑",
+        "relation_level_cap": 2
+    },
+    "小寧": {
+        "name": "小寧",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "熱依瑪": {
+        "name": "熱依瑪",
+        "has_visit_plot": true,
+        "visitable_city_id": 286,
+        "visitable_city": "野百合教會",
+        "relation_level_cap": 2
+    },
+    "要武": {
+        "name": "要武",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "巴特爾": {
+        "name": "巴特爾",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "瑪依拉": {
+        "name": "瑪依拉",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "馬胡塞": {
+        "name": "馬胡塞",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "貢布": {
+        "name": "貢布",
+        "has_visit_plot": true,
+        "visitable_city_id": 568,
+        "visitable_city": "阿壩",
+        "relation_level_cap": 1
+    },
+    "明安": {
+        "name": "明安",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "桂暘": {
+        "name": "桂暘",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "亨利": {
+        "name": "亨利",
+        "has_visit_plot": true,
+        "visitable_city_id": 37,
+        "visitable_city": "維多利亞城",
+        "relation_level_cap": 4
+    },
+    "阿勒騰別克": {
+        "name": "阿勒騰別克",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "都固爾蘇隆": {
+        "name": "都固爾蘇隆",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "貢確嘉": {
+        "name": "貢確嘉",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "賽卡爾": {
+        "name": "賽卡爾",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "仁欽": {
+        "name": "仁欽",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "六朝": {
+        "name": "六朝",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "杏仁": {
+        "name": "杏仁",
+        "has_visit_plot": true,
+        "visitable_city_id": 279,
+        "visitable_city": "溫州",
+        "relation_level_cap": 2
+    },
+    "仙姑": {
+        "name": "仙姑",
+        "has_visit_plot": true,
+        "visitable_city_id": 6,
+        "visitable_city": "臺中",
+        "relation_level_cap": 2
+    },
+    "希爾艾力": {
+        "name": "希爾艾力",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "伊斯坎德爾": {
+        "name": "伊斯坎德爾",
+        "has_visit_plot": true,
+        "visitable_city_id": 508,
+        "visitable_city": "哈密",
+        "relation_level_cap": 2
+    },
+    "粉圓": {
+        "name": "粉圓",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "托米莉斯": {
+        "name": "托米莉斯",
+        "has_visit_plot": true,
+        "visitable_city_id": 495,
+        "visitable_city": "春賈",
+        "relation_level_cap": 2
+    },
+    "岩恩": {
+        "name": "岩恩",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "阿勒蘇": {
+        "name": "阿勒蘇",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "樂樂": {
+        "name": "樂樂",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "嘉欣": {
+        "name": "嘉欣",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "蔣娘": {
+        "name": "蔣娘",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "綹明": {
+        "name": "綹明",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "科蘿": {
+        "name": "科蘿",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "趙彤": {
+        "name": "趙彤",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "渤雍": {
+        "name": "渤雍",
+        "has_visit_plot": true,
+        "visitable_city_id": 293,
+        "visitable_city": "北京",
+        "relation_level_cap": 2
+    },
+    "迪麗亞拉": {
+        "name": "迪麗亞拉",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "葉劉": {
+        "name": "葉劉",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    }
+}
