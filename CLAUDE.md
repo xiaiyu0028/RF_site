@@ -38,6 +38,7 @@ Python 依賴見 `requirements-data-update.txt`；`scripts/update_game_data.ps1`
 
 - **國策 / 城鎮**：`scripts/update_game_data.py` 用 HTTP 登入取得 token，再開 WebSocket 送 Phoenix channel 訊息，寫入 `return_data_example/nation.json`、`cities.json`、`update_metadata.json`（原子寫入，且寫入前先 `validate_snapshots()`）。`.gitignore` 只放行這幾個檔，`return_data_example/` 其他內容都不進版控。
 - **城內地點（選用）**：同一支腳本加 `--city-sites visitable|all` 會逐城送 `city_sites` 事件，寫入 `return_data_example/city_sites.json`（`{mode, requested, failed, sites}`）。因為是逐城呼叫（`all` 會打 271 次），預設 `off`，並以 `--city-sites-delay` 節流。`pages/cities.html` 的詳情視窗會自動讀取，缺檔則靜默略過。
+- **city ↔ site 對照表**：`python scripts/build_city_site_index.py` 純本機轉檔（不連 API），讀 `city_sites.json` + `cities.json` 產出 `return_data_example/city_site_index.json`，內含 `cities`（city_id → 城市資訊 + site 清單）與 `sites`（site_id → 所屬城市，反查表）。city_sites.json 更新後要重跑。
 - **角色**：`cal_power/get_actors.py` 把 WebSocket 回應**附加**到 `cal_power/actors.jsonl` → `cal_power/resolve_actors.ipynb` 逐 cell 解析，產出：
   - `parsed_actors.json`（基本資料 + 天賦）
   - `parsed_actors_skill.json`（多一層解析後的被動技能，依等級分段）← 兩個計算器都讀這個
