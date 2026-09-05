@@ -7,12 +7,28 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 816995,
+          "nickname": "五木",
+          "points": 64,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05A.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 739408,
+          "nickname": "滅共前軍委-張又俠",
+          "points": 18,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustCM06.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 743344,
           "nickname": "維吾爾戰鬼蕾朦",
-          "points": 4,
-          "rank": 1
+          "points": 8,
+          "rank": 3
         }
       ],
       "sites": [
@@ -74,7 +90,8 @@
         }
       ],
       "uw_dominance": {
-        "4": 100
+        "4": 9,
+        "5": 91
       },
       "workstation_count": 0
     },
@@ -86,8 +103,24 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 727659,
           "nickname": "月懷昭",
-          "points": 8,
+          "points": 32,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 821050,
+          "nickname": "好喔好喔",
+          "points": 32,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 815058,
+          "nickname": "顧家夏夏",
+          "points": 16,
+          "rank": 3
         }
       ],
       "sites": [
@@ -113,7 +146,32 @@
     },
     "3": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 800888,
+          "nickname": "舒龍琴心",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 798215,
+          "nickname": "喜左衛門",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB01.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 745382,
+          "nickname": "不全鷹",
+          "points": 4,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -130,19 +188,37 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "4": {
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 650012,
+          "nickname": "群群的小號",
+          "points": 64,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 798215,
+          "nickname": "喜左衛門",
+          "points": 40,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 743482,
           "nickname": "山本冷氣",
           "points": 6,
-          "rank": 1
+          "rank": 3
         }
       ],
       "sites": [
@@ -204,7 +280,8 @@
         }
       ],
       "uw_dominance": {
-        "2": 100
+        "10": 2,
+        "2": 98
       },
       "workstation_count": 0
     },
@@ -216,7 +293,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 743482,
           "nickname": "山本冷氣",
-          "points": 32,
+          "points": 128,
           "rank": 1
         },
         {
@@ -224,8 +301,16 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 671572,
           "nickname": "夏夏子-台灣",
-          "points": 6,
+          "points": 96,
           "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/seal/Rcoaw26.png",
+          "id": 652600,
+          "nickname": "□□□",
+          "points": 2,
+          "rank": 3
         }
       ],
       "sites": [
@@ -273,13 +358,39 @@
         }
       ],
       "uw_dominance": {
-        "2": 100
+        "10": 1,
+        "2": 99
       },
       "workstation_count": 0
     },
     "308": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW01.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 654856,
+          "nickname": "初音未來",
+          "points": 12,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 748735,
+          "nickname": "占雲巾",
+          "points": 12,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/seal/Rcoaw26.png",
+          "id": 652600,
+          "nickname": "□□□",
+          "points": 2,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -324,12 +435,24 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 8,
+        "2": 92
+      },
       "workstation_count": 0
     },
     "5": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMXJP.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 692963,
+          "nickname": "抹茶",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -360,18 +483,21 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 0,
+        "2": 100
+      },
       "workstation_count": 0
     },
     "6": {
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustMC05B.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 802983,
-          "nickname": "TECO冷氣",
-          "points": 30,
+          "avatar": "/images/actor/half/bustFRMA01A.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 717938,
+          "nickname": "夕羽",
+          "points": 96,
           "rank": 1
         },
         {
@@ -379,15 +505,15 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 692963,
           "nickname": "抹茶",
-          "points": 20,
+          "points": 68,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustFRSE04.png",
+          "avatar": "/images/actor/half/bustHK05.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
-          "id": 689677,
-          "nickname": "舒龍懷穆",
-          "points": 14,
+          "id": 748735,
+          "nickname": "占雲巾",
+          "points": 48,
           "rank": 3
         }
       ],
@@ -492,9 +618,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 38,
-        "10": 5,
-        "2": 57
+        "1": 9,
+        "10": 3,
+        "2": 87,
+        "3": 1
       },
       "workstation_count": 0
     },
@@ -506,8 +633,16 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 689677,
           "nickname": "舒龍懷穆",
-          "points": 8,
+          "points": 16,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB01.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 745382,
+          "nickname": "不全鷹",
+          "points": 2,
+          "rank": 2
         }
       ],
       "sites": [
@@ -535,12 +670,28 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRMA01B.png",
+          "avatar": "/images/actor/half/bustTW05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 815703,
+          "nickname": "暗影貓",
+          "points": 48,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRNM04.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 802875,
+          "nickname": "暗影殺手",
+          "points": 32,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 728819,
           "nickname": "夜",
-          "points": 6,
-          "rank": 1
+          "points": 24,
+          "rank": 3
         }
       ],
       "sites": [
@@ -588,7 +739,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 100
+        "1": 12,
+        "2": 88
       },
       "workstation_count": 0
     },
@@ -641,7 +793,16 @@
     },
     "11": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 800901,
+          "nickname": "玄真君",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -672,7 +833,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "12": {
@@ -683,7 +846,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 827674,
           "nickname": "九木",
-          "points": 12,
+          "points": 96,
           "rank": 1
         },
         {
@@ -691,7 +854,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 819517,
           "nickname": "霖",
-          "points": 6,
+          "points": 96,
           "rank": 2
         }
       ],
@@ -746,7 +909,32 @@
     },
     "13": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 647125,
+          "nickname": "韓國羽",
+          "points": 96,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 648172,
+          "nickname": "火腿蛋包飯",
+          "points": 64,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 800901,
+          "nickname": "玄真君",
+          "points": 6,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -805,12 +993,31 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "473": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 727659,
+          "nickname": "月懷昭",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 729644,
+          "nickname": "塔禮.西亞斯",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -827,7 +1034,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "1": {
@@ -838,23 +1047,23 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 658703,
           "nickname": "夏夏子",
-          "points": 64,
+          "points": 160,
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustUG05.png",
-          "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 804768,
-          "nickname": "埃爾梅羅二世",
-          "points": 16,
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 793099,
+          "nickname": "夏夏子-中書令",
+          "points": 96,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustFROR05.png",
+          "avatar": "/images/actor/half/bustHK05.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
-          "id": 856931,
-          "nickname": "好少幹部",
-          "points": 12,
+          "id": 732181,
+          "nickname": "夏夏子-臨時盟長",
+          "points": 96,
           "rank": 3
         }
       ],
@@ -938,14 +1147,24 @@
         }
       ],
       "uw_dominance": {
-        "2": 86,
-        "5": 14
+        "10": 0,
+        "2": 99,
+        "7": 0
       },
       "workstation_count": 0
     },
     "15": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 798215,
+          "nickname": "喜左衛門",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -962,7 +1181,9 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "16": {
@@ -972,17 +1193,25 @@
           "avatar": "/images/actor/half/bustFRMA.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 691371,
-          "nickname": "茶惟",
+          "nickname": "傅崐萁",
           "points": 8,
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustFRMA01B.png",
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 798215,
+          "nickname": "喜左衛門",
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 728819,
           "nickname": "夜",
           "points": 4,
-          "rank": 2
+          "rank": 3
         }
       ],
       "sites": [
@@ -1023,14 +1252,23 @@
         }
       ],
       "uw_dominance": {
-        "1": 33,
-        "2": 67
+        "1": 20,
+        "2": 80
       },
       "workstation_count": 0
     },
     "17": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB01.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 745382,
+          "nickname": "不全鷹",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1047,7 +1285,9 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "19": {
@@ -1058,7 +1298,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 661724,
           "nickname": "吞佛童子",
-          "points": 8,
+          "points": 32,
           "rank": 1
         }
       ],
@@ -1099,7 +1339,32 @@
     },
     "474": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMXJP.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 876149,
+          "nickname": "巫醫",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 840782,
+          "nickname": "佩爾狄卡斯",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCMXZX.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 831692,
+          "nickname": "33",
+          "points": 16,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1116,7 +1381,12 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 2,
+        "2": 95,
+        "4": 2,
+        "5": 2
+      },
       "workstation_count": 0
     },
     "21": {
@@ -1160,7 +1430,7 @@
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 689590,
           "nickname": "八方遊龍",
-          "points": 56,
+          "points": 88,
           "rank": 1
         },
         {
@@ -1170,6 +1440,14 @@
           "nickname": "尤貝爾",
           "points": 28,
           "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/seal/Rcoaw26.png",
+          "id": 652600,
+          "nickname": "□□□",
+          "points": 2,
+          "rank": 3
         }
       ],
       "sites": [
@@ -1271,8 +1549,16 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 814055,
           "nickname": "摩卡",
-          "points": 4,
+          "points": 16,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 742866,
+          "nickname": "愛德華",
+          "points": 4,
+          "rank": 2
         }
       ],
       "sites": [
@@ -1298,7 +1584,24 @@
     },
     "43": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 759761,
+          "nickname": "維尼",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 718393,
+          "nickname": "威廉",
+          "points": 8,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1315,7 +1618,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "42": {
@@ -1342,7 +1647,16 @@
     },
     "41": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 675389,
+          "nickname": "OMDB",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1359,7 +1673,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "40": {
@@ -1370,8 +1686,24 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 807718,
           "nickname": "屠蝦",
-          "points": 48,
+          "points": 96,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 682743,
+          "nickname": "。",
+          "points": 4,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 740396,
+          "nickname": "紫色群群",
+          "points": 4,
+          "rank": 3
         }
       ],
       "sites": [
@@ -1432,7 +1764,32 @@
     },
     "45": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 851578,
+          "nickname": "中南美共產瓜柴",
+          "points": 4,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK03.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 774980,
+          "nickname": "倫敦火花",
+          "points": 2,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 831152,
+          "nickname": "劍風雲",
+          "points": 2,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1449,12 +1806,23 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "46": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 761104,
+          "nickname": "溫州台中北京東京春賈",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1471,12 +1839,23 @@
           "ws_name": "博弈"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "48": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 761104,
+          "nickname": "溫州台中北京東京春賈",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1493,12 +1872,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "49": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 749409,
+          "nickname": "陽陽",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1515,12 +1905,23 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "50": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 749409,
+          "nickname": "陽陽",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1537,12 +1938,23 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "51": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 749409,
+          "nickname": "陽陽",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1559,12 +1971,31 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "52": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 761104,
+          "nickname": "溫州台中北京東京春賈",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 831152,
+          "nickname": "劍風雲",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1581,7 +2012,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "37": {
@@ -1592,7 +2025,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 757126,
           "nickname": "醉蝦 ",
-          "points": 48,
+          "points": 128,
           "rank": 1
         },
         {
@@ -1600,15 +2033,15 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 743042,
           "nickname": "夏夏子-香港",
-          "points": 8,
+          "points": 64,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustMC05A.png",
+          "avatar": "/images/actor/half/bustHK01.png",
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
-          "id": 656586,
-          "nickname": "C4-621",
-          "points": 4,
+          "id": 791285,
+          "nickname": "『維尼大會上寬衣』",
+          "points": 32,
           "rank": 3
         }
       ],
@@ -1685,7 +2118,8 @@
         }
       ],
       "uw_dominance": {
-        "3": 100
+        "3": 99,
+        "8": 1
       },
       "workstation_count": 0
     },
@@ -1724,7 +2158,24 @@
     },
     "39": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 675389,
+          "nickname": "OMDB",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCMT59.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 751432,
+          "nickname": "_",
+          "points": 4,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1741,12 +2192,31 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "54": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 761104,
+          "nickname": "溫州台中北京東京春賈",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 831152,
+          "nickname": "劍風雲",
+          "points": 8,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1763,7 +2233,9 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "55": {
@@ -1774,7 +2246,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 815057,
           "nickname": "波隆",
-          "points": 32,
+          "points": 160,
           "rank": 1
         },
         {
@@ -1782,7 +2254,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 729971,
           "nickname": "。",
-          "points": 18,
+          "points": 50,
           "rank": 2
         },
         {
@@ -1790,7 +2262,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 807718,
           "nickname": "屠蝦",
-          "points": 8,
+          "points": 28,
           "rank": 3
         }
       ],
@@ -1867,15 +2339,40 @@
         }
       ],
       "uw_dominance": {
-        "10": 0,
-        "3": 69,
-        "8": 31
+        "10": 2,
+        "3": 79,
+        "8": 20
       },
       "workstation_count": 0
     },
     "23": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 741735,
+          "nickname": "黑色群群",
+          "points": 80,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB03.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 776728,
+          "nickname": "02",
+          "points": 40,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 756120,
+          "nickname": "吾刃尚鋒",
+          "points": 24,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -1948,12 +2445,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "22": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 756120,
+          "nickname": "吾刃尚鋒",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -2026,7 +2534,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "29": {
@@ -2066,12 +2576,20 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustFROR03.png",
+          "emblem": "/images/seal/Rcoaw77.png",
+          "id": 705675,
+          "nickname": "陰川蝴蝶君",
+          "points": 16,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 756120,
           "nickname": "吾刃尚鋒",
           "points": 4,
-          "rank": 1
+          "rank": 2
         }
       ],
       "sites": [
@@ -2100,11 +2618,19 @@
       "kings": [
         {
           "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/seal/Rcoaw24.png",
+          "id": 714912,
+          "nickname": "Gods",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 756120,
           "nickname": "吾刃尚鋒",
           "points": 4,
-          "rank": 1
+          "rank": 2
         }
       ],
       "sites": [
@@ -2278,7 +2804,16 @@
     },
     "31": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB03.png",
+          "emblem": "/images/seal/Rcoaw54.png",
+          "id": 842071,
+          "nickname": "仁",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -2295,7 +2830,9 @@
           "ws_name": "博弈"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "32": {
@@ -2333,7 +2870,16 @@
     },
     "33": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 831113,
+          "nickname": "玄凌蒼",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -2350,7 +2896,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "36": {
@@ -2450,15 +2998,15 @@
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 756120,
           "nickname": "吾刃尚鋒",
-          "points": 44,
+          "points": 352,
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustCMILSY.png",
-          "emblem": "/images/seal/Rcoaw52.png",
-          "id": 822756,
-          "nickname": "炎炎",
-          "points": 36,
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/seal/Rcoaw21.png",
+          "id": 739662,
+          "nickname": "夏夏子-反賊",
+          "points": 130,
           "rank": 2
         },
         {
@@ -2466,7 +3014,7 @@
           "emblem": "/images/seal/Rcoaw24.png",
           "id": 714912,
           "nickname": "Gods",
-          "points": 20,
+          "points": 96,
           "rank": 3
         }
       ],
@@ -2578,7 +3126,12 @@
         }
       ],
       "uw_dominance": {
-        "10": 100
+        "1": 4,
+        "10": 93,
+        "2": 0,
+        "3": 2,
+        "4": 0,
+        "6": 0
       },
       "workstation_count": 0
     },
@@ -2587,11 +3140,27 @@
       "kings": [
         {
           "avatar": "/images/actor/half/bustFRSE05.png",
-          "emblem": "/images/seal/Rcoaw01.png",
+          "emblem": "/images/seal/Rcoaw24.png",
           "id": 652685,
           "nickname": "Unbirth",
-          "points": 72,
+          "points": 160,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCMT59.png",
+          "emblem": "/images/seal/Rcoaw33.png",
+          "id": 751433,
+          "nickname": "_",
+          "points": 20,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCMXJP.png",
+          "emblem": "/images/seal/Rcoaw02.png",
+          "id": 851728,
+          "nickname": "剿匪先鋒蔣公",
+          "points": 10,
+          "rank": 3
         }
       ],
       "sites": [
@@ -2679,8 +3248,16 @@
           "emblem": "/images/seal/Rcoaw24.png",
           "id": 745751,
           "nickname": "Animus",
-          "points": 32,
+          "points": 160,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/seal/Rcoaw16.png",
+          "id": 831681,
+          "nickname": "克拉特魯斯",
+          "points": 20,
+          "rank": 2
         }
       ],
       "sites": [
@@ -2768,8 +3345,16 @@
           "emblem": "/images/seal/Rcoaw24.png",
           "id": 745752,
           "nickname": "Stars",
-          "points": 24,
+          "points": 176,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRMA.png",
+          "emblem": "/images/seal/Rcoaw13.png",
+          "id": 847049,
+          "nickname": "忘宗東西中華蘇維埃是對的",
+          "points": 36,
+          "rank": 2
         }
       ],
       "sites": [
@@ -2867,12 +3452,28 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustTB04.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 744843,
+          "nickname": "綠色群群",
+          "points": 80,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustHK05.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 822015,
           "nickname": "三木",
-          "points": 8,
-          "rank": 1
+          "points": 78,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTB03.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 822410,
+          "nickname": "Lena",
+          "points": 76,
+          "rank": 3
         }
       ],
       "sites": [
@@ -2989,7 +3590,16 @@
     },
     "545": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 752631,
+          "nickname": "隱密狙擊 費倫",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3006,12 +3616,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "538": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 752628,
+          "nickname": "首席資優魔女 愛莉",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3028,12 +3649,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "543": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 799267,
+          "nickname": "Bhikkhu Lv.1",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3050,7 +3682,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "542": {
@@ -3077,7 +3711,16 @@
     },
     "536": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 652912,
+          "nickname": "_",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3094,12 +3737,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "553": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB05.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 812019,
+          "nickname": "吃貨孫女 拉歐芬",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3116,7 +3770,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "554": {
@@ -3143,7 +3799,16 @@
     },
     "556": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB07.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 752633,
+          "nickname": "穿刺魔女 冉則",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3160,12 +3825,39 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "548": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA01A.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 650556,
+          "nickname": "雷克斯",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB03.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 858286,
+          "nickname": "薛薛",
+          "points": 4,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 831113,
+          "nickname": "玄凌蒼",
+          "points": 2,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3182,12 +3874,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "547": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 753940,
+          "nickname": "捕魚問題純屬南極洲內政",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3204,12 +3907,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "552": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC01A.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 830407,
+          "nickname": "南北極同屬一個極圈",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3226,7 +3940,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "551": {
@@ -3237,7 +3953,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 719512,
           "nickname": "天空墓誌銘",
-          "points": 32,
+          "points": 64,
           "rank": 1
         }
       ],
@@ -3284,8 +4000,16 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 752645,
           "nickname": "強烈不滿境外虎鯨勢力",
-          "points": 8,
+          "points": 32,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB03.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 776152,
+          "nickname": "01",
+          "points": 16,
+          "rank": 2
         }
       ],
       "sites": [
@@ -3331,8 +4055,16 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 753940,
           "nickname": "捕魚問題純屬南極洲內政",
-          "points": 24,
+          "points": 48,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 774512,
+          "nickname": "七木",
+          "points": 4,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustTW04.png",
@@ -3340,7 +4072,7 @@
           "id": 821366,
           "nickname": "彭德先生",
           "points": 2,
-          "rank": 2
+          "rank": 3
         }
       ],
       "sites": [
@@ -3394,7 +4126,16 @@
     },
     "537": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMG02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 856650,
+          "nickname": "夜夜",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3425,12 +4166,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "539": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 652912,
+          "nickname": "_",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3461,7 +4213,9 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "540": {
@@ -3472,8 +4226,24 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 749606,
           "nickname": "夏夏子-藏國",
-          "points": 4,
+          "points": 32,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 840469,
+          "nickname": "蘭加羅斯",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFRNM01.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 752225,
+          "nickname": "_",
+          "points": 4,
+          "rank": 3
         }
       ],
       "sites": [
@@ -3526,8 +4296,16 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 830407,
           "nickname": "南北極同屬一個極圈",
-          "points": 8,
+          "points": 16,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB03.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 750659,
+          "nickname": "00",
+          "points": 8,
+          "rank": 2
         }
       ],
       "sites": [
@@ -3575,7 +4353,16 @@
     },
     "510": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 809802,
+          "nickname": "必麒麟",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3592,12 +4379,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "506": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 847369,
+          "nickname": "神棍倒台",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3614,12 +4412,39 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "512": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 745173,
+          "nickname": "Panzer",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 746750,
+          "nickname": "ERA The Mass",
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 847369,
+          "nickname": "神棍倒台",
+          "points": 4,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3636,12 +4461,39 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "499": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 746750,
+          "nickname": "ERA The Mass",
+          "points": 80,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustUG04.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 748340,
+          "nickname": "靛青群群",
+          "points": 48,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 745173,
+          "nickname": "Panzer",
+          "points": 32,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3714,12 +4566,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "498": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK01.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 809452,
+          "nickname": "李仙得",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3736,12 +4599,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "501": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 815579,
+          "nickname": "Hikaru",
+          "points": 24,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3751,7 +4625,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -3765,7 +4639,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -3779,19 +4653,46 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "497": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMG02.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 800763,
+          "nickname": "12",
+          "points": 32,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 649010,
+          "nickname": "649010",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFRNM04A.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 826860,
+          "nickname": "阿格特拉姆•史迪奇",
+          "points": 14,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3850,7 +4751,11 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 29,
+        "5": 14,
+        "6": 57
+      },
       "workstation_count": 0
     },
     "500": {
@@ -3905,7 +4810,16 @@
     },
     "503": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 649010,
+          "nickname": "649010",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -3922,7 +4836,10 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100,
+        "6": 0
+      },
       "workstation_count": 0
     },
     "494": {
@@ -3960,7 +4877,16 @@
     },
     "496": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 738648,
+          "nickname": "帝惃的血",
+          "points": 12,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4005,12 +4931,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "533": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRNM01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 844836,
+          "nickname": "帝惃的腳踝",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4027,7 +4964,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "495": {
@@ -4038,7 +4977,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 693945,
           "nickname": "伊爾畢斯",
-          "points": 4,
+          "points": 8,
           "rank": 1
         }
       ],
@@ -4101,7 +5040,9 @@
         }
       ],
       "uw_dominance": {
-        "6": 100
+        "2": 0,
+        "6": 100,
+        "7": 0
       },
       "workstation_count": 0
     },
@@ -4126,7 +5067,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -4146,23 +5087,23 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 673015,
           "nickname": "陸謙",
-          "points": 36,
+          "points": 68,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 749441,
+          "nickname": "夏夏子-哈薩克",
+          "points": 64,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustTW05.png",
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 780788,
           "nickname": "瘋狂象",
-          "points": 12,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustFRTK04.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
-          "id": 712478,
-          "nickname": "夏安",
-          "points": 6,
+          "points": 48,
           "rank": 3
         }
       ],
@@ -4240,7 +5181,7 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRSE01.png",
+          "avatar": "/images/actor/half/bustFROR01.png",
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 720283,
           "nickname": "綹明",
@@ -4273,7 +5214,7 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRSE01.png",
+          "avatar": "/images/actor/half/bustFROR01.png",
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 720283,
           "nickname": "綹明",
@@ -4304,7 +5245,24 @@
     },
     "489": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 693945,
+          "nickname": "伊爾畢斯",
+          "points": 4,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 720283,
+          "nickname": "綹明",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4321,12 +5279,23 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "491": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 720283,
+          "nickname": "綹明",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4343,7 +5312,9 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "480": {
@@ -4417,7 +5388,16 @@
     },
     "483": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMT59.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 752056,
+          "nickname": "_",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4462,7 +5442,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "485": {
@@ -4489,7 +5471,16 @@
     },
     "479": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 751466,
+          "nickname": "朱雷",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4520,12 +5511,23 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "478": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 724665,
+          "nickname": "維吾爾英靈蕾朦",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4542,7 +5544,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "477": {
@@ -4557,7 +5561,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -4571,11 +5575,11 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustUG03.png",
-          "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 827270,
-          "nickname": "極•蕾朦小秘書",
-          "points": 4,
+          "avatar": "/images/actor/half/bustFRNM04.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 748238,
+          "nickname": "藍綠群群",
+          "points": 56,
           "rank": 1
         },
         {
@@ -4583,8 +5587,16 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 724665,
           "nickname": "維吾爾英靈蕾朦",
-          "points": 4,
+          "points": 16,
           "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustUG03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 827270,
+          "nickname": "極•蕾朦小秘書",
+          "points": 4,
+          "rank": 3
         }
       ],
       "sites": [
@@ -4674,13 +5686,23 @@
         }
       ],
       "uw_dominance": {
-        "5": 100
+        "5": 29,
+        "6": 71
       },
       "workstation_count": 0
     },
     "103": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 825705,
+          "nickname": "只是隻店寵",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4697,12 +5719,31 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "102": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 881357,
+          "nickname": "帝惃的眼睛",
+          "points": 48,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustKZ04.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 815144,
+          "nickname": "群群礦車司機",
+          "points": 24,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4712,7 +5753,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -4726,7 +5767,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -4740,19 +5781,30 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "482": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 881357,
+          "nickname": "帝惃的眼睛",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4769,7 +5821,9 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "481": {
@@ -4784,7 +5838,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -4796,7 +5850,16 @@
     },
     "486": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 720283,
+          "nickname": "綹明",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4813,12 +5876,23 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "492": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 693945,
+          "nickname": "伊爾畢斯",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4835,7 +5909,9 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "487": {
@@ -4884,7 +5960,16 @@
     },
     "117": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 831748,
+          "nickname": "陰川蝴蝶君",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4894,14 +5979,16 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "118": {
@@ -4928,7 +6015,16 @@
     },
     "104": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 720283,
+          "nickname": "綹明",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4959,12 +6055,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "101": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 720283,
+          "nickname": "綹明",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -4974,7 +6081,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -4988,7 +6095,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5002,14 +6109,16 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "100": {
@@ -5024,7 +6133,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5036,7 +6145,16 @@
     },
     "114": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 825078,
+          "nickname": "二號機",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5053,12 +6171,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "116": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMG02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 800331,
+          "nickname": "10",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5068,19 +6197,30 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "115": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustKZ03.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 746859,
+          "nickname": "約翰",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5097,12 +6237,31 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "113": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC01A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 742055,
+          "nickname": "霍金斯",
+          "points": 24,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 719835,
+          "nickname": "初號機",
+          "points": 4,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5133,12 +6292,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "99": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMT59.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 752055,
+          "nickname": "_",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5169,12 +6339,31 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "98": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 719835,
+          "nickname": "初號機",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 851591,
+          "nickname": "中南美之盾委內端拉古巴",
+          "points": 4,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5191,12 +6380,39 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "111": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 712560,
+          "nickname": "維多利亞",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 851591,
+          "nickname": "中南美之盾委內端拉古巴",
+          "points": 4,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 732376,
+          "nickname": "桑拿",
+          "points": 4,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5213,12 +6429,39 @@
           "ws_name": "博弈"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "112": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 719835,
+          "nickname": "初號機",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 851591,
+          "nickname": "中南美之盾委內端拉古巴",
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 712560,
+          "nickname": "維多利亞",
+          "points": 4,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5235,34 +6478,36 @@
           "ws_name": "博弈"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "110": {
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFROR05.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 829667,
-          "nickname": "蔣娘冷氣",
-          "points": 24,
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 746621,
+          "nickname": "夏夏子-蒙古",
+          "points": 96,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 675132,
+          "nickname": "華特",
+          "points": 40,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustFRNM01.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 654848,
           "nickname": "玲雪",
-          "points": 16,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustHK05.png",
-          "emblem": "/images/nation/color_icon/minicoa03MG.png",
-          "id": 746621,
-          "nickname": "夏夏子-蒙古",
-          "points": 12,
+          "points": 32,
           "rank": 3
         }
       ],
@@ -5353,14 +6598,27 @@
         }
       ],
       "uw_dominance": {
-        "1": 39,
-        "8": 61
+        "1": 8,
+        "10": 1,
+        "2": 1,
+        "4": 3,
+        "6": 1,
+        "8": 87
       },
       "workstation_count": 0
     },
     "109": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 748063,
+          "nickname": "藍色群群",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5377,39 +6635,28 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "108": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 732376,
+          "nickname": "桑拿",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
           "energy_charge": null,
           "id": 431,
-          "position": 11,
-          "prop_name": "汽油",
-          "reference_type": "Workstation",
-          "religious": false,
-          "same_nation": false,
-          "side_label": "工作站",
-          "state": 1,
-          "workstation": null,
-          "ws_name": "走私"
-        }
-      ],
-      "uw_dominance": {},
-      "workstation_count": 0
-    },
-    "107": {
-      "can_collect_all": false,
-      "kings": [],
-      "sites": [
-        {
-          "emblem": null,
-          "energy_charge": null,
-          "id": 430,
           "position": 11,
           "prop_name": "汽油",
           "reference_type": "Workstation",
@@ -5421,7 +6668,58 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
+      "workstation_count": 0
+    },
+    "107": {
+      "can_collect_all": false,
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 851591,
+          "nickname": "中南美之盾委內端拉古巴",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 746354,
+          "nickname": "零號機",
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 719835,
+          "nickname": "初號機",
+          "points": 2,
+          "rank": 3
+        }
+      ],
+      "sites": [
+        {
+          "emblem": null,
+          "energy_charge": null,
+          "id": 430,
+          "position": 11,
+          "prop_name": "汽油",
+          "reference_type": "Workstation",
+          "religious": false,
+          "same_nation": false,
+          "side_label": "工作站",
+          "state": 1,
+          "workstation": null,
+          "ws_name": "走私"
+        }
+      ],
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "106": {
@@ -5432,7 +6730,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 678922,
           "nickname": "丫丫",
-          "points": 4,
+          "points": 32,
           "rank": 1
         }
       ],
@@ -5495,7 +6793,24 @@
     },
     "97": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 851591,
+          "nickname": "中南美之盾委內端拉古巴",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 719835,
+          "nickname": "初號機",
+          "points": 8,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5512,12 +6827,32 @@
           "ws_name": "博弈"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 0,
+        "8": 100
+      },
       "workstation_count": 0
     },
     "76": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 827987,
+          "nickname": "Careful",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 750989,
+          "nickname": "賽萬提斯",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5534,12 +6869,23 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "77": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 743313,
+          "nickname": "ぁ",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -5556,7 +6902,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "78": {
@@ -5611,10 +6959,10 @@
       "kings": [
         {
           "avatar": "/images/actor/half/bustFRTK04.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 654460,
           "nickname": "嶼翼",
-          "points": 4,
+          "points": 8,
           "rank": 1
         }
       ],
@@ -5649,7 +6997,7 @@
         }
       ],
       "uw_dominance": {
-        "6": 100
+        "7": 100
       },
       "workstation_count": 0
     },
@@ -5657,11 +7005,11 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustCMXZX.png",
+          "avatar": "/images/actor/half/bustTB02.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
-          "points": 16,
+          "points": 32,
           "rank": 1
         }
       ],
@@ -5674,7 +7022,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5690,11 +7038,11 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustCMXZX.png",
+          "avatar": "/images/actor/half/bustTB02.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
-          "points": 8,
+          "points": 16,
           "rank": 1
         }
       ],
@@ -5707,7 +7055,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5727,7 +7075,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 726927,
           "nickname": "大法冷氣",
-          "points": 40,
+          "points": 96,
           "rank": 1
         }
       ],
@@ -5740,7 +7088,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5754,7 +7102,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5768,7 +7116,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5787,8 +7135,8 @@
           "avatar": "/images/actor/half/bustCMXZX.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 691843,
-          "nickname": "麥帥冷氣",
-          "points": 24,
+          "nickname": "蒙蒙冷氣",
+          "points": 128,
           "rank": 1
         }
       ],
@@ -5849,23 +7197,23 @@
           "emblem": "/images/seal/Rcoaw61.png",
           "id": 807606,
           "nickname": "天喵冷氣",
-          "points": 34,
+          "points": 132,
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustFRMA01B.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 728819,
-          "nickname": "夜",
-          "points": 12,
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 840189,
+          "nickname": "零木",
+          "points": 42,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustCMXJP.png",
-          "emblem": "/images/nation/color_icon/minicoa07MC.png",
-          "id": 725994,
-          "nickname": "躺平冷氣",
-          "points": 8,
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 728819,
+          "nickname": "夜",
+          "points": 38,
           "rank": 3
         }
       ],
@@ -5899,7 +7247,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -5913,7 +7261,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5927,7 +7275,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5941,7 +7289,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5955,7 +7303,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5969,7 +7317,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5977,9 +7325,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 17,
-        "10": 47,
-        "7": 36
+        "1": 12,
+        "10": 41,
+        "7": 37,
+        "8": 10
       },
       "workstation_count": 0
     },
@@ -5991,8 +7340,24 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 725994,
           "nickname": "躺平冷氣",
-          "points": 30,
+          "points": 96,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC02.png",
+          "emblem": "/images/seal/Rcoaw02.png",
+          "id": 844862,
+          "nickname": "紅葉",
+          "points": 24,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03C.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 813539,
+          "nickname": "六木",
+          "points": 2,
+          "rank": 3
         }
       ],
       "sites": [
@@ -6054,7 +7419,9 @@
         }
       ],
       "uw_dominance": {
-        "7": 100
+        "10": 20,
+        "7": 79,
+        "8": 2
       },
       "workstation_count": 0
     },
@@ -6066,8 +7433,24 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 710798,
           "nickname": "薯邦冷氣",
-          "points": 28,
+          "points": 112,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC02.png",
+          "emblem": "/images/seal/Rcoaw02.png",
+          "id": 844862,
+          "nickname": "紅葉",
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 806741,
+          "nickname": "夜玥yue",
+          "points": 2,
+          "rank": 3
         }
       ],
       "sites": [
@@ -6115,7 +7498,9 @@
         }
       ],
       "uw_dominance": {
-        "7": 100
+        "10": 7,
+        "2": 2,
+        "7": 92
       },
       "workstation_count": 0
     },
@@ -6123,12 +7508,28 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 798215,
+          "nickname": "喜左衛門",
+          "points": 12,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFRMA02.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 710798,
           "nickname": "薯邦冷氣",
-          "points": 6,
-          "rank": 1
+          "points": 10,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 800888,
+          "nickname": "舒龍琴心",
+          "points": 10,
+          "rank": 3
         }
       ],
       "sites": [
@@ -6176,13 +7577,23 @@
         }
       ],
       "uw_dominance": {
-        "7": 100
+        "2": 69,
+        "7": 31
       },
       "workstation_count": 0
     },
     "71": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 710798,
+          "nickname": "薯邦冷氣",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6192,7 +7603,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -6206,7 +7617,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6220,7 +7631,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6234,14 +7645,16 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "70": {
@@ -6252,8 +7665,24 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 842539,
           "nickname": "当年明月",
-          "points": 56,
+          "points": 224,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 827987,
+          "nickname": "Careful",
+          "points": 20,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 745442,
+          "nickname": "yuika",
+          "points": 10,
+          "rank": 3
         }
       ],
       "sites": [
@@ -6329,13 +7758,31 @@
         }
       ],
       "uw_dominance": {
-        "1": 100
+        "1": 88,
+        "7": 12
       },
       "workstation_count": 0
     },
     "91": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB06.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 657670,
+          "nickname": "あ",
+          "points": 32,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW05.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 746788,
+          "nickname": "遊客服務中心",
+          "points": 14,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6394,12 +7841,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "92": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB06.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 657670,
+          "nickname": "あ",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6430,7 +7888,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "69": {
@@ -6441,16 +7901,24 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 746788,
           "nickname": "遊客服務中心",
-          "points": 16,
+          "points": 128,
           "rank": 1
         },
         {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 680060,
+          "nickname": "炒飯王子毛岸英",
+          "points": 32,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustFRTK04.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 654460,
           "nickname": "嶼翼",
           "points": 10,
-          "rank": 2
+          "rank": 3
         }
       ],
       "sites": [
@@ -6512,8 +7980,8 @@
         }
       ],
       "uw_dominance": {
-        "6": 38,
-        "7": 62
+        "1": 18,
+        "7": 82
       },
       "workstation_count": 0
     },
@@ -6521,12 +7989,20 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustMC01.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 826328,
+          "nickname": "天鷹座",
+          "points": 16,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustTW05.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 746788,
           "nickname": "遊客服務中心",
           "points": 8,
-          "rank": 1
+          "rank": 2
         }
       ],
       "sites": [
@@ -6552,7 +8028,16 @@
     },
     "80": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05A.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 648308,
+          "nickname": "애 лγo",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6583,34 +8068,36 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "75": {
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRMA02.png",
-          "emblem": "/images/nation/color_icon/minicoa07MC.png",
-          "id": 710798,
-          "nickname": "薯邦冷氣",
-          "points": 8,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustCMXZX.png",
-          "emblem": "/images/nation/color_icon/minicoa07MC.png",
-          "id": 664917,
-          "nickname": "明嵐",
-          "points": 8,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustHK05.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 746619,
           "nickname": "夏夏子-滿州-喵喵汗",
-          "points": 8,
+          "points": 64,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 815111,
+          "nickname": "柴貓",
+          "points": 32,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 840189,
+          "nickname": "零木",
+          "points": 16,
           "rank": 3
         }
       ],
@@ -6672,7 +8159,16 @@
     },
     "79": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustKZ02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 798765,
+          "nickname": "亡命狂徒",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6703,7 +8199,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "83": {
@@ -6711,26 +8209,26 @@
       "kings": [
         {
           "avatar": "/images/actor/half/bustFRTK04.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 654460,
           "nickname": "嶼翼",
-          "points": 10,
+          "points": 88,
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustMC05A.png",
+          "avatar": "/images/actor/half/bustFROR01.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
-          "id": 646185,
-          "nickname": "木下",
-          "points": 2,
+          "id": 744055,
+          "nickname": "黃色群群",
+          "points": 80,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustFRMA.png",
+          "avatar": "/images/actor/half/bustTW01C.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
-          "id": 723696,
-          "nickname": "依禔",
-          "points": 2,
+          "id": 743313,
+          "nickname": "ぁ",
+          "points": 18,
           "rank": 3
         }
       ],
@@ -6807,14 +8305,30 @@
         }
       ],
       "uw_dominance": {
-        "6": 44,
-        "7": 56
+        "7": 100
       },
       "workstation_count": 0
     },
     "82": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 654460,
+          "nickname": "嶼翼",
+          "points": 10,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 743313,
+          "nickname": "ぁ",
+          "points": 6,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6859,12 +8373,39 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "81": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 654460,
+          "nickname": "嶼翼",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB03.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 747279,
+          "nickname": "幼炭",
+          "points": 2,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFROR03.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 701683,
+          "nickname": "柚時澀花",
+          "points": 2,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6923,12 +8464,39 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "86": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR03.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 750369,
+          "nickname": "白天太白",
+          "points": 24,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 654460,
+          "nickname": "嶼翼",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustUG03.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 816102,
+          "nickname": "芏申鈴薯",
+          "points": 2,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6959,12 +8527,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "85": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 654460,
+          "nickname": "嶼翼",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -6995,7 +8574,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "87": {
@@ -7006,7 +8587,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 646185,
           "nickname": "木下",
-          "points": 80,
+          "points": 160,
           "rank": 1
         },
         {
@@ -7014,7 +8595,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 701683,
           "nickname": "柚時澀花",
-          "points": 20,
+          "points": 40,
           "rank": 2
         },
         {
@@ -7022,7 +8603,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 723696,
           "nickname": "依禔",
-          "points": 20,
+          "points": 40,
           "rank": 3
         }
       ],
@@ -7099,7 +8680,9 @@
         }
       ],
       "uw_dominance": {
-        "7": 100
+        "1": 1,
+        "2": 2,
+        "7": 96
       },
       "workstation_count": 0
     },
@@ -7107,11 +8690,11 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustTB03.png",
+          "avatar": "/images/actor/half/bustMC05A.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
-          "id": 747279,
-          "nickname": "幼炭",
-          "points": 4,
+          "id": 648308,
+          "nickname": "애 лγo",
+          "points": 20,
           "rank": 1
         },
         {
@@ -7119,7 +8702,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 701683,
           "nickname": "柚時澀花",
-          "points": 4,
+          "points": 12,
           "rank": 2
         },
         {
@@ -7127,7 +8710,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 723696,
           "nickname": "依禔",
-          "points": 4,
+          "points": 12,
           "rank": 3
         }
       ],
@@ -7206,12 +8789,20 @@
           "rank": 1
         },
         {
+          "avatar": "/images/actor/half/bustMG02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 800369,
+          "nickname": "11",
+          "points": 40,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustMC04.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 859492,
           "nickname": "BoB 小號",
           "points": 24,
-          "rank": 2
+          "rank": 3
         }
       ],
       "sites": [
@@ -7301,7 +8892,8 @@
         }
       ],
       "uw_dominance": {
-        "7": 100
+        "1": 9,
+        "7": 91
       },
       "workstation_count": 0
     },
@@ -7363,8 +8955,16 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 745423,
           "nickname": "才沒有通遼口音昂",
-          "points": 48,
+          "points": 104,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 651784,
+          "nickname": "■■■",
+          "points": 4,
+          "rank": 2
         }
       ],
       "sites": [
@@ -7418,7 +9018,16 @@
     },
     "95": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW05.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 746788,
+          "nickname": "遊客服務中心",
+          "points": 6,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -7463,12 +9072,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "94": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 728819,
+          "nickname": "夜",
+          "points": 32,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -7499,12 +9119,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "93": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 654460,
+          "nickname": "嶼翼",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -7535,12 +9166,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "96": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW05.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 746788,
+          "nickname": "遊客服務中心",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -7557,7 +9199,10 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 0,
+        "7": 100
+      },
       "workstation_count": 0
     },
     "293": {
@@ -7568,23 +9213,23 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 738892,
           "nickname": "掏粪男孩",
-          "points": 88,
+          "points": 264,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 743725,
+          "nickname": "夏夏子-紅軍",
+          "points": 128,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustCM01A.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 801693,
           "nickname": "耶夢加德",
-          "points": 40,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustCM01A.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 830351,
-          "nickname": "。",
-          "points": 16,
+          "points": 64,
           "rank": 3
         }
       ],
@@ -7717,8 +9362,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 97,
-        "10": 3
+        "1": 93,
+        "10": 7
       },
       "workstation_count": 0
     },
@@ -7726,12 +9371,28 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustUG01.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 647295,
+          "nickname": "卓杞篤",
+          "points": 64,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustTW03C.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 787007,
           "nickname": "下雨了",
-          "points": 14,
-          "rank": 1
+          "points": 32,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 840278,
+          "nickname": "突厥蔣娘在線北伐",
+          "points": 24,
+          "rank": 3
         }
       ],
       "sites": [
@@ -7793,7 +9454,8 @@
         }
       ],
       "uw_dominance": {
-        "8": 100
+        "5": 79,
+        "8": 21
       },
       "workstation_count": 0
     },
@@ -7801,12 +9463,28 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustMC01.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 810193,
+          "nickname": "巴耶林",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 750586,
+          "nickname": "克萊圖斯",
+          "points": 8,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustTW03C.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 787007,
           "nickname": "下雨了",
           "points": 4,
-          "rank": 1
+          "rank": 3
         }
       ],
       "sites": [
@@ -7826,7 +9504,8 @@
         }
       ],
       "uw_dominance": {
-        "8": 100
+        "5": 87,
+        "8": 13
       },
       "workstation_count": 0
     },
@@ -7838,8 +9517,24 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 809682,
           "nickname": "天地",
-          "points": 24,
+          "points": 48,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE02.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 819738,
+          "nickname": "張•阿邁德•又俠",
+          "points": 48,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustMC03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 821416,
+          "nickname": "美國德州反美鬥逝-陳平",
+          "points": 48,
+          "rank": 3
         }
       ],
       "sites": [
@@ -7887,7 +9582,8 @@
         }
       ],
       "uw_dominance": {
-        "2": 100
+        "2": 23,
+        "5": 77
       },
       "workstation_count": 0
     },
@@ -7895,27 +9591,27 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustUG04.png",
-          "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 685804,
-          "nickname": "黃少將 ",
-          "points": 12,
-          "rank": 1
-        },
-        {
           "avatar": "/images/actor/half/bustHK05.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 749457,
           "nickname": "夏夏子-維吾爾",
-          "points": 12,
+          "points": 112,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRMA.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 654877,
+          "nickname": "轉生群群",
+          "points": 80,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustTB04A1.png",
+          "avatar": "/images/actor/half/bustUG05.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 745173,
-          "nickname": "Panzer",
-          "points": 10,
+          "id": 821842,
+          "nickname": "棉花甜精靈Lv.64",
+          "points": 64,
           "rank": 3
         }
       ],
@@ -8027,8 +9723,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 6,
-        "5": 94
+        "1": 1,
+        "5": 99
       },
       "workstation_count": 0
     },
@@ -8036,27 +9732,27 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustKZ03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 647670,
+          "nickname": "圖爾遜",
+          "points": 32,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFRTK04.png",
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 692509,
           "nickname": "㱄冶",
           "points": 16,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustKZ03.png",
-          "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 647670,
-          "nickname": "圖爾遜",
-          "points": 16,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustUG04.png",
+          "avatar": "/images/actor/half/bustFRTK04.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 685804,
-          "nickname": "黃少將 ",
-          "points": 2,
+          "id": 698842,
+          "nickname": "大盜韓不助",
+          "points": 16,
           "rank": 3
         }
       ],
@@ -8098,9 +9794,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 6,
-        "10": 44,
-        "5": 50
+        "1": 3,
+        "10": 14,
+        "5": 83
       },
       "workstation_count": 0
     },
@@ -8108,12 +9804,28 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustTW01C.png",
+          "avatar": "/images/actor/half/bustUG01.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 748633,
-          "nickname": "大黑天doro",
-          "points": 2,
+          "id": 659402,
+          "nickname": "Ennyo",
+          "points": 40,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 840044,
+          "nickname": "US Route 66",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05A.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 842983,
+          "nickname": "US Route 21",
+          "points": 16,
+          "rank": 3
         }
       ],
       "sites": [
@@ -8175,7 +9887,8 @@
         }
       ],
       "uw_dominance": {
-        "5": 100
+        "5": 95,
+        "6": 5
       },
       "workstation_count": 0
     },
@@ -8183,27 +9896,27 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRTK04.png",
-          "emblem": "/images/seal/Rcoaw52.png",
-          "id": 692509,
-          "nickname": "㱄冶",
-          "points": 26,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustUG04.png",
-          "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 685804,
-          "nickname": "黃少將 ",
-          "points": 8,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustMC05A.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 739408,
           "nickname": "滅共前軍委-張又俠",
-          "points": 8,
+          "points": 112,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 692509,
+          "nickname": "㱄冶",
+          "points": 72,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 748633,
+          "nickname": "大黑天doro",
+          "points": 32,
           "rank": 3
         }
       ],
@@ -8266,14 +9979,23 @@
         }
       ],
       "uw_dominance": {
-        "10": 53,
-        "5": 47
+        "10": 28,
+        "5": 72
       },
       "workstation_count": 0
     },
     "576": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 649010,
+          "nickname": "649010",
+          "points": 80,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -8346,12 +10068,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "578": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 830658,
+          "nickname": "帝惃的脊椎",
+          "points": 48,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -8396,12 +10129,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "577": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW04.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 802941,
+          "nickname": "檸檬",
+          "points": 6,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -8488,12 +10232,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "579": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 830658,
+          "nickname": "帝惃的脊椎",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -8524,12 +10279,23 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "580": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC01A.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 787956,
+          "nickname": "Pegasus170",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -8588,12 +10354,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "574": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/seal/Rcoaw02.png",
+          "id": 841065,
+          "nickname": "伊丹 耀司",
+          "points": 24,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "access_city_hidden": null,
@@ -8659,12 +10436,39 @@
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "573": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC01A.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 787956,
+          "nickname": "Pegasus170",
+          "points": 128,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRMA01A.png",
+          "emblem": "/images/seal/Rcoaw25.png",
+          "id": 819262,
+          "nickname": "Victoria170",
+          "points": 96,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/seal/Rcoaw02.png",
+          "id": 812268,
+          "nickname": "Concordia170",
+          "points": 80,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -8723,7 +10527,10 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 83,
+        "8": 17
+      },
       "workstation_count": 0
     },
     "567": {
@@ -8734,16 +10541,24 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 814055,
           "nickname": "摩卡",
-          "points": 20,
+          "points": 96,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 675930,
+          "nickname": "ux01",
+          "points": 36,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustFRNM01.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 654848,
           "nickname": "玲雪",
-          "points": 8,
-          "rank": 2
+          "points": 32,
+          "rank": 3
         }
       ],
       "sites": [
@@ -8755,7 +10570,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -8769,7 +10584,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8783,7 +10598,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8797,7 +10612,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8811,7 +10626,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8825,7 +10640,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8833,14 +10648,31 @@
         }
       ],
       "uw_dominance": {
-        "3": 71,
-        "8": 29
+        "3": 52,
+        "8": 48
       },
       "workstation_count": 0
     },
     "566": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 736630,
+          "nickname": "藍葉",
+          "points": 48,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 745908,
+          "nickname": "ux03",
+          "points": 16,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -8850,7 +10682,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -8864,34 +10696,44 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "藥物"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "572": {
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustRB02A.png",
-          "emblem": "/images/nation/color_icon/minicoa02HK.png",
-          "id": 814055,
-          "nickname": "摩卡",
-          "points": 18,
-          "rank": 1
-        },
-        {
           "avatar": "/images/actor/half/bustHK05.png",
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 772613,
           "nickname": "柏靈頓",
-          "points": 4,
+          "points": 98,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 736630,
+          "nickname": "藍葉",
+          "points": 36,
           "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK01A.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 745838,
+          "nickname": "ux02",
+          "points": 28,
+          "rank": 3
         }
       ],
       "sites": [
@@ -8981,13 +10823,39 @@
         }
       ],
       "uw_dominance": {
-        "3": 100
+        "3": 49,
+        "8": 51
       },
       "workstation_count": 0
     },
     "292": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 704393,
+          "nickname": "紅色群群",
+          "points": 80,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCM06.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 832235,
+          "nickname": "。",
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 651784,
+          "nickname": "■■■",
+          "points": 4,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9074,12 +10942,31 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "290": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 808340,
+          "nickname": "夜刀神十香",
+          "points": 20,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 651784,
+          "nickname": "■■■",
+          "points": 4,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9152,7 +11039,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "291": {
@@ -9163,8 +11052,24 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 849760,
           "nickname": "ᡤᡠᠯᡠ ᠯᠠᠮᡠᠨ",
-          "points": 48,
+          "points": 160,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 741723,
+          "nickname": "盜號者羅拉",
+          "points": 34,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 808340,
+          "nickname": "夜刀神十香",
+          "points": 4,
+          "rank": 3
         }
       ],
       "sites": [
@@ -9240,13 +11145,23 @@
         }
       ],
       "uw_dominance": {
-        "7": 100
+        "1": 18,
+        "7": 82
       },
       "workstation_count": 0
     },
     "289": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFROR05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 829667,
+          "nickname": "蔣娘冷氣",
+          "points": 80,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9333,19 +11248,37 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "288": {
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustCM04.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 815141,
+          "nickname": "紅色群群的小寵物",
+          "points": 40,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 821723,
+          "nickname": "茉利亞•史迪奇",
+          "points": 20,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustRB06.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 837926,
           "nickname": "政務官",
-          "points": 2,
-          "rank": 1
+          "points": 4,
+          "rank": 3
         }
       ],
       "sites": [
@@ -9435,13 +11368,31 @@
         }
       ],
       "uw_dominance": {
-        "1": 100
+        "1": 73,
+        "7": 27
       },
       "workstation_count": 0
     },
     "287": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMXJP.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 750309,
+          "nickname": "0",
+          "points": 40,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCM02.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 832922,
+          "nickname": "趙团长",
+          "points": 40,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9514,27 +11465,37 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "294": {
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustCM01A.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 734152,
+          "nickname": "可爾必思",
+          "points": 18,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 651784,
+          "nickname": "■■■",
+          "points": 4,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustTW01C.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 680060,
           "nickname": "炒飯王子毛岸英",
           "points": 2,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustRB06.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 837926,
-          "nickname": "政務官",
-          "points": 2,
-          "rank": 2
+          "rank": 3
         }
       ],
       "sites": [
@@ -9616,7 +11577,16 @@
     },
     "295": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMXJP.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 825178,
+          "nickname": "英仙座",
+          "points": 64,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9675,12 +11645,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "122": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 832459,
+          "nickname": "俏貓",
+          "points": 32,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9711,19 +11692,37 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "121": {
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustCM01A.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 828275,
+          "nickname": "書記官",
+          "points": 12,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustCM04.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 713075,
           "nickname": "谷譽",
-          "points": 4,
-          "rank": 1
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE01.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 742853,
+          "nickname": "班傑明",
+          "points": 6,
+          "rank": 3
         }
       ],
       "sites": [
@@ -9783,7 +11782,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 654848,
           "nickname": "玲雪",
-          "points": 12,
+          "points": 24,
           "rank": 1
         }
       ],
@@ -9824,7 +11823,16 @@
     },
     "123": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 745423,
+          "nickname": "才沒有通遼口音昂",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9869,12 +11877,31 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "124": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 732376,
+          "nickname": "桑拿",
+          "points": 20,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9884,7 +11911,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -9898,7 +11925,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -9912,19 +11939,39 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 9,
+        "8": 91
+      },
       "workstation_count": 0
     },
     "9": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW04.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 833464,
+          "nickname": "忍冬果",
+          "points": 4,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 832459,
+          "nickname": "俏貓",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9941,12 +11988,24 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 33,
+        "8": 67
+      },
       "workstation_count": 0
     },
     "34": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9977,12 +12036,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "14": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 732376,
+          "nickname": "桑拿",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -9999,7 +12069,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "475": {
@@ -10014,7 +12086,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -10026,7 +12098,16 @@
     },
     "476": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW02.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 732376,
+          "nickname": "桑拿",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10043,12 +12124,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "8": 100
+      },
       "workstation_count": 0
     },
     "298": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 738648,
+          "nickname": "帝惃的血",
+          "points": 24,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10093,12 +12185,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "296": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMXZX.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 660479,
+          "nickname": "Regulus",
+          "points": 6,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10143,34 +12246,36 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "297": {
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRMA02.png",
-          "emblem": "/images/nation/color_icon/minicoa04TB.png",
-          "id": 754205,
-          "nickname": "蒙蒙冷氣",
-          "points": 18,
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 802983,
+          "nickname": "TECO冷氣",
+          "points": 112,
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustFROR05.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 829667,
-          "nickname": "蔣娘冷氣",
-          "points": 4,
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 822756,
+          "nickname": "炎炎",
+          "points": 64,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustHK05.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 821269,
-          "nickname": "韓先楚冷氣",
-          "points": 4,
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 34,
           "rank": 3
         }
       ],
@@ -10261,15 +12366,24 @@
         }
       ],
       "uw_dominance": {
-        "1": 31,
-        "10": 13,
-        "4": 56
+        "1": 47,
+        "10": 40,
+        "4": 13
       },
       "workstation_count": 0
     },
     "299": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10328,12 +12442,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "564": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTB02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 664917,
+          "nickname": "明嵐",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10350,7 +12475,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "7": 100
+      },
       "workstation_count": 0
     },
     "300": {
@@ -10361,8 +12488,16 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 719512,
           "nickname": "天空墓誌銘",
-          "points": 8,
+          "points": 32,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCM04.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 840094,
+          "nickname": "真田幸村",
+          "points": 2,
+          "rank": 2
         }
       ],
       "sites": [
@@ -10410,13 +12545,23 @@
         }
       ],
       "uw_dominance": {
-        "4": 100
+        "1": 6,
+        "4": 94
       },
       "workstation_count": 0
     },
     "560": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM02.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 832922,
+          "nickname": "趙团长",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10433,12 +12578,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "511": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW04.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 814583,
+          "nickname": "Kusu",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10455,27 +12611,37 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "508": {
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustCMXZX.png",
+          "avatar": "/images/actor/half/bustMC05B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 835453,
+          "nickname": "碧如煙",
+          "points": 64,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB02.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
           "points": 16,
-          "rank": 1
+          "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustMC05B.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
-          "id": 835453,
-          "nickname": "碧如煙",
-          "points": 8,
-          "rank": 2
+          "avatar": "/images/actor/half/bustFRMA01B.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 688556,
+          "nickname": "威利巴爾德．肯尼希",
+          "points": 16,
+          "rank": 3
         }
       ],
       "sites": [
@@ -10516,14 +12682,25 @@
         }
       ],
       "uw_dominance": {
-        "6": 33,
-        "7": 67
+        "4": 40,
+        "5": 3,
+        "6": 46,
+        "7": 11
       },
       "workstation_count": 0
     },
     "521": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 721047,
+          "nickname": "紅湄",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10540,7 +12717,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "516": {
@@ -10567,7 +12746,24 @@
     },
     "523": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 721047,
+          "nickname": "紅湄",
+          "points": 18,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE02.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 725078,
+          "nickname": "33級的靡",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10640,7 +12836,10 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 90,
+        "5": 10
+      },
       "workstation_count": 0
     },
     "526": {
@@ -10689,7 +12888,16 @@
     },
     "520": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE02.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 725078,
+          "nickname": "33級的靡",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10706,7 +12914,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "519": {
@@ -10755,7 +12965,16 @@
     },
     "515": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustHK01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 746701,
+          "nickname": "_",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10786,12 +13005,39 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "528": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB06.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 647668,
+          "nickname": "菲特．Ｔ哈洛溫",
+          "points": 32,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFROR03.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 646361,
+          "nickname": "希斯特莉亞．雷斯",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFROR01.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 645992,
+          "nickname": "艾莉卡．哈特曼",
+          "points": 16,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10808,12 +13054,24 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 50,
+        "5": 50
+      },
       "workstation_count": 0
     },
     "522": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 847369,
+          "nickname": "神棍倒台",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10830,12 +13088,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "531": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustUG04.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 685804,
+          "nickname": "黃少將 ",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10845,7 +13114,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -10859,14 +13128,16 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "532": {
@@ -10881,7 +13152,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -10893,7 +13164,16 @@
     },
     "525": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRNM01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 844836,
+          "nickname": "帝惃的腳踝",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10924,12 +13204,23 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "6": 100
+      },
       "workstation_count": 0
     },
     "529": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustUG04.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 685804,
+          "nickname": "黃少將 ",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -10946,19 +13237,37 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "524": {
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustUG04.png",
-          "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 685804,
-          "nickname": "黃少將 ",
-          "points": 6,
+          "avatar": "/images/actor/half/bustTB04B.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 812803,
+          "nickname": "維多利亞·Ｅ謝列布里科夫",
+          "points": 96,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRNM04.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 649230,
+          "nickname": "譚雅·馮·提古雷查夫",
+          "points": 48,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustUG05.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 824526,
+          "nickname": "特奧巴登·維斯特曼",
+          "points": 24,
+          "rank": 3
         }
       ],
       "sites": [
@@ -11006,13 +13315,23 @@
         }
       ],
       "uw_dominance": {
-        "5": 100
+        "4": 97,
+        "5": 3
       },
       "workstation_count": 0
     },
     "527": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustUG04.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 685804,
+          "nickname": "黃少將 ",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11029,12 +13348,39 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "535": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustUG03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 720264,
+          "nickname": "聖戰百合 熱依瑪",
+          "points": 32,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustUG03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 862744,
+          "nickname": "祈願的舞團少女",
+          "points": 8,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustUG03.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 829221,
+          "nickname": "芳盈少女熱依瑪",
+          "points": 8,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11051,12 +13397,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "534": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustUG04.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 685804,
+          "nickname": "黃少將 ",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11073,12 +13430,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "530": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 847369,
+          "nickname": "神棍倒台",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11095,12 +13463,31 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "5": 100
+      },
       "workstation_count": 0
     },
     "562": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB04B.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 707064,
+          "nickname": "GOBY_326188",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11117,7 +13504,9 @@
           "ws_name": "博弈"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "546": {
@@ -11144,7 +13533,24 @@
     },
     "555": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 752645,
+          "nickname": "強烈不滿境外虎鯨勢力",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB02.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 664917,
+          "nickname": "明嵐",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "access_city_hidden": null,
@@ -11161,7 +13567,7 @@
           "cur_level": 1,
           "energy_charge": 10,
           "id": 681,
-          "max_level": 16,
+          "max_level": 2,
           "name": "邦達草原",
           "position": 1,
           "reference_type": "Explore",
@@ -11182,12 +13588,32 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 89,
+        "7": 11
+      },
       "workstation_count": 0
     },
     "558": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 840368,
+          "nickname": "玥上尉连长",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRMA01A.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 702970,
+          "nickname": "伊謝爾倫•史迪奇",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11204,12 +13630,32 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 67,
+        "4": 33
+      },
       "workstation_count": 0
     },
     "559": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 2,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRMA01A.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 702970,
+          "nickname": "伊謝爾倫•史迪奇",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11226,12 +13672,23 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "563": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 691584,
+          "nickname": "莫提喵",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11248,12 +13705,24 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 0,
+        "2": 100
+      },
       "workstation_count": 0
     },
     "561": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 2,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11270,12 +13739,31 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "4": 100
+      },
       "workstation_count": 0
     },
     "565": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 744703,
+          "nickname": "黑熊FBI",
+          "points": 4,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 840368,
+          "nickname": "玥上尉连长",
+          "points": 4,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11292,12 +13780,40 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 50,
+        "2": 50
+      },
       "workstation_count": 0
     },
     "568": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 846323,
+          "nickname": "芬里爾·路納雷德",
+          "points": 4,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustKZ03.png",
+          "emblem": "/images/seal/Rcoaw24.png",
+          "id": 669094,
+          "nickname": "休伯利安•史迪奇",
+          "points": 4,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 791791,
+          "nickname": "繆富艾謝•史迪奇",
+          "points": 2,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "access_city_hidden": null,
@@ -11335,12 +13851,32 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 40,
+        "10": 60
+      },
       "workstation_count": 0
     },
     "569": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM01A.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 801693,
+          "nickname": "耶夢加德",
+          "points": 16,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustKZ03.png",
+          "emblem": "/images/seal/Rcoaw24.png",
+          "id": 669094,
+          "nickname": "休伯利安•史迪奇",
+          "points": 4,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "access_city_hidden": null,
@@ -11378,12 +13914,24 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 80,
+        "10": 20
+      },
       "workstation_count": 0
     },
     "571": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCM01A.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 801693,
+          "nickname": "耶夢加德",
+          "points": 4,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "access_city_hidden": null,
@@ -11442,7 +13990,9 @@
           "ws_name": "扎倉"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 100
+      },
       "workstation_count": 0
     },
     "570": {
@@ -11456,20 +14006,28 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRMA02.png",
-          "emblem": "/images/nation/color_icon/minicoa04TB.png",
-          "id": 754205,
-          "nickname": "蒙蒙冷氣",
-          "points": 2,
-          "rank": 1
-        },
-        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 719512,
           "nickname": "天空墓誌銘",
-          "points": 2,
+          "points": 32,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustKZ03.png",
+          "emblem": "/images/seal/Rcoaw24.png",
+          "id": 669094,
+          "nickname": "休伯利安•史迪奇",
+          "points": 32,
           "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 791791,
+          "nickname": "繆富艾謝•史迪奇",
+          "points": 8,
+          "rank": 3
         }
       ],
       "sites": [
@@ -11524,7 +14082,8 @@
         }
       ],
       "uw_dominance": {
-        "4": 100
+        "10": 56,
+        "4": 44
       },
       "workstation_count": 0
     },
@@ -11532,27 +14091,27 @@
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustRB06.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 708823,
+          "nickname": "BDSM南梁神小員",
+          "points": 128,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 756120,
           "nickname": "吾刃尚鋒",
-          "points": 16,
-          "rank": 1
+          "points": 80,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustFRMA02.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 754205,
-          "nickname": "蒙蒙冷氣",
-          "points": 10,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustCMILSY.png",
-          "emblem": "/images/seal/Rcoaw52.png",
-          "id": 822756,
-          "nickname": "炎炎",
-          "points": 4,
+          "nickname": "麥帥冷氣",
+          "points": 38,
           "rank": 3
         }
       ],
@@ -11664,14 +14223,33 @@
         }
       ],
       "uw_dominance": {
-        "10": 64,
-        "4": 36
+        "1": 1,
+        "10": 44,
+        "4": 13,
+        "6": 42
       },
       "workstation_count": 0
     },
     "301": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 822756,
+          "nickname": "炎炎",
+          "points": 32,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRMA02.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 754205,
+          "nickname": "麥帥冷氣",
+          "points": 8,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11758,12 +14336,24 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 80,
+        "4": 20
+      },
       "workstation_count": 0
     },
     "303": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustCMILSY.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 822756,
+          "nickname": "炎炎",
+          "points": 64,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -11836,7 +14426,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "304": {
@@ -11847,7 +14439,7 @@
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 756120,
           "nickname": "吾刃尚鋒",
-          "points": 20,
+          "points": 32,
           "rank": 1
         },
         {
@@ -11855,7 +14447,7 @@
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 822756,
           "nickname": "炎炎",
-          "points": 6,
+          "points": 4,
           "rank": 2
         }
       ],
@@ -11938,7 +14530,24 @@
     },
     "61": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/seal/Rcoaw02.png",
+          "id": 749155,
+          "nickname": "海獅會害怕",
+          "points": 40,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB03.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 832204,
+          "nickname": "天劍非天",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -12011,7 +14620,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "60": {
@@ -12072,23 +14683,23 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 748660,
           "nickname": "。",
-          "points": 16,
+          "points": 32,
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustFROR03.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 724924,
-          "nickname": "麥秀",
-          "points": 6,
+          "avatar": "/images/actor/half/bustHK01.png",
+          "emblem": "/images/seal/Rcoaw02.png",
+          "id": 819771,
+          "nickname": "Alpharius",
+          "points": 32,
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustRB06.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 837926,
-          "nickname": "政務官",
-          "points": 2,
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 743186,
+          "nickname": "特里古拉夫•史迪奇",
+          "points": 6,
           "rank": 3
         }
       ],
@@ -12221,7 +14832,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 100
+        "1": 49,
+        "10": 43,
+        "2": 8
       },
       "workstation_count": 0
     },
@@ -12233,7 +14846,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 816441,
           "nickname": "紅木",
-          "points": 10,
+          "points": 26,
           "rank": 1
         }
       ],
@@ -12318,11 +14931,11 @@
       "can_collect_all": false,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFROR03.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 724924,
-          "nickname": "麥秀",
-          "points": 6,
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 743186,
+          "nickname": "特里古拉夫•史迪奇",
+          "points": 20,
           "rank": 1
         },
         {
@@ -12330,7 +14943,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 837926,
           "nickname": "政務官",
-          "points": 2,
+          "points": 4,
           "rank": 2
         }
       ],
@@ -12421,13 +15034,31 @@
         }
       ],
       "uw_dominance": {
-        "1": 100
+        "1": 17,
+        "2": 83
       },
       "workstation_count": 0
     },
     "282": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 743186,
+          "nickname": "特里古拉夫•史迪奇",
+          "points": 28,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 744896,
+          "nickname": "舒龍琴狐",
+          "points": 16,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -12500,7 +15131,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "283": {
@@ -12511,8 +15144,24 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 821269,
           "nickname": "韓先楚冷氣",
-          "points": 40,
+          "points": 160,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC01A.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 827686,
+          "nickname": "八木",
+          "points": 42,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB06.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 837926,
+          "nickname": "政務官",
+          "points": 8,
+          "rank": 3
         }
       ],
       "sites": [
@@ -12588,7 +15237,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 100
+        "1": 80,
+        "10": 20
       },
       "workstation_count": 0
     },
@@ -12600,7 +15250,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 832324,
           "nickname": "Cosmos",
-          "points": 36,
+          "points": 160,
           "rank": 1
         }
       ],
@@ -12697,7 +15347,24 @@
     },
     "280": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 832324,
+          "nickname": "Cosmos",
+          "points": 8,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 668742,
+          "nickname": "蜃川浣紗潭",
+          "points": 6,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -12784,19 +15451,38 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "1": 57,
+        "10": 43
+      },
       "workstation_count": 0
     },
     "279": {
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustRB02B.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 704191,
+          "nickname": "寍海綠壳",
+          "points": 76,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustRB05.png",
           "emblem": "/images/seal/Rcoaw01.png",
           "id": 808884,
           "nickname": "四木",
-          "points": 10,
-          "rank": 1
+          "points": 50,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 668742,
+          "nickname": "蜃川浣紗潭",
+          "points": 20,
+          "rank": 3
         }
       ],
       "sites": [
@@ -12905,8 +15591,16 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 754289,
           "nickname": "寒江意琦",
-          "points": 22,
+          "points": 104,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB02A.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 848291,
+          "nickname": "母嘼",
+          "points": 8,
+          "rank": 2
         }
       ],
       "sites": [
@@ -12982,13 +15676,31 @@
         }
       ],
       "uw_dominance": {
-        "2": 100
+        "10": 7,
+        "2": 93
       },
       "workstation_count": 0
     },
     "277": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 798215,
+          "nickname": "喜左衛門",
+          "points": 10,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE04.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 689677,
+          "nickname": "舒龍懷穆",
+          "points": 10,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -13047,7 +15759,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "472": {
@@ -13058,8 +15772,24 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 727659,
           "nickname": "月懷昭",
-          "points": 2,
+          "points": 16,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 826252,
+          "nickname": "夏夏分０",
+          "points": 16,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 825304,
+          "nickname": "武仙座",
+          "points": 16,
+          "rank": 3
         }
       ],
       "sites": [
@@ -13085,7 +15815,16 @@
     },
     "58": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE04.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 689677,
+          "nickname": "舒龍懷穆",
+          "points": 8,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -13116,12 +15855,23 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "59": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustFRSE04.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 689677,
+          "nickname": "舒龍懷穆",
+          "points": 6,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -13166,12 +15916,39 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 0
     },
     "56": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05A.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 807718,
+          "nickname": "屠蝦",
+          "points": 128,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 851578,
+          "nickname": "中南美共產瓜柴",
+          "points": 72,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW01C.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 729971,
+          "nickname": "。",
+          "points": 4,
+          "rank": 3
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -13258,12 +16035,32 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 98,
+        "8": 2
+      },
       "workstation_count": 0
     },
     "47": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustHK03.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 849256,
+          "nickname": "光臨香港",
+          "points": 4,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 851578,
+          "nickname": "中南美共產瓜柴",
+          "points": 2,
+          "rank": 2
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -13280,19 +16077,37 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "3": 100
+      },
       "workstation_count": 0
     },
     "57": {
       "can_collect_all": false,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustMC05A.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 757126,
+          "nickname": "醉蝦 ",
+          "points": 96,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFROR03.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 724924,
           "nickname": "麥秀",
-          "points": 22,
-          "rank": 1
+          "points": 40,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 761104,
+          "nickname": "溫州台中北京東京春賈",
+          "points": 8,
+          "rank": 3
         }
       ],
       "sites": [
@@ -13403,13 +16218,23 @@
         }
       ],
       "uw_dominance": {
-        "1": 100
+        "1": 38,
+        "3": 62
       },
       "workstation_count": 0
     },
     "53": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB03.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 832204,
+          "nickname": "天劍非天",
+          "points": 12,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -13454,12 +16279,23 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "62": {
       "can_collect_all": false,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustRB03.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 832204,
+          "nickname": "天劍非天",
+          "points": 6,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "emblem": null,
@@ -13504,7 +16340,9 @@
           "ws_name": "走私"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "10": 100
+      },
       "workstation_count": 0
     },
     "276": {
@@ -13515,7 +16353,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 837926,
           "nickname": "政務官",
-          "points": 2,
+          "points": 4,
           "rank": 1
         }
       ],

@@ -250,7 +250,7 @@
   ],
   "nations": [
     {
-      "players": 24534,
+      "players": 24536,
       "title": "大陸的征服者與主宰者",
       "id": 1,
       "flag": "/images/home/flag/bigflag01CM.png",
@@ -277,7 +277,7 @@
       "can_change_seal": false,
       "description_subtitle": "大陸的征服者與主宰者",
       "strategy_background": "/images/nation/strategy_background/str01CM.png",
-      "control_cities": 25,
+      "control_cities": 8,
       "seal": "/images/nation/seal/Scoa01CM.png",
       "alliance": "共產陣營",
       "diplomatic_strategy_ids": [
@@ -445,7 +445,7 @@
       ]
     },
     {
-      "players": 51441,
+      "players": 51447,
       "title": "禦敵千年的海東古國",
       "id": 2,
       "flag": "/images/home/flag/bigflag08TW.png",
@@ -472,7 +472,7 @@
       "can_change_seal": false,
       "description_subtitle": "供清帝拓殖的海外墾地",
       "strategy_background": "/images/nation/strategy_background/str08TW.png",
-      "control_cities": 44,
+      "control_cities": 64,
       "seal": "/images/nation/seal/Scoa08TW.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -643,7 +643,7 @@
       ]
     },
     {
-      "players": 36269,
+      "players": 36307,
       "title": "負隅頑抗的海港城邦",
       "id": 3,
       "flag": "/images/home/flag/bigflag02HK.png",
@@ -670,7 +670,7 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝割讓的海港城邦",
       "strategy_background": "/images/nation/strategy_background/str02HK.png",
-      "control_cities": 37,
+      "control_cities": 48,
       "seal": "/images/nation/seal/Scoa02HK.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -840,7 +840,7 @@
       ]
     },
     {
-      "players": 5552,
+      "players": 5564,
       "title": "半壁淪陷的的古老汗國",
       "id": 8,
       "flag": "/images/home/flag/bigflag03MG.png",
@@ -864,7 +864,7 @@
       "can_change_seal": false,
       "description_subtitle": "隨清帝共治的血盟鐵騎",
       "strategy_background": "/images/nation/strategy_background/str03MG.png",
-      "control_cities": 24,
+      "control_cities": 26,
       "seal": "/images/nation/seal/Scoa03MG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1034,7 +1034,7 @@
       ]
     },
     {
-      "players": 7682,
+      "players": 7683,
       "title": "赤焰灼燒的雪域佛土",
       "id": 4,
       "flag": "/images/home/flag/bigflag04TB.png",
@@ -1058,7 +1058,7 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝互尊的雪域佛土",
       "strategy_background": "/images/nation/strategy_background/str04TB.png",
-      "control_cities": 45,
+      "control_cities": 25,
       "seal": "/images/nation/seal/Scoa04TB.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1228,7 +1228,7 @@
       ]
     },
     {
-      "players": 5571,
+      "players": 5568,
       "title": "馳騁國界的自由騎手",
       "id": 6,
       "flag": "/images/home/flag/bigflag05KZ.png",
@@ -1252,7 +1252,7 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝合作的自由牧人",
       "strategy_background": "/images/nation/strategy_background/str05KZ.png",
-      "control_cities": 24,
+      "control_cities": 39,
       "seal": "/images/nation/seal/Scoa05KZ.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1423,7 +1423,7 @@
       ]
     },
     {
-      "players": 5649,
+      "players": 5648,
       "title": "流淌血淚的沙漠七城",
       "id": 5,
       "flag": "/images/home/flag/bigflag06UG.png",
@@ -1447,7 +1447,7 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝把持的沙漠七城",
       "strategy_background": "/images/nation/strategy_background/str06UG.png",
-      "control_cities": 32,
+      "control_cities": 5,
       "seal": "/images/nation/seal/Scoa06UG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1464,7 +1464,7 @@
         22
       ],
       "city_color": "74a0f6",
-      "controll_cities": 38,
+      "controll_cities": 35,
       "diplomatic_strategy_id": 7,
       "commander": {
         "flag": "/images/home/flag/bigflag06UG.png",
@@ -1616,7 +1616,7 @@
       ]
     },
     {
-      "players": 8952,
+      "players": 8949,
       "title": "歷劫毀滅的富饒大地",
       "id": 7,
       "flag": "/images/home/flag/bigflag07MC.png",
@@ -1640,7 +1640,7 @@
       "can_change_seal": false,
       "description_subtitle": "讓清帝崛起的白山黑水",
       "strategy_background": "/images/nation/strategy_background/str07MC.png",
-      "control_cities": 22,
+      "control_cities": 24,
       "seal": "/images/nation/seal/Scoa07MC.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1832,7 +1832,7 @@
       "can_change_seal": true,
       "description_subtitle": "將清帝推翻的華夏各邦",
       "strategy_background": "/images/nation/strategy_background/str09RB.png",
-      "control_cities": 16,
+      "control_cities": 30,
       "seal": "/images/nation/seal/Scoa09RB01.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
