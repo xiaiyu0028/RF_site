@@ -20,7 +20,7 @@ def login(email, password):
             "user[password]": password,
             "locale": "zh_TW",
             "key": "t9cTpsbSCYcJgsrrC",
-            "app_version": "2.28"
+            "app_version": "3.00"
     }
 
 

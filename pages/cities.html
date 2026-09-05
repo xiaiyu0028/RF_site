@@ -87,6 +87,7 @@
     <script>
         let citiesData = [];
         let rawCitiesData = [];
+        let citySitesData = {};   // { [cityId]: city_sites 回應 }
 
         // 從 JSON 載入城鎮資料
         async function loadCitiesData() {
@@ -131,6 +132,9 @@
 
                 buildSovereignFilter(citiesData);
                 filterCities();
+
+                // 城內地點為選用資料集，缺檔時靜默略過
+                loadCitySitesData();
             } catch (error) {
                 console.error('載入城鎮資料失敗:', error);
                 document.getElementById('citiesContainer').innerHTML = `
@@ -249,6 +253,206 @@
                 .replace(/>/g, '&gt;')
                 .replace(/"/g, '&quot;')
                 .replace(/'/g, '&#39;');
+        }
+
+        // 載入城內地點（由 update_game_data.py --city-sites 產生，可能不存在）
+        async function loadCitySitesData() {
+            try {
+                const timestamp = new Date().getTime();
+                const response = await fetch(`../return_data_example/city_sites.json?t=${timestamp}`);
+                if (!response.ok) return;
+                const data = await response.json();
+                citySitesData = data.sites || {};
+                console.log(`🏗️ 已載入 ${Object.keys(citySitesData).length} 座城市的城內地點資料`);
+            } catch (e) {
+                console.info('未提供城內地點資料，略過此區塊。');
+            }
+        }
+
+        // 從 city_sites 回應中取出地點陣列
+        function extractSites(payload) {
+            if (!payload) return [];
+            if (Array.isArray(payload)) return payload;
+            for (const key of ['sites', 'city_sites', 'site']) {
+                if (Array.isArray(payload[key])) return payload[key];
+            }
+            return [];
+        }
+
+        // 地點型別標籤
+        const SITE_TYPE_LABELS = {
+            Workstation: '工作站',
+            Explore: '探索',
+            Visit: '拜訪',
+            Access: '通道'
+        };
+
+        // 解鎖條件（condition 是物件，不是字串）
+        function formatSiteCondition(condition) {
+            if (!condition || typeof condition !== 'object') return '-';
+            const ref = condition.reference_name;
+            if (!ref) return '-';
+            if (condition.type === 'Actor') {
+                return `需要角色「${escapeHtml(ref)}」`;
+            }
+            if (condition.type === 'SitePlot') {
+                const lv = condition.ref_level ? ` Lv.${escapeHtml(condition.ref_level)}` : '';
+                return `需先完成地點「${escapeHtml(ref)}」${lv}`;
+            }
+            return `${escapeHtml(condition.type || '條件')}：${escapeHtml(ref)}`;
+        }
+
+        // 可建工作站（依種類彙總，每種固定產出一種道具）
+        function renderWorkstations(sites) {
+            const slots = sites.filter(s => s.reference_type === 'Workstation');
+            if (slots.length === 0) return '';
+
+            const grouped = new Map();
+            slots.forEach(slot => {
+                const key = slot.ws_name || '未知';
+                if (!grouped.has(key)) {
+                    grouped.set(key, {
+                        name: key,
+                        prop: slot.prop_name,
+                        religious: slot.religious,
+                        sameNation: slot.same_nation,
+                        sideLabel: slot.side_label,
+                        count: 0
+                    });
+                }
+                grouped.get(key).count += 1;
+            });
+
+            return `
+                <h4 style="margin: 18px 0 10px;">🏗️ 可建工作站 <span style="font-size: 0.85em; font-weight: normal; color: var(--muted-text);">(${slots.length} 格)</span></h4>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr><th>工作站</th><th>產出道具</th><th>格數</th><th>限制</th></tr>
+                        </thead>
+                        <tbody>
+                            ${[...grouped.values()].map(ws => {
+                                const limits = [
+                                    ws.religious && ws.sideLabel ? `🛐 ${escapeHtml(ws.sideLabel)}` : '',
+                                    ws.sameNation ? '需同陣營' : ''
+                                ].filter(Boolean).join('、') || '—';
+                                return `
+                                    <tr>
+                                        <td><strong>${escapeHtml(ws.name)}</strong></td>
+                                        <td>${escapeHtml(ws.prop || '-')}</td>
+                                        <td>${ws.count}</td>
+                                        <td>${limits}</td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        // 劇情地點（探索 / 拜訪 / 通道）
+        function renderSitePlots(sites) {
+            const plots = sites.filter(s => s.reference_type && s.reference_type !== 'Workstation');
+            if (plots.length === 0) return '';
+
+            return `
+                <h4 style="margin: 18px 0 10px;">📖 劇情地點 <span style="font-size: 0.85em; font-weight: normal; color: var(--muted-text);">(${plots.length} 處)</span></h4>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr><th>地點</th><th>類型</th><th>進度</th><th>體力</th><th>解鎖條件</th></tr>
+                        </thead>
+                        <tbody>
+                            ${plots.map(plot => {
+                                const type = SITE_TYPE_LABELS[plot.reference_type] || plot.reference_type;
+                                const progress = plot.max_level ? `${escapeHtml(plot.cur_level ?? '-')} / ${escapeHtml(plot.max_level)}` : '-';
+                                const via = plot.access_city_name && plot.access_city_name !== plot.name
+                                    ? `<br><span style="font-size: 0.85em; color: var(--muted-text);">通往 ${escapeHtml(plot.access_city_name)}</span>`
+                                    : '';
+                                return `
+                                    <tr>
+                                        <td><strong>${escapeHtml(plot.name || '-')}</strong>${via}</td>
+                                        <td><span class="badge badge-info">${escapeHtml(type)}</span></td>
+                                        <td>${progress}</td>
+                                        <td>${escapeHtml(plot.energy_charge ?? '-')}</td>
+                                        <td>${formatSiteCondition(plot.condition)}</td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        // 城王榜
+        function renderCityKings(kings) {
+            if (!Array.isArray(kings) || kings.length === 0) return '';
+            const sorted = [...kings].sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99));
+            return `
+                <h4 style="margin: 18px 0 10px;">👑 城王</h4>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    ${sorted.map(king => `
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            ${king.avatar ? `<img src="${getAssetPath(king.avatar)}" alt="" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;" onerror="this.style.display='none'">` : ''}
+                            ${king.emblem ? `<img src="${getAssetPath(king.emblem)}" alt="" style="width: 20px; height: 20px;" onerror="this.style.display='none'">` : ''}
+                            <span>${king.rank ? `<span class="badge badge-warning">#${escapeHtml(king.rank)}</span> ` : ''}<strong>${escapeHtml(king.nickname || king.name || '-')}</strong></span>
+                            ${king.points !== undefined && king.points !== null ? `<span style="color: var(--muted-text);">${escapeHtml(king.points)} 點</span>` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // UW 滲透（key 為陣營 ID）
+        function renderDominance(dominance) {
+            if (!dominance || Object.keys(dominance).length === 0) return '';
+            const entries = Object.entries(dominance)
+                .map(([nationId, pct]) => ({ name: getNationName(Number(nationId)), pct: Number(pct) || 0 }))
+                .sort((a, b) => b.pct - a.pct);
+            return `
+                <h4 style="margin: 18px 0 10px;">🕳️ UW 滲透</h4>
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    ${entries.map(entry => `
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="min-width: 90px;">${escapeHtml(entry.name)}</span>
+                            <div style="flex: 1; background: var(--border-color); border-radius: 4px; height: 10px; overflow: hidden;">
+                                <div style="width: ${entry.pct}%; height: 100%; background: var(--primary-color);"></div>
+                            </div>
+                            <span style="min-width: 45px; text-align: right;">${entry.pct}%</span>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // 渲染城內地點區塊
+        function renderCitySites(cityId) {
+            const payload = citySitesData[String(cityId)];
+            if (!payload) return '';
+
+            const sites = extractSites(payload);
+            const body = [
+                renderDominance(payload.uw_dominance),
+                renderCityKings(payload.kings),
+                renderWorkstations(sites),
+                renderSitePlots(sites)
+            ].filter(Boolean).join('');
+
+            if (!body) return '';
+
+            const built = payload.workstation_count;
+            return `
+                <div style="margin-top: 25px;">
+                    <h3 style="margin-bottom: 5px;">
+                        🏙️ 城內資訊
+                        ${built !== undefined && built !== null ? `<span class="badge badge-muted" style="margin-left: 8px;">已建工作站 ${escapeHtml(built)}</span>` : ''}
+                        ${payload.can_collect_all ? '<span class="badge badge-success" style="margin-left: 5px;">可一鍵收取</span>' : ''}
+                    </h3>
+                    ${body}
+                </div>
+            `;
         }
 
         // 顯示城鎮詳情
@@ -390,6 +594,8 @@
                     <h3 style="margin-bottom: 15px;">📦 掉落物品</h3>
                     ${renderSpoils(city.citySpoils)}
                 </div>
+
+                ${renderCitySites(city.id)}
             `;
 
             modal.style.display = 'flex';

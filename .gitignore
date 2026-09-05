@@ -3,6 +3,10 @@
 .codex/
 .cursor/
 
+# 含明文帳密，絕不進版控
+config.json
+cal_power/config.json
+
 # Python bytecode and local environment files
 __pycache__/
 *.py[cod]
@@ -15,6 +19,7 @@ __pycache__/
 return_data_example/*
 !return_data_example/actors.json
 !return_data_example/cities.json
+!return_data_example/city_sites.json
 !return_data_example/nation.json
 !return_data_example/update_metadata.json
 

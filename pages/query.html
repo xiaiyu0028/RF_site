@@ -100,13 +100,21 @@
             <!-- 分頁區塊 -->
             <div class="tabs-container" id="queryTabs" style="display: none; margin-top: 25px;">
                 <div class="tabs">
-                    <button class="tab-btn active" data-tab="characters-tab">👤 角色查詢</button>
+                    <button class="tab-btn active" data-tab="profile-tab">🧭 玩家總覽</button>
+                    <button class="tab-btn" data-tab="characters-tab">👤 角色查詢</button>
                     <button class="tab-btn" data-tab="inventory-tab">📦 庫存查詢</button>
                     <button class="tab-btn" data-tab="gacha-tab">🎰 抽獎歷史</button>
                 </div>
 
+                <!-- 玩家總覽 -->
+                <div class="tab-content active" id="profile-tab">
+                    <div id="profileContent">
+                        <div class="alert alert-info">請先驗證以查看玩家總覽</div>
+                    </div>
+                </div>
+
                 <!-- 角色查詢 -->
-                <div class="tab-content active" id="characters-tab">
+                <div class="tab-content" id="characters-tab">
                     <div class="card">
                         <div class="card-header">
                             <span class="card-title">👤 已擁有角色</span>
@@ -232,7 +240,7 @@
             apiBase: 'https://api.komisureiya.com/api',
             wsBase: 'wss://api.komisureiya.com/socket/websocket',
             timeout: 30000,
-            appVersion: '2.28',
+            appVersion: '3.00',
             key: 'rfront2023'
         };
 
@@ -571,6 +579,21 @@
             // 啟動心跳
             startHeartbeat();
             
+            showLoadingState('正在查詢玩家資料...');
+
+            try {
+                // 查詢玩家總覽 - 回傳格式: { id, nickname, energy, fund, first_team, ... }
+                const profileData = await sendApiRequest('profile', {});
+                console.log('🧭 玩家總覽原始資料:', profileData);
+                if (profileData) {
+                    loadProfile(profileData);
+                }
+            } catch (e) {
+                console.error('玩家總覽查詢失敗:', e);
+                const el = document.getElementById('profileContent');
+                if (el) el.innerHTML = `<div class="alert alert-danger">玩家總覽查詢失敗：${escapeHtml(e.message)}</div>`;
+            }
+
             showLoadingState('正在查詢角色資料...');
             
             try {
@@ -623,6 +646,126 @@
             showLoggedInState(`玩家 ID: ${currentPlayerId}`, false);
         }
         
+        // 取名稱（欄位可能是字串或 { id, name } 物件）
+        function nameOf(value) {
+            if (!value) return '';
+            if (typeof value === 'string') return value;
+            return value.name || '';
+        }
+
+        // 格式化移動抵達時間
+        function formatMoveTime(value) {
+            if (!value) return '';
+            const date = new Date(value);
+            if (Number.isNaN(date.getTime())) return String(value);
+            return date.toLocaleString('zh-TW');
+        }
+
+        // 渲染玩家總覽
+        function loadProfile(profile) {
+            const container = document.getElementById('profileContent');
+            if (!container) return;
+
+            const energy = profile.energy ?? 0;
+            const energyCap = profile.energy_cap ?? 0;
+            const energyPct = energyCap > 0 ? Math.min(100, Math.round(energy / energyCap * 100)) : 0;
+
+            const resourceCards = [
+                { label: '體力', value: energyCap > 0 ? `${energy} / ${energyCap}` : energy, hint: energyCap > 0 ? `${energyPct}%` : '' },
+                { label: '資金', value: (profile.fund ?? 0).toLocaleString() },
+                { label: '技能點', value: (profile.skill ?? 0).toLocaleString() },
+                { label: '媒體', value: (profile.media ?? 0).toLocaleString() },
+                { label: '策反卡', value: (profile.defect_card ?? 0).toLocaleString() },
+                { label: 'UW 城王數', value: (profile.uw_king_count ?? 0).toLocaleString() }
+            ];
+
+            const unread = [
+                { label: '公告', value: profile.unread_announcements ?? 0 },
+                { label: '電報', value: profile.unread_telegrams ?? 0 },
+                { label: '訊息', value: profile.unread_messages ?? 0 }
+            ];
+
+            const moving = profile.move_to_city_id
+                ? `<div class="alert alert-info" style="margin-top: 15px;">🚶 移動中：前往城市 ID ${escapeHtml(profile.move_to_city_id)}${profile.move_to_city_at ? `，預計 ${escapeHtml(formatMoveTime(profile.move_to_city_at))} 抵達` : ''}</div>`
+                : '';
+
+            const team = Array.isArray(profile.first_team?.actors) ? profile.first_team.actors
+                       : Array.isArray(profile.first_team) ? profile.first_team
+                       : [];
+
+            const teamSection = team.length > 0 ? `
+                <div class="card" style="margin-top: 20px;">
+                    <div class="card-header">
+                        <span class="card-title">🛡️ 第一隊伍</span>
+                        <span class="badge badge-primary">${team.length} 名幹部</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr><th>幹部</th><th>等級</th><th>關係等級</th><th>關係經驗</th><th>符文</th></tr>
+                                </thead>
+                                <tbody>
+                                    ${team.map(actor => {
+                                        const name = actor.actor_prototype?.name || actor.name || '未知';
+                                        const levelCap = actor.level_cap ? ` / ${actor.level_cap}` : '';
+                                        const relCap = actor.relation_level_cap ?? actor.actor_prototype?.relation_level_cap;
+                                        const relLevel = actor.relation_level ?? '-';
+                                        const weapon = actor.weapon?.weapon_prototype?.name || '未裝備';
+                                        return `
+                                            <tr>
+                                                <td><strong>${escapeHtml(name)}</strong></td>
+                                                <td>Lv.${escapeHtml(actor.level ?? '-')}${escapeHtml(levelCap)}</td>
+                                                <td>${escapeHtml(relLevel)}${relCap ? ` / ${escapeHtml(relCap)}` : ''}</td>
+                                                <td>${escapeHtml((actor.relation_exps ?? 0).toLocaleString())}</td>
+                                                <td>${escapeHtml(weapon)}</td>
+                                            </tr>
+                                        `;
+                                    }).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            ` : '';
+
+            container.innerHTML = `
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">🧭 ${escapeHtml(profile.nickname || '玩家')}</span>
+                        <span class="badge badge-primary">ID: ${escapeHtml(profile.id ?? currentPlayerId)}</span>
+                    </div>
+                    <div class="card-body">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px;">
+                            ${nameOf(profile.nation) ? `<span class="badge badge-info">陣營：${escapeHtml(nameOf(profile.nation))}</span>` : ''}
+                            ${nameOf(profile.union) ? `<span class="badge badge-success">聯盟：${escapeHtml(nameOf(profile.union))}</span>` : ''}
+                            ${nameOf(profile.organization) ? `<span class="badge badge-warning">組織：${escapeHtml(nameOf(profile.organization))}</span>` : ''}
+                            ${profile.city_name ? `<span class="badge badge-muted">所在：${escapeHtml(profile.city_name)}</span>` : ''}
+                            ${profile.can_collect_all ? '<span class="badge badge-success">可一鍵收取</span>' : ''}
+                        </div>
+
+                        <div class="grid grid-auto" style="gap: 12px;">
+                            ${resourceCards.map(item => `
+                                <div class="stat-box">
+                                    <div class="stat-value">${escapeHtml(item.value)}</div>
+                                    <div class="stat-label">${escapeHtml(item.label)}${item.hint ? ` (${escapeHtml(item.hint)})` : ''}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+
+                        ${moving}
+
+                        <div style="margin-top: 15px; display: flex; gap: 8px; flex-wrap: wrap;">
+                            ${unread.map(item => `
+                                <span class="badge ${item.value > 0 ? 'badge-danger' : 'badge-muted'}">未讀${escapeHtml(item.label)}：${escapeHtml(item.value)}</span>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+                ${teamSection}
+            `;
+        }
+
         // 解析背包資料
         function parseBackpackData(data) {
             const items = [];

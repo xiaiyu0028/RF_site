@@ -240,6 +240,17 @@ async function loadJSON(path) {
     }
 }
 
+// HTML 逸出（避免資料內的角括號破壞版面）
+function escapeHtml(value) {
+    if (value === null || value === undefined) return '';
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 // 圖片路徑轉換（將遊戲 API 路徑轉為本地路徑）
 // /images/... -> ../passionfruit/images/... (從 pages/ 目錄存取)
 // /audio/... -> ../passionfruit/audio/...

@@ -141,6 +141,7 @@
     <script>
         let charactersData = [];
         let imageIndex = null;  // 圖片索引
+        let visitPlots = {};   // 角色拜訪地點（選用資料集）
 
         // 初始化
         document.addEventListener('DOMContentLoaded', async function () {
@@ -193,8 +194,18 @@
                     activeSkill: actor.active_skill || null,
                     activeSkills: actor.actor_prototype?.active_skills || [],
                     talent1: actor.actor_prototype?.talent_1 || '',
-                    talent2: actor.actor_prototype?.talent_2 || ''
+                    talent2: actor.actor_prototype?.talent_2 || '',
+                    origin: actor.actor_prototype?.origin || '',
+                    sponsor: actor.actor_prototype?.sponsor || '',
+                    sponsorGratitude: actor.actor_prototype?.sponsor_gratitude || '',
+                    sponsorImage: actor.actor_prototype?.sponsor_image || '',
+                    vanguard: actor.actor_prototype?.vanguard === true,
+                    canEvolute: actor.can_evolute === true,
+                    outfits: actor.outfits || []
                 }));
+
+                // 拜訪地點為選用資料集，缺檔時靜默略過
+                await loadVisitPlots();
 
                 // 更新統計
                 updateStats();
@@ -368,6 +379,29 @@
         }
 
         // 顯示角色詳情
+        // 拜訪地點列（無資料時不顯示）
+        function renderVisitRow(charName) {
+            const info = visitPlots[charName];
+            if (!info || !info.has_visit_plot) return '';
+            const city = info.visitable_city
+                ? escapeHtml(info.visitable_city)
+                : (info.visitable_city_id ? `城市 ID ${escapeHtml(info.visitable_city_id)}` : '未知地點');
+            const cap = info.relation_level_cap ? `（關係上限 ${escapeHtml(info.relation_level_cap)}）` : '';
+            return `<tr><th>可拜訪地點</th><td>🚩 ${city}${cap}</td></tr>`;
+        }
+
+        // 載入角色拜訪地點（由 resolve_actors.ipynb 產生，可能不存在）
+        async function loadVisitPlots() {
+            try {
+                const response = await fetch(`../cal_power/visit_plots.json?t=${Date.now()}`);
+                if (!response.ok) return;
+                visitPlots = await response.json();
+                console.log(`🚩 已載入 ${Object.keys(visitPlots).length} 筆角色拜訪資料`);
+            } catch (e) {
+                console.info('未提供角色拜訪資料，略過此欄位。');
+            }
+        }
+
         function showCharacterDetail(charName) {
             const char = charactersData.find(c => c.name === charName);
             if (!char) return;
@@ -473,6 +507,8 @@
                             <span class="badge ${getScarcityClass(char.scarcity)}">${char.scarcity}</span>
                             <span class="badge badge-primary">${getRoleName(char.role)}</span>
                             <span class="badge ${getNationClass(char.nation)}">${getNationName(char.nation)}</span>
+                            ${char.vanguard ? '<span class="badge badge-warning" title="可站前排承受傷害">🛡️ 先鋒</span>' : ''}
+                            ${char.canEvolute ? '<span class="badge badge-success" title="可進行角色進化">✨ 可進化</span>' : ''}
                         </div>
                         ${char.talent1 ? `<p style="margin: 5px 0; font-style: italic; color: var(--muted-text);">${char.talent1}</p>` : ''}
                         ${char.talent2 ? `<p style="margin: 5px 0; font-weight: bold; color: var(--primary-color);">${char.talent2}</p>` : ''}
@@ -489,6 +525,11 @@
                             <tr><th>陣營</th><td>${getNationName(char.nation)}</td></tr>
                             <tr><th>最大等級</th><td>${char.maxLevel}</td></tr>
                             <tr><th>符文類型</th><td>${char.runeType}</td></tr>
+                            ${char.origin ? `<tr><th>出身</th><td>${char.origin}</td></tr>` : ''}
+                            <tr><th>先鋒</th><td>${char.vanguard ? '是' : '否'}</td></tr>
+                            <tr><th>可進化</th><td>${char.canEvolute ? '是' : '否'}</td></tr>
+                            ${char.outfits.length > 1 ? `<tr><th>服裝</th><td>${char.outfits.map(o => escapeHtml(o.name)).join('<br>')}</td></tr>` : ''}
+                            ${renderVisitRow(char.name)}
                         </table>
                     </div>
                     
@@ -501,7 +542,17 @@
                                     ${char.religion ? `<div><strong>宗教：</strong>${char.religion}</div>` : ''}
                                     ${char.family ? `<div><strong>出生地：</strong>${char.family}</div>` : ''}
                                     ${char.ethnicGroup ? `<div><strong>族群：</strong>${char.ethnicGroup}</div>` : ''}
+                                    ${char.origin ? `<div><strong>出身：</strong>${char.origin}</div>` : ''}
                                 </div>
+                                ${char.sponsor ? `
+                                    <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border-color); display: flex; gap: 10px; align-items: center;">
+                                        ${char.sponsorImage ? `<img src="${getAssetPath(char.sponsorImage)}" alt="${escapeHtml(char.sponsor)}" style="width: 48px; height: 48px; object-fit: contain; flex-shrink: 0;" onerror="this.style.display='none'">` : ''}
+                                        <div style="font-size: 0.85em; color: var(--muted-text);">
+                                            <div><strong>贊助者：</strong>${escapeHtml(char.sponsor)}</div>
+                                            ${char.sponsorGratitude ? `<div style="margin-top: 4px;">${escapeHtml(char.sponsorGratitude)}</div>` : ''}
+                                        </div>
+                                    </div>
+                                ` : ''}
                             </div>
                         </div>
                         

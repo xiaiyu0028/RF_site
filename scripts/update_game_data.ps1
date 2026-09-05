@@ -2,7 +2,11 @@
 param(
     [switch]$DryRun,
     [ValidateRange(5, 300)]
-    [int]$Timeout = 60
+    [int]$Timeout = 60,
+    [ValidateSet("off", "visitable", "all")]
+    [string]$CitySites = "off",
+    [ValidateRange(0.0, 5.0)]
+    [double]$CitySitesDelay = 0.35
 )
 
 $ErrorActionPreference = "Stop"
@@ -25,6 +29,9 @@ $arguments = @(
 )
 if ($DryRun) {
     $arguments += "--dry-run"
+}
+if ($CitySites -ne "off") {
+    $arguments += @("--city-sites", $CitySites, "--city-sites-delay", $CitySitesDelay)
 }
 
 & $python @arguments

@@ -8,6 +8,7 @@ $projectRoot = Split-Path -Parent $PSScriptRoot
 $dataFiles = @(
     "return_data_example/nation.json",
     "return_data_example/cities.json",
+    "return_data_example/city_sites.json",
     "return_data_example/update_metadata.json"
 )
 
