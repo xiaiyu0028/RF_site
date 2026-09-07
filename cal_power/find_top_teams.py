@@ -61,12 +61,15 @@ def cal_power(effects: Dict[str, float], scarcity: str, level: int, weapon: str)
         'SSR': 1.4,
     }
     weapon_multiplier = {
-        '原初': 1.0,
+        '無符文': 1.0,
+        '原初': 1.7,
         '強化': 2.1,
-        '高等': 5.0,
         '限定': 2.5,
+        '高等': 5.0,
         '排名': 7.0,
         '庚子': 8.0,
+        '雞腿': 9.5,
+        '保定': 10.0,
     }
     # Apply rarity level caps (match calculate_power.py)
     if scarcity == "R":
@@ -181,7 +184,7 @@ def main():
     parser.add_argument('--base-dir', default=os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),
                         help='Base RF_TW_mod directory (default: parent of this script).')
     parser.add_argument('--level', type=int, default=0, help='Level to evaluate; 0 uses rarity max cap (default: 0).')
-    parser.add_argument('--weapon', type=str, default='原初', choices=['原初', '強化', '高等', '限定', '排名', '庚子'],
+    parser.add_argument('--weapon', type=str, default='原初', choices=['無符文', '原初', '強化', '限定', '高等', '排名', '庚子', '雞腿', '保定'],
                         help='Weapon type multiplier (default: 原初).')
     parser.add_argument('--team-size', type=int, default=5, help='Team size (fixed to 5).')
     parser.add_argument('--results', type=int, default=100, help='Number of top results to return (default: 100).')

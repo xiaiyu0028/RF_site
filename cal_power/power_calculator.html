@@ -346,12 +346,15 @@
                 <div class="actor-input-group">
                     <label>武器</label>
                     <select id="weapon-${id}">
+                        <option value="無符文">無符文</option>
                         <option value="原初">原初</option>
                         <option value="強化">強化</option>
-                        <option value="高等">高等</option>
                         <option value="限定">限定</option>
+                        <option value="高等">高等</option>
                         <option value="排名">排名</option>
                         <option value="庚子">庚子</option>
+                        <option value="雞腿">雞腿</option>
+                        <option value="保定">保定</option>
                     </select>
                 </div>
                 <button class="remove-btn" onclick="removeActorSelection(${id})">✖</button>
@@ -442,12 +445,15 @@
             };
             
             const weaponMultiplier = {
-                '原初': 1.0,
+                '無符文': 1.0,
+                '原初': 1.7,
                 '強化': 2.1,
-                '高等': 5.0,
                 '限定': 2.5,
+                '高等': 5.0,
                 '排名': 7.0,
-                '庚子': 8.0
+                '庚子': 8.0,
+                '雞腿': 9.5,
+                '保定': 10.0
             };
             
             // 稀有度等級上限
