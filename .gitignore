@@ -45,3 +45,13 @@ passionfruit/images/site/
 passionfruit/images/slide/
 passionfruit/images/sponsor/
 passionfruit/images/team/
+
+# OS-generated junk files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
