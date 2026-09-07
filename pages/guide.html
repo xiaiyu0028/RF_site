@@ -4,149 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="逆統戰新手指引 - 從遊戲介面到進階玩法，手把手帶你熟悉遊戲">
+    <meta name="description" content="逆統戰新手指引 - 從遊戲介面、戰力計算到進階刷地戰術，手把手帶你熟悉遊戲">
     <title>新手教學 - RF 攻略網站</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/design-system.css">
-    <style>
-        /* 圖片樣式 */
-        .guide-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 12px 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        .guide-content table img {
-            max-width: none;
-            height: 24px;
-            margin: 0;
-            box-shadow: none;
-            border-radius: 0;
-        }
-
-        /* 目錄樣式 */
-        .toc-section {
-            margin-bottom: 8px;
-        }
-
-        .toc-section h4 {
-            color: var(--primary-color);
-            margin-bottom: 8px;
-        }
-
-        .toc-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .toc-section li {
-            margin-bottom: 4px;
-        }
-
-        .toc-section a {
-            color: var(--dark-text);
-            text-decoration: none;
-        }
-
-        .toc-section a:hover {
-            text-decoration: underline;
-        }
-
-        /* Markdown 渲染內容樣式 */
-        .guide-content h1 {
-            scroll-margin-top: 80px;
-        }
-
-        .guide-content h2 {
-            scroll-margin-top: 80px;
-        }
-
-        .guide-content h3 {
-            scroll-margin-top: 80px;
-        }
-
-        .guide-content hr {
-            margin: 40px 0;
-            border-color: var(--border-color);
-        }
-
-        .guide-content blockquote {
-            background: var(--light-bg, #f8f9fa);
-            border-left: 4px solid var(--primary-color, #4a6cf7);
-            padding: 16px 20px;
-            margin: 16px 0;
-            border-radius: 4px;
-        }
-
-        .guide-content table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 16px 0;
-        }
-
-        .guide-content th,
-        .guide-content td {
-            padding: 8px 12px;
-            border: 1px solid var(--border-color, #dee2e6);
-            text-align: left;
-        }
-
-        .guide-content th {
-            background: var(--light-bg, #f8f9fa);
-            font-weight: 600;
-        }
-
-        .guide-content code {
-            background: var(--light-bg, #f8f9fa);
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 0.9em;
-        }
-
-        /* 章節分隔 */
-        .guide-section {
-            scroll-margin-top: 80px;
-            margin-bottom: 20px;
-        }
-
-        .guide-section+.guide-section {
-            border-top: 2px solid var(--primary-color, #4a6cf7);
-            padding-top: 30px;
-            margin-top: 30px;
-        }
-
-        /* 載入動畫 */
-        .loading-spinner {
-            text-align: center;
-            padding: 40px 0;
-            color: #888;
-        }
-
-        .loading-spinner::after {
-            content: '';
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            border: 3px solid #ddd;
-            border-top-color: var(--primary-color, #4a6cf7);
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
     <link rel="stylesheet" href="../css/design-system.css">
 </head>
 
 <body>
+    <!-- 閱讀進度條 -->
+    <div class="doc-progress" id="docProgress"></div>
+
     <!-- 導航欄 -->
     <nav class="navbar">
         <div class="navbar-container">
@@ -165,56 +32,44 @@
     </nav>
 
     <div class="container">
-        <div class="content-wrapper">
-            <div class="page-header">
-                <h1>📖 逆統戰新手指引</h1>
-                <p>作者：群群Chyun ─ 供新手玩家參考，老玩家可以略過</p>
-            </div>
+        <div class="page-header">
+            <p class="eyebrow">Guide</p>
+            <h1>逆統戰新手指引</h1>
+            <p>從遊戲介面、戰力計算到進階刷地戰術。原作者：群群Chyun ─ 供新手玩家參考，老玩家可直接用左側目錄跳到需要的段落。</p>
+        </div>
 
-            <!-- ═══════════ 目錄 ═══════════ -->
-            <div class="card" style="margin-bottom:30px;">
-                <div class="card-header"><span class="card-title">📋 目錄</span></div>
-                <div class="card-body">
-                    <div class="grid grid-3">
-                        <div class="toc-section">
-                            <h4>🎮 基礎玩法遊戲篇</h4>
-                            <ul>
-                                <li><a href="#section-0" data-scroll>遊戲介面詳解</a></li>
-                            </ul>
-                        </div>
-                        <div class="toc-section">
-                            <h4>💬 基礎玩法Discord篇</h4>
-                            <ul>
-                                <li><a href="#section-1" data-scroll>玩家社群簡介</a></li>
-                            </ul>
-                            <h4 style="margin-top:16px;">⚔️ 進階玩法遊戲篇</h4>
-                            <ul>
-                                <li><a href="#section-2" data-scroll>網頁版/多開/旅遊</a></li>
-                            </ul>
-                        </div>
-                        <div class="toc-section">
-                            <h4>🤖 進階玩法Discord篇</h4>
-                            <ul>
-                                <li><a href="#section-3" data-scroll>小狐凜使用教學</a></li>
-                            </ul>
-                            <h4 style="margin-top:16px;">📜 番外篇</h4>
-                            <ul>
-                                <li><a href="#section-4" data-scroll>逆統戰重大事件</a></li>
-                            </ul>
-                        </div>
+        <div class="alert alert-warning" style="margin-bottom:24px;">
+            🤖 <strong>部分內容由 AI 協助修訂，不保證正確。</strong>
+            本頁的數值與機制說明部分取自遊戲 API 資料與社群共筆整理，並經 AI 重新編寫。
+            遊戲改版頻繁，內容可能過時或有誤，<strong>請以遊戲內實際顯示為準</strong>。
+            發現錯誤歡迎回報。
+        </div>
+
+        <div class="doc-layout">
+            <!-- ═══════════ 側邊欄目錄 ═══════════ -->
+            <aside class="doc-sidebar" id="docSidebar">
+                <div class="doc-sidebar-head">
+                    <span>目錄</span>
+                    <span id="tocCount"></span>
+                </div>
+                <nav class="doc-toc" id="docToc" aria-label="章節目錄">
+                    <p style="color:var(--ds-text-muted);font-size:.85rem;padding:6px 10px;">載入中…</p>
+                </nav>
+            </aside>
+
+            <!-- ═══════════ 內容 ═══════════ -->
+            <main class="doc-main" id="docMain">
+                <div id="guide-container">
+                    <div class="doc-loading" style="padding:60px 0;text-align:center;color:var(--ds-text-muted);">
+                        載入指引內容…
                     </div>
                 </div>
-            </div>
 
-            <!-- ═══════════ 內容容器 ═══════════ -->
-            <div id="guide-container">
-                <div class="loading-spinner">載入中</div>
-            </div>
-
-            <div class="alert alert-success" id="guide-done" style="margin-top:25px;display:none;">
-                🎉 <strong>恭喜你讀完新手指引！</strong><br>
-                現在你已經掌握了遊戲的基本知識與進階技巧，開始你的逆統戰之路吧！
-            </div>
+                <div class="alert alert-success" id="guide-done" style="margin-top:56px;display:none;">
+                    🎉 <strong>恭喜你讀完新手指引！</strong><br>
+                    接下來可以用<a href="calculator.html">戰力計算器</a>試算你的隊伍，或到<a href="cities.html">城鎮資訊</a>規劃刷地路線。
+                </div>
+            </main>
         </div>
 
         <footer class="footer">
@@ -222,65 +77,223 @@
         </footer>
     </div>
 
+    <!-- 行動版目錄開關 / 回頁首 / 燈箱 -->
+    <div class="doc-scrim" id="docScrim"></div>
+    <button class="doc-toc-toggle" id="docTocToggle" aria-controls="docSidebar" aria-expanded="false">☰ 目錄</button>
+    <button class="doc-fab" id="docTop" title="回到頂端" aria-label="回到頂端">↑</button>
+    <div class="doc-lightbox" id="docLightbox" role="dialog" aria-label="圖片預覽">
+        <button class="doc-lightbox-close" aria-label="關閉">✕</button>
+        <img alt="">
+    </div>
+
     <script src="../js/app.js"></script>
-    <!-- marked.js CDN for Markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
     <script>
         // 各章節 Markdown 檔案清單
         const guideSections = [
             '../guides/01-basic-gameplay.md',
-            '../guides/02-basic-discord.md',
-            '../guides/03-advanced-gameplay.md',
-            '../guides/04-advanced-discord.md',
-            '../guides/05-extras.md'
+            '../guides/02-power-building.md',
+            '../guides/03-infiltration.md',
+            '../guides/04-basic-discord.md',
+            '../guides/05-advanced-gameplay.md',
+            '../guides/06-advanced-discord.md',
+            '../guides/07-extras.md'
         ];
 
-        // 圖片路徑修正：md 檔中的相對路徑 images/ 需要轉為 ../guides/images/
-        function fixImagePaths(html) {
-            return html.replace(/src="images\//g, 'src="../guides/images/');
+        const $ = (sel, root = document) => root.querySelector(sel);
+        const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+        /* ── 產生 heading 用的 slug（保留中文） ── */
+        const usedIds = new Set();
+        function slugify(text) {
+            let base = text.trim().toLowerCase()
+                .replace(/[\s]+/g, '-')
+                .replace(/[^\p{L}\p{N}-]/gu, '')
+                .replace(/^-+|-+$/g, '');
+            if (!base) base = 'section';
+            let id = base, n = 2;
+            while (usedIds.has(id)) id = `${base}-${n++}`;
+            usedIds.add(id);
+            return id;
         }
 
-        // 載入所有 Markdown 並渲染
-        async function loadGuides() {
-            const container = document.getElementById('guide-container');
-            container.innerHTML = '';
+        /* ── 渲染後的 DOM 加工 ── */
+        function enhance(root) {
+            // 圖片路徑修正 + 包成 figure（alt 當說明文字）
+            $$('img', root).forEach(img => {
+                const src = img.getAttribute('src') || '';
+                if (src.startsWith('images/')) img.setAttribute('src', '../guides/' + src);
+                img.setAttribute('loading', 'lazy');
+                img.setAttribute('decoding', 'async');
+                if (img.closest('table')) return;           // 表格內的小圖示不加框
+                const fig = document.createElement('figure');
+                const cap = document.createElement('figcaption');
+                cap.textContent = img.getAttribute('alt') || '';
+                img.replaceWith(fig);
+                fig.appendChild(img);
+                if (cap.textContent) fig.appendChild(cap);
+            });
 
-            for (let i = 0; i < guideSections.length; i++) {
-                try {
-                    const res = await fetch(guideSections[i]);
-                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                    const md = await res.text();
-                    const html = fixImagePaths(marked.parse(md));
+            // 表格包一層可橫向捲動的容器
+            $$('table', root).forEach(t => {
+                const wrap = document.createElement('div');
+                wrap.className = 'table-scroll';
+                t.replaceWith(wrap);
+                wrap.appendChild(t);
+            });
 
-                    const section = document.createElement('div');
-                    section.className = 'guide-section guide-content';
-                    section.id = `section-${i}`;
-                    section.innerHTML = html;
-                    container.appendChild(section);
-                } catch (err) {
-                    const errDiv = document.createElement('div');
-                    errDiv.className = 'guide-section';
-                    errDiv.innerHTML = `<p style="color:red;">⚠️ 無法載入 ${guideSections[i]}：${err.message}</p>`;
-                    container.appendChild(errDiv);
+            // blockquote 依開頭 emoji 分類上色
+            $$('blockquote', root).forEach(q => {
+                const txt = q.textContent;
+                if (txt.includes('待確認') || txt.includes('待補充')) q.classList.add('is-todo');
+                else if (txt.trimStart().startsWith('⚠️')) q.classList.add('is-warn');
+            });
+        }
+
+        /* ── 建目錄 ── */
+        function buildToc() {
+            const toc = $('#docToc');
+            const headings = $$('#guide-container h1, #guide-container h2, #guide-container h3');
+            const ul = document.createElement('ul');
+
+            headings.forEach(h => {
+                if (!h.id) h.id = slugify(h.textContent);
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#' + h.id;
+                a.textContent = h.textContent.replace(/^[\s\p{Emoji_Presentation}\p{Extended_Pictographic}️]+/u, '').trim() || h.textContent;
+                a.className = 'toc-' + h.tagName.toLowerCase();
+                a.dataset.target = h.id;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+
+            toc.innerHTML = '';
+            toc.appendChild(ul);
+            $('#tocCount').textContent = headings.length + ' 節';
+            return headings;
+        }
+
+        /* ── 捲動高亮（scrollspy） ── */
+        function initScrollSpy(headings) {
+            const links = new Map($$('#docToc a').map(a => [a.dataset.target, a]));
+            let current = null;
+
+            function setActive(id) {
+                if (id === current) return;
+                if (current) links.get(current)?.classList.remove('is-active');
+                current = id;
+                const a = links.get(id);
+                if (!a) return;
+                a.classList.add('is-active');
+                // 讓 active 項目保持在側邊欄可視範圍內
+                const toc = $('#docToc');
+                const top = a.offsetTop - toc.clientHeight / 2;
+                if (Math.abs(toc.scrollTop - top) > toc.clientHeight / 3) {
+                    toc.scrollTo({ top, behavior: 'smooth' });
                 }
             }
 
-            // 顯示結語
-            document.getElementById('guide-done').style.display = '';
+            const offset = 120;
+            function onScroll() {
+                let active = headings[0]?.id;
+                for (const h of headings) {
+                    if (h.getBoundingClientRect().top <= offset) active = h.id;
+                    else break;
+                }
+                if (active) setActive(active);
+
+                // 進度條
+                const max = document.documentElement.scrollHeight - window.innerHeight;
+                $('#docProgress').style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
+
+                // 回頂端按鈕
+                $('#docTop').classList.toggle('is-visible', window.scrollY > 600);
+            }
+
+            let ticking = false;
+            window.addEventListener('scroll', () => {
+                if (ticking) return;
+                ticking = true;
+                requestAnimationFrame(() => { onScroll(); ticking = false; });
+            }, { passive: true });
+            onScroll();
         }
 
-        // 平滑滾動
-        document.querySelectorAll('a[data-scroll]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+        /* ── 行動版目錄抽屜 ── */
+        function initDrawer() {
+            const sidebar = $('#docSidebar'), scrim = $('#docScrim'), btn = $('#docTocToggle');
+            const setOpen = open => {
+                sidebar.classList.toggle('is-open', open);
+                scrim.classList.toggle('is-open', open);
+                btn.setAttribute('aria-expanded', String(open));
+            };
+            btn.addEventListener('click', () => setOpen(!sidebar.classList.contains('is-open')));
+            scrim.addEventListener('click', () => setOpen(false));
+            // 點目錄項目後在手機上自動收合
+            $('#docToc').addEventListener('click', e => {
+                if (e.target.tagName === 'A' && window.innerWidth <= 1023) setOpen(false);
             });
-        });
+        }
 
-        // 啟動載入
+        /* ── 圖片燈箱 ── */
+        function initLightbox() {
+            const box = $('#docLightbox'), img = $('img', box);
+            const close = () => { box.classList.remove('is-open'); img.src = ''; };
+            $('#guide-container').addEventListener('click', e => {
+                const t = e.target;
+                if (t.tagName !== 'IMG' || t.closest('table')) return;
+                img.src = t.src;
+                img.alt = t.alt;
+                box.classList.add('is-open');
+            });
+            box.addEventListener('click', close);
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && box.classList.contains('is-open')) close();
+            });
+        }
+
+        /* ── 載入 ── */
+        async function loadGuides() {
+            const container = $('#guide-container');
+            const results = await Promise.all(guideSections.map(async path => {
+                try {
+                    const res = await fetch(path);
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                    return { path, md: await res.text() };
+                } catch (err) {
+                    return { path, error: err.message };
+                }
+            }));
+
+            container.innerHTML = '';
+            results.forEach((r, i) => {
+                const section = document.createElement('section');
+                section.className = 'doc-chapter prose';
+                section.id = `chapter-${i + 1}`;
+                if (r.error) {
+                    section.innerHTML = `<div class="alert alert-danger">⚠️ 無法載入 ${r.path}：${r.error}</div>`;
+                } else {
+                    section.innerHTML = marked.parse(r.md);
+                    enhance(section);
+                }
+                container.appendChild(section);
+            });
+
+            const headings = buildToc();
+            initScrollSpy(headings);
+            initLightbox();
+            $('#guide-done').style.display = '';
+
+            // 支援直接用 #anchor 進站
+            if (location.hash) {
+                const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+                if (target) setTimeout(() => target.scrollIntoView({ block: 'start' }), 60);
+            }
+        }
+
+        $('#docTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        initDrawer();
         loadGuides();
     </script>
 </body>
