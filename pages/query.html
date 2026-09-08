@@ -104,6 +104,7 @@
                     <button class="tab-btn" data-tab="characters-tab">👤 角色查詢</button>
                     <button class="tab-btn" data-tab="inventory-tab">📦 庫存查詢</button>
                     <button class="tab-btn" data-tab="gacha-tab">🎰 抽獎歷史</button>
+                    <button class="tab-btn" data-tab="workstation-tab">🏭 工作站</button>
                 </div>
 
                 <!-- 玩家總覽 -->
@@ -220,6 +221,32 @@
                             <div id="gachaSummary" class="filter-summary"></div>
                             <div id="gachaHistory">
                                 <div class="alert alert-info">請先驗證以查看您的抽獎歷史</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 工作站 -->
+                <div class="tab-content" id="workstation-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">🏭 我的工作站</span>
+                            <span class="badge badge-primary" id="workstationCount">0 / 20</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="grid grid-4" style="margin-bottom: 20px;">
+                                <div class="stat-box"><div class="stat-value" id="wsOwnedCount">—</div><div class="stat-label">已啟用</div></div>
+                                <div class="stat-box"><div class="stat-value" id="wsBuildingCount">—</div><div class="stat-label">建造/升級中</div></div>
+                                <div class="stat-box"><div class="stat-value" id="wsCityCount">—</div><div class="stat-label">分布城市</div></div>
+                                <div class="stat-box"><div class="stat-value" id="wsTopLevel">—</div><div class="stat-label">最高等級</div></div>
+                            </div>
+                            <div id="wsDailyOutput" class="filter-summary"></div>
+                            <div id="workstationList">
+                                <div class="alert alert-info">請先驗證以查看您的工作站</div>
+                            </div>
+                            <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                                <button class="btn btn-outline" type="button" id="wsRefreshBtn" style="display: none;">🔄 重新整理</button>
+                                <button class="btn btn-outline" type="button" id="wsFullScanBtn" style="display: none;">🔍 完整掃描全部城市</button>
                             </div>
                         </div>
                     </div>
@@ -640,6 +667,16 @@
                 }
             } catch (e) {
                 console.error('抽獎歷史查詢失敗:', e);
+            }
+
+            showLoadingState('正在查詢工作站...');
+
+            try {
+                await fetchWorkstations();
+            } catch (e) {
+                console.error('工作站查詢失敗:', e);
+                const el = document.getElementById('workstationList');
+                if (el) el.innerHTML = `<div class="alert alert-danger">工作站查詢失敗：${escapeHtml(e.message)}</div>`;
             }
 
             // 所有查詢完成後，顯示已登入狀態（清除載入中訊息）
@@ -1188,6 +1225,244 @@
                 </div>
             `;
         }
+
+        // ==================== 工作站 ====================
+        // 資料來源（對照遊戲前端 v3.01 的 main.js）：
+        //   uw_player_info { user_id } -> { player_name, organization, org_daily_output, cities: [{ city_id, city_name, is_king, workstations: [{ level, ws_name }] }] }
+        //   city_sites     { city_id } -> { sites: [...], workstation_count, kings, can_collect_all, uw_dominance }
+        // site.state 語意：1=空位未建造 / 2=建造或升級中（workstation.completed_at 為完工時間）/ 3=自己已啟用 / 4=他人持有
+        const WORKSTATION_LIMIT = 20;
+        let workstationRows = [];
+        let workstationTicker = null;
+        let workstationCityNames = null;
+
+        // 讀取城鎮名稱對照（cities.json 為公開快照，失敗則退回顯示 city_id）
+        async function getCityNameMap() {
+            if (workstationCityNames) return workstationCityNames;
+            workstationCityNames = new Map();
+            try {
+                let res = await fetch(`../return_data_example/cities.json?t=${Date.now()}`);
+                if (!res.ok) res = await fetch('../return_data_example/cities.json');
+                if (res.ok) {
+                    const data = await res.json();
+                    (data.cities || []).forEach(city => {
+                        if (city && city.id != null) workstationCityNames.set(String(city.id), city.name || '');
+                    });
+                }
+            } catch (e) {
+                console.warn('城鎮名稱對照載入失敗，將以 city_id 顯示', e);
+            }
+            return workstationCityNames;
+        }
+
+        function cityNameOf(cityId) {
+            const name = workstationCityNames && workstationCityNames.get(String(cityId));
+            return name || `城市 ${cityId}`;
+        }
+
+        // 秒數轉「1 天 2 小時 3 分」
+        function formatDuration(seconds) {
+            const total = Math.max(0, Math.floor(seconds));
+            if (total === 0) return '已完成';
+            const day = Math.floor(total / 86400);
+            const hour = Math.floor((total % 86400) / 3600);
+            const minute = Math.floor((total % 3600) / 60);
+            const second = total % 60;
+            if (day > 0) return `${day} 天 ${hour} 小時 ${minute} 分`;
+            if (hour > 0) return `${hour} 小時 ${minute} 分 ${second} 秒`;
+            if (minute > 0) return `${minute} 分 ${second} 秒`;
+            return `${second} 秒`;
+        }
+
+        function formatDateTime(value) {
+            if (!value) return '';
+            const date = new Date(value);
+            if (Number.isNaN(date.getTime())) return String(value);
+            return date.toLocaleString('zh-TW');
+        }
+
+        // 查詢工作站：先用 uw_player_info 取得有站的城市，再逐城 city_sites 取得建造進度
+        async function fetchWorkstations(cityIdsOverride = null) {
+            const listEl = document.getElementById('workstationList');
+            if (listEl) listEl.innerHTML = '<div class="alert alert-info">查詢中…</div>';
+
+            await getCityNameMap();
+
+            let playerInfo = null;
+            let cityIds = cityIdsOverride;
+
+            if (!cityIds) {
+                playerInfo = await sendApiRequest('uw_player_info', { user_id: currentPlayerId });
+                console.log('🏭 uw_player_info:', playerInfo);
+                cityIds = (playerInfo?.cities || []).map(city => city.city_id).filter(id => id != null);
+            }
+
+            // 逐城查詢（節流，避免短時間內打太多次）
+            const rows = [];
+            let reportedCount = null;
+            for (let i = 0; i < cityIds.length; i++) {
+                const cityId = cityIds[i];
+                if (listEl) listEl.innerHTML = `<div class="alert alert-info">查詢中… (${i + 1} / ${cityIds.length})</div>`;
+                try {
+                    const payload = await sendApiRequest('city_sites', { city_id: cityId });
+                    if (payload?.workstation_count != null) reportedCount = payload.workstation_count;
+                    const cityName = cityNameOf(cityId);
+                    (payload?.sites || [])
+                        .filter(site => site.reference_type === 'Workstation' && (site.state === 2 || site.state === 3))
+                        .forEach(site => {
+                            const level = site.workstation?.level ?? 0;
+                            rows.push({
+                                cityId,
+                                cityName,
+                                siteId: site.id,
+                                wsName: site.ws_name || '',
+                                propName: site.prop_name || '',
+                                sideLabel: site.side_label || '',
+                                sameNation: !!site.same_nation,
+                                level,
+                                points: site.workstation?.points ?? null,
+                                building: site.state === 2,
+                                completedAt: site.state === 2 ? (site.workstation?.completed_at || null) : null
+                            });
+                        });
+                } catch (e) {
+                    console.warn(`城市 ${cityId} 的 city_sites 查詢失敗`, e);
+                }
+                if (i < cityIds.length - 1) await new Promise(resolve => setTimeout(resolve, 150));
+            }
+
+            workstationRows = rows;
+            renderWorkstations(playerInfo, reportedCount);
+        }
+
+        // 完整掃描：對所有城市各送一次 city_sites（次數多、耗時長，需使用者主動觸發）
+        async function fullScanWorkstations() {
+            await getCityNameMap();
+            const cityIds = Array.from(workstationCityNames.keys()).map(Number).filter(Number.isFinite);
+            if (cityIds.length === 0) {
+                alert('讀不到城鎮清單，無法完整掃描');
+                return;
+            }
+            if (!confirm(`完整掃描會對 ${cityIds.length} 座城市各送一次查詢，約需數分鐘，確定要繼續嗎？`)) return;
+            await fetchWorkstations(cityIds);
+        }
+
+        function renderWorkstations(playerInfo, reportedCount) {
+            const listEl = document.getElementById('workstationList');
+            if (!listEl) return;
+
+            const rows = workstationRows.slice().sort((a, b) => {
+                if (a.building !== b.building) return a.building ? -1 : 1;
+                if (a.building && b.building) return new Date(a.completedAt || 0) - new Date(b.completedAt || 0);
+                return b.level - a.level;
+            });
+
+            const building = rows.filter(row => row.building);
+            const active = rows.filter(row => !row.building);
+            const total = reportedCount != null ? reportedCount : rows.length;
+
+            document.getElementById('workstationCount').textContent = `${total} / ${WORKSTATION_LIMIT}`;
+            document.getElementById('wsOwnedCount').textContent = active.length;
+            document.getElementById('wsBuildingCount').textContent = building.length;
+            document.getElementById('wsCityCount').textContent = new Set(rows.map(row => row.cityId)).size;
+            document.getElementById('wsTopLevel').textContent = rows.length ? `Lv ${Math.max(...rows.map(row => row.level))}` : '—';
+
+            const dailyOutput = playerInfo?.org_daily_output || [];
+            const outputEl = document.getElementById('wsDailyOutput');
+            if (outputEl) {
+                const parts = [];
+                if (playerInfo?.organization) parts.push(`組織：${playerInfo.organization}`);
+                if (dailyOutput.length) parts.push(`每日產出：${dailyOutput.map(item => `${item.quantity} ${item.prop_name}`).join('、')}`);
+                outputEl.textContent = parts.join('　|　');
+            }
+
+            document.getElementById('wsRefreshBtn').style.display = '';
+            document.getElementById('wsFullScanBtn').style.display = '';
+
+            if (rows.length === 0) {
+                listEl.innerHTML = '<div class="alert alert-info">目前沒有查到工作站。若你剛在其他城市開工，可以試試下方的「完整掃描全部城市」。</div>';
+                stopWorkstationTicker();
+                return;
+            }
+
+            const missingNote = (reportedCount != null && reportedCount > rows.length)
+                ? `<div class="alert alert-warning">伺服器回報你共有 ${reportedCount} 座工作站，但這次只掃到 ${rows.length} 座（可能有站蓋在未列出的城市）。可用下方的「完整掃描全部城市」補齊。</div>`
+                : '';
+
+            listEl.innerHTML = `
+                ${missingNote}
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>城市</th>
+                                <th>工作站</th>
+                                <th>產出</th>
+                                <th>等級</th>
+                                <th>狀態</th>
+                                <th>剩餘時間</th>
+                                <th>結束時間</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${rows.map(row => `
+                                <tr>
+                                    <td>${escapeHtml(row.cityName)}${row.sameNation ? ' <span class="badge badge-primary">同國</span>' : ''}</td>
+                                    <td><strong>${escapeHtml(row.wsName)}</strong>${row.sideLabel ? `<br><small>${escapeHtml(row.sideLabel)}</small>` : ''}</td>
+                                    <td>${escapeHtml(row.propName)}</td>
+                                    <td>${row.building ? `Lv ${row.level} → ${row.level + 1}` : `Lv ${row.level}`}</td>
+                                    <td>${row.building ? '<span class="badge badge-warning">建造中</span>' : '<span class="badge badge-success">已啟用</span>'}</td>
+                                    <td>${row.building ? `<span class="ws-remaining" data-completed-at="${escapeHtml(row.completedAt || '')}">—</span>` : '—'}</td>
+                                    <td>${row.building ? escapeHtml(formatDateTime(row.completedAt)) : '—'}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+
+            startWorkstationTicker();
+        }
+
+        // 每秒更新剩餘時間
+        function startWorkstationTicker() {
+            stopWorkstationTicker();
+            const tick = () => {
+                const cells = document.querySelectorAll('#workstationList .ws-remaining');
+                if (cells.length === 0) { stopWorkstationTicker(); return; }
+                cells.forEach(cell => {
+                    const at = cell.getAttribute('data-completed-at');
+                    if (!at) { cell.textContent = '未知'; return; }
+                    const remaining = (new Date(at).getTime() - Date.now()) / 1000;
+                    cell.textContent = remaining <= 0 ? '已完成' : formatDuration(remaining);
+                });
+            };
+            tick();
+            workstationTicker = setInterval(tick, 1000);
+        }
+
+        function stopWorkstationTicker() {
+            if (workstationTicker) {
+                clearInterval(workstationTicker);
+                workstationTicker = null;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const refreshBtn = document.getElementById('wsRefreshBtn');
+            const scanBtn = document.getElementById('wsFullScanBtn');
+            const showError = message => {
+                const el = document.getElementById('workstationList');
+                if (el) el.innerHTML = `<div class="alert alert-danger">${escapeHtml(message)}</div>`;
+            };
+            if (refreshBtn) refreshBtn.addEventListener('click', () => {
+                fetchWorkstations().catch(e => showError(`工作站查詢失敗：${e.message}`));
+            });
+            if (scanBtn) scanBtn.addEventListener('click', () => {
+                fullScanWorkstations().catch(e => showError(`完整掃描失敗：${e.message}`));
+            });
+        });
+        window.addEventListener('beforeunload', stopWorkstationTicker);
     </script>
 </body>
 </html>
