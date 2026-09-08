@@ -658,6 +658,19 @@ select.form-control {
     text-decoration: underline;
 }
 
+.footer p {
+    margin: 4px 0;
+}
+
+/* 外部連結後方的箭頭標記 */
+.external-mark {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 0.85em;
+    line-height: 1;
+    vertical-align: baseline;
+}
+
 /* 分頁 */
 .tabs {
     display: flex;

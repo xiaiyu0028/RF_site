@@ -79,6 +79,39 @@ function closeNavGroups(except) {
     });
 }
 
+// 友站（外部連結，統一在這裡維護：頁尾與首頁的「社群站點」區塊都會用到）
+const EXTERNAL_SITES = [
+    {
+        name: '劇情重播',
+        url: 'https://chiaomao666.github.io/rf-stories/',
+        description: '紅軍／非紅軍主線的劇情重播存檔，還原對話演出、配樂與音效。',
+        icon: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"></path><path d="M9 8h6M9 12h4"></path>'
+    },
+    {
+        name: '城鎮滲透看板',
+        url: 'https://rf-city-watch.xiayu0028.workers.dev/',
+        description: '每日自動更新的城鎮滲透度、城王排行與歷史趨勢圖。',
+        icon: '<path d="M4 19V5m0 14h16"></path><path d="m7 15 3.5-4 3 2.5L18 8"></path>'
+    }
+];
+
+const GITHUB_REPO_URL = 'https://github.com/xiaiyu0028/RF_site';
+
+// 統一產生頁尾（各頁 HTML 裡的 <footer class="footer"> 只是 fallback）
+function upgradeFooter() {
+    const externalLinks = EXTERNAL_SITES
+        .map(site => `<a href="${site.url}" target="_blank" rel="noopener noreferrer">${site.name}<span class="external-mark" aria-hidden="true">↗</span></a>`)
+        .join(' · ');
+
+    document.querySelectorAll('footer.footer').forEach(footer => {
+        footer.innerHTML = `
+            <p>RF 攻略網站 | 使用 GitHub Pages 建置</p>
+            <p>資料來源：遊戲內 API | <a href="${GITHUB_REPO_URL}" target="_blank" rel="noopener noreferrer">GitHub Repository<span class="external-mark" aria-hidden="true">↗</span></a></p>
+            <p>友站：${externalLinks}</p>
+        `;
+    });
+}
+
 function upgradeNavigation() {
     const navbar = document.querySelector('.navbar');
     const menu = document.getElementById('navMenu');
@@ -517,6 +550,7 @@ async function copyToClipboard(text) {
 // 初始化
 document.addEventListener('DOMContentLoaded', function() {
     upgradeNavigation();
+    upgradeFooter();
     initTabs();
     initAccordion();
 });

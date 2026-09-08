@@ -65,6 +65,13 @@
                 </div>
             </section>
 
+            <section aria-labelledby="external-title">
+                <div class="section-heading">
+                    <div><h2 id="external-title">社群站點</h2><p>由其他玩家維護的站台，補上本站沒有的即時資料與劇情內容。</p></div>
+                </div>
+                <div class="grid grid-2" id="externalSites"></div>
+            </section>
+
             <section aria-labelledby="data-title">
                 <div class="section-heading"><div><h2 id="data-title">資料概覽</h2><p id="dataUpdateStatus" aria-live="polite">正在讀取資料快照…</p></div></div>
                 <div class="grid grid-4">
@@ -91,6 +98,16 @@
         document.addEventListener('DOMContentLoaded', async function () {
             const $ = id => document.getElementById(id);
             const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+            const externalContainer = $('externalSites');
+            if (externalContainer && typeof EXTERNAL_SITES !== 'undefined') {
+                externalContainer.innerHTML = EXTERNAL_SITES.map(site => `
+                    <a href="${site.url}" class="feature-card" target="_blank" rel="noopener noreferrer">
+                        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24">${site.icon}</svg></div>
+                        <h3>${escapeHtml(site.name)}<span class="external-mark" aria-hidden="true">↗</span></h3>
+                        <p>${escapeHtml(site.description)}</p>
+                    </a>
+                `).join('');
+            }
             const results = $('globalSearchResults');
             const searchInput = $('globalSearch');
             let searchIndex = [];
