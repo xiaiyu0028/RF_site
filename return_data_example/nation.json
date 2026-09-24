@@ -277,7 +277,7 @@
       "can_change_seal": false,
       "description_subtitle": "大陸的征服者與主宰者",
       "strategy_background": "/images/nation/strategy_background/str01CM.png",
-      "control_cities": 58,
+      "control_cities": 57,
       "seal": "/images/nation/seal/Scoa01CM.png",
       "alliance": "共產陣營",
       "diplomatic_strategy_ids": [
@@ -475,7 +475,7 @@
       "can_change_seal": false,
       "description_subtitle": "供清帝拓殖的海外墾地",
       "strategy_background": "/images/nation/strategy_background/str08TW.png",
-      "control_cities": 25,
+      "control_cities": 19,
       "seal": "/images/nation/seal/Scoa08TW.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -675,7 +675,7 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝割讓的海港城邦",
       "strategy_background": "/images/nation/strategy_background/str02HK.png",
-      "control_cities": 39,
+      "control_cities": 38,
       "seal": "/images/nation/seal/Scoa02HK.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -871,7 +871,7 @@
       "can_change_seal": false,
       "description_subtitle": "隨清帝共治的血盟鐵騎",
       "strategy_background": "/images/nation/strategy_background/str03MG.png",
-      "control_cities": 22,
+      "control_cities": 24,
       "seal": "/images/nation/seal/Scoa03MG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1065,7 +1065,7 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝互尊的雪域佛土",
       "strategy_background": "/images/nation/strategy_background/str04TB.png",
-      "control_cities": 13,
+      "control_cities": 18,
       "seal": "/images/nation/seal/Scoa04TB.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1261,7 +1261,7 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝合作的自由牧人",
       "strategy_background": "/images/nation/strategy_background/str05KZ.png",
-      "control_cities": 41,
+      "control_cities": 11,
       "seal": "/images/nation/seal/Scoa05KZ.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1355,7 +1355,7 @@
           "minister_union_id": 4987,
           "ministry": {
             "id": 11,
-            "name": "防諜課"
+            "name": "保防處"
           }
         },
         {
@@ -1364,7 +1364,7 @@
           "minister_union_id": 2598,
           "ministry": {
             "id": 12,
-            "name": "参謀本部"
+            "name": "參謀部"
           }
         },
         {
@@ -1373,7 +1373,7 @@
           "minister_union_id": 2696,
           "ministry": {
             "id": 13,
-            "name": "人事課"
+            "name": "人事處"
           }
         },
         {
@@ -1382,7 +1382,7 @@
           "minister_union_id": 6673,
           "ministry": {
             "id": 14,
-            "name": "広報課"
+            "name": "公關處"
           }
         },
         {
@@ -1391,7 +1391,7 @@
           "minister_union_id": 3418,
           "ministry": {
             "id": 10,
-            "name": "秘書課"
+            "name": "祕書處"
           }
         },
         {
@@ -1400,7 +1400,7 @@
           "minister_union_id": 4310,
           "ministry": {
             "id": 15,
-            "name": "政治戦課"
+            "name": "政戰處"
           }
         },
         {
@@ -1409,15 +1409,16 @@
           "minister_union_id": 5818,
           "ministry": {
             "id": 16,
-            "name": "監察課"
+            "name": "監察處"
           }
         },
         {
           "image": "/images/nation/ministry/A08.png",
-          "minister": null,
+          "minister": "放蕩著茶會",
+          "minister_union_id": 4846,
           "ministry": {
             "id": 17,
-            "name": "法務課"
+            "name": "法制處"
           }
         },
         {
@@ -1425,7 +1426,7 @@
           "minister": null,
           "ministry": {
             "id": 18,
-            "name": "渉外課"
+            "name": "外事處"
           }
         }
       ]
@@ -1455,7 +1456,7 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝把持的沙漠七城",
       "strategy_background": "/images/nation/strategy_background/str06UG.png",
-      "control_cities": 23,
+      "control_cities": 58,
       "seal": "/images/nation/seal/Scoa06UG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1650,7 +1651,7 @@
       "can_change_seal": false,
       "description_subtitle": "讓清帝崛起的白山黑水",
       "strategy_background": "/images/nation/strategy_background/str07MC.png",
-      "control_cities": 20,
+      "control_cities": 18,
       "seal": "/images/nation/seal/Scoa07MC.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1844,7 +1845,7 @@
       "can_change_seal": true,
       "description_subtitle": "將清帝推翻的華夏各邦",
       "strategy_background": "/images/nation/strategy_background/str09RB.png",
-      "control_cities": 28,
+      "control_cities": 26,
       "seal": "/images/nation/seal/Scoa09RB01.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [

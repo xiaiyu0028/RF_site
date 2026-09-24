@@ -306,7 +306,7 @@
           "avatar": "/images/actor/half/bustMC05A.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 745459,
-          "nickname": "夏夏ㄉ頭",
+          "nickname": "中壢歌后（夏夏ㄉ頭",
           "points": 4096,
           "rank": 2
         },
@@ -320,6 +320,27 @@
         }
       ],
       "sites": [
+        {
+          "access_city_hidden": false,
+          "access_city_id": 589,
+          "access_city_name": "中壢",
+          "condition": {
+            "condition_level": 60,
+            "condition_quantity": null,
+            "level": 1,
+            "ref_level": null,
+            "reference_name": "范姜",
+            "type": "ActorLevel"
+          },
+          "cur_level": 1,
+          "energy_charge": 5,
+          "id": 917,
+          "max_level": 1,
+          "name": "中壢",
+          "position": 1,
+          "reference_type": "Access",
+          "state": 4
+        },
         {
           "emblem": null,
           "energy_charge": null,
@@ -365,7 +386,7 @@
       ],
       "uw_dominance": {
         "10": 4,
-        "2": 89,
+        "2": 90,
         "3": 6,
         "8": 0
       },
@@ -395,7 +416,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 654856,
           "nickname": "初音未來",
-          "points": 896,
+          "points": 1024,
           "rank": 3
         }
       ],
@@ -465,7 +486,7 @@
           "avatar": "/images/actor/half/bustMC05A.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 745459,
-          "nickname": "夏夏ㄉ頭",
+          "nickname": "中壢歌后（夏夏ㄉ頭",
           "points": 2048,
           "rank": 2
         },
@@ -1778,7 +1799,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 653106,
           "nickname": "李世民",
-          "points": 4096,
+          "points": 5120,
           "rank": 2
         },
         {
@@ -1997,8 +2018,8 @@
         "1": 6,
         "10": 8,
         "2": 5,
-        "3": 75,
-        "4": 2,
+        "3": 74,
+        "4": 3,
         "5": 1,
         "6": 1,
         "7": 2,
@@ -2114,7 +2135,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 757126,
           "nickname": "醉蝦 ",
-          "points": 3072,
+          "points": 4096,
           "rank": 1
         },
         {
@@ -3656,7 +3677,7 @@
         }
       ],
       "uw_dominance": {
-        "1": 15,
+        "1": 14,
         "10": 83,
         "2": 0,
         "3": 2,
@@ -6856,7 +6877,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 848051,
           "nickname": "ソルコクタニ・ベキ",
-          "points": 8704,
+          "points": 9728,
           "rank": 3
         }
       ],
@@ -7531,7 +7552,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7545,7 +7566,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7599,7 +7620,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7613,7 +7634,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7627,7 +7648,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8331,7 +8352,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -9740,9 +9761,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 69,
+        "1": 66,
         "3": 1,
-        "7": 30
+        "7": 33
       },
       "workstation_count": 2
     },
@@ -10041,7 +10062,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
-          "points": 260,
+          "points": 516,
           "rank": 3
         }
       ],
@@ -10454,7 +10475,7 @@
           "avatar": "/images/actor/half/bustFROR03.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 750369,
-          "nickname": "白天太白",
+          "nickname": "夏夏的眉",
           "points": 2560,
           "rank": 1
         },
@@ -10678,10 +10699,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 45,
+        "1": 44,
         "2": 0,
         "3": 0,
-        "7": 55
+        "7": 56
       },
       "workstation_count": 2
     },
@@ -11132,7 +11153,7 @@
         }
       ],
       "uw_dominance": {
-        "1": 57,
+        "1": 58,
         "4": 0,
         "7": 42
       },
@@ -12769,7 +12790,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 821871,
           "nickname": "蝦冰",
-          "points": 13312,
+          "points": 14336,
           "rank": 1
         },
         {
@@ -13426,7 +13447,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 750771,
           "nickname": "波加曼",
-          "points": 2256,
+          "points": 2384,
           "rank": 3
         }
       ],
@@ -13517,9 +13538,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 39,
+        "1": 38,
         "2": 7,
-        "5": 39,
+        "5": 38,
         "8": 16
       },
       "workstation_count": 2
@@ -17384,7 +17405,7 @@
       ],
       "uw_dominance": {
         "1": 13,
-        "10": 35,
+        "10": 36,
         "2": 11,
         "3": 2,
         "4": 30,
@@ -18202,8 +18223,8 @@
       "uw_dominance": {
         "1": 22,
         "10": 0,
-        "2": 51,
-        "3": 10,
+        "2": 52,
+        "3": 9,
         "5": 0,
         "6": 0,
         "7": 17
@@ -19040,7 +19061,7 @@
       "uw_dominance": {
         "1": 51,
         "10": 3,
-        "2": 44,
+        "2": 45,
         "3": 1,
         "7": 0
       },
@@ -19209,7 +19230,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 808659,
           "nickname": "_",
-          "points": 32,
+          "points": 48,
           "rank": 2
         }
       ],
@@ -19270,9 +19291,9 @@
         },
         {
           "avatar": "/images/actor/half/bustMG03.png",
-          "emblem": "/images/nation/color_icon/minicoa02HK.png",
-          "id": 850100,
-          "nickname": "クラン",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 808659,
+          "nickname": "_",
           "points": 256,
           "rank": 3
         }
@@ -19879,7 +19900,16 @@
     },
     "589": {
       "can_collect_all": true,
-      "kings": [],
+      "kings": [
+        {
+          "avatar": "/images/actor/half/bustMC05A.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 745459,
+          "nickname": "中壢歌后（夏夏ㄉ頭",
+          "points": 16,
+          "rank": 1
+        }
+      ],
       "sites": [
         {
           "access_city_hidden": null,
@@ -19994,7 +20024,9 @@
           "ws_name": "性產業"
         }
       ],
-      "uw_dominance": {},
+      "uw_dominance": {
+        "2": 100
+      },
       "workstation_count": 2
     },
     "595": {
@@ -20021,27 +20053,6 @@
           "position": 1,
           "reference_type": "Explore",
           "state": 5
-        },
-        {
-          "access_city_hidden": false,
-          "access_city_id": 589,
-          "access_city_name": "中壢",
-          "condition": {
-            "condition_level": 60,
-            "condition_quantity": null,
-            "level": 1,
-            "ref_level": null,
-            "reference_name": "范姜",
-            "type": "ActorLevel"
-          },
-          "cur_level": 1,
-          "energy_charge": 5,
-          "id": 917,
-          "max_level": 1,
-          "name": "中壢",
-          "position": 1,
-          "reference_type": "Access",
-          "state": 4
         }
       ],
       "uw_dominance": {},
