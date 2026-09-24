@@ -7,8 +7,8 @@
       "map_building_frame": "/images/cities/building/frame_muslim.png",
       "id": 505,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -22,7 +22,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovKhalifahLeague.png",
       "energy_charge": 60,
       "uw_king_id": 816995,
@@ -37,7 +37,7 @@
       },
       "uw_street_image": "/images/site/street/sv_muslim.png",
       "controlled": false,
-      "sword": true,
+      "sword": false,
       "down_city_id": null,
       "visitable": true,
       "nation_battle_score": null,
@@ -46,13 +46,10 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": {
-        "close_roll_call_at": "2026-09-24T08:45:26Z",
-        "nation_icon": "/images/nation/color_icon/minicoa06UG.png"
-      },
+      "nation_battle": null,
       "focus": false,
       "map_building": "/images/cities/building/muslim.png",
       "window_view_image": "/images/site/window/wsv_muslim.png",
@@ -87,12 +84,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM06.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -644,7 +641,7 @@
         "10": 0,
         "2": 86,
         "3": 1,
-        "4": 10
+        "6": 10
       },
       "uw_street_image": "/images/site/street/sv_taiwan.png",
       "controlled": false,
@@ -660,7 +657,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/hokkien.png",
       "window_view_image": "/images/site/window/wsv_taiwan.png",
@@ -1240,8 +1240,8 @@
       "x_position": 8730,
       "right_city_id": null,
       "uw_dominance": {
-        "2": 88,
-        "3": 11,
+        "2": 90,
+        "3": 10,
         "8": 0
       },
       "uw_street_image": "/images/site/street/sv_taiwan.png",
@@ -1258,7 +1258,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/hokkien.png",
       "window_view_image": "/images/site/window/wsv_taiwan.png",
@@ -1439,11 +1442,11 @@
       "uw_dominance": {
         "1": 3,
         "10": 1,
-        "2": 86,
+        "2": 85,
         "3": 9,
         "4": 0,
         "6": 0,
-        "8": 2
+        "8": 3
       },
       "uw_street_image": "/images/site/street/sv_taiwan.png",
       "controlled": false,
@@ -1459,7 +1462,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/hokkien.png",
       "window_view_image": "/images/site/window/wsv_taiwan.png",
@@ -4087,8 +4093,8 @@
       "map_building_frame": "/images/cities/building/frame_austric.png",
       "id": 21,
       "control_nation": {
-        "id": 8,
-        "name": "蒙古"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -4208,7 +4214,7 @@
       },
       "status": "locked",
       "capital": false,
-      "control_name": "究極奧義：敵滅瞬獄殺！",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovNusantarianLeague.png",
       "energy_charge": 20,
       "uw_king_id": 723681,
@@ -4230,7 +4236,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag03MG.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -4258,12 +4264,12 @@
       ],
       "reward": false,
       "description": "你躲過海上追擊，準備在菲律賓渡過平靜的一週，沒想到等在這裡的卻是⋯⋯",
-      "map_control": "/images/cities/control/INFbanner03MG.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 3047,
-        "name": "究極奧義：敵滅瞬獄殺！",
-        "nation_id": 8
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -4284,8 +4290,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 20,
       "control_nation": {
-        "id": 8,
-        "name": "蒙古"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -4405,7 +4411,7 @@
       },
       "status": "locked",
       "capital": false,
-      "control_name": "究極奧義：敵滅瞬獄殺！",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovNusantarianLeague.png",
       "energy_charge": 20,
       "uw_king_id": 689590,
@@ -4435,7 +4441,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag03MG.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -4464,12 +4470,12 @@
       ],
       "reward": false,
       "description": "跟著希拉雅來到馬尼拉，作為遊客在這裡渡過一個歡快的星期天。",
-      "map_control": "/images/cities/control/INFbanner03MG.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 3047,
-        "name": "究極奧義：敵滅瞬獄殺！",
-        "nation_id": 8
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": 37,
       "up_city_id": 70,
@@ -10192,8 +10198,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 25,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -10207,7 +10213,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "溶解棍母の湯圓碗",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovNusantarianLeague.png",
       "energy_charge": 40,
       "uw_king_id": 745751,
@@ -10232,7 +10238,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -10263,12 +10269,12 @@
       ],
       "reward": false,
       "description": "_",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 4535,
+        "name": "溶解棍母の湯圓碗",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -10382,8 +10388,8 @@
       "map_building_frame": "/images/cities/building/frame_hindu.png",
       "id": 541,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -10397,7 +10403,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 806920,
@@ -10412,7 +10418,7 @@
         "4": 88,
         "5": 0,
         "7": 0,
-        "8": 0
+        "8": 1
       },
       "uw_street_image": "/images/site/street/sv_hindu.png",
       "controlled": false,
@@ -10425,7 +10431,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": {
@@ -10470,12 +10476,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": 540,
@@ -10496,8 +10502,8 @@
       "map_building_frame": "/images/cities/building/frame_tibetan.png",
       "id": 545,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -10511,7 +10517,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 746061,
@@ -10534,7 +10540,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -10566,12 +10572,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -10680,8 +10686,8 @@
       "map_building_frame": "/images/cities/building/frame_hindu.png",
       "id": 543,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -10695,7 +10701,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 799267,
@@ -10717,7 +10723,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -10750,12 +10756,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -10776,8 +10782,8 @@
       "map_building_frame": "/images/cities/building/frame_tibetan.png",
       "id": 542,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -10791,7 +10797,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 740474,
@@ -10814,7 +10820,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -10841,12 +10847,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -10867,8 +10873,8 @@
       "map_building_frame": "/images/cities/building/frame_tibetan.png",
       "id": 536,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -10882,7 +10888,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 746061,
@@ -10906,7 +10912,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -10940,12 +10946,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": 541,
       "up_city_id": 551,
@@ -10966,8 +10972,8 @@
       "map_building_frame": "/images/cities/building/frame_tibetan.png",
       "id": 553,
       "control_nation": {
-        "id": 3,
-        "name": "香港"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -10981,7 +10987,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "慶賀董建華落地獄",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 740474,
@@ -11005,7 +11011,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -11034,12 +11040,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner02HK.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM04.mp3",
       "control_union": {
-        "id": 12228,
-        "name": "慶賀董建華落地獄",
-        "nation_id": 3
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -11602,8 +11608,8 @@
       "map_building_frame": "/images/cities/building/frame_tibetan.png",
       "id": 550,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -11617,7 +11623,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "Pilgrim Star",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 752645,
@@ -11639,7 +11645,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -11673,12 +11679,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM04.mp3",
       "control_union": {
-        "id": 21534,
-        "name": "Pilgrim Star",
-        "nation_id": 4
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -11699,8 +11705,8 @@
       "map_building_frame": "/images/cities/building/frame_himalayan.png",
       "id": 557,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -11714,7 +11720,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "Pilgrim Star",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 774512,
@@ -11738,7 +11744,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -11773,12 +11779,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 21534,
-        "name": "Pilgrim Star",
-        "nation_id": 4
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -11886,8 +11892,8 @@
       "map_building_frame": "/images/cities/building/frame_himalayan.png",
       "id": 539,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -11901,7 +11907,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "海南三地歡迎港野團",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovBharathiLeague.png",
       "energy_charge": 50,
       "uw_king_id": 741091,
@@ -11911,7 +11917,8 @@
       "right_city_id": null,
       "uw_dominance": {
         "10": 98,
-        "4": 2
+        "4": 2,
+        "6": 0
       },
       "uw_street_image": "/images/site/street/sv_hindu.png",
       "controlled": false,
@@ -11924,10 +11931,13 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB46.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/himalayan.png",
       "window_view_image": "/images/site/window/wsv_hindu.png",
@@ -11964,12 +11974,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB46.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 11899,
-        "name": "海南三地歡迎港野團",
-        "nation_id": 10
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -12226,8 +12236,9 @@
       "right_city_id": null,
       "uw_dominance": {
         "10": 0,
-        "4": 10,
-        "5": 89
+        "4": 3,
+        "5": 89,
+        "6": 7
       },
       "uw_street_image": "/images/site/street/sv_tibet.png",
       "controlled": false,
@@ -12243,7 +12254,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/tibetan.png",
       "window_view_image": "/images/site/window/wsv_tibet.png",
@@ -12551,8 +12565,8 @@
       "map_building_frame": "/images/cities/building/frame_muslim.png",
       "id": 499,
       "control_nation": {
-        "id": 1,
-        "name": "紅軍"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -12566,7 +12580,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "红十三军－西北红速递",
+      "control_name": "維吾爾人守望聯盟",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovKhalifahLeague.png",
       "energy_charge": 60,
       "uw_king_id": 783099,
@@ -12590,7 +12604,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE7.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -12613,12 +12627,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner01CM.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM06.mp3",
       "control_union": {
-        "id": 7009,
-        "name": "红十三军－西北红速递",
-        "nation_id": 1
+        "id": 1522,
+        "name": "維吾爾人守望聯盟",
+        "nation_id": 5
       },
       "left_city_id": 507,
       "up_city_id": 503,
@@ -13822,8 +13836,7 @@
       "uw_dominance": {
         "1": 7,
         "4": 0,
-        "6": 93,
-        "7": 0
+        "6": 93
       },
       "uw_street_image": "/images/site/street/sv_kazakh.png",
       "controlled": false,
@@ -13839,7 +13852,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/kazakh_yurt.png",
       "window_view_image": "/images/site/window/wsv_kazakh.png",
@@ -14031,7 +14047,6 @@
       "right_city_id": 517,
       "uw_dominance": {
         "1": 4,
-        "4": 0,
         "6": 96
       },
       "uw_street_image": "/images/site/street/sv_kazakh.png",
@@ -14048,7 +14063,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/kazakh_yurt.png",
       "window_view_image": "/images/site/window/wsv_kazakh.png",
@@ -16133,8 +16151,8 @@
       "map_building_frame": "/images/cities/building/frame_mongolian.png",
       "id": 114,
       "control_nation": {
-        "id": 8,
-        "name": "蒙古"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -16148,7 +16166,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "究極奧義：敵滅瞬獄殺！",
+      "control_name": "蝦",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovNorthernCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 778072,
@@ -16172,7 +16190,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE7.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag03MG.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -16195,12 +16213,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner03MG.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM03.mp3",
       "control_union": {
-        "id": 3047,
-        "name": "究極奧義：敵滅瞬獄殺！",
-        "nation_id": 8
+        "id": 6068,
+        "name": "蝦",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -16505,8 +16523,8 @@
       "map_building_frame": "/images/cities/building/frame_russian.png",
       "id": 99,
       "control_nation": {
-        "id": 8,
-        "name": "蒙古"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -16520,7 +16538,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "蒙古草原及貝加爾湖",
+      "control_name": "蝦",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovNorthernCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 740126,
@@ -16542,7 +16560,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag03MG.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -16572,12 +16590,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner03MG.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/nation_slides.mp3",
       "control_union": {
-        "id": 11866,
-        "name": "蒙古草原及貝加爾湖",
-        "nation_id": 8
+        "id": 6068,
+        "name": "蝦",
+        "nation_id": 5
       },
       "left_city_id": 100,
       "up_city_id": null,
@@ -16804,8 +16822,8 @@
       "map_building_frame": "/images/cities/building/frame_mongolian.png",
       "id": 112,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -16819,7 +16837,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "紀念圖博勇士洛嘎讓增🙏",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovNorthernCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 719835,
@@ -16836,7 +16854,7 @@
       },
       "uw_street_image": "/images/site/street/sv_mongolia.png",
       "controlled": false,
-      "sword": true,
+      "sword": false,
       "down_city_id": null,
       "visitable": true,
       "nation_battle_score": null,
@@ -16845,13 +16863,10 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": {
-        "close_roll_call_at": "2026-09-24T08:43:56Z",
-        "nation_icon": "/images/nation/color_icon/minicoa06UG.png"
-      },
+      "nation_battle": null,
       "focus": false,
       "map_building": "/images/cities/building/mongolian.png",
       "window_view_image": "/images/site/window/wsv_mongolia.png",
@@ -16883,12 +16898,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM03.mp3",
       "control_union": {
-        "id": 2681,
-        "name": "紀念圖博勇士洛嘎讓增🙏",
-        "nation_id": 4
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -17114,8 +17129,8 @@
       "map_building_frame": "/images/cities/building/frame_mongolian.png",
       "id": 108,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -17129,7 +17144,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "東甌國 臨海七軍",
+      "control_name": "蝦",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovNorthernCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 814200,
@@ -17152,7 +17167,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB52.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -17193,12 +17208,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB52.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM03.mp3",
       "control_union": {
-        "id": 6270,
-        "name": "東甌國 臨海七軍",
-        "nation_id": 10
+        "id": 6068,
+        "name": "蝦",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -18083,7 +18098,8 @@
       "right_city_id": 579,
       "uw_dominance": {
         "5": 22,
-        "7": 78,
+        "6": 11,
+        "7": 67,
         "8": 0
       },
       "uw_street_image": "/images/site/street/sv_post_soviet.png",
@@ -18100,7 +18116,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag07MC.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/russian.png",
       "window_view_image": "/images/site/window/wsv_post_soviet.png",
@@ -18240,8 +18259,8 @@
       "map_building_frame": "/images/cities/building/frame_japanese.png",
       "id": 18,
       "control_nation": {
-        "id": 2,
-        "name": "臺灣"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -18255,7 +18274,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "林口山上的少女",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovJapaneseMonarchy.png",
       "energy_charge": 5,
       "uw_king_id": 726927,
@@ -18279,7 +18298,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -18303,12 +18322,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner08TW.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 1587,
-        "name": "林口山上的少女",
-        "nation_id": 2
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -18329,8 +18348,8 @@
       "map_building_frame": "/images/cities/building/frame_japanese.png",
       "id": 63,
       "control_nation": {
-        "id": 2,
-        "name": "臺灣"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -18344,7 +18363,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "林口山上的少女",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovJapaneseMonarchy.png",
       "energy_charge": 5,
       "uw_king_id": 691843,
@@ -18369,7 +18388,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -18397,12 +18416,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner08TW.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 1587,
-        "name": "林口山上的少女",
-        "nation_id": 2
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -18524,8 +18543,8 @@
       "map_building_frame": "/images/cities/building/frame_japanese.png",
       "id": 65,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 2,
+        "name": "臺灣"
       },
       "bonus": {
         "changeable": false,
@@ -18539,7 +18558,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "紀念圖博勇士洛嘎讓增🙏",
+      "control_name": "直接外耗",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovJapaneseMonarchy.png",
       "energy_charge": 5,
       "uw_king_id": 812268,
@@ -18567,7 +18586,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -18603,12 +18622,12 @@
       ],
       "reward": false,
       "description": "_",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner08TW.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 2681,
-        "name": "紀念圖博勇士洛嘎讓增🙏",
-        "nation_id": 4
+        "id": 22029,
+        "name": "直接外耗",
+        "nation_id": 2
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -18629,8 +18648,8 @@
       "map_building_frame": "/images/cities/building/frame_japanese.png",
       "id": 66,
       "control_nation": {
-        "id": 2,
-        "name": "臺灣"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -18644,7 +18663,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "馬英九與標太郎美食研究會",
+      "control_name": "夢劇場",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovJapaneseMonarchy.png",
       "energy_charge": 5,
       "uw_king_id": 669094,
@@ -18670,7 +18689,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -18698,12 +18717,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner08TW.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 918,
-        "name": "馬英九與標太郎美食研究會",
-        "nation_id": 2
+        "id": 4987,
+        "name": "夢劇場",
+        "nation_id": 6
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -18814,8 +18833,8 @@
       "map_building_frame": "/images/cities/building/frame_oriental.png",
       "id": 71,
       "control_nation": {
-        "id": 2,
-        "name": "臺灣"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -18829,7 +18848,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "林口山上的少女",
+      "control_name": "夢劇場",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovCoreanConfederation.png",
       "energy_charge": 5,
       "uw_king_id": 750989,
@@ -18856,7 +18875,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -18885,12 +18904,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner08TW.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 1587,
-        "name": "林口山上的少女",
-        "nation_id": 2
+        "id": 4987,
+        "name": "夢劇場",
+        "nation_id": 6
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -18911,8 +18930,8 @@
       "map_building_frame": "/images/cities/building/frame_oriental.png",
       "id": 70,
       "control_nation": {
-        "id": 2,
-        "name": "臺灣"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -18926,7 +18945,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "林口山上的少女",
+      "control_name": "夢劇場",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovCoreanConfederation.png",
       "energy_charge": 5,
       "uw_king_id": 842539,
@@ -18951,7 +18970,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -18989,12 +19008,12 @@
       ],
       "reward": false,
       "description": "_",
-      "map_control": "/images/cities/control/INFbanner08TW.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 1587,
-        "name": "林口山上的少女",
-        "nation_id": 2
+        "id": 4987,
+        "name": "夢劇場",
+        "nation_id": 6
       },
       "left_city_id": 293,
       "up_city_id": 87,
@@ -21280,8 +21299,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 583,
       "control_nation": {
-        "id": 8,
-        "name": "蒙古"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -21295,7 +21314,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "究極奧義：敵滅瞬獄殺！",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovEuropeanUnion.png",
       "energy_charge": 5,
       "uw_king_id": 787007,
@@ -21310,7 +21329,7 @@
       },
       "uw_street_image": "/images/site/street/sv_western.png",
       "controlled": false,
-      "sword": true,
+      "sword": false,
       "down_city_id": null,
       "visitable": true,
       "nation_battle_score": null,
@@ -21319,13 +21338,10 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag03MG.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": {
-        "close_roll_call_at": "2026-09-24T08:43:29Z",
-        "nation_icon": "/images/nation/color_icon/minicoa02HK.png"
-      },
+      "nation_battle": null,
       "focus": false,
       "map_building": "/images/cities/building/western.png",
       "window_view_image": "/images/site/window/wsv_western.png",
@@ -21352,12 +21368,12 @@
       ],
       "reward": false,
       "description": "_",
-      "map_control": "/images/cities/control/INFbanner03MG.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 3047,
-        "name": "究極奧義：敵滅瞬獄殺！",
-        "nation_id": 8
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -21956,8 +21972,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 576,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -21971,7 +21987,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "東甌國 章安二軍",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 824776,
@@ -21995,7 +22011,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB52.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22013,12 +22029,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB52.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 1744,
-        "name": "東甌國 章安二軍",
-        "nation_id": 10
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": 20,
@@ -22039,8 +22055,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 578,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22054,7 +22070,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "東甌國 章安二軍",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 822441,
@@ -22079,7 +22095,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB52.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22099,12 +22115,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner09RB52.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 1744,
-        "name": "東甌國 章安二軍",
-        "nation_id": 10
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -22125,8 +22141,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 577,
       "control_nation": {
-        "id": 10,
-        "name": "反賊聯盟"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22140,7 +22156,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "東甌國 章安二軍",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 655268,
@@ -22166,7 +22182,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag09RB52.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22194,12 +22210,12 @@
       ],
       "reward": false,
       "description": "_",
-      "map_control": "/images/cities/control/INFbanner09RB52.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 1744,
-        "name": "東甌國 章安二軍",
-        "nation_id": 10
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -22220,8 +22236,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 579,
       "control_nation": {
-        "id": 8,
-        "name": "蒙古"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22235,7 +22251,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "究極奧義：敵滅瞬獄殺！",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 752689,
@@ -22259,7 +22275,7 @@
       "center_reference": true,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag03MG.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22288,12 +22304,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner03MG.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 3047,
-        "name": "究極奧義：敵滅瞬獄殺！",
-        "nation_id": 8
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": 64,
       "up_city_id": null,
@@ -22314,8 +22330,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 580,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22329,7 +22345,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "紀念圖博勇士洛嘎讓增🙏",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 787956,
@@ -22354,7 +22370,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22380,12 +22396,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 2681,
-        "name": "紀念圖博勇士洛嘎讓增🙏",
-        "nation_id": 4
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -22406,8 +22422,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 574,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22421,7 +22437,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "紀念圖博勇士洛嘎讓增🙏",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 841065,
@@ -22445,7 +22461,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22469,12 +22485,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 2681,
-        "name": "紀念圖博勇士洛嘎讓增🙏",
-        "nation_id": 4
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -22495,8 +22511,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 573,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22510,7 +22526,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "紀念圖博勇士洛嘎讓增🙏",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 787956,
@@ -22536,7 +22552,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22564,12 +22580,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 2681,
-        "name": "紀念圖博勇士洛嘎讓增🙏",
-        "nation_id": 4
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -22590,8 +22606,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 567,
       "control_nation": {
-        "id": 4,
-        "name": "藏國"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22605,7 +22621,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "紀念圖博勇士洛嘎讓增🙏",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 821871,
@@ -22631,7 +22647,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag04TB.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22666,12 +22682,12 @@
       ],
       "reward": false,
       "description": "_",
-      "map_control": "/images/cities/control/INFbanner04TB.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 2681,
-        "name": "紀念圖博勇士洛嘎讓增🙏",
-        "nation_id": 4
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -22692,8 +22708,8 @@
       "map_building_frame": "/images/cities/building/frame_western.png",
       "id": 566,
       "control_nation": {
-        "id": 5,
-        "name": "維吾爾"
+        "id": 3,
+        "name": "香港"
       },
       "bonus": {
         "changeable": false,
@@ -22707,7 +22723,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "蝦",
+      "control_name": "晨衝第一線",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflagSovAnglosphereCommonwealth.png",
       "energy_charge": 5,
       "uw_king_id": 814368,
@@ -22731,7 +22747,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -22766,12 +22782,12 @@
       ],
       "reward": false,
       "description": "_",
-      "map_control": "/images/cities/control/INFbanner06UG.png",
+      "map_control": "/images/cities/control/INFbanner02HK.png",
       "uw_music": "/audio/music/BGM15.mp3",
       "control_union": {
-        "id": 6068,
-        "name": "蝦",
-        "nation_id": 5
+        "id": 10281,
+        "name": "晨衝第一線",
+        "nation_id": 3
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -22993,8 +23009,8 @@
       "map_building_frame": "/images/cities/building/frame_oriental.png",
       "id": 290,
       "control_nation": {
-        "id": 1,
-        "name": "紅軍"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -23008,7 +23024,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "BAYERN",
+      "control_name": "夢劇場",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
       "energy_charge": 100,
       "uw_king_id": 741723,
@@ -23031,7 +23047,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -23077,12 +23093,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner01CM.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM01.mp3",
       "control_union": {
-        "id": 9390,
-        "name": "BAYERN",
-        "nation_id": 1
+        "id": 4987,
+        "name": "夢劇場",
+        "nation_id": 6
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -23103,8 +23119,8 @@
       "map_building_frame": "/images/cities/building/frame_oriental.png",
       "id": 291,
       "control_nation": {
-        "id": 1,
-        "name": "紅軍"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -23118,7 +23134,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "BAYERN",
+      "control_name": "夢劇場",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
       "energy_charge": 100,
       "uw_king_id": 849760,
@@ -23132,7 +23148,7 @@
       },
       "uw_street_image": "/images/site/street/sv_north_china.png",
       "controlled": false,
-      "sword": false,
+      "sword": true,
       "down_city_id": null,
       "visitable": true,
       "nation_battle_score": null,
@@ -23141,10 +23157,13 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": "2026-09-24T09:26:39Z",
+        "nation_icon": "/images/nation/color_icon/minicoa06UG.png"
+      },
       "focus": false,
       "map_building": "/images/cities/building/oriental.png",
       "window_view_image": "/images/site/window/wsv_north_china.png",
@@ -23178,12 +23197,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner01CM.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM01.mp3",
       "control_union": {
-        "id": 9390,
-        "name": "BAYERN",
-        "nation_id": 1
+        "id": 4987,
+        "name": "夢劇場",
+        "nation_id": 6
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -23204,8 +23223,8 @@
       "map_building_frame": "/images/cities/building/frame_oriental.png",
       "id": 289,
       "control_nation": {
-        "id": 1,
-        "name": "紅軍"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -23219,7 +23238,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "黃河",
+      "control_name": "夢劇場",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
       "energy_charge": 100,
       "uw_king_id": 829667,
@@ -23244,7 +23263,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -23287,12 +23306,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner01CM.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM01.mp3",
       "control_union": {
-        "id": 11909,
-        "name": "黃河",
-        "nation_id": 1
+        "id": 4987,
+        "name": "夢劇場",
+        "nation_id": 6
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -26611,8 +26630,8 @@
       "map_building_frame": "/images/cities/building/frame_mongolian.png",
       "id": 518,
       "control_nation": {
-        "id": 1,
-        "name": "紅軍"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -26626,7 +26645,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "紅色慧星",
+      "control_name": "俗投歸零互助會",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
       "energy_charge": 5,
       "uw_king_id": 754076,
@@ -26651,7 +26670,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -26691,12 +26710,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner01CM.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM03.mp3",
       "control_union": {
-        "id": 10912,
-        "name": "紅色慧星",
-        "nation_id": 1
+        "id": 22887,
+        "name": "俗投歸零互助會",
+        "nation_id": 6
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -30418,8 +30437,8 @@
       "map_building_frame": "/images/cities/building/frame_chinese_palace.png",
       "id": 283,
       "control_nation": {
-        "id": 3,
-        "name": "香港"
+        "id": 5,
+        "name": "維吾爾"
       },
       "bonus": {
         "changeable": false,
@@ -30433,7 +30452,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "容易受傷的野團",
+      "control_name": "溶解棍母の湯圓碗",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
       "energy_charge": 100,
       "uw_king_id": 821269,
@@ -30462,7 +30481,7 @@
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag02HK.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag06UG.png",
       "hidden": false,
       "union_base": false,
       "nation_battle": null,
@@ -30497,12 +30516,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner02HK.png",
+      "map_control": "/images/cities/control/INFbanner06UG.png",
       "uw_music": "/audio/music/BGM09.mp3",
       "control_union": {
-        "id": 8863,
-        "name": "容易受傷的野團",
-        "nation_id": 3
+        "id": 4535,
+        "name": "溶解棍母の湯圓碗",
+        "nation_id": 5
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -30729,8 +30748,8 @@
       "map_building_frame": "/images/cities/building/frame_oriental.png",
       "id": 279,
       "control_nation": {
-        "id": 2,
-        "name": "臺灣"
+        "id": 6,
+        "name": "哈薩克"
       },
       "bonus": {
         "changeable": false,
@@ -30744,7 +30763,7 @@
       },
       "status": "no_entry",
       "capital": false,
-      "control_name": "馬英九與標太郎美食研究會",
+      "control_name": "夢劇場",
       "sovereign_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
       "energy_charge": 100,
       "uw_king_id": 704191,
@@ -30763,19 +30782,22 @@
       },
       "uw_street_image": "/images/site/street/sv_south_china.png",
       "controlled": false,
-      "sword": false,
+      "sword": true,
       "down_city_id": null,
       "visitable": true,
-      "nation_battle_score": null,
+      "nation_battle_score": "0:0",
       "map_sovereign": "/images/cities/sovereign/SOVbannerTheRepublic.png",
       "reward_collected": false,
       "center_reference": false,
       "sound_effect": "/audio/sound_effect/SE8.mp3",
       "hijackable": false,
-      "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
+      "control_triangle_flag": "/images/cities/triangle/smallflag05KZ.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": "2026-09-24T09:25:07Z",
+        "nation_icon": "/images/nation/color_icon/minicoa06UG.png"
+      },
       "focus": false,
       "map_building": "/images/cities/building/oriental.png",
       "window_view_image": "/images/site/window/wsv_south_china.png",
@@ -30804,12 +30826,12 @@
       ],
       "reward": false,
       "description": "-",
-      "map_control": "/images/cities/control/INFbanner08TW.png",
+      "map_control": "/images/cities/control/INFbanner05KZ.png",
       "uw_music": "/audio/music/BGM09.mp3",
       "control_union": {
-        "id": 918,
-        "name": "馬英九與標太郎美食研究會",
-        "nation_id": 2
+        "id": 4987,
+        "name": "夢劇場",
+        "nation_id": 6
       },
       "left_city_id": null,
       "up_city_id": null,
@@ -30960,12 +30982,12 @@
       "x_position": 6841,
       "right_city_id": null,
       "uw_dominance": {
-        "1": 23,
+        "1": 21,
         "10": 4,
-        "2": 54,
+        "2": 57,
         "3": 1,
         "4": 0,
-        "7": 18
+        "7": 16
       },
       "uw_street_image": "/images/site/street/sv_taiwan.png",
       "controlled": false,
@@ -30981,7 +31003,10 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag08TW.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": null,
+      "nation_battle": {
+        "close_roll_call_at": null,
+        "nation_icon": null
+      },
       "focus": false,
       "map_building": "/images/cities/building/hokkien.png",
       "window_view_image": "/images/site/window/wsv_taiwan.png",
@@ -31232,10 +31257,7 @@
       "control_triangle_flag": "/images/cities/triangle/smallflag01CM.png",
       "hidden": false,
       "union_base": false,
-      "nation_battle": {
-        "close_roll_call_at": null,
-        "nation_icon": null
-      },
+      "nation_battle": null,
       "focus": false,
       "map_building": "/images/cities/building/oriental.png",
       "window_view_image": "/images/site/window/wsv_south_china.png",
