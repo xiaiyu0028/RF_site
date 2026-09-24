@@ -23,8 +23,9 @@ python -m http.server 8000        # http://localhost:8000
 python cal_power/get_actors.py -a <email> -p <password>
 python cal_power/run_all_get_actors.py           # 依 cal_power/config.json 批次跑多帳號
 
-# 一併抓城內地點（逐城呼叫，較慢）
-.\scripts\update_game_data.ps1 -CitySites visitable
+# 城內地點預設就會一併抓（visitable）；要跳過或抓全部：
+.\scripts\update_game_data.ps1 -CitySites off
+.\scripts\update_game_data.ps1 -CitySites all
 
 # 重建角色圖片索引（掃描 passionfruit/images/actor/）
 python generate_image_index.py
@@ -37,7 +38,7 @@ Python 依賴見 `requirements-data-update.txt`；`scripts/update_game_data.ps1`
 遊戲 API (`api.komisureiya.com`) → Python 抓取 → JSON 檔 → 前端 `fetch()`：
 
 - **國策 / 城鎮**：`scripts/update_game_data.py` 用 HTTP 登入取得 token，再開 WebSocket 送 Phoenix channel 訊息，寫入 `return_data_example/nation.json`、`cities.json`、`update_metadata.json`（原子寫入，且寫入前先 `validate_snapshots()`）。`.gitignore` 只放行這幾個檔，`return_data_example/` 其他內容都不進版控。
-- **城內地點（選用）**：同一支腳本加 `--city-sites visitable|all` 會逐城送 `city_sites` 事件，寫入 `return_data_example/city_sites.json`（`{mode, requested, failed, sites}`）。因為是逐城呼叫（`all` 會打 271 次），預設 `off`，並以 `--city-sites-delay` 節流。`pages/cities.html` 的詳情視窗會自動讀取，缺檔則靜默略過。
+- **城內地點（工作站 / 劇情點）**：同一支腳本會逐城送 `city_sites` 事件，寫入 `return_data_example/city_sites.json`（`{mode, requested, failed, sites}`）。預設 `--city-sites visitable`（只抓可進入的城市，約 269 次呼叫）；`all` 會打 271 次，`off` 則完全跳過，一律以 `--city-sites-delay` 節流。`pages/cities.html` 的詳情視窗會自動讀取，缺檔則靜默略過。
 - **角色**：`cal_power/get_actors.py` 把 WebSocket 回應**附加**到 `cal_power/actors.jsonl` → `cal_power/resolve_actors.ipynb` 逐 cell 解析，產出：
   - `parsed_actors.json`（基本資料 + 天賦）
   - `parsed_actors_skill.json`（多一層解析後的被動技能，依等級分段）← 兩個計算器都讀這個

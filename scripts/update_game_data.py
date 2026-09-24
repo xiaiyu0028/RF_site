@@ -67,7 +67,7 @@ async def request_snapshot(
     token: str,
     user_id: str,
     timeout: int,
-    city_sites_mode: str = "off",
+    city_sites_mode: str = "visitable",
     city_sites_delay: float = 0.35,
 ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any] | None]:
     ws_url = f"{WS_BASE}?userToken={quote(token, safe='')}&locale=zh_TW&vsn=2.0.0"
@@ -204,8 +204,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--city-sites",
         choices=("off", "visitable", "all"),
-        default="off",
-        help="是否逐城抓取城內地點：off 不抓；visitable 只抓可進入城市；all 抓全部（呼叫次數最多）",
+        default="visitable",
+        help="是否逐城抓取城內地點：off 不抓；visitable 只抓可進入城市（預設）；all 抓全部（呼叫次數最多）",
     )
     parser.add_argument(
         "--city-sites-delay",

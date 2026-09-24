@@ -4,7 +4,7 @@ param(
     [ValidateRange(5, 300)]
     [int]$Timeout = 60,
     [ValidateSet("off", "visitable", "all")]
-    [string]$CitySites = "off",
+    [string]$CitySites = "visitable",
     [ValidateRange(0.0, 5.0)]
     [double]$CitySitesDelay = 0.35
 )
