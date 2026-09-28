@@ -250,7 +250,7 @@
   ],
   "nations": [
     {
-      "players": 24823,
+      "players": 24834,
       "title": "大陸的征服者與主宰者",
       "id": 1,
       "flag": "/images/home/flag/bigflag01CM.png",
@@ -277,7 +277,7 @@
       "can_change_seal": false,
       "description_subtitle": "大陸的征服者與主宰者",
       "strategy_background": "/images/nation/strategy_background/str01CM.png",
-      "control_cities": 57,
+      "control_cities": 48,
       "seal": "/images/nation/seal/Scoa01CM.png",
       "alliance": "共產陣營",
       "diplomatic_strategy_ids": [
@@ -293,7 +293,7 @@
         17
       ],
       "city_color": "fd1e19",
-      "controll_cities": 36,
+      "controll_cities": 48,
       "diplomatic_strategy_id": 9,
       "commander": {
         "flag": "/images/home/flag/bigflag01CM.png",
@@ -327,7 +327,7 @@
         "window_view": "/images/site/window/wsv_north_china.png"
       },
       "position": 10,
-      "candidates": null,
+      "candidates": [],
       "description": "繼清帝之後大陸上最強大的征服者。希望將鬆散的各屬邦整合成被中華同化的單一國家，藉由強而有力的極權專制政體掌握廣大的疆域，帶領體質鬆散的龐大共和國崛起世上，洗刷百年來被列強欺凌的屈辱。但這些被征服國的遺民永遠不會諒解您的用心良苦，紅軍必須不擇手段地壓制住他們，以免共和國崩潰。",
       "street_sites": [
         {
@@ -448,7 +448,7 @@
       ]
     },
     {
-      "players": 51516,
+      "players": 51522,
       "title": "禦敵千年的海東古國",
       "id": 2,
       "flag": "/images/home/flag/bigflag08TW.png",
@@ -475,13 +475,13 @@
       "can_change_seal": false,
       "description_subtitle": "供清帝拓殖的海外墾地",
       "strategy_background": "/images/nation/strategy_background/str08TW.png",
-      "control_cities": 19,
+      "control_cities": 27,
       "seal": "/images/nation/seal/Scoa08TW.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        9,
+        1,
         6,
-        1
+        9
       ],
       "selectable_general_strategy_ids": [
         3,
@@ -493,7 +493,7 @@
         25
       ],
       "city_color": "06859e",
-      "controll_cities": 42,
+      "controll_cities": 27,
       "diplomatic_strategy_id": 1,
       "commander": {
         "flag": "/images/home/flag/bigflag08TW.png",
@@ -527,7 +527,30 @@
         "window_view": "/images/site/window/wsv_taiwan.png"
       },
       "position": 15,
-      "candidates": null,
+      "candidates": [
+        {
+          "diplomatic_strategy_id": 1,
+          "general_strategy_id": 11,
+          "id": 12360,
+          "union": {
+            "chief": "韓國羽",
+            "id": 3577,
+            "name": "愛情摩天輪"
+          },
+          "votes": 0
+        },
+        {
+          "diplomatic_strategy_id": 1,
+          "general_strategy_id": 11,
+          "id": 12423,
+          "union": {
+            "chief": "黑貓飼主",
+            "id": 6809,
+            "name": "踩到貓兒了🐾 🐾"
+          },
+          "votes": 0
+        }
+      ],
       "description": "曾僅憑一道海峽，抗拒東方大陸政權達千餘年，但仍不敵清帝襲來，被清帝劃為屬邦華夏的殖民地。清帝衰微後，被日本征服。日本戰敗後，又被捲入華夏的戰事，最終拒紅軍於海峽以西。經過數十年抗爭與建設，海東古國重獲新生。",
       "street_sites": [
         {
@@ -648,7 +671,7 @@
       ]
     },
     {
-      "players": 36574,
+      "players": 36579,
       "title": "負隅頑抗的海港城邦",
       "id": 3,
       "flag": "/images/home/flag/bigflag02HK.png",
@@ -675,12 +698,12 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝割讓的海港城邦",
       "strategy_background": "/images/nation/strategy_background/str02HK.png",
-      "control_cities": 38,
+      "control_cities": 41,
       "seal": "/images/nation/seal/Scoa02HK.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        5,
         10,
+        5,
         1
       ],
       "selectable_general_strategy_ids": [
@@ -692,7 +715,7 @@
         23
       ],
       "city_color": "ae43ec",
-      "controll_cities": 37,
+      "controll_cities": 41,
       "diplomatic_strategy_id": 1,
       "commander": {
         "flag": "/images/home/flag/bigflag02HK.png",
@@ -726,7 +749,30 @@
         "window_view": "/images/site/window/wsv_hongkong.png"
       },
       "position": 20,
-      "candidates": null,
+      "candidates": [
+        {
+          "diplomatic_strategy_id": 10,
+          "general_strategy_id": 23,
+          "id": 12361,
+          "union": {
+            "chief": "『命不久矣習維尼』",
+            "id": 8600,
+            "name": "抽不到SSR，已退遊"
+          },
+          "votes": 0
+        },
+        {
+          "diplomatic_strategy_id": 10,
+          "general_strategy_id": 2,
+          "id": 12456,
+          "union": {
+            "chief": "靜海SilentSea",
+            "id": 22821,
+            "name": "自由黨"
+          },
+          "votes": 0
+        }
+      ],
       "description": "原來是百越船民的漁村，在戰爭時投靠清帝的敵人英吉利，被英國建設成繁華的自由城，成為大陸通往世界的門戶。一百五十年後，在紅軍的逼迫下，英國把這座城市交給了紅軍，城邦自由逐漸淪喪，抗爭者在城市角落負隅頑抗。",
       "street_sites": [
         {
@@ -847,7 +893,7 @@
       ]
     },
     {
-      "players": 5797,
+      "players": 5796,
       "title": "半壁淪陷的的古老汗國",
       "id": 8,
       "flag": "/images/home/flag/bigflag03MG.png",
@@ -871,13 +917,13 @@
       "can_change_seal": false,
       "description_subtitle": "隨清帝共治的血盟鐵騎",
       "strategy_background": "/images/nation/strategy_background/str03MG.png",
-      "control_cities": 24,
+      "control_cities": 22,
       "seal": "/images/nation/seal/Scoa03MG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        3,
+        6,
         8,
-        6
+        3
       ],
       "selectable_general_strategy_ids": [
         3,
@@ -888,7 +934,7 @@
         24
       ],
       "city_color": "008af7",
-      "controll_cities": 21,
+      "controll_cities": 22,
       "diplomatic_strategy_id": 8,
       "commander": {
         "flag": "/images/home/flag/bigflag03MG.png",
@@ -922,7 +968,19 @@
         "window_view": "/images/site/window/wsv_mongolia.png"
       },
       "position": 30,
-      "candidates": null,
+      "candidates": [
+        {
+          "diplomatic_strategy_id": 8,
+          "general_strategy_id": 6,
+          "id": 12489,
+          "union": {
+            "chief": "丫丫",
+            "id": 7221,
+            "name": "蒙屬夢蝶飛舞"
+          },
+          "votes": 0
+        }
+      ],
       "description": "中世紀的世界征服者，被清帝降伏後與清帝聯姻，尊清帝為博格達汗，雙方共治全大陸。清帝殞落後，王爺們策馬遠離帝都，在漠北恢復故國；漠南則陷入四十年的相互混戰，最終成為紅軍屬邦。17年後，紅軍毀約，出兵屠戮漠南。",
       "street_sites": [
         {
@@ -970,7 +1028,8 @@
         },
         {
           "image": "/images/nation/ministry/A03.png",
-          "minister": null,
+          "minister": "我真係好討厭食蝦",
+          "minister_union_id": 12364,
           "ministry": {
             "id": 12,
             "name": "參謀部"
@@ -1032,7 +1091,8 @@
         },
         {
           "image": "/images/nation/ministry/A09.png",
-          "minister": null,
+          "minister": "蒙屬命令遊戲",
+          "minister_union_id": 12365,
           "ministry": {
             "id": 18,
             "name": "外事處"
@@ -1041,7 +1101,7 @@
       ]
     },
     {
-      "players": 7711,
+      "players": 7718,
       "title": "赤焰灼燒的雪域佛土",
       "id": 4,
       "flag": "/images/home/flag/bigflag04TB.png",
@@ -1065,7 +1125,7 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝互尊的雪域佛土",
       "strategy_background": "/images/nation/strategy_background/str04TB.png",
-      "control_cities": 18,
+      "control_cities": 48,
       "seal": "/images/nation/seal/Scoa04TB.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1082,7 +1142,7 @@
         18
       ],
       "city_color": "46be7f",
-      "controll_cities": 52,
+      "controll_cities": 48,
       "diplomatic_strategy_id": 1,
       "commander": {
         "flag": "/images/home/flag/bigflag04TB.png",
@@ -1116,7 +1176,19 @@
         "window_view": "/images/site/window/wsv_tibet.png"
       },
       "position": 40,
-      "candidates": null,
+      "candidates": [
+        {
+          "diplomatic_strategy_id": 1,
+          "general_strategy_id": 7,
+          "id": 12357,
+          "union": {
+            "chief": "潘氏宗親會會長",
+            "id": 7729,
+            "name": "神聖藏媽暨粉圓媽聯合帝國"
+          },
+          "votes": 0
+        }
+      ],
       "description": "高原上的佛教政權，法王尊清帝為文殊菩薩化身，在清帝保護下維持統治，並取得對全大陸的崇高宗教地位。清帝殞落後，法王恢復故國、勵精圖治，但仍戰敗紅軍手下，再淪屬邦。9年後，紅軍毀約入侵，法王被迫率領子民避走印度。",
       "street_sites": [
         {
@@ -1173,7 +1245,7 @@
         },
         {
           "image": "/images/nation/ministry/A04.png",
-          "minister": "西藏人民議會 拉章",
+          "minister": "我是不才惡女 - 拉章",
           "minister_union_id": 6069,
           "ministry": {
             "id": 13,
@@ -1218,7 +1290,7 @@
         },
         {
           "image": "/images/nation/ministry/A08.png",
-          "minister": "西藏人民議會不丹雷龍軍",
+          "minister": "神聖藏媽暨粉圓媽聯合帝國",
           "minister_union_id": 7729,
           "ministry": {
             "id": 17,
@@ -1237,7 +1309,7 @@
       ]
     },
     {
-      "players": 5594,
+      "players": 5593,
       "title": "馳騁國界的自由騎手",
       "id": 6,
       "flag": "/images/home/flag/bigflag05KZ.png",
@@ -1261,13 +1333,13 @@
       "can_change_seal": false,
       "description_subtitle": "與清帝合作的自由牧人",
       "strategy_background": "/images/nation/strategy_background/str05KZ.png",
-      "control_cities": 11,
+      "control_cities": 27,
       "seal": "/images/nation/seal/Scoa05KZ.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        3,
+        8,
         7,
-        8
+        3
       ],
       "selectable_general_strategy_ids": [
         3,
@@ -1278,7 +1350,7 @@
         24
       ],
       "city_color": "00e9e4",
-      "controll_cities": 10,
+      "controll_cities": 27,
       "diplomatic_strategy_id": 8,
       "commander": {
         "flag": "/images/home/flag/bigflag05KZ.png",
@@ -1312,7 +1384,7 @@
         "window_view": "/images/site/window/wsv_kazakh.png"
       },
       "position": 50,
-      "candidates": null,
+      "candidates": [],
       "description": "草海上的游牧民，為了躲避俄羅斯的哥薩克騎兵，進入東突厥請求清帝庇護。清帝衰微後，他們收容更多西突厥同胞，在東突厥北方的山林與草原稱雄。他們與紅軍戰至最後一刻。戰敗後為紅軍守邊，卻仍遭紅軍迫害，只好逃往已獲自由的西突厥。",
       "street_sites": [
         {
@@ -1432,7 +1504,7 @@
       ]
     },
     {
-      "players": 5655,
+      "players": 5657,
       "title": "流淌血淚的沙漠七城",
       "id": 5,
       "flag": "/images/home/flag/bigflag06UG.png",
@@ -1456,7 +1528,7 @@
       "can_change_seal": false,
       "description_subtitle": "被清帝把持的沙漠七城",
       "strategy_background": "/images/nation/strategy_background/str06UG.png",
-      "control_cities": 58,
+      "control_cities": 19,
       "seal": "/images/nation/seal/Scoa06UG.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -1472,7 +1544,7 @@
         17
       ],
       "city_color": "74a0f6",
-      "controll_cities": 16,
+      "controll_cities": 19,
       "diplomatic_strategy_id": 7,
       "commander": {
         "flag": "/images/home/flag/bigflag06UG.png",
@@ -1480,7 +1552,7 @@
         "name": "新疆木棉花",
         "seal": "/images/nation/seal/Scoa06UG.png",
         "title": "總指揮",
-        "union": "維吾爾人守望聯盟",
+        "union": "烤樂樂守望聯盟",
         "union_id": 1522,
         "user_id": 739491
       },
@@ -1506,7 +1578,19 @@
         "window_view": "/images/site/window/wsv_muslim.png"
       },
       "position": 60,
-      "candidates": null,
+      "candidates": [
+        {
+          "diplomatic_strategy_id": 7,
+          "general_strategy_id": 6,
+          "id": 12358,
+          "union": {
+            "chief": "突厥蔣娘在線北伐",
+            "id": 7435,
+            "name": "斯卡羅"
+          },
+          "votes": 0
+        }
+      ],
       "description": "綠洲上的定居民，東突厥絲路上的一串城邦。在清帝討伐蒙古人的戰爭中被清帝占領，城主紛紛接受清帝冊封。清帝衰微後，在混戰中幾度嘗試復國，終告失敗。紅軍入侵後，不堪暴虐屠戮的居民逃向西突厥、組織義軍，伺機反攻故土。",
       "street_sites": [
         {
@@ -1554,7 +1638,7 @@
         },
         {
           "image": "/images/nation/ministry/A03.png",
-          "minister": "燒老芋仔用火刑架",
+          "minister": "烤樂樂用火刑架",
           "minister_union_id": 6910,
           "ministry": {
             "id": 12,
@@ -1581,7 +1665,7 @@
         },
         {
           "image": "/images/nation/ministry/A01.png",
-          "minister": "維吾爾人守望聯盟",
+          "minister": "烤樂樂守望聯盟",
           "minister_union_id": 1522,
           "ministry": {
             "id": 10,
@@ -1627,7 +1711,7 @@
       ]
     },
     {
-      "players": 8945,
+      "players": 8950,
       "title": "歷劫毀滅的富饒大地",
       "id": 7,
       "flag": "/images/home/flag/bigflag07MC.png",
@@ -1651,13 +1735,13 @@
       "can_change_seal": false,
       "description_subtitle": "讓清帝崛起的白山黑水",
       "strategy_background": "/images/nation/strategy_background/str07MC.png",
-      "control_cities": 18,
+      "control_cities": 8,
       "seal": "/images/nation/seal/Scoa07MC.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        8,
+        3,
         6,
-        3
+        8
       ],
       "selectable_general_strategy_ids": [
         7,
@@ -1667,7 +1751,7 @@
         24
       ],
       "city_color": "fcb900",
-      "controll_cities": 11,
+      "controll_cities": 8,
       "diplomatic_strategy_id": 6,
       "commander": {
         "flag": "/images/home/flag/bigflag07MC.png",
@@ -1701,7 +1785,30 @@
         "window_view": "/images/site/window/wsv_manchuria.png"
       },
       "position": 70,
-      "candidates": null,
+      "candidates": [
+        {
+          "diplomatic_strategy_id": 6,
+          "general_strategy_id": 24,
+          "id": 12359,
+          "union": {
+            "chief": "木下",
+            "id": 42,
+            "name": "聖伊蛸基金會-海參崴分會"
+          },
+          "votes": 0
+        },
+        {
+          "diplomatic_strategy_id": 6,
+          "general_strategy_id": 14,
+          "id": 12522,
+          "union": {
+            "chief": "悲宇邂逅彩虹糖",
+            "id": 3050,
+            "name": "魔法之星"
+          },
+          "votes": 0
+        }
+      ],
       "description": "清帝守護數百年的祖地與禁地。清帝衰微後，華夏農民湧入關外，與滿洲人一同將荒地開墾成富饒大地。清帝退位後，落寞的清帝離開帝都、重返故土，在日本支持下再建祖國。蘇聯擊敗日本後，紅軍把滿洲占為根據地，將繁盛文明榨取殆盡。",
       "street_sites": [
         {
@@ -1725,9 +1832,9 @@
         "voted": false
       },
       "commander_words": [
-        "锦绣词句本从天上来～狂写诗词三百。如何请这妙笔～入我梦中来～～",
-        "我醉倚楼台～翁头请酒正豪迈~，持盏行~人间清愁我初开～～",
-        "我下榻山海～风花雪月入我怀~人生少有快哉~何须论成败~~"
+        "《人生马上即刻轮回》《转生苹果被啃了》《倒爷的火柴不燃了》",
+        "《不死身游戏炸了》《31世结婚成功》《糖巧吃出幻觉了》《催眠术被吓疯了》",
+        "《惊喜爱上榜一了》《升天感上榜二了》《T氏被反诈骗了》《咖啡机也炸了》"
       ],
       "music": "BGM07.mp3",
       "slogan": [
@@ -1821,7 +1928,7 @@
       ]
     },
     {
-      "players": 21862,
+      "players": 21866,
       "title": "蟄伏南洋的華夏反賊",
       "id": 10,
       "flag": "/images/home/flag/bigflag09RB01.png",
@@ -1845,12 +1952,12 @@
       "can_change_seal": true,
       "description_subtitle": "將清帝推翻的華夏各邦",
       "strategy_background": "/images/nation/strategy_background/str09RB.png",
-      "control_cities": 26,
+      "control_cities": 29,
       "seal": "/images/nation/seal/Scoa09RB01.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
-        6,
         9,
+        6,
         5
       ],
       "selectable_general_strategy_ids": [
@@ -1863,7 +1970,7 @@
         26
       ],
       "city_color": "ffffff",
-      "controll_cities": 44,
+      "controll_cities": 29,
       "diplomatic_strategy_id": 6,
       "commander": {
         "flag": "/images/home/flag/bigflag09RB52.png",
@@ -2399,22 +2506,45 @@
         "window_view": "/images/site/window/wsv_south_china.png"
       },
       "position": 90,
-      "candidates": null,
+      "candidates": [
+        {
+          "diplomatic_strategy_id": 6,
+          "general_strategy_id": 23,
+          "id": 12390,
+          "union": {
+            "chief": "吾刃尚鋒",
+            "id": 364,
+            "name": "東甌國 東甌一軍"
+          },
+          "votes": 0
+        },
+        {
+          "diplomatic_strategy_id": 6,
+          "general_strategy_id": 23,
+          "id": 12523,
+          "union": {
+            "chief": "8964",
+            "id": 5263,
+            "name": "共慘黨不倒，世界不會好"
+          },
+          "votes": 0
+        }
+      ],
       "description": "華夏大地上語言、風俗各異的無數邦國，在近四十年抵抗後被清帝征服與屠戮。兩百餘年奴役後，諸夏各邦在南洋各地籌措革命資金，終於在辛亥年譁變獨立，迫使清帝退位。組成聯盟共治華夏的各邦，卻在抵禦日本入侵後精疲力竭，被興起的紅軍各個擊破、吞併。",
       "street_sites": [
-        {
-          "id": 4,
-          "image": "/images/site/street/sv_indochina.png",
-          "name": "印度支那式",
-          "position": 1030,
-          "window_view": "/images/site/window/wsv_indochina.png"
-        },
         {
           "id": 1,
           "image": "/images/site/street/sv_south_china.png",
           "name": "華南式",
           "position": 1010,
           "window_view": "/images/site/window/wsv_south_china.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/site/street/sv_indochina.png",
+          "name": "印度支那式",
+          "position": 1030,
+          "window_view": "/images/site/window/wsv_indochina.png"
         }
       ],
       "headquarters": "東亞革命同盟會",
@@ -2531,7 +2661,7 @@
       "title": "?",
       "id": 9,
       "flag": "/images/home/flag/bigflag00FR.png",
-      "cities": 25,
+      "cities": 27,
       "description_title": "?",
       "icon": "/images/nation/icon/Gcoa00FR.png",
       "capital": {
@@ -2551,7 +2681,7 @@
       "can_change_seal": false,
       "description_subtitle": "?",
       "strategy_background": "/images/nation/strategy_background/str00FR.png",
-      "control_cities": 2,
+      "control_cities": 4,
       "seal": "/images/nation/seal/Scoa00FR.png",
       "alliance": "反共陣營",
       "diplomatic_strategy_ids": [
@@ -2572,7 +2702,7 @@
         20
       ],
       "city_color": "6d6d6d",
-      "controll_cities": 2,
+      "controll_cities": 4,
       "diplomatic_strategy_id": null,
       "commander": {
         "flag": "/images/home/flag/bigflag00FR.png",
@@ -2592,7 +2722,7 @@
         "window_view": "/images/site/window/wsv_nusantaria.png"
       },
       "position": 100,
-      "candidates": null,
+      "candidates": [],
       "description": "B8",
       "street_sites": [
         {

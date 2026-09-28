@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T11:40:35.919806+00:00",
+  "updated_at": "2026-09-28T08:55:49.698026+00:00",
   "datasets": {
     "nations": "available",
     "cities": "available",
@@ -7,7 +7,7 @@
   },
   "counts": {
     "nations": 11,
-    "cities": 272,
+    "cities": 273,
     "city_sites": 272
   }
 }
