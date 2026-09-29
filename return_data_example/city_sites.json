@@ -11,7 +11,7 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 816995,
           "nickname": "五木",
-          "points": 11264,
+          "points": 13312,
           "rank": 1
         },
         {
@@ -90,8 +90,8 @@
         }
       ],
       "uw_dominance": {
-        "4": 13,
-        "5": 83,
+        "4": 12,
+        "5": 84,
         "6": 4
       },
       "workstation_count": 2
@@ -162,7 +162,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 735128,
           "nickname": "XorchX",
-          "points": 2048,
+          "points": 3072,
           "rank": 2
         },
         {
@@ -191,8 +191,8 @@
         }
       ],
       "uw_dominance": {
-        "2": 86,
-        "3": 14
+        "2": 81,
+        "3": 19
       },
       "workstation_count": 2
     },
@@ -285,7 +285,7 @@
       "uw_dominance": {
         "1": 2,
         "10": 0,
-        "2": 86,
+        "2": 87,
         "3": 1,
         "6": 10
       },
@@ -385,9 +385,9 @@
         }
       ],
       "uw_dominance": {
-        "10": 7,
-        "2": 88,
-        "3": 5,
+        "10": 6,
+        "2": 90,
+        "3": 4,
         "4": 0,
         "5": 0,
         "7": 0,
@@ -688,22 +688,22 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 708000,
           "nickname": "伊利沙伯",
-          "points": 7168,
+          "points": 8192,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustRB05.png",
+          "emblem": "/images/nation/color_icon/minicoa08TW.png",
+          "id": 808884,
+          "nickname": "四木",
+          "points": 2048,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustFRSE04.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 689677,
           "nickname": "舒龍懷穆",
-          "points": 1024,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustUG05.png",
-          "emblem": "/images/nation/color_icon/minicoa08TW.png",
-          "id": 804768,
-          "nickname": "埃爾梅羅二世",
           "points": 1024,
           "rank": 3
         }
@@ -881,7 +881,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 705980,
           "nickname": "阿杰",
-          "points": 5120,
+          "points": 7168,
           "rank": 1
         },
         {
@@ -945,7 +945,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 827674,
           "nickname": "九木",
-          "points": 8192,
+          "points": 9216,
           "rank": 1
         },
         {
@@ -1011,8 +1011,8 @@
       ],
       "uw_dominance": {
         "1": 0,
-        "2": 93,
-        "3": 7
+        "2": 94,
+        "3": 6
       },
       "workstation_count": 2
     },
@@ -1040,7 +1040,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 800901,
           "nickname": "玄真君",
-          "points": 4104,
+          "points": 4112,
           "rank": 3
         }
       ],
@@ -1104,8 +1104,8 @@
       ],
       "uw_dominance": {
         "1": 0,
-        "2": 89,
-        "3": 11,
+        "2": 88,
+        "3": 12,
         "4": 0
       },
       "workstation_count": 2
@@ -1270,8 +1270,8 @@
       ],
       "uw_dominance": {
         "1": 0,
-        "10": 3,
-        "2": 91,
+        "10": 5,
+        "2": 89,
         "3": 3,
         "4": 1,
         "5": 0,
@@ -1326,8 +1326,8 @@
         }
       ],
       "uw_dominance": {
-        "2": 81,
-        "3": 19
+        "2": 82,
+        "3": 18
       },
       "workstation_count": 2
     },
@@ -1478,7 +1478,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 741563,
           "nickname": "寒天",
-          "points": 3072,
+          "points": 4096,
           "rank": 3
         }
       ],
@@ -1513,8 +1513,8 @@
         }
       ],
       "uw_dominance": {
-        "2": 81,
-        "3": 19
+        "2": 83,
+        "3": 17
       },
       "workstation_count": 2
     },
@@ -1563,9 +1563,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 5,
-        "2": 91,
-        "3": 5,
+        "1": 4,
+        "2": 87,
+        "3": 9,
         "4": 0,
         "5": 0,
         "7": 0
@@ -1844,18 +1844,18 @@
       "can_collect_all": true,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustTB04A1.png",
-          "emblem": "/images/nation/color_icon/minicoa02HK.png",
-          "id": 742866,
-          "nickname": "愛德華",
-          "points": 6144,
-          "rank": 1
-        },
-        {
           "avatar": "/images/actor/half/bustFRSE04.png",
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 734048,
           "nickname": "李靖",
+          "points": 7168,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustTB04A1.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 742866,
+          "nickname": "愛德華",
           "points": 6144,
           "rank": 2
         },
@@ -2024,10 +2024,10 @@
       "uw_dominance": {
         "1": 6,
         "10": 6,
-        "2": 6,
-        "3": 76,
+        "2": 5,
+        "3": 75,
         "4": 2,
-        "5": 0,
+        "5": 1,
         "6": 0,
         "7": 3,
         "8": 1
@@ -2093,7 +2093,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 888518,
           "nickname": "秦瓊",
-          "points": 4096,
+          "points": 5120,
           "rank": 1
         },
         {
@@ -2200,7 +2200,7 @@
           "avatar": "/images/actor/half/bustRB02B.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 749409,
-          "nickname": "陽陽",
+          "nickname": "_",
           "points": 32,
           "rank": 2
         },
@@ -2250,7 +2250,7 @@
           "avatar": "/images/actor/half/bustRB02B.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 749409,
-          "nickname": "陽陽",
+          "nickname": "_",
           "points": 32,
           "rank": 2
         },
@@ -2300,7 +2300,7 @@
           "avatar": "/images/actor/half/bustRB02B.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 749409,
-          "nickname": "陽陽",
+          "nickname": "_",
           "points": 1024,
           "rank": 2
         },
@@ -2489,7 +2489,8 @@
         "1": 2,
         "10": 0,
         "2": 1,
-        "3": 94,
+        "3": 93,
+        "4": 0,
         "5": 0,
         "6": 3,
         "7": 0,
@@ -2655,7 +2656,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 815057,
           "nickname": "何  波隆",
-          "points": 18432,
+          "points": 19456,
           "rank": 1
         },
         {
@@ -2750,7 +2751,7 @@
       "uw_dominance": {
         "10": 12,
         "2": 0,
-        "3": 81,
+        "3": 82,
         "7": 4,
         "8": 3
       },
@@ -2868,19 +2869,19 @@
       "can_collect_all": true,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustFRTK04.png",
+          "emblem": "/images/seal/Rcoaw52.png",
+          "id": 692509,
+          "nickname": "㱄冶",
+          "points": 11264,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/seal/Rcoaw24.png",
           "id": 714912,
           "nickname": "地之涅可愛爾奎",
           "points": 11264,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustFRTK04.png",
-          "emblem": "/images/seal/Rcoaw52.png",
-          "id": 692509,
-          "nickname": "㱄冶",
-          "points": 10240,
           "rank": 2
         },
         {
@@ -2965,8 +2966,8 @@
         }
       ],
       "uw_dominance": {
-        "10": 77,
-        "3": 23,
+        "10": 78,
+        "3": 22,
         "8": 0
       },
       "workstation_count": 2
@@ -3078,7 +3079,7 @@
           "emblem": "/images/seal/Rcoaw24.png",
           "id": 714912,
           "nickname": "地之涅可愛爾奎",
-          "points": 2048,
+          "points": 3072,
           "rank": 1
         }
       ],
@@ -3161,7 +3162,7 @@
           "emblem": "/images/seal/Rcoaw24.png",
           "id": 652685,
           "nickname": "月之涅可愛爾奎",
-          "points": 2048,
+          "points": 3072,
           "rank": 1
         },
         {
@@ -3554,12 +3555,20 @@
       "can_collect_all": true,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustCMXJP.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 823788,
+          "nickname": "馬提亞斯",
+          "points": 7680,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 756120,
           "nickname": "吾刃尚鋒",
-          "points": 6144,
-          "rank": 1
+          "points": 7168,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustFROR05.png",
@@ -3567,14 +3576,6 @@
           "id": 696481,
           "nickname": "關你共三小屁事",
           "points": 6144,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustCMXJP.png",
-          "emblem": "/images/seal/Rcoaw01.png",
-          "id": 823788,
-          "nickname": "馬提亞斯",
-          "points": 5632,
           "rank": 3
         }
       ],
@@ -3686,8 +3687,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 13,
-        "10": 84,
+        "1": 12,
+        "10": 86,
         "2": 0,
         "3": 2,
         "4": 0,
@@ -3714,7 +3715,7 @@
           "emblem": "/images/seal/Rcoaw01.png",
           "id": 807013,
           "nickname": "辯才天doro",
-          "points": 1794,
+          "points": 2056,
           "rank": 2
         },
         {
@@ -3817,19 +3818,19 @@
           "rank": 1
         },
         {
+          "avatar": "/images/actor/half/bustMC01.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 821896,
+          "nickname": "反骨",
+          "points": 2560,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/seal/Rcoaw01.png",
           "id": 712151,
           "nickname": "激白小八貓",
           "points": 2056,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustUG04.png",
-          "emblem": "/images/seal/Rcoaw16.png",
-          "id": 831681,
-          "nickname": "克拉特魯斯",
-          "points": 1792,
           "rank": 3
         }
       ],
@@ -3906,7 +3907,7 @@
         }
       ],
       "uw_dominance": {
-        "10": 93,
+        "10": 94,
         "2": 6,
         "4": 0,
         "5": 0
@@ -3937,7 +3938,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 706754,
           "nickname": "安海杜亞娜",
-          "points": 640,
+          "points": 896,
           "rank": 3
         }
       ],
@@ -4028,13 +4029,13 @@
         }
       ],
       "uw_dominance": {
-        "1": 15,
-        "10": 74,
+        "1": 14,
+        "10": 73,
         "3": 0,
         "4": 4,
         "5": 1,
         "6": 1,
-        "7": 5,
+        "7": 6,
         "8": 1
       },
       "workstation_count": 2
@@ -4047,7 +4048,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 822015,
           "nickname": "三木",
-          "points": 7680,
+          "points": 10240,
           "rank": 1
         },
         {
@@ -4063,7 +4064,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 750279,
           "nickname": "葬送的呂秀蓮",
-          "points": 5632,
+          "points": 6144,
           "rank": 3
         }
       ],
@@ -4177,8 +4178,8 @@
       "uw_dominance": {
         "1": 4,
         "10": 0,
-        "2": 6,
-        "4": 89,
+        "2": 5,
+        "4": 90,
         "5": 0,
         "7": 0,
         "8": 1
@@ -4197,18 +4198,18 @@
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustHK05.png",
-          "emblem": "/images/nation/color_icon/minicoa04TB.png",
-          "id": 812048,
-          "nickname": "惡劣剪刀.尤蓓爾",
-          "points": 1024,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustHK01A.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 832821,
           "nickname": "10029",
+          "points": 2048,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustHK05.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 812048,
+          "nickname": "惡劣剪刀.尤蓓爾",
           "points": 1024,
           "rank": 3
         }
@@ -4230,8 +4231,8 @@
         }
       ],
       "uw_dominance": {
-        "10": 65,
-        "4": 35
+        "10": 55,
+        "4": 45
       },
       "workstation_count": 2
     },
@@ -4380,19 +4381,19 @@
       "can_collect_all": true,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustCMT59.png",
+          "emblem": "/images/seal/Rcoaw01.png",
+          "id": 746061,
+          "nickname": "麻依呀嘻🌿",
+          "points": 4096,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustTW01C.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 656800,
           "nickname": "睦月六兔",
           "points": 4096,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustCMT59.png",
-          "emblem": "/images/seal/Rcoaw01.png",
-          "id": 746061,
-          "nickname": "麻依呀嘻🌿",
-          "points": 3072,
           "rank": 2
         },
         {
@@ -4421,8 +4422,8 @@
         }
       ],
       "uw_dominance": {
-        "10": 43,
-        "4": 57,
+        "10": 50,
+        "4": 50,
         "5": 0
       },
       "workstation_count": 2
@@ -4604,7 +4605,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 734048,
           "nickname": "李靖",
-          "points": 128,
+          "points": 256,
           "rank": 3
         }
       ],
@@ -4625,9 +4626,9 @@
         }
       ],
       "uw_dominance": {
-        "10": 92,
-        "3": 5,
-        "4": 3
+        "10": 88,
+        "3": 10,
+        "4": 2
       },
       "workstation_count": 2
     },
@@ -4831,7 +4832,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 774512,
           "nickname": "七木",
-          "points": 6144,
+          "points": 9216,
           "rank": 1
         },
         {
@@ -4926,7 +4927,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 734355,
           "nickname": "J1180P",
-          "points": 3072,
+          "points": 4096,
           "rank": 3
         }
       ],
@@ -4978,19 +4979,19 @@
           "rank": 1
         },
         {
+          "avatar": "/images/actor/half/bustRB06.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 744364,
+          "nickname": "月桂葉",
+          "points": 48,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustFRMA.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 752631,
           "nickname": "朱駒宮女 費倫",
           "points": 32,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustMC05.png",
-          "emblem": "/images/nation/color_icon/minicoa04TB.png",
-          "id": 652912,
-          "nickname": "_",
-          "points": 8,
           "rank": 3
         }
       ],
@@ -5025,8 +5026,8 @@
         }
       ],
       "uw_dominance": {
-        "10": 98,
-        "4": 2,
+        "10": 95,
+        "4": 4,
         "6": 0
       },
       "workstation_count": 2
@@ -5216,7 +5217,7 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 778072,
           "nickname": "Sky",
-          "points": 512,
+          "points": 1024,
           "rank": 1
         },
         {
@@ -5257,7 +5258,7 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 849757,
           "nickname": "赫·琉璃·明",
-          "points": 4096,
+          "points": 5120,
           "rank": 1
         },
         {
@@ -5491,7 +5492,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -5540,7 +5541,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -5554,7 +5555,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5568,7 +5569,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5576,9 +5577,9 @@
         }
       ],
       "uw_dominance": {
-        "5": 52,
-        "6": 10,
-        "8": 39
+        "5": 50,
+        "6": 13,
+        "8": 38
       },
       "workstation_count": 2
     },
@@ -5619,7 +5620,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -5633,7 +5634,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5647,7 +5648,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5661,7 +5662,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5670,10 +5671,10 @@
       ],
       "uw_dominance": {
         "1": 0,
-        "4": 43,
+        "4": 44,
         "5": 1,
-        "6": 55,
-        "7": 0
+        "6": 54,
+        "7": 1
       },
       "workstation_count": 2
     },
@@ -5701,7 +5702,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 688556,
           "nickname": "銀朱色上級女官",
-          "points": 4608,
+          "points": 5120,
           "rank": 3
         }
       ],
@@ -5714,7 +5715,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5728,7 +5729,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5742,7 +5743,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5752,8 +5753,8 @@
       "uw_dominance": {
         "10": 0,
         "2": 0,
-        "4": 64,
-        "6": 34,
+        "4": 63,
+        "6": 35,
         "7": 1
       },
       "workstation_count": 2
@@ -5795,7 +5796,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -5846,7 +5847,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5901,7 +5902,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5915,7 +5916,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5929,7 +5930,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -5969,7 +5970,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 849484,
           "nickname": "哈姆",
-          "points": 4,
+          "points": 2,
           "rank": 3
         }
       ],
@@ -5982,7 +5983,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -6074,7 +6075,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6129,7 +6130,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6245,7 +6246,7 @@
         "3": 0,
         "5": 0,
         "6": 98,
-        "7": 2,
+        "7": 1,
         "8": 0
       },
       "workstation_count": 2
@@ -6287,7 +6288,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6311,7 +6312,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 696344,
           "nickname": "查理斯",
-          "points": 7168,
+          "points": 8192,
           "rank": 1
         },
         {
@@ -6340,7 +6341,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6349,9 +6350,9 @@
       ],
       "uw_dominance": {
         "1": 6,
-        "3": 12,
+        "3": 11,
         "4": 0,
-        "6": 82
+        "6": 83
       },
       "workstation_count": 2
     },
@@ -6392,7 +6393,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6444,7 +6445,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6466,7 +6467,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 821997,
           "nickname": "10005",
-          "points": 8192,
+          "points": 9216,
           "rank": 1
         },
         {
@@ -6495,7 +6496,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6509,7 +6510,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6517,9 +6518,9 @@
         }
       ],
       "uw_dominance": {
-        "4": 33,
+        "4": 35,
         "5": 0,
-        "6": 67
+        "6": 65
       },
       "workstation_count": 2
     },
@@ -6560,7 +6561,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -6651,8 +6652,8 @@
         "10": 0,
         "3": 0,
         "4": 4,
-        "5": 6,
-        "6": 70
+        "5": 7,
+        "6": 69
       },
       "workstation_count": 2
     },
@@ -6871,10 +6872,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 3,
+        "1": 6,
         "2": 0,
         "5": 6,
-        "6": 91
+        "6": 89
       },
       "workstation_count": 2
     },
@@ -6886,7 +6887,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 649230,
           "nickname": "不才惡女 黃玲琳(?)",
-          "points": 16388,
+          "points": 17412,
           "rank": 1
         },
         {
@@ -7000,7 +7001,8 @@
         "4": 39,
         "5": 9,
         "6": 41,
-        "7": 0
+        "7": 0,
+        "8": 0
       },
       "workstation_count": 2
     },
@@ -7050,6 +7052,7 @@
       ],
       "uw_dominance": {
         "1": 44,
+        "2": 0,
         "4": 0,
         "5": 11,
         "6": 45
@@ -7064,7 +7067,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 847642,
           "nickname": "鎮海",
-          "points": 13312,
+          "points": 14336,
           "rank": 1
         },
         {
@@ -7130,10 +7133,11 @@
       ],
       "uw_dominance": {
         "1": 4,
+        "2": 0,
         "3": 1,
-        "4": 49,
+        "4": 47,
         "5": 4,
-        "6": 41,
+        "6": 42,
         "7": 1,
         "8": 0
       },
@@ -7176,7 +7180,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7184,9 +7188,9 @@
         }
       ],
       "uw_dominance": {
+        "2": 0,
         "3": 86,
         "4": 0,
-        "5": 0,
         "6": 14
       },
       "workstation_count": 2
@@ -7199,7 +7203,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 831152,
           "nickname": "劍風雲",
-          "points": 2048,
+          "points": 3072,
           "rank": 1
         },
         {
@@ -7236,9 +7240,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 17,
-        "3": 55,
-        "6": 28
+        "1": 14,
+        "3": 65,
+        "6": 22
       },
       "workstation_count": 2
     },
@@ -7279,7 +7283,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7287,9 +7291,9 @@
         }
       ],
       "uw_dominance": {
+        "2": 0,
         "3": 9,
         "4": 0,
-        "5": 0,
         "6": 83,
         "8": 9
       },
@@ -7311,7 +7315,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 693945,
           "nickname": "伊爾畢斯",
-          "points": 2048,
+          "points": 3072,
           "rank": 2
         },
         {
@@ -7332,7 +7336,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7341,10 +7345,10 @@
       ],
       "uw_dominance": {
         "1": 2,
+        "2": 1,
         "3": 0,
-        "5": 1,
-        "6": 39,
-        "8": 58
+        "6": 49,
+        "8": 49
       },
       "workstation_count": 2
     },
@@ -7356,7 +7360,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 716837,
           "nickname": "東海蘭珠",
-          "points": 3072,
+          "points": 4096,
           "rank": 1
         },
         {
@@ -7385,7 +7389,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7393,11 +7397,11 @@
         }
       ],
       "uw_dominance": {
-        "1": 25,
-        "2": 37,
+        "1": 22,
+        "2": 33,
         "4": 0,
-        "6": 37,
-        "8": 2
+        "6": 44,
+        "8": 1
       },
       "workstation_count": 2
     },
@@ -7419,6 +7423,14 @@
           "nickname": "Regulus",
           "points": 256,
           "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustRB01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 831078,
+          "nickname": "雲雀恭彌",
+          "points": 8,
+          "rank": 3
         }
       ],
       "sites": [
@@ -7439,7 +7451,8 @@
       ],
       "uw_dominance": {
         "1": 20,
-        "5": 80
+        "5": 80,
+        "6": 1
       },
       "workstation_count": 2
     },
@@ -7447,18 +7460,18 @@
       "can_collect_all": true,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustFRSE05.png",
-          "emblem": "/images/nation/color_icon/minicoa03MG.png",
-          "id": 831748,
-          "nickname": "夏夏ㄉ犬齒",
-          "points": 2048,
-          "rank": 1
-        },
-        {
           "avatar": "/images/actor/half/bustFROR05.png",
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 693399,
           "nickname": "上花杏仁",
+          "points": 3072,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRSE05.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 831748,
+          "nickname": "夏夏ㄉ犬齒",
           "points": 2048,
           "rank": 2
         },
@@ -7488,8 +7501,8 @@
         }
       ],
       "uw_dominance": {
-        "6": 50,
-        "8": 50
+        "6": 60,
+        "8": 40
       },
       "workstation_count": 2
     },
@@ -7517,7 +7530,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 687210,
           "nickname": "正直的帥哥",
-          "points": 32,
+          "points": 128,
           "rank": 3
         }
       ],
@@ -7530,7 +7543,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -7538,9 +7551,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 2,
+        "1": 6,
         "3": 0,
-        "8": 98
+        "8": 94
       },
       "workstation_count": 2
     },
@@ -7581,7 +7594,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7595,7 +7608,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7607,9 +7620,9 @@
         "3": 3,
         "4": 10,
         "5": 6,
-        "6": 48,
+        "6": 50,
         "7": 0,
-        "8": 32
+        "8": 31
       },
       "workstation_count": 2
     },
@@ -7686,10 +7699,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 6,
+        "1": 9,
         "4": 3,
         "5": 2,
-        "6": 88,
+        "6": 85,
         "7": 1,
         "8": 0
       },
@@ -7732,7 +7745,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7740,7 +7753,7 @@
         }
       ],
       "uw_dominance": {
-        "1": 47,
+        "1": 48,
         "6": 52,
         "8": 1
       },
@@ -7754,7 +7767,7 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 778072,
           "nickname": "Sky",
-          "points": 3072,
+          "points": 4096,
           "rank": 1
         },
         {
@@ -7762,7 +7775,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 825078,
           "nickname": "二號機",
-          "points": 2048,
+          "points": 3072,
           "rank": 2
         },
         {
@@ -7783,7 +7796,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -7792,8 +7805,8 @@
       ],
       "uw_dominance": {
         "5": 52,
-        "6": 4,
-        "8": 44
+        "6": 3,
+        "8": 45
       },
       "workstation_count": 2
     },
@@ -7855,7 +7868,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 746859,
           "nickname": "約翰",
-          "points": 5120,
+          "points": 6144,
           "rank": 1
         },
         {
@@ -7876,7 +7889,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -7884,8 +7897,8 @@
         }
       ],
       "uw_dominance": {
-        "2": 17,
-        "8": 83
+        "2": 14,
+        "8": 86
       },
       "workstation_count": 2
     },
@@ -7901,12 +7914,20 @@
           "rank": 1
         },
         {
+          "avatar": "/images/actor/half/bustMC03.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 821871,
+          "nickname": "蝦冰",
+          "points": 64,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustRB02A.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 719835,
           "nickname": "初號機",
           "points": 4,
-          "rank": 2
+          "rank": 3
         }
       ],
       "sites": [
@@ -7918,7 +7939,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -7932,7 +7953,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -7940,7 +7961,8 @@
         }
       ],
       "uw_dominance": {
-        "8": 100
+        "3": 2,
+        "8": 98
       },
       "workstation_count": 2
     },
@@ -7981,7 +8003,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -7995,7 +8017,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8015,7 +8037,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 719835,
           "nickname": "初號機",
-          "points": 1024,
+          "points": 2048,
           "rank": 1
         },
         {
@@ -8023,7 +8045,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 743031,
           "nickname": "坂井維",
-          "points": 512,
+          "points": 1024,
           "rank": 2
         },
         {
@@ -8044,7 +8066,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -8052,8 +8074,8 @@
         }
       ],
       "uw_dominance": {
-        "3": 42,
-        "8": 58
+        "3": 35,
+        "8": 65
       },
       "workstation_count": 2
     },
@@ -8105,7 +8127,7 @@
         "1": 1,
         "3": 6,
         "6": 3,
-        "8": 90
+        "8": 89
       },
       "workstation_count": 2
     },
@@ -8170,7 +8192,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 675132,
           "nickname": "華特",
-          "points": 12288,
+          "points": 13312,
           "rank": 1
         },
         {
@@ -8241,7 +8263,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 3,
           "workstation": {
@@ -8260,7 +8282,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -8274,7 +8296,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 3,
           "workstation": {
@@ -8291,8 +8313,8 @@
         "10": 0,
         "2": 0,
         "4": 0,
-        "6": 13,
-        "8": 85
+        "6": 12,
+        "8": 86
       },
       "workstation_count": 2
     },
@@ -8333,7 +8355,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -8390,8 +8412,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 62,
-        "8": 38
+        "1": 58,
+        "8": 42
       },
       "workstation_count": 2
     },
@@ -8411,7 +8433,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 814200,
           "nickname": "堅果",
-          "points": 3072,
+          "points": 4096,
           "rank": 2
         },
         {
@@ -8440,10 +8462,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 25,
-        "3": 13,
-        "7": 3,
-        "8": 60
+        "1": 28,
+        "3": 12,
+        "7": 2,
+        "8": 58
       },
       "workstation_count": 2
     },
@@ -8471,7 +8493,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 814200,
           "nickname": "堅果",
-          "points": 2048,
+          "points": 3072,
           "rank": 3
         }
       ],
@@ -8492,9 +8514,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 55,
+        "1": 54,
         "7": 0,
-        "8": 45
+        "8": 46
       },
       "workstation_count": 2
     },
@@ -8582,10 +8604,10 @@
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustFRMA01B.png",
+          "avatar": "/images/actor/half/bustHK01A.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
-          "id": 751749,
-          "nickname": "路人",
+          "id": 675930,
+          "nickname": "ux01",
           "points": 1024,
           "rank": 3
         }
@@ -8608,9 +8630,9 @@
       ],
       "uw_dominance": {
         "1": 0,
-        "3": 47,
+        "3": 46,
         "6": 0,
-        "8": 53
+        "8": 54
       },
       "workstation_count": 2
     },
@@ -8621,7 +8643,7 @@
           "avatar": "/images/actor/half/bustMC05B.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 851591,
-          "nickname": "中南美之盾 141.3",
+          "nickname": "中南美之盾 164",
           "points": 3072,
           "rank": 1
         },
@@ -8674,22 +8696,22 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
-          "points": 2048,
+          "points": 3072,
           "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustKZ03.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
-          "id": 832843,
-          "nickname": "尼德霍格",
-          "points": 1024,
-          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustTW02.png",
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 840189,
           "nickname": "零木",
+          "points": 2048,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustKZ03.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 832843,
+          "nickname": "尼德霍格",
           "points": 1024,
           "rank": 3
         }
@@ -8711,8 +8733,8 @@
         }
       ],
       "uw_dominance": {
-        "6": 25,
-        "7": 75
+        "6": 17,
+        "7": 83
       },
       "workstation_count": 2
     },
@@ -8854,7 +8876,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
-          "points": 7168,
+          "points": 8192,
           "rank": 1
         },
         {
@@ -8891,10 +8913,10 @@
         }
       ],
       "uw_dominance": {
-        "5": 27,
-        "6": 9,
-        "7": 63,
-        "8": 1
+        "5": 24,
+        "6": 8,
+        "7": 66,
+        "8": 2
       },
       "workstation_count": 2
     },
@@ -8906,7 +8928,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
-          "points": 7168,
+          "points": 8192,
           "rank": 1
         },
         {
@@ -8922,7 +8944,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 860433,
           "nickname": "諸神黃昏",
-          "points": 4,
+          "points": 32,
           "rank": 3
         }
       ],
@@ -8943,8 +8965,8 @@
         }
       ],
       "uw_dominance": {
-        "5": 30,
-        "7": 70
+        "5": 27,
+        "7": 73
       },
       "workstation_count": 2
     },
@@ -8964,7 +8986,7 @@
           "emblem": "/images/seal/Rcoaw01.png",
           "id": 791791,
           "nickname": "繆富艾謝•史迪奇",
-          "points": 2064,
+          "points": 3088,
           "rank": 2
         },
         {
@@ -9021,9 +9043,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 4,
-        "10": 40,
-        "7": 57
+        "1": 3,
+        "10": 47,
+        "7": 50
       },
       "workstation_count": 2
     },
@@ -9260,7 +9282,7 @@
           "emblem": "/images/seal/Rcoaw02.png",
           "id": 812268,
           "nickname": "Concordia170",
-          "points": 13312,
+          "points": 14336,
           "rank": 1
         },
         {
@@ -9344,8 +9366,8 @@
         "2": 1,
         "3": 1,
         "6": 1,
-        "7": 33,
-        "8": 5
+        "7": 32,
+        "8": 4
       },
       "workstation_count": 2
     },
@@ -9613,7 +9635,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 842539,
           "nickname": "当年明月",
-          "points": 10240,
+          "points": 11264,
           "rank": 1
         },
         {
@@ -9706,10 +9728,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 32,
-        "2": 0,
-        "6": 42,
-        "7": 25
+        "1": 34,
+        "2": 1,
+        "6": 40,
+        "7": 24
       },
       "workstation_count": 2
     },
@@ -9721,7 +9743,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 657670,
           "nickname": "あ",
-          "points": 8192,
+          "points": 9216,
           "rank": 1
         },
         {
@@ -9800,9 +9822,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 65,
+        "1": 62,
         "3": 2,
-        "7": 33
+        "7": 36
       },
       "workstation_count": 2
     },
@@ -9865,8 +9887,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 20,
-        "7": 80
+        "1": 22,
+        "7": 78
       },
       "workstation_count": 2
     },
@@ -9957,7 +9979,7 @@
         }
       ],
       "uw_dominance": {
-        "1": 8,
+        "1": 9,
         "3": 3,
         "7": 89
       },
@@ -10085,7 +10107,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 740848,
           "nickname": "青海蘭珠",
-          "points": 9216,
+          "points": 10240,
           "rank": 1
         },
         {
@@ -10101,7 +10123,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 664917,
           "nickname": "明嵐",
-          "points": 1028,
+          "points": 1024,
           "rank": 3
         }
       ],
@@ -10173,7 +10195,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 843810,
           "nickname": "稻荷",
-          "points": 5120,
+          "points": 6144,
           "rank": 1
         },
         {
@@ -10224,9 +10246,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 91,
+        "1": 92,
         "4": 2,
-        "7": 7
+        "7": 6
       },
       "workstation_count": 2
     },
@@ -10331,10 +10353,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 13,
+        "1": 14,
         "4": 10,
         "5": 0,
-        "7": 77
+        "7": 76
       },
       "workstation_count": 2
     },
@@ -10516,7 +10538,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 750369,
           "nickname": "白天太白",
-          "points": 3072,
+          "points": 4096,
           "rank": 1
         },
         {
@@ -10524,7 +10546,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 822653,
           "nickname": "🦔",
-          "points": 3072,
+          "points": 4096,
           "rank": 2
         },
         {
@@ -10567,8 +10589,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 44,
-        "6": 7,
+        "1": 46,
+        "6": 6,
         "7": 48
       },
       "workstation_count": 2
@@ -10589,7 +10611,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 813648,
           "nickname": "味泉米糕",
-          "points": 3072,
+          "points": 4096,
           "rank": 2
         },
         {
@@ -10632,9 +10654,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 86,
+        "1": 87,
         "6": 5,
-        "7": 9
+        "7": 8
       },
       "workstation_count": 2
     },
@@ -10739,10 +10761,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 37,
+        "1": 38,
         "2": 0,
         "3": 0,
-        "7": 63
+        "7": 62
       },
       "workstation_count": 2
     },
@@ -10969,7 +10991,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 813642,
           "nickname": "至美眷屬",
-          "points": 6176,
+          "points": 7200,
           "rank": 1
         },
         {
@@ -11034,9 +11056,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 70,
+        "1": 72,
         "3": 0,
-        "7": 30
+        "7": 28
       },
       "workstation_count": 2
     },
@@ -11047,8 +11069,8 @@
           "avatar": "/images/actor/half/bustMC05.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 745423,
-          "nickname": "（主角）",
-          "points": 15360,
+          "nickname": "才沒有通遼口音昂",
+          "points": 16384,
           "rank": 1
         },
         {
@@ -11064,7 +11086,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 830974,
           "nickname": "Tiffany傳教士",
-          "points": 768,
+          "points": 1024,
           "rank": 3
         }
       ],
@@ -11113,9 +11135,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 80,
-        "4": 15,
-        "6": 4,
+        "1": 81,
+        "4": 14,
+        "6": 5,
         "7": 0
       },
       "workstation_count": 2
@@ -11193,9 +11215,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 53,
+        "1": 55,
         "4": 0,
-        "7": 47
+        "7": 45
       },
       "workstation_count": 2
     },
@@ -11215,7 +11237,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 825863,
           "nickname": "六道骸",
-          "points": 20,
+          "points": 192,
           "rank": 2
         }
       ],
@@ -11262,7 +11284,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 813871,
           "nickname": "夏夏的鎖骨",
-          "points": 4098,
+          "points": 4160,
           "rank": 1
         },
         {
@@ -11270,7 +11292,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 747255,
           "nickname": "🐻‍❄️",
-          "points": 3072,
+          "points": 4096,
           "rank": 2
         },
         {
@@ -11278,7 +11300,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 691843,
           "nickname": "夏夏ㄉ鞏膜",
-          "points": 2048,
+          "points": 3072,
           "rank": 3
         }
       ],
@@ -11313,9 +11335,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 44,
-        "6": 33,
-        "7": 22
+        "1": 37,
+        "6": 36,
+        "7": 27
       },
       "workstation_count": 2
     },
@@ -11331,18 +11353,18 @@
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustCM03.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 808340,
-          "nickname": "夜刀神十香",
-          "points": 1024,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustTW01C.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 748864,
           "nickname": "R1098D",
+          "points": 2048,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCM03.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 808340,
+          "nickname": "夜刀神十香",
           "points": 1024,
           "rank": 3
         }
@@ -11532,7 +11554,7 @@
         "2": 2,
         "3": 0,
         "5": 0,
-        "7": 1,
+        "7": 0,
         "8": 0
       },
       "workstation_count": 2
@@ -11549,19 +11571,19 @@
           "rank": 1
         },
         {
+          "avatar": "/images/actor/half/bustMC05.png",
+          "emblem": "/images/nation/color_icon/minicoa06UG.png",
+          "id": 647295,
+          "nickname": "卓杞篤",
+          "points": 5120,
+          "rank": 2
+        },
+        {
           "avatar": "/images/actor/half/bustKZ03.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 819710,
           "nickname": "中華電信",
           "points": 5120,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustMC05.png",
-          "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 647295,
-          "nickname": "卓杞篤",
-          "points": 4096,
           "rank": 3
         }
       ],
@@ -11677,9 +11699,9 @@
       "uw_dominance": {
         "2": 2,
         "4": 0,
-        "5": 76,
+        "5": 78,
         "6": 0,
-        "8": 22
+        "8": 20
       },
       "workstation_count": 2
     },
@@ -11759,7 +11781,7 @@
         "2": 17,
         "3": 1,
         "4": 4,
-        "5": 78
+        "5": 79
       },
       "workstation_count": 2
     },
@@ -11771,7 +11793,7 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 739491,
           "nickname": "新疆木棉花",
-          "points": 12288,
+          "points": 13312,
           "rank": 1
         },
         {
@@ -11903,8 +11925,8 @@
         "10": 0,
         "2": 6,
         "3": 1,
-        "4": 4,
-        "5": 86,
+        "4": 6,
+        "5": 84,
         "6": 0,
         "8": 0
       },
@@ -12002,10 +12024,10 @@
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustKZ03.png",
+          "avatar": "/images/actor/half/bustHK01A.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
-          "id": 819710,
-          "nickname": "中華電信",
+          "id": 750586,
+          "nickname": "克萊圖斯",
           "points": 512,
           "rank": 3
         }
@@ -12282,7 +12304,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 822441,
           "nickname": "烚蝦",
-          "points": 9216,
+          "points": 10240,
           "rank": 1
         },
         {
@@ -12348,9 +12370,9 @@
       ],
       "uw_dominance": {
         "10": 0,
-        "2": 11,
-        "3": 81,
-        "5": 7
+        "2": 10,
+        "3": 83,
+        "5": 6
       },
       "workstation_count": 2
     },
@@ -12362,7 +12384,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 832543,
           "nickname": "☀️Rabbit",
-          "points": 6400,
+          "points": 6656,
           "rank": 1
         },
         {
@@ -12630,7 +12652,7 @@
         }
       ],
       "uw_dominance": {
-        "10": 82,
+        "10": 81,
         "2": 12,
         "3": 1,
         "8": 6
@@ -12653,7 +12675,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 659802,
           "nickname": "餘小聲",
-          "points": 7168,
+          "points": 8192,
           "rank": 2
         },
         {
@@ -12661,7 +12683,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 824366,
           "nickname": "S8維維",
-          "points": 7168,
+          "points": 8192,
           "rank": 3
         }
       ],
@@ -12731,9 +12753,9 @@
         }
       ],
       "uw_dominance": {
-        "10": 21,
-        "3": 76,
-        "8": 3
+        "10": 20,
+        "3": 77,
+        "8": 2
       },
       "workstation_count": 2
     },
@@ -12745,7 +12767,7 @@
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 787956,
           "nickname": "Pegasus170",
-          "points": 23552,
+          "points": 24576,
           "rank": 1
         },
         {
@@ -12757,11 +12779,11 @@
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustRB02A.png",
+          "avatar": "/images/actor/half/bustTW01C.png",
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
-          "id": 751182,
-          "nickname": "板井唯唯",
-          "points": 4096,
+          "id": 822362,
+          "nickname": "Ayuna",
+          "points": 7168,
           "rank": 3
         }
       ],
@@ -12825,9 +12847,9 @@
       ],
       "uw_dominance": {
         "1": 2,
-        "10": 42,
+        "10": 37,
         "2": 0,
-        "3": 55,
+        "3": 60,
         "4": 0,
         "8": 1
       },
@@ -12841,7 +12863,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 821871,
           "nickname": "蝦冰",
-          "points": 16384,
+          "points": 18432,
           "rank": 1
         },
         {
@@ -12950,7 +12972,7 @@
       "uw_dominance": {
         "1": 0,
         "2": 8,
-        "3": 77,
+        "3": 78,
         "4": 0,
         "8": 14
       },
@@ -13015,9 +13037,9 @@
         }
       ],
       "uw_dominance": {
-        "3": 77,
+        "3": 78,
         "4": 0,
-        "8": 23
+        "8": 22
       },
       "workstation_count": 2
     },
@@ -13029,7 +13051,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 772613,
           "nickname": "柏靈頓",
-          "points": 17408,
+          "points": 18432,
           "rank": 1
         },
         {
@@ -13037,7 +13059,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 810934,
           "nickname": "路人",
-          "points": 16384,
+          "points": 18432,
           "rank": 2
         },
         {
@@ -13045,7 +13067,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 653790,
           "nickname": "路人",
-          "points": 14336,
+          "points": 17408,
           "rank": 3
         }
       ],
@@ -13151,7 +13173,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 750640,
           "nickname": "航海蘭珠",
-          "points": 18560,
+          "points": 18688,
           "rank": 1
         },
         {
@@ -13363,8 +13385,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 99,
-        "7": 1
+        "1": 97,
+        "7": 3
       },
       "workstation_count": 2
     },
@@ -13376,7 +13398,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 849760,
           "nickname": "ᡤᡠᠯᡠ ᠯᠠᠮᡠᠨ",
-          "points": 13312,
+          "points": 14336,
           "rank": 1
         },
         {
@@ -13469,8 +13491,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 22,
-        "7": 78
+        "1": 21,
+        "7": 79
       },
       "workstation_count": 2
     },
@@ -13478,19 +13500,19 @@
       "can_collect_all": true,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustFROR05.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 829667,
+          "nickname": "夏夏ㄉ虹膜",
+          "points": 6144,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustTW05.png",
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 754310,
           "nickname": "肛肛肛肛肛",
           "points": 6144,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustFROR05.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 829667,
-          "nickname": "夏夏ㄉ虹膜",
-          "points": 5632,
           "rank": 2
         },
         {
@@ -13498,7 +13520,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 750771,
           "nickname": "波加曼",
-          "points": 5152,
+          "points": 5664,
           "rank": 3
         }
       ],
@@ -13589,11 +13611,11 @@
         }
       ],
       "uw_dominance": {
-        "1": 30,
-        "2": 11,
+        "1": 31,
+        "2": 10,
         "4": 0,
-        "5": 32,
-        "8": 27
+        "5": 31,
+        "8": 28
       },
       "workstation_count": 2
     },
@@ -13714,9 +13736,8 @@
       "uw_dominance": {
         "1": 91,
         "2": 1,
-        "4": 0,
         "7": 5,
-        "8": 2
+        "8": 3
       },
       "workstation_count": 2
     },
@@ -13757,7 +13778,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -13771,7 +13792,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -13785,7 +13806,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -13799,7 +13820,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -13813,7 +13834,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -13972,7 +13993,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -13986,7 +14007,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -14000,7 +14021,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -14014,7 +14035,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -14041,18 +14062,18 @@
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustFROR03.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 821244,
-          "nickname": "油壓剪",
-          "points": 3072,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustFRNM01.png",
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 654848,
           "nickname": "玲雪",
+          "points": 512,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustMG03.png",
+          "emblem": "/images/nation/color_icon/minicoa03MG.png",
+          "id": 856776,
+          "nickname": "Xin chào",
           "points": 512,
           "rank": 3
         }
@@ -14088,8 +14109,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 77,
-        "8": 23
+        "1": 64,
+        "8": 36
       },
       "workstation_count": 2
     },
@@ -14194,7 +14215,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 811502,
           "nickname": "可可",
-          "points": 2048,
+          "points": 3072,
           "rank": 3
         }
       ],
@@ -14207,7 +14228,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -14221,7 +14242,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -14229,8 +14250,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 60,
-        "8": 40
+        "1": 62,
+        "8": 38
       },
       "workstation_count": 2
     },
@@ -14242,22 +14263,22 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 813313,
           "nickname": "哈可",
-          "points": 4096,
+          "points": 6144,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCM02.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 816441,
+          "nickname": "紅木",
+          "points": 1536,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustTW04.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 829523,
           "nickname": "夜",
-          "points": 1024,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustKZ01.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
-          "id": 830974,
-          "nickname": "Tiffany傳教士",
           "points": 1024,
           "rank": 3
         }
@@ -14307,9 +14328,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 24,
-        "6": 11,
-        "8": 65
+        "1": 25,
+        "6": 9,
+        "8": 66
       },
       "workstation_count": 2
     },
@@ -14451,7 +14472,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 841955,
           "nickname": "10055",
-          "points": 6144,
+          "points": 7168,
           "rank": 1
         },
         {
@@ -14459,7 +14480,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 812207,
           "nickname": "倉可",
-          "points": 3072,
+          "points": 4096,
           "rank": 2
         },
         {
@@ -14502,9 +14523,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 65,
+        "1": 69,
         "4": 2,
-        "8": 34
+        "8": 30
       },
       "workstation_count": 2
     },
@@ -14595,7 +14616,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -14618,7 +14639,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 757126,
           "nickname": "醉蝦 ",
-          "points": 2048,
+          "points": 3072,
           "rank": 1
         },
         {
@@ -14655,11 +14676,11 @@
         }
       ],
       "uw_dominance": {
-        "1": 43,
-        "3": 43,
-        "6": 11,
+        "1": 35,
+        "3": 53,
+        "6": 9,
         "7": 0,
-        "8": 3
+        "8": 2
       },
       "workstation_count": 2
     },
@@ -14671,7 +14692,7 @@
           "emblem": "/images/nation/color_icon/minicoa07MC.png",
           "id": 698523,
           "nickname": "M1613K",
-          "points": 5120,
+          "points": 6144,
           "rank": 1
         },
         {
@@ -14738,9 +14759,9 @@
       "uw_dominance": {
         "1": 33,
         "2": 1,
-        "3": 6,
+        "3": 5,
         "7": 57,
-        "8": 3
+        "8": 5
       },
       "workstation_count": 2
     },
@@ -14748,26 +14769,26 @@
       "can_collect_all": true,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustKZ03.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 843698,
+          "nickname": "KZ",
+          "points": 6144,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustCM03.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 741369,
           "nickname": "…",
           "points": 5120,
-          "rank": 1
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustTW03.png",
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 742829,
           "nickname": "娃娃狗娃娃兵",
-          "points": 3072,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustKZ03.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
-          "id": 843698,
-          "nickname": "KZ",
           "points": 3072,
           "rank": 3
         }
@@ -14817,10 +14838,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 39,
-        "2": 20,
-        "6": 20,
-        "8": 20
+        "1": 33,
+        "2": 17,
+        "6": 34,
+        "8": 17
       },
       "workstation_count": 2
     },
@@ -14832,8 +14853,16 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 738633,
           "nickname": "小波",
-          "points": 16384,
+          "points": 17408,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCMT59.png",
+          "emblem": "/images/seal/Rcoaw67.png",
+          "id": 746548,
+          "nickname": "zumu",
+          "points": 12288,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustTW05.png",
@@ -14841,14 +14870,6 @@
           "id": 771953,
           "nickname": "屌你老母習近平",
           "points": 11280,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustCMT59.png",
-          "emblem": "/images/seal/Rcoaw67.png",
-          "id": 746548,
-          "nickname": "zumu",
-          "points": 11264,
           "rank": 3
         }
       ],
@@ -14939,7 +14960,7 @@
         }
       ],
       "uw_dominance": {
-        "1": 45,
+        "1": 44,
         "10": 47,
         "2": 7,
         "4": 1,
@@ -15036,7 +15057,7 @@
       ],
       "uw_dominance": {
         "1": 41,
-        "2": 22,
+        "2": 21,
         "4": 3,
         "7": 35
       },
@@ -15102,7 +15123,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 719512,
           "nickname": "天空墓誌銘",
-          "points": 6144,
+          "points": 7168,
           "rank": 1
         },
         {
@@ -15167,8 +15188,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 13,
-        "4": 87
+        "1": 11,
+        "4": 89
       },
       "workstation_count": 2
     },
@@ -15260,7 +15281,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15364,7 +15385,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 813010,
           "nickname": "日遊神",
-          "points": 3072,
+          "points": 4096,
           "rank": 2
         },
         {
@@ -15393,9 +15414,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 57,
+        "1": 50,
         "4": 0,
-        "6": 43
+        "6": 50
       },
       "workstation_count": 2
     },
@@ -15488,7 +15509,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15502,7 +15523,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15516,7 +15537,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -15530,7 +15551,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -15544,7 +15565,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -15556,7 +15577,7 @@
         "2": 3,
         "4": 26,
         "5": 1,
-        "6": 45,
+        "6": 44,
         "7": 3
       },
       "workstation_count": 2
@@ -15581,11 +15602,11 @@
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustCM03.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 721047,
-          "nickname": "紅湄",
-          "points": 512,
+          "avatar": "/images/actor/half/bustTB04B.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 807760,
+          "nickname": "賢妃 玄傲雪",
+          "points": 1024,
           "rank": 3
         }
       ],
@@ -15598,7 +15619,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15606,10 +15627,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 13,
-        "4": 12,
-        "5": 25,
-        "6": 50
+        "1": 11,
+        "4": 22,
+        "5": 22,
+        "6": 44
       },
       "workstation_count": 2
     },
@@ -15650,7 +15671,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15673,7 +15694,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 744141,
           "nickname": "MANTA_326188",
-          "points": 4096,
+          "points": 5120,
           "rank": 1
         },
         {
@@ -15702,7 +15723,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -15710,10 +15731,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 16,
-        "10": 0,
-        "4": 84,
-        "5": 0
+        "1": 14,
+        "4": 85,
+        "5": 0,
+        "6": 1
       },
       "workstation_count": 2
     },
@@ -15754,7 +15775,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15805,7 +15826,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15857,7 +15878,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15871,7 +15892,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -15923,7 +15944,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -15983,10 +16004,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 32,
-        "4": 5,
-        "5": 32,
-        "6": 32
+        "1": 30,
+        "4": 10,
+        "5": 30,
+        "6": 30
       },
       "workstation_count": 2
     },
@@ -15998,7 +16019,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 828099,
           "nickname": "10013",
-          "points": 9216,
+          "points": 10240,
           "rank": 1
         },
         {
@@ -16049,10 +16070,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 20,
-        "4": 54,
+        "1": 19,
+        "4": 56,
         "5": 0,
-        "6": 26
+        "6": 25
       },
       "workstation_count": 2
     },
@@ -16093,7 +16114,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -16119,18 +16140,18 @@
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustFRNM01.png",
-          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
-          "id": 844836,
-          "nickname": "帝惃的腳踝",
-          "points": 512,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustCMILSY.png",
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 753496,
           "nickname": "小熊維尼",
+          "points": 1024,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustFRNM01.png",
+          "emblem": "/images/nation/color_icon/minicoa05KZ.png",
+          "id": 844836,
+          "nickname": "帝惃的腳踝",
           "points": 512,
           "rank": 3
         }
@@ -16144,7 +16165,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -16158,7 +16179,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -16166,9 +16187,9 @@
         }
       ],
       "uw_dominance": {
-        "4": 83,
+        "4": 79,
         "5": 5,
-        "6": 11,
+        "6": 15,
         "7": 1
       },
       "workstation_count": 2
@@ -16185,18 +16206,18 @@
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustCM04.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 851615,
-          "nickname": "張學良",
-          "points": 32,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustTW05A.png",
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 812803,
           "nickname": "不才惡女 朱慧月(?)",
+          "points": 128,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCM04.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 851615,
+          "nickname": "張學良",
           "points": 32,
           "rank": 3
         }
@@ -16210,7 +16231,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -16218,8 +16239,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 99,
-        "4": 1,
+        "1": 96,
+        "4": 4,
         "5": 0
       },
       "workstation_count": 2
@@ -16240,7 +16261,7 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 660374,
           "nickname": "不有初",
-          "points": 3072,
+          "points": 4096,
           "rank": 2
         },
         {
@@ -16298,8 +16319,8 @@
       ],
       "uw_dominance": {
         "10": 0,
-        "4": 71,
-        "5": 29,
+        "4": 68,
+        "5": 32,
         "6": 0
       },
       "workstation_count": 2
@@ -16312,7 +16333,7 @@
           "emblem": "/images/nation/color_icon/minicoa05KZ.png",
           "id": 821725,
           "nickname": "星辰織蛾",
-          "points": 4096,
+          "points": 5120,
           "rank": 1
         },
         {
@@ -16350,9 +16371,9 @@
       ],
       "uw_dominance": {
         "3": 1,
-        "4": 44,
-        "5": 11,
-        "6": 44
+        "4": 40,
+        "5": 10,
+        "6": 50
       },
       "workstation_count": 2
     },
@@ -16393,7 +16414,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -16401,8 +16422,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 32,
-        "4": 54,
+        "1": 33,
+        "4": 53,
         "5": 1,
         "7": 13
       },
@@ -16416,7 +16437,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 707064,
           "nickname": "不才惡女 玄歌吹",
-          "points": 1024,
+          "points": 2048,
           "rank": 1
         },
         {
@@ -16453,8 +16474,8 @@
         }
       ],
       "uw_dominance": {
-        "4": 80,
-        "5": 20
+        "4": 89,
+        "5": 11
       },
       "workstation_count": 2
     },
@@ -16885,7 +16906,7 @@
           "emblem": "/images/nation/color_icon/minicoa04TB.png",
           "id": 696847,
           "nickname": "佛風伏侯符封猴",
-          "points": 3072,
+          "points": 4096,
           "rank": 1
         },
         {
@@ -16922,9 +16943,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 40,
+        "1": 33,
         "2": 1,
-        "4": 60
+        "4": 66
       },
       "workstation_count": 2
     },
@@ -16994,14 +17015,14 @@
         }
       ],
       "uw_dominance": {
-        "1": 68,
+        "1": 66,
         "10": 3,
         "2": 1,
-        "3": 5,
+        "3": 9,
         "4": 0,
         "5": 4,
         "6": 0,
-        "7": 18,
+        "7": 17,
         "8": 0
       },
       "workstation_count": 2
@@ -17014,7 +17035,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 801693,
           "nickname": "耶夢加德",
-          "points": 5120,
+          "points": 6144,
           "rank": 1
         },
         {
@@ -17072,8 +17093,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 91,
-        "10": 8,
+        "1": 92,
+        "10": 7,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -17170,8 +17191,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 53,
-        "10": 44,
+        "1": 49,
+        "10": 49,
         "2": 0,
         "3": 2,
         "5": 0,
@@ -17342,11 +17363,11 @@
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustRB06.png",
-          "emblem": "/images/nation/color_icon/minicoa04TB.png",
-          "id": 744364,
-          "nickname": "月桂葉",
-          "points": 7680,
+          "avatar": "/images/actor/half/bustUG02.png",
+          "emblem": "/images/seal/Rcoaw19.png",
+          "id": 684514,
+          "nickname": "五斗米折腰閃到",
+          "points": 8208,
           "rank": 3
         }
       ],
@@ -17458,11 +17479,11 @@
         }
       ],
       "uw_dominance": {
-        "1": 14,
-        "10": 39,
+        "1": 13,
+        "10": 41,
         "2": 10,
         "3": 1,
-        "4": 28,
+        "4": 27,
         "5": 1,
         "6": 5,
         "7": 0,
@@ -17478,7 +17499,7 @@
           "emblem": "/images/nation/color_icon/minicoa03MG.png",
           "id": 744768,
           "nickname": "迪西",
-          "points": 14336,
+          "points": 16384,
           "rank": 1
         },
         {
@@ -17494,7 +17515,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 731655,
           "nickname": "今天喝酒了",
-          "points": 5632,
+          "points": 6144,
           "rank": 3
         }
       ],
@@ -17585,14 +17606,14 @@
         }
       ],
       "uw_dominance": {
-        "1": 17,
-        "10": 26,
+        "1": 16,
+        "10": 24,
         "2": 16,
         "3": 0,
         "4": 1,
         "5": 0,
         "7": 0,
-        "8": 40
+        "8": 42
       },
       "workstation_count": 2
     },
@@ -17600,19 +17621,19 @@
       "can_collect_all": true,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 647029,
+          "nickname": "M1472J",
+          "points": 10240,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustCMILSY.png",
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 822756,
           "nickname": "炎炎",
           "points": 7168,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustTW03B.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 647029,
-          "nickname": "M1472J",
-          "points": 6144,
           "rank": 2
         },
         {
@@ -17697,11 +17718,11 @@
         }
       ],
       "uw_dominance": {
-        "1": 49,
-        "10": 50,
+        "1": 60,
+        "10": 39,
         "2": 0,
         "3": 0,
-        "4": 0,
+        "4": 1,
         "8": 0
       },
       "workstation_count": 2
@@ -17710,19 +17731,19 @@
       "can_collect_all": true,
       "kings": [
         {
+          "avatar": "/images/actor/half/bustTB04.png",
+          "emblem": "/images/nation/color_icon/minicoa04TB.png",
+          "id": 724107,
+          "nickname": "J1239Y",
+          "points": 8704,
+          "rank": 1
+        },
+        {
           "avatar": "/images/actor/half/bustFRSE05.png",
           "emblem": "/images/seal/Rcoaw52.png",
           "id": 756120,
           "nickname": "吾刃尚鋒",
           "points": 7168,
-          "rank": 1
-        },
-        {
-          "avatar": "/images/actor/half/bustTB04.png",
-          "emblem": "/images/nation/color_icon/minicoa04TB.png",
-          "id": 724107,
-          "nickname": "J1239Y",
-          "points": 5632,
           "rank": 2
         },
         {
@@ -17807,10 +17828,10 @@
         }
       ],
       "uw_dominance": {
-        "1": 27,
-        "10": 44,
+        "1": 23,
+        "10": 39,
         "3": 0,
-        "4": 28,
+        "4": 38,
         "8": 0
       },
       "workstation_count": 2
@@ -17823,7 +17844,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 890860,
           "nickname": "李世民",
-          "points": 9218,
+          "points": 10242,
           "rank": 1
         },
         {
@@ -17839,7 +17860,7 @@
           "emblem": "/images/seal/Rcoaw02.png",
           "id": 749155,
           "nickname": "海獅會害怕",
-          "points": 2560,
+          "points": 3072,
           "rank": 3
         }
       ],
@@ -17916,9 +17937,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 29,
-        "10": 18,
-        "3": 53,
+        "1": 27,
+        "10": 19,
+        "3": 54,
         "4": 0,
         "8": 0
       },
@@ -18009,18 +18030,18 @@
       "can_collect_all": true,
       "kings": [
         {
-          "avatar": "/images/actor/half/bustCMXZX.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 743190,
-          "nickname": "樹林龜",
-          "points": 16384,
-          "rank": 1
-        },
-        {
           "avatar": "/images/actor/half/bustMC05B.png",
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 824894,
           "nickname": "煮蝦",
+          "points": 18432,
+          "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustCMXZX.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 743190,
+          "nickname": "樹林龜",
           "points": 16384,
           "rank": 2
         },
@@ -18162,11 +18183,11 @@
         }
       ],
       "uw_dominance": {
-        "1": 50,
+        "1": 48,
         "10": 4,
-        "2": 17,
-        "3": 21,
-        "4": 7,
+        "2": 18,
+        "3": 22,
+        "4": 6,
         "5": 1,
         "6": 0,
         "7": 0,
@@ -18211,7 +18232,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -18225,7 +18246,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18239,7 +18260,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18253,7 +18274,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18267,7 +18288,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": true,
+          "same_nation": false,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18293,7 +18314,7 @@
           "emblem": "/images/nation/color_icon/minicoa06UG.png",
           "id": 713288,
           "nickname": "草喵龜",
-          "points": 15360,
+          "points": 16384,
           "rank": 1
         },
         {
@@ -18322,7 +18343,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -18336,7 +18357,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18350,7 +18371,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18364,7 +18385,7 @@
           "prop_name": "線報",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18378,7 +18399,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18392,7 +18413,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18400,12 +18421,12 @@
         }
       ],
       "uw_dominance": {
-        "1": 53,
-        "10": 2,
-        "2": 1,
+        "1": 51,
+        "10": 3,
+        "2": 2,
         "3": 0,
         "4": 0,
-        "5": 31,
+        "5": 32,
         "6": 0,
         "8": 12
       },
@@ -18435,7 +18456,7 @@
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 750784,
           "nickname": "瑪拉席",
-          "points": 6144,
+          "points": 7168,
           "rank": 3
         }
       ],
@@ -18512,7 +18533,7 @@
         }
       ],
       "uw_dominance": {
-        "1": 60,
+        "1": 61,
         "2": 19,
         "5": 0,
         "7": 0,
@@ -18621,13 +18642,13 @@
         }
       ],
       "uw_dominance": {
-        "1": 62,
-        "10": 22,
+        "1": 63,
+        "10": 21,
         "2": 1,
         "3": 0,
         "4": 6,
         "5": 0,
-        "6": 5,
+        "6": 4,
         "7": 4
       },
       "workstation_count": 2
@@ -18640,8 +18661,16 @@
           "emblem": "/images/seal/Rcoaw01.png",
           "id": 827686,
           "nickname": "八木",
-          "points": 7680,
+          "points": 10752,
           "rank": 1
+        },
+        {
+          "avatar": "/images/actor/half/bustFRNM04B.png",
+          "emblem": "/images/nation/color_icon/minicoa07MC.png",
+          "id": 739218,
+          "nickname": "流浪米克斯",
+          "points": 5632,
+          "rank": 2
         },
         {
           "avatar": "/images/actor/half/bustTW05.png",
@@ -18649,14 +18678,6 @@
           "id": 754099,
           "nickname": "肛肛肛",
           "points": 5632,
-          "rank": 2
-        },
-        {
-          "avatar": "/images/actor/half/bustFRNM04B.png",
-          "emblem": "/images/nation/color_icon/minicoa07MC.png",
-          "id": 739218,
-          "nickname": "流浪米克斯",
-          "points": 5376,
           "rank": 3
         }
       ],
@@ -18747,12 +18768,12 @@
         }
       ],
       "uw_dominance": {
-        "1": 3,
-        "10": 39,
+        "1": 2,
+        "10": 46,
         "2": 2,
         "5": 0,
-        "7": 28,
-        "8": 28
+        "7": 25,
+        "8": 24
       },
       "workstation_count": 2
     },
@@ -18871,7 +18892,7 @@
         }
       ],
       "uw_dominance": {
-        "1": 54,
+        "1": 53,
         "10": 0,
         "2": 40,
         "5": 0,
@@ -18896,7 +18917,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 838721,
           "nickname": "蒟蒻QQ",
-          "points": 2560,
+          "points": 5120,
           "rank": 2
         },
         {
@@ -18938,7 +18959,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -18952,7 +18973,7 @@
           "prop_name": "傳單",
           "reference_type": "Workstation",
           "religious": true,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "金剛乘佛教",
           "state": 1,
           "workstation": null,
@@ -18966,7 +18987,7 @@
           "prop_name": "信用",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18980,7 +19001,7 @@
           "prop_name": "汽油",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -18994,7 +19015,7 @@
           "prop_name": "話術",
           "reference_type": "Workstation",
           "religious": false,
-          "same_nation": false,
+          "same_nation": true,
           "side_label": "工作站",
           "state": 1,
           "workstation": null,
@@ -19002,13 +19023,13 @@
         }
       ],
       "uw_dominance": {
-        "1": 13,
-        "10": 42,
-        "2": 28,
+        "1": 10,
+        "10": 37,
+        "2": 38,
         "3": 3,
-        "4": 1,
-        "5": 1,
-        "7": 11
+        "4": 2,
+        "5": 2,
+        "7": 9
       },
       "workstation_count": 2
     },
@@ -19024,18 +19045,18 @@
           "rank": 1
         },
         {
-          "avatar": "/images/actor/half/bustCM02.png",
-          "emblem": "/images/nation/color_icon/minicoa01CM.png",
-          "id": 744606,
-          "nickname": "🐱張圭珍的貓🐱",
-          "points": 10240,
-          "rank": 2
-        },
-        {
           "avatar": "/images/actor/half/bustCM01A.png",
           "emblem": "/images/nation/color_icon/minicoa01CM.png",
           "id": 750501,
           "nickname": "路人",
+          "points": 11264,
+          "rank": 2
+        },
+        {
+          "avatar": "/images/actor/half/bustCM02.png",
+          "emblem": "/images/nation/color_icon/minicoa01CM.png",
+          "id": 744606,
+          "nickname": "🐱張圭珍的貓🐱",
           "points": 10240,
           "rank": 3
         }
@@ -19113,9 +19134,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 50,
+        "1": 49,
         "10": 5,
-        "2": 45,
+        "2": 46,
         "3": 1,
         "7": 0
       },
@@ -19208,9 +19229,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 29,
-        "10": 3,
-        "2": 51,
+        "1": 28,
+        "10": 5,
+        "2": 50,
         "3": 1,
         "4": 0,
         "7": 16
@@ -19263,8 +19284,8 @@
       ],
       "uw_dominance": {
         "1": 10,
-        "2": 88,
-        "3": 2
+        "2": 87,
+        "3": 3
       },
       "workstation_count": 2
     },
@@ -19276,7 +19297,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 689677,
           "nickname": "舒龍懷穆",
-          "points": 2048,
+          "points": 3072,
           "rank": 1
         },
         {
@@ -19319,8 +19340,8 @@
         }
       ],
       "uw_dominance": {
-        "1": 16,
-        "2": 84
+        "1": 11,
+        "2": 89
       },
       "workstation_count": 2
     },
@@ -19332,7 +19353,7 @@
           "emblem": "/images/nation/color_icon/minicoa08TW.png",
           "id": 689677,
           "nickname": "舒龍懷穆",
-          "points": 5120,
+          "points": 6144,
           "rank": 1
         },
         {
@@ -19397,9 +19418,9 @@
         }
       ],
       "uw_dominance": {
-        "1": 39,
+        "1": 36,
         "10": 2,
-        "2": 55,
+        "2": 59,
         "3": 3
       },
       "workstation_count": 2
@@ -19412,7 +19433,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 807718,
           "nickname": "屠蝦",
-          "points": 14592,
+          "points": 15616,
           "rank": 1
         },
         {
@@ -19520,9 +19541,9 @@
       ],
       "uw_dominance": {
         "1": 2,
-        "10": 23,
+        "10": 22,
         "2": 13,
-        "3": 38,
+        "3": 40,
         "6": 16,
         "7": 4,
         "8": 3
@@ -19537,7 +19558,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 807718,
           "nickname": "屠蝦",
-          "points": 4096,
+          "points": 5120,
           "rank": 1
         },
         {
@@ -19587,7 +19608,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 757126,
           "nickname": "醉蝦 ",
-          "points": 15392,
+          "points": 17440,
           "rank": 1
         },
         {
@@ -19595,7 +19616,7 @@
           "emblem": "/images/nation/color_icon/minicoa02HK.png",
           "id": 719665,
           "nickname": "阿銀",
-          "points": 15360,
+          "points": 16384,
           "rank": 2
         },
         {
@@ -19716,8 +19737,8 @@
       ],
       "uw_dominance": {
         "1": 9,
-        "10": 18,
-        "3": 64,
+        "10": 17,
+        "3": 66,
         "6": 8
       },
       "workstation_count": 2
@@ -19965,11 +19986,11 @@
           "rank": 2
         },
         {
-          "avatar": "/images/actor/half/bustTW05.png",
-          "emblem": "/images/nation/color_icon/minicoa08TW.png",
-          "id": 667071,
-          "nickname": "澳萊鴨",
-          "points": 32,
+          "avatar": "/images/actor/half/bustTW03B.png",
+          "emblem": "/images/nation/color_icon/minicoa02HK.png",
+          "id": 675389,
+          "nickname": "OMDB",
+          "points": 128,
           "rank": 3
         }
       ],
@@ -20089,8 +20110,8 @@
       ],
       "uw_dominance": {
         "10": 1,
-        "2": 88,
-        "3": 10,
+        "2": 80,
+        "3": 18,
         "4": 0
       },
       "workstation_count": 2
