@@ -55,6 +55,7 @@ Python 依賴見 `requirements-data-update.txt`；`scripts/update_game_data.ps1`
 ## 前端結構
 
 - `index.html` 在根目錄，其他頁面在 `pages/`，共用 `css/style.css` + `css/design-system.css` + `js/app.js`。因為兩層目錄並存，路徑前綴要小心：`app.js` 的 `upgradeNavigation()` 靠 `/\/pages\//` 判斷目前深度來產生連結，圖片路徑則有 `getAssetPath()`（給 `pages/`）與 `getAssetPathFromRoot()`（給 `index.html`）兩個版本。
+- **共用 CSS / JS 帶版本號**：各頁引用 `css/style.css`、`css/design-system.css`、`js/app.js` 時都加了 `?v=YYYYMMDD`。GitHub Pages 會讓瀏覽器快取這些檔案，改了共用檔卻沒改版本號，舊訪客會拿到新 HTML 配舊 CSS，版面就會跑掉。改共用檔時記得把所有頁面的版本號一起更新。
 - **導覽列由 JS 產生**：`upgradeNavigation()` 會覆寫 `#navMenu` 的 innerHTML。頁面 HTML 裡的 `<ul id="navMenu">` 只是 fallback；要改選單項目請改 `js/app.js`，不要改各頁 HTML。
 - `js/app.js` 提供共用工具：`loadJSON`、`showLoading/showError/showEmpty`、`parseMarkdown`、`initTabs/initAccordion/initSearch`、`storage`、`getNationName/getRoleName/getScarcityClass`、深色模式（`data-theme` attribute + localStorage）。頁面專屬邏輯則寫在各 HTML 的 inline `<script>`。
 - `pages/guide.html` 在 client 端載入 `guides/*.md` 並用 `parseMarkdown()` 渲染，還會把 md 裡的 `src="images/` 改寫成 `src="../guides/images/`。新增教學章節要同時建立 md 檔並加進該頁的 `guideSections` 陣列。
