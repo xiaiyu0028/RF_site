@@ -92,7 +92,7 @@
     },
     "俐月": {
         "name": "俐月",
-        "has_visit_plot": false,
+        "has_visit_plot": true,
         "visitable_city_id": null,
         "visitable_city": null,
         "relation_level_cap": 1
@@ -205,9 +205,9 @@
     "范姜": {
         "name": "范姜",
         "has_visit_plot": false,
-        "visitable_city_id": null,
-        "visitable_city": null,
-        "relation_level_cap": 1
+        "visitable_city_id": 589,
+        "visitable_city": "中壢",
+        "relation_level_cap": 2
     },
     "其其格": {
         "name": "其其格",
@@ -241,7 +241,7 @@
         "name": "玥玥",
         "has_visit_plot": true,
         "visitable_city_id": 57,
-        "visitable_city": "甌哈國抗戰紀念碑",
+        "visitable_city": "廣州",
         "relation_level_cap": 2
     },
     "小寧": {

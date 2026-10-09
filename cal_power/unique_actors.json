@@ -3,18 +3,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustFRSE03.png",
         "no_weapon_name": "重擊",
-        "id": 1812790,
+        "id": 2114893,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 245,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 245,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 624688,
-        "offense": 72420,
+        "blood": 26000,
+        "offense": 2700,
         "head_image": "/images/actor/head/avatarFRSE03.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -24,32 +24,17 @@
             "name": "剝蛇牙"
         },
         "can_evolute": false,
-        "skill": 6000,
+        "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            30040,
-            53607,
-            53611,
-            54462,
-            132327,
-            128710,
-            77149,
-            239460
+            168236,
+            168240,
+            239095,
+            181150
         ],
         "relation_level": 1,
-        "weapon": {
-            "id": 132327,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "斯基泰的神鹿<br/>蘊涵極致的洪荒之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w03C.png",
-                "name": "高等重擊符文",
-                "power": "小"
-            },
-            "weapon_prototype_id": 103
-        },
+        "weapon": null,
         "skill_percentage": 0,
         "outfits": [
             {
@@ -59,13 +44,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/A.png",
-            "alphabet_in_team": "A",
-            "id": 13743,
-            "position_in_team": 1,
-            "power": 268,
-            "team_number": 1,
-            "team_roman_number": "I"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -239,18 +224,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustCMT59.png",
         "no_weapon_name": "爆裂",
-        "id": 1974510,
+        "id": 1986037,
         "nation": "紅軍",
         "flag": "/images/home/flag/bigflag01CM.png",
         "relation_exps": 0,
         "nation_id": 1,
         "scarcity_order": 1,
-        "level_cap": 300,
+        "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 300,
+        "level": 135,
         "scarcity": "SSR",
-        "blood": 311000,
-        "offense": 72720,
+        "blood": 146000,
+        "offense": 32440,
         "head_image": "/images/actor/head/avatarCMT59.png",
         "active_skill": {
             "activate_skill_point": 3,
@@ -260,29 +245,26 @@
             "name": "把你們一個個都送上天"
         },
         "can_evolute": false,
-        "skill": 11000,
+        "skill": 91000,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            159213,
+            166793,
+            213430
         ],
         "relation_level": 1,
         "weapon": {
-            "id": 192118,
+            "id": 159213,
             "level": 50,
             "skill": 0,
             "weapon_prototype": {
-                "description": "清軍軍校配發的符文<br/>可大量貯存風雷之力<br/>戰力放大：10倍",
-                "image": "/images/weapon/09S02.png",
-                "name": "保定式爆裂符文\t",
-                "power": "小"
+                "description": "古香港的夔龍紋<br/>蘊涵極致的風雷之力<br/>戰力放大：5倍",
+                "image": "/images/weapon/w09C.png",
+                "name": "高等爆裂符文",
+                "power": "大"
             },
-            "weapon_prototype_id": 300
+            "weapon_prototype_id": 27
         },
         "skill_percentage": 0,
         "outfits": [
@@ -295,9 +277,9 @@
         "team": {
             "alphabet_image": "/images/team/B.png",
             "alphabet_in_team": "B",
-            "id": 13743,
+            "id": 173204,
             "position_in_team": 2,
-            "power": 811,
+            "power": 149,
             "team_number": 1,
             "team_roman_number": "I"
         },
@@ -473,53 +455,36 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustFRSE01.png",
         "no_weapon_name": "言靈",
-        "id": 1118009,
+        "id": 2207648,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 190,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 190,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 243440,
-        "offense": 47660,
+        "blood": 13000,
+        "offense": 2300,
         "head_image": "/images/actor/head/avatarFRSE01.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "回復我方前線幹部65%ATK的HP。\n",
+            "description": "回復我方前線幹部130%ATK的HP。\n",
             "image": "/images/active_skill/SKFRSE01_1.png",
             "level": "I",
             "name": "治癒術"
         },
         "can_evolute": false,
-        "skill": 86000,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
         "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
+            167654,
+            197933
         ],
         "relation_level": 1,
-        "weapon": {
-            "id": 197665,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "甲骨文的「言」字<br/>蘊涵極致的言靈之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w01C.png",
-                "name": "高等言靈符文",
-                "power": "大"
-            },
-            "weapon_prototype_id": 7
-        },
+        "weapon": null,
         "skill_percentage": 0,
         "outfits": [
             {
@@ -529,13 +494,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/C.png",
-            "alphabet_in_team": "C",
-            "id": 13743,
-            "position_in_team": 3,
-            "power": 236,
-            "team_number": 1,
-            "team_roman_number": "I"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -543,7 +508,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部65%ATK的HP。\n",
+                    "description": "回復我方前線幹部130%ATK的HP。\n",
                     "id": 91,
                     "image": "/images/active_skill/SKFRSE01_1.png",
                     "level": "I",
@@ -709,18 +674,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustCMXZX.png",
         "no_weapon_name": "言靈",
-        "id": 2208748,
+        "id": 2205546,
         "nation": "紅軍",
         "flag": "/images/home/flag/bigflag01CM.png",
         "relation_exps": 0,
         "nation_id": 1,
         "scarcity_order": 1,
-        "level_cap": 300,
+        "level_cap": 245,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 300,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 351320,
-        "offense": 80340,
+        "blood": 11500,
+        "offense": 2600,
         "head_image": "/images/actor/head/avatarCMXZX.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -730,32 +695,12 @@
             "name": "生嚿叉燒好過生你"
         },
         "can_evolute": false,
-        "skill": 11000,
+        "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
-        "weapon": {
-            "id": 231048,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "清軍軍校配發的符文<br/>可大量貯存言靈之力<br/>戰力放大：10倍",
-                "image": "/images/weapon/01S02.png",
-                "name": "保定式言靈符文",
-                "power": "小"
-            },
-            "weapon_prototype_id": 292
-        },
+        "weapon": null,
         "skill_percentage": 0,
         "outfits": [
             {
@@ -765,11 +710,11 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/D.png",
-            "alphabet_in_team": "D",
-            "id": 13743,
-            "position_in_team": 4,
-            "power": 645,
+            "alphabet_image": "/images/team/C.png",
+            "alphabet_in_team": "C",
+            "id": 184097,
+            "position_in_team": 3,
+            "power": 4,
             "team_number": 1,
             "team_roman_number": "I"
         },
@@ -945,53 +890,33 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustMC01.png",
         "no_weapon_name": "言靈",
-        "id": 872015,
+        "id": 2081134,
         "nation": "滿洲",
         "flag": "/images/home/flag/bigflag07MC.png",
         "relation_exps": 0,
         "nation_id": 7,
         "scarcity_order": 1,
-        "level_cap": 190,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 190,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 203640,
-        "offense": 39700,
+        "blood": 11000,
+        "offense": 1900,
         "head_image": "/images/actor/head/avatarMC01.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "回復我方前線幹部65%ATK的HP。\n",
+            "description": "回復我方前線幹部130%ATK的HP。\n",
             "image": "/images/active_skill/SKMC01_1.png",
             "level": "I",
             "name": "治癒術"
         },
         "can_evolute": false,
-        "skill": 66000,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
-        "weapon": {
-            "id": 197634,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "甲骨文的「言」字<br/>蘊涵極致的言靈之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w01C.png",
-                "name": "高等言靈符文",
-                "power": "大"
-            },
-            "weapon_prototype_id": 7
-        },
+        "weapon": null,
         "skill_percentage": 0,
         "outfits": [
             {
@@ -1001,11 +926,11 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/E.png",
-            "alphabet_in_team": "E",
-            "id": 13743,
-            "position_in_team": 5,
-            "power": 204,
+            "alphabet_image": "/images/team/B.png",
+            "alphabet_in_team": "B",
+            "id": 184097,
+            "position_in_team": 2,
+            "power": 4,
             "team_number": 1,
             "team_roman_number": "I"
         },
@@ -1015,7 +940,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部65%ATK的HP。\n",
+                    "description": "回復我方前線幹部130%ATK的HP。\n",
                     "id": 47,
                     "image": "/images/active_skill/SKMC01_1.png",
                     "level": "I",
@@ -1184,18 +1109,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustTW04.png",
         "no_weapon_name": "刀劍",
-        "id": 129050,
+        "id": 2205548,
         "nation": "臺灣",
         "flag": "/images/home/flag/bigflag08TW.png",
         "relation_exps": 0,
         "nation_id": 2,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 121,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 482000,
-        "offense": 38200,
+        "blood": 26000,
+        "offense": 2200,
         "head_image": "/images/actor/head/avatarTW04.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -1204,16 +1129,14 @@
             "level": "I",
             "name": "緋櫻斬"
         },
-        "can_evolute": false,
-        "skill": 4300000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            76480
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 29,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 27,
@@ -1222,13 +1145,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/A.png",
-            "alphabet_in_team": "A",
-            "id": 78564,
-            "position_in_team": 1,
-            "power": 122,
-            "team_number": 2,
-            "team_roman_number": "II"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": "/images/nation/color_icon/minicoa08TW.png",
         "actor_prototype": {
@@ -1346,18 +1269,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustMC04.png",
         "no_weapon_name": "槍械",
-        "id": 973432,
+        "id": 2205543,
         "nation": "滿洲",
         "flag": "/images/home/flag/bigflag07MC.png",
         "relation_exps": 0,
         "nation_id": 7,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 120,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 176600,
-        "offense": 37900,
+        "blood": 10000,
+        "offense": 2200,
         "head_image": "/images/actor/head/avatarMC04.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -1366,18 +1289,14 @@
             "level": "I",
             "name": "全域殲滅"
         },
-        "can_evolute": false,
-        "skill": 12201000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 83,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 20,
@@ -1386,13 +1305,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/B.png",
-            "alphabet_in_team": "B",
-            "id": 78564,
-            "position_in_team": 2,
-            "power": 120,
-            "team_number": 2,
-            "team_roman_number": "II"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": "/images/nation/color_icon/minicoa07MC.png",
         "actor_prototype": {
@@ -1510,18 +1429,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustKZ03.png",
         "no_weapon_name": "刀劍",
-        "id": 219379,
+        "id": 2188086,
         "nation": "哈薩克",
         "flag": "/images/home/flag/bigflag05KZ.png",
         "relation_exps": 0,
         "nation_id": 6,
         "scarcity_order": 1,
-        "level_cap": 80,
+        "level_cap": 190,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 28,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 118400,
-        "offense": 8880,
+        "blood": 32000,
+        "offense": 2400,
         "head_image": "/images/actor/head/avatarKZ03.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -1531,15 +1450,15 @@
             "name": "阿爾泰的風"
         },
         "can_evolute": false,
-        "skill": 223000,
+        "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            76480
+            155830
         ],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 27,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 8,
@@ -1548,13 +1467,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/A.png",
-            "alphabet_in_team": "A",
-            "id": 95960,
-            "position_in_team": 1,
-            "power": 58,
-            "team_number": 3,
-            "team_roman_number": "III"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": "/images/nation/color_icon/minicoa05KZ.png",
         "actor_prototype": {
@@ -1728,41 +1647,54 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustRB05.png",
         "no_weapon_name": "爆裂",
-        "id": 1704734,
+        "id": 1704443,
         "nation": "反賊聯盟",
         "flag": "/images/home/flag/bigflag09RB01.png",
         "relation_exps": 0,
         "nation_id": 10,
         "scarcity_order": 1,
-        "level_cap": 80,
+        "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 80,
+        "level": 121,
         "scarcity": "SSR",
-        "blood": 107800,
-        "offense": 21560,
+        "blood": 157000,
+        "offense": 35040,
         "head_image": "/images/actor/head/avatarRB05.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "造成敵我雙方全體幹部135%ATK傷害，1回合內敵方全體幹部ATK-500%。",
+            "description": "造成敵我雙方全體幹部135%ATK傷害，並在1回合內敵方全體幹部ATK-500%。",
             "image": "/images/active_skill/SKRB05_1.png",
             "level": "I",
             "name": "非洲草原巨蜥"
         },
         "can_evolute": false,
-        "skill": 21000,
+        "skill": 1620000,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            62479,
+            156211,
+            159894,
+            161819,
+            192119,
+            214761,
+            172172,
+            213403
         ],
         "relation_level": 1,
-        "weapon": null,
-        "skill_percentage": 0,
+        "weapon": {
+            "id": 156211,
+            "level": 50,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "古香港的夔龍紋<br/>蘊涵極致的風雷之力<br/>戰力放大：5倍",
+                "image": "/images/weapon/w09C.png",
+                "name": "高等爆裂符文",
+                "power": "大"
+            },
+            "weapon_prototype_id": 27
+        },
+        "skill_percentage": 11,
         "outfits": [
             {
                 "id": 123,
@@ -1771,13 +1703,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/B.png",
-            "alphabet_in_team": "B",
-            "id": 95960,
-            "position_in_team": 2,
-            "power": 66,
-            "team_number": 3,
-            "team_roman_number": "III"
+            "alphabet_image": "/images/team/C.png",
+            "alphabet_in_team": "C",
+            "id": 233655,
+            "position_in_team": 3,
+            "power": 95,
+            "team_number": 4,
+            "team_roman_number": "IV"
         },
         "nation_icon": "/images/nation/color_icon/minicoa09RB01.png",
         "actor_prototype": {
@@ -1785,7 +1717,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/G.png",
-                    "description": "造成敵我雙方全體幹部135%ATK傷害，1回合內敵方全體幹部ATK-500%。",
+                    "description": "造成敵我雙方全體幹部135%ATK傷害，並在1回合內敵方全體幹部ATK-500%。",
                     "id": 134,
                     "image": "/images/active_skill/SKRB05_1.png",
                     "level": "I",
@@ -1951,18 +1883,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustFRNM03.png",
         "no_weapon_name": "暗器",
-        "id": 643146,
+        "id": 2205530,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 2,
-        "level_cap": 85,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 61,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 80350,
-        "offense": 21700,
+        "blood": 8000,
+        "offense": 2300,
         "head_image": "/images/actor/head/avatarFRNM03.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -1972,26 +1904,13 @@
             "name": "河西雜技"
         },
         "can_evolute": true,
-        "skill": 592000,
+        "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            9598
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
-        "weapon": {
-            "id": 9598,
-            "level": 26,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "三苗的山形冠<br/>蘊涵少許的奇襲之力<br/>戰力放大：1.7倍",
-                "image": "/images/weapon/w06A.png",
-                "name": "原初暗器符文",
-                "power": "小"
-            },
-            "weapon_prototype_id": 16
-        },
-        "skill_percentage": 15,
+        "weapon": null,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 43,
@@ -2000,13 +1919,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/D.png",
-            "alphabet_in_team": "D",
-            "id": 95960,
-            "position_in_team": 4,
-            "power": 66,
-            "team_number": 3,
-            "team_roman_number": "III"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -2124,18 +2043,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustHK03.png",
         "no_weapon_name": "弓弩",
-        "id": 137349,
+        "id": 2081122,
         "nation": "香港",
         "flag": "/images/home/flag/bigflag02HK.png",
         "relation_exps": 0,
         "nation_id": 3,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 13,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 26800,
-        "offense": 5360,
+        "blood": 10000,
+        "offense": 2000,
         "head_image": "/images/actor/head/avatarHK03.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -2144,19 +2063,14 @@
             "level": "I",
             "name": "黑警死全家"
         },
-        "can_evolute": false,
-        "skill": 166000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            57904,
-            194853,
-            188833,
-            190278
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 85,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 19,
@@ -2165,13 +2079,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/E.png",
-            "alphabet_in_team": "E",
-            "id": 95960,
-            "position_in_team": 5,
-            "power": 56,
-            "team_number": 3,
-            "team_roman_number": "III"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": "/images/nation/color_icon/minicoa02HK.png",
         "actor_prototype": {
@@ -2292,42 +2206,49 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustFRNM04.png",
         "no_weapon_name": "重擊",
-        "id": 130262,
+        "id": 1723632,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 135,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 135,
+        "level": 80,
         "scarcity": "SSR",
-        "blood": 568800,
-        "offense": 27360,
+        "blood": 352438,
+        "offense": 19568,
         "head_image": "/images/actor/head/avatarFRNM04.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "造成敵方前線幹部50%ATK傷害，同時一回合內自身DEF+100%。",
+            "description": "造成敵方前線幹部50%ATK傷害，並在1回合內自身DEF+100%。",
             "image": "/images/active_skill/SKFRNM04_1.png",
             "level": "I",
             "name": "金剛手"
         },
         "can_evolute": false,
-        "skill": 13000,
+        "skill": 1000,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
         "usable_weapon_ids": [
-            30040,
-            53607,
-            53611,
-            54462,
-            132327,
-            128710,
-            77149,
-            239460
+            168236,
+            168240,
+            239095,
+            181150
         ],
         "relation_level": 1,
-        "weapon": null,
+        "weapon": {
+            "id": 168240,
+            "level": 50,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "斯基泰的神鹿<br/>蘊涵豐沛的洪荒之力<br/>戰力放大：2.1倍",
+                "image": "/images/weapon/w03B.png",
+                "name": "強化重擊符文",
+                "power": "中"
+            },
+            "weapon_prototype_id": 8
+        },
         "skill_percentage": 0,
         "outfits": [
             {
@@ -2337,13 +2258,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/A.png",
-            "alphabet_in_team": "A",
-            "id": 95961,
-            "position_in_team": 1,
-            "power": 92,
-            "team_number": 4,
-            "team_roman_number": "IV"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 39,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -2351,7 +2272,7 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/G.png",
-                    "description": "造成敵方前線幹部50%ATK傷害，同時一回合內自身DEF+100%。",
+                    "description": "造成敵方前線幹部50%ATK傷害，並在1回合內自身DEF+100%。",
                     "id": 57,
                     "image": "/images/active_skill/SKFRNM04_1.png",
                     "level": "I",
@@ -2517,13 +2438,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustHK02.png",
         "no_weapon_name": "槍械",
-        "id": 341579,
+        "id": 2205538,
         "nation": "香港",
         "flag": "/images/home/flag/bigflag02HK.png",
         "relation_exps": 0,
         "nation_id": 3,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -2537,15 +2458,11 @@
             "level": "I",
             "name": "重光"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -2557,13 +2474,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/B.png",
-            "alphabet_in_team": "B",
-            "id": 95961,
-            "position_in_team": 2,
-            "power": 71,
-            "team_number": 4,
-            "team_roman_number": "IV"
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
         },
         "nation_icon": "/images/nation/color_icon/minicoa02HK.png",
         "actor_prototype": {
@@ -2681,39 +2598,37 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustTW05.png",
         "no_weapon_name": "弓弩",
-        "id": 1115597,
+        "id": 1115649,
         "nation": "臺灣",
         "flag": "/images/home/flag/bigflag08TW.png",
         "relation_exps": 0,
         "nation_id": 2,
         "scarcity_order": 1,
-        "level_cap": 135,
+        "level_cap": 300,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 101,
+        "level": 300,
         "scarcity": "SSR",
-        "blood": 123325,
-        "offense": 26125,
+        "blood": 342225,
+        "offense": 69905,
         "head_image": "/images/actor/head/avatarTW05.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "造成敵方前線幹部515%ATK傷害，同時1回合內使其DEF-100%。自身ATK-100%，持續3回合。",
+            "description": "造成敵方前線幹部515%ATK傷害，並在1回合內使其DEF-100%。自身ATK-100%，持續3回合。",
             "image": "/images/active_skill/SKTW05_1.png",
             "level": "I",
             "name": "珠淚落千華"
         },
         "can_evolute": false,
-        "skill": 3050000,
+        "skill": 59000,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            57904,
-            194853,
-            188833,
-            190278
+            72919,
+            197701
         ],
         "relation_level": 1,
         "weapon": {
-            "id": 188833,
+            "id": 197701,
             "level": 50,
             "skill": 0,
             "weapon_prototype": {
@@ -2724,7 +2639,7 @@
             },
             "weapon_prototype_id": 21
         },
-        "skill_percentage": 29,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 57,
@@ -2733,13 +2648,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "/images/team/C.png",
-            "alphabet_in_team": "C",
-            "id": 95961,
-            "position_in_team": 3,
-            "power": 154,
-            "team_number": 4,
-            "team_roman_number": "IV"
+            "alphabet_image": "/images/team/E.png",
+            "alphabet_in_team": "E",
+            "id": 81088,
+            "position_in_team": 5,
+            "power": 369,
+            "team_number": 1,
+            "team_roman_number": "I"
         },
         "nation_icon": "/images/nation/color_icon/minicoa08TW.png",
         "actor_prototype": {
@@ -2747,7 +2662,7 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/Pt.png",
-                    "description": "造成敵方前線幹部515%ATK傷害，同時1回合內使其DEF-100%。自身ATK-100%，持續3回合。",
+                    "description": "造成敵方前線幹部515%ATK傷害，並在1回合內使其DEF-100%。自身ATK-100%，持續3回合。",
                     "id": 169,
                     "image": "/images/active_skill/SKTW05_1.png",
                     "level": "I",
@@ -2764,7 +2679,7 @@
             "description": "臺南佳里北頭洋長大的布莊女兒，在解嚴後背起書包走進街頭運動，更在開放第四臺後努力成為新聞主播。看透新聞界的黑暗後淡然離場，回臺南投資輕工業。女兒粉圓出生後開始遊走政治圈，雖堅拒參選，卻逐漸與丈夫疏遠，最終離異。如今是臺灣最大反共民團「百岳」的金主與首領。",
             "ethnic_group": "西拉雅",
             "family": "臺灣臺南",
-            "has_visit_plot": false,
+            "has_visit_plot": true,
             "id": 81,
             "name": "俐月",
             "offense_base_value": 2300,
@@ -2913,13 +2828,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustCMXJP.png",
         "no_weapon_name": "爆裂",
-        "id": 2235977,
+        "id": 2205537,
         "nation": "紅軍",
         "flag": "/images/home/flag/bigflag01CM.png",
         "relation_exps": 0,
         "nation_id": 1,
         "scarcity_order": 1,
-        "level_cap": 80,
+        "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 1,
         "scarcity": "SSR",
@@ -2928,7 +2843,7 @@
         "head_image": "/images/actor/head/avatarCMXJP.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "造成敵方全體幹部45%ATK傷害。回復自身40%ATK的HP。自身ATK降低185％持續2回合。1回合內自身DEF+50%。",
+            "description": "造成敵方全體幹部45%ATK傷害。回復自身80%ATK的HP。自身ATK降低185％持續2回合。1回合內自身DEF+50%。",
             "image": "/images/active_skill/SKCMXJP_1.png",
             "level": "I",
             "name": "換肩"
@@ -2938,12 +2853,7 @@
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            213426
         ],
         "relation_level": 1,
         "weapon": null,
@@ -2956,13 +2866,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/E.png",
+            "alphabet_in_team": "E",
+            "id": 184097,
+            "position_in_team": 5,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 1,
+            "team_roman_number": "I"
         },
         "nation_icon": "/images/nation/color_icon/minicoa01CM.png",
         "actor_prototype": {
@@ -2970,7 +2880,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "造成敵方全體幹部45%ATK傷害。回復自身40%ATK的HP。自身ATK降低185％持續2回合。1回合內自身DEF+50%。",
+                    "description": "造成敵方全體幹部45%ATK傷害。回復自身80%ATK的HP。自身ATK降低185％持續2回合。1回合內自身DEF+50%。",
                     "id": 268,
                     "image": "/images/active_skill/SKCMXJP_1.png",
                     "level": "I",
@@ -3136,22 +3046,22 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustRB07.png",
         "no_weapon_name": "刀劍",
-        "id": 2142601,
+        "id": 2125757,
         "nation": "反賊聯盟",
         "flag": "/images/home/flag/bigflag09RB01.png",
         "relation_exps": 0,
         "nation_id": 10,
         "scarcity_order": 1,
-        "level_cap": 80,
+        "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 1,
         "scarcity": "SSR",
-        "blood": 18000,
+        "blood": 22500,
         "offense": 1950,
         "head_image": "/images/actor/head/avatarRB07.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "造成敵方前線幹部400%ATK傷害，並在2回合內使其DEF-100%。回復自身50%ATK的HP。",
+            "description": "造成敵方前線幹部400%ATK傷害，並在2回合內使其DEF-100%。回復自身100%ATK的HP。",
             "image": "/images/active_skill/SKRB07_1.png",
             "level": "I",
             "name": "六脈"
@@ -3161,7 +3071,7 @@
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
         "usable_weapon_ids": [
-            76480
+            155830
         ],
         "relation_level": 1,
         "weapon": null,
@@ -3188,7 +3098,7 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "造成敵方前線幹部400%ATK傷害，並在2回合內使其DEF-100%。回復自身50%ATK的HP。",
+                    "description": "造成敵方前線幹部400%ATK傷害，並在2回合內使其DEF-100%。回復自身100%ATK的HP。",
                     "id": 537,
                     "image": "/images/active_skill/SKRB07_1.png",
                     "level": "I",
@@ -3200,8 +3110,8 @@
                 "id": 4,
                 "name": "宣傳家"
             },
-            "blood_base_value": 18000,
-            "blood_elevation_value": 1800,
+            "blood_base_value": 22500,
+            "blood_elevation_value": 2250,
             "description": "祖父母那輩是備受褒揚的少數民族統戰樣板，即使在文革時期處境也相對寬裕。中學時舉報自己的班主任的違法行徑，卻被班主任夥同其他老師、同學聯手欺凌，在一次口角中失手戳瞎班主任的一隻眼睛。事發後被父母送往麻薩諸塞州，走向預想之外的人生。",
             "ethnic_group": "白",
             "family": "大理",
@@ -3354,13 +3264,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustFRMA02.png",
         "no_weapon_name": "爆裂",
-        "id": 2159085,
+        "id": 2152352,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 135,
+        "level_cap": 300,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 1,
         "scarcity": "SSR",
@@ -3379,12 +3289,9 @@
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            159213,
+            166793,
+            213430
         ],
         "relation_level": 1,
         "weapon": null,
@@ -3480,7 +3387,7 @@
                 "level": 80
             },
             {
-                "description": "反賊聯盟陣營成員攻擊力+15% 香港陣營成員受到傷害-15%宣傳家型成員血量+ 30%",
+                "description": "反賊聯盟陣營成員攻擊力+15% 香港陣營成員受到傷害-15%資助者型成員血量+ 30%",
                 "level": 90
             },
             {
@@ -3577,7 +3484,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustFRSE02.png",
         "no_weapon_name": "槍械",
-        "id": 2217288,
+        "id": 2210553,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
@@ -3585,10 +3492,10 @@
         "scarcity_order": 1,
         "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 1,
+        "level": 8,
         "scarcity": "SSR",
-        "blood": 11500,
-        "offense": 2600,
+        "blood": 19450,
+        "offense": 4920,
         "head_image": "/images/actor/head/avatarFRSE02.png",
         "active_skill": {
             "activate_skill_point": 3,
@@ -3598,17 +3505,26 @@
             "name": "蒂博尼哥羅"
         },
         "can_evolute": false,
-        "skill": 0,
+        "skill": 77000,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
+            231912
         ],
         "relation_level": 1,
-        "weapon": null,
-        "skill_percentage": 0,
+        "weapon": {
+            "id": 231912,
+            "level": 1,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "金國的海東青<br/>蘊涵極致的狙擊之力<br/>戰力放大：5倍",
+                "image": "/images/weapon/w08C.png",
+                "name": "高等槍械符文",
+                "power": "大"
+            },
+            "weapon_prototype_id": 24
+        },
+        "skill_percentage": 95,
         "outfits": [
             {
                 "id": 50,
@@ -3617,13 +3533,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/D.png",
+            "alphabet_in_team": "D",
+            "id": 215455,
+            "position_in_team": 4,
+            "power": 9,
+            "team_number": 2,
+            "team_roman_number": "II"
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -3797,18 +3713,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustFRSE05.png",
         "no_weapon_name": "暗器",
-        "id": 2197928,
+        "id": 2189471,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 190,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 1,
+        "level": 80,
         "scarcity": "SSR",
-        "blood": 12000,
-        "offense": 2400,
+        "blood": 107490,
+        "offense": 23475,
         "head_image": "/images/actor/head/avatarFRSE05.png",
         "active_skill": {
             "activate_skill_point": 3,
@@ -3818,14 +3734,26 @@
             "name": "夜叉之歌"
         },
         "can_evolute": false,
-        "skill": 0,
+        "skill": 9000,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            9598
+            220325,
+            220324
         ],
         "relation_level": 1,
-        "weapon": null,
+        "weapon": {
+            "id": 220325,
+            "level": 50,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "三苗的山形冠<br/>蘊涵豐沛的奇襲之力<br/>戰力放大：2.1倍",
+                "image": "/images/weapon/w06B.png",
+                "name": "強化暗器符文",
+                "power": "中"
+            },
+            "weapon_prototype_id": 17
+        },
         "skill_percentage": 0,
         "outfits": [
             {
@@ -3835,13 +3763,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/E.png",
+            "alphabet_in_team": "E",
+            "id": 161897,
+            "position_in_team": 5,
+            "power": 29,
+            "team_number": 1,
+            "team_roman_number": "I"
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -4015,7 +3943,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustFROR03.png",
         "no_weapon_name": "刀劍",
-        "id": 1008093,
+        "id": 2266912,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
@@ -4040,7 +3968,7 @@
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            76480
+            168235
         ],
         "relation_level": 1,
         "weapon": null,
@@ -4233,18 +4161,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustMG03.png",
         "no_weapon_name": "匕首",
-        "id": 1023834,
+        "id": 2173992,
         "nation": "蒙古",
         "flag": "/images/home/flag/bigflag03MG.png",
         "relation_exps": 0,
         "nation_id": 8,
         "scarcity_order": 1,
-        "level_cap": 135,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 1,
+        "level": 65,
         "scarcity": "SSR",
-        "blood": 26000,
-        "offense": 2700,
+        "blood": 182800,
+        "offense": 19980,
         "head_image": "/images/actor/head/avatarMG03.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -4254,16 +4182,13 @@
             "name": "忽圖嘎"
         },
         "can_evolute": false,
-        "skill": 0,
+        "skill": 3536000,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            76728,
-            75849
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 0,
+        "skill_percentage": 81,
         "outfits": [
             {
                 "id": 9,
@@ -4272,13 +4197,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/A.png",
+            "alphabet_in_team": "A",
+            "id": 215456,
+            "position_in_team": 1,
+            "power": 14,
+            "team_number": 3,
+            "team_roman_number": "III"
         },
         "nation_icon": "/images/nation/color_icon/minicoa03MG.png",
         "actor_prototype": {
@@ -4335,7 +4260,7 @@
                 "level": 30
             },
             {
-                "description": "間諜型成員攻擊力+10 自身受到傷害-5%自身血量+ 10%",
+                "description": "間諜型成員攻擊力+10% 自身受到傷害-5%自身血量+ 10%",
                 "level": 40
             },
             {
@@ -4452,18 +4377,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustFRTK03.png",
         "no_weapon_name": "匕首",
-        "id": 1226854,
+        "id": 2173993,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 245,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 1,
+        "level": 47,
         "scarcity": "SSR",
-        "blood": 26000,
-        "offense": 2700,
+        "blood": 138700,
+        "offense": 15120,
         "head_image": "/images/actor/head/avatarFRTK03.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -4473,16 +4398,13 @@
             "name": "阿剌模忒"
         },
         "can_evolute": false,
-        "skill": 0,
+        "skill": 141000,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            76728,
-            75849
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 0,
+        "skill_percentage": 6,
         "outfits": [
             {
                 "id": 39,
@@ -4495,7 +4417,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 4,
+            "power": 14,
             "team_number": null,
             "team_roman_number": null
         },
@@ -4671,13 +4593,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustTB04.png",
         "no_weapon_name": "弓弩",
-        "id": 2100053,
+        "id": 2205550,
         "nation": "藏國",
         "flag": "/images/home/flag/bigflag04TB.png",
         "relation_exps": 0,
         "nation_id": 4,
         "scarcity_order": 1,
-        "level_cap": 135,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 1,
         "scarcity": "SSR",
@@ -4695,12 +4617,7 @@
         "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            57904,
-            194853,
-            188833,
-            190278
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -4892,7 +4809,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustHK05.png",
         "no_weapon_name": "刀劍",
-        "id": 1824941,
+        "id": 1812598,
         "nation": "香港",
         "flag": "/images/home/flag/bigflag02HK.png",
         "relation_exps": 0,
@@ -4916,9 +4833,7 @@
         "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            76480
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -5110,7 +5025,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustFRTK04.png",
         "no_weapon_name": "匕首",
-        "id": 1812816,
+        "id": 2081135,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
@@ -5134,10 +5049,7 @@
         "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            76728,
-            75849
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -5149,13 +5061,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/A.png",
+            "alphabet_in_team": "A",
+            "id": 184097,
+            "position_in_team": 1,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 1,
+            "team_roman_number": "I"
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -5193,7 +5105,7 @@
             "sponsor_gratitude": null,
             "sponsor_image": null,
             "talent_1": "與維吾爾弟兄 在沙塵中並肩而戰",
-            "talent_2": "自身ATK+240%<br/>維吾爾成員HP+35% DEF+15%",
+            "talent_2": "ATK+240%<br/>維吾爾成員HP+35% DEF+15%",
             "vanguard": true,
             "visitable_city": {
                 "hidden": false,
@@ -5332,18 +5244,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustFRSE04.png",
         "no_weapon_name": "刀劍",
-        "id": 2005875,
+        "id": 2200392,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 245,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 1,
+        "level": 80,
         "scarcity": "SSR",
-        "blood": 42000,
-        "offense": 2200,
+        "blood": 373800,
+        "offense": 25900,
         "head_image": "/images/actor/head/avatarFRSE04.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -5353,11 +5265,12 @@
             "name": "喝江長恨"
         },
         "can_evolute": false,
-        "skill": 0,
+        "skill": 27000,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
         "usable_weapon_ids": [
-            76480
+            195441,
+            220323
         ],
         "relation_level": 1,
         "weapon": null,
@@ -5374,7 +5287,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 4,
+            "power": 21,
             "team_number": null,
             "team_roman_number": null
         },
@@ -5550,13 +5463,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustRB01.png",
         "no_weapon_name": "言靈",
-        "id": 341578,
+        "id": 2205545,
         "nation": "反賊聯盟",
         "flag": "/images/home/flag/bigflag09RB01.png",
         "relation_exps": 0,
         "nation_id": 10,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -5565,25 +5478,16 @@
         "head_image": "/images/actor/head/avatarRB01.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "回復我方前線幹部65%ATK的HP。\n",
+            "description": "回復我方前線幹部130%ATK的HP。\n",
             "image": "/images/active_skill/SKRB01_1.png",
             "level": "I",
             "name": "治癒術"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -5609,7 +5513,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部65%ATK的HP。\n",
+                    "description": "回復我方前線幹部130%ATK的HP。\n",
                     "id": 46,
                     "image": "/images/active_skill/SKRB01_1.png",
                     "level": "I",
@@ -5719,7 +5623,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustUG01.png",
         "no_weapon_name": "言靈",
-        "id": 692012,
+        "id": 2205542,
         "nation": "維吾爾",
         "flag": "/images/home/flag/bigflag06UG.png",
         "relation_exps": 0,
@@ -5734,7 +5638,7 @@
         "head_image": "/images/actor/head/avatarUG01.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "回復我方前線幹部65%ATK的HP。\n",
+            "description": "回復我方前線幹部130%ATK的HP。\n",
             "image": "/images/active_skill/SKUG01_1.png",
             "level": "I",
             "name": "治癒術"
@@ -5743,16 +5647,7 @@
         "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -5778,7 +5673,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部65%ATK的HP。\n",
+                    "description": "回復我方前線幹部130%ATK的HP。\n",
                     "id": 23,
                     "image": "/images/active_skill/SKUG01_1.png",
                     "level": "I",
@@ -5888,13 +5783,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustMC02.png",
         "no_weapon_name": "槍械",
-        "id": 844878,
+        "id": 2081123,
         "nation": "滿洲",
         "flag": "/images/home/flag/bigflag07MC.png",
         "relation_exps": 0,
         "nation_id": 7,
         "scarcity_order": 2,
-        "level_cap": 85,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -5912,11 +5807,7 @@
         "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -5928,13 +5819,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/B.png",
+            "alphabet_in_team": "B",
+            "id": 218621,
+            "position_in_team": 2,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 2,
+            "team_roman_number": "II"
         },
         "nation_icon": "/images/nation/color_icon/minicoa07MC.png",
         "actor_prototype": {
@@ -6052,13 +5943,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustTW02.png",
         "no_weapon_name": "槍械",
-        "id": 137353,
+        "id": 2081125,
         "nation": "臺灣",
         "flag": "/images/home/flag/bigflag08TW.png",
         "relation_exps": 0,
         "nation_id": 2,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -6072,15 +5963,11 @@
             "level": "I",
             "name": "五月雪"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -6092,13 +5979,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/A.png",
+            "alphabet_in_team": "A",
+            "id": 218621,
+            "position_in_team": 1,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 2,
+            "team_roman_number": "II"
         },
         "nation_icon": "/images/nation/color_icon/minicoa08TW.png",
         "actor_prototype": {
@@ -6122,14 +6009,14 @@
             "blood_elevation_value": 1300,
             "description": "往返於兩岸之間的生意人，個性有點不按牌理出牌。雖然很有營商才幹，但比起做生意，他似乎更喜歡在東方大陸各個城市與農村之間觀察人的生老病苦，並默默產生了一些不為人知的危險思想。",
             "ethnic_group": "客家",
-            "family": "臺灣桃園",
+            "family": "臺灣中壢",
             "has_visit_plot": false,
             "id": 6,
             "name": "范姜",
             "offense_base_value": 1900,
             "offense_elevation_value": 260,
             "origin": "臺灣出身",
-            "relation_level_cap": 1,
+            "relation_level_cap": 2,
             "religion": "泛靈論",
             "religion_icon": "/images/religion/syncretism_animist.png",
             "sponsor": "島抗聯青年軍",
@@ -6138,8 +6025,11 @@
             "talent_1": "憑藉臺商的手腕 遊走敵我之間",
             "talent_2": "ATK+140% HP+10% DEF+10%",
             "vanguard": false,
-            "visitable_city": null,
-            "visitable_city_id": null
+            "visitable_city": {
+                "hidden": false,
+                "name": "中壢"
+            },
+            "visitable_city_id": 589
         },
         "passive_skills": [
             {
@@ -6216,13 +6106,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustMG02.png",
         "no_weapon_name": "弓弩",
-        "id": 844879,
+        "id": 2205541,
         "nation": "蒙古",
         "flag": "/images/home/flag/bigflag03MG.png",
         "relation_exps": 0,
         "nation_id": 8,
         "scarcity_order": 2,
-        "level_cap": 85,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -6240,12 +6130,7 @@
         "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            57904,
-            194853,
-            188833,
-            190278
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -6384,7 +6269,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustTB02.png",
         "no_weapon_name": "刀劍",
-        "id": 866554,
+        "id": 2205535,
         "nation": "藏國",
         "flag": "/images/home/flag/bigflag04TB.png",
         "relation_exps": 0,
@@ -6408,9 +6293,7 @@
         "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            76480
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -6546,13 +6429,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustCM06.png",
         "no_weapon_name": "爆裂",
-        "id": 2100071,
+        "id": 2084706,
         "nation": "紅軍",
         "flag": "/images/home/flag/bigflag01CM.png",
         "relation_exps": 0,
         "nation_id": 1,
         "scarcity_order": 2,
-        "level_cap": 60,
+        "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -6566,17 +6449,12 @@
             "level": "I",
             "name": "慶典"
         },
-        "can_evolute": true,
+        "can_evolute": false,
         "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            213744
         ],
         "relation_level": 1,
         "weapon": null,
@@ -6589,13 +6467,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/C.png",
+            "alphabet_in_team": "C",
+            "id": 209780,
+            "position_in_team": 3,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 2,
+            "team_roman_number": "II"
         },
         "nation_icon": "/images/nation/color_icon/minicoa01CM.png",
         "actor_prototype": {
@@ -6716,13 +6594,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustTB03.png",
         "no_weapon_name": "匕首",
-        "id": 844880,
+        "id": 2205544,
         "nation": "藏國",
         "flag": "/images/home/flag/bigflag04TB.png",
         "relation_exps": 0,
         "nation_id": 4,
         "scarcity_order": 2,
-        "level_cap": 85,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -6740,10 +6618,7 @@
         "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            76728,
-            75849
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -6882,13 +6757,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustCM03.png",
         "no_weapon_name": "暗器",
-        "id": 1143790,
+        "id": 2210555,
         "nation": "紅軍",
         "flag": "/images/home/flag/bigflag01CM.png",
         "relation_exps": 0,
         "nation_id": 1,
         "scarcity_order": 2,
-        "level_cap": 60,
+        "level_cap": 160,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -6907,7 +6782,8 @@
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            9598
+            220325,
+            220324
         ],
         "relation_level": 1,
         "weapon": null,
@@ -6968,7 +6844,7 @@
             "vanguard": false,
             "visitable_city": {
                 "hidden": false,
-                "name": "甌哈國抗戰紀念碑"
+                "name": "廣州"
             },
             "visitable_city_id": 57
         },
@@ -7047,13 +6923,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustRB03.png",
         "no_weapon_name": "匕首",
-        "id": 219382,
+        "id": 2205529,
         "nation": "反賊聯盟",
         "flag": "/images/home/flag/bigflag09RB01.png",
         "relation_exps": 0,
         "nation_id": 10,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -7067,14 +6943,11 @@
             "level": "I",
             "name": "迴風拂柳"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            76728,
-            75849
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -7210,13 +7083,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustUG03.png",
         "no_weapon_name": "匕首",
-        "id": 130260,
+        "id": 2205533,
         "nation": "維吾爾",
         "flag": "/images/home/flag/bigflag06UG.png",
         "relation_exps": 0,
         "nation_id": 5,
         "scarcity_order": 2,
-        "level_cap": 110,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -7234,10 +7107,7 @@
         "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            76728,
-            75849
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -7376,7 +7246,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustCM04.png",
         "no_weapon_name": "刀劍",
-        "id": 1143765,
+        "id": 1850339,
         "nation": "紅軍",
         "flag": "/images/home/flag/bigflag01CM.png",
         "relation_exps": 0,
@@ -7384,28 +7254,40 @@
         "scarcity_order": 2,
         "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 1,
+        "level": 26,
         "scarcity": "SR",
-        "blood": 26000,
-        "offense": 2200,
+        "blood": 121300,
+        "offense": 10000,
         "head_image": "/images/actor/head/avatarCM04.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "造成敵方前線幹部195%ATK傷害，副作用-20%自身HP。",
+            "description": "造成敵方前線幹部195%ATK傷害，副作用-5%自身HP。",
             "image": "/images/active_skill/SKCM04_1.png",
             "level": "I",
             "name": "衝鋒在前"
         },
-        "can_evolute": false,
-        "skill": 0,
+        "can_evolute": true,
+        "skill": 200000,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
         "usable_weapon_ids": [
-            76480
+            195441,
+            220323
         ],
         "relation_level": 1,
-        "weapon": null,
-        "skill_percentage": 0,
+        "weapon": {
+            "id": 195441,
+            "level": 1,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "排灣族的青銅刀<br/>蘊涵少許的斬劈之力<br/>戰力放大：1.7倍",
+                "image": "/images/weapon/w04A.png",
+                "name": "原初刀劍符文",
+                "power": "小"
+            },
+            "weapon_prototype_id": 10
+        },
+        "skill_percentage": 27,
         "outfits": [
             {
                 "id": 1,
@@ -7418,7 +7300,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 4,
+            "power": 10,
             "team_number": null,
             "team_roman_number": null
         },
@@ -7428,7 +7310,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/G.png",
-                    "description": "造成敵方前線幹部195%ATK傷害，副作用-20%自身HP。",
+                    "description": "造成敵方前線幹部195%ATK傷害，副作用-5%自身HP。",
                     "id": 18,
                     "image": "/images/active_skill/SKCM04_1.png",
                     "level": "I",
@@ -7538,13 +7420,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustMG04.png",
         "no_weapon_name": "刀劍",
-        "id": 130261,
+        "id": 2081137,
         "nation": "蒙古",
         "flag": "/images/home/flag/bigflag03MG.png",
         "relation_exps": 0,
         "nation_id": 8,
         "scarcity_order": 2,
-        "level_cap": 135,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
         "level": 1,
         "scarcity": "SR",
@@ -7562,9 +7444,7 @@
         "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            76480
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -7700,13 +7580,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustKZ01.png",
         "no_weapon_name": "言靈",
-        "id": 444447,
+        "id": 2081124,
         "nation": "哈薩克",
         "flag": "/images/home/flag/bigflag05KZ.png",
         "relation_exps": 0,
         "nation_id": 6,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 30,
         "scarcity_image": "/images/scarcity/image/b_R.png",
         "level": 1,
         "scarcity": "R",
@@ -7715,25 +7595,16 @@
         "head_image": "/images/actor/head/avatarKZ01.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "回復我方前線幹部65%ATK的HP。\n",
+            "description": "回復我方前線幹部130%ATK的HP。\n",
             "image": "/images/active_skill/SKKZ01_1.png",
             "level": "I",
             "name": "治癒術"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -7745,13 +7616,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/B.png",
+            "alphabet_in_team": "B",
+            "id": 218623,
+            "position_in_team": 2,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 3,
+            "team_roman_number": "III"
         },
         "nation_icon": "/images/nation/color_icon/minicoa05KZ.png",
         "actor_prototype": {
@@ -7759,7 +7630,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部65%ATK的HP。\n",
+                    "description": "回復我方前線幹部130%ATK的HP。\n",
                     "id": 45,
                     "image": "/images/active_skill/SKKZ01_1.png",
                     "level": "I",
@@ -7841,13 +7712,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustFROR02.png",
         "no_weapon_name": "刀劍",
-        "id": 130265,
+        "id": 2081128,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 30,
         "scarcity_image": "/images/scarcity/image/b_R.png",
         "level": 1,
         "scarcity": "R",
@@ -7861,13 +7732,11 @@
             "level": "I",
             "name": "成功成仁"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            76480
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -7975,13 +7844,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustFRNM02.png",
         "no_weapon_name": "槍械",
-        "id": 130156,
+        "id": 2081129,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 30,
         "scarcity_image": "/images/scarcity/image/b_R.png",
         "level": 1,
         "scarcity": "R",
@@ -7995,15 +7864,11 @@
             "level": "I",
             "name": "臧巴拉"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -8015,13 +7880,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/C.png",
+            "alphabet_in_team": "C",
+            "id": 218623,
+            "position_in_team": 3,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 3,
+            "team_roman_number": "III"
         },
         "nation_icon": null,
         "actor_prototype": {
@@ -8118,13 +7983,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustMC03.png",
         "no_weapon_name": "爆裂",
-        "id": 130153,
+        "id": 2081126,
         "nation": "滿洲",
         "flag": "/images/home/flag/bigflag07MC.png",
         "relation_exps": 0,
         "nation_id": 7,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 30,
         "scarcity_image": "/images/scarcity/image/b_R.png",
         "level": 1,
         "scarcity": "R",
@@ -8143,12 +8008,7 @@
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            213426
         ],
         "relation_level": 1,
         "weapon": null,
@@ -8257,13 +8117,13 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustRB04.png",
         "no_weapon_name": "刀劍",
-        "id": 130157,
+        "id": 2081133,
         "nation": "反賊聯盟",
         "flag": "/images/home/flag/bigflag09RB01.png",
         "relation_exps": 0,
         "nation_id": 10,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 30,
         "scarcity_image": "/images/scarcity/image/b_R.png",
         "level": 1,
         "scarcity": "R",
@@ -8277,13 +8137,11 @@
             "level": "I",
             "name": "星爆棄療斬"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            76480
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -8391,18 +8249,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustHK04.png",
         "no_weapon_name": "重擊",
-        "id": 130266,
+        "id": 2081130,
         "nation": "香港",
         "flag": "/images/home/flag/bigflag02HK.png",
         "relation_exps": 0,
         "nation_id": 3,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_R.png",
-        "level": 1,
+        "level": 45,
         "scarcity": "R",
-        "blood": 20000,
-        "offense": 1800,
+        "blood": 207000,
+        "offense": 16320,
         "head_image": "/images/actor/head/avatarHK04.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -8411,23 +8269,16 @@
             "level": "I",
             "name": "裝修"
         },
-        "can_evolute": false,
-        "skill": 0,
+        "can_evolute": true,
+        "skill": 1206000,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
         "usable_weapon_ids": [
-            30040,
-            53607,
-            53611,
-            54462,
-            132327,
-            128710,
-            77149,
-            239460
+            239551
         ],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 0,
+        "skill_percentage": 57,
         "outfits": [
             {
                 "id": 24,
@@ -8440,7 +8291,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 4,
+            "power": 11,
             "team_number": null,
             "team_roman_number": null
         },
@@ -8535,18 +8386,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustKZ02.png",
         "no_weapon_name": "重擊",
-        "id": 137351,
+        "id": 2081131,
         "nation": "哈薩克",
         "flag": "/images/home/flag/bigflag05KZ.png",
         "relation_exps": 0,
         "nation_id": 6,
         "scarcity_order": 2,
-        "level_cap": 135,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 6,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 42000,
-        "offense": 3200,
+        "blood": 24500,
+        "offense": 1900,
         "head_image": "/images/actor/head/avatarKZ02.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -8556,22 +8407,15 @@
             "name": "組合拳"
         },
         "can_evolute": true,
-        "skill": 10000,
+        "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            30040,
-            53607,
-            53611,
-            54462,
-            132327,
-            128710,
-            77149,
-            239460
+            239551
         ],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 20,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 14,
@@ -8580,13 +8424,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 5,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/A.png",
+            "alphabet_in_team": "A",
+            "id": 218623,
+            "position_in_team": 1,
+            "power": 4,
+            "team_number": 3,
+            "team_roman_number": "III"
         },
         "nation_icon": "/images/nation/color_icon/minicoa05KZ.png",
         "actor_prototype": {
@@ -8704,43 +8548,34 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustMG01.png",
         "no_weapon_name": "言靈",
-        "id": 130152,
+        "id": 2081127,
         "nation": "蒙古",
         "flag": "/images/home/flag/bigflag03MG.png",
         "relation_exps": 0,
         "nation_id": 8,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 30,
         "scarcity_image": "/images/scarcity/image/b_R.png",
-        "level": 7,
+        "level": 1,
         "scarcity": "R",
-        "blood": 18300,
-        "offense": 3360,
+        "blood": 9000,
+        "offense": 1500,
         "head_image": "/images/actor/head/avatarMG01.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "回復我方前線幹部65%ATK的HP。\n",
+            "description": "回復我方前線幹部130%ATK的HP。\n",
             "image": "/images/active_skill/SKMG01_1.png",
             "level": "I",
             "name": "治癒術"
         },
-        "can_evolute": false,
-        "skill": 1000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 2,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 28,
@@ -8753,7 +8588,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 5,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -8763,7 +8598,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部65%ATK的HP。\n",
+                    "description": "回復我方前線幹部130%ATK的HP。\n",
                     "id": 44,
                     "image": "/images/active_skill/SKMG01_1.png",
                     "level": "I",
@@ -8849,38 +8684,34 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustTB01.png",
         "no_weapon_name": "槍械",
-        "id": 219362,
+        "id": 2081132,
         "nation": "藏國",
         "flag": "/images/home/flag/bigflag04TB.png",
         "relation_exps": 0,
         "nation_id": 4,
         "scarcity_order": 3,
-        "level_cap": 90,
+        "level_cap": 30,
         "scarcity_image": "/images/scarcity/image/b_R.png",
-        "level": 7,
+        "level": 1,
         "scarcity": "R",
-        "blood": 18300,
-        "offense": 3360,
+        "blood": 9000,
+        "offense": 1500,
         "head_image": "/images/actor/head/avatarTB01.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "復活我方前線幹部，並回復130%ATK的HP。",
+            "description": "復活我方前線幹部，並回復260%ATK的HP。",
             "image": "/images/active_skill/SKTB01_1.png",
             "level": "I",
             "name": "藥師咒"
         },
-        "can_evolute": false,
-        "skill": 1000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 2,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 15,
@@ -8889,13 +8720,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 5,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/C.png",
+            "alphabet_in_team": "C",
+            "id": 218621,
+            "position_in_team": 3,
+            "power": 4,
+            "team_number": 2,
+            "team_roman_number": "II"
         },
         "nation_icon": "/images/nation/color_icon/minicoa04TB.png",
         "actor_prototype": {
@@ -8903,7 +8734,7 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "復活我方前線幹部，並回復130%ATK的HP。",
+                    "description": "復活我方前線幹部，並回復260%ATK的HP。",
                     "id": 43,
                     "image": "/images/active_skill/SKTB01_1.png",
                     "level": "I",
@@ -8989,43 +8820,34 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustFRTK01.png",
         "no_weapon_name": "言靈",
-        "id": 692011,
+        "id": 2205540,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 2,
-        "level_cap": 85,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 13,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 27800,
-        "offense": 5260,
+        "blood": 11000,
+        "offense": 1900,
         "head_image": "/images/actor/head/avatarFRTK01.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "3回合內每回合回復我方前線幹部35%ATK的HP，同時使其ATK+65% DEF+15%。",
+            "description": "3回合內每回合回復我方前線幹部70%ATK的HP，同時使其ATK+65% DEF+15%。",
             "image": "/images/active_skill/SKFRTK01_1.png",
             "level": "I",
             "name": "瑪納斯"
         },
         "can_evolute": true,
-        "skill": 82000,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 42,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 37,
@@ -9038,7 +8860,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 6,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -9048,7 +8870,7 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "3回合內每回合回復我方前線幹部35%ATK的HP，同時使其ATK+65% DEF+15%。",
+                    "description": "3回合內每回合回復我方前線幹部70%ATK的HP，同時使其ATK+65% DEF+15%。",
                     "id": 84,
                     "image": "/images/active_skill/SKFRTK01_1.png",
                     "level": "I",
@@ -9158,42 +8980,37 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustFRNM01.png",
         "no_weapon_name": "法器",
-        "id": 130151,
+        "id": 2205539,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 2,
-        "level_cap": 85,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 42,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 68400,
-        "offense": 13380,
+        "blood": 11000,
+        "offense": 1900,
         "head_image": "/images/actor/head/avatarFRNM01.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "復活我方前線幹部，並回復130%ATK的HP。",
+            "description": "復活我方前線幹部，並回復260%ATK的HP。",
             "image": "/images/active_skill/SKFRNM01_1.png",
             "level": "I",
             "name": "巫醫"
         },
         "can_evolute": true,
-        "skill": 1132000,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
         "usable_weapon_ids": [
-            31346,
-            42092,
-            69768,
-            152789,
-            144236,
-            168889,
-            236826
+            197657,
+            236891
         ],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 61,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 41,
@@ -9206,7 +9023,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 12,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -9216,7 +9033,7 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "復活我方前線幹部，並回復130%ATK的HP。",
+                    "description": "復活我方前線幹部，並回復260%ATK的HP。",
                     "id": 86,
                     "image": "/images/active_skill/SKFRNM01_1.png",
                     "level": "I",
@@ -9326,7 +9143,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustFROR01.png",
         "no_weapon_name": "言靈",
-        "id": 1420111,
+        "id": 2120578,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
@@ -9334,46 +9151,29 @@
         "scarcity_order": 1,
         "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 61,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 85550,
-        "offense": 16700,
+        "blood": 13000,
+        "offense": 2300,
         "head_image": "/images/actor/head/avatarFROR01.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "3回合內每回合回復我方全體幹部35%ATK的HP。\n",
+            "description": "3回合內每回合回復我方全體幹部70%ATK的HP。\n",
             "image": "/images/active_skill/SKFROR01_1.png",
             "level": "I",
             "name": "擇藥帖"
         },
         "can_evolute": false,
-        "skill": 3718000,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
         "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
+            167654,
+            197933
         ],
         "relation_level": 1,
-        "weapon": {
-            "id": 49275,
-            "level": 1,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "甲骨文的「言」字<br/>蘊涵豐沛的言靈之力<br/>戰力放大：2.1倍",
-                "image": "/images/weapon/w01B.png",
-                "name": "強化言靈符文",
-                "power": "中"
-            },
-            "weapon_prototype_id": 1
-        },
-        "skill_percentage": 97,
+        "weapon": null,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 45,
@@ -9386,7 +9186,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 25,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -9396,7 +9196,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "3回合內每回合回復我方全體幹部35%ATK的HP。\n",
+                    "description": "3回合內每回合回復我方全體幹部70%ATK的HP。\n",
                     "id": 89,
                     "image": "/images/active_skill/SKFROR01_1.png",
                     "level": "I",
@@ -9562,18 +9362,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustRB02.png",
         "no_weapon_name": "法器",
-        "id": 861063,
+        "id": 2205531,
         "nation": "反賊聯盟",
         "flag": "/images/home/flag/bigflag09RB01.png",
         "relation_exps": 0,
         "nation_id": 10,
         "scarcity_order": 1,
-        "level_cap": 135,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 80,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 100270,
-        "offense": 21550,
+        "blood": 11500,
+        "offense": 2300,
         "head_image": "/images/actor/head/avatarRB02.png",
         "active_skill": {
             "activate_skill_point": 3,
@@ -9583,31 +9383,15 @@
             "name": "蜃氣"
         },
         "can_evolute": false,
-        "skill": 1000,
+        "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            31346,
-            42092,
-            69768,
-            152789,
-            144236,
-            168889,
-            236826
+            197657,
+            236891
         ],
         "relation_level": 1,
-        "weapon": {
-            "id": 168889,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "藏文的「嗡」字<br/>蘊涵極致的心法之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w02C.png",
-                "name": "高等法器符文",
-                "power": "大"
-            },
-            "weapon_prototype_id": 6
-        },
+        "weapon": null,
         "skill_percentage": 0,
         "outfits": [
             {
@@ -9621,7 +9405,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 88,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -9800,7 +9584,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustTW03.png",
         "no_weapon_name": "法器",
-        "id": 872077,
+        "id": 2210556,
         "nation": "臺灣",
         "flag": "/images/home/flag/bigflag08TW.png",
         "relation_exps": 0,
@@ -9808,71 +9592,50 @@
         "scarcity_order": 1,
         "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 80,
+        "level": 58,
         "scarcity": "SSR",
-        "blood": 108670,
-        "offense": 23230,
+        "blood": 80400,
+        "offense": 16080,
         "head_image": "/images/actor/head/avatarTW03.png",
         "active_skill": {
-            "activate_skill_point": 3,
+            "activate_skill_point": 2,
             "description": "造成敵方全體幹部130%ATK傷害。\n",
             "image": "/images/active_skill/SKTW03_1.png",
             "level": "I",
             "name": "業火"
         },
         "can_evolute": false,
-        "skill": 35000,
+        "skill": 912000,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
         "usable_weapon_ids": [
-            31346,
-            42092,
-            69768,
-            152789,
-            144236,
-            168889,
-            236826
+            144799,
+            236853
         ],
         "relation_level": 1,
-        "weapon": {
-            "id": 152789,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "藏文的「嗡」字<br/>蘊涵極致的心法之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w02C.png",
-                "name": "高等法器符文",
-                "power": "大"
-            },
-            "weapon_prototype_id": 6
-        },
-        "skill_percentage": 1,
+        "weapon": null,
+        "skill_percentage": 26,
         "outfits": [
             {
                 "id": 21,
                 "image": "/images/actor/gif/tachieTW03.gif",
                 "name": "仙姑"
-            },
-            {
-                "id": 189,
-                "image": "/images/actor/gif/tachieTW03B.gif",
-                "name": "仙姑 - 睡衣 ★"
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 88,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/B.png",
+            "alphabet_in_team": "B",
+            "id": 215456,
+            "position_in_team": 2,
+            "power": 13,
+            "team_number": 3,
+            "team_roman_number": "III"
         },
         "nation_icon": "/images/nation/color_icon/minicoa08TW.png",
         "actor_prototype": {
             "active_skills": [
                 {
-                    "activate_skill_point": 3,
+                    "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/S.png",
                     "description": "造成敵方全體幹部130%ATK傷害。\n",
                     "id": 6,
@@ -10043,18 +9806,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustUG04.png",
         "no_weapon_name": "槍械",
-        "id": 137352,
+        "id": 2205528,
         "nation": "維吾爾",
         "flag": "/images/home/flag/bigflag06UG.png",
         "relation_exps": 0,
         "nation_id": 5,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 96,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 143000,
-        "offense": 30700,
+        "blood": 10000,
+        "offense": 2200,
         "head_image": "/images/actor/head/avatarUG04.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -10063,18 +9826,14 @@
             "level": "I",
             "name": "集火打擊"
         },
-        "can_evolute": false,
-        "skill": 2465000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 26,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 5,
@@ -10087,7 +9846,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 21,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -10207,52 +9966,36 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustUG02.png",
         "no_weapon_name": "爆裂",
-        "id": 1118078,
+        "id": 2205551,
         "nation": "維吾爾",
         "flag": "/images/home/flag/bigflag06UG.png",
         "relation_exps": 0,
         "nation_id": 5,
         "scarcity_order": 1,
-        "level_cap": 190,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 101,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 121500,
-        "offense": 32240,
+        "blood": 11500,
+        "offense": 2600,
         "head_image": "/images/actor/head/avatarUG02.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "1回合內我方全體幹部ATK+10%，同時我方前線幹部DEF+5%。\n",
+            "description": "1回合內我方全體幹部ATK+70%，同時我方前線幹部DEF+30%。\n",
             "image": "/images/active_skill/SKUG02_1.png",
             "level": "I",
             "name": "木卡姆"
         },
         "can_evolute": false,
-        "skill": 5430000,
+        "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            213426
         ],
         "relation_level": 1,
-        "weapon": {
-            "id": 161683,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "古香港的夔龍紋<br/>蘊涵極致的風雷之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w09C.png",
-                "name": "高等爆裂符文",
-                "power": "大"
-            },
-            "weapon_prototype_id": 27
-        },
-        "skill_percentage": 52,
+        "weapon": null,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 18,
@@ -10265,7 +10008,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 110,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -10275,7 +10018,7 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pt.png",
-                    "description": "1回合內我方全體幹部ATK+10%，同時我方前線幹部DEF+5%。\n",
+                    "description": "1回合內我方全體幹部ATK+70%，同時我方前線幹部DEF+30%。\n",
                     "id": 24,
                     "image": "/images/active_skill/SKUG02_1.png",
                     "level": "I",
@@ -10442,66 +10185,41 @@
     },
     {
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
-        "half_image": "/images/actor/half/bustTW01C.png",
+        "half_image": "/images/actor/half/bustTW01.png",
         "no_weapon_name": "言靈",
-        "id": 130155,
+        "id": 2081136,
         "nation": "臺灣",
         "flag": "/images/home/flag/bigflag08TW.png",
         "relation_exps": 0,
         "nation_id": 2,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 102,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 156040,
-        "offense": 30180,
-        "head_image": "/images/actor/head/avatarTW01C.png",
+        "blood": 11000,
+        "offense": 1900,
+        "head_image": "/images/actor/head/avatarTW01.png",
         "active_skill": {
             "activate_skill_point": 1,
-            "description": "回復我方前線幹部65%ATK的HP。",
+            "description": "回復我方前線幹部130%ATK的HP。",
             "image": "/images/active_skill/SKTW01_1.png",
             "level": "I",
             "name": "治癒術"
         },
-        "can_evolute": false,
-        "skill": 5780000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            50816,
-            48300,
-            49275,
-            133905,
-            197651,
-            197665,
-            231048,
-            197634
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
-        "weapon": {
-            "id": 133905,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "一張神祕的紙<br/>蘊涵豐沛的言靈之力<br/>戰力放大：2.5倍",
-                "image": "/images/weapon/w01C2.png",
-                "name": "罷免票",
-                "power": "小"
-            },
-            "weapon_prototype_id": 160
-        },
-        "skill_percentage": 54,
+        "weapon": null,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 33,
                 "image": "/images/actor/gif/tachieTW01.gif",
                 "name": "粉圓"
-            },
-            {
-                "id": 90,
-                "image": "/images/actor/gif/tachieTW01C.gif",
-                "name": "粉圓 - 制服 ★"
             }
         ],
         "team": {
@@ -10509,7 +10227,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 50,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -10519,8 +10237,8 @@
                 {
                     "activate_skill_point": 1,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部65%ATK的HP。",
-                    "id": 441,
+                    "description": "回復我方前線幹部130%ATK的HP。",
+                    "id": 8,
                     "image": "/images/active_skill/SKTW01_1.png",
                     "level": "I",
                     "name": "治癒術"
@@ -10549,78 +10267,78 @@
             "sponsor_gratitude": "感謝 島抗聯青年軍 於2022年協助完成本角色人物命名、設定與配音。",
             "sponsor_image": "/images/sponsor/tks02.png",
             "talent_1": "以縝密的戰略 構築千山百岳",
-            "talent_2": "臺灣成員ATK+36% HP+18% DEF+18%",
+            "talent_2": "臺灣成員ATK+30% HP+15% DEF+15%",
             "vanguard": false,
             "visitable_city": null,
             "visitable_city_id": null
         },
         "passive_skills": [
             {
-                "description": "臺灣陣營成員攻擊力+6%",
+                "description": "臺灣陣營成員攻擊力+5%",
                 "level": 10
             },
             {
-                "description": "臺灣陣營成員攻擊力+6%",
+                "description": "臺灣陣營成員攻擊力+5%",
                 "level": 20
             },
             {
-                "description": "臺灣陣營成員攻擊力+6%臺灣陣營成員血量+ 6%",
+                "description": "臺灣陣營成員攻擊力+5%臺灣陣營成員血量+ 5%",
                 "level": 30
             },
             {
-                "description": "臺灣陣營成員攻擊力+12%臺灣陣營成員血量+ 6%",
+                "description": "臺灣陣營成員攻擊力+10%臺灣陣營成員血量+ 5%",
                 "level": 40
             },
             {
-                "description": "臺灣陣營成員攻擊力+12% 臺灣陣營成員受到傷害-6%臺灣陣營成員血量+ 6%",
+                "description": "臺灣陣營成員攻擊力+10% 臺灣陣營成員受到傷害-5%臺灣陣營成員血量+ 5%",
                 "level": 50
             },
             {
-                "description": "臺灣陣營成員攻擊力+12% 臺灣陣營成員受到傷害-6%臺灣陣營成員血量+ 6%",
+                "description": "臺灣陣營成員攻擊力+10% 臺灣陣營成員受到傷害-5%臺灣陣營成員血量+ 5%",
                 "level": 60
             },
             {
-                "description": "臺灣陣營成員攻擊力+18% 臺灣陣營成員受到傷害-6%臺灣陣營成員血量+ 12%",
+                "description": "臺灣陣營成員攻擊力+15% 臺灣陣營成員受到傷害-5%臺灣陣營成員血量+ 10%",
                 "level": 70
             },
             {
-                "description": "臺灣陣營成員攻擊力+18% 臺灣陣營成員受到傷害-6%臺灣陣營成員血量+ 12%",
+                "description": "臺灣陣營成員攻擊力+15% 臺灣陣營成員受到傷害-5%臺灣陣營成員血量+ 10%",
                 "level": 80
             },
             {
-                "description": "臺灣陣營成員攻擊力+18% 臺灣陣營成員受到傷害-12%臺灣陣營成員血量+ 12%",
+                "description": "臺灣陣營成員攻擊力+15% 臺灣陣營成員受到傷害-10%臺灣陣營成員血量+ 10%",
                 "level": 90
             },
             {
-                "description": "臺灣陣營成員攻擊力+24% 臺灣陣營成員受到傷害-12%臺灣陣營成員血量+ 12%",
+                "description": "臺灣陣營成員攻擊力+20% 臺灣陣營成員受到傷害-10%臺灣陣營成員血量+ 10%",
                 "level": 100
             },
             {
-                "description": "臺灣陣營成員攻擊力+24% 臺灣陣營成員受到傷害-12%臺灣陣營成員血量+ 18%",
+                "description": "臺灣陣營成員攻擊力+20% 臺灣陣營成員受到傷害-10%臺灣陣營成員血量+ 15%",
                 "level": 110
             },
             {
-                "description": "臺灣陣營成員攻擊力+24% 臺灣陣營成員受到傷害-12%臺灣陣營成員血量+ 18%",
+                "description": "臺灣陣營成員攻擊力+20% 臺灣陣營成員受到傷害-10%臺灣陣營成員血量+ 15%",
                 "level": 120
             },
             {
-                "description": "臺灣陣營成員攻擊力+30% 臺灣陣營成員受到傷害-18%臺灣陣營成員血量+ 18%",
+                "description": "臺灣陣營成員攻擊力+25% 臺灣陣營成員受到傷害-15%臺灣陣營成員血量+ 15%",
                 "level": 130
             },
             {
-                "description": "臺灣陣營成員攻擊力+30% 臺灣陣營成員受到傷害-18%臺灣陣營成員血量+ 18%",
+                "description": "臺灣陣營成員攻擊力+25% 臺灣陣營成員受到傷害-15%臺灣陣營成員血量+ 15%",
                 "level": 140
             },
             {
-                "description": "臺灣陣營成員攻擊力+30% 臺灣陣營成員受到傷害-18%臺灣陣營成員血量+ 18%",
+                "description": "臺灣陣營成員攻擊力+25% 臺灣陣營成員受到傷害-15%臺灣陣營成員血量+ 15%",
                 "level": 150
             },
             {
-                "description": "臺灣陣營成員攻擊力+36% 臺灣陣營成員受到傷害-18%臺灣陣營成員血量+ 18%",
+                "description": "臺灣陣營成員攻擊力+30% 臺灣陣營成員受到傷害-15%臺灣陣營成員血量+ 15%",
                 "level": 160
             }
         ],
-        "gif_image": "/images/actor/gif/tachieTW01C.gif",
+        "gif_image": "/images/actor/gif/tachieTW01.gif",
         "nation_order": 15,
         "scarcity_icon": "/images/scarcity/icon/s_SR.png",
         "no_weapon_image": "/images/weapon/w01X.png"
@@ -10629,18 +10347,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustKZ04.png",
         "no_weapon_name": "槍械",
-        "id": 130263,
+        "id": 2205536,
         "nation": "哈薩克",
         "flag": "/images/home/flag/bigflag05KZ.png",
         "relation_exps": 0,
         "nation_id": 6,
         "scarcity_order": 2,
-        "level_cap": 85,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 120,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 176600,
-        "offense": 37900,
+        "blood": 10000,
+        "offense": 2200,
         "head_image": "/images/actor/head/avatarKZ04.png",
         "active_skill": {
             "activate_skill_point": 3,
@@ -10650,17 +10368,13 @@
             "name": "阿拉什"
         },
         "can_evolute": true,
-        "skill": 2351000,
+        "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 16,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 7,
@@ -10673,7 +10387,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 26,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -10796,18 +10510,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
         "half_image": "/images/actor/half/bustFROR04.png",
         "no_weapon_name": "槍械",
-        "id": 130154,
+        "id": 2205534,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 120,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 176600,
-        "offense": 37900,
+        "blood": 10000,
+        "offense": 2200,
         "head_image": "/images/actor/head/avatarFROR04.png",
         "active_skill": {
             "activate_skill_point": 1,
@@ -10816,18 +10530,14 @@
             "level": "I",
             "name": "叢林游擊"
         },
-        "can_evolute": false,
-        "skill": 841000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
-        "skill_percentage": 6,
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 48,
@@ -10840,7 +10550,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 26,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -10960,18 +10670,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustFRTK02.png",
         "no_weapon_name": "爆裂",
-        "id": 137350,
+        "id": 2205532,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 2,
-        "level_cap": 160,
+        "level_cap": 60,
         "scarcity_image": "/images/scarcity/image/b_SR.png",
-        "level": 160,
+        "level": 1,
         "scarcity": "SR",
-        "blood": 216200,
-        "offense": 46880,
+        "blood": 9500,
+        "offense": 1900,
         "head_image": "/images/actor/head/avatarFRTK02.png",
         "active_skill": {
             "activate_skill_point": 3,
@@ -10980,31 +10690,15 @@
             "level": "I",
             "name": "帖木兒巨砲"
         },
-        "can_evolute": false,
-        "skill": 21000,
+        "can_evolute": true,
+        "skill": 0,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            60517,
-            161682,
-            161683,
-            161684,
-            192118,
-            213425
+            213426
         ],
         "relation_level": 1,
-        "weapon": {
-            "id": 161682,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "古香港的夔龍紋<br/>蘊涵極致的風雷之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w09C.png",
-                "name": "高等爆裂符文",
-                "power": "大"
-            },
-            "weapon_prototype_id": 27
-        },
+        "weapon": null,
         "skill_percentage": 0,
         "outfits": [
             {
@@ -11018,7 +10712,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 148,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -11138,18 +10832,18 @@
         "actor_category_icon": "/images/actor_category/icon/cadre2.png",
         "half_image": "/images/actor/half/bustFRMA.png",
         "no_weapon_name": "槍械",
-        "id": 2082936,
+        "id": 2205549,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 245,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 190,
+        "level": 1,
         "scarcity": "SSR",
-        "blood": 240030,
-        "offense": 50220,
+        "blood": 12000,
+        "offense": 2400,
         "head_image": "/images/actor/head/avatarFRMA.png",
         "active_skill": {
             "activate_skill_point": 2,
@@ -11159,27 +10853,12 @@
             "name": "骰寶"
         },
         "can_evolute": false,
-        "skill": 86000,
+        "skill": 0,
         "actor_category_order": 30,
         "actor_category_decor": "/images/actor_category/decor/cadrecardS.png",
-        "usable_weapon_ids": [
-            50293,
-            50292,
-            192248
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
-        "weapon": {
-            "id": 192248,
-            "level": 50,
-            "skill": 0,
-            "weapon_prototype": {
-                "description": "金國的海東青<br/>蘊涵極致的狙擊之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w08C.png",
-                "name": "高等槍械符文",
-                "power": "大"
-            },
-            "weapon_prototype_id": 24
-        },
+        "weapon": null,
         "skill_percentage": 0,
         "outfits": [
             {
@@ -11193,7 +10872,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 204,
+            "power": 4,
             "team_number": null,
             "team_roman_number": null
         },
@@ -11218,7 +10897,7 @@
             "blood_base_value": 12000,
             "blood_elevation_value": 1200,
             "description": "家裡所有人都很討厭賭博，絕對不會碰賭。但為了快點存錢出國唸書，她還是跑去博弈產業工作了。由於澳門禁止線上博弈，她被安排到韓國仁川做線上直播、百家樂，因為表現良好被老闆賞識，半年後被調回到澳門做見習賭枱主任。結果回來澳門的第一個月，她的老闆就在溫州被共和國逮捕了。為了賺更多錢，私下又兼了一些神祕的工作。",
-            "ethnic_group": "廣府",
+            "ethnic_group": "香山",
             "family": "澳門",
             "has_visit_plot": false,
             "id": 45,
@@ -11367,24 +11046,24 @@
     },
     {
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
-        "half_image": "/images/actor/half/bustHK01A.png",
+        "half_image": "/images/actor/half/bustHK01.png",
         "no_weapon_name": "爆裂",
-        "id": 2217290,
+        "id": 2205547,
         "nation": "香港",
         "flag": "/images/home/flag/bigflag02HK.png",
         "relation_exps": 0,
         "nation_id": 3,
         "scarcity_order": 1,
-        "level_cap": 80,
+        "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 1,
         "scarcity": "SSR",
         "blood": 7500,
         "offense": 2400,
-        "head_image": "/images/actor/head/avatarHK01A.png",
+        "head_image": "/images/actor/head/avatarHK01.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "造成敵方全體幹部115%ATK傷害，同時回復我方全體幹部15%ATK的HP。\n",
+            "description": "造成敵方全體幹部115%ATK傷害，同時回復我方全體幹部30%ATK的HP。\n",
             "image": "/images/active_skill/SKHK01_1.png",
             "level": "I",
             "name": "火魔法"
@@ -11394,12 +11073,7 @@
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
         "usable_weapon_ids": [
-            53597,
-            60509,
-            158610,
-            159876,
-            213375,
-            235504
+            213426
         ],
         "relation_level": 1,
         "weapon": null,
@@ -11409,21 +11083,16 @@
                 "id": 34,
                 "image": "/images/actor/gif/tachieHK01.gif",
                 "name": "嘉欣"
-            },
-            {
-                "id": 255,
-                "image": "/images/actor/gif/tachieHK01A.gif",
-                "name": "嘉欣 - MK妹 ★"
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
+            "alphabet_image": "/images/team/D.png",
+            "alphabet_in_team": "D",
+            "id": 184097,
+            "position_in_team": 4,
             "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "team_number": 1,
+            "team_roman_number": "I"
         },
         "nation_icon": "/images/nation/color_icon/minicoa02HK.png",
         "actor_prototype": {
@@ -11431,8 +11100,8 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "造成敵方全體幹部115%ATK傷害，同時回復我方全體幹部15%ATK的HP。\n",
-                    "id": 439,
+                    "description": "造成敵方全體幹部115%ATK傷害，同時回復我方全體幹部30%ATK的HP。\n",
+                    "id": 41,
                     "image": "/images/active_skill/SKHK01_1.png",
                     "level": "I",
                     "name": "火魔法"
@@ -11461,134 +11130,134 @@
             "sponsor_gratitude": "感謝 島抗聯青年軍 於2022年協助完成本角色人物命名、設定與配音。",
             "sponsor_image": "/images/sponsor/tks02.png",
             "talent_1": "我真係恭喜你呀 三萬thanks!",
-            "talent_2": "香港成員ATK+108%",
+            "talent_2": "香港成員ATK+90%",
             "vanguard": false,
             "visitable_city": null,
             "visitable_city_id": null
         },
         "passive_skills": [
             {
-                "description": "香港陣營成員攻擊力+6%",
+                "description": "香港陣營成員攻擊力+5%",
                 "level": 10
             },
             {
-                "description": "香港陣營成員攻擊力+12%",
+                "description": "香港陣營成員攻擊力+10%",
                 "level": 20
             },
             {
-                "description": "香港陣營成員攻擊力+12%",
+                "description": "香港陣營成員攻擊力+10%",
                 "level": 30
             },
             {
-                "description": "香港陣營成員攻擊力+18%",
+                "description": "香港陣營成員攻擊力+15%",
                 "level": 40
             },
             {
-                "description": "香港陣營成員攻擊力+18%",
+                "description": "香港陣營成員攻擊力+15%",
                 "level": 50
             },
             {
-                "description": "香港陣營成員攻擊力+24%",
+                "description": "香港陣營成員攻擊力+20%",
                 "level": 60
             },
             {
-                "description": "香港陣營成員攻擊力+24%",
+                "description": "香港陣營成員攻擊力+20%",
                 "level": 70
             },
             {
-                "description": "香港陣營成員攻擊力+30%",
+                "description": "香港陣營成員攻擊力+25%",
                 "level": 80
             },
             {
-                "description": "香港陣營成員攻擊力+30%",
+                "description": "香港陣營成員攻擊力+25%",
                 "level": 90
             },
             {
-                "description": "香港陣營成員攻擊力+36%",
+                "description": "香港陣營成員攻擊力+30%",
                 "level": 100
             },
             {
-                "description": "香港陣營成員攻擊力+36%",
+                "description": "香港陣營成員攻擊力+30%",
                 "level": 110
             },
             {
-                "description": "香港陣營成員攻擊力+42%",
+                "description": "香港陣營成員攻擊力+35%",
                 "level": 120
             },
             {
-                "description": "香港陣營成員攻擊力+42%",
+                "description": "香港陣營成員攻擊力+35%",
                 "level": 130
             },
             {
-                "description": "香港陣營成員攻擊力+48%",
+                "description": "香港陣營成員攻擊力+40%",
                 "level": 140
             },
             {
-                "description": "香港陣營成員攻擊力+48%",
+                "description": "香港陣營成員攻擊力+40%",
                 "level": 150
             },
             {
-                "description": "香港陣營成員攻擊力+54%",
+                "description": "香港陣營成員攻擊力+45%",
                 "level": 160
             },
             {
-                "description": "香港陣營成員攻擊力+54%",
+                "description": "香港陣營成員攻擊力+45%",
                 "level": 170
             },
             {
-                "description": "香港陣營成員攻擊力+60%",
+                "description": "香港陣營成員攻擊力+50%",
                 "level": 180
             },
             {
-                "description": "香港陣營成員攻擊力+60%",
+                "description": "香港陣營成員攻擊力+50%",
                 "level": 190
             },
             {
-                "description": "香港陣營成員攻擊力+66%",
+                "description": "香港陣營成員攻擊力+55%",
                 "level": 200
             },
             {
-                "description": "香港陣營成員攻擊力+66%",
+                "description": "香港陣營成員攻擊力+55%",
                 "level": 210
             },
             {
-                "description": "香港陣營成員攻擊力+72%",
+                "description": "香港陣營成員攻擊力+60%",
                 "level": 220
             },
             {
-                "description": "香港陣營成員攻擊力+72%",
+                "description": "香港陣營成員攻擊力+60%",
                 "level": 230
             },
             {
-                "description": "香港陣營成員攻擊力+78%",
+                "description": "香港陣營成員攻擊力+65%",
                 "level": 240
             },
             {
-                "description": "香港陣營成員攻擊力+78%",
+                "description": "香港陣營成員攻擊力+65%",
                 "level": 250
             },
             {
-                "description": "香港陣營成員攻擊力+84%",
+                "description": "香港陣營成員攻擊力+70%",
                 "level": 260
             },
             {
-                "description": "香港陣營成員攻擊力+90%",
+                "description": "香港陣營成員攻擊力+75%",
                 "level": 270
             },
             {
-                "description": "香港陣營成員攻擊力+96%",
+                "description": "香港陣營成員攻擊力+80%",
                 "level": 280
             },
             {
-                "description": "香港陣營成員攻擊力+102%",
+                "description": "香港陣營成員攻擊力+85%",
                 "level": 290
             },
             {
-                "description": "香港陣營成員攻擊力+108%",
+                "description": "香港陣營成員攻擊力+90%",
                 "level": 300
             }
         ],
-        "gif_image": "/images/actor/gif/tachieHK01A.gif",
+        "gif_image": "/images/actor/gif/tachieHK01.gif",
         "nation_order": 20,
         "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
         "no_weapon_image": "/images/weapon/w09X.png"
@@ -11597,40 +11266,48 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustFROR05.png",
         "no_weapon_name": "重擊",
-        "id": 2178487,
+        "id": 2173997,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
         "nation_id": 9,
         "scarcity_order": 1,
-        "level_cap": 135,
+        "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 1,
+        "level": 39,
         "scarcity": "SSR",
-        "blood": 30500,
-        "offense": 2300,
+        "blood": 201900,
+        "offense": 11260,
         "head_image": "/images/actor/head/avatarFROR05.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "3回合內我方全體幹部DEF+30%。",
+            "description": "3回合內我方全體幹部ATK+45% DEF+30%。",
             "image": "/images/active_skill/SKFROR05_1.png",
             "level": "I",
             "name": "龍珠九轉十二金光"
         },
         "can_evolute": false,
-        "skill": 0,
+        "skill": 1461000,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            28269,
-            119486,
-            128713,
-            77289,
-            239457
+            218479,
+            239490
         ],
         "relation_level": 1,
-        "weapon": null,
-        "skill_percentage": 0,
+        "weapon": {
+            "id": 218479,
+            "level": 1,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "斯基泰的神鹿<br/>蘊涵豐沛的洪荒之力<br/>戰力放大：2.1倍",
+                "image": "/images/weapon/w03B.png",
+                "name": "強化重擊符文",
+                "power": "中"
+            },
+            "weapon_prototype_id": 8
+        },
+        "skill_percentage": 91,
         "outfits": [
             {
                 "id": 685,
@@ -11643,7 +11320,7 @@
             "alphabet_in_team": "",
             "id": null,
             "position_in_team": "",
-            "power": 4,
+            "power": 17,
             "team_number": null,
             "team_roman_number": null
         },
@@ -11653,7 +11330,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/Pt.png",
-                    "description": "3回合內我方全體幹部DEF+30%。",
+                    "description": "3回合內我方全體幹部ATK+45% DEF+30%。",
                     "id": 834,
                     "image": "/images/active_skill/SKFROR05_1.png",
                     "level": "I",
@@ -11665,8 +11342,8 @@
                 "id": 3,
                 "name": "資助者"
             },
-            "blood_base_value": 30500,
-            "blood_elevation_value": 2900,
+            "blood_base_value": 42000,
+            "blood_elevation_value": 4200,
             "description": "某種未知意念與遺憾的聚合體，抱持著巨大的使命降生在東方大陸。儘管不被人們所理解，仍要堅持自己內心的那份自尊與矜持。那個少了我的世界變得如何了？不重要，重要的是這一次的我必將返指五嶽和三江，創造宇宙繼起之生命！<br/>中華民國，萬歲！",
             "ethnic_group": "吳",
             "family": "浙江奉化",
@@ -11679,9 +11356,9 @@
             "relation_level_cap": 1,
             "religion": "基督新教公理宗",
             "religion_icon": "/images/religion/christianity_congregationalist.png",
-            "sponsor": null,
-            "sponsor_gratitude": null,
-            "sponsor_image": null,
+            "sponsor": "蔣娘",
+            "sponsor_gratitude": "感謝 玩家 Discord蔣娘 於2025年協助完成本角色人物命名與設定。",
+            "sponsor_image": "/images/sponsor/tks11.png",
             "talent_1": "一年準備 兩年反攻 三年掃蕩 五年成功",
             "talent_2": "ATK+270%",
             "vanguard": true,
@@ -11819,7 +11496,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustRB06.png",
         "no_weapon_name": "暗器",
-        "id": 2082937,
+        "id": 2069637,
         "nation": "反賊聯盟",
         "flag": "/images/home/flag/bigflag09RB01.png",
         "relation_exps": 0,
@@ -11827,25 +11504,39 @@
         "scarcity_order": 1,
         "level_cap": 80,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
-        "level": 1,
+        "level": 80,
         "scarcity": "SSR",
-        "blood": 11000,
-        "offense": 1900,
+        "blood": 90690,
+        "offense": 19815,
         "head_image": "/images/actor/head/avatarRB06.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "2回合內每回合回復我方全體幹部40%ATK的HP。本回合我方全體幹部ATK+130%，DEF-35%。\n",
+            "description": "2回合內每回合回復我方全體幹部80%ATK的HP。本回合我方全體幹部ATK+130% DEF-35%。\n",
             "image": "/images/active_skill/SKRB06_1.png",
             "level": "I",
             "name": "羲和"
         },
         "can_evolute": false,
-        "skill": 0,
+        "skill": 4230,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [],
+        "usable_weapon_ids": [
+            220325,
+            220324
+        ],
         "relation_level": 1,
-        "weapon": null,
+        "weapon": {
+            "id": 220324,
+            "level": 50,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "三苗的山形冠<br/>蘊涵豐沛的奇襲之力<br/>戰力放大：2.1倍",
+                "image": "/images/weapon/w06B.png",
+                "name": "強化暗器符文",
+                "power": "中"
+            },
+            "weapon_prototype_id": 17
+        },
         "skill_percentage": 0,
         "outfits": [
             {
@@ -11855,13 +11546,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 4,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/B.png",
+            "alphabet_in_team": "B",
+            "id": 161897,
+            "position_in_team": 2,
+            "power": 30,
+            "team_number": 1,
+            "team_roman_number": "I"
         },
         "nation_icon": "/images/nation/color_icon/minicoa09RB01.png",
         "actor_prototype": {
@@ -11869,7 +11560,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "2回合內每回合回復我方全體幹部40%ATK的HP。本回合我方全體幹部ATK+130%，DEF-35%。\n",
+                    "description": "2回合內每回合回復我方全體幹部80%ATK的HP。本回合我方全體幹部ATK+130% DEF-35%。\n",
                     "id": 367,
                     "image": "/images/active_skill/SKRB06_1.png",
                     "level": "I",
@@ -12033,21 +11724,21 @@
     },
     {
         "actor_category_icon": "/images/actor_category/icon/cadre1.png",
-        "half_image": "/images/actor/half/bustMC05B.png",
+        "half_image": "/images/actor/half/bustMC05.png",
         "no_weapon_name": "槍械",
-        "id": 2232962,
+        "id": 2217276,
         "nation": "滿洲",
         "flag": "/images/home/flag/bigflag07MC.png",
         "relation_exps": 0,
         "nation_id": 7,
         "scarcity_order": 1,
-        "level_cap": 80,
+        "level_cap": 135,
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 1,
         "scarcity": "SSR",
         "blood": 11500,
         "offense": 2300,
-        "head_image": "/images/actor/head/avatarMC05B.png",
+        "head_image": "/images/actor/head/avatarMC05.png",
         "active_skill": {
             "activate_skill_point": 3,
             "description": "造成敵方全體幹部50%ATK傷害。復活我方前線幹部，並回復250%ATK的HP。",
@@ -12055,7 +11746,7 @@
             "level": "I",
             "name": "尼山之邀"
         },
-        "can_evolute": false,
+        "can_evolute": true,
         "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
@@ -12068,11 +11759,6 @@
                 "id": 883,
                 "image": "/images/actor/gif/tachieMC05.gif",
                 "name": "科蘿"
-            },
-            {
-                "id": 916,
-                "image": "/images/actor/gif/tachieMC05B.gif",
-                "name": "科蘿 - 白衣 ★"
             }
         ],
         "team": {
@@ -12091,7 +11777,7 @@
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/G.png",
                     "description": "造成敵方全體幹部50%ATK傷害。復活我方前線幹部，並回復250%ATK的HP。",
-                    "id": 999,
+                    "id": 966,
                     "image": "/images/active_skill/SKMC05_1.png",
                     "level": "I",
                     "name": "尼山之邀"
@@ -12120,134 +11806,134 @@
             "sponsor_gratitude": "感謝 滿洲國民大會 與 黑土之鄉 於2024年協助完成本角色人物命名與設定。",
             "sponsor_image": "/images/sponsor/tks10.png",
             "talent_1": "努魯兒虎山上 今天也是好天氣",
-            "talent_2": "滿洲成員ATK+108% 蒙古成員HP+72%",
+            "talent_2": "滿洲成員ATK+90% 蒙古成員HP+60%",
             "vanguard": false,
             "visitable_city": null,
             "visitable_city_id": null
         },
         "passive_skills": [
             {
-                "description": "滿洲陣營成員攻擊力+6%",
+                "description": "滿洲陣營成員攻擊力+5%",
                 "level": 10
             },
             {
-                "description": "滿洲陣營成員攻擊力+6%",
+                "description": "滿洲陣營成員攻擊力+5%",
                 "level": 20
             },
             {
-                "description": "滿洲陣營成員攻擊力+12%蒙古陣營成員血量+ 6%",
+                "description": "滿洲陣營成員攻擊力+10%蒙古陣營成員血量+ 5%",
                 "level": 30
             },
             {
-                "description": "滿洲陣營成員攻擊力+18%蒙古陣營成員血量+ 12%",
+                "description": "滿洲陣營成員攻擊力+15%蒙古陣營成員血量+ 10%",
                 "level": 40
             },
             {
-                "description": "滿洲陣營成員攻擊力+18%蒙古陣營成員血量+ 12%",
+                "description": "滿洲陣營成員攻擊力+15%蒙古陣營成員血量+ 10%",
                 "level": 50
             },
             {
-                "description": "滿洲陣營成員攻擊力+24%蒙古陣營成員血量+ 18%",
+                "description": "滿洲陣營成員攻擊力+20%蒙古陣營成員血量+ 15%",
                 "level": 60
             },
             {
-                "description": "滿洲陣營成員攻擊力+30%蒙古陣營成員血量+ 18%",
+                "description": "滿洲陣營成員攻擊力+25%蒙古陣營成員血量+ 15%",
                 "level": 70
             },
             {
-                "description": "滿洲陣營成員攻擊力+36%蒙古陣營成員血量+ 24%",
+                "description": "滿洲陣營成員攻擊力+30%蒙古陣營成員血量+ 20%",
                 "level": 80
             },
             {
-                "description": "滿洲陣營成員攻擊力+36%蒙古陣營成員血量+ 24%",
+                "description": "滿洲陣營成員攻擊力+30%蒙古陣營成員血量+ 20%",
                 "level": 90
             },
             {
-                "description": "滿洲陣營成員攻擊力+42%蒙古陣營成員血量+ 30%",
+                "description": "滿洲陣營成員攻擊力+35%蒙古陣營成員血量+ 25%",
                 "level": 100
             },
             {
-                "description": "滿洲陣營成員攻擊力+42%蒙古陣營成員血量+ 30%",
+                "description": "滿洲陣營成員攻擊力+35%蒙古陣營成員血量+ 25%",
                 "level": 110
             },
             {
-                "description": "滿洲陣營成員攻擊力+48%蒙古陣營成員血量+ 36%",
+                "description": "滿洲陣營成員攻擊力+40%蒙古陣營成員血量+ 30%",
                 "level": 120
             },
             {
-                "description": "滿洲陣營成員攻擊力+48%蒙古陣營成員血量+ 36%",
+                "description": "滿洲陣營成員攻擊力+40%蒙古陣營成員血量+ 30%",
                 "level": 130
             },
             {
-                "description": "滿洲陣營成員攻擊力+54%蒙古陣營成員血量+ 42%",
+                "description": "滿洲陣營成員攻擊力+45%蒙古陣營成員血量+ 35%",
                 "level": 140
             },
             {
-                "description": "滿洲陣營成員攻擊力+54%蒙古陣營成員血量+ 42%",
+                "description": "滿洲陣營成員攻擊力+45%蒙古陣營成員血量+ 35%",
                 "level": 150
             },
             {
-                "description": "滿洲陣營成員攻擊力+60%蒙古陣營成員血量+ 42%",
+                "description": "滿洲陣營成員攻擊力+50%蒙古陣營成員血量+ 35%",
                 "level": 160
             },
             {
-                "description": "滿洲陣營成員攻擊力+60%蒙古陣營成員血量+ 48%",
+                "description": "滿洲陣營成員攻擊力+50%蒙古陣營成員血量+ 40%",
                 "level": 170
             },
             {
-                "description": "滿洲陣營成員攻擊力+66%蒙古陣營成員血量+ 48%",
+                "description": "滿洲陣營成員攻擊力+55%蒙古陣營成員血量+ 40%",
                 "level": 180
             },
             {
-                "description": "滿洲陣營成員攻擊力+66%蒙古陣營成員血量+ 48%",
+                "description": "滿洲陣營成員攻擊力+55%蒙古陣營成員血量+ 40%",
                 "level": 190
             },
             {
-                "description": "滿洲陣營成員攻擊力+72%滿洲陣營成員血量+ 54%",
+                "description": "滿洲陣營成員攻擊力+60%滿洲陣營成員血量+ 45%",
                 "level": 200
             },
             {
-                "description": "滿洲陣營成員攻擊力+72%蒙古陣營成員血量+ 54%",
+                "description": "滿洲陣營成員攻擊力+60%蒙古陣營成員血量+ 45%",
                 "level": 210
             },
             {
-                "description": "滿洲陣營成員攻擊力+78%滿洲陣營成員血量+ 54%",
+                "description": "滿洲陣營成員攻擊力+65%滿洲陣營成員血量+ 45%",
                 "level": 220
             },
             {
-                "description": "滿洲陣營成員攻擊力+78%蒙古陣營成員血量+ 60%",
+                "description": "滿洲陣營成員攻擊力+65%蒙古陣營成員血量+ 50%",
                 "level": 230
             },
             {
-                "description": "滿洲陣營成員攻擊力+84%蒙古陣營成員血量+ 60%",
+                "description": "滿洲陣營成員攻擊力+70%蒙古陣營成員血量+ 50%",
                 "level": 240
             },
             {
-                "description": "滿洲陣營成員攻擊力+84%蒙古陣營成員血量+ 60%",
+                "description": "滿洲陣營成員攻擊力+70%蒙古陣營成員血量+ 50%",
                 "level": 250
             },
             {
-                "description": "滿洲陣營成員攻擊力+90%蒙古陣營成員血量+ 66%",
+                "description": "滿洲陣營成員攻擊力+75%蒙古陣營成員血量+ 55%",
                 "level": 260
             },
             {
-                "description": "滿洲陣營成員攻擊力+90%蒙古陣營成員血量+ 66%",
+                "description": "滿洲陣營成員攻擊力+75%蒙古陣營成員血量+ 55%",
                 "level": 270
             },
             {
-                "description": "滿洲陣營成員攻擊力+102%蒙古陣營成員血量+ 66%",
+                "description": "滿洲陣營成員攻擊力+85%蒙古陣營成員血量+ 55%",
                 "level": 280
             },
             {
-                "description": "滿洲陣營成員攻擊力+102%蒙古陣營成員血量+ 72%",
+                "description": "滿洲陣營成員攻擊力+85%蒙古陣營成員血量+ 60%",
                 "level": 290
             },
             {
-                "description": "滿洲陣營成員攻擊力+108%蒙古陣營成員血量+ 72%",
+                "description": "滿洲陣營成員攻擊力+90%蒙古陣營成員血量+ 60%",
                 "level": 300
             }
         ],
-        "gif_image": "/images/actor/gif/tachieMC05B.gif",
+        "gif_image": "/images/actor/gif/tachieMC05.gif",
         "nation_order": 70,
         "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
         "no_weapon_image": "/images/weapon/w08X.png"
@@ -12256,7 +11942,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre3.png",
         "half_image": "/images/actor/half/bustCM02.png",
         "no_weapon_name": "刀劍",
-        "id": 1922394,
+        "id": 2210554,
         "nation": "紅軍",
         "flag": "/images/home/flag/bigflag01CM.png",
         "relation_exps": 0,
@@ -12266,26 +11952,38 @@
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 80,
         "scarcity": "SSR",
-        "blood": 259600,
-        "offense": 19680,
+        "blood": 375570,
+        "offense": 21450,
         "head_image": "/images/actor/head/avatarCM02.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "3回合內我方全體幹部DEF+30%。\n",
+            "description": "3回合內我方全體幹部ATK+45% DEF+30%。\n",
             "image": "/images/active_skill/SKCM02_1.png",
             "level": "I",
             "name": "鐵人精神"
         },
         "can_evolute": false,
-        "skill": 65000,
+        "skill": 13000,
         "actor_category_order": 20,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
-            168235
+            195441,
+            220323
         ],
         "relation_level": 1,
-        "weapon": null,
-        "skill_percentage": 1,
+        "weapon": {
+            "id": 220323,
+            "level": 50,
+            "skill": 0,
+            "weapon_prototype": {
+                "description": "排灣族的青銅刀<br/>蘊涵豐沛的斬劈之力<br/>戰力放大：2.1倍",
+                "image": "/images/weapon/w04B.png",
+                "name": "強化刀劍符文",
+                "power": "中"
+            },
+            "weapon_prototype_id": 11
+        },
+        "skill_percentage": 0,
         "outfits": [
             {
                 "id": 3,
@@ -12294,13 +11992,13 @@
             }
         ],
         "team": {
-            "alphabet_image": "",
-            "alphabet_in_team": "",
-            "id": null,
-            "position_in_team": "",
-            "power": 21,
-            "team_number": null,
-            "team_roman_number": null
+            "alphabet_image": "/images/team/A.png",
+            "alphabet_in_team": "A",
+            "id": 161897,
+            "position_in_team": 1,
+            "power": 29,
+            "team_number": 1,
+            "team_roman_number": "I"
         },
         "nation_icon": "/images/nation/color_icon/minicoa01CM.png",
         "actor_prototype": {
@@ -12308,7 +12006,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/Pt.png",
-                    "description": "3回合內我方全體幹部DEF+30%。\n",
+                    "description": "3回合內我方全體幹部ATK+45% DEF+30%。\n",
                     "id": 28,
                     "image": "/images/active_skill/SKCM02_1.png",
                     "level": "I",
@@ -12320,8 +12018,8 @@
                 "id": 3,
                 "name": "資助者"
             },
-            "blood_base_value": 30500,
-            "blood_elevation_value": 2900,
+            "blood_base_value": 42000,
+            "blood_elevation_value": 4200,
             "description": "紅三代，祖輩是共和國的開國元勳，曾參與共青團多年。赴英國留學後歸國，憑藉靈活的政治手腕和大膽強悍的作風，成為在政壇與商場都叱吒風雲的企業家。面對變幻莫測的政局，她也積極配合統戰工作、尋求表現機會。",
             "ethnic_group": "吳",
             "family": "上海",
@@ -12489,7 +12187,7 @@
         "head_image": "/images/actor/head/avatarCM01.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "回復我方前線幹部130%ATK的HP。\n",
+            "description": "回復我方前線幹部260%ATK的HP。\n",
             "image": "/images/active_skill/SKCM01_1.png",
             "level": "I",
             "name": "敢打必勝"
@@ -12538,7 +12236,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "回復我方前線幹部130%ATK的HP。\n",
+                    "description": "回復我方前線幹部260%ATK的HP。\n",
                     "id": 42,
                     "image": "/images/active_skill/SKCM01_1.png",
                     "level": "I",
@@ -12722,7 +12420,7 @@
         "head_image": "/images/actor/head/avatarUG05.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "2回合內每回合回復我方全體幹部50%ATK的HP。",
+            "description": "2回合內每回合回復我方全體幹部100%ATK的HP。",
             "image": "/images/active_skill/SKUG05_1.png",
             "level": "I",
             "name": "塔克拉瑪干"
@@ -12757,7 +12455,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "2回合內每回合回復我方全體幹部50%ATK的HP。",
+                    "description": "2回合內每回合回復我方全體幹部100%ATK的HP。",
                     "id": 735,
                     "image": "/images/active_skill/SKUG05_1.png",
                     "level": "I",
