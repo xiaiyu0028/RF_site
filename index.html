@@ -51,6 +51,14 @@
                 </div>
             </section>
 
+            <section aria-labelledby="changelog-title" id="changelogSection" hidden>
+                <div class="section-heading">
+                    <div><h2 id="changelog-title">最近更新</h2><p>每次資料更新時自動比對出的國策、城鎮、地點與角色變動。</p></div>
+                </div>
+                <div class="changelog" id="changelogList"></div>
+                <button class="btn btn-outline changelog-more" type="button" id="changelogMore" hidden>顯示更早的更新</button>
+            </section>
+
             <section aria-labelledby="tool-title">
                 <div class="section-heading">
                     <div><h2 id="tool-title">常用工具</h2><p>從資料庫開始，快速進入需要的功能。</p></div>
@@ -98,6 +106,69 @@
         document.addEventListener('DOMContentLoaded', async function () {
             const $ = id => document.getElementById(id);
             const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+            const CHANGELOG_LABELS = {
+                'nation:updated': { label: '國策', tone: 'nation' },
+                'city:new': { label: '新城鎮', tone: 'city' },
+                'site:new': { label: '新地點', tone: 'city' },
+                'actor:new': { label: '新角色', tone: 'new' },
+                'actor:changed': { label: '角色調整', tone: 'changed' }
+            };
+            const CHANGELOG_ORDER = ['nation:updated', 'actor:new', 'city:new', 'site:new', 'actor:changed'];
+            const CHANGELOG_PAGE_SIZE = 3;
+            const changelogLink = item => {
+                if (!item.name) return '';
+                if (item.category === 'actor') return `pages/characters.html?q=${encodeURIComponent(item.name)}`;
+                if (item.category === 'city' || item.category === 'site') return `pages/cities.html?q=${encodeURIComponent(item.name)}`;
+                return '';
+            };
+            const renderChangeItem = item => {
+                const key = `${item.category}:${item.kind}`;
+                const meta = CHANGELOG_LABELS[key] || { label: '更新', tone: 'changed' };
+                const href = item.category === 'nation' ? 'pages/nations.html' : changelogLink(item);
+                const tag = `<span class="changelog-tag changelog-tag--${meta.tone}">${meta.label}</span>`;
+                if (!item.details?.length) {
+                    const title = href ? `<a href="${href}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title);
+                    return `<li class="changelog-item"><div class="changelog-row">${tag}<span class="changelog-title">${title}</span></div></li>`;
+                }
+                // 連結放在展開內容裡，避免點標題時直接跳頁而不是展開
+                const details = item.details.map(detail => `<li>${escapeHtml(detail)}</li>`).join('');
+                const link = href ? `<li><a class="changelog-link" href="${href}">查看詳細資料 →</a></li>` : '';
+                return `<li class="changelog-item"><details><summary class="changelog-row">${tag}<span class="changelog-title">${escapeHtml(item.title)}</span><span class="changelog-count">${item.details.length} 項</span></summary><ul class="changelog-details">${details}${link}</ul></details></li>`;
+            };
+            const renderChangeEntry = entry => {
+                const items = [...(entry.items || [])].sort((a, b) => CHANGELOG_ORDER.indexOf(`${a.category}:${a.kind}`) - CHANGELOG_ORDER.indexOf(`${b.category}:${b.kind}`));
+                const changed = items.filter(item => item.category === 'actor' && item.kind === 'changed');
+                const others = items.filter(item => !changed.includes(item));
+                // 角色調整常常一次很多筆，收合成一組避免洗版
+                const changedGroup = changed.length > 3
+                    ? `<li class="changelog-item"><details><summary class="changelog-row"><span class="changelog-tag changelog-tag--changed">角色調整</span><span class="changelog-title">${changed.length} 名角色有數值或技能調整</span></summary><ul class="changelog-sublist">${changed.map(renderChangeItem).join('')}</ul></details></li>`
+                    : changed.map(renderChangeItem).join('');
+                const [year, month, day] = String(entry.date).split('-');
+                return `<article class="changelog-entry"><time class="changelog-date" datetime="${escapeHtml(entry.date)}"><span>${Number(month)}/${Number(day)}</span><small>${escapeHtml(year)}</small></time><ul class="changelog-items">${others.map(renderChangeItem).join('')}${changedGroup}</ul></article>`;
+            };
+            async function renderChangelog() {
+                let entries = [];
+                try {
+                    let response = await fetch(`return_data_example/changelog.json?t=${Date.now()}`);
+                    if (!response.ok) response = await fetch('return_data_example/changelog.json');
+                    if (!response.ok) return;
+                    entries = ((await response.json()).entries || []).filter(entry => entry.items?.length);
+                } catch (error) {
+                    return;
+                }
+                if (!entries.length) return;
+                let shown = 0;
+                const list = $('changelogList');
+                const more = $('changelogMore');
+                const showMore = () => {
+                    list.insertAdjacentHTML('beforeend', entries.slice(shown, shown + CHANGELOG_PAGE_SIZE).map(renderChangeEntry).join(''));
+                    shown += CHANGELOG_PAGE_SIZE;
+                    more.hidden = shown >= entries.length;
+                };
+                more.addEventListener('click', showMore);
+                showMore();
+                $('changelogSection').hidden = false;
+            }
             const externalContainer = $('externalSites');
             if (externalContainer && typeof EXTERNAL_SITES !== 'undefined') {
                 externalContainer.innerHTML = EXTERNAL_SITES.map(site => `
@@ -108,6 +179,7 @@
                     </a>
                 `).join('');
             }
+            renderChangelog();
             const results = $('globalSearchResults');
             const searchInput = $('globalSearch');
             let searchIndex = [];

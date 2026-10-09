@@ -21,7 +21,7 @@ python -m http.server 8000        # http://localhost:8000
 
 # 抓角色原始資料（附加到 cal_power/actors.jsonl）
 python cal_power/get_actors.py -a <email> -p <password>
-python cal_power/run_all_get_actors.py           # 依 cal_power/config.json 批次跑多帳號
+python cal_power/run_all_get_actors.py           # 依 cal_power/config.json 批次跑多帳號；會先清空 actors.jsonl（備份成 .bak），--append 保留
 
 # 城內地點預設就會一併抓（visitable）；要跳過或抓全部：
 .\scripts\update_game_data.ps1 -CitySites off
@@ -45,7 +45,8 @@ Python 依賴見 `requirements-data-update.txt`；`scripts/update_game_data.ps1`
   - `unique_actors.json`（去重後的原始角色資料）← characters.html 讀這個
   - `visit_plots.json`（角色可拜訪地點，3.0 新欄位）← characters.html 選用讀取，缺檔則不顯示該列。需先以 3.0 API 重跑 `get_actors.py`，舊的 `actors.jsonl` 不含 `has_visit_plot` / `visitable_city_id`
   
-  這個轉檔步驟只存在於 notebook 裡，改解析邏輯就是改 notebook。
+  這個轉檔步驟只存在於 notebook 裡，改解析邏輯就是改 notebook。同名角色一律以 `actors.jsonl` 中**最後一筆**為準（檔案是附加寫入，越後面越新）。
+- **首頁「最近更新」**：`scripts/changelog.py` 比對新舊快照，寫入 `return_data_example/changelog.json`（`{entries: [{date, items}]}`，同日合併、保留 30 筆）。國策 / 新城鎮 / 新地點由 `update_game_data.py` 寫檔前自動比對（只看策略 id 與新增的城市、地點 id，忽略佔領者、積分等每週浮動欄位）；角色則在 notebook 產出 `unique_actors.json` 後手動跑 `python scripts/changelog.py actors`（預設與 git HEAD 比對，`--dry-run` 只印出）。
 - **圖片**：`passionfruit/` 存放遊戲素材，大部分子目錄被 gitignore；`cal_power/image_index.json` 是檔名索引。
 
 前端頁面各自 hardcode 相對路徑（例如 `../cal_power/parsed_actors_skill.json?t=${Date.now()}`，帶 timestamp 破 cache，失敗再 retry 不帶參數）。新增資料來源時沿用這個模式。

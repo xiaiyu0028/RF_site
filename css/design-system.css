@@ -329,3 +329,36 @@ a:hover { color: var(--ds-primary-hover); }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* 首頁：最近更新 */
+.changelog { display: grid; gap: 12px; }
+.changelog-entry { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 16px; padding: 16px 18px; border: 1px solid var(--ds-border); border-radius: var(--ds-radius); background: var(--ds-surface); }
+.changelog-date { display: flex; flex-direction: column; color: var(--ds-text); font-variant-numeric: tabular-nums; font-size: 1.25rem; font-weight: 700; line-height: 1.2; }
+.changelog-date small { color: var(--ds-text-muted); font-size: .78rem; font-weight: 500; }
+.changelog-items, .changelog-details, .changelog-sublist { margin: 0; padding: 0; list-style: none; }
+.changelog-items { display: grid; gap: 6px; }
+.changelog-row { display: flex; align-items: center; gap: 10px; min-height: 32px; color: var(--ds-text); }
+summary.changelog-row { cursor: pointer; list-style: none; }
+summary.changelog-row::-webkit-details-marker { display: none; }
+summary.changelog-row::after { content: '▸'; margin-left: auto; color: var(--ds-text-muted); transition: transform var(--ds-transition); }
+details[open] > summary.changelog-row::after { transform: rotate(90deg); }
+.changelog-title { min-width: 0; overflow-wrap: anywhere; }
+.changelog-title a { color: inherit; text-decoration: none; }
+.changelog-title a:hover { color: var(--ds-primary); text-decoration: underline; }
+.changelog-count { flex-shrink: 0; color: var(--ds-text-muted); font-size: .82rem; }
+.changelog-tag { flex-shrink: 0; padding: 2px 8px; border-radius: 999px; font-size: .75rem; font-weight: 700; white-space: nowrap; background: var(--ds-surface-subtle); color: var(--ds-text-muted); }
+.changelog-tag--nation { background: color-mix(in srgb, var(--ds-accent) 15%, transparent); color: var(--ds-accent); }
+.changelog-tag--city { background: color-mix(in srgb, var(--ds-primary) 14%, transparent); color: var(--ds-primary); }
+.changelog-tag--new { background: color-mix(in srgb, var(--ds-success) 15%, transparent); color: var(--ds-success); }
+.changelog-tag--changed { background: color-mix(in srgb, var(--ds-warning) 15%, transparent); color: var(--ds-warning); }
+.changelog-details { margin: 4px 0 8px; padding: 10px 12px; border-radius: var(--ds-radius-sm); background: var(--ds-surface-subtle); color: var(--ds-text-muted); font-size: .88rem; line-height: 1.6; }
+.changelog-details li { overflow-wrap: anywhere; }
+.changelog-details li + li { margin-top: 4px; }
+.changelog-sublist { display: grid; gap: 4px; margin: 4px 0 4px 12px; padding-left: 12px; border-left: 2px solid var(--ds-border); }
+.changelog-more { margin-top: 12px; }
+@media (max-width: 767px) {
+    .changelog-entry { grid-template-columns: 1fr; gap: 8px; padding: 14px; }
+    .changelog-date { flex-direction: row; align-items: baseline; gap: 8px; }
+}
+.changelog-link { color: var(--ds-primary); font-weight: 700; text-decoration: none; }
+.changelog-link:hover { text-decoration: underline; }

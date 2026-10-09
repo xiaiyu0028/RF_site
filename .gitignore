@@ -7,6 +7,9 @@
 config.json
 cal_power/config.json
 
+# run_all_get_actors.py 清空前的備份
+cal_power/actors.jsonl.bak
+
 # Python bytecode and local environment files
 __pycache__/
 *.py[cod]
@@ -22,6 +25,7 @@ return_data_example/*
 !return_data_example/city_sites.json
 !return_data_example/nation.json
 !return_data_example/update_metadata.json
+!return_data_example/changelog.json
 
 # Downloaded game media not used by the static site
 passionfruit/audio/

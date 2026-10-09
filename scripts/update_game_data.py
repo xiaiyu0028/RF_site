@@ -19,6 +19,8 @@ from urllib.parse import quote
 import requests
 import websockets
 
+import changelog
+
 API_BASE = "https://api.komisureiya.com/api"
 WS_BASE = "wss://api.komisureiya.com/socket/websocket"
 APP_VERSION = os.environ.get("RF_APP_VERSION", "3.00")
@@ -245,6 +247,20 @@ def main() -> int:
 
     updated_at = datetime.now(UTC).isoformat()
     root = args.output_root
+    data_dir = root / "return_data_example"
+    # 寫檔前先和舊快照比對；比對失敗不影響資料更新本身
+    try:
+        changes = changelog.diff_nations(changelog.load_json(data_dir / "nation.json"), nations, changelog.today())
+        changes += changelog.diff_cities(
+            changelog.load_json(data_dir / "cities.json"),
+            cities,
+            changelog.load_json(data_dir / "city_sites.json"),
+            city_sites,
+        )
+    except Exception as error:  # noqa: BLE001
+        print(f"  變動比對失敗，略過更新紀錄：{error}")
+        changes = []
+
     write_json_atomic(root / "return_data_example" / "nation.json", nations)
     write_json_atomic(root / "return_data_example" / "cities.json", {"cities": cities["cities"]})
 
@@ -259,6 +275,8 @@ def main() -> int:
         root / "return_data_example" / "update_metadata.json",
         {"updated_at": updated_at, "datasets": datasets, "counts": counts},
     )
+    if changelog.record_changes(changes, path=data_dir / "changelog.json"):
+        print(f"  已記錄 {len(changes)} 項變動到 changelog.json。")
     print(f"更新完成：{len(nations['nations'])} 個陣營、{len(cities['cities'])} 個城鎮{site_summary}。")
     return 0
 
