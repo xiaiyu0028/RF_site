@@ -7,7 +7,8 @@
 config.json
 cal_power/config.json
 
-# run_all_get_actors.py 清空前的備份
+# 角色原始資料：每次 run_all_get_actors.py 都會清空重抓，且含帳號 player id；網站只讀解析後的 JSON
+cal_power/actors.jsonl
 cal_power/actors.jsonl.bak
 
 # Python bytecode and local environment files

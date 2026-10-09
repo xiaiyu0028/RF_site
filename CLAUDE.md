@@ -22,6 +22,7 @@ python -m http.server 8000        # http://localhost:8000
 # 抓角色原始資料（附加到 cal_power/actors.jsonl）
 python cal_power/get_actors.py -a <email> -p <password>
 python cal_power/run_all_get_actors.py           # 依 cal_power/config.json 批次跑多帳號；會先清空 actors.jsonl（備份成 .bak），--append 保留
+python cal_power/resolve_actors.py               # 解析 actors.jsonl → 角色 JSON，並記錄角色變動；--dry-run 只列出變動
 
 # 城內地點預設就會一併抓（visitable）；要跳過或抓全部：
 .\scripts\update_game_data.ps1 -CitySites off
@@ -39,14 +40,14 @@ Python 依賴見 `requirements-data-update.txt`；`scripts/update_game_data.ps1`
 
 - **國策 / 城鎮**：`scripts/update_game_data.py` 用 HTTP 登入取得 token，再開 WebSocket 送 Phoenix channel 訊息，寫入 `return_data_example/nation.json`、`cities.json`、`update_metadata.json`（原子寫入，且寫入前先 `validate_snapshots()`）。`.gitignore` 只放行這幾個檔，`return_data_example/` 其他內容都不進版控。
 - **城內地點（工作站 / 劇情點）**：同一支腳本會逐城送 `city_sites` 事件，寫入 `return_data_example/city_sites.json`（`{mode, requested, failed, sites}`）。預設 `--city-sites visitable`（只抓可進入的城市，約 269 次呼叫）；`all` 會打 271 次，`off` 則完全跳過，一律以 `--city-sites-delay` 節流。`pages/cities.html` 的詳情視窗會自動讀取，缺檔則靜默略過。
-- **角色**：`cal_power/get_actors.py` 把 WebSocket 回應**附加**到 `cal_power/actors.jsonl` → `cal_power/resolve_actors.ipynb` 逐 cell 解析，產出：
+- **角色**：`cal_power/get_actors.py` 把 WebSocket 回應**附加**到 `cal_power/actors.jsonl` → `cal_power/resolve_actors.py` 解析，產出：
   - `parsed_actors.json`（基本資料 + 天賦）
   - `parsed_actors_skill.json`（多一層解析後的被動技能，依等級分段）← 兩個計算器都讀這個
   - `unique_actors.json`（去重後的原始角色資料）← characters.html 讀這個
   - `visit_plots.json`（角色可拜訪地點，3.0 新欄位）← characters.html 選用讀取，缺檔則不顯示該列。需先以 3.0 API 重跑 `get_actors.py`，舊的 `actors.jsonl` 不含 `has_visit_plot` / `visitable_city_id`
   
-  這個轉檔步驟只存在於 notebook 裡，改解析邏輯就是改 notebook。同名角色一律以 `actors.jsonl` 中**最後一筆**為準（檔案是附加寫入，越後面越新）。
-- **首頁「最近更新」**：`scripts/changelog.py` 比對新舊快照，寫入 `return_data_example/changelog.json`（`{entries: [{date, items}]}`，同日合併、保留 30 筆）。國策 / 新城鎮 / 新地點由 `update_game_data.py` 寫檔前自動比對（只看策略 id 與新增的城市、地點 id，忽略佔領者、積分等每週浮動欄位）；角色則在 notebook 產出 `unique_actors.json` 後手動跑 `python scripts/changelog.py actors`（預設與 git HEAD 比對，`--dry-run` 只印出）。
+  改解析邏輯就是改 `resolve_actors.py`（`resolve_actors.ipynb` 是舊版，已不再維護）。同名角色以最新資料為準；因為 `run_all_get_actors.py` 會清空 `actors.jsonl`，腳本會以現有 `unique_actors.json` 為底再覆蓋，沒有帳號持有的角色會沿用舊資料而不會消失（`--drop-missing` 可關閉）。
+- **首頁「最近更新」**：`scripts/changelog.py` 比對新舊快照，寫入 `return_data_example/changelog.json`（`{entries: [{date, items}]}`，同日合併、保留 30 筆）。國策 / 新城鎮 / 新地點由 `update_game_data.py` 寫檔前自動比對（只看策略 id 與新增的城市、地點 id，忽略佔領者、積分等每週浮動欄位）；角色由 `resolve_actors.py` 寫檔前和現有 `unique_actors.json` 比對（`--no-changelog` 可略過）。另有 `python scripts/changelog.py actors` 可與 git HEAD 版本比對補記。
 - **圖片**：`passionfruit/` 存放遊戲素材，大部分子目錄被 gitignore；`cal_power/image_index.json` 是檔名索引。
 
 前端頁面各自 hardcode 相對路徑（例如 `../cal_power/parsed_actors_skill.json?t=${Date.now()}`，帶 timestamp 破 cache，失敗再 retry 不帶參數）。新增資料來源時沿用這個模式。
