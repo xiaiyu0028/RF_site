@@ -162,9 +162,20 @@ def diff_cities(
 
 # ---------- 角色 ----------
 
+def wears_outfit(actor: dict[str, Any]) -> bool:
+    """角色是否穿著 ★ 造型。穿著時天賦與被動數值會 ×1.2，不能代表角色本身的數值。
+
+    基本造型是 outfits 裡與角色同名的那一個；目前立繪（gif_image）不是它就代表穿著其他造型。
+    """
+    name = (actor.get("actor_prototype") or {}).get("name") or actor.get("name")
+    base = next((outfit for outfit in actor.get("outfits") or [] if outfit.get("name") == name), None)
+    return bool(base and actor.get("gif_image") and actor["gif_image"] != base.get("image"))
+
+
 def actor_profile(actor: dict[str, Any]) -> dict[str, Any]:
     proto = actor.get("actor_prototype") or {}
     return {
+        "wears_outfit": wears_outfit(actor),
         "name": proto.get("name") or actor.get("name"),
         "scarcity": actor.get("scarcity"),
         "nation": actor.get("nation"),
@@ -209,7 +220,11 @@ ACTOR_FIELD_LABELS = {
 
 def diff_actor(before: dict[str, Any], after: dict[str, Any]) -> list[str]:
     changes = []
+    # 只有一邊穿著造型時，天賦 / 被動的差異是造型加成造成的，不算角色調整
+    comparable = before["wears_outfit"] == after["wears_outfit"]
     for field, label in ACTOR_FIELD_LABELS.items():
+        if field in ("talent_1", "talent_2") and not comparable:
+            continue
         if before[field] != after[field]:
             changes.append(f"{label}：{before[field] or '無'} → {after[field] or '無'}")
 
@@ -229,6 +244,8 @@ def diff_actor(before: dict[str, Any], after: dict[str, Any]) -> list[str]:
         if key not in new_skills:
             changes.append(f"移除主動技「{skill['name']}」{skill['level'] or ''}")
 
+    if not comparable:
+        return changes
     levels = sorted(set(before["passive_skills"]) | set(after["passive_skills"]), key=lambda v: int(v) if v.isdigit() else 0)
     for level in levels:
         old, new = before["passive_skills"].get(level), after["passive_skills"].get(level)

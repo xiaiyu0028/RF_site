@@ -9,7 +9,8 @@
 - unique_actors.json        去重後的原始角色資料
 - visit_plots.json          角色可拜訪地點
 
-同名角色一律以最新資料為準，順序維持第一次出現的位置。run_all_get_actors.py 每次會清空
+同名角色一律以最新資料為準，但穿著 ★ 造型的資料天賦 / 被動會被加成，所以優先取沒穿造型的版本；
+順序維持第一次出現的位置。run_all_get_actors.py 每次會清空
 actors.jsonl，所以會以現有的 unique_actors.json 為底再覆蓋，沒有帳號持有的角色不會因此消失。
 """
 
@@ -52,10 +53,17 @@ def actor_key(actor: dict[str, Any]) -> tuple[str, Any]:
 
 
 def dedupe_latest(actors: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    latest: dict[tuple[str, Any], dict[str, Any]] = {}
+    """同一角色優先取「沒穿造型」的最新一筆；全部都穿著造型時才退而取最新一筆。
+
+    actors 需依時間排序（舊 → 新），輸出順序維持角色第一次出現的位置。
+    """
+    best: dict[tuple[str, Any], dict[str, Any]] = {}
     for actor in actors:
-        latest[actor_key(actor)] = actor
-    return list(latest.values())
+        key = actor_key(actor)
+        current = best.get(key)
+        if current is None or not changelog.wears_outfit(actor) or changelog.wears_outfit(current):
+            best[key] = actor
+    return list(best.values())
 
 
 def build_parsed_actors(actors: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
@@ -196,6 +204,9 @@ def main() -> int:
     parsed_skill = add_parsed_passive_skills(parsed_actors)
     visit_plots, missing = build_visit_plots(unique_actors)
     print(f"輸出 {len(unique_actors)} 名角色；取得拜訪資料：{len(visit_plots)} 名")
+    outfit_only = [actor["actor_prototype"]["name"] for actor in unique_actors if changelog.wears_outfit(actor)]
+    if outfit_only:
+        print(f"⚠️ 只抓到穿著造型的版本（天賦 / 被動為加成後數值）：{'、'.join(outfit_only)}，請讓持有者換回基本造型後重抓")
     if missing:
         print(f"缺少拜訪欄位（需以 3.0 API 重抓）：{len(missing)} 名，例如 {missing[:5]}")
 

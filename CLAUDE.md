@@ -46,7 +46,7 @@ Python 依賴見 `requirements-data-update.txt`；`scripts/update_game_data.ps1`
   - `unique_actors.json`（去重後的原始角色資料）← characters.html 讀這個
   - `visit_plots.json`（角色可拜訪地點，3.0 新欄位）← characters.html 選用讀取，缺檔則不顯示該列。需先以 3.0 API 重跑 `get_actors.py`，舊的 `actors.jsonl` 不含 `has_visit_plot` / `visitable_city_id`
   
-  改解析邏輯就是改 `resolve_actors.py`（`resolve_actors.ipynb` 是舊版，已不再維護）。同名角色以最新資料為準；因為 `run_all_get_actors.py` 會清空 `actors.jsonl`，腳本會以現有 `unique_actors.json` 為底再覆蓋，沒有帳號持有的角色會沿用舊資料而不會消失（`--drop-missing` 可關閉）。
+  改解析邏輯就是改 `resolve_actors.py`（`resolve_actors.ipynb` 是舊版，已不再維護）。同名角色以最新資料為準；因為 `run_all_get_actors.py` 會清空 `actors.jsonl`，腳本會以現有 `unique_actors.json` 為底再覆蓋，沒有帳號持有的角色會沿用舊資料而不會消失（`--drop-missing` 可關閉）。穿著 ★ 造型時天賦與被動會 ×1.2（以 `gif_image` 是否等於同名基本造型的圖判斷，見 `changelog.wears_outfit()`），所以同一角色優先取沒穿造型的那筆，變動比對也會忽略只因造型造成的天賦 / 被動差異。
 - **首頁「最近更新」**：`scripts/changelog.py` 比對新舊快照，寫入 `return_data_example/changelog.json`（`{entries: [{date, items}]}`，同日合併、保留 30 筆）。國策 / 新城鎮 / 新地點由 `update_game_data.py` 寫檔前自動比對（只看策略 id 與新增的城市、地點 id，忽略佔領者、積分等每週浮動欄位）；角色由 `resolve_actors.py` 寫檔前和現有 `unique_actors.json` 比對（`--no-changelog` 可略過）。另有 `python scripts/changelog.py actors` 可與 git HEAD 版本比對補記。
 - **圖片**：`passionfruit/` 存放遊戲素材，大部分子目錄被 gitignore；`cal_power/image_index.json` 是檔名索引。
 
