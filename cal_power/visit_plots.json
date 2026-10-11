@@ -93,9 +93,9 @@
     "俐月": {
         "name": "俐月",
         "has_visit_plot": true,
-        "visitable_city_id": null,
-        "visitable_city": null,
-        "relation_level_cap": 1
+        "visitable_city_id": 3,
+        "visitable_city": "基隆",
+        "relation_level_cap": 2
     },
     "習近平": {
         "name": "習近平",
@@ -204,7 +204,7 @@
     },
     "范姜": {
         "name": "范姜",
-        "has_visit_plot": false,
+        "has_visit_plot": true,
         "visitable_city_id": 589,
         "visitable_city": "中壢",
         "relation_level_cap": 2
@@ -470,6 +470,13 @@
     },
     "葉劉": {
         "name": "葉劉",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "紅藕": {
+        "name": "紅藕",
         "has_visit_plot": false,
         "visitable_city_id": null,
         "visitable_city": null,

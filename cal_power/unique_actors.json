@@ -455,7 +455,7 @@
         "actor_category_icon": "/images/actor_category/icon/cadre4.png",
         "half_image": "/images/actor/half/bustFRSE01.png",
         "no_weapon_name": "言靈",
-        "id": 2207648,
+        "id": 2280711,
         "nation": "自由勢力",
         "flag": "/images/home/flag/bigflag00FR.png",
         "relation_exps": 0,
@@ -479,10 +479,7 @@
         "skill": 0,
         "actor_category_order": 10,
         "actor_category_decor": "/images/actor_category/decor/cadrecardPp.png",
-        "usable_weapon_ids": [
-            167654,
-            197933
-        ],
+        "usable_weapon_ids": [],
         "relation_level": 1,
         "weapon": null,
         "skill_percentage": 0,
@@ -2685,7 +2682,7 @@
             "offense_base_value": 2300,
             "offense_elevation_value": 220,
             "origin": "臺灣出身",
-            "relation_level_cap": 1,
+            "relation_level_cap": 2,
             "religion": "泛靈論",
             "religion_icon": "/images/religion/syncretism_animist.png",
             "sponsor": "島抗聯青年軍2025",
@@ -2694,8 +2691,11 @@
             "talent_1": "月落梅無影 風來竹有聲",
             "talent_2": "ATK+270%",
             "vanguard": false,
-            "visitable_city": null,
-            "visitable_city_id": null
+            "visitable_city": {
+                "hidden": false,
+                "name": "基隆"
+            },
+            "visitable_city_id": 3
         },
         "passive_skills": [
             {
@@ -6010,7 +6010,7 @@
             "description": "往返於兩岸之間的生意人，個性有點不按牌理出牌。雖然很有營商才幹，但比起做生意，他似乎更喜歡在東方大陸各個城市與農村之間觀察人的生老病苦，並默默產生了一些不為人知的危險思想。",
             "ethnic_group": "客家",
             "family": "臺灣中壢",
-            "has_visit_plot": false,
+            "has_visit_plot": true,
             "id": 6,
             "name": "范姜",
             "offense_base_value": 1900,
@@ -8835,7 +8835,7 @@
         "head_image": "/images/actor/head/avatarFRTK01.png",
         "active_skill": {
             "activate_skill_point": 3,
-            "description": "3回合內每回合回復我方前線幹部70%ATK的HP，同時使其ATK+65% DEF+15%。",
+            "description": "3回合內每回合回復我方前線幹部70%ATK的HP，同時使其每回合ATK+65% DEF+15%。",
             "image": "/images/active_skill/SKFRTK01_1.png",
             "level": "I",
             "name": "瑪納斯"
@@ -8870,7 +8870,7 @@
                 {
                     "activate_skill_point": 3,
                     "background": "/images/actor_category/active_skill_background/Pp.png",
-                    "description": "3回合內每回合回復我方前線幹部70%ATK的HP，同時使其ATK+65% DEF+15%。",
+                    "description": "3回合內每回合回復我方前線幹部70%ATK的HP，同時使其每回合ATK+65% DEF+15%。",
                     "id": 84,
                     "image": "/images/active_skill/SKFRTK01_1.png",
                     "level": "I",
@@ -12833,6 +12833,224 @@
         ],
         "gif_image": "/images/actor/gif/tachieCMILSY.gif",
         "nation_order": 10,
+        "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
+        "no_weapon_image": "/images/weapon/w02X.png"
+    },
+    {
+        "actor_category_icon": "/images/actor_category/icon/cadre1.png",
+        "half_image": "/images/actor/half/bustFROR06.png",
+        "no_weapon_name": "法器",
+        "id": 2280714,
+        "nation": "自由勢力",
+        "flag": "/images/home/flag/bigflag00FR.png",
+        "relation_exps": 0,
+        "nation_id": 9,
+        "scarcity_order": 1,
+        "level_cap": 80,
+        "scarcity_image": "/images/scarcity/image/b_SSR.png",
+        "level": 1,
+        "scarcity": "SSR",
+        "blood": 12000,
+        "offense": 2400,
+        "head_image": "/images/actor/head/avatarFROR06.png",
+        "active_skill": {
+            "activate_skill_point": 2,
+            "description": "造成敵方全體幹部140%ATK傷害，並在1回合內使其DEF-70%。",
+            "image": "/images/active_skill/SKFROR06_1.png",
+            "level": "I",
+            "name": "回祿"
+        },
+        "can_evolute": false,
+        "skill": 0,
+        "actor_category_order": 40,
+        "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
+        "usable_weapon_ids": [
+            236878
+        ],
+        "relation_level": 1,
+        "weapon": null,
+        "skill_percentage": 0,
+        "outfits": [
+            {
+                "id": 1015,
+                "image": "/images/actor/gif/tachieFROR06.gif",
+                "name": "紅藕"
+            }
+        ],
+        "team": {
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
+        },
+        "nation_icon": null,
+        "actor_prototype": {
+            "active_skills": [
+                {
+                    "activate_skill_point": 2,
+                    "background": "/images/actor_category/active_skill_background/G.png",
+                    "description": "造成敵方全體幹部140%ATK傷害，並在1回合內使其DEF-70%。",
+                    "id": 1098,
+                    "image": "/images/active_skill/SKFROR06_1.png",
+                    "level": "I",
+                    "name": "回祿"
+                }
+            ],
+            "actor_category": {
+                "font_color": "#ef7171",
+                "id": 1,
+                "name": "游擊隊"
+            },
+            "blood_base_value": 12000,
+            "blood_elevation_value": 1200,
+            "description": "火妖不能自己生火，而是因火而生、引火以用。水鄉的人們用火卻又憎火，因為火若不受控，就會殺人。在經歷兩晝兩夜的大火後，餘燼裡的他因人們對一句讖言的畏懼而產生意識、睜開雙眼。他對暮春都城的第一印象不是繁華，而是漆黑中那些無聲而不可辨別面目的人們。<br/><br/>他在灰燼與汙水裡匍匐前爬，從寶蓮山爬向天子所在的鳳凰山。他的聽覺被哭喪聲所啟，他小小的心被行人的恨意澆灌而甦醒。沙石與鐵錨一次次劃傷他的軀體，可他不會流血，因為血一流出就化作黑水。當幼小的他終於爬到能遠眺宮闕的地方，他停下腳步。<br/><br/>那一刻，他知道自己將一次又一次地從火噬的焦土上拔地而起，也許是明年，也許是三年後⋯⋯因為火不是禍，禍出於人。<br/>ㅤ",
+            "ethnic_group": "吳",
+            "family": "杭州",
+            "has_visit_plot": false,
+            "id": 911,
+            "name": "紅藕",
+            "offense_base_value": 2400,
+            "offense_elevation_value": 240,
+            "origin": "自由勢力出身",
+            "relation_level_cap": 1,
+            "religion": "無信仰",
+            "religion_icon": "/images/religion/irreligion_irreligion.png",
+            "sponsor": "諸夏傳媒",
+            "sponsor_gratitude": "感謝 諸夏傳媒 於2020年贊助完成本角色繪製。",
+            "sponsor_image": "/images/sponsor/tks01.png",
+            "talent_1": "藕有二十八絲 紅者火也",
+            "talent_2": "DEF+40% 自由成員ATK+80%",
+            "vanguard": false,
+            "visitable_city": null,
+            "visitable_city_id": null
+        },
+        "passive_skills": [
+            {
+                "description": "自由勢力陣營成員攻擊力+5%",
+                "level": 10
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+5%",
+                "level": 20
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+10% 自身受到傷害-5%",
+                "level": 30
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+10% 自身受到傷害-5%",
+                "level": 40
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+15% 自身受到傷害-5%",
+                "level": 50
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+15% 自身受到傷害-10%",
+                "level": 60
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+20% 自身受到傷害-10%",
+                "level": 70
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+20% 自身受到傷害-10%",
+                "level": 80
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+25% 自身受到傷害-10%",
+                "level": 90
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+25% 自身受到傷害-15%",
+                "level": 100
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+30% 自身受到傷害-15%",
+                "level": 110
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+30% 自身受到傷害-15%",
+                "level": 120
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+35% 自身受到傷害-15%",
+                "level": 130
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+35% 自身受到傷害-20%",
+                "level": 140
+            },
+            {
+                "description": "反賊聯盟陣營成員攻擊力+40% 自身受到傷害-20%",
+                "level": 150
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+40% 自身受到傷害-20%",
+                "level": 160
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+45% 自身受到傷害-20%",
+                "level": 170
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+45% 自身受到傷害-25%",
+                "level": 180
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+50% 自身受到傷害-25%",
+                "level": 190
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+50% 自身受到傷害-25%",
+                "level": 200
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+55% 自身受到傷害-25%",
+                "level": 210
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+55% 自身受到傷害-30%",
+                "level": 220
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+60% 自身受到傷害-30%",
+                "level": 230
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+60% 自身受到傷害-30%",
+                "level": 240
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+65% 自身受到傷害-30%",
+                "level": 250
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+65% 自身受到傷害-35%",
+                "level": 260
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+70% 自身受到傷害-35%",
+                "level": 270
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+70% 自身受到傷害-35%",
+                "level": 280
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+75% 自身受到傷害-35%",
+                "level": 290
+            },
+            {
+                "description": "自由勢力陣營成員攻擊力+80% 自身受到傷害-40%",
+                "level": 300
+            }
+        ],
+        "gif_image": "/images/actor/gif/tachieFROR06.gif",
+        "nation_order": 100,
         "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
         "no_weapon_image": "/images/weapon/w02X.png"
     }

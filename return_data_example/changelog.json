@@ -1,6 +1,40 @@
 {
   "entries": [
     {
+      "date": "2026-10-11",
+      "items": [
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：俐月",
+          "details": [
+            "可拜訪城市：無 → 基隆"
+          ],
+          "name": "俐月"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：賽卡爾",
+          "details": [
+            "主動技「瑪納斯」I：3回合內每回合回復我方前線幹部70%ATK的HP，同時使其ATK+65% DEF+15%。 → 3回合內每回合回復我方前線幹部70%ATK的HP，同時使其每回合ATK+65% DEF+15%。"
+          ],
+          "name": "賽卡爾"
+        },
+        {
+          "category": "actor",
+          "kind": "new",
+          "title": "新角色：紅藕",
+          "details": [
+            "SSR / 自由勢力 / 游擊隊",
+            "天賦：藕有二十八絲 紅者火也",
+            "天賦：DEF+40% 自由成員ATK+80%"
+          ],
+          "name": "紅藕"
+        }
+      ]
+    },
+    {
       "date": "2026-10-09",
       "items": [
         {
