@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="RF 遊戲攻略網站 - 提供完整的城鎮資訊、角色資料、戰力計算器與各種查詢功能">
     <title>RF 攻略網站</title>
-    <link rel="stylesheet" href="css/style.css?v=20261009">
-    <link rel="stylesheet" href="css/design-system.css?v=20261009">
+    <link rel="stylesheet" href="css/style.css?v=20261011">
+    <link rel="stylesheet" href="css/design-system.css?v=20261011">
 </head>
 
 <body>
@@ -101,7 +101,7 @@
         </footer>
     </div>
 
-    <script src="js/app.js?v=20261009"></script>
+    <script src="js/app.js?v=20261011"></script>
     <script>
         document.addEventListener('DOMContentLoaded', async function () {
             const $ = id => document.getElementById(id);
@@ -121,6 +121,41 @@
                 if (item.category === 'city' || item.category === 'site') return `pages/cities.html?q=${encodeURIComponent(item.name)}`;
                 return '';
             };
+            // 數字（含小數）、英文單字視為一個單位，其餘逐字比對，讓「65%」→「130%」整個數字被標出來
+            const diffTokens = text => text.match(/\d+(?:\.\d+)?|[A-Za-z]+|\s+|[\s\S]/gu) || [];
+            const diffText = (before, after) => {
+                const a = diffTokens(before), b = diffTokens(after);
+                const lcs = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+                for (let i = a.length - 1; i >= 0; i--) {
+                    for (let j = b.length - 1; j >= 0; j--) {
+                        lcs[i][j] = a[i] === b[j] ? lcs[i + 1][j + 1] + 1 : Math.max(lcs[i + 1][j], lcs[i][j + 1]);
+                    }
+                }
+                const oldParts = [], newParts = [];
+                const push = (parts, type, text) => {
+                    const last = parts[parts.length - 1];
+                    if (last && last.type === type) last.text += text; else parts.push({ type, text });
+                };
+                let i = 0, j = 0;
+                while (i < a.length || j < b.length) {
+                    if (i < a.length && j < b.length && a[i] === b[j]) { push(oldParts, 'same', a[i]); push(newParts, 'same', b[j]); i++; j++; }
+                    else if (j < b.length && (i >= a.length || lcs[i][j + 1] >= lcs[i + 1][j])) { push(newParts, 'ins', b[j++]); }
+                    else { push(oldParts, 'del', a[i++]); }
+                }
+                const render = (parts, tag) => parts.map(part => part.type === 'same' ? escapeHtml(part.text) : `<${tag}>${escapeHtml(part.text)}</${tag}>`).join('');
+                return { before: render(oldParts, 'del'), after: render(newParts, 'ins') };
+            };
+            // 「標籤：舊 → 新」格式的細節標出差異；短的數值同一行顯示，長的技能描述分成舊 / 新兩行
+            const renderDetail = detail => {
+                const match = /^([^：]+)：([\s\S]+?) → ([\s\S]+)$/u.exec(detail);
+                if (!match) return `<li>${escapeHtml(detail)}</li>`;
+                const [, label, before, after] = match;
+                const diff = diffText(before, after);
+                if (before.length + after.length <= 24) {
+                    return `<li><span class="changelog-change-label">${escapeHtml(label)}：</span><span class="changelog-diff">${diff.before}</span> → <span class="changelog-diff">${diff.after}</span></li>`;
+                }
+                return `<li class="changelog-change"><span class="changelog-change-label">${escapeHtml(label)}</span><span class="changelog-diff changelog-diff--old"><span aria-hidden="true">舊</span><span>${diff.before}</span></span><span class="changelog-diff changelog-diff--new"><span aria-hidden="true">新</span><span>${diff.after}</span></span></li>`;
+            };
             const renderChangeItem = item => {
                 const key = `${item.category}:${item.kind}`;
                 const meta = CHANGELOG_LABELS[key] || { label: '更新', tone: 'changed' };
@@ -131,7 +166,7 @@
                     return `<li class="changelog-item"><div class="changelog-row">${tag}<span class="changelog-title">${title}</span></div></li>`;
                 }
                 // 連結放在展開內容裡，避免點標題時直接跳頁而不是展開
-                const details = item.details.map(detail => `<li>${escapeHtml(detail)}</li>`).join('');
+                const details = item.details.map(renderDetail).join('');
                 const link = href ? `<li><a class="changelog-link" href="${href}">查看詳細資料 →</a></li>` : '';
                 return `<li class="changelog-item"><details><summary class="changelog-row">${tag}<span class="changelog-title">${escapeHtml(item.title)}</span><span class="changelog-count">${item.details.length} 項</span></summary><ul class="changelog-details">${details}${link}</ul></details></li>`;
             };

@@ -362,3 +362,11 @@ details[open] > summary.changelog-row::after { transform: rotate(90deg); }
 }
 .changelog-link { color: var(--ds-primary); font-weight: 700; text-decoration: none; }
 .changelog-link:hover { text-decoration: underline; }
+.changelog-change { display: grid; gap: 2px; }
+.changelog-change-label { color: var(--ds-text); font-weight: 700; }
+.changelog-diff del { padding: 0 2px; border-radius: 3px; background: color-mix(in srgb, var(--ds-danger) 18%, transparent); color: var(--ds-danger); text-decoration: line-through; }
+.changelog-diff ins { padding: 0 2px; border-radius: 3px; background: color-mix(in srgb, var(--ds-success) 18%, transparent); color: var(--ds-success); font-weight: 700; text-decoration: none; }
+.changelog-diff--old, .changelog-diff--new { display: flex; gap: 8px; }
+.changelog-diff--old > span[aria-hidden], .changelog-diff--new > span[aria-hidden] { flex-shrink: 0; font-size: .75rem; line-height: 1.6rem; opacity: .7; }
+.changelog-diff--old { opacity: .85; }
+.changelog-diff--new { color: var(--ds-text); }
