@@ -1,6 +1,49 @@
 {
   "entries": [
     {
+      "date": "2026-11-03",
+      "items": [
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：海蘭珠",
+          "details": [
+            "可拜訪城市：AE-maid Café → 東京道大胃王會場"
+          ],
+          "name": "海蘭珠"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：葉劉",
+          "details": [
+            "主動技「玉腿」I：造成敵前線幹部1000%ATK傷害。1回合內敵我其中一方全體幹部ATK-500%（機率80%：20%）。 → 造成敵方前線幹部1000%ATK傷害。1回合內敵我其中一方全體幹部ATK-500%（機率80%：20%）。"
+          ],
+          "name": "葉劉"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：紅藕",
+          "details": [
+            "被動 Lv150：反賊聯盟陣營成員攻擊力+40% 自身受到傷害-20% → 自由勢力陣營成員攻擊力+40% 自身受到傷害-20%"
+          ],
+          "name": "紅藕"
+        },
+        {
+          "category": "actor",
+          "kind": "new",
+          "title": "新角色：夜夜",
+          "details": [
+            "SSR / 紅軍 / 游擊隊",
+            "天賦：為什麼我天賦長這樣？",
+            "天賦：ATK+280% 紅軍成員DEF+1% HP+1%"
+          ],
+          "name": "夜夜"
+        }
+      ]
+    },
+    {
       "date": "2026-10-28",
       "items": [
         {

@@ -31,7 +31,7 @@
         "name": "海蘭珠",
         "has_visit_plot": true,
         "visitable_city_id": 64,
-        "visitable_city": "AE-maid Café",
+        "visitable_city": "東京道大胃王會場",
         "relation_level_cap": 2
     },
     "瓦旦": {
@@ -477,6 +477,13 @@
     },
     "紅藕": {
         "name": "紅藕",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
+    },
+    "夜夜": {
+        "name": "夜夜",
         "has_visit_plot": false,
         "visitable_city_id": null,
         "visitable_city": null,

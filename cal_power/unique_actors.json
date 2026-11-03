@@ -971,7 +971,7 @@
             "vanguard": false,
             "visitable_city": {
                 "hidden": false,
-                "name": "AE-maid Café"
+                "name": "東京道大胃王會場"
             },
             "visitable_city_id": 64
         },
@@ -2605,8 +2605,8 @@
         "scarcity_image": "/images/scarcity/image/b_SSR.png",
         "level": 300,
         "scarcity": "SSR",
-        "blood": 342225,
-        "offense": 69905,
+        "blood": 345875,
+        "offense": 73555,
         "head_image": "/images/actor/head/avatarTW05.png",
         "active_skill": {
             "activate_skill_point": 3,
@@ -2621,20 +2621,21 @@
         "actor_category_decor": "/images/actor_category/decor/cadrecardPt.png",
         "usable_weapon_ids": [
             72919,
-            197701
+            197701,
+            262203
         ],
         "relation_level": 1,
         "weapon": {
-            "id": 197701,
+            "id": 262203,
             "level": 50,
             "skill": 0,
             "weapon_prototype": {
-                "description": "匈奴的塔木加<br/>蘊涵極致的穿雲之力<br/>戰力放大：5倍",
-                "image": "/images/weapon/w07C.png",
-                "name": "高等弓弩符文",
-                "power": "大"
+                "description": "清軍軍校配發的符文<br/>可大量貯存穿雲之力<br/>戰力放大：10倍",
+                "image": "/images/weapon/07S02.png",
+                "name": "保定式弓弩符文",
+                "power": "小"
             },
-            "weapon_prototype_id": 21
+            "weapon_prototype_id": 299
         },
         "skill_percentage": 0,
         "outfits": [
@@ -2649,7 +2650,7 @@
             "alphabet_in_team": "E",
             "id": 81088,
             "position_in_team": 5,
-            "power": 369,
+            "power": 735,
             "team_number": 1,
             "team_roman_number": "I"
         },
@@ -10530,7 +10531,7 @@
             "level": "I",
             "name": "叢林游擊"
         },
-        "can_evolute": true,
+        "can_evolute": false,
         "skill": 0,
         "actor_category_order": 40,
         "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
@@ -12636,7 +12637,7 @@
         "head_image": "/images/actor/head/avatarCMILSY.png",
         "active_skill": {
             "activate_skill_point": 2,
-            "description": "造成敵前線幹部1000%ATK傷害。1回合內敵我其中一方全體幹部ATK-500%（機率80%：20%）。",
+            "description": "造成敵方前線幹部1000%ATK傷害。1回合內敵我其中一方全體幹部ATK-500%（機率80%：20%）。",
             "image": "/images/active_skill/SKCMILSY_1.png",
             "level": "I",
             "name": "玉腿"
@@ -12674,7 +12675,7 @@
                 {
                     "activate_skill_point": 2,
                     "background": "/images/actor_category/active_skill_background/S.png",
-                    "description": "造成敵前線幹部1000%ATK傷害。1回合內敵我其中一方全體幹部ATK-500%（機率80%：20%）。",
+                    "description": "造成敵方前線幹部1000%ATK傷害。1回合內敵我其中一方全體幹部ATK-500%（機率80%：20%）。",
                     "id": 1032,
                     "image": "/images/active_skill/SKCMILSY_1.png",
                     "level": "I",
@@ -12985,7 +12986,7 @@
                 "level": 140
             },
             {
-                "description": "反賊聯盟陣營成員攻擊力+40% 自身受到傷害-20%",
+                "description": "自由勢力陣營成員攻擊力+40% 自身受到傷害-20%",
                 "level": 150
             },
             {
@@ -13053,5 +13054,221 @@
         "nation_order": 100,
         "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
         "no_weapon_image": "/images/weapon/w02X.png"
+    },
+    {
+        "actor_category_icon": "/images/actor_category/icon/cadre1.png",
+        "half_image": "/images/actor/half/bustCM07.png",
+        "no_weapon_name": "槍械",
+        "id": 2292023,
+        "nation": "紅軍",
+        "flag": "/images/home/flag/bigflag01CM.png",
+        "relation_exps": 0,
+        "nation_id": 1,
+        "scarcity_order": 1,
+        "level_cap": 80,
+        "scarcity_image": "/images/scarcity/image/b_SSR.png",
+        "level": 1,
+        "scarcity": "SSR",
+        "blood": 11500,
+        "offense": 2600,
+        "head_image": "/images/actor/head/avatarCM07.png",
+        "active_skill": {
+            "activate_skill_point": 1,
+            "description": "造成敵我其中一方前線幹部250%ATK傷害（機率90%：10%）。上述傷害值有5%機率放大20倍",
+            "image": "/images/active_skill/SKCM07_1.png",
+            "level": "I",
+            "name": "為什麼不能打他"
+        },
+        "can_evolute": false,
+        "skill": 0,
+        "actor_category_order": 40,
+        "actor_category_decor": "/images/actor_category/decor/cadrecardG.png",
+        "usable_weapon_ids": [],
+        "relation_level": 1,
+        "weapon": null,
+        "skill_percentage": 0,
+        "outfits": [
+            {
+                "id": 1048,
+                "image": "/images/actor/gif/tachieCM07.gif",
+                "name": "夜夜"
+            }
+        ],
+        "team": {
+            "alphabet_image": "",
+            "alphabet_in_team": "",
+            "id": null,
+            "position_in_team": "",
+            "power": 4,
+            "team_number": null,
+            "team_roman_number": null
+        },
+        "nation_icon": "/images/nation/color_icon/minicoa01CM.png",
+        "actor_prototype": {
+            "active_skills": [
+                {
+                    "activate_skill_point": 1,
+                    "background": "/images/actor_category/active_skill_background/G.png",
+                    "description": "造成敵我其中一方前線幹部250%ATK傷害（機率90%：10%）。上述傷害值有5%機率放大20倍",
+                    "id": 1131,
+                    "image": "/images/active_skill/SKCM07_1.png",
+                    "level": "I",
+                    "name": "為什麼不能打他"
+                }
+            ],
+            "actor_category": {
+                "font_color": "#ef7171",
+                "id": 1,
+                "name": "游擊隊"
+            },
+            "blood_base_value": 11500,
+            "blood_elevation_value": 1100,
+            "description": "政工部聯絡局特工，渤雍替她取的代號是「夜于」，典故是長征時期的夜渡于都河。然而她本人很討厭這個代號，所以自稱「夜」，後來被暱稱為「夜夜」。目前戶籍在北京，但真實出生地不詳。大多數時間都面無表情，並且嚴重挑食。似乎經歷過某些創傷，導致任何事情都需要反覆確認。關於這麼個擅長戰鬥卻不善溝通的人，為何會進到不需要戰鬥、工作以溝通為主的聯絡局裡，暫時還是個謎。",
+            "ethnic_group": "未知",
+            "family": "未知",
+            "has_visit_plot": false,
+            "id": 944,
+            "name": "夜夜",
+            "offense_base_value": 2600,
+            "offense_elevation_value": 260,
+            "origin": "紅軍出身",
+            "relation_level_cap": 1,
+            "religion": "無神論",
+            "religion_icon": "/images/religion/irreligion_atheist.png",
+            "sponsor": null,
+            "sponsor_gratitude": null,
+            "sponsor_image": null,
+            "talent_1": "為什麼我天賦長這樣？",
+            "talent_2": "ATK+280% 紅軍成員DEF+1% HP+1% ",
+            "vanguard": false,
+            "visitable_city": null,
+            "visitable_city_id": null
+        },
+        "passive_skills": [
+            {
+                "description": " 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 10
+            },
+            {
+                "description": "自身攻擊力+5% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 20
+            },
+            {
+                "description": "自身攻擊力+10% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 30
+            },
+            {
+                "description": "自身攻擊力+20% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 40
+            },
+            {
+                "description": "自身攻擊力+30% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 50
+            },
+            {
+                "description": "自身攻擊力+40% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 60
+            },
+            {
+                "description": "自身攻擊力+50% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 70
+            },
+            {
+                "description": "自身攻擊力+60% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 80
+            },
+            {
+                "description": "自身攻擊力+70% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 90
+            },
+            {
+                "description": "自身攻擊力+80% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 100
+            },
+            {
+                "description": "自身攻擊力+90% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 110
+            },
+            {
+                "description": "自身攻擊力+100% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 120
+            },
+            {
+                "description": "自身攻擊力+110% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 130
+            },
+            {
+                "description": "自身攻擊力+120% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 140
+            },
+            {
+                "description": "自身攻擊力+130% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 150
+            },
+            {
+                "description": "自身攻擊力+140% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 160
+            },
+            {
+                "description": "自身攻擊力+150% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 170
+            },
+            {
+                "description": "自身攻擊力+160% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 180
+            },
+            {
+                "description": "自身攻擊力+170% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 190
+            },
+            {
+                "description": "自身攻擊力+180% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 200
+            },
+            {
+                "description": "自身攻擊力+190% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 210
+            },
+            {
+                "description": "自身攻擊力+200% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 220
+            },
+            {
+                "description": "自身攻擊力+210% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 230
+            },
+            {
+                "description": "自身攻擊力+220% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 240
+            },
+            {
+                "description": "自身攻擊力+230% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 250
+            },
+            {
+                "description": "自身攻擊力+240% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 260
+            },
+            {
+                "description": "自身攻擊力+250% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 270
+            },
+            {
+                "description": "自身攻擊力+260% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 280
+            },
+            {
+                "description": "自身攻擊力+270% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 290
+            },
+            {
+                "description": "自身攻擊力+280% 紅軍陣營成員受到傷害-1%紅軍陣營成員血量+ 1%",
+                "level": 300
+            }
+        ],
+        "gif_image": "/images/actor/gif/tachieCM07.gif",
+        "nation_order": 10,
+        "scarcity_icon": "/images/scarcity/icon/s_SSR.png",
+        "no_weapon_image": "/images/weapon/w08X.png"
     }
 ]
