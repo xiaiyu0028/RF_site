@@ -13,8 +13,8 @@ def login(email, password):
             "user[email]": email,
             "user[password]": password,
             "locale": "zh_TW",
-            "key": "rfront2023",
-            "app_version": "3.00"
+            "key": "t9cTpsbSCYcJgsrrC",
+            "app_version": "3.1"
     }
 
 

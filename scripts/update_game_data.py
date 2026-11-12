@@ -23,7 +23,7 @@ import changelog
 
 API_BASE = "https://api.komisureiya.com/api"
 WS_BASE = "wss://api.komisureiya.com/socket/websocket"
-APP_VERSION = os.environ.get("RF_APP_VERSION", "3.00")
+APP_VERSION = os.environ.get("RF_APP_VERSION", "3.1")
 APP_KEY = os.environ.get("RF_APP_KEY", "t9cTpsbSCYcJgsrrC")
 
 
