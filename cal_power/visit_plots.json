@@ -488,5 +488,12 @@
         "visitable_city_id": null,
         "visitable_city": null,
         "relation_level_cap": 1
+    },
+    "巫山神女": {
+        "name": "巫山神女",
+        "has_visit_plot": false,
+        "visitable_city_id": null,
+        "visitable_city": null,
+        "relation_level_cap": 1
     }
 }

@@ -1,6 +1,136 @@
 {
   "entries": [
     {
+      "date": "2026-11-24",
+      "items": [
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：希拉雅",
+          "details": [
+            "主動技「剝蛇牙」I：造成敵方全體幹部35%ATK傷害，並在3回合內使其ATK-8% DEF-5%。 → 造成敵方全體幹部100%ATK傷害，並在3回合內使其ATK-35% DEF-15%。"
+          ],
+          "name": "希拉雅"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：基少",
+          "details": [
+            "主動技「重光」I：1回合內我方全體幹部ATK+15% DEF+10%。 → 1回合內我方全體幹部ATK+55% DEF+15%。",
+            "主動技「重光」I 技能點：2 → 1"
+          ],
+          "name": "基少"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：俐月",
+          "details": [
+            "主動技「珠淚落千華」I：造成敵方前線幹部515%ATK傷害，並在1回合內使其DEF-100%。自身ATK-100%，持續3回合。 → 造成敵方前線幹部515%ATK傷害，並在1回合內使其DEF-100%。自身ATK-100%，持續2回合。"
+          ],
+          "name": "俐月"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：段敏",
+          "details": [
+            "HP 基礎值：22500 → 27000",
+            "HP 成長值：2250 → 2700"
+          ],
+          "name": "段敏"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：阿邁德",
+          "details": [
+            "主動技「蒂博尼哥羅」I：2回合內敵方全體幹部ATK-15% DEF-15%。 → 2回合內敵方全體幹部ATK-15% DEF-50%。",
+            "主動技「蒂博尼哥羅」I 技能點：3 → 1"
+          ],
+          "name": "阿邁德"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：張暖",
+          "details": [
+            "主動技「工人團結」I：3回合內我方全體幹部DEF+13%。 → 3回合內我方全體幹部DEF+22%。",
+            "主動技「工人團結」I 技能點：2 → 1"
+          ],
+          "name": "張暖"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：范姜",
+          "details": [
+            "主動技「五月雪」I：1回合內我方前線幹部DEF+23%。 → 1回合內我方前線幹部DEF+40%。"
+          ],
+          "name": "范姜"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：其其格",
+          "details": [
+            "主動技「福蔭護助」I：1回合內我方前線幹部DEF+20%。 → 1回合內我方前線幹部DEF+38%。"
+          ],
+          "name": "其其格"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：日嘎",
+          "details": [
+            "主動技「文殊咒」I：3回合內我方前線幹部DEF+20%。 → 3回合內我方前線幹部ATK+45%。",
+            "主動技「文殊咒」I 技能點：2 → 1"
+          ],
+          "name": "日嘎"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：馬胡塞",
+          "details": [
+            "主動技「成功成仁」I：1回合內自身ATK+70% DEF-20%。 → 1回合內自身ATK+250% DEF-20%。"
+          ],
+          "name": "馬胡塞"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：貢布",
+          "details": [
+            "主動技「臧巴拉」I：隨機觸發一種效果：1. 2回合內我全體幹部ATK+25%。 2. 2回合內我全體幹部DEF+20%。 → 隨機觸發一種效果：1. 2回合內我全體幹部ATK+45%。 2. 2回合內我全體幹部DEF+30%。",
+            "主動技「臧巴拉」I 技能點：2 → 1"
+          ],
+          "name": "貢布"
+        },
+        {
+          "category": "actor",
+          "kind": "changed",
+          "title": "角色調整：綹明",
+          "details": [
+            "主動技「羲和」I：2回合內每回合回復我方全體幹部80%ATK的HP。本回合我方全體幹部ATK+130% DEF-35%。 → 2回合內每回合回復我方全體幹部80%ATK的HP。1回合內我方全體幹部ATK+130% DEF-35%。"
+          ],
+          "name": "綹明"
+        },
+        {
+          "category": "actor",
+          "kind": "new",
+          "title": "新角色：巫山神女",
+          "details": [
+            "SSR / 自由勢力 / 資助者",
+            "天賦：旦為朝雲 暮為行雨",
+            "天賦：藏國成員ATK+50% 自由成員HP+30% 反賊成員DEF+40%"
+          ],
+          "name": "巫山神女"
+        }
+      ]
+    },
+    {
       "date": "2026-11-18",
       "items": [
         {
